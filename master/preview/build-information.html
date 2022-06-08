@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HydePHP Canary Preview - Latest Posts</title>
+<title>HydePHP Canary Preview - Build Information</title>
 
 
 
@@ -51,13 +51,13 @@
 	<div id="main-navigation-links" class="w-full hidden md:flex flex-grow md:flex-grow-0 md:items-center md:w-auto px-6 -mx-4 border-t mt-3 pt-3 md:border-none md:mt-0 md:py-0 border-gray-200 dark:border-gray-700">
 		<ul aria-label="Navigation links" class="md:flex-grow md:flex justify-end">
 						<li class="md:mx-2">
-				<a href="index.html" aria-current=&quot;page&quot;
-	class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100 border-l-4 border-indigo-500 md:border-none font-medium -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent">
+				<a href="index.html" 
+	class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">
 	Home
 </a>			</li>
 						<li class="md:mx-2">
-				<a href="build-information.html" 
-	class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">
+				<a href="build-information.html" aria-current=&quot;page&quot;
+	class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100 border-l-4 border-indigo-500 md:border-none font-medium -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent">
 	Build Information
 </a>			</li>
 						<li class="md:mx-2">
@@ -72,48 +72,52 @@
 
     <section>
         
-<main id="content" class="mx-auto max-w-7xl py-12 px-8">
-    <header class="lg:mb-12 xl:mb-16">
-        <h1
-        class="text-3xl text-left leading-10 tracking-tight font-extrabold sm:leading-none mb-8 md:mb-12 md:text-4xl md:text-center lg:text-5xl text-gray-700 dark:text-gray-200">
-        Latest Posts</h1>
-    </header>
+<main class="mx-auto max-w-7xl py-16 px-8">
+	<h1 class="text-center text-3xl font-bold">Build Information</h1>
+	<p class="text-center">
+		<br>
+		This page serves a dual purpose: it is an example of a Blade page;
+		<br>
+		and it shows useful information of the current build.
+		<br>
+	</p>
+	<br>
+	<article class="prose mx-auto">
+		<pre><code>HydePHP Debug Screen
 
-    <div class="max-w-3xl mx-auto">
-        <article class="mt-4 mb-8" itemscope itemtype="http://schema.org/Article">
-    <meta itemprop="identifier" content="what-is-this-site">
-    
-	<header>
-		<a href="posts/what-is-this-site.html" class="block w-fit">
-			<h2 class="text-2xl font-bold text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white transition-colors duration-75">
-				What is this site?
-			</h2>
-		</a>
-	</header>
+Git Version: unreleased
+Hyde Version: dev-master
+Framework Version: dev-master
 
-	<footer>
-		<span class="opacity-75">
-			<span itemprop="dateCreated datePublished">
-				Jun 8th, 2022</span>,
-		</span>
-		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-			<span class="opacity-75">by</span>
-			<span itemprop="name">
-				Mr Hyde
-			</span>
-		</span>
-	</footer>
-	
-	<section role="doc-abstract" aria-label="Excerpt">
-		<p class="leading-relaxed my-1">
-			Wondering what this site is for? Read this!
-		</p>
-	</section>
+App Env: production
 
-	<footer>
-		<a href="posts/what-is-this-site.html" class="text-indigo-500 hover:underline font-medium">Read post</a>
-	</footer>
-</article>    </div>
+Project directory: /home/runner/work/hyde-monorepo/hyde-monorepo
+
+Enabled features:
+ - blog-posts
+ - blade-pages
+ - markdown-pages
+ - documentation-pages
+ - darkmode
+ - documentation-search
+ - torchlight
+
+
+Additional information:
+
+PHP Version: 8.0.19 (cli)
+Runner OS: Linux fv-az201-282 5.13.0-1025-azure #29~20.04.1-Ubuntu SMP Thu May 19 14:50:45 UTC 2022 x86_64 (Linux)
+Current Timestamp: 2022-06-08 19:39:19 UTC (UNIX: 1654717159)
+
+Hyde app.css SHA1: cbcf83656db6542ec4b73d5ffbdecdfa516c6761
+
+Current runner git branch: master
+Current runner git commit: 46b8be4b4cb5ef6555b77acca964a37ac8685e3e
+Current runner git commit date: 2022-06-08 21:38:28 +0200
+
+Commit reference provided by CI (if any): 46b8be4b4cb5ef6555b77acca964a37ac8685e3e
+</code></pre>
+	</article>
 </main>
 
  

@@ -3,13 +3,21 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HydePHP Canary Preview - Latest Posts</title>
+<title>HydePHP Canary Preview - What is this site?</title>
 
 
 
 <meta name="generator" content="HydePHP dev-master">
 <meta property="og:site_name" content="HydePHP Canary Preview">
 <meta name="robots" content="noindex">
+
+<!-- Blog Post Meta Tags -->
+<meta name="description" content="Wondering what this site is for? Read this!">
+<meta name="author" content="Mr Hyde">
+<meta name="keywords" content="explainer">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What is this site?">
+<meta property="og:article:published_time" content="2022-06-08T18:34:00+00:00">
 
 
  
@@ -18,7 +26,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hydefront@v1.11/dist/hyde.css">
 
 
-<link rel="stylesheet" href="media/app.css">
+<link rel="stylesheet" href="../media/app.css">
 
 
 
@@ -30,7 +38,7 @@
     <a href="#content" id="skip-to-content">Skip to content</a>
     <nav aria-label="Main navigation" id="main-navigation" class="flex flex-wrap items-center justify-between p-4 shadow-lg sm:shadow-xl md:shadow-none dark:bg-gray-800">
 	<div class="flex flex-grow items-center flex-shrink-0 text-gray-700 dark:text-gray-200">
-		<a aria-label="Home page link" href="index.html" class="font-bold px-4">
+		<a aria-label="Home page link" href="../index.html" class="font-bold px-4">
 	HydePHP Canary Preview
 </a>
 		<div class="ml-auto">
@@ -51,17 +59,17 @@
 	<div id="main-navigation-links" class="w-full hidden md:flex flex-grow md:flex-grow-0 md:items-center md:w-auto px-6 -mx-4 border-t mt-3 pt-3 md:border-none md:mt-0 md:py-0 border-gray-200 dark:border-gray-700">
 		<ul aria-label="Navigation links" class="md:flex-grow md:flex justify-end">
 						<li class="md:mx-2">
-				<a href="index.html" aria-current=&quot;page&quot;
-	class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100 border-l-4 border-indigo-500 md:border-none font-medium -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent">
+				<a href="../index.html" 
+	class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">
 	Home
 </a>			</li>
 						<li class="md:mx-2">
-				<a href="build-information.html" 
+				<a href="../build-information.html" 
 	class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">
 	Build Information
 </a>			</li>
 						<li class="md:mx-2">
-				<a href="markdown-page.html" 
+				<a href="../markdown-page.html" 
 	class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">
 	Markdown Page
 </a>			</li>
@@ -72,48 +80,32 @@
 
     <section>
         
-<main id="content" class="mx-auto max-w-7xl py-12 px-8">
-    <header class="lg:mb-12 xl:mb-16">
-        <h1
-        class="text-3xl text-left leading-10 tracking-tight font-extrabold sm:leading-none mb-8 md:mb-12 md:text-4xl md:text-center lg:text-5xl text-gray-700 dark:text-gray-200">
-        Latest Posts</h1>
-    </header>
-
-    <div class="max-w-3xl mx-auto">
-        <article class="mt-4 mb-8" itemscope itemtype="http://schema.org/Article">
+<main id="content" class="mx-auto max-w-7xl py-16 px-8">
+	<article aria-label="Article" id="posts/what-is-this-site" itemscope itemtype="http://schema.org/Article"
+    class="post-article mx-auto prose dark:prose-invert">
     <meta itemprop="identifier" content="what-is-this-site">
-    
-	<header>
-		<a href="posts/what-is-this-site.html" class="block w-fit">
-			<h2 class="text-2xl font-bold text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white transition-colors duration-75">
-				What is this site?
-			</h2>
-		</a>
-	</header>
+        
+    <header aria-label="Header section" role="doc-pageheader">
+        <h1 itemprop="headline" class="mb-4">What is this site?</h1>
+		<div id="byline" aria-label="About the post" role="doc-introduction">
+            Posted <time itemprop="dateCreated datePublished" datetime="2022-06-08T18:34:00+00:00" title="Wednesday Jun 8th, 2022, at 6:34pm">Jun 8th, 2022</time>
+		    by author
+<address itemprop="author" itemscope itemtype="http://schema.org/Person" aria-label="The post author" style="display: inline;"> 
+		<span itemprop="name" aria-label="The author's name" title=@Mr+Hyde>Mr Hyde</span> 
+	</address> 
+            in the category "explainer"
+        </div>
+    </header>
+        <div aria-label="Article body" itemprop="articleBody">
+        <h2>About this site</h2>
+<p>You are currently on the HydePHP canary staging site.</p>
+<p>This website is generated in the framework test suite to test the HydePHP software.
+This allows developers to visually inspect the compiled results to catch any errors.</p>
+<p>It also gives a preview of upcoming features. The contents here are of course experimental.</p>
 
-	<footer>
-		<span class="opacity-75">
-			<span itemprop="dateCreated datePublished">
-				Jun 8th, 2022</span>,
-		</span>
-		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-			<span class="opacity-75">by</span>
-			<span itemprop="name">
-				Mr Hyde
-			</span>
-		</span>
-	</footer>
-	
-	<section role="doc-abstract" aria-label="Excerpt">
-		<p class="leading-relaxed my-1">
-			Wondering what this site is for? Read this!
-		</p>
-	</section>
-
-	<footer>
-		<a href="posts/what-is-this-site.html" class="text-indigo-500 hover:underline font-medium">Read post</a>
-	</footer>
-</article>    </div>
+    </div>
+    <span class="sr-only">End of article</span>
+</article>
 </main>
 
  
