@@ -56,14 +56,24 @@
 	Home
 </a>			</li>
 						<li class="md:mx-2">
-				<a href="build-information.html" 
+				<a href="docs/readme.html" 
 	class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">
-	Build Information
+	Docs
+</a>			</li>
+						<li class="md:mx-2">
+				<a href="blade.html" 
+	class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">
+	Blade
 </a>			</li>
 						<li class="md:mx-2">
 				<a href="markdown-page.html" aria-current=&quot;page&quot;
 	class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100 border-l-4 border-indigo-500 md:border-none font-medium -ml-6 pl-5 md:ml-0 md:pl-0 bg-gray-100 dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent">
 	Markdown Page
+</a>			</li>
+						<li class="md:mx-2">
+				<a href="https://github.com/caendesilva/hyde-monorepo" 
+	class="block my-2 md:my-0 md:inline-block py-1 text-gray-700 hover:text-gray-900 dark:text-gray-100">
+	GitHub 🡕
 </a>			</li>
 					</ul>
 	</div>
@@ -75,9 +85,8 @@
 <main id="content" class="mx-auto max-w-7xl py-16 px-8">
 	<article class="mx-auto prose dark:prose-invert">
 		<h1>Markdown Pages</h1>
-<p>What better way to showcase Markdown-based pages than by using the cheat sheet from <a href="https://www.markdownguide.org">The Markdown Guide</a>!</p>
 <h2>Custom Markdown Features</h2>
-<p>But first, here are some custom Markdown features Hyde provides!</p>
+<p>Here are some custom Markdown features Hyde provides!</p>
 <h3>Colored Blockquotes</h3>
 <blockquote>
 <p>Normal Blockquote</p>
@@ -91,43 +100,18 @@
 </code></pre>
 <hr />
 <h2>Markdown Cheat Sheet</h2>
-<p>This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for <a href="https://www.markdownguide.org/basic-syntax">basic syntax</a> and <a href="https://www.markdownguide.org/extended-syntax">extended syntax</a>.</p>
-<h2>Basic Syntax</h2>
-<p>These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.</p>
-<h3>Heading</h3>
-<h1>H1</h1>
-<h2>H2</h2>
-<h3>H3</h3>
-<h3>Bold</h3>
-<p><strong>bold text</strong></p>
-<h3>Italic</h3>
-<p><em>italicized text</em></p>
-<h3>Blockquote</h3>
-<blockquote>
-<p>blockquote</p>
-</blockquote>
-<h3>Ordered List</h3>
+<p>HydePHP uses TailwindCSS prose styles to style the Markdown.
+That means it supports cool stuff like <a href="#">links</a>, <strong>bold text</strong>,
+<em>italic text</em>, <del>strikethrough</del>, and <code>inline code</code>. And images!
+<img src="https://laravel.com/img/logomark.min.svg" alt="Laravel logo" style="float: right"></p>
 <ol>
-<li>First item</li>
-<li>Second item</li>
-<li>Third item</li>
+<li>And of course, you can use numbered lists</li>
 </ol>
-<h3>Unordered List</h3>
 <ul>
-<li>First item</li>
-<li>Second item</li>
-<li>Third item</li>
+<li>Just as you can use unordered ones</li>
 </ul>
-<h3>Code</h3>
-<p><code>code</code></p>
-<h3>Horizontal Rule</h3>
-<hr />
-<h3>Link</h3>
-<p><a href="https://www.markdownguide.org">Markdown Guide</a></p>
-<h3>Image</h3>
-<p><img src="https://laravel.com/img/logomark.min.svg" alt="alt text" /></p>
 <h2>Extended Syntax</h2>
-<p>These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.</p>
+<p>These elements extend the basic syntax by adding additional features.</p>
 <h3>Table</h3>
 <table>
 <thead>
@@ -147,42 +131,12 @@
 </tr>
 </tbody>
 </table>
-<h3>Fenced Code Block</h3>
-<pre><code>{
-  &quot;firstName&quot;: &quot;John&quot;,
-  &quot;lastName&quot;: &quot;Smith&quot;,
-  &quot;age&quot;: 25
-}
-</code></pre>
-<h3>Footnote</h3>
-<p>Here's a sentence with a footnote. [^1]</p>
-<p>[^1]: This is the footnote.</p>
-<h3>Heading ID</h3>
-<h3 id="custom-id">My Great Heading</h3>
-<h3>Definition List</h3>
-<p>term
-: definition</p>
-<h3>Strikethrough</h3>
-<p><del>The world is flat.</del></p>
 <h3>Task List</h3>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> Write the press release</li>
 <li><input disabled="" type="checkbox"> Update the website</li>
 <li><input disabled="" type="checkbox"> Contact the media</li>
 </ul>
-<h3>Emoji</h3>
-<p>That is so funny! :joy:</p>
-<p>(See also <a href="https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji">Copying and Pasting Emoji</a>)</p>
-<h3>Highlight</h3>
-<p>I need to highlight these ==very important words==.</p>
-<h3>Subscript</h3>
-<p>H~2~O</p>
-<h3>Superscript</h3>
-<p>X^2^</p>
-<hr />
-<blockquote>
-<p>About: This page uses Markdown from The Markdown Guide, and is rendered as a Markdown page. No front matter is used, instead the page title is inferred from the first level one heading.</p>
-</blockquote>
 
 	</article>
 </main>
@@ -192,8 +146,8 @@
 
     <footer aria-label="Page footer" class="flex py-4 px-6 w-full text-center mt-auto bg-slate-100 dark:bg-gray-800">
 	<div class="prose dark:prose-invert text-center mx-auto">
-		<p>HydePHP Monorepo dev-master-<a href="https://github.com/caendesilva/hyde-monorepo/commit/93d8ef410b3eeb13fc8ccfe49a5dc83eea3c254f
-">93d8ef4</a> (compiled 2022-06-09 13:16:29 UTC)</p>
+		<p>HydePHP Monorepo dev-master-<a href="https://github.com/caendesilva/hyde-monorepo/commit/9a506d7856558f3cd7e5a290451ac56f95cc84c0
+">9a506d7</a> (compiled 2022-06-09 16:34:03 UTC - <a href="/build-information.html">Build Information</a>)</p>
 
 	</div>
 	<a href="#app" aria-label="Go to top of page" class="float-right">
