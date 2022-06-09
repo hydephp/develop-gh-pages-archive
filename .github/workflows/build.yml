@@ -19,10 +19,13 @@ jobs:
           hash=$(sha256sum build.php | awk '{print $1}')
           if [ $hash = "d6b7a79f157a271a4add1cc5b602ee1f195a575b5d3e6ee275eb5c40e5057dd3" ] ; then echo "Checksum matches"; else echo "Checksum not matching!" && exit 1 ; fi
 
-      - name: Compile static directory listing
+      - name: Compile static root directory listing
         run: php build.php
+
+      - name: Compile static master directory listing
+        run: cp build.php master/build.php && cd master && php build.php
 
       - name: Commit the created index.html
         uses: EndBug/add-and-commit@050a66787244b10a4874a2a5f682130263edc192
         with:
-          add: 'index.html'
+          add: '["index.html", "master/index.html"]'
