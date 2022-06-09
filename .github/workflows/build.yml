@@ -1,0 +1,28 @@
+name: Precompile Static Site
+
+on:
+  push:
+    branches: [ "gh-pages" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Download directory listing generator script
+        run: wget https://raw.githubusercontent.com/caendesilva/php-directory-listing/9f7309b0946087c1202c7f5146e8883cad049d6b/directory-listing.php -O build.php
+
+      - name: Check download integrity
+        run: |
+          hash=$(sha256sum build.php | awk '{print $1}')
+          if [ $hash = "d6b7a79f157a271a4add1cc5b602ee1f195a575b5d3e6ee275eb5c40e5057dd3" ] ; then echo "Checksum matches"; else echo "Checksum not matching!" && exit 1 ; fi
+
+      - name: Compile static directory listing
+        run: php build.php
+
+      - name: Commit the created index.html
+        uses: EndBug/add-and-commit@050a66787244b10a4874a2a5f682130263edc192
+        with:
+          add: 'index.html'
