@@ -17,7 +17,7 @@ jobs:
       - name: Check download integrity
         run: |
           hash=$(sha256sum build.php | awk '{print $1}')
-          if [ $hash = "d6b7a79f157a271a4add1cc5b602ee1f195a575b5d3e6ee275eb5c40e5057dd3" ] ; then echo "Checksum $hash matches"; else echo "Checksum $hash not matching!" && exit 1 ; fi
+          if [ $hash = "b11ba405cf4c950d69cbbe5e7c75024b6b8299796ff5cb42293564cb18b5eaff" ] ; then echo "Checksum $hash matches"; else echo "Checksum $hash not matching!" && exit 1 ; fi
 
       - name: Set path labels
         run: |
