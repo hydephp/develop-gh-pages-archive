@@ -12,17 +12,17 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Download directory listing generator script
-        run: wget https://raw.githubusercontent.com/caendesilva/php-directory-listing/e02d7cbf4c5b4f69ae87ef442104a78dfc52fae7/directory-listing.php -O .build.php
+        run: wget https://raw.githubusercontent.com/caendesilva/php-directory-listing/7c405cbd2ebdf5c3faf3b36c91d670657f262299/directory-listing.php -O .build.php
 
       - name: Check download integrity
         run: |
           hash=$(sha256sum .build.php | awk '{print $1}')
-          if [ $hash = "42c6b3481c807ef5120ea6cae5aab41be78b2a05be204fe817c626f9f7db29a7" ] ; then echo "Checksum $hash matches"; else echo "Checksum $hash not matching!" && exit 1 ; fi
+          if [ $hash = "d3560f16ef01f433524abdc19cbc847c9b815f65a9b05217340517307fe704ce" ] ; then echo "Checksum $hash matches"; else echo "Checksum $hash not matching!" && exit 1 ; fi
 
       - name: Set path labels
         run: |
-          echo "/hyde-monorepo" > .dl-pathlabel
-          echo "/hyde-monorepo/master" > master/.dl-pathlabel
+          echo "caendesilva.github.io/hyde-monorepo" > .dl-pathlabel
+          echo "caendesilva.github.io/hyde-monorepo/master" > master/.dl-pathlabel
 
       - name: Compile static root directory listing
         run: php .build.php
