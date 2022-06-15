@@ -421,6 +421,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-PublishesHydeViews.html#property_selected"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Application",
+            "name": "Application",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Application.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Application\u003A\u003AregisterBaseBindings\u0028\u0029",
+            "name": "registerBaseBindings",
+            "summary": "\u007B\u0040inheritdoc\u007D",
+            "url": "classes/Hyde-Framework-Application.html#method_registerBaseBindings"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildRssFeedCommand",
             "name": "HydeBuildRssFeedCommand",
             "summary": "Hyde\u0020Command\u0020to\u0020run\u0020the\u0020Build\u0020Process\u0020for\u0020the\u0020RSS\u0020Feed.",
@@ -720,6 +730,21 @@ Search.appendIndex(
             "name": "description",
             "summary": "The\u0020description\u0020of\u0020the\u0020command.",
             "url": "classes/Hyde-Framework-Commands-HydeMakePostCommand.html#property_description"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydePackageDiscoverCommand",
+            "name": "HydePackageDiscoverCommand",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydePackageDiscoverCommand.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydePackageDiscoverCommand\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydePackageDiscoverCommand.html#method_handle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydePackageDiscoverCommand\u003A\u003A\u0024hidden",
+            "name": "hidden",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydePackageDiscoverCommand.html#property_hidden"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydePublishHomepageCommand",
             "name": "HydePublishHomepageCommand",
@@ -3181,6 +3206,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde-framework-actions.html"
         },                {
+            "fqsen": "\\Hyde\\Framework",
+            "name": "Framework",
+            "summary": "",
+            "url": "namespaces/hyde-framework.html"
+        },                {
+            "fqsen": "\\Hyde",
+            "name": "Hyde",
+            "summary": "",
+            "url": "namespaces/hyde.html"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Commands",
             "name": "Commands",
             "summary": "",
@@ -3225,16 +3260,6 @@ Search.appendIndex(
             "name": "Helpers",
             "summary": "",
             "url": "namespaces/hyde-framework-helpers.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework",
-            "name": "Framework",
-            "summary": "",
-            "url": "namespaces/hyde-framework.html"
-        },                {
-            "fqsen": "\\Hyde",
-            "name": "Hyde",
-            "summary": "",
-            "url": "namespaces/hyde.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models",
             "name": "Models",
