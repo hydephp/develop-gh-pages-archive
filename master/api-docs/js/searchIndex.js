@@ -933,23 +933,58 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeValidateCommand",
             "name": "HydeValidateCommand",
-            "summary": "Runs\u0020the\u0020validation\u0020tests.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeValidateCommand.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeValidateCommand\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeValidateCommand.html#method___construct"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeValidateCommand\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
-            "summary": "Execute\u0020the\u0020console\u0020command.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeValidateCommand.html#method_handle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeValidateCommand\u003A\u003Acheck\u0028\u0029",
+            "name": "check",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeValidateCommand.html#method_check"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeValidateCommand\u003A\u003Atime\u0028\u0029",
+            "name": "time",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeValidateCommand.html#method_time"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeValidateCommand\u003A\u003AtimeTotal\u0028\u0029",
+            "name": "timeTotal",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeValidateCommand.html#method_timeTotal"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeValidateCommand\u003A\u003A\u0024signature",
             "name": "signature",
-            "summary": "The\u0020signature\u0020of\u0020the\u0020command.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeValidateCommand.html#property_signature"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeValidateCommand\u003A\u003A\u0024description",
             "name": "description",
-            "summary": "The\u0020description\u0020of\u0020the\u0020command.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeValidateCommand.html#property_description"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeValidateCommand\u003A\u003A\u0024time_start",
+            "name": "time_start",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeValidateCommand.html#property_time_start"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeValidateCommand\u003A\u003A\u0024time_total",
+            "name": "time_total",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeValidateCommand.html#property_time_total"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeValidateCommand\u003A\u003A\u0024service",
+            "name": "service",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeValidateCommand.html#property_service"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Commands\\AsksToRebuildSite",
             "name": "AsksToRebuildSite",
@@ -2401,6 +2436,101 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Parsers-MarkdownPostParser.html#property_matter"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult",
+            "name": "ValidationResult",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003Apass\u0028\u0029",
+            "name": "pass",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_pass"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003Afail\u0028\u0029",
+            "name": "fail",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_fail"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003Askip\u0028\u0029",
+            "name": "skip",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_skip"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AwithTip\u0028\u0029",
+            "name": "withTip",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_withTip"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003A\u0024tip",
+            "name": "tip",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#property_tip"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003A\u0024skipped",
+            "name": "skipped",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#property_skipped"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003A\u0024passed",
+            "name": "passed",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#property_passed"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003Afailed\u0028\u0029",
+            "name": "failed",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_failed"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AstatusCode\u0028\u0029",
+            "name": "statusCode",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_statusCode"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003A\u0024message",
+            "name": "message",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#property_message"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AformattedMessage\u0028\u0029",
+            "name": "formattedMessage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_formattedMessage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AformatResult\u0028\u0029",
+            "name": "formatResult",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_formatResult"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AformatPassed\u0028\u0029",
+            "name": "formatPassed",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_formatPassed"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AformatFailed\u0028\u0029",
+            "name": "formatFailed",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_formatFailed"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AformatSkipped\u0028\u0029",
+            "name": "formatSkipped",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_formatSkipped"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AformatTimeString\u0028\u0029",
+            "name": "formatTimeString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_formatTimeString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AformatTip\u0028\u0029",
+            "name": "formatTip",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_formatTip"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService",
             "name": "AssetService",
             "summary": "",
@@ -3145,6 +3275,61 @@ Search.appendIndex(
             "name": "files",
             "summary": "Mapping\u0020of\u0020the\u0020source\u0020file\u0020to\u0020the\u0020destination\u0020file.",
             "url": "classes/Hyde-Framework-Services-StarterFileService.html#property_files"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ValidationService",
+            "name": "ValidationService",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ValidationService.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ValidationService\u003A\u003Achecks\u0028\u0029",
+            "name": "checks",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ValidationService.html#method_checks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ValidationService\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ValidationService.html#method_run"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ValidationService\u003A\u003Acheck_validators_can_run\u0028\u0029",
+            "name": "check_validators_can_run",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ValidationService.html#method_check_validators_can_run"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ValidationService\u003A\u003Acheck_site_has_a_404_page\u0028\u0029",
+            "name": "check_site_has_a_404_page",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ValidationService.html#method_check_site_has_a_404_page"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ValidationService\u003A\u003Acheck_site_has_an_index_page\u0028\u0029",
+            "name": "check_site_has_an_index_page",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ValidationService.html#method_check_site_has_an_index_page"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ValidationService\u003A\u003Acheck_documentation_site_has_an_index_page\u0028\u0029",
+            "name": "check_documentation_site_has_an_index_page",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ValidationService.html#method_check_documentation_site_has_an_index_page"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ValidationService\u003A\u003Acheck_site_has_an_app_css_stylesheet\u0028\u0029",
+            "name": "check_site_has_an_app_css_stylesheet",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ValidationService.html#method_check_site_has_an_app_css_stylesheet"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ValidationService\u003A\u003Acheck_site_has_a_base_url_set\u0028\u0029",
+            "name": "check_site_has_a_base_url_set",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ValidationService.html#method_check_site_has_a_base_url_set"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ValidationService\u003A\u003Acheck_a_torchlight_api_token_is_set\u0028\u0029",
+            "name": "check_a_torchlight_api_token_is_set",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ValidationService.html#method_check_a_torchlight_api_token_is_set"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ValidationService\u003A\u003Acheck_for_conflicts_between_blade_and_markdown_pages\u0028\u0029",
+            "name": "check_for_conflicts_between_blade_and_markdown_pages",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ValidationService.html#method_check_for_conflicts_between_blade_and_markdown_pages"
         },                {
             "fqsen": "\\Hyde\\Framework\\StaticPageBuilder",
             "name": "StaticPageBuilder",
