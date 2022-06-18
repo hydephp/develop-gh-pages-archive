@@ -12,12 +12,12 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Download directory listing generator script
-        run: wget https://raw.githubusercontent.com/caendesilva/php-directory-listing/7c405cbd2ebdf5c3faf3b36c91d670657f262299/directory-listing.php -O .build.php
+        run: wget https://raw.githubusercontent.com/caendesilva/php-directory-listing/a741e74af1a3e5b8d8b730a437c1666945fbedab/directory-listing.php -O .build.php
 
       - name: Check download integrity
         run: |
           hash=$(sha256sum .build.php | awk '{print $1}')
-          if [ $hash = "d3560f16ef01f433524abdc19cbc847c9b815f65a9b05217340517307fe704ce" ] ; then echo "Checksum $hash matches"; else echo "Checksum $hash not matching!" && exit 1 ; fi
+          if [ $hash = "af021b1bef61e31f426dcbc80540aa192e5a7cecf0db4f6b946851ab3101627d" ] ; then echo "Checksum $hash matches"; else echo "Checksum $hash not matching!" && exit 1 ; fi
 
       - name: Set path labels
         run: |
