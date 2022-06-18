@@ -1276,10 +1276,10 @@ Search.appendIndex(
             "summary": "Offloads\u0020file\u0020helper\u0020methods\u0020for\u0020the\u0020Hyde\u0020Facade.",
             "url": "classes/Hyde-Framework-Concerns-Internal-FileHelpers.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\FileHelpers\u003A\u003AdocsDirectory\u0028\u0029",
-            "name": "docsDirectory",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\FileHelpers\u003A\u003AgetDocumentationOutputDirectory\u0028\u0029",
+            "name": "getDocumentationOutputDirectory",
             "summary": "Get\u0020the\u0020subdirectory\u0020compiled\u0020documentation\u0020files\u0020are\u0020stored\u0020in.",
-            "url": "classes/Hyde-Framework-Concerns-Internal-FileHelpers.html#method_docsDirectory"
+            "url": "classes/Hyde-Framework-Concerns-Internal-FileHelpers.html#method_getDocumentationOutputDirectory"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\FileHelpers\u003A\u003AdocsIndexPath\u0028\u0029",
             "name": "docsIndexPath",
@@ -1901,11 +1901,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Hyde.html#method_titleFromSlug"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Hyde\u003A\u003AgetLatestPosts\u0028\u0029",
-            "name": "getLatestPosts",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Hyde.html#method_getLatestPosts"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Hyde\u003A\u003A\u0024basePath",
             "name": "basePath",
             "summary": "",
@@ -2060,6 +2055,11 @@ Search.appendIndex(
             "name": "getCurrentPagePath",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-DocumentationPage.html#method_getCurrentPagePath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\DocumentationPage\u003A\u003AgetDocumentationOutputPath\u0028\u0029",
+            "name": "getDocumentationOutputPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-DocumentationPage.html#method_getDocumentationOutputPath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\DocumentationPage\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",

@@ -114,7 +114,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Hyde.php"><a href="files/packages-framework-src-hyde.html"><abbr title="packages/framework/src/Hyde.php">Hyde.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -196,13 +196,6 @@
 <dd>Wrapper for the copy function, but allows choosing if files may be overwritten.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-Internal-FileHelpers.html#method_docsDirectory">docsDirectory()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>Get the subdirectory compiled documentation files are stored in.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Concerns-Internal-FileHelpers.html#method_docsIndexPath">docsIndexPath()</a>
     <span>
                                 &nbsp;: string|false    </span>
@@ -231,16 +224,16 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-Internal-FluentPathHelpers.html#method_getDocumentationPagePath">getDocumentationPagePath()</a>
+    <a href="classes/Hyde-Framework-Concerns-Internal-FileHelpers.html#method_getDocumentationOutputDirectory">getDocumentationOutputDirectory()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
+<dd>Get the subdirectory compiled documentation files are stored in.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Hyde.html#method_getLatestPosts">getLatestPosts()</a>
+    <a href="classes/Hyde-Framework-Concerns-Internal-FluentPathHelpers.html#method_getDocumentationPagePath">getDocumentationPagePath()</a>
     <span>
-                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
@@ -391,7 +384,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Hyde.php"><a href="files/packages-framework-src-hyde.html"><abbr title="packages/framework/src/Hyde.php">Hyde.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -462,7 +455,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/Internal/FileHelpers.php"><a href="files/packages-framework-src-concerns-internal-filehelpers.html"><abbr title="packages/framework/src/Concerns/Internal/FileHelpers.php">FileHelpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">159</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -518,56 +511,6 @@
         class="phpdocumentor-element
             -method
             -public
-            -deprecated                        -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_docsDirectory">
-        docsDirectory()
-        <a href="classes/Hyde-Framework-Concerns-Internal-FileHelpers.html#method_docsDirectory" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/Internal/FileHelpers.php"><a href="files/packages-framework-src-concerns-internal-filehelpers.html"><abbr title="packages/framework/src/Concerns/Internal/FileHelpers.php">FileHelpers.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">24</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get the subdirectory compiled documentation files are stored in.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">docsDirectory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">deprecated</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>will be renamed to be more distinct from other path helpers.
-Naming suggestion is <code class="prettyprint">getDocumentationOutputPath()</code>.
-The configuration option has been renamed.</p>
-</section>
-
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_docsIndexPath">
@@ -577,7 +520,7 @@ The configuration option has been renamed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/Internal/FileHelpers.php"><a href="files/packages-framework-src-concerns-internal-filehelpers.html"><abbr title="packages/framework/src/Concerns/Internal/FileHelpers.php">FileHelpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -645,7 +588,7 @@ The configuration option has been renamed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Hyde.php"><a href="files/packages-framework-src-hyde.html"><abbr title="packages/framework/src/Hyde.php">Hyde.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -715,6 +658,54 @@ The configuration option has been renamed.</p>
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getDocumentationOutputDirectory">
+        getDocumentationOutputDirectory()
+        <a href="classes/Hyde-Framework-Concerns-Internal-FileHelpers.html#method_getDocumentationOutputDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/Internal/FileHelpers.php"><a href="files/packages-framework-src-concerns-internal-filehelpers.html"><abbr title="packages/framework/src/Concerns/Internal/FileHelpers.php">FileHelpers.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">22</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the subdirectory compiled documentation files are stored in.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getDocumentationOutputDirectory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>v0.39.x (replaces <code class="prettyprint">Hyde::docsDirectory()</code>)</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_getDocumentationPagePath">
         getDocumentationPagePath()
         <a href="classes/Hyde-Framework-Concerns-Internal-FluentPathHelpers.html#method_getDocumentationPagePath" class="headerlink"><i class="fas fa-link"></i></a>
@@ -749,53 +740,6 @@ The configuration option has been renamed.</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-            -deprecated                        -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_getLatestPosts">
-        getLatestPosts()
-        <a href="classes/Hyde-Framework-Hyde.html#method_getLatestPosts" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Hyde.php"><a href="files/packages-framework-src-hyde.html"><abbr title="packages/framework/src/Hyde.php">Hyde.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">60</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getLatestPosts</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span></code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">deprecated</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>v0.34.x Use MarkdownPost::getLatestPosts() instead.</p>
-</section>
-
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span>
             &mdash;
         
     
@@ -1041,7 +985,7 @@ The configuration option has been renamed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/Internal/FileHelpers.php"><a href="files/packages-framework-src-concerns-internal-filehelpers.html"><abbr title="packages/framework/src/Concerns/Internal/FileHelpers.php">FileHelpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
@@ -1093,7 +1037,7 @@ The configuration option has been renamed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/Internal/FileHelpers.php"><a href="files/packages-framework-src-concerns-internal-filehelpers.html"><abbr title="packages/framework/src/Concerns/Internal/FileHelpers.php">FileHelpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -1151,7 +1095,7 @@ The configuration option has been renamed.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/Internal/FileHelpers.php"><a href="files/packages-framework-src-concerns-internal-filehelpers.html"><abbr title="packages/framework/src/Concerns/Internal/FileHelpers.php">FileHelpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -1242,7 +1186,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/Internal/FileHelpers.php"><a href="files/packages-framework-src-concerns-internal-filehelpers.html"><abbr title="packages/framework/src/Concerns/Internal/FileHelpers.php">FileHelpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -1343,7 +1287,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Hyde.php"><a href="files/packages-framework-src-hyde.html"><abbr title="packages/framework/src/Hyde.php">Hyde.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -1420,7 +1364,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Hyde.php"><a href="files/packages-framework-src-hyde.html"><abbr title="packages/framework/src/Hyde.php">Hyde.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -1464,7 +1408,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/Internal/FileHelpers.php"><a href="files/packages-framework-src-concerns-internal-filehelpers.html"><abbr title="packages/framework/src/Concerns/Internal/FileHelpers.php">FileHelpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -1509,7 +1453,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/Internal/FileHelpers.php"><a href="files/packages-framework-src-concerns-internal-filehelpers.html"><abbr title="packages/framework/src/Concerns/Internal/FileHelpers.php">FileHelpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -1552,7 +1496,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Hyde.php"><a href="files/packages-framework-src-hyde.html"><abbr title="packages/framework/src/Hyde.php">Hyde.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
