@@ -21,8 +21,8 @@ jobs:
 
       - name: Set path labels
         run: |
-          echo "caendesilva.github.io/hyde-monorepo" > .dl-pathlabel
-          echo "caendesilva.github.io/hyde-monorepo/master" > master/.dl-pathlabel
+          echo "hydephp/develop" > .dl-pathlabel
+          echo "hydephp/develop/master" > master/.dl-pathlabel
 
       - name: Compile static root directory listing
         run: php .build.php
