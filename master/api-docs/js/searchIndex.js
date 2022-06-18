@@ -1486,6 +1486,11 @@ Search.appendIndex(
             "summary": "Get\u0020an\u0020array\u0020of\u0020all\u0020the\u0020source\u0020file\u0020slugs\u0020for\u0020the\u0020model.",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_files"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003Aparse\u0028\u0029",
+            "name": "parse",
+            "summary": "Parse\u0020a\u0020source\u0020file\u0020slug\u0020into\u0020a\u0020page\u0020model.",
+            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_parse"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",
             "summary": "",
@@ -1640,6 +1645,11 @@ Search.appendIndex(
             "name": "files",
             "summary": "Get\u0020an\u0020array\u0020of\u0020all\u0020the\u0020source\u0020file\u0020slugs\u0020for\u0020the\u0020model.",
             "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_files"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003Aparse\u0028\u0029",
+            "name": "parse",
+            "summary": "Parse\u0020a\u0020source\u0020file\u0020slug\u0020into\u0020a\u0020page\u0020model.",
+            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_parse"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\PageParserContract",
             "name": "PageParserContract",
