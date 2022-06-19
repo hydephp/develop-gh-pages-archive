@@ -1606,6 +1606,16 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020collection\u0020of\u0020sidebar\u0020items\u0020in\u0020the\u0020class.",
             "url": "classes/Hyde-Framework-Contracts-DocumentationSidebarServiceContract.html#method_getSidebar"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownDocumentContract",
+            "name": "MarkdownDocumentContract",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-MarkdownDocumentContract.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownDocumentContract\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Construct\u0020the\u0020class.",
+            "url": "classes/Hyde-Framework-Contracts-MarkdownDocumentContract.html#method___construct"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownProcessorContract",
             "name": "MarkdownProcessorContract",
             "summary": "",
