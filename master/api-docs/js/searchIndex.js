@@ -6,30 +6,20 @@ Search.appendIndex(
             "summary": "Checks\u0020if\u0020the\u0020installed\u0020config\u0020is\u0020up\u002Dto\u002Ddate\u0020with\u0020the\u0020Framework\u0027s\u0020config.",
             "url": "classes/Hyde-Framework-Actions-ChecksIfConfigIsUpToDate.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\ChecksIfConfigIsUpToDate\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-ChecksIfConfigIsUpToDate.html#method___construct"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\ChecksIfConfigIsUpToDate\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
             "summary": "Execute\u0020the\u0020action.",
             "url": "classes/Hyde-Framework-Actions-ChecksIfConfigIsUpToDate.html#method_execute"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\ChecksIfConfigIsUpToDate\u003A\u003A\u0024isUpToDate",
+            "name": "isUpToDate",
+            "summary": "Cache\u0020result\u0020for\u0020the\u0020application\u0020lifecycle.",
+            "url": "classes/Hyde-Framework-Actions-ChecksIfConfigIsUpToDate.html#property_isUpToDate"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\ChecksIfConfigIsUpToDate\u003A\u003AfindOptions\u0028\u0029",
             "name": "findOptions",
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-ChecksIfConfigIsUpToDate.html#method_findOptions"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\ChecksIfConfigIsUpToDate\u003A\u003A\u0024hydeConfig",
-            "name": "hydeConfig",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-ChecksIfConfigIsUpToDate.html#property_hydeConfig"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\ChecksIfConfigIsUpToDate\u003A\u003A\u0024frameworkConfig",
-            "name": "frameworkConfig",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-ChecksIfConfigIsUpToDate.html#property_frameworkConfig"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\ConvertsArrayToFrontMatter",
             "name": "ConvertsArrayToFrontMatter",
