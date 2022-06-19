@@ -1003,17 +1003,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\FacadeHelpers\\HydeSmartDocsFacade\u003A\u003Acreate\u0028\u0029",
             "name": "create",
-            "summary": "",
+            "summary": "Create\u0020a\u0020new\u0020HydeSmartDocs\u0020instance,\u0020process,\u0020and\u0020return\u0020it.",
             "url": "classes/Hyde-Framework-Concerns-FacadeHelpers-HydeSmartDocsFacade.html#method_create"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\FacadeHelpers\\HydeSmartDocsFacade\u003A\u003AhasTorchlight\u0028\u0029",
             "name": "hasTorchlight",
-            "summary": "",
+            "summary": "Does\u0020the\u0020current\u0020document\u0020use\u0020Torchlight\u003F",
             "url": "classes/Hyde-Framework-Concerns-FacadeHelpers-HydeSmartDocsFacade.html#method_hasTorchlight"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\FacadeHelpers\\HydeSmartDocsFacade\u003A\u003AcanRenderSourceLink\u0028\u0029",
             "name": "canRenderSourceLink",
-            "summary": "",
+            "summary": "Do\u0020we\u0020satisfy\u0020the\u0020requirements\u0020to\u0020render\u0020an\u0020edit\u0020source\u0020button\u0020in\u0020the\u0020supplied\u0020position\u003F",
             "url": "classes/Hyde-Framework-Concerns-FacadeHelpers-HydeSmartDocsFacade.html#method_canRenderSourceLink"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\GeneratesPageMetadata",
