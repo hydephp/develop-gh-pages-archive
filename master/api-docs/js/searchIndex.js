@@ -41,26 +41,6 @@ Search.appendIndex(
             "summary": "Execute\u0020the\u0020action.",
             "url": "classes/Hyde-Framework-Actions-ConvertsFooterMarkdown.html#method_execute"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesDefaultDirectories",
-            "name": "CreatesDefaultDirectories",
-            "summary": "Create\u0020the\u0020default\u0020directories\u0020required\u0020by\u0020the\u0020Application.",
-            "url": "classes/Hyde-Framework-Actions-CreatesDefaultDirectories.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesDefaultDirectories\u003A\u003A__invoke\u0028\u0029",
-            "name": "__invoke",
-            "summary": "Execute\u0020the\u0020action.",
-            "url": "classes/Hyde-Framework-Actions-CreatesDefaultDirectories.html#method___invoke"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesDefaultDirectories\u003A\u003AgetRequiredDirectories\u0028\u0029",
-            "name": "getRequiredDirectories",
-            "summary": "Retrieve\u0020the\u0020array\u0020of\u0020default\u0020directories.",
-            "url": "classes/Hyde-Framework-Actions-CreatesDefaultDirectories.html#method_getRequiredDirectories"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesDefaultDirectories\u003A\u003A\u0024requiredDirectories",
-            "name": "requiredDirectories",
-            "summary": "The\u0020directories\u0020required\u0020by\u0020the\u0020application.",
-            "url": "classes/Hyde-Framework-Actions-CreatesDefaultDirectories.html#property_requiredDirectories"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewMarkdownPostFile",
             "name": "CreatesNewMarkdownPostFile",
             "summary": "Offloads\u0020logic\u0020for\u0020the\u0020make\u003Apost\u0020command.",
