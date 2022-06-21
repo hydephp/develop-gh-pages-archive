@@ -336,6 +336,26 @@ Search.appendIndex(
             "summary": "Parse\u0020the\u0020Markdown\u0020into\u0020HTML.",
             "url": "classes/Hyde-Framework-Actions-MarkdownConverter.html#method_parse"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSitemap",
+            "name": "GenerateSitemap",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSitemap.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSitemap\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSitemap.html#method_run"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSitemap\u003A\u003Athen\u0028\u0029",
+            "name": "then",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSitemap.html#method_then"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSitemap\u003A\u003A\u0024description",
+            "name": "description",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSitemap.html#property_description"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PublishesHomepageView",
             "name": "PublishesHomepageView",
             "summary": "Publish\u0020one\u0020of\u0020the\u0020Hyde\u0020homepages.",
@@ -1436,6 +1456,61 @@ Search.appendIndex(
             "summary": "Check\u0020if\u0020a\u0020supplied\u0020source\u0020file\u0020exists\u0020or\u0020throw\u0020an\u0020exception.",
             "url": "classes/Hyde-Framework-Concerns-ValidatesExistence.html#method_validateExistence"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractBuildTask",
+            "name": "AbstractBuildTask",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractBuildTask.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractBuildTask\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractBuildTask.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractBuildTask\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractBuildTask.html#method_handle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractBuildTask\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractBuildTask.html#method_run"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractBuildTask\u003A\u003Athen\u0028\u0029",
+            "name": "then",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractBuildTask.html#method_then"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractBuildTask\u003A\u003AgetDescription\u0028\u0029",
+            "name": "getDescription",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractBuildTask.html#method_getDescription"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractBuildTask\u003A\u003AgetExecutionTime\u0028\u0029",
+            "name": "getExecutionTime",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractBuildTask.html#method_getExecutionTime"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractBuildTask\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractBuildTask.html#method_write"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractBuildTask\u003A\u003Awriteln\u0028\u0029",
+            "name": "writeln",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractBuildTask.html#method_writeln"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractBuildTask\u003A\u003A\u0024description",
+            "name": "description",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractBuildTask.html#property_description"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractBuildTask\u003A\u003A\u0024timeStart",
+            "name": "timeStart",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractBuildTask.html#property_timeStart"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage",
             "name": "AbstractPage",
             "summary": "To\u0020ensure\u0020compatability\u0020with\u0020the\u0020Hyde\u0020Framework,\nall\u0020Page\u0020Models\u0020must\u0020extend\u0020this\u0020class.",
@@ -1535,6 +1610,41 @@ Search.appendIndex(
             "name": "constructCdnPath",
             "summary": "Construct\u0020a\u0020URI\u0020path\u0020for\u0020the\u0020CDN\u0020using\u0020the\u0020static\u0020dist\u0020version.",
             "url": "classes/Hyde-Framework-Contracts-AssetServiceContract.html#method_constructCdnPath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\BuildTaskContract",
+            "name": "BuildTaskContract",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-BuildTaskContract.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\BuildTaskContract\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-BuildTaskContract.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\BuildTaskContract\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-BuildTaskContract.html#method_run"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\BuildTaskContract\u003A\u003Athen\u0028\u0029",
+            "name": "then",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-BuildTaskContract.html#method_then"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\BuildTaskContract\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-BuildTaskContract.html#method_handle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\BuildTaskContract\u003A\u003AgetDescription\u0028\u0029",
+            "name": "getDescription",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-BuildTaskContract.html#method_getDescription"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\BuildTaskContract\u003A\u003AgetExecutionTime\u0028\u0029",
+            "name": "getExecutionTime",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-BuildTaskContract.html#method_getExecutionTime"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\DocumentationSidebarContract",
             "name": "DocumentationSidebarContract",
@@ -2561,6 +2671,51 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-AssetService.html#method_hasMediaFile"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService",
+            "name": "BuildHookService",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildHookService.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildHookService.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003ArunPostBuildTasks\u0028\u0029",
+            "name": "runPostBuildTasks",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildHookService.html#method_runPostBuildTasks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003AgetPostBuildTasks\u0028\u0029",
+            "name": "getPostBuildTasks",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildHookService.html#method_getPostBuildTasks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildHookService.html#method_run"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003ArunIf\u0028\u0029",
+            "name": "runIf",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildHookService.html#method_runIf"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003ArunTask\u0028\u0029",
+            "name": "runTask",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildHookService.html#method_runTask"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003A\u0024postBuildTasks",
+            "name": "postBuildTasks",
+            "summary": "Offers\u0020a\u0020hook\u0020for\u0020packages\u0020to\u0020add\u0020custom\u0020build\u0020tasks.",
+            "url": "classes/Hyde-Framework-Services-BuildHookService.html#property_postBuildTasks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003A\u0024output",
+            "name": "output",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildHookService.html#property_output"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\CollectionService",
             "name": "CollectionService",
             "summary": "Contains\u0020service\u0020methods\u0020to\u0020return\u0020helpful\u0020collections\u0020of\u0020arrays\u0020and\u0020lists.",
@@ -3390,6 +3545,11 @@ Search.appendIndex(
             "name": "Actions",
             "summary": "",
             "url": "namespaces/hyde-framework-actions.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks",
+            "name": "PostBuildTasks",
+            "summary": "",
+            "url": "namespaces/hyde-framework-actions-postbuildtasks.html"
         },                {
             "fqsen": "\\Hyde\\Framework",
             "name": "Framework",
