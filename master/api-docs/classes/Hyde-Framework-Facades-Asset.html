@@ -91,13 +91,16 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework.html">Framework</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-services.html">Services</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-facades.html">Facades</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    AssetService
+    Asset
 
+        <span class="phpdocumentor-element__extends">
+        extends <abbr title="\Illuminate\Support\Facades\Facade">Facade</abbr>
+    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -106,16 +109,13 @@
                             </ul>
         </div>
     
-            <span class="phpdocumentor-element__implements">
-            implements
-                            <a href="classes/Hyde-Framework-Contracts-AssetServiceContract.html"><abbr title="\Hyde\Framework\Contracts\AssetServiceContract">AssetServiceContract</abbr></a>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/AssetService.php"><a href="files/packages-framework-src-services-assetservice.html"><abbr title="packages/framework/src/Services/AssetService.php">AssetService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Facades/Asset.php"><a href="files/packages-framework-src-facades-asset.html"><abbr title="packages/framework/src/Facades/Asset.php">Asset.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -131,7 +131,7 @@
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Framework-Facades-Asset.html"><abbr title="\Hyde\Framework\Facades\Asset">Asset</abbr></a></span>
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Framework-Services-AssetService.html"><abbr title="\Hyde\Framework\Services\AssetService">AssetService</abbr></a></span>
                                         
                                              
                                     </dd>
@@ -140,18 +140,6 @@
 
 
 
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-AssetServiceContract.html"><abbr title="\Hyde\Framework\Contracts\AssetServiceContract">AssetServiceContract</abbr></a></dt>
-        <dd></dd>
-    
-    
-    
-    </dl>
 
 
 <h3 id="toc">
@@ -160,54 +148,54 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Services-AssetService.html#property_version">$version</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd>The default HydeFront version to load.</dd>
-
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-AssetService.html#method_cdnLink">cdnLink()</a>
+                        <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Facades-Asset.html#method_cdnLink">cdnLink()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Alias for constructCdnPath.</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-AssetService.html#method_constructCdnPath">constructCdnPath()</a>
+    <a href="classes/Hyde-Framework-Facades-Asset.html#method_constructCdnPath">constructCdnPath()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Construct a URI path for the CDN using the static dist version.</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-AssetService.html#method_hasMediaFile">hasMediaFile()</a>
+    <a href="classes/Hyde-Framework-Facades-Asset.html#method_hasMediaFile">hasMediaFile()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-AssetService.html#method_scriptPath">scriptPath()</a>
+    <a href="classes/Hyde-Framework-Facades-Asset.html#method_scriptPath">scriptPath()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Return the main Hyde script location/path.</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-AssetService.html#method_stylePath">stylePath()</a>
+    <a href="classes/Hyde-Framework-Facades-Asset.html#method_stylePath">stylePath()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Return the main Hyde stylesheet location/path.</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-AssetService.html#method_version">version()</a>
+    <a href="classes/Hyde-Framework-Facades-Asset.html#method_version">version()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>The HydeFront version to load.</dd>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Facades-Asset.html#method_getFacadeAccessor">getFacadeAccessor()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
 
         </dl>
 
@@ -216,74 +204,33 @@
         
 
         
-    <section class="phpdocumentor-properties">
-        <h3 class="phpdocumentor-elements__header" id="properties">
-            Properties
-            <a href="classes/Hyde-Framework-Services-AssetService.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_version">
-        $version
-        <a href="classes/Hyde-Framework-Services-AssetService.html#property_version" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/AssetService.php"><a href="files/packages-framework-src-services-assetservice.html"><abbr title="packages/framework/src/Services/AssetService.php">AssetService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">18</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The default HydeFront version to load.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$version</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;v1.11&#039;</span></code>
-
-    
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Hyde-Framework-Services-AssetService.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Facades-Asset.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_cdnLink">
         cdnLink()
-        <a href="classes/Hyde-Framework-Services-AssetService.html#method_cdnLink" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Facades-Asset.html#method_cdnLink" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/AssetService.php"><a href="files/packages-framework-src-services-assetservice.html"><abbr title="packages/framework/src/Services/AssetService.php">AssetService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Facades/Asset.php"><a href="files/packages-framework-src-facades-asset.html"><abbr title="packages/framework/src/Facades/Asset.php">Asset.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">0</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Alias for constructCdnPath.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">cdnLink</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">cdnLink</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -299,21 +246,6 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">since</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>v0.41.x</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
@@ -325,24 +257,23 @@
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_constructCdnPath">
         constructCdnPath()
-        <a href="classes/Hyde-Framework-Services-AssetService.html#method_constructCdnPath" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Facades-Asset.html#method_constructCdnPath" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/AssetService.php"><a href="files/packages-framework-src-services-assetservice.html"><abbr title="packages/framework/src/Services/AssetService.php">AssetService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Facades/Asset.php"><a href="files/packages-framework-src-facades-asset.html"><abbr title="packages/framework/src/Facades/Asset.php">Asset.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">0</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Construct a URI path for the CDN using the static dist version.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">constructCdnPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">constructCdnPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -369,26 +300,25 @@
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_hasMediaFile">
         hasMediaFile()
-        <a href="classes/Hyde-Framework-Services-AssetService.html#method_hasMediaFile" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Facades-Asset.html#method_hasMediaFile" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/AssetService.php"><a href="files/packages-framework-src-services-assetservice.html"><abbr title="packages/framework/src/Services/AssetService.php">AssetService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Facades/Asset.php"><a href="files/packages-framework-src-facades-asset.html"><abbr title="packages/framework/src/Facades/Asset.php">Asset.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">0</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasMediaFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">hasMediaFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -413,24 +343,23 @@
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_scriptPath">
         scriptPath()
-        <a href="classes/Hyde-Framework-Services-AssetService.html#method_scriptPath" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Facades-Asset.html#method_scriptPath" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/AssetService.php"><a href="files/packages-framework-src-services-assetservice.html"><abbr title="packages/framework/src/Services/AssetService.php">AssetService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Facades/Asset.php"><a href="files/packages-framework-src-facades-asset.html"><abbr title="packages/framework/src/Facades/Asset.php">Asset.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">0</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Return the main Hyde script location/path.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">scriptPath</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">scriptPath</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
     
@@ -446,24 +375,23 @@
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_stylePath">
         stylePath()
-        <a href="classes/Hyde-Framework-Services-AssetService.html#method_stylePath" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Facades-Asset.html#method_stylePath" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/AssetService.php"><a href="files/packages-framework-src-services-assetservice.html"><abbr title="packages/framework/src/Services/AssetService.php">AssetService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Facades/Asset.php"><a href="files/packages-framework-src-facades-asset.html"><abbr title="packages/framework/src/Facades/Asset.php">Asset.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">0</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Return the main Hyde stylesheet location/path.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">stylePath</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">stylePath</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
     
@@ -479,26 +407,58 @@
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_version">
         version()
-        <a href="classes/Hyde-Framework-Services-AssetService.html#method_version" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Facades-Asset.html#method_version" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/AssetService.php"><a href="files/packages-framework-src-services-assetservice.html"><abbr title="packages/framework/src/Services/AssetService.php">AssetService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Facades/Asset.php"><a href="files/packages-framework-src-facades-asset.html"><abbr title="packages/framework/src/Facades/Asset.php">Asset.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">version</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getFacadeAccessor">
+        getFacadeAccessor()
+        <a href="classes/Hyde-Framework-Facades-Asset.html#method_getFacadeAccessor" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Facades/Asset.php"><a href="files/packages-framework-src-facades-asset.html"><abbr title="packages/framework/src/Facades/Asset.php">Asset.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The HydeFront version to load.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">version</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
     
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getFacadeAccessor</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
     
     
 
@@ -586,7 +546,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Hyde-Framework-Services-AssetService.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Hyde-Framework-Facades-Asset.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

@@ -1821,6 +1821,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Exceptions-UnsupportedPageTypeException.html#property_code"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Facades\\Asset",
+            "name": "Asset",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Facades-Asset.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Facades\\Asset\u003A\u003AgetFacadeAccessor\u0028\u0029",
+            "name": "getFacadeAccessor",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Facades-Asset.html#method_getFacadeAccessor"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Author",
             "name": "Author",
             "summary": "",
@@ -2665,6 +2675,11 @@ Search.appendIndex(
             "name": "constructCdnPath",
             "summary": "Construct\u0020a\u0020URI\u0020path\u0020for\u0020the\u0020CDN\u0020using\u0020the\u0020static\u0020dist\u0020version.",
             "url": "classes/Hyde-Framework-Services-AssetService.html#method_constructCdnPath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AcdnLink\u0028\u0029",
+            "name": "cdnLink",
+            "summary": "Alias\u0020for\u0020constructCdnPath.",
+            "url": "classes/Hyde-Framework-Services-AssetService.html#method_cdnLink"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AhasMediaFile\u0028\u0029",
             "name": "hasMediaFile",
@@ -3600,6 +3615,11 @@ Search.appendIndex(
             "name": "Exceptions",
             "summary": "",
             "url": "namespaces/hyde-framework-exceptions.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Facades",
+            "name": "Facades",
+            "summary": "",
+            "url": "namespaces/hyde-framework-facades.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers",
             "name": "Helpers",
