@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Dashboard for /home/runner/work/develop/develop/packages/framework/src/Exceptions</title>
+  <title>Dashboard for /home/runner/work/develop/develop/packages/framework/src/Facades</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
@@ -17,7 +17,7 @@
       <nav aria-label="breadcrumb">
        <ol class="breadcrumb">
          <li class="breadcrumb-item"><a href="../index.html">/home/runner/work/develop/develop/packages/framework/src</a></li>
-         <li class="breadcrumb-item"><a href="index.html">Exceptions</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Facades</a></li>
          <li class="breadcrumb-item active">(Dashboard)</li>
 
        </ol>
@@ -58,7 +58,6 @@
         </tr>
        </thead>
        <tbody>
-       <tr><td><a href="UnsupportedPageTypeException.php.html#7">Hyde\Framework\Exceptions\UnsupportedPageTypeException</a></td><td class="text-right">0%</td></tr>
 
        </tbody>
       </table>
@@ -75,7 +74,6 @@
         </tr>
        </thead>
        <tbody>
-       <tr><td><a href="UnsupportedPageTypeException.php.html#7">Hyde\Framework\Exceptions\UnsupportedPageTypeException</a></td><td class="text-right">6</td></tr>
 
        </tbody>
       </table>
@@ -113,7 +111,6 @@
         </tr>
        </thead>
        <tbody>
-       <tr><td><a href="UnsupportedPageTypeException.php.html#12"><abbr title="Hyde\Framework\Exceptions\UnsupportedPageTypeException::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
 
        </tbody>
       </table>
@@ -130,7 +127,6 @@
         </tr>
        </thead>
        <tbody>
-       <tr><td><a href="UnsupportedPageTypeException.php.html#12"><abbr title="Hyde\Framework\Exceptions\UnsupportedPageTypeException::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
 
        </tbody>
       </table>
@@ -159,7 +155,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#classCoverageDistribution svg')
-      .datum(getCoverageDistributionData([1,0,0,0,0,0,0,0,0,0,0,3], "Class Coverage"))
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,1], "Class Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -177,7 +173,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#methodCoverageDistribution svg')
-      .datum(getCoverageDistributionData([1,0,0,0,0,0,0,0,0,0,0,2], "Method Coverage"))
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,1], "Method Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -227,7 +223,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Cyclomatic Complexity');
 
     d3.select('#classComplexity svg')
-      .datum(getComplexityData([[100,0,"<a href=\"CouldNotParseDateStringException.php.html#7\">Hyde\\Framework\\Exceptions\\CouldNotParseDateStringException<\/a>"],[100,2,"<a href=\"FileConflictException.php.html#7\">Hyde\\Framework\\Exceptions\\FileConflictException<\/a>"],[100,2,"<a href=\"FileNotFoundException.php.html#7\">Hyde\\Framework\\Exceptions\\FileNotFoundException<\/a>"],[0,2,"<a href=\"UnsupportedPageTypeException.php.html#7\">Hyde\\Framework\\Exceptions\\UnsupportedPageTypeException<\/a>"]], 'Class Complexity'))
+      .datum(getComplexityData([[100,1,"<a href=\"Asset.php.html#18\">Hyde\\Framework\\Facades\\Asset<\/a>"]], 'Class Complexity'))
       .transition()
       .duration(500)
       .call(chart);
@@ -251,7 +247,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Method Complexity');
 
     d3.select('#methodComplexity svg')
-      .datum(getComplexityData([[100,2,"<a href=\"FileConflictException.php.html#12\">Hyde\\Framework\\Exceptions\\FileConflictException::__construct<\/a>"],[100,2,"<a href=\"FileNotFoundException.php.html#12\">Hyde\\Framework\\Exceptions\\FileNotFoundException::__construct<\/a>"],[0,2,"<a href=\"UnsupportedPageTypeException.php.html#12\">Hyde\\Framework\\Exceptions\\UnsupportedPageTypeException::__construct<\/a>"]], 'Method Complexity'))
+      .datum(getComplexityData([[100,1,"<a href=\"Asset.php.html#20\">Hyde\\Framework\\Facades\\Asset::getFacadeAccessor<\/a>"]], 'Method Complexity'))
       .transition()
       .duration(500)
       .call(chart);
