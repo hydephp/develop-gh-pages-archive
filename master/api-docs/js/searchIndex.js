@@ -1241,26 +1241,6 @@ Search.appendIndex(
             "summary": "Ensure\u0020the\u0020supplied\u0020directories\u0020exist\u0020by\u0020creating\u0020them\u0020if\u0020they\u0020don\u0027t.",
             "url": "classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectories"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\AssetManager",
-            "name": "AssetManager",
-            "summary": "Offloads\u0020asset\u0020related\u0020methods\u0020for\u0020the\u0020Hyde\u0020Facade.",
-            "url": "classes/Hyde-Framework-Concerns-Internal-AssetManager.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\AssetManager\u003A\u003AassetManager\u0028\u0029",
-            "name": "assetManager",
-            "summary": "Get\u0020the\u0020asset\u0020service\u0020instance.",
-            "url": "classes/Hyde-Framework-Concerns-Internal-AssetManager.html#method_assetManager"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\AssetManager\u003A\u003Astyles\u0028\u0029",
-            "name": "styles",
-            "summary": "Return\u0020the\u0020Hyde\u0020stylesheet.",
-            "url": "classes/Hyde-Framework-Concerns-Internal-AssetManager.html#method_styles"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\AssetManager\u003A\u003Ascripts\u0028\u0029",
-            "name": "scripts",
-            "summary": "Return\u0020the\u0020Hyde\u0020scripts.",
-            "url": "classes/Hyde-Framework-Concerns-Internal-AssetManager.html#method_scripts"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\FileHelpers",
             "name": "FileHelpers",
             "summary": "Offloads\u0020file\u0020helper\u0020methods\u0020for\u0020the\u0020Hyde\u0020Facade.",
