@@ -2041,6 +2041,11 @@ Search.appendIndex(
             "summary": "The\u0020absolute\u0020path\u0020to\u0020the\u0020directory\u0020when\u0020the\u0020compiled\u0020site\u0020is\u0020stored.",
             "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_storeCompiledSiteIn"
         },                {
+            "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003AregisterModuleServiceProviders\u0028\u0029",
+            "name": "registerModuleServiceProviders",
+            "summary": "Register\u0020module\u0020service\u0020providers.",
+            "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_registerModuleServiceProviders"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Author",
             "name": "Author",
             "summary": "The\u0020Post\u0020Author\u0020Object\u0020Model.",
@@ -2650,6 +2655,76 @@ Search.appendIndex(
             "name": "formatTip",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_formatTip"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\DataCollection",
+            "name": "DataCollection",
+            "summary": "Generates\u0020Laravel\u0020Collections\u0020from\u0020static\u0020data\u0020files,\nsuch\u0020as\u0020Markdown\u0020components\u0020and\u0020YAML\u0020files.",
+            "url": "classes/Hyde-Framework-Modules-DataCollections-DataCollection.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\DataCollection\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-DataCollections-DataCollection.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\DataCollection\u003A\u003AgetCollection\u0028\u0029",
+            "name": "getCollection",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-DataCollections-DataCollection.html#method_getCollection"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\DataCollection\u003A\u003AgetMarkdownFiles\u0028\u0029",
+            "name": "getMarkdownFiles",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-DataCollections-DataCollection.html#method_getMarkdownFiles"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\DataCollection\u003A\u003Amarkdown\u0028\u0029",
+            "name": "markdown",
+            "summary": "Get\u0020a\u0020collection\u0020of\u0020Markdown\u0020documents\u0020in\u0020the\u0020_data\/\u003C\u0024key\u003E\u0020directory.",
+            "url": "classes/Hyde-Framework-Modules-DataCollections-DataCollection.html#method_markdown"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\DataCollection\u003A\u003A\u0024key",
+            "name": "key",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-DataCollections-DataCollection.html#property_key"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\DataCollection\u003A\u003A\u0024timeStart",
+            "name": "timeStart",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-DataCollections-DataCollection.html#property_timeStart"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\DataCollection\u003A\u003A\u0024parseTimeInMs",
+            "name": "parseTimeInMs",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-DataCollections-DataCollection.html#property_parseTimeInMs"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\DataCollection\u003A\u003A\u0024sourceDirectory",
+            "name": "sourceDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-DataCollections-DataCollection.html#property_sourceDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\DataCollectionServiceProvider",
+            "name": "DataCollectionServiceProvider",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-DataCollections-DataCollectionServiceProvider.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\DataCollectionServiceProvider\u003A\u003Aregister\u0028\u0029",
+            "name": "register",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-DataCollections-DataCollectionServiceProvider.html#method_register"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\DataCollectionServiceProvider\u003A\u003Aboot\u0028\u0029",
+            "name": "boot",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-DataCollections-DataCollectionServiceProvider.html#method_boot"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\Facades\\MarkdownCollection",
+            "name": "MarkdownCollection",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-DataCollections-Facades-MarkdownCollection.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\Facades\\MarkdownCollection\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-DataCollections-Facades-MarkdownCollection.html#method_get"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService",
             "name": "AssetService",
@@ -3635,6 +3710,21 @@ Search.appendIndex(
             "name": "Parsers",
             "summary": "",
             "url": "namespaces/hyde-framework-models-parsers.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections",
+            "name": "DataCollections",
+            "summary": "",
+            "url": "namespaces/hyde-framework-modules-datacollections.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules",
+            "name": "Modules",
+            "summary": "",
+            "url": "namespaces/hyde-framework-modules.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\Facades",
+            "name": "Facades",
+            "summary": "",
+            "url": "namespaces/hyde-framework-modules-datacollections-facades.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services",
             "name": "Services",
