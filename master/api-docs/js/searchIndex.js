@@ -1926,6 +1926,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Helpers-HydeHelperFacade.html#method_hasFeature"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\HydeHelperFacade\u003A\u003AmakeTitle\u0028\u0029",
+            "name": "makeTitle",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-HydeHelperFacade.html#method_makeTitle"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Markdown",
             "name": "Markdown",
             "summary": "General\u0020interface\u0020for\u0020Markdown\u0020services.",
