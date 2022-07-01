@@ -1766,11 +1766,6 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020parsed\u0020page\u0020object.",
             "url": "classes/Hyde-Framework-Contracts-PageParserContract.html#method_get"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Exceptions\\CouldNotParseDateStringException",
-            "name": "CouldNotParseDateStringException",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Exceptions-CouldNotParseDateStringException.html"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Exceptions\\FileConflictException",
             "name": "FileConflictException",
             "summary": "",
