@@ -92,11 +92,12 @@
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework.html">Framework</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-models.html">Models</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-models-pages.html">Pages</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    MarkdownPage
+    MarkdownPost
 
         <span class="phpdocumentor-element__extends">
         extends <a href="classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html"><abbr title="\Hyde\Framework\Contracts\AbstractMarkdownPage">AbstractMarkdownPage</abbr></a>
@@ -110,12 +111,15 @@
         </div>
     
     
+            <span class="phpdocumentor-element__extends">
+            Uses
+                            <a href="classes/Hyde-Framework-Concerns-HasAuthor.html"><abbr title="\Hyde\Framework\Concerns\HasAuthor">HasAuthor</abbr></a>,                             <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html"><abbr title="\Hyde\Framework\Concerns\GeneratesPageMetadata">GeneratesPageMetadata</abbr></a>,                             <a href="classes/Hyde-Framework-Concerns-HasDateString.html"><abbr title="\Hyde\Framework\Concerns\HasDateString">HasDateString</abbr></a>,                             <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html"><abbr title="\Hyde\Framework\Concerns\HasFeaturedImage">HasFeaturedImage</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/MarkdownPage.php"><a href="files/packages-framework-src-models-markdownpage.html"><abbr title="packages/framework/src/Models/MarkdownPage.php">MarkdownPage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">8</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -136,6 +140,13 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#property_author">$author</a>
+    <span>
+                        &nbsp;: <a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#property_body">$body</a>
     <span>
                         &nbsp;: string            </span>
@@ -143,9 +154,30 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_category">$category</a>
+    <span>
+                        &nbsp;: string|null            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Hyde-Framework-Concerns-HasDateString.html#property_date">$date</a>
+    <span>
+                        &nbsp;: <a href="classes/Hyde-Framework-Models-DateString.html"><abbr title="\Hyde\Framework\Models\DateString">DateString</abbr></a>|null            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#property_fileExtension">$fileExtension</a>
     <span>
                         &nbsp;: string            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#property_image">$image</a>
+    <span>
+                        &nbsp;: <a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a>            </span>
 </dt>
 <dd></dd>
 
@@ -164,16 +196,30 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Models-MarkdownPage.html#property_outputDirectory">$outputDirectory</a>
+    <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#property_metadata">$metadata</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_outputDirectory">$outputDirectory</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Models-MarkdownPage.html#property_parserClass">$parserClass</a>
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_parserClass">$parserClass</a>
     <span>
                         &nbsp;: string            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#property_properties">$properties</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd></dd>
 
@@ -185,7 +231,7 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Models-MarkdownPage.html#property_sourceDirectory">$sourceDirectory</a>
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_sourceDirectory">$sourceDirectory</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
@@ -199,7 +245,7 @@
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method___construct">__construct()</a>
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -234,7 +280,49 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#method_constructAuthor">constructAuthor()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#method_constructBaseImage">constructBaseImage()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Concerns-HasDateString.html#method_constructDateString">constructDateString()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Concerns-HasDynamicTitle.html#method_constructDynamicTitle">constructDynamicTitle()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#method_constructFeaturedImage">constructFeaturedImage()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#method_constructFullImage">constructFullImage()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#method_constructMetadata">constructMetadata()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -249,6 +337,13 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Concerns-HasDynamicTitle.html#method_findTitleForDocument">findTitleForDocument()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getCanonicalLink">getCanonicalLink()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -283,6 +378,27 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getLatestPosts">getLatestPosts()</a>
+    <span>
+                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#method_getMetadata">getMetadata()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#method_getMetaProperties">getMetaProperties()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_getOutputDirectory">getOutputDirectory()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -312,6 +428,13 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_getParserClass">getParserClass()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getPostDescription">getPostDescription()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -367,11 +490,46 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#method_createAuthor">createAuthor()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#method_findAuthor">findAuthor()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Concerns-HasDynamicTitle.html#method_findTitleTagInMarkdown">findTitleTagInMarkdown()</a>
     <span>
                                 &nbsp;: string|false    </span>
 </dt>
 <dd>Attempt to find the title based on the first H1 tag.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#method_getAuthorName">getAuthorName()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Parse the author name string from front matter with support for both flat and array notation.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#method_makeOpenGraphPropertiesForArticle">makeOpenGraphPropertiesForArticle()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Generate opengraph metadata from front matter for an og:article such as a blog post.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#method_parseFrontMatterMetadata">parseFrontMatterMetadata()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Generate metadata from the front matter that can be used in standard &lt;meta&gt; tags.</dd>
 
         </dl>
 
@@ -383,8 +541,42 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Hyde-Framework-Models-MarkdownPage.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_author">
+        $author
+        <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#property_author" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasAuthor.php"><a href="files/packages-framework-src-concerns-hasauthor.html"><abbr title="packages/framework/src/Concerns/HasAuthor.php">HasAuthor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">16</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$author</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
                     <article
         class="
             phpdocumentor-element
@@ -424,6 +616,74 @@
             phpdocumentor-element
             -property
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_category">
+        $category
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_category" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">21</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$category</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_date">
+        $date
+        <a href="classes/Hyde-Framework-Concerns-HasDateString.html#property_date" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasDateString.php"><a href="files/packages-framework-src-concerns-hasdatestring.html"><abbr title="packages/framework/src/Concerns/HasDateString.php">HasDateString.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">14</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Hyde-Framework-Models-DateString.html"><abbr title="\Hyde\Framework\Models\DateString">DateString</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$date</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
             -static                                            "
 >
     <h4 class="phpdocumentor-element__name" id="property_fileExtension">
@@ -444,6 +704,40 @@
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$fileExtension</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_image">
+        $image
+        <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#property_image" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasFeaturedImage.php"><a href="files/packages-framework-src-concerns-hasfeaturedimage.html"><abbr title="packages/framework/src/Concerns/HasFeaturedImage.php">HasFeaturedImage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">14</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$image</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -526,18 +820,52 @@
             phpdocumentor-element
             -property
             -public
-            -static                                            "
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="property_outputDirectory">
-        $outputDirectory
-        <a href="classes/Hyde-Framework-Models-MarkdownPage.html#property_outputDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_metadata">
+        $metadata
+        <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#property_metadata" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/MarkdownPage.php"><a href="files/packages-framework-src-models-markdownpage.html"><abbr title="packages/framework/src/Models/MarkdownPage.php">MarkdownPage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/GeneratesPageMetadata.php"><a href="files/packages-framework-src-concerns-generatespagemetadata.html"><abbr title="packages/framework/src/Concerns/GeneratesPageMetadata.php">GeneratesPageMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$metadata</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_outputDirectory">
+        $outputDirectory
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_outputDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -546,7 +874,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$outputDirectory</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+     = <span class="phpdocumentor-signature__default-value">&#039;posts&#039;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -564,14 +892,14 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_parserClass">
         $parserClass
-        <a href="classes/Hyde-Framework-Models-MarkdownPage.html#property_parserClass" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_parserClass" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/MarkdownPage.php"><a href="files/packages-framework-src-models-markdownpage.html"><abbr title="packages/framework/src/Models/MarkdownPage.php">MarkdownPage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -580,7 +908,41 @@
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$parserClass</span>
-     = <span class="phpdocumentor-signature__default-value">\Hyde\Framework\Models\Parsers\MarkdownPageParser::class</span></code>
+     = <span class="phpdocumentor-signature__default-value">\Hyde\Framework\Models\Parsers\MarkdownPostParser::class</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_properties">
+        $properties
+        <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#property_properties" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/GeneratesPageMetadata.php"><a href="files/packages-framework-src-concerns-generatespagemetadata.html"><abbr title="packages/framework/src/Concerns/GeneratesPageMetadata.php">GeneratesPageMetadata.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">17</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$properties</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -632,14 +994,14 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_sourceDirectory">
         $sourceDirectory
-        <a href="classes/Hyde-Framework-Models-MarkdownPage.html#property_sourceDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_sourceDirectory" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/MarkdownPage.php"><a href="files/packages-framework-src-models-markdownpage.html"><abbr title="packages/framework/src/Models/MarkdownPage.php">MarkdownPage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -648,7 +1010,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$sourceDirectory</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;_pages&#039;</span></code>
+     = <span class="phpdocumentor-signature__default-value">&#039;_posts&#039;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -696,7 +1058,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Hyde-Framework-Models-MarkdownPage.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -706,19 +1068,19 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractMarkdownPage.php"><a href="files/packages-framework-src-contracts-abstractmarkdownpage.html"><abbr title="packages/framework/src/Contracts/AbstractMarkdownPage.php">AbstractMarkdownPage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$slug</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Models-MarkdownDocument.html"><abbr title="\Hyde\Framework\Models\MarkdownDocument">MarkdownDocument</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdownDocument</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$slug</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -752,14 +1114,6 @@
                 <span class="phpdocumentor-signature__argument__name">$slug</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$markdownDocument</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Models-MarkdownDocument.html"><abbr title="\Hyde\Framework\Models\MarkdownDocument">MarkdownDocument</abbr></a>|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -924,6 +1278,116 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_constructAuthor">
+        constructAuthor()
+        <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#method_constructAuthor" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasAuthor.php"><a href="files/packages-framework-src-concerns-hasauthor.html"><abbr title="packages/framework/src/Concerns/HasAuthor.php">HasAuthor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">18</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">constructAuthor</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_constructBaseImage">
+        constructBaseImage()
+        <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#method_constructBaseImage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasFeaturedImage.php"><a href="files/packages-framework-src-concerns-hasfeaturedimage.html"><abbr title="packages/framework/src/Concerns/HasFeaturedImage.php">HasFeaturedImage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">28</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">constructBaseImage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$image</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$image</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_constructDateString">
+        constructDateString()
+        <a href="classes/Hyde-Framework-Concerns-HasDateString.html#method_constructDateString" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasDateString.php"><a href="files/packages-framework-src-concerns-hasdatestring.html"><abbr title="packages/framework/src/Concerns/HasDateString.php">HasDateString.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">16</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">constructDateString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_constructDynamicTitle">
         constructDynamicTitle()
         <a href="classes/Hyde-Framework-Concerns-HasDynamicTitle.html#method_constructDynamicTitle" class="headerlink"><i class="fas fa-link"></i></a>
@@ -939,6 +1403,116 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">constructDynamicTitle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_constructFeaturedImage">
+        constructFeaturedImage()
+        <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#method_constructFeaturedImage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasFeaturedImage.php"><a href="files/packages-framework-src-concerns-hasfeaturedimage.html"><abbr title="packages/framework/src/Concerns/HasFeaturedImage.php">HasFeaturedImage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">16</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">constructFeaturedImage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_constructFullImage">
+        constructFullImage()
+        <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#method_constructFullImage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasFeaturedImage.php"><a href="files/packages-framework-src-concerns-hasfeaturedimage.html"><abbr title="packages/framework/src/Concerns/HasFeaturedImage.php">HasFeaturedImage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">constructFullImage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$image</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$image</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_constructMetadata">
+        constructMetadata()
+        <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#method_constructMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/GeneratesPageMetadata.php"><a href="files/packages-framework-src-concerns-generatespagemetadata.html"><abbr title="packages/framework/src/Concerns/GeneratesPageMetadata.php">GeneratesPageMetadata.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">19</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">constructMetadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1017,6 +1591,39 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">findTitleForDocument</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCanonicalLink">
+        getCanonicalLink()
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getCanonicalLink" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getCanonicalLink</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1181,6 +1788,105 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getLatestPosts">
+        getLatestPosts()
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getLatestPosts" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">50</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getLatestPosts</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMetadata">
+        getMetadata()
+        <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#method_getMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/GeneratesPageMetadata.php"><a href="files/packages-framework-src-concerns-generatespagemetadata.html"><abbr title="packages/framework/src/Concerns/GeneratesPageMetadata.php">GeneratesPageMetadata.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">28</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getMetadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMetaProperties">
+        getMetaProperties()
+        <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#method_getMetaProperties" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/GeneratesPageMetadata.php"><a href="files/packages-framework-src-concerns-generatespagemetadata.html"><abbr title="packages/framework/src/Concerns/GeneratesPageMetadata.php">GeneratesPageMetadata.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">33</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getMetaProperties</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
         
     
@@ -1425,6 +2131,39 @@
                                              
                                     </dd>
                         </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getPostDescription">
+        getPostDescription()
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getPostDescription" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getPostDescription</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
@@ -1727,6 +2466,94 @@
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_createAuthor">
+        createAuthor()
+        <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#method_createAuthor" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasAuthor.php"><a href="files/packages-framework-src-concerns-hasauthor.html"><abbr title="packages/framework/src/Concerns/HasAuthor.php">HasAuthor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">createAuthor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_findAuthor">
+        findAuthor()
+        <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#method_findAuthor" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasAuthor.php"><a href="files/packages-framework-src-concerns-hasauthor.html"><abbr title="packages/framework/src/Concerns/HasAuthor.php">HasAuthor.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">35</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">findAuthor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$author</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$author</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_findTitleTagInMarkdown">
         findTitleTagInMarkdown()
         <a href="classes/Hyde-Framework-Concerns-HasDynamicTitle.html#method_findTitleTagInMarkdown" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1761,6 +2588,117 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string|false</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getAuthorName">
+        getAuthorName()
+        <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#method_getAuthorName" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/GeneratesPageMetadata.php"><a href="files/packages-framework-src-concerns-generatespagemetadata.html"><abbr title="packages/framework/src/Concerns/GeneratesPageMetadata.php">GeneratesPageMetadata.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">95</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Parse the author name string from front matter with support for both flat and array notation.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getAuthorName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$author</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$author</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_makeOpenGraphPropertiesForArticle">
+        makeOpenGraphPropertiesForArticle()
+        <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#method_makeOpenGraphPropertiesForArticle" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/GeneratesPageMetadata.php"><a href="files/packages-framework-src-concerns-generatespagemetadata.html"><abbr title="packages/framework/src/Concerns/GeneratesPageMetadata.php">GeneratesPageMetadata.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generate opengraph metadata from front matter for an og:article such as a blog post.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">makeOpenGraphPropertiesForArticle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_parseFrontMatterMetadata">
+        parseFrontMatterMetadata()
+        <a href="classes/Hyde-Framework-Concerns-GeneratesPageMetadata.html#method_parseFrontMatterMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/GeneratesPageMetadata.php"><a href="files/packages-framework-src-concerns-generatespagemetadata.html"><abbr title="packages/framework/src/Concerns/GeneratesPageMetadata.php">GeneratesPageMetadata.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">42</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generate metadata from the front matter that can be used in standard &lt;meta&gt; tags.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">parseFrontMatterMetadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"><p>This helper is page type agnostic and works with any kind of model having front matter.</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -1843,7 +2781,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Hyde-Framework-Models-MarkdownPage.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

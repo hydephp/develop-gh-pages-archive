@@ -2131,56 +2131,6 @@ Search.appendIndex(
             "summary": "The\u0020author\u0027s\u0020website\u0020URI.",
             "url": "classes/Hyde-Framework-Models-Author.html#property_website"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\BladePage",
-            "name": "BladePage",
-            "summary": "A\u0020basic\u0020wrapper\u0020for\u0020the\u0020custom\u0020Blade\u0020View\u0020compiler.",
-            "url": "classes/Hyde-Framework-Models-BladePage.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\BladePage\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-BladePage.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\BladePage\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "Since\u0020this\u0020model\u0020also\u0020acts\u0020as\u0020a\u0020Blade\u0020View\u0020compiler,\nwe\u0020implement\u0020the\u0020get\u0020method\u0020for\u0020compatability.",
-            "url": "classes/Hyde-Framework-Models-BladePage.html#method_get"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\BladePage\u003A\u003Aexecute\u0028\u0029",
-            "name": "execute",
-            "summary": "Since\u0020this\u0020model\u0020also\u0020acts\u0020as\u0020a\u0020Blade\u0020View\u0020compiler,\nwe\u0020implement\u0020the\u0020execute\u0020method\u0020for\u0020compatability.",
-            "url": "classes/Hyde-Framework-Models-BladePage.html#method_execute"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\BladePage\u003A\u003A\u0024view",
-            "name": "view",
-            "summary": "The\u0020name\u0020of\u0020the\u0020Blade\u0020View\u0020to\u0020compile.",
-            "url": "classes/Hyde-Framework-Models-BladePage.html#property_view"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\BladePage\u003A\u003A\u0024slug",
-            "name": "slug",
-            "summary": "The\u0020page\u0020slug\u0020for\u0020compatibility.",
-            "url": "classes/Hyde-Framework-Models-BladePage.html#property_slug"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\BladePage\u003A\u003A\u0024sourceDirectory",
-            "name": "sourceDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-BladePage.html#property_sourceDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\BladePage\u003A\u003A\u0024outputDirectory",
-            "name": "outputDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-BladePage.html#property_outputDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\BladePage\u003A\u003A\u0024fileExtension",
-            "name": "fileExtension",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-BladePage.html#property_fileExtension"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\BladePage\u003A\u003A\u0024parserClass",
-            "name": "parserClass",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-BladePage.html#property_parserClass"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\DateString",
             "name": "DateString",
             "summary": "Parse\u0020a\u0020date\u0020string\u0020and\u0020create\u0020normalized\u0020formats.",
@@ -2215,36 +2165,6 @@ Search.appendIndex(
             "name": "short",
             "summary": "Shorter\u0020version\u0020of\u0020the\u0020sentence\u0020string.",
             "url": "classes/Hyde-Framework-Models-DateString.html#property_short"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\DocumentationPage",
-            "name": "DocumentationPage",
-            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020Page\u0020Models.",
-            "url": "classes/Hyde-Framework-Models-DocumentationPage.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\DocumentationPage\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-DocumentationPage.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\DocumentationPage\u003A\u003AgetDocumentationOutputPath\u0028\u0029",
-            "name": "getDocumentationOutputPath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-DocumentationPage.html#method_getDocumentationOutputPath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\DocumentationPage\u003A\u003A\u0024sourceDirectory",
-            "name": "sourceDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-DocumentationPage.html#property_sourceDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\DocumentationPage\u003A\u003A\u0024outputDirectory",
-            "name": "outputDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-DocumentationPage.html#property_outputDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\DocumentationPage\u003A\u003A\u0024parserClass",
-            "name": "parserClass",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-DocumentationPage.html#property_parserClass"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\DocumentationSidebar",
             "name": "DocumentationSidebar",
@@ -2456,70 +2376,150 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#method_parseFile"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownPage",
-            "name": "MarkdownPage",
-            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020Page\u0020Models.",
-            "url": "classes/Hyde-Framework-Models-MarkdownPage.html"
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage",
+            "name": "BladePage",
+            "summary": "A\u0020basic\u0020wrapper\u0020for\u0020the\u0020custom\u0020Blade\u0020View\u0020compiler.",
+            "url": "classes/Hyde-Framework-Models-Pages-BladePage.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownPage\u003A\u003A\u0024sourceDirectory",
-            "name": "sourceDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownPage.html#property_sourceDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownPage\u003A\u003A\u0024outputDirectory",
-            "name": "outputDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownPage.html#property_outputDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownPage\u003A\u003A\u0024parserClass",
-            "name": "parserClass",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownPage.html#property_parserClass"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownPost",
-            "name": "MarkdownPost",
-            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020Page\u0020Models.",
-            "url": "classes/Hyde-Framework-Models-MarkdownPost.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownPost\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownPost.html#method___construct"
+            "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownPost\u003A\u003AgetCanonicalLink\u0028\u0029",
-            "name": "getCanonicalLink",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownPost.html#method_getCanonicalLink"
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Since\u0020this\u0020model\u0020also\u0020acts\u0020as\u0020a\u0020Blade\u0020View\u0020compiler,\nwe\u0020implement\u0020the\u0020get\u0020method\u0020for\u0020compatability.",
+            "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#method_get"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownPost\u003A\u003AgetPostDescription\u0028\u0029",
-            "name": "getPostDescription",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownPost.html#method_getPostDescription"
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "Since\u0020this\u0020model\u0020also\u0020acts\u0020as\u0020a\u0020Blade\u0020View\u0020compiler,\nwe\u0020implement\u0020the\u0020execute\u0020method\u0020for\u0020compatability.",
+            "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#method_execute"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownPost\u003A\u003AgetLatestPosts\u0028\u0029",
-            "name": "getLatestPosts",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownPost.html#method_getLatestPosts"
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A\u0024view",
+            "name": "view",
+            "summary": "The\u0020name\u0020of\u0020the\u0020Blade\u0020View\u0020to\u0020compile.",
+            "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#property_view"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownPost\u003A\u003A\u0024category",
-            "name": "category",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownPost.html#property_category"
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A\u0024slug",
+            "name": "slug",
+            "summary": "The\u0020page\u0020slug\u0020for\u0020compatibility.",
+            "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#property_slug"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownPost\u003A\u003A\u0024sourceDirectory",
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownPost.html#property_sourceDirectory"
+            "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#property_sourceDirectory"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownPost\u003A\u003A\u0024outputDirectory",
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A\u0024outputDirectory",
             "name": "outputDirectory",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownPost.html#property_outputDirectory"
+            "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#property_outputDirectory"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownPost\u003A\u003A\u0024parserClass",
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A\u0024fileExtension",
+            "name": "fileExtension",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#property_fileExtension"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A\u0024parserClass",
             "name": "parserClass",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownPost.html#property_parserClass"
+            "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#property_parserClass"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage",
+            "name": "DocumentationPage",
+            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020Page\u0020Models.",
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AgetDocumentationOutputPath\u0028\u0029",
+            "name": "getDocumentationOutputPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_getDocumentationOutputPath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A\u0024sourceDirectory",
+            "name": "sourceDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_sourceDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A\u0024outputDirectory",
+            "name": "outputDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_outputDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A\u0024parserClass",
+            "name": "parserClass",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_parserClass"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPage",
+            "name": "MarkdownPage",
+            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020Page\u0020Models.",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPage.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPage\u003A\u003A\u0024sourceDirectory",
+            "name": "sourceDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPage.html#property_sourceDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPage\u003A\u003A\u0024outputDirectory",
+            "name": "outputDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPage.html#property_outputDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPage\u003A\u003A\u0024parserClass",
+            "name": "parserClass",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPage.html#property_parserClass"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost",
+            "name": "MarkdownPost",
+            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020Page\u0020Models.",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AgetCanonicalLink\u0028\u0029",
+            "name": "getCanonicalLink",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getCanonicalLink"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AgetPostDescription\u0028\u0029",
+            "name": "getPostDescription",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getPostDescription"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AgetLatestPosts\u0028\u0029",
+            "name": "getLatestPosts",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getLatestPosts"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003A\u0024category",
+            "name": "category",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_category"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003A\u0024sourceDirectory",
+            "name": "sourceDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_sourceDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003A\u0024outputDirectory",
+            "name": "outputDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_outputDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003A\u0024parserClass",
+            "name": "parserClass",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_parserClass"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Parsers\\DocumentationPageParser",
             "name": "DocumentationPageParser",
@@ -3795,6 +3795,11 @@ Search.appendIndex(
             "name": "Models",
             "summary": "",
             "url": "namespaces/hyde-framework-models.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages",
+            "name": "Pages",
+            "summary": "",
+            "url": "namespaces/hyde-framework-models-pages.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Parsers",
             "name": "Parsers",
