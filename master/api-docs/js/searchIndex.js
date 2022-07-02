@@ -531,10 +531,10 @@ Search.appendIndex(
             "summary": "Run\u0020any\u0020post\u002Dbuild\u0020actions.",
             "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#method_runPostBuildActions"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand\u003A\u003Apurge\u0028\u0029",
-            "name": "purge",
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand\u003A\u003AcleanOutputDirectory\u0028\u0029",
+            "name": "cleanOutputDirectory",
             "summary": "Clear\u0020the\u0020entire\u0020output\u0020directory\u0020before\u0020running\u0020the\u0020build.",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#method_purge"
+            "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#method_cleanOutputDirectory"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand\u003A\u003ArunNodeCommand\u0028\u0029",
             "name": "runNodeCommand",
