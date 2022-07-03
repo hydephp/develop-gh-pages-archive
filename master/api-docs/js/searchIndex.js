@@ -1391,20 +1391,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-Markdown-HasTorchlightIntegration.html#property_torchlightAttribution"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersDefaultDirectories",
-            "name": "RegistersDefaultDirectories",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations",
+            "name": "RegistersFileLocations",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-RegistersDefaultDirectories.html"
+            "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersDefaultDirectories\u003A\u003AregisterSourceDirectories\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations\u003A\u003AregisterSourceDirectories\u0028\u0029",
             "name": "registerSourceDirectories",
             "summary": "Register\u0020the\u0020default\u0020source\u0020directories\u0020for\u0020the\u0020given\u0020page\u0020classes.",
-            "url": "classes/Hyde-Framework-Concerns-RegistersDefaultDirectories.html#method_registerSourceDirectories"
+            "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_registerSourceDirectories"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersDefaultDirectories\u003A\u003AregisterOutputDirectories\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations\u003A\u003AregisterOutputDirectories\u0028\u0029",
             "name": "registerOutputDirectories",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-RegistersDefaultDirectories.html#method_registerOutputDirectories"
+            "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_registerOutputDirectories"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\ValidatesExistence",
             "name": "ValidatesExistence",
