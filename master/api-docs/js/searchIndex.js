@@ -2041,11 +2041,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Hyde.html#method_setBasePath"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Hyde\u003A\u003AtitleFromSlug\u0028\u0029",
-            "name": "titleFromSlug",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Hyde.html#method_titleFromSlug"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Hyde\u003A\u003A\u0024basePath",
             "name": "basePath",
             "summary": "",
@@ -2865,26 +2860,6 @@ Search.appendIndex(
             "name": "getSourceFileListForModel",
             "summary": "Supply\u0020a\u0020model\u003A\u003Aclass\u0020constant\u0020and\u0020get\u0020a\u0020list\u0020of\u0020all\u0020the\u0020existing\u0020source\u0020file\u0020base\u0020names.",
             "url": "classes/Hyde-Framework-Services-CollectionService.html#method_getSourceFileListForModel"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AgetBladePageList\u0028\u0029",
-            "name": "getBladePageList",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-CollectionService.html#method_getBladePageList"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AgetMarkdownPageList\u0028\u0029",
-            "name": "getMarkdownPageList",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-CollectionService.html#method_getMarkdownPageList"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AgetMarkdownPostList\u0028\u0029",
-            "name": "getMarkdownPostList",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-CollectionService.html#method_getMarkdownPostList"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AgetDocumentationPageList\u0028\u0029",
-            "name": "getDocumentationPageList",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-CollectionService.html#method_getDocumentationPageList"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AgetBladePageFiles\u0028\u0029",
             "name": "getBladePageFiles",
