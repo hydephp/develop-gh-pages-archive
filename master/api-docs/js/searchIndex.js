@@ -1221,11 +1221,6 @@ Search.appendIndex(
             "summary": "Offloads\u0020file\u0020helper\u0020methods\u0020for\u0020the\u0020Hyde\u0020Facade.",
             "url": "classes/Hyde-Framework-Concerns-Internal-FileHelpers.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\FileHelpers\u003A\u003AgetDocumentationOutputDirectory\u0028\u0029",
-            "name": "getDocumentationOutputDirectory",
-            "summary": "Get\u0020the\u0020subdirectory\u0020compiled\u0020documentation\u0020files\u0020are\u0020stored\u0020in.",
-            "url": "classes/Hyde-Framework-Concerns-Internal-FileHelpers.html#method_getDocumentationOutputDirectory"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\FileHelpers\u003A\u003AdocsIndexPath\u0028\u0029",
             "name": "docsIndexPath",
             "summary": "Get\u0020the\u0020path\u0020to\u0020the\u0020frontpage\u0020for\u0020the\u0020documentation.",
