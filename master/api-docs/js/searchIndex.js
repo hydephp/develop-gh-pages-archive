@@ -1253,7 +1253,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\FileHelpers\u003A\u003Aimage\u0028\u0029",
             "name": "image",
-            "summary": "Gets\u0020a\u0020relative\u0020link\u0020to\u0020the\u0020given\u0020image\u0020stored\u0020in\u0020the\u0020_site\/media\u0020folder.",
+            "summary": "Gets\u0020a\u0020relative\u0020web\u0020link\u0020to\u0020the\u0020given\u0020image\u0020stored\u0020in\u0020the\u0020_site\/media\u0020folder.",
             "url": "classes/Hyde-Framework-Concerns-Internal-FileHelpers.html#method_image"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\FileHelpers\u003A\u003AuriPath\u0028\u0029",
