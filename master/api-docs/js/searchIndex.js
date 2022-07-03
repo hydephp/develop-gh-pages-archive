@@ -2021,6 +2021,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Helpers-Meta.html#method_formatOpenGraphProperty"
         },                {
+            "fqsen": "\\hyde\u0028\u0029",
+            "name": "hyde",
+            "summary": "Get\u0020the\u0020Hyde\u0020facade\u0020class.",
+            "url": "namespaces/default.html#function_hyde"
+        },                {
+            "fqsen": "\\unslash\u0028\u0029",
+            "name": "unslash",
+            "summary": "Remove\u0020trailing\u0020slashes\u0020from\u0020the\u0020start\u0020and\u0020end\u0020of\u0020a\u0020string.",
+            "url": "namespaces/default.html#function_unslash"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Hyde",
             "name": "Hyde",
             "summary": "General\u0020facade\u0020for\u0020Hyde\u0020services.",
