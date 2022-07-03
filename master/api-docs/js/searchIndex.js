@@ -1393,7 +1393,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations",
             "name": "RegistersFileLocations",
-            "summary": "",
+            "summary": "This\u0020trait\u0020registers\u0020the\u0020file\u0020paths\u0020for\u0020important\u0020Hyde\u0020locations.",
             "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations\u003A\u003AregisterSourceDirectories\u0028\u0029",
@@ -1405,6 +1405,16 @@ Search.appendIndex(
             "name": "registerOutputDirectories",
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_registerOutputDirectories"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations\u003A\u003AdiscoverBladeViewsIn\u0028\u0029",
+            "name": "discoverBladeViewsIn",
+            "summary": "If\u0020you\u0020are\u0020loading\u0020Blade\u0020views\u0020from\u0020a\u0020different\u0020directory,\nyou\u0020need\u0020to\u0020add\u0020the\u0020path\u0020to\u0020the\u0020view.php\u0020config.\u0020This\u0020is\nhere\u0020done\u0020automatically\u0020when\u0020registering\u0020the\u0020provider.",
+            "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_discoverBladeViewsIn"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations\u003A\u003AstoreCompiledSiteIn\u0028\u0029",
+            "name": "storeCompiledSiteIn",
+            "summary": "The\u0020absolute\u0020path\u0020to\u0020the\u0020directory\u0020when\u0020the\u0020compiled\u0020site\u0020is\u0020stored.",
+            "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_storeCompiledSiteIn"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\ValidatesExistence",
             "name": "ValidatesExistence",
@@ -2071,15 +2081,10 @@ Search.appendIndex(
             "summary": "Bootstrap\u0020any\u0020application\u0020services.",
             "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_boot"
         },                {
-            "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003AdiscoverBladeViewsIn\u0028\u0029",
-            "name": "discoverBladeViewsIn",
-            "summary": "If\u0020you\u0020are\u0020loading\u0020Blade\u0020views\u0020from\u0020a\u0020different\u0020directory,\nyou\u0020need\u0020to\u0020add\u0020the\u0020path\u0020to\u0020the\u0020view.php\u0020config.\u0020This\u0020is\nhere\u0020done\u0020automatically\u0020when\u0020registering\u0020this\u0020provider.",
-            "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_discoverBladeViewsIn"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003AstoreCompiledSiteIn\u0028\u0029",
-            "name": "storeCompiledSiteIn",
-            "summary": "The\u0020absolute\u0020path\u0020to\u0020the\u0020directory\u0020when\u0020the\u0020compiled\u0020site\u0020is\u0020stored.",
-            "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_storeCompiledSiteIn"
+            "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003AregisterHydeConsoleCommands\u0028\u0029",
+            "name": "registerHydeConsoleCommands",
+            "summary": "Register\u0020the\u0020HydeCLI\u0020console\u0020commands.",
+            "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_registerHydeConsoleCommands"
         },                {
             "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003AregisterModuleServiceProviders\u0028\u0029",
             "name": "registerModuleServiceProviders",

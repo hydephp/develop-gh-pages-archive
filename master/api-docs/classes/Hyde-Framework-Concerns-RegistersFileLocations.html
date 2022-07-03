@@ -102,12 +102,17 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/RegistersFileLocations.php"><a href="files/packages-framework-src-concerns-registersfilelocations.html"><abbr title="packages/framework/src/Concerns/RegistersFileLocations.php">RegistersFileLocations.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
-        
-    <section class="phpdocumentor-description"></section>
+            <p class="phpdocumentor-summary">This trait registers the file paths for important Hyde locations.</p>
+
+    <section class="phpdocumentor-description"><p>If you want to customize these directories, the recommended way is to
+create a service provider that uses this trait, and change your
+paths in the register method, like in the HydeServiceProvider.</p>
+<p>Remember that your overriding provider should be loaded after the HSP.</p>
+</section>
 
 
 
@@ -123,6 +128,15 @@
 
 <dl class="phpdocumentor-table-of-contents">
                         <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_discoverBladeViewsIn">discoverBladeViewsIn()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>If you are loading Blade views from a different directory,
+you need to add the path to the view.php config. This is
+here done automatically when registering the provider.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_registerOutputDirectories">registerOutputDirectories()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -135,6 +149,13 @@
                                 &nbsp;: void    </span>
 </dt>
 <dd>Register the default source directories for the given page classes.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_storeCompiledSiteIn">storeCompiledSiteIn()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>The absolute path to the directory when the compiled site is stored.</dd>
 
         </dl>
 
@@ -153,6 +174,52 @@
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_discoverBladeViewsIn">
+        discoverBladeViewsIn()
+        <a href="classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_discoverBladeViewsIn" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/RegistersFileLocations.php"><a href="files/packages-framework-src-concerns-registersfilelocations.html"><abbr title="packages/framework/src/Concerns/RegistersFileLocations.php">RegistersFileLocations.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">If you are loading Blade views from a different directory,
+you need to add the path to the view.php config. This is
+here done automatically when registering the provider.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">discoverBladeViewsIn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$directory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$directory</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_registerOutputDirectories">
         registerOutputDirectories()
         <a href="classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_registerOutputDirectories" class="headerlink"><i class="fas fa-link"></i></a>
@@ -160,7 +227,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/RegistersFileLocations.php"><a href="files/packages-framework-src-concerns-registersfilelocations.html"><abbr title="packages/framework/src/Concerns/RegistersFileLocations.php">RegistersFileLocations.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -204,7 +271,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/RegistersFileLocations.php"><a href="files/packages-framework-src-concerns-registersfilelocations.html"><abbr title="packages/framework/src/Concerns/RegistersFileLocations.php">RegistersFileLocations.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -245,6 +312,52 @@
 
                                     </dd>
                         </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_storeCompiledSiteIn">
+        storeCompiledSiteIn()
+        <a href="classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_storeCompiledSiteIn" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/RegistersFileLocations.php"><a href="files/packages-framework-src-concerns-registersfilelocations.html"><abbr title="packages/framework/src/Concerns/RegistersFileLocations.php">RegistersFileLocations.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The absolute path to the directory when the compiled site is stored.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">storeCompiledSiteIn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$directory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"><p>Warning! This directory is emptied when compiling the site.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$directory</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
