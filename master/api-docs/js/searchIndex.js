@@ -1221,11 +1221,6 @@ Search.appendIndex(
             "summary": "Offloads\u0020file\u0020helper\u0020methods\u0020for\u0020the\u0020Hyde\u0020Facade.",
             "url": "classes/Hyde-Framework-Concerns-Internal-FileHelpers.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\FileHelpers\u003A\u003AdocsIndexPath\u0028\u0029",
-            "name": "docsIndexPath",
-            "summary": "Get\u0020the\u0020path\u0020to\u0020the\u0020frontpage\u0020for\u0020the\u0020documentation.",
-            "url": "classes/Hyde-Framework-Concerns-Internal-FileHelpers.html#method_docsIndexPath"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\FileHelpers\u003A\u003Apath\u0028\u0029",
             "name": "path",
             "summary": "Get\u0020an\u0020absolute\u0020file\u0020path\u0020from\u0020a\u0020supplied\u0020relative\u0020path.",
@@ -2425,6 +2420,11 @@ Search.appendIndex(
             "name": "getDocumentationOutputPath",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_getDocumentationOutputPath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AindexPath\u0028\u0029",
+            "name": "indexPath",
+            "summary": "Get\u0020the\u0020path\u0020to\u0020the\u0020frontpage\u0020for\u0020the\u0020documentation.",
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_indexPath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",
