@@ -1931,6 +1931,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Helpers-Features.html#method_hasDocumentationPages"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AhasDataCollections\u0028\u0029",
+            "name": "hasDataCollections",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Features.html#method_hasDataCollections"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AhasDocumentationSearch\u0028\u0029",
             "name": "hasDocumentationSearch",
             "summary": "",
@@ -1970,6 +1975,11 @@ Search.appendIndex(
             "name": "documentationSearch",
             "summary": "",
             "url": "classes/Hyde-Framework-Helpers-Features.html#method_documentationSearch"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AdataCollections\u0028\u0029",
+            "name": "dataCollections",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Features.html#method_dataCollections"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003Adarkmode\u0028\u0029",
             "name": "darkmode",
