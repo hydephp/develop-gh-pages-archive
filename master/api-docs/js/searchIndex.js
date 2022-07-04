@@ -2036,6 +2036,11 @@ Search.appendIndex(
             "summary": "Remove\u0020trailing\u0020slashes\u0020from\u0020the\u0020start\u0020and\u0020end\u0020of\u0020a\u0020string.",
             "url": "namespaces/default.html#function_unslash"
         },                {
+            "fqsen": "\\array_map_unique\u0028\u0029",
+            "name": "array_map_unique",
+            "summary": "Map\u0020a\u0020callback\u0020over\u0020an\u0020array\u0020and\u0020remove\u0020duplicates.",
+            "url": "namespaces/default.html#function_array_map_unique"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Hyde",
             "name": "Hyde",
             "summary": "General\u0020facade\u0020for\u0020Hyde\u0020services.",
