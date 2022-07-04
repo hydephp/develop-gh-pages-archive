@@ -511,11 +511,6 @@ Search.appendIndex(
             "summary": "Run\u0020any\u0020post\u002Dbuild\u0020actions.",
             "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#method_runPostBuildActions"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand\u003A\u003AcleanOutputDirectory\u0028\u0029",
-            "name": "cleanOutputDirectory",
-            "summary": "Clear\u0020the\u0020entire\u0020output\u0020directory\u0020before\u0020running\u0020the\u0020build.",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#method_cleanOutputDirectory"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand\u003A\u003ArunNodeCommand\u0028\u0029",
             "name": "runNodeCommand",
             "summary": "",
@@ -545,6 +540,11 @@ Search.appendIndex(
             "name": "description",
             "summary": "The\u0020description\u0020of\u0020the\u0020command.",
             "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#property_description"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand\u003A\u003A\u0024service",
+            "name": "service",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#property_service"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeDebugCommand",
             "name": "HydeDebugCommand",
@@ -1295,6 +1295,21 @@ Search.appendIndex(
             "name": "pathToRelative",
             "summary": "Decode\u0020an\u0020absolute\u0020path\u0020created\u0020with\u0020a\u0020Hyde\u003A\u003Apath\u0028\u0029\u0020helper\u0020into\u0020its\u0020relative\u0020counterpart.",
             "url": "classes/Hyde-Framework-Concerns-Internal-FluentPathHelpers.html#method_pathToRelative"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\TransfersMediaAssetsForBuildCommands",
+            "name": "TransfersMediaAssetsForBuildCommands",
+            "summary": "Transfer\u0020all\u0020media\u0020assets\u0020to\u0020the\u0020build\u0020directory.",
+            "url": "classes/Hyde-Framework-Concerns-Internal-TransfersMediaAssetsForBuildCommands.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\TransfersMediaAssetsForBuildCommands\u003A\u003AtransferMediaAssets\u0028\u0029",
+            "name": "transferMediaAssets",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-Internal-TransfersMediaAssetsForBuildCommands.html#method_transferMediaAssets"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\TransfersMediaAssetsForBuildCommands\u003A\u003AcanRunBuildAction\u0028\u0029",
+            "name": "canRunBuildAction",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-Internal-TransfersMediaAssetsForBuildCommands.html#method_canRunBuildAction"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasConfigurableMarkdownFeatures",
             "name": "HasConfigurableMarkdownFeatures",
@@ -2796,6 +2811,11 @@ Search.appendIndex(
             "summary": "Construct\u0020a\u0020new\u0020Route\u0020instance\u0020for\u0020the\u0020given\u0020page\u0020model.",
             "url": "classes/Hyde-Framework-Modules-Routing-Route.html#method___construct"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route\u003A\u003AgetPageType\u0028\u0029",
+            "name": "getPageType",
+            "summary": "Get\u0020the\u0020page\u0020type\u0020for\u0020the\u0020route.",
+            "url": "classes/Hyde-Framework-Modules-Routing-Route.html#method_getPageType"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route\u003A\u003AgetSourceModel\u0028\u0029",
             "name": "getSourceModel",
             "summary": "Get\u0020the\u0020source\u0020model\u0020for\u0020the\u0020route.",
@@ -2850,6 +2870,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Construct\u0020a\u0020new\u0020Route\u0020instance\u0020for\u0020the\u0020given\u0020page\u0020model.",
             "url": "classes/Hyde-Framework-Modules-Routing-RouteContract.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteContract\u003A\u003AgetPageType\u0028\u0029",
+            "name": "getPageType",
+            "summary": "Get\u0020the\u0020page\u0020type\u0020for\u0020the\u0020route.",
+            "url": "classes/Hyde-Framework-Modules-Routing-RouteContract.html#method_getPageType"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteContract\u003A\u003AgetSourceModel\u0028\u0029",
             "name": "getSourceModel",
@@ -2921,6 +2946,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020routes\u0020discovered\u0020by\u0020the\u0020router.",
             "url": "classes/Hyde-Framework-Modules-Routing-Router.html#method_getRoutes"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Router\u003A\u003AgetRoutesForModel\u0028\u0029",
+            "name": "getRoutesForModel",
+            "summary": "Get\u0020all\u0020discovered\u0020routes\u0020for\u0020the\u0020given\u0020page\u0020class.",
+            "url": "classes/Hyde-Framework-Modules-Routing-Router.html#method_getRoutesForModel"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Router\u003A\u003Adiscover\u0028\u0029",
             "name": "discover",
             "summary": "",
@@ -2960,6 +2990,11 @@ Search.appendIndex(
             "name": "getRoutes",
             "summary": "Get\u0020the\u0020routes\u0020discovered\u0020by\u0020the\u0020router.",
             "url": "classes/Hyde-Framework-Modules-Routing-RouterContract.html#method_getRoutes"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouterContract\u003A\u003AgetRoutesForModel\u0028\u0029",
+            "name": "getRoutesForModel",
+            "summary": "Get\u0020all\u0020discovered\u0020routes\u0020for\u0020the\u0020given\u0020page\u0020class.",
+            "url": "classes/Hyde-Framework-Modules-Routing-RouterContract.html#method_getRoutesForModel"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService",
             "name": "AssetService",
@@ -3040,6 +3075,71 @@ Search.appendIndex(
             "name": "output",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-BuildHookService.html#property_output"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService",
+            "name": "BuildService",
+            "summary": "Moves\u0020logic\u0020from\u0020the\u0020build\u0020command\u0020to\u0020a\u0020service.",
+            "url": "classes/Hyde-Framework-Services-BuildService.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildService.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AcompileStaticPages\u0028\u0029",
+            "name": "compileStaticPages",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildService.html#method_compileStaticPages"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AcleanOutputDirectory\u0028\u0029",
+            "name": "cleanOutputDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildService.html#method_cleanOutputDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AtransferMediaAssets\u0028\u0029",
+            "name": "transferMediaAssets",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildService.html#method_transferMediaAssets"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AgetDiscoveredModels\u0028\u0029",
+            "name": "getDiscoveredModels",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildService.html#method_getDiscoveredModels"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AcompilePagesForClass\u0028\u0029",
+            "name": "compilePagesForClass",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildService.html#method_compilePagesForClass"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AcompileRoute\u0028\u0029",
+            "name": "compileRoute",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildService.html#method_compileRoute"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AgetModelPluralName\u0028\u0029",
+            "name": "getModelPluralName",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildService.html#method_getModelPluralName"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AisItSafeToCleanOutputDirectory\u0028\u0029",
+            "name": "isItSafeToCleanOutputDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildService.html#method_isItSafeToCleanOutputDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AisOutputDirectoryWhitelisted\u0028\u0029",
+            "name": "isOutputDirectoryWhitelisted",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildService.html#method_isOutputDirectoryWhitelisted"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AaskIfUnsafeDirectoryShouldBeEmptied\u0028\u0029",
+            "name": "askIfUnsafeDirectoryShouldBeEmptied",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildService.html#method_askIfUnsafeDirectoryShouldBeEmptied"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003A\u0024router",
+            "name": "router",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildService.html#property_router"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\CollectionService",
             "name": "CollectionService",
