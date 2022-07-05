@@ -2871,6 +2871,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020path\u0020to\u0020the\u0020output\u0020file.",
             "url": "classes/Hyde-Framework-Modules-Routing-Route.html#method_getOutputFilePath"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route\u003A\u003AgetLink\u0028\u0029",
+            "name": "getLink",
+            "summary": "Resolve\u0020a\u0020site\u0020web\u0020link\u0020to\u0020the\u0020file,\u0020using\u0020pretty\u0020URLs\u0020if\u0020enabled.",
+            "url": "classes/Hyde-Framework-Modules-Routing-Route.html#method_getLink"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route\u003A\u003AconstructRouteKey\u0028\u0029",
             "name": "constructRouteKey",
             "summary": "",
@@ -2945,6 +2950,11 @@ Search.appendIndex(
             "name": "getOutputFilePath",
             "summary": "Get\u0020the\u0020path\u0020to\u0020the\u0020output\u0020file.",
             "url": "classes/Hyde-Framework-Modules-Routing-RouteContract.html#method_getOutputFilePath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteContract\u003A\u003AgetLink\u0028\u0029",
+            "name": "getLink",
+            "summary": "Resolve\u0020a\u0020site\u0020web\u0020link\u0020to\u0020the\u0020file,\u0020using\u0020pretty\u0020URLs\u0020if\u0020enabled.",
+            "url": "classes/Hyde-Framework-Modules-Routing-RouteContract.html#method_getLink"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteFacadeContract",
             "name": "RouteFacadeContract",
