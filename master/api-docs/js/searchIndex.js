@@ -1596,6 +1596,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getCurrentPagePath"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetRoute\u0028\u0029",
+            "name": "getRoute",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getRoute"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",
             "summary": "",
@@ -1881,20 +1886,20 @@ Search.appendIndex(
             "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020specified\u0020route\u0020key.",
             "url": "classes/Hyde-Framework-Facades-Route.html#method_get"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Facades\\Route\u003A\u003AgetOrFail\u0028\u0029",
-            "name": "getOrFail",
-            "summary": "Same\u0020as\u0020static\u003A\u003Aget\u0028\u0029,\u0020but\u0020throws\u0020an\u0020exception\u0020if\u0020the\u0020route\u0020key\u0020is\u0020not\u0020found.",
-            "url": "classes/Hyde-Framework-Facades-Route.html#method_getOrFail"
+            "fqsen": "\\Hyde\\Framework\\Facades\\Route\u003A\u003AgetFromKey\u0028\u0029",
+            "name": "getFromKey",
+            "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020specified\u0020route\u0020key.",
+            "url": "classes/Hyde-Framework-Facades-Route.html#method_getFromKey"
         },                {
             "fqsen": "\\Hyde\\Framework\\Facades\\Route\u003A\u003AgetFromSource\u0028\u0029",
             "name": "getFromSource",
             "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020specified\u0020source\u0020file\u0020path.",
             "url": "classes/Hyde-Framework-Facades-Route.html#method_getFromSource"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Facades\\Route\u003A\u003AgetFromSourceOrFail\u0028\u0029",
-            "name": "getFromSourceOrFail",
-            "summary": "Same\u0020as\u0020static\u003A\u003AgetFromSource\u0028\u0029,\u0020but\u0020throws\u0020an\u0020exception\u0020if\u0020the\u0020source\u0020file\u0020path\u0020is\u0020not\u0020found.",
-            "url": "classes/Hyde-Framework-Facades-Route.html#method_getFromSourceOrFail"
+            "fqsen": "\\Hyde\\Framework\\Facades\\Route\u003A\u003AgetFromModel\u0028\u0029",
+            "name": "getFromModel",
+            "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020supplied\u0020page\u0020model.",
+            "url": "classes/Hyde-Framework-Facades-Route.html#method_getFromModel"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Author",
             "name": "Author",
@@ -2861,30 +2866,30 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020path\u0020to\u0020the\u0020output\u0020file.",
             "url": "classes/Hyde-Framework-Modules-Routing-Route.html#method_getOutputFilePath"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route\u003A\u003AconstructRouteKey\u0028\u0029",
+            "name": "constructRouteKey",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Routing-Route.html#method_constructRouteKey"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020specified\u0020route\u0020key.",
             "url": "classes/Hyde-Framework-Modules-Routing-Route.html#method_get"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route\u003A\u003AgetOrFail\u0028\u0029",
-            "name": "getOrFail",
-            "summary": "Same\u0020as\u0020static\u003A\u003Aget\u0028\u0029,\u0020but\u0020throws\u0020an\u0020exception\u0020if\u0020the\u0020route\u0020key\u0020is\u0020not\u0020found.",
-            "url": "classes/Hyde-Framework-Modules-Routing-Route.html#method_getOrFail"
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route\u003A\u003AgetFromKey\u0028\u0029",
+            "name": "getFromKey",
+            "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020specified\u0020route\u0020key.",
+            "url": "classes/Hyde-Framework-Modules-Routing-Route.html#method_getFromKey"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route\u003A\u003AgetFromSource\u0028\u0029",
             "name": "getFromSource",
             "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020specified\u0020source\u0020file\u0020path.",
             "url": "classes/Hyde-Framework-Modules-Routing-Route.html#method_getFromSource"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route\u003A\u003AgetFromSourceOrFail\u0028\u0029",
-            "name": "getFromSourceOrFail",
-            "summary": "Same\u0020as\u0020static\u003A\u003AgetFromSource\u0028\u0029,\u0020but\u0020throws\u0020an\u0020exception\u0020if\u0020the\u0020source\u0020file\u0020path\u0020is\u0020not\u0020found.",
-            "url": "classes/Hyde-Framework-Modules-Routing-Route.html#method_getFromSourceOrFail"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route\u003A\u003AconstructRouteKey\u0028\u0029",
-            "name": "constructRouteKey",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Routing-Route.html#method_constructRouteKey"
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route\u003A\u003AgetFromModel\u0028\u0029",
+            "name": "getFromModel",
+            "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020supplied\u0020page\u0020model.",
+            "url": "classes/Hyde-Framework-Modules-Routing-Route.html#method_getFromModel"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route\u003A\u003A\u0024sourceModel",
             "name": "sourceModel",
@@ -2931,25 +2936,30 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020path\u0020to\u0020the\u0020output\u0020file.",
             "url": "classes/Hyde-Framework-Modules-Routing-RouteContract.html#method_getOutputFilePath"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteContract\u003A\u003Aget\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteFacadeContract",
+            "name": "RouteFacadeContract",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Routing-RouteFacadeContract.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteFacadeContract\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020specified\u0020route\u0020key.",
-            "url": "classes/Hyde-Framework-Modules-Routing-RouteContract.html#method_get"
+            "url": "classes/Hyde-Framework-Modules-Routing-RouteFacadeContract.html#method_get"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteContract\u003A\u003AgetOrFail\u0028\u0029",
-            "name": "getOrFail",
-            "summary": "Same\u0020as\u0020static\u003A\u003Aget\u0028\u0029,\u0020but\u0020throws\u0020an\u0020exception\u0020if\u0020the\u0020route\u0020key\u0020is\u0020not\u0020found.",
-            "url": "classes/Hyde-Framework-Modules-Routing-RouteContract.html#method_getOrFail"
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteFacadeContract\u003A\u003AgetFromKey\u0028\u0029",
+            "name": "getFromKey",
+            "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020specified\u0020route\u0020key.",
+            "url": "classes/Hyde-Framework-Modules-Routing-RouteFacadeContract.html#method_getFromKey"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteContract\u003A\u003AgetFromSource\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteFacadeContract\u003A\u003AgetFromSource\u0028\u0029",
             "name": "getFromSource",
             "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020specified\u0020source\u0020file\u0020path.",
-            "url": "classes/Hyde-Framework-Modules-Routing-RouteContract.html#method_getFromSource"
+            "url": "classes/Hyde-Framework-Modules-Routing-RouteFacadeContract.html#method_getFromSource"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteContract\u003A\u003AgetFromSourceOrFail\u0028\u0029",
-            "name": "getFromSourceOrFail",
-            "summary": "Same\u0020as\u0020static\u003A\u003AgetFromSource\u0028\u0029,\u0020but\u0020throws\u0020an\u0020exception\u0020if\u0020the\u0020source\u0020file\u0020path\u0020is\u0020not\u0020found.",
-            "url": "classes/Hyde-Framework-Modules-Routing-RouteContract.html#method_getFromSourceOrFail"
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteFacadeContract\u003A\u003AgetFromModel\u0028\u0029",
+            "name": "getFromModel",
+            "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020supplied\u0020page\u0020model.",
+            "url": "classes/Hyde-Framework-Modules-Routing-RouteFacadeContract.html#method_getFromModel"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteNotFoundException",
             "name": "RouteNotFoundException",
