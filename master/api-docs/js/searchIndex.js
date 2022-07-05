@@ -1901,6 +1901,11 @@ Search.appendIndex(
             "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020supplied\u0020page\u0020model.",
             "url": "classes/Hyde-Framework-Facades-Route.html#method_getFromModel"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Facades\\Route\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "Get\u0020all\u0020routes\u0020from\u0020the\u0020Router\u0020index.",
+            "url": "classes/Hyde-Framework-Facades-Route.html#method_all"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Author",
             "name": "Author",
             "summary": "",
@@ -2891,6 +2896,11 @@ Search.appendIndex(
             "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020supplied\u0020page\u0020model.",
             "url": "classes/Hyde-Framework-Modules-Routing-Route.html#method_getFromModel"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "Get\u0020all\u0020routes\u0020from\u0020the\u0020Router\u0020index.",
+            "url": "classes/Hyde-Framework-Modules-Routing-Route.html#method_all"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route\u003A\u003A\u0024sourceModel",
             "name": "sourceModel",
             "summary": "The\u0020source\u0020model\u0020for\u0020the\u0020route.",
@@ -2960,6 +2970,11 @@ Search.appendIndex(
             "name": "getFromModel",
             "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020supplied\u0020page\u0020model.",
             "url": "classes/Hyde-Framework-Modules-Routing-RouteFacadeContract.html#method_getFromModel"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteFacadeContract\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "Get\u0020all\u0020routes\u0020from\u0020the\u0020Router\u0020index.",
+            "url": "classes/Hyde-Framework-Modules-Routing-RouteFacadeContract.html#method_all"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteNotFoundException",
             "name": "RouteNotFoundException",
