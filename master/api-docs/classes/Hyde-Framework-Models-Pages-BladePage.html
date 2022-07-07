@@ -317,7 +317,7 @@ we implement the get method for compatability.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_getRoute">getRoute()</a>
     <span>
-                                &nbsp;: <a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Modules-Routing-Route.html"><abbr title="\Hyde\Framework\Modules\Routing\Route">Route</abbr></a>    </span>
 </dt>
 <dd></dd>
 
@@ -350,6 +350,20 @@ we implement the get method for compatability.</dd>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Concerns-CanBeInNavigation.html#method_navigationMenuPriority">navigationMenuPriority()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>The relative priority, determining the position of the item in the menu.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Concerns-CanBeInNavigation.html#method_navigationMenuTitle">navigationMenuTitle()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>The page title to display in the navigation menu.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_parse">parse()</a>
     <span>
                                 &nbsp;: static    </span>
@@ -369,6 +383,13 @@ we implement the get method for compatability.</dd>
                                 &nbsp;: string    </span>
 </dt>
 <dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Concerns-CanBeInNavigation.html#method_showInNavigation">showInNavigation()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Should the item should be displayed in the navigation menu?</dd>
 
         </dl>
 
@@ -650,7 +671,7 @@ in .blade.php to be compiled.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -828,7 +849,7 @@ we implement the execute method for compatability.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -940,7 +961,7 @@ we implement the get method for compatability.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -1018,7 +1039,7 @@ we implement the get method for compatability.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -1063,7 +1084,7 @@ we implement the get method for compatability.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -1108,7 +1129,7 @@ we implement the get method for compatability.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -1164,7 +1185,7 @@ we implement the get method for compatability.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
@@ -1209,7 +1230,7 @@ we implement the get method for compatability.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -1265,7 +1286,7 @@ we implement the get method for compatability.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -1310,14 +1331,14 @@ we implement the get method for compatability.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getRoute</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">getRoute</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Modules-Routing-Route.html"><abbr title="\Hyde\Framework\Modules\Routing\Route">Route</abbr></a></span></code>
 
     
     
@@ -1337,7 +1358,7 @@ we implement the get method for compatability.</p>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Modules-Routing-Route.html"><abbr title="\Hyde\Framework\Modules\Routing\Route">Route</abbr></a></span>
             &mdash;
         
     
@@ -1355,7 +1376,7 @@ we implement the get method for compatability.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -1400,7 +1421,7 @@ we implement the get method for compatability.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -1502,6 +1523,72 @@ we implement the get method for compatability.</p>
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_navigationMenuPriority">
+        navigationMenuPriority()
+        <a href="classes/Hyde-Framework-Concerns-CanBeInNavigation.html#method_navigationMenuPriority" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/CanBeInNavigation.php"><a href="files/packages-framework-src-concerns-canbeinnavigation.html"><abbr title="packages/framework/src/Concerns/CanBeInNavigation.php">CanBeInNavigation.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">50</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The relative priority, determining the position of the item in the menu.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">navigationMenuPriority</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_navigationMenuTitle">
+        navigationMenuTitle()
+        <a href="classes/Hyde-Framework-Concerns-CanBeInNavigation.html#method_navigationMenuTitle" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/CanBeInNavigation.php"><a href="files/packages-framework-src-concerns-canbeinnavigation.html"><abbr title="packages/framework/src/Concerns/CanBeInNavigation.php">CanBeInNavigation.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">82</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The page title to display in the navigation menu.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">navigationMenuTitle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_parse">
@@ -1511,7 +1598,7 @@ we implement the get method for compatability.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -1567,7 +1654,7 @@ we implement the get method for compatability.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -1639,6 +1726,39 @@ we implement the get method for compatability.</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_showInNavigation">
+        showInNavigation()
+        <a href="classes/Hyde-Framework-Concerns-CanBeInNavigation.html#method_showInNavigation" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/CanBeInNavigation.php"><a href="files/packages-framework-src-concerns-canbeinnavigation.html"><abbr title="packages/framework/src/Concerns/CanBeInNavigation.php">CanBeInNavigation.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">22</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Should the item should be displayed in the navigation menu?</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">showInNavigation</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     

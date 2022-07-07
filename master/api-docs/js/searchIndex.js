@@ -236,56 +236,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-GeneratesDocumentationSearchIndexFile.html#property_filePath"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesNavigationMenu",
-            "name": "GeneratesNavigationMenu",
-            "summary": "Generate\u0020the\u0020dynamic\u0020navigation\u0020menu.",
-            "url": "classes/Hyde-Framework-Actions-GeneratesNavigationMenu.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesNavigationMenu\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Construct\u0020the\u0020class.",
-            "url": "classes/Hyde-Framework-Actions-GeneratesNavigationMenu.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesNavigationMenu\u003A\u003AgetLinks\u0028\u0029",
-            "name": "getLinks",
-            "summary": "Create\u0020the\u0020link\u0020array.",
-            "url": "classes/Hyde-Framework-Actions-GeneratesNavigationMenu.html#method_getLinks"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesNavigationMenu\u003A\u003AgetLinksFromConfig\u0028\u0029",
-            "name": "getLinksFromConfig",
-            "summary": "Get\u0020the\u0020custom\u0020navigation\u0020links\u0020from\u0020the\u0020config,\u0020if\u0020there\u0020are\u0020any.",
-            "url": "classes/Hyde-Framework-Actions-GeneratesNavigationMenu.html#method_getLinksFromConfig"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesNavigationMenu\u003A\u003AgetTitleFromSlug\u0028\u0029",
-            "name": "getTitleFromSlug",
-            "summary": "Get\u0020the\u0020page\u0020title.",
-            "url": "classes/Hyde-Framework-Actions-GeneratesNavigationMenu.html#method_getTitleFromSlug"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesNavigationMenu\u003A\u003AgetListOfCustomPages\u0028\u0029",
-            "name": "getListOfCustomPages",
-            "summary": "Get\u0020a\u0020list\u0020of\u0020all\u0020the\u0020top\u0020level\u0020pages.",
-            "url": "classes/Hyde-Framework-Actions-GeneratesNavigationMenu.html#method_getListOfCustomPages"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesNavigationMenu\u003A\u003AgetRelativeRoutePathForSlug\u0028\u0029",
-            "name": "getRelativeRoutePathForSlug",
-            "summary": "Inject\u0020the\u0020proper\u0020number\u0020of\u0020\u0060..\/\u0060\u0020before\u0020the\u0020links.",
-            "url": "classes/Hyde-Framework-Actions-GeneratesNavigationMenu.html#method_getRelativeRoutePathForSlug"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesNavigationMenu\u003A\u003AgetNavigationLinks\u0028\u0029",
-            "name": "getNavigationLinks",
-            "summary": "Static\u0020helper\u0020to\u0020get\u0020the\u0020array\u0020of\u0020navigation\u0020links.",
-            "url": "classes/Hyde-Framework-Actions-GeneratesNavigationMenu.html#method_getNavigationLinks"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesNavigationMenu\u003A\u003A\u0024currentPage",
-            "name": "currentPage",
-            "summary": "The\u0020current\u0020page\u0020route\u0020string.",
-            "url": "classes/Hyde-Framework-Actions-GeneratesNavigationMenu.html#property_currentPage"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesNavigationMenu\u003A\u003A\u0024links",
-            "name": "links",
-            "summary": "The\u0020created\u0020array\u0020of\u0020navigation\u0020links.",
-            "url": "classes/Hyde-Framework-Actions-GeneratesNavigationMenu.html#property_links"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesTableOfContents",
             "name": "GeneratesTableOfContents",
             "summary": "Generates\u0020a\u0020table\u0020of\u0020contents\u0020for\u0020the\u0020Markdown\u0020document.",
@@ -945,6 +895,26 @@ Search.appendIndex(
             "name": "service",
             "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeValidateCommand.html#property_service"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\CanBeInNavigation",
+            "name": "CanBeInNavigation",
+            "summary": "Offloads\u0020logic\u0020related\u0020to\u0020navigation\u0020menu\u0020items\u0020for\u0020AbstractPage\u0020classes.",
+            "url": "classes/Hyde-Framework-Concerns-CanBeInNavigation.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\CanBeInNavigation\u003A\u003AshowInNavigation\u0028\u0029",
+            "name": "showInNavigation",
+            "summary": "Should\u0020the\u0020item\u0020should\u0020be\u0020displayed\u0020in\u0020the\u0020navigation\u0020menu\u003F",
+            "url": "classes/Hyde-Framework-Concerns-CanBeInNavigation.html#method_showInNavigation"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\CanBeInNavigation\u003A\u003AnavigationMenuPriority\u0028\u0029",
+            "name": "navigationMenuPriority",
+            "summary": "The\u0020relative\u0020priority,\u0020determining\u0020the\u0020position\u0020of\u0020the\u0020item\u0020in\u0020the\u0020menu.",
+            "url": "classes/Hyde-Framework-Concerns-CanBeInNavigation.html#method_navigationMenuPriority"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\CanBeInNavigation\u003A\u003AnavigationMenuTitle\u0028\u0029",
+            "name": "navigationMenuTitle",
+            "summary": "The\u0020page\u0020title\u0020to\u0020display\u0020in\u0020the\u0020navigation\u0020menu.",
+            "url": "classes/Hyde-Framework-Concerns-CanBeInNavigation.html#method_navigationMenuTitle"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Commands\\AsksToRebuildSite",
             "name": "AsksToRebuildSite",
@@ -2416,6 +2386,56 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#method_parseFile"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\NavItem",
+            "name": "NavItem",
+            "summary": "Abstraction\u0020for\u0020a\u0020navigation\u0020menu\u0020item.",
+            "url": "classes/Hyde-Framework-Models-NavItem.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-NavItem.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003AfromRoute\u0028\u0029",
+            "name": "fromRoute",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-NavItem.html#method_fromRoute"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003AresolveLink\u0028\u0029",
+            "name": "resolveLink",
+            "summary": "Resolve\u0020a\u0020link\u0020to\u0020the\u0020navigation\u0020item.",
+            "url": "classes/Hyde-Framework-Models-NavItem.html#method_resolveLink"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-NavItem.html#method___toString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003A\u0024route",
+            "name": "route",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-NavItem.html#property_route"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003A\u0024href",
+            "name": "href",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-NavItem.html#property_href"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003A\u0024title",
+            "name": "title",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-NavItem.html#property_title"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003A\u0024priority",
+            "name": "priority",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-NavItem.html#property_priority"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003A\u0024hidden",
+            "name": "hidden",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-NavItem.html#property_hidden"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage",
             "name": "BladePage",
             "summary": "A\u0020basic\u0020wrapper\u0020for\u0020the\u0020custom\u0020Blade\u0020View\u0020compiler.",
@@ -2626,6 +2646,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Parsers-MarkdownPageParser.html#property_title"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Parsers\\MarkdownPageParser\u003A\u003A\u0024matter",
+            "name": "matter",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Parsers-MarkdownPageParser.html#property_matter"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Parsers\\MarkdownPageParser\u003A\u003A\u0024body",
             "name": "body",
             "summary": "",
@@ -2835,6 +2860,56 @@ Search.appendIndex(
             "name": "get",
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-DataCollections-Facades-MarkdownCollection.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Navigation\\NavigationMenu",
+            "name": "NavigationMenu",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Navigation-NavigationMenu.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Navigation\\NavigationMenu\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Navigation-NavigationMenu.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Navigation\\NavigationMenu\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Navigation-NavigationMenu.html#method_create"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Navigation\\NavigationMenu\u003A\u003AsetCurrentRoute\u0028\u0029",
+            "name": "setCurrentRoute",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Navigation-NavigationMenu.html#method_setCurrentRoute"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Navigation\\NavigationMenu\u003A\u003Agenerate\u0028\u0029",
+            "name": "generate",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Navigation-NavigationMenu.html#method_generate"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Navigation\\NavigationMenu\u003A\u003Afilter\u0028\u0029",
+            "name": "filter",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Navigation-NavigationMenu.html#method_filter"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Navigation\\NavigationMenu\u003A\u003Asort\u0028\u0029",
+            "name": "sort",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Navigation-NavigationMenu.html#method_sort"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Navigation\\NavigationMenu\u003A\u003A\u0024homeRoute",
+            "name": "homeRoute",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Navigation-NavigationMenu.html#property_homeRoute"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Navigation\\NavigationMenu\u003A\u003A\u0024currentRoute",
+            "name": "currentRoute",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Navigation-NavigationMenu.html#property_currentRoute"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Navigation\\NavigationMenu\u003A\u003A\u0024items",
+            "name": "items",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Navigation-NavigationMenu.html#property_items"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\Route",
             "name": "Route",
@@ -4051,6 +4126,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde-framework-commands.html"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns",
+            "name": "Concerns",
+            "summary": "",
+            "url": "namespaces/hyde-framework-concerns.html"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Commands",
             "name": "Commands",
             "summary": "",
@@ -4060,11 +4140,6 @@ Search.appendIndex(
             "name": "FacadeHelpers",
             "summary": "",
             "url": "namespaces/hyde-framework-concerns-facadehelpers.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns",
-            "name": "Concerns",
-            "summary": "",
-            "url": "namespaces/hyde-framework-concerns.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Internal",
             "name": "Internal",
@@ -4125,6 +4200,11 @@ Search.appendIndex(
             "name": "Facades",
             "summary": "",
             "url": "namespaces/hyde-framework-modules-datacollections-facades.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Navigation",
+            "name": "Navigation",
+            "summary": "",
+            "url": "namespaces/hyde-framework-modules-navigation.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing",
             "name": "Routing",
