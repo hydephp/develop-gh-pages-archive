@@ -3161,6 +3161,11 @@ Search.appendIndex(
             "summary": "The\u0020routes\u0020discovered\u0020by\u0020the\u0020router.",
             "url": "classes/Hyde-Framework-Router.html#property_routes"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Router\u003A\u003A\u0024instance",
+            "name": "instance",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Router.html#property_instance"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService",
             "name": "AssetService",
             "summary": "",
