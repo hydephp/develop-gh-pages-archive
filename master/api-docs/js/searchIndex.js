@@ -2393,13 +2393,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Create\u0020a\u0020new\u0020navigation\u0020menu\u0020item.",
             "url": "classes/Hyde-Framework-Models-NavItem.html#method___construct"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003AfromRoute\u0028\u0029",
             "name": "fromRoute",
-            "summary": "",
+            "summary": "Create\u0020a\u0020new\u0020navigation\u0020menu\u0020item\u0020from\u0020a\u0020route.",
             "url": "classes/Hyde-Framework-Models-NavItem.html#method_fromRoute"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003AtoLink\u0028\u0029",
+            "name": "toLink",
+            "summary": "Create\u0020a\u0020new\u0020navigation\u0020menu\u0020item\u0020leading\u0020to\u0020an\u0020external\u0020URI.",
+            "url": "classes/Hyde-Framework-Models-NavItem.html#method_toLink"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003AresolveLink\u0028\u0029",
             "name": "resolveLink",
@@ -2410,6 +2415,16 @@ Search.appendIndex(
             "name": "__toString",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-NavItem.html#method___toString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003AisCurrent\u0028\u0029",
+            "name": "isCurrent",
+            "summary": "Check\u0020if\u0020the\u0020NavItem\u0020instance\u0020is\u0020the\u0020current\u0020page.",
+            "url": "classes/Hyde-Framework-Models-NavItem.html#method_isCurrent"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003AsetDestination\u0028\u0029",
+            "name": "setDestination",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-NavItem.html#method_setDestination"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003A\u0024route",
             "name": "route",
@@ -2895,11 +2910,6 @@ Search.appendIndex(
             "name": "sort",
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-Navigation-NavigationMenu.html#method_sort"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Navigation\\NavigationMenu\u003A\u003A\u0024homeRoute",
-            "name": "homeRoute",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Navigation-NavigationMenu.html#property_homeRoute"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Navigation\\NavigationMenu\u003A\u003A\u0024currentRoute",
             "name": "currentRoute",
