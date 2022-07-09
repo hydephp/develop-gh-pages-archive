@@ -91,8 +91,6 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework.html">Framework</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-modules.html">Modules</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-modules-routing.html">Routing</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
@@ -109,14 +107,14 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Hyde-Framework-Modules-Routing-RouterContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouterContract">RouterContract</abbr></a>                    </span>
+                            <a href="classes/Hyde-Framework-Contracts-RouterContract.html"><abbr title="\Hyde\Framework\Contracts\RouterContract">RouterContract</abbr></a>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Router.php"><a href="files/packages-framework-src-modules-routing-router.html"><abbr title="packages/framework/src/Modules/Routing/Router.php">Router.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Router.php"><a href="files/packages-framework-src-router.html"><abbr title="packages/framework/src/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -173,7 +171,7 @@ the parsed route index using the Laravel cache in the future.</p>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Modules-Routing-RouterContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouterContract">RouterContract</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-RouterContract.html"><abbr title="\Hyde\Framework\Contracts\RouterContract">RouterContract</abbr></a></dt>
         <dd></dd>
     
     
@@ -188,56 +186,56 @@ the parsed route index using the Laravel cache in the future.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Framework-Modules-Routing-Router.html#property_routes">$routes</a>
+    <a href="classes/Hyde-Framework-Router.html#property_routes">$routes</a>
     <span>
                         &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>            </span>
 </dt>
 <dd>The routes discovered by the router.</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Router.html#method___construct">__construct()</a>
+    <a href="classes/Hyde-Framework-Router.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Construct a new Router instance and discover all routes.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Router.html#method_getInstance">getInstance()</a>
+    <a href="classes/Hyde-Framework-Router.html#method_getInstance">getInstance()</a>
     <span>
-                                &nbsp;: <a href="classes/Hyde-Framework-Modules-Routing-RouterContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouterContract">RouterContract</abbr></a>    </span>
+                                &nbsp;: <abbr title="\Hyde\Framework\Modules\Routing\RouterContract">RouterContract</abbr>    </span>
 </dt>
 <dd>Get the Singleton instance of the Router.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Router.html#method_getRoutes">getRoutes()</a>
+    <a href="classes/Hyde-Framework-Router.html#method_getRoutes">getRoutes()</a>
     <span>
-                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>&gt;    </span>
 </dt>
 <dd>Get the routes discovered by the router.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Router.html#method_getRoutesForModel">getRoutesForModel()</a>
+    <a href="classes/Hyde-Framework-Router.html#method_getRoutesForModel">getRoutesForModel()</a>
     <span>
-                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>&gt;    </span>
 </dt>
 <dd>Get all discovered routes for the given page class.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Modules-Routing-Router.html#method_discover">discover()</a>
+    <a href="classes/Hyde-Framework-Router.html#method_discover">discover()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Modules-Routing-Router.html#method_discoverPageRoutes">discoverPageRoutes()</a>
+    <a href="classes/Hyde-Framework-Router.html#method_discoverPageRoutes">discoverPageRoutes()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Modules-Routing-Router.html#method_discoverRoutes">discoverRoutes()</a>
+    <a href="classes/Hyde-Framework-Router.html#method_discoverRoutes">discoverRoutes()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
@@ -253,7 +251,7 @@ the parsed route index using the Laravel cache in the future.</p>
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Hyde-Framework-Modules-Routing-Router.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Router.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -264,14 +262,14 @@ the parsed route index using the Laravel cache in the future.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property_routes">
         $routes
-        <a href="classes/Hyde-Framework-Modules-Routing-Router.html#property_routes" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Router.html#property_routes" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Router.php"><a href="files/packages-framework-src-modules-routing-router.html"><abbr title="packages/framework/src/Modules/Routing/Router.php">Router.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Router.php"><a href="files/packages-framework-src-router.html"><abbr title="packages/framework/src/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -293,7 +291,7 @@ the parsed route index using the Laravel cache in the future.</p>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Hyde-Framework-Modules-Routing-Router.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Router.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -303,12 +301,12 @@ the parsed route index using the Laravel cache in the future.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Hyde-Framework-Modules-Routing-Router.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Router.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Router.php"><a href="files/packages-framework-src-modules-routing-router.html"><abbr title="packages/framework/src/Modules/Routing/Router.php">Router.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Router.php"><a href="files/packages-framework-src-router.html"><abbr title="packages/framework/src/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -349,12 +347,12 @@ the parsed route index using the Laravel cache in the future.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getInstance">
         getInstance()
-        <a href="classes/Hyde-Framework-Modules-Routing-Router.html#method_getInstance" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Router.html#method_getInstance" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Router.php"><a href="files/packages-framework-src-modules-routing-router.html"><abbr title="packages/framework/src/Modules/Routing/Router.php">Router.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Router.php"><a href="files/packages-framework-src-router.html"><abbr title="packages/framework/src/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -362,7 +360,7 @@ the parsed route index using the Laravel cache in the future.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getInstance</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Modules-Routing-RouterContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouterContract">RouterContract</abbr></a></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getInstance</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Hyde\Framework\Modules\Routing\RouterContract">RouterContract</abbr></span></code>
 
     
     
@@ -382,7 +380,7 @@ the parsed route index using the Laravel cache in the future.</p>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Modules-Routing-RouterContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouterContract">RouterContract</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Hyde\Framework\Modules\Routing\RouterContract">RouterContract</abbr></span>
             &mdash;
         
     
@@ -395,12 +393,12 @@ the parsed route index using the Laravel cache in the future.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getRoutes">
         getRoutes()
-        <a href="classes/Hyde-Framework-Modules-Routing-Router.html#method_getRoutes" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Router.html#method_getRoutes" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Router.php"><a href="files/packages-framework-src-modules-routing-router.html"><abbr title="packages/framework/src/Modules/Routing/Router.php">Router.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Router.php"><a href="files/packages-framework-src-router.html"><abbr title="packages/framework/src/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -408,7 +406,7 @@ the parsed route index using the Laravel cache in the future.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getRoutes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getRoutes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>&gt;</span></code>
 
     
     
@@ -428,7 +426,7 @@ the parsed route index using the Laravel cache in the future.</p>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>&gt;</span>
             &mdash;
         
     
@@ -441,12 +439,12 @@ the parsed route index using the Laravel cache in the future.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getRoutesForModel">
         getRoutesForModel()
-        <a href="classes/Hyde-Framework-Modules-Routing-Router.html#method_getRoutesForModel" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Router.html#method_getRoutesForModel" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Router.php"><a href="files/packages-framework-src-modules-routing-router.html"><abbr title="packages/framework/src/Modules/Routing/Router.php">Router.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Router.php"><a href="files/packages-framework-src-router.html"><abbr title="packages/framework/src/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -454,7 +452,7 @@ the parsed route index using the Laravel cache in the future.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getRoutesForModel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getRoutesForModel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -484,7 +482,7 @@ the parsed route index using the Laravel cache in the future.</p>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>&gt;</span>
             &mdash;
         
     
@@ -497,12 +495,12 @@ the parsed route index using the Laravel cache in the future.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_discover">
         discover()
-        <a href="classes/Hyde-Framework-Modules-Routing-Router.html#method_discover" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Router.html#method_discover" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Router.php"><a href="files/packages-framework-src-modules-routing-router.html"><abbr title="packages/framework/src/Modules/Routing/Router.php">Router.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Router.php"><a href="files/packages-framework-src-router.html"><abbr title="packages/framework/src/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -541,12 +539,12 @@ the parsed route index using the Laravel cache in the future.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_discoverPageRoutes">
         discoverPageRoutes()
-        <a href="classes/Hyde-Framework-Modules-Routing-Router.html#method_discoverPageRoutes" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Router.html#method_discoverPageRoutes" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Router.php"><a href="files/packages-framework-src-modules-routing-router.html"><abbr title="packages/framework/src/Modules/Routing/Router.php">Router.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Router.php"><a href="files/packages-framework-src-router.html"><abbr title="packages/framework/src/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -585,12 +583,12 @@ the parsed route index using the Laravel cache in the future.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_discoverRoutes">
         discoverRoutes()
-        <a href="classes/Hyde-Framework-Modules-Routing-Router.html#method_discoverRoutes" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Router.html#method_discoverRoutes" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Router.php"><a href="files/packages-framework-src-modules-routing-router.html"><abbr title="packages/framework/src/Modules/Routing/Router.php">Router.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Router.php"><a href="files/packages-framework-src-router.html"><abbr title="packages/framework/src/Router.php">Router.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -688,7 +686,7 @@ the parsed route index using the Laravel cache in the future.</p>
 </section>
             </div>
         </div>
-        <a href="classes/Hyde-Framework-Modules-Routing-Router.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Hyde-Framework-Router.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

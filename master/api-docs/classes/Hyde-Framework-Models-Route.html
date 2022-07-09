@@ -91,8 +91,7 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework.html">Framework</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-modules.html">Modules</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-modules-routing.html">Routing</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-models.html">Models</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
@@ -109,14 +108,14 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a>,                             <a href="classes/Hyde-Framework-Modules-Routing-RouteFacadeContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteFacadeContract">RouteFacadeContract</abbr></a>                    </span>
+                            <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>,                             <a href="classes/Hyde-Framework-Contracts-RouteFacadeContract.html"><abbr title="\Hyde\Framework\Contracts\RouteFacadeContract">RouteFacadeContract</abbr></a>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -147,9 +146,9 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></dt>
         <dd>This contract defines the methods that a Route object must implement.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Modules-Routing-RouteFacadeContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteFacadeContract">RouteFacadeContract</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-RouteFacadeContract.html"><abbr title="\Hyde\Framework\Contracts\RouteFacadeContract">RouteFacadeContract</abbr></a></dt>
         <dd>This contract defines the static facade methods for the Route class.</dd>
     
     
@@ -164,105 +163,105 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Framework-Modules-Routing-Route.html#property_routeKey">$routeKey</a>
+    <a href="classes/Hyde-Framework-Models-Route.html#property_routeKey">$routeKey</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd>The unique route key for the route.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Framework-Modules-Routing-Route.html#property_sourceModel">$sourceModel</a>
+    <a href="classes/Hyde-Framework-Models-Route.html#property_sourceModel">$sourceModel</a>
     <span>
                         &nbsp;: <abbr title="\Hyde\Framework\Contracts\PageContract">PageContract</abbr>            </span>
 </dt>
 <dd>The source model for the route.</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method___construct">__construct()</a>
+    <a href="classes/Hyde-Framework-Models-Route.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Construct a new Route instance for the given page model.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_all">all()</a>
+    <a href="classes/Hyde-Framework-Models-Route.html#method_all">all()</a>
     <span>
-                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>&gt;    </span>
 </dt>
 <dd>Get all routes from the Router index.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_get">get()</a>
+    <a href="classes/Hyde-Framework-Models-Route.html#method_get">get()</a>
     <span>
-                                &nbsp;: <a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>    </span>
 </dt>
 <dd>Get a route from the Router index for the specified route key.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getFromKey">getFromKey()</a>
+    <a href="classes/Hyde-Framework-Models-Route.html#method_getFromKey">getFromKey()</a>
     <span>
-                                &nbsp;: <a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>    </span>
 </dt>
 <dd>Get a route from the Router index for the specified route key.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getFromModel">getFromModel()</a>
+    <a href="classes/Hyde-Framework-Models-Route.html#method_getFromModel">getFromModel()</a>
     <span>
-                                &nbsp;: <a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>    </span>
 </dt>
 <dd>Get a route from the Router index for the supplied page model.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getFromSource">getFromSource()</a>
+    <a href="classes/Hyde-Framework-Models-Route.html#method_getFromSource">getFromSource()</a>
     <span>
-                                &nbsp;: <a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a>    </span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>    </span>
 </dt>
 <dd>Get a route from the Router index for the specified source file path.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getLink">getLink()</a>
+    <a href="classes/Hyde-Framework-Models-Route.html#method_getLink">getLink()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Resolve a site web link to the file, using pretty URLs if enabled.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getOutputFilePath">getOutputFilePath()</a>
+    <a href="classes/Hyde-Framework-Models-Route.html#method_getOutputFilePath">getOutputFilePath()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get the path to the output file.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getPageType">getPageType()</a>
+    <a href="classes/Hyde-Framework-Models-Route.html#method_getPageType">getPageType()</a>
     <span>
                                 &nbsp;: class-string<\Hyde\Framework\Contracts\PageContract>    </span>
 </dt>
 <dd>Get the page type for the route.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getRouteKey">getRouteKey()</a>
+    <a href="classes/Hyde-Framework-Models-Route.html#method_getRouteKey">getRouteKey()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get the unique route key for the route.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getSourceFilePath">getSourceFilePath()</a>
+    <a href="classes/Hyde-Framework-Models-Route.html#method_getSourceFilePath">getSourceFilePath()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Get the path to the source file.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getSourceModel">getSourceModel()</a>
+    <a href="classes/Hyde-Framework-Models-Route.html#method_getSourceModel">getSourceModel()</a>
     <span>
                                 &nbsp;: <abbr title="\Hyde\Framework\Contracts\PageContract">PageContract</abbr>    </span>
 </dt>
 <dd>Get the source model for the route.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_constructRouteKey">constructRouteKey()</a>
+    <a href="classes/Hyde-Framework-Models-Route.html#method_constructRouteKey">constructRouteKey()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -278,7 +277,7 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Hyde-Framework-Modules-Routing-Route.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Models-Route.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -289,14 +288,14 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_routeKey">
         $routeKey
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#property_routeKey" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#property_routeKey" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -324,14 +323,14 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_sourceModel">
         $sourceModel
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#property_sourceModel" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#property_sourceModel" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -353,7 +352,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Hyde-Framework-Modules-Routing-Route.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Models-Route.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -363,12 +362,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -419,12 +418,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_all">
         all()
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_all" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#method_all" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -432,7 +431,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">all</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a>&gt;</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">all</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>&gt;</span></code>
 
     
     
@@ -452,7 +451,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>&gt;</span>
             &mdash;
         
     
@@ -465,12 +464,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_get">
         get()
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -478,7 +477,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routeKey</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routeKey</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -510,7 +509,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span>
             &mdash;
         
     
@@ -523,12 +522,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getFromKey">
         getFromKey()
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getFromKey" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#method_getFromKey" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -536,7 +535,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getFromKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routeKey</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getFromKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routeKey</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -568,7 +567,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span>
             &mdash;
         
     
@@ -581,12 +580,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getFromModel">
         getFromModel()
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getFromModel" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#method_getFromModel" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -594,7 +593,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getFromModel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Hyde\Framework\Contracts\PageContract">PageContract</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getFromModel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Hyde\Framework\Contracts\PageContract">PageContract</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -624,7 +623,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span>
             &mdash;
         
     
@@ -637,12 +636,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getFromSource">
         getFromSource()
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getFromSource" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#method_getFromSource" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -650,7 +649,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getFromSource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sourceFilePath</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getFromSource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sourceFilePath</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -682,7 +681,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Modules-Routing-RouteContract.html"><abbr title="\Hyde\Framework\Modules\Routing\RouteContract">RouteContract</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span>
             &mdash;
         
     
@@ -695,12 +694,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getLink">
         getLink()
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getLink" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#method_getLink" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -755,12 +754,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getOutputFilePath">
         getOutputFilePath()
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getOutputFilePath" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#method_getOutputFilePath" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -803,12 +802,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getPageType">
         getPageType()
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getPageType" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#method_getPageType" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -849,12 +848,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getRouteKey">
         getRouteKey()
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getRouteKey" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#method_getRouteKey" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -897,12 +896,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getSourceFilePath">
         getSourceFilePath()
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getSourceFilePath" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#method_getSourceFilePath" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -945,12 +944,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getSourceModel">
         getSourceModel()
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_getSourceModel" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#method_getSourceModel" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -991,12 +990,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_constructRouteKey">
         constructRouteKey()
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#method_constructRouteKey" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#method_constructRouteKey" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Routing/Route.php"><a href="files/packages-framework-src-modules-routing-route.html"><abbr title="packages/framework/src/Modules/Routing/Route.php">Route.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Route.php"><a href="files/packages-framework-src-models-route.html"><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -1094,7 +1093,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Hyde-Framework-Modules-Routing-Route.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Hyde-Framework-Models-Route.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
