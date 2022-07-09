@@ -2993,7 +2993,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteContract",
             "name": "RouteContract",
-            "summary": "",
+            "summary": "This\u0020contract\u0020defines\u0020the\u0020methods\u0020that\u0020a\u0020Route\u0020object\u0020must\u0020implement.",
             "url": "classes/Hyde-Framework-Modules-Routing-RouteContract.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteContract\u003A\u003A__construct\u0028\u0029",
@@ -3033,7 +3033,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteFacadeContract",
             "name": "RouteFacadeContract",
-            "summary": "",
+            "summary": "This\u0020contract\u0020defines\u0020the\u0020static\u0020facade\u0020methods\u0020for\u0020the\u0020Route\u0020class.",
             "url": "classes/Hyde-Framework-Modules-Routing-RouteFacadeContract.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Routing\\RouteFacadeContract\u003A\u003Aget\u0028\u0029",
