@@ -2566,6 +2566,11 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020new\u0020navigation\u0020menu\u0020item\u0020leading\u0020to\u0020an\u0020external\u0020URI.",
             "url": "classes/Hyde-Framework-Models-NavItem.html#method_toLink"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003AtoRoute\u0028\u0029",
+            "name": "toRoute",
+            "summary": "Create\u0020a\u0020new\u0020navigation\u0020menu\u0020item\u0020leading\u0020to\u0020a\u0020Route\u0020model.",
+            "url": "classes/Hyde-Framework-Models-NavItem.html#method_toRoute"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003AresolveLink\u0028\u0029",
             "name": "resolveLink",
             "summary": "Resolve\u0020a\u0020link\u0020to\u0020the\u0020navigation\u0020item.",
