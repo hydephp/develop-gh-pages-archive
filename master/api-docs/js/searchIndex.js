@@ -3971,10 +3971,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-SitemapService.html#method_getXML"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\SitemapService\u003A\u003AaddPageModelUrls\u0028\u0029",
-            "name": "addPageModelUrls",
+            "fqsen": "\\Hyde\\Framework\\Services\\SitemapService\u003A\u003AaddRoute\u0028\u0029",
+            "name": "addRoute",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-SitemapService.html#method_addPageModelUrls"
+            "url": "classes/Hyde-Framework-Services-SitemapService.html#method_addRoute"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\SitemapService\u003A\u003AgetLastModDate\u0028\u0029",
             "name": "getLastModDate",
