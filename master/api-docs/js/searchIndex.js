@@ -3053,7 +3053,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\DataCollection",
             "name": "DataCollection",
-            "summary": "Generates\u0020Laravel\u0020Collections\u0020from\u0020static\u0020data\u0020files,\nsuch\u0020as\u0020Markdown\u0020components\u0020and\u0020YAML\u0020files.",
+            "summary": "Automatically\u0020generates\u0020Laravel\u0020Collections\u0020from\u0020static\u0020data\u0020files,\nsuch\u0020as\u0020Markdown\u0020components\u0020and\u0020YAML\u0020files\u0020using\u0020Hyde\u0020Autodiscovery.",
             "url": "classes/Hyde-Framework-Modules-DataCollections-DataCollection.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\DataCollection\u003A\u003A__construct\u0028\u0029",
