@@ -1211,6 +1211,16 @@ Search.appendIndex(
             "summary": "Inject\u0020the\u0020proper\u0020number\u0020of\u0020\u0060..\/\u0060\u0020before\u0020the\u0020links\u0020in\u0020Blade\u0020templates.",
             "url": "classes/Hyde-Framework-Concerns-Internal-FileHelpers.html#method_relativeLink"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\FileHelpers\u003A\u003AcurrentPage\u0028\u0029",
+            "name": "currentPage",
+            "summary": "Get\u0020the\u0020current\u0020page\u0020path,\u0020or\u0020fall\u0020back\u0020to\u0020the\u0020root\u0020path.",
+            "url": "classes/Hyde-Framework-Concerns-Internal-FileHelpers.html#method_currentPage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\FileHelpers\u003A\u003AcurrentRoute\u0028\u0029",
+            "name": "currentRoute",
+            "summary": "Get\u0020the\u0020current\u0020page\u0020route,\u0020or\u0020fall\u0020back\u0020to\u0020null.",
+            "url": "classes/Hyde-Framework-Concerns-Internal-FileHelpers.html#method_currentRoute"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\FileHelpers\u003A\u003Aimage\u0028\u0029",
             "name": "image",
             "summary": "Gets\u0020a\u0020relative\u0020web\u0020link\u0020to\u0020the\u0020given\u0020image\u0020stored\u0020in\u0020the\u0020_site\/media\u0020folder.",
@@ -1851,6 +1861,11 @@ Search.appendIndex(
             "summary": "Get\u0020all\u0020routes\u0020from\u0020the\u0020Router\u0020index.",
             "url": "classes/Hyde-Framework-Contracts-RouteFacadeContract.html#method_all"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\RouteFacadeContract\u003A\u003Acurrent\u0028\u0029",
+            "name": "current",
+            "summary": "Get\u0020the\u0020current\u0020route\u0020for\u0020the\u0020page\u0020being\u0020rendered.",
+            "url": "classes/Hyde-Framework-Contracts-RouteFacadeContract.html#method_current"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\RouterContract",
             "name": "RouterContract",
             "summary": "",
@@ -1995,6 +2010,11 @@ Search.appendIndex(
             "name": "all",
             "summary": "Get\u0020all\u0020routes\u0020from\u0020the\u0020Router\u0020index.",
             "url": "classes/Hyde-Framework-Facades-Route.html#method_all"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Facades\\Route\u003A\u003Acurrent\u0028\u0029",
+            "name": "current",
+            "summary": "Get\u0020the\u0020current\u0020route\u0020for\u0020the\u0020page\u0020being\u0020rendered.",
+            "url": "classes/Hyde-Framework-Facades-Route.html#method_current"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Author",
             "name": "Author",
@@ -2583,7 +2603,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
-            "summary": "",
+            "summary": "Resolve\u0020a\u0020link\u0020to\u0020the\u0020navigation\u0020item.",
             "url": "classes/Hyde-Framework-Models-NavItem.html#method___toString"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\NavItem\u003A\u003AisCurrent\u0028\u0029",
@@ -2955,6 +2975,11 @@ Search.appendIndex(
             "name": "all",
             "summary": "Get\u0020all\u0020routes\u0020from\u0020the\u0020Router\u0020index.",
             "url": "classes/Hyde-Framework-Models-Route.html#method_all"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003Acurrent\u0028\u0029",
+            "name": "current",
+            "summary": "Get\u0020the\u0020current\u0020route\u0020for\u0020the\u0020page\u0020being\u0020rendered.",
+            "url": "classes/Hyde-Framework-Models-Route.html#method_current"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003A\u0024sourceModel",
             "name": "sourceModel",
