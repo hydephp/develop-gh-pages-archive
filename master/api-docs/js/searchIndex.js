@@ -4126,6 +4126,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-StaticPageBuilder.html#property_page"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Views\\Components\\LinkComponent",
+            "name": "LinkComponent",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Views-Components-LinkComponent.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Views\\Components\\LinkComponent\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Views-Components-LinkComponent.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Views\\Components\\LinkComponent\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Views-Components-LinkComponent.html#method_render"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Views\\Components\\LinkComponent\u003A\u003A\u0024href",
+            "name": "href",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Views-Components-LinkComponent.html#property_href"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -4245,5 +4265,15 @@ Search.appendIndex(
             "name": "Shortcodes",
             "summary": "",
             "url": "namespaces/hyde-framework-services-markdown-shortcodes.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Views\\Components",
+            "name": "Components",
+            "summary": "",
+            "url": "namespaces/hyde-framework-views-components.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Views",
+            "name": "Views",
+            "summary": "",
+            "url": "namespaces/hyde-framework-views.html"
         }            ]
 );
