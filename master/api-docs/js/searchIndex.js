@@ -1816,6 +1816,11 @@ Search.appendIndex(
             "summary": "Resolve\u0020a\u0020site\u0020web\u0020link\u0020to\u0020the\u0020file,\u0020using\u0020pretty\u0020URLs\u0020if\u0020enabled.",
             "url": "classes/Hyde-Framework-Contracts-RouteContract.html#method_getLink"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\RouteContract\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "Cast\u0020a\u0020route\u0020object\u0020into\u0020a\u0020string\u0020that\u0020can\u0020be\u0020used\u0020in\u0020a\u0020href\u0020attribute.",
+            "url": "classes/Hyde-Framework-Contracts-RouteContract.html#method___toString"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\RouteFacadeContract",
             "name": "RouteFacadeContract",
             "summary": "This\u0020contract\u0020defines\u0020the\u0020static\u0020facade\u0020methods\u0020for\u0020the\u0020Route\u0020class.",
@@ -2915,6 +2920,11 @@ Search.appendIndex(
             "name": "getLink",
             "summary": "Resolve\u0020a\u0020site\u0020web\u0020link\u0020to\u0020the\u0020file,\u0020using\u0020pretty\u0020URLs\u0020if\u0020enabled.",
             "url": "classes/Hyde-Framework-Models-Route.html#method_getLink"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "Cast\u0020a\u0020route\u0020object\u0020into\u0020a\u0020string\u0020that\u0020can\u0020be\u0020used\u0020in\u0020a\u0020href\u0020attribute.",
+            "url": "classes/Hyde-Framework-Models-Route.html#method___toString"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AconstructRouteKey\u0028\u0029",
             "name": "constructRouteKey",
