@@ -2561,6 +2561,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-NavigationMenu.html#method_sort"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\NavigationMenu\u003A\u003AgetHomeLink\u0028\u0029",
+            "name": "getHomeLink",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-NavigationMenu.html#method_getHomeLink"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\NavigationMenu\u003A\u003A\u0024currentRoute",
             "name": "currentRoute",
             "summary": "",
