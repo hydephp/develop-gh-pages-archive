@@ -2633,12 +2633,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003Aget\u0028\u0029",
             "name": "get",
-            "summary": "Since\u0020this\u0020model\u0020also\u0020acts\u0020as\u0020a\u0020Blade\u0020View\u0020compiler,\nwe\u0020implement\u0020the\u0020get\u0020method\u0020for\u0020compatability.",
+            "summary": "Since\u0020this\u0020model\u0020also\u0020acts\u0020as\u0020a\u0020Page\u0020parser,\nwe\u0020implement\u0020the\u0020get\u0020method\u0020for\u0020compatability.",
             "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#method_get"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
-            "summary": "Since\u0020this\u0020model\u0020also\u0020acts\u0020as\u0020a\u0020Blade\u0020View\u0020compiler,\nwe\u0020implement\u0020the\u0020execute\u0020method\u0020for\u0020compatability.",
+            "summary": "Since\u0020this\u0020model\u0020also\u0020acts\u0020as\u0020a\u0020Page\u0020parser,\nwe\u0020implement\u0020the\u0020execute\u0020method\u0020for\u0020compatability.",
             "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#method_execute"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A\u0024view",
