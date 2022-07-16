@@ -1981,41 +1981,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Facades-Asset.html#method_getFacadeAccessor"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Facades\\Route",
-            "name": "Route",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Facades-Route.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Facades\\Route\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020specified\u0020route\u0020key.",
-            "url": "classes/Hyde-Framework-Facades-Route.html#method_get"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Facades\\Route\u003A\u003AgetFromKey\u0028\u0029",
-            "name": "getFromKey",
-            "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020specified\u0020route\u0020key.",
-            "url": "classes/Hyde-Framework-Facades-Route.html#method_getFromKey"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Facades\\Route\u003A\u003AgetFromSource\u0028\u0029",
-            "name": "getFromSource",
-            "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020specified\u0020source\u0020file\u0020path.",
-            "url": "classes/Hyde-Framework-Facades-Route.html#method_getFromSource"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Facades\\Route\u003A\u003AgetFromModel\u0028\u0029",
-            "name": "getFromModel",
-            "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020Router\u0020index\u0020for\u0020the\u0020supplied\u0020page\u0020model.",
-            "url": "classes/Hyde-Framework-Facades-Route.html#method_getFromModel"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Facades\\Route\u003A\u003Aall\u0028\u0029",
-            "name": "all",
-            "summary": "Get\u0020all\u0020routes\u0020from\u0020the\u0020Router\u0020index.",
-            "url": "classes/Hyde-Framework-Facades-Route.html#method_all"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Facades\\Route\u003A\u003Acurrent\u0028\u0029",
-            "name": "current",
-            "summary": "Get\u0020the\u0020current\u0020route\u0020for\u0020the\u0020page\u0020being\u0020rendered.",
-            "url": "classes/Hyde-Framework-Facades-Route.html#method_current"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Author",
             "name": "Author",
             "summary": "",
