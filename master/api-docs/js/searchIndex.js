@@ -1896,6 +1896,11 @@ Search.appendIndex(
             "summary": "Get\u0020all\u0020discovered\u0020routes\u0020for\u0020the\u0020given\u0020page\u0020class.",
             "url": "classes/Hyde-Framework-Contracts-RoutingServiceContract.html#method_getRoutesForModel"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\RoutingServiceContract\u003A\u003AaddRoute\u0028\u0029",
+            "name": "addRoute",
+            "summary": "Add\u0020a\u0020route\u0020to\u0020the\u0020router\u0020index.",
+            "url": "classes/Hyde-Framework-Contracts-RoutingServiceContract.html#method_addRoute"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Exceptions\\FileConflictException",
             "name": "FileConflictException",
             "summary": "",
@@ -3865,6 +3870,11 @@ Search.appendIndex(
             "name": "getRoutesForModel",
             "summary": "Get\u0020all\u0020discovered\u0020routes\u0020for\u0020the\u0020given\u0020page\u0020class.",
             "url": "classes/Hyde-Framework-Services-RoutingService.html#method_getRoutesForModel"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\RoutingService\u003A\u003AaddRoute\u0028\u0029",
+            "name": "addRoute",
+            "summary": "This\u0020internal\u0020method\u0020adds\u0020the\u0020specified\u0020route\u0020to\u0020the\u0020route\u0020index.",
+            "url": "classes/Hyde-Framework-Services-RoutingService.html#method_addRoute"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\RoutingService\u003A\u003Adiscover\u0028\u0029",
             "name": "discover",
