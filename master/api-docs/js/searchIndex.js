@@ -1866,6 +1866,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020current\u0020route\u0020for\u0020the\u0020page\u0020being\u0020rendered.",
             "url": "classes/Hyde-Framework-Contracts-RouteFacadeContract.html#method_current"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\RouteFacadeContract\u003A\u003Ahome\u0028\u0029",
+            "name": "home",
+            "summary": "Get\u0020the\u0020home\u0020route,\u0020usually\u0020the\u0020index\u0020page\u0020route.",
+            "url": "classes/Hyde-Framework-Contracts-RouteFacadeContract.html#method_home"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\RouterContract",
             "name": "RouterContract",
             "summary": "",
@@ -2950,6 +2955,11 @@ Search.appendIndex(
             "name": "current",
             "summary": "Get\u0020the\u0020current\u0020route\u0020for\u0020the\u0020page\u0020being\u0020rendered.",
             "url": "classes/Hyde-Framework-Models-Route.html#method_current"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003Ahome\u0028\u0029",
+            "name": "home",
+            "summary": "Get\u0020the\u0020home\u0020route,\u0020usually\u0020the\u0020index\u0020page\u0020route.",
+            "url": "classes/Hyde-Framework-Models-Route.html#method_home"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003A\u0024sourceModel",
             "name": "sourceModel",
