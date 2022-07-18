@@ -1666,6 +1666,31 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020collection\u0020of\u0020sidebar\u0020items\u0020in\u0020the\u0020class.",
             "url": "classes/Hyde-Framework-Contracts-DocumentationSidebarServiceContract.html#method_getSidebar"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\IncludeFacadeContract",
+            "name": "IncludeFacadeContract",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-IncludeFacadeContract.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\IncludeFacadeContract\u003A\u003Apath\u0028\u0029",
+            "name": "path",
+            "summary": "Return\u0020the\u0020path\u0020to\u0020the\u0020includes\u0020directory,\u0020or\u0020a\u0020partial\u0020within\u0020it,\u0020if\u0020requested.",
+            "url": "classes/Hyde-Framework-Contracts-IncludeFacadeContract.html#method_path"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\IncludeFacadeContract\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Get\u0020the\u0020raw\u0020contents\u0020of\u0020a\u0020partial\u0020file\u0020in\u0020the\u0020includes\u0020directory.",
+            "url": "classes/Hyde-Framework-Contracts-IncludeFacadeContract.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\IncludeFacadeContract\u003A\u003Amarkdown\u0028\u0029",
+            "name": "markdown",
+            "summary": "Get\u0020the\u0020rendered\u0020Markdown\u0020of\u0020a\u0020partial\u0020file\u0020in\u0020the\u0020includes\u0020directory.",
+            "url": "classes/Hyde-Framework-Contracts-IncludeFacadeContract.html#method_markdown"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\IncludeFacadeContract\u003A\u003Ablade\u0028\u0029",
+            "name": "blade",
+            "summary": "Get\u0020the\u0020rendered\u0020Blade\u0020of\u0020a\u0020partial\u0020file\u0020in\u0020the\u0020includes\u0020directory.",
+            "url": "classes/Hyde-Framework-Contracts-IncludeFacadeContract.html#method_blade"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPageContract",
             "name": "MarkdownPageContract",
             "summary": "",
@@ -1920,6 +1945,41 @@ Search.appendIndex(
             "name": "getFacadeAccessor",
             "summary": "",
             "url": "classes/Hyde-Framework-Facades-Asset.html#method_getFacadeAccessor"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Facades\\Includes",
+            "name": "Includes",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Facades-Includes.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Facades\\Includes\u003A\u003Apath\u0028\u0029",
+            "name": "path",
+            "summary": "Return\u0020the\u0020path\u0020to\u0020the\u0020includes\u0020directory,\u0020or\u0020a\u0020partial\u0020within\u0020it,\u0020if\u0020requested.",
+            "url": "classes/Hyde-Framework-Facades-Includes.html#method_path"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Facades\\Includes\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Get\u0020the\u0020raw\u0020contents\u0020of\u0020a\u0020partial\u0020file\u0020in\u0020the\u0020includes\u0020directory.",
+            "url": "classes/Hyde-Framework-Facades-Includes.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Facades\\Includes\u003A\u003Amarkdown\u0028\u0029",
+            "name": "markdown",
+            "summary": "Get\u0020the\u0020rendered\u0020Markdown\u0020of\u0020a\u0020partial\u0020file\u0020in\u0020the\u0020includes\u0020directory.",
+            "url": "classes/Hyde-Framework-Facades-Includes.html#method_markdown"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Facades\\Includes\u003A\u003Ablade\u0028\u0029",
+            "name": "blade",
+            "summary": "Get\u0020the\u0020rendered\u0020Blade\u0020of\u0020a\u0020partial\u0020file\u0020in\u0020the\u0020includes\u0020directory.",
+            "url": "classes/Hyde-Framework-Facades-Includes.html#method_blade"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Facades\\Includes\u003A\u003AneedsDirectory\u0028\u0029",
+            "name": "needsDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Facades-Includes.html#method_needsDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Facades\\Includes\u003A\u003A\u0024includesDirectory",
+            "name": "includesDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Facades-Includes.html#property_includesDirectory"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Author",
             "name": "Author",
