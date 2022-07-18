@@ -11,16 +11,6 @@ Search.appendIndex(
             "summary": "Execute\u0020the\u0020action.",
             "url": "classes/Hyde-Framework-Actions-ConvertsArrayToFrontMatter.html#method_execute"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\ConvertsFooterMarkdown",
-            "name": "ConvertsFooterMarkdown",
-            "summary": "Parse\u0020the\u0020Markdown\u0020text\u0020to\u0020show\u0020in\u0020the\u0020Footer.",
-            "url": "classes/Hyde-Framework-Actions-ConvertsFooterMarkdown.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\ConvertsFooterMarkdown\u003A\u003Aexecute\u0028\u0029",
-            "name": "execute",
-            "summary": "Execute\u0020the\u0020action.",
-            "url": "classes/Hyde-Framework-Actions-ConvertsFooterMarkdown.html#method_execute"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewMarkdownPostFile",
             "name": "CreatesNewMarkdownPostFile",
             "summary": "Offloads\u0020logic\u0020for\u0020the\u0020make\u003Apost\u0020command.",
