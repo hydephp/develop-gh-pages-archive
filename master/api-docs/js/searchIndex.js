@@ -226,25 +226,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-GeneratesDocumentationSearchIndexFile.html#property_filePath"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesTableOfContents",
-            "name": "GeneratesTableOfContents",
+            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesSidebarTableOfContents",
+            "name": "GeneratesSidebarTableOfContents",
             "summary": "Generates\u0020a\u0020table\u0020of\u0020contents\u0020for\u0020the\u0020Markdown\u0020document.",
-            "url": "classes/Hyde-Framework-Actions-GeneratesTableOfContents.html"
+            "url": "classes/Hyde-Framework-Actions-GeneratesSidebarTableOfContents.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesTableOfContents\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesSidebarTableOfContents\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Hyde-Framework-Actions-GeneratesTableOfContents.html#method___construct"
+            "url": "classes/Hyde-Framework-Actions-GeneratesSidebarTableOfContents.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesTableOfContents\u003A\u003Aexecute\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesSidebarTableOfContents\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
             "summary": "Execute\u0020the\u0020action.",
-            "url": "classes/Hyde-Framework-Actions-GeneratesTableOfContents.html#method_execute"
+            "url": "classes/Hyde-Framework-Actions-GeneratesSidebarTableOfContents.html#method_execute"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesTableOfContents\u003A\u003A\u0024markdown",
+            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesSidebarTableOfContents\u003A\u003A\u0024markdown",
             "name": "markdown",
             "summary": "",
-            "url": "classes/Hyde-Framework-Actions-GeneratesTableOfContents.html#property_markdown"
+            "url": "classes/Hyde-Framework-Actions-GeneratesSidebarTableOfContents.html#property_markdown"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\MarkdownConverter",
             "name": "MarkdownConverter",
@@ -1081,15 +1081,10 @@ Search.appendIndex(
             "summary": "Generate\u0020Table\u0020of\u0020Contents\u0020as\u0020HTML\u0020from\u0020a\u0020Markdown\u0020document\u0020body.",
             "url": "classes/Hyde-Framework-Concerns-HasTableOfContents.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasTableOfContents\u003A\u003AconstructTableOfContents\u0028\u0029",
-            "name": "constructTableOfContents",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\HasTableOfContents\u003A\u003AgetTableOfContents\u0028\u0029",
+            "name": "getTableOfContents",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasTableOfContents.html#method_constructTableOfContents"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasTableOfContents\u003A\u003A\u0024tableOfContents",
-            "name": "tableOfContents",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasTableOfContents.html#property_tableOfContents"
+            "url": "classes/Hyde-Framework-Concerns-HasTableOfContents.html#method_getTableOfContents"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\InteractsWithDirectories",
             "name": "InteractsWithDirectories",
