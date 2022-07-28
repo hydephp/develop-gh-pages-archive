@@ -3278,7 +3278,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\CollectionService",
             "name": "CollectionService",
-            "summary": "Contains\u0020service\u0020methods\u0020to\u0020return\u0020helpful\u0020collections\u0020of\u0020arrays\u0020and\u0020lists.",
+            "summary": "The\u0020core\u0020service\u0020that\u0020powers\u0020all\u0020HydePHP\u0020file\u0020auto\u002Ddiscovery.",
             "url": "classes/Hyde-Framework-Services-CollectionService.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AgetSourceFileListForModel\u0028\u0029",
@@ -3288,7 +3288,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AgetBladePageFiles\u0028\u0029",
             "name": "getBladePageFiles",
-            "summary": "Get\u0020all\u0020the\u0020Blade\u0020files\u0020in\u0020the\u0020resources\/views\/vendor\/hyde\/pages\u0020directory.",
+            "summary": "Get\u0020all\u0020the\u0020Blade\u0020files\u0020in\u0020the\u0020_pages\u0020directory.",
             "url": "classes/Hyde-Framework-Services-CollectionService.html#method_getBladePageFiles"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AgetMarkdownPageFiles\u0028\u0029",
