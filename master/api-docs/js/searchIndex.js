@@ -526,6 +526,11 @@ Search.appendIndex(
             "summary": "Validate\u0020the\u0020options\u0020passed\u0020to\u0020the\u0020command.",
             "url": "classes/Hyde-Framework-Commands-HydeMakePageCommand.html#method_validateOptions"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeMakePageCommand\u003A\u003AgetSelectedType\u0028\u0029",
+            "name": "getSelectedType",
+            "summary": "Get\u0020the\u0020selected\u0020page\u0020type.",
+            "url": "classes/Hyde-Framework-Commands-HydeMakePageCommand.html#method_getSelectedType"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeMakePageCommand\u003A\u003A\u0024signature",
             "name": "signature",
             "summary": "The\u0020name\u0020and\u0020signature\u0020of\u0020the\u0020console\u0020command.",
@@ -540,6 +545,11 @@ Search.appendIndex(
             "name": "title",
             "summary": "The\u0020page\u0020title.",
             "url": "classes/Hyde-Framework-Commands-HydeMakePageCommand.html#property_title"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeMakePageCommand\u003A\u003A\u0024selectedType",
+            "name": "selectedType",
+            "summary": "The\u0020selected\u0020page\u0020type.",
+            "url": "classes/Hyde-Framework-Commands-HydeMakePageCommand.html#property_selectedType"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeMakePageCommand\u003A\u003A\u0024type",
             "name": "type",

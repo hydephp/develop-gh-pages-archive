@@ -157,6 +157,13 @@
 <dd>Can the file be overwritten?</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Hyde-Framework-Commands-HydeMakePageCommand.html#property_selectedType">$selectedType</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>The selected page type.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Framework-Commands-HydeMakePageCommand.html#property_title">$title</a>
     <span>
                         &nbsp;: string            </span>
@@ -190,6 +197,13 @@
                                 &nbsp;: int    </span>
 </dt>
 <dd>Execute the console command.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Commands-HydeMakePageCommand.html#method_getSelectedType">getSelectedType()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Get the selected page type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Commands-HydeMakePageCommand.html#method_validateOptions">validateOptions()</a>
@@ -226,7 +240,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Commands/HydeMakePageCommand.php"><a href="files/packages-framework-src-commands-hydemakepagecommand.html"><abbr title="packages/framework/src/Commands/HydeMakePageCommand.php">HydeMakePageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -251,6 +265,40 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_selectedType">
+        $selectedType
+        <a href="classes/Hyde-Framework-Commands-HydeMakePageCommand.html#property_selectedType" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Commands/HydeMakePageCommand.php"><a href="files/packages-framework-src-commands-hydemakepagecommand.html"><abbr title="packages/framework/src/Commands/HydeMakePageCommand.php">HydeMakePageCommand.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The selected page type.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$selectedType</span>
+    </code>
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_title">
         $title
         <a href="classes/Hyde-Framework-Commands-HydeMakePageCommand.html#property_title" class="headerlink"><i class="fas fa-link"></i></a>
@@ -260,7 +308,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Commands/HydeMakePageCommand.php"><a href="files/packages-framework-src-commands-hydemakepagecommand.html"><abbr title="packages/framework/src/Commands/HydeMakePageCommand.php">HydeMakePageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -294,7 +342,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Commands/HydeMakePageCommand.php"><a href="files/packages-framework-src-commands-hydemakepagecommand.html"><abbr title="packages/framework/src/Commands/HydeMakePageCommand.php">HydeMakePageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -328,7 +376,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Commands/HydeMakePageCommand.php"><a href="files/packages-framework-src-commands-hydemakepagecommand.html"><abbr title="packages/framework/src/Commands/HydeMakePageCommand.php">HydeMakePageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -374,6 +422,8 @@
      = <span class="phpdocumentor-signature__default-value">&#039;make:page 
 		{title? : The name of the page file to create. Will be used to generate the slug}
 		{--type=markdown : The type of page to create (markdown, blade, or docs)}
+        {--blade : Create a Blade page}
+        {--docs : Create a Documentation page}
 		{--force : Overwrite any existing files}&#039;</span></code>
 
     
@@ -401,7 +451,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Commands/HydeMakePageCommand.php"><a href="files/packages-framework-src-commands-hydemakepagecommand.html"><abbr title="packages/framework/src/Commands/HydeMakePageCommand.php">HydeMakePageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -427,6 +477,39 @@
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getSelectedType">
+        getSelectedType()
+        <a href="classes/Hyde-Framework-Commands-HydeMakePageCommand.html#method_getSelectedType" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Commands/HydeMakePageCommand.php"><a href="files/packages-framework-src-commands-hydemakepagecommand.html"><abbr title="packages/framework/src/Commands/HydeMakePageCommand.php">HydeMakePageCommand.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">118</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the selected page type.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getSelectedType</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_validateOptions">
         validateOptions()
         <a href="classes/Hyde-Framework-Commands-HydeMakePageCommand.html#method_validateOptions" class="headerlink"><i class="fas fa-link"></i></a>
@@ -434,7 +517,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Commands/HydeMakePageCommand.php"><a href="files/packages-framework-src-commands-hydemakepagecommand.html"><abbr title="packages/framework/src/Commands/HydeMakePageCommand.php">HydeMakePageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
