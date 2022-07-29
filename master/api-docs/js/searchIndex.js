@@ -2586,10 +2586,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AindexPath\u0028\u0029",
-            "name": "indexPath",
-            "summary": "Get\u0020the\u0020path\u0020to\u0020the\u0020frontpage\u0020for\u0020the\u0020documentation.",
-            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_indexPath"
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003Ahome\u0028\u0029",
+            "name": "home",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_home"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",
