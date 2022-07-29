@@ -66,6 +66,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method___construct"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AparseTitle\u0028\u0029",
+            "name": "parseTitle",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_parseTitle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AparseSlug\u0028\u0029",
+            "name": "parseSlug",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_parseSlug"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AcanSaveFile\u0028\u0029",
             "name": "canSaveFile",
             "summary": "",
@@ -105,6 +115,11 @@ Search.appendIndex(
             "name": "outputPath",
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#property_outputPath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003A\u0024subDir",
+            "name": "subDir",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#property_subDir"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003A\u0024force",
             "name": "force",
@@ -2586,6 +2601,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method___construct"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AgetSourcePath\u0028\u0029",
+            "name": "getSourcePath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_getSourcePath"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003Ahome\u0028\u0029",
             "name": "home",
             "summary": "",
@@ -2605,6 +2625,16 @@ Search.appendIndex(
             "name": "parserClass",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_parserClass"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A\u0024category",
+            "name": "category",
+            "summary": "The\u0020sidebar\u0020category\u0020group,\u0020if\u0020any.",
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_category"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A\u0024localPath",
+            "name": "localPath",
+            "summary": "The\u0020path\u0020to\u0020the\u0020page\u0020relative\u0020to\u0020the\u0020configured\u0020docs\u0020directory.",
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_localPath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPage",
             "name": "MarkdownPage",
@@ -2673,7 +2703,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Parsers\\DocumentationPageParser",
             "name": "DocumentationPageParser",
-            "summary": "Abstract\u0020base\u0020class\u0020for\u0020all\u0020page\u0020parsers.",
+            "summary": "Parses\u0020a\u0020Markdown\u0020file\u0020in\u0020the\u0020configured\u0020docs\u0020directory\u0020into\u0020a\u0020DocumentationPage\u0020object.",
             "url": "classes/Hyde-Framework-Models-Parsers-DocumentationPageParser.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Parsers\\DocumentationPageParser\u003A\u003Aexecute\u0028\u0029",
@@ -2685,6 +2715,11 @@ Search.appendIndex(
             "name": "get",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Parsers-DocumentationPageParser.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Parsers\\DocumentationPageParser\u003A\u003AgetCategory\u0028\u0029",
+            "name": "getCategory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Parsers-DocumentationPageParser.html#method_getCategory"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Parsers\\DocumentationPageParser\u003A\u003A\u0024pageModel",
             "name": "pageModel",
@@ -2830,6 +2865,11 @@ Search.appendIndex(
             "name": "getLink",
             "summary": "Resolve\u0020a\u0020site\u0020web\u0020link\u0020to\u0020the\u0020file,\u0020using\u0020pretty\u0020URLs\u0020if\u0020enabled.",
             "url": "classes/Hyde-Framework-Models-Route.html#method_getLink"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AgetPermalink\u0028\u0029",
+            "name": "getPermalink",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Route.html#method_getPermalink"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
@@ -3205,6 +3245,11 @@ Search.appendIndex(
             "name": "getSourceFileListForModel",
             "summary": "Supply\u0020a\u0020model\u003A\u003Aclass\u0020constant\u0020and\u0020get\u0020a\u0020list\u0020of\u0020all\u0020the\u0020existing\u0020source\u0020file\u0020base\u0020names.",
             "url": "classes/Hyde-Framework-Services-CollectionService.html#method_getSourceFileListForModel"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AformatSlugForModel\u0028\u0029",
+            "name": "formatSlugForModel",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-CollectionService.html#method_formatSlugForModel"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AgetBladePageFiles\u0028\u0029",
             "name": "getBladePageFiles",

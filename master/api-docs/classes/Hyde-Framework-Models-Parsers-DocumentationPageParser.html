@@ -116,17 +116,15 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Parsers/DocumentationPageParser.php"><a href="files/packages-framework-src-models-parsers-documentationpageparser.html"><abbr title="packages/framework/src/Models/Parsers/DocumentationPageParser.php">DocumentationPageParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Abstract base class for all page parsers.</p>
+            <p class="phpdocumentor-summary">Parses a Markdown file in the configured docs directory into a DocumentationPage object.</p>
 
-    <section class="phpdocumentor-description"><p>Page Parsers are responsible for parsing a source file into a Page object,
-and may also conduct pre-processing and/or data validation/assembly.</p>
-<p>Note that the Page Parsers do not compile any HTML or Markdown.</p>
-<p>To ensure that all page parsing jobs are handled consistently,
-all page parsers should extend this class.</p>
+    <section class="phpdocumentor-description"><p>If the file is in a subdirectory relative to the base source directory (default _docs),
+the subdirectory name will be used as the page's category. This only works for one level,
+and the resulting file will still be put in the root of the docs output directory.</p>
 </section>
 
 
@@ -199,6 +197,13 @@ all page parsers should extend this class.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Models-Parsers-DocumentationPageParser.html#method_getCategory">getCategory()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Concerns-ValidatesExistence.html#method_validateExistence">validateExistence()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -233,7 +238,7 @@ all page parsers should extend this class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Parsers/DocumentationPageParser.php"><a href="files/packages-framework-src-models-parsers-documentationpageparser.html"><abbr title="packages/framework/src/Models/Parsers/DocumentationPageParser.php">DocumentationPageParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -267,7 +272,7 @@ all page parsers should extend this class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Parsers/DocumentationPageParser.php"><a href="files/packages-framework-src-models-parsers-documentationpageparser.html"><abbr title="packages/framework/src/Models/Parsers/DocumentationPageParser.php">DocumentationPageParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -301,7 +306,7 @@ all page parsers should extend this class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Parsers/DocumentationPageParser.php"><a href="files/packages-framework-src-models-parsers-documentationpageparser.html"><abbr title="packages/framework/src/Models/Parsers/DocumentationPageParser.php">DocumentationPageParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -349,7 +354,7 @@ all page parsers should extend this class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Parsers/DocumentationPageParser.php"><a href="files/packages-framework-src-models-parsers-documentationpageparser.html"><abbr title="packages/framework/src/Models/Parsers/DocumentationPageParser.php">DocumentationPageParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -383,7 +388,7 @@ all page parsers should extend this class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Parsers/DocumentationPageParser.php"><a href="files/packages-framework-src-models-parsers-documentationpageparser.html"><abbr title="packages/framework/src/Models/Parsers/DocumentationPageParser.php">DocumentationPageParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -481,7 +486,7 @@ all page parsers should extend this class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Parsers/DocumentationPageParser.php"><a href="files/packages-framework-src-models-parsers-documentationpageparser.html"><abbr title="packages/framework/src/Models/Parsers/DocumentationPageParser.php">DocumentationPageParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -514,7 +519,7 @@ all page parsers should extend this class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Parsers/DocumentationPageParser.php"><a href="files/packages-framework-src-models-parsers-documentationpageparser.html"><abbr title="packages/framework/src/Models/Parsers/DocumentationPageParser.php">DocumentationPageParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -530,6 +535,39 @@ all page parsers should extend this class.</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html"><abbr title="\Hyde\Framework\Models\Pages\DocumentationPage">DocumentationPage</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCategory">
+        getCategory()
+        <a href="classes/Hyde-Framework-Models-Parsers-DocumentationPageParser.html#method_getCategory" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Parsers/DocumentationPageParser.php"><a href="files/packages-framework-src-models-parsers-documentationpageparser.html"><abbr title="packages/framework/src/Models/Parsers/DocumentationPageParser.php">DocumentationPageParser.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">50</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getCategory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
             &mdash;
         
     
