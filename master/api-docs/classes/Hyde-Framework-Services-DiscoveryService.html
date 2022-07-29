@@ -112,31 +112,19 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/DiscoveryService.php"><a href="files/packages-framework-src-services-discoveryservice.html"><abbr title="packages/framework/src/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">The Discovery Service (previously called BuildService) provides
-helper methods for source file autodiscovery used in the building
-process to determine where files are located and how to parse them.</p>
+            <p class="phpdocumentor-summary">The core service that powers all HydePHP file auto-discovery.</p>
 
-
-
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">deprecated</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>v0.48.0 as autodiscovery is now powered by the Router.</p>
+    <section class="phpdocumentor-description"><p>Contains service methods to return helpful collections of arrays and lists,
+and provides helper methods for source file auto-discovery used in the site
+building process to determine where files are located and how to parse them.</p>
+<p>The CollectionService was in v0.53.0 merged into this class.</p>
 </section>
 
-                                    </dd>
-                        </dl>
+
 
 
 
@@ -164,6 +152,27 @@ process to determine where files are located and how to parse them.</p>
 <dd>Determine the Page Model to use for a given file path.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_formatSlugForModel">formatSlugForModel()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getBladePageFiles">getBladePageFiles()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get all the Blade files in the _pages directory.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getDocumentationPageFiles">getDocumentationPageFiles()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get all the Markdown files in the _docs directory.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getFileExtensionForModelFiles">getFileExtensionForModelFiles()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -178,6 +187,27 @@ process to determine where files are located and how to parse them.</p>
 <dd>Get the source directory path of a model.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPageFiles">getMarkdownPageFiles()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get all the Markdown files in the _pages directory.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPostFiles">getMarkdownPostFiles()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get all the Markdown files in the _posts directory.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getMediaAssetFiles">getMediaAssetFiles()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get all the Media asset file paths.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getParserClassForModel">getParserClassForModel()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -190,6 +220,13 @@ process to determine where files are located and how to parse them.</p>
                                 &nbsp;: object    </span>
 </dt>
 <dd>Create and get a constructed instance of a Model&#039;s Parser class.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getSourceFileListForModel">getSourceFileListForModel()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;|false    </span>
+</dt>
+<dd>Supply a model::class constant and get a list of all the existing source file base names.</dd>
 
         </dl>
 
@@ -217,7 +254,7 @@ process to determine where files are located and how to parse them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/DiscoveryService.php"><a href="files/packages-framework-src-services-discoveryservice.html"><abbr title="packages/framework/src/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -260,7 +297,7 @@ process to determine where files are located and how to parse them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/DiscoveryService.php"><a href="files/packages-framework-src-services-discoveryservice.html"><abbr title="packages/framework/src/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -321,6 +358,124 @@ process to determine where files are located and how to parse them.</p>
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_formatSlugForModel">
+        formatSlugForModel()
+        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_formatSlugForModel" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/DiscoveryService.php"><a href="files/packages-framework-src-services-discoveryservice.html"><abbr title="packages/framework/src/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">151</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">formatSlugForModel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$model</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filepath</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$model</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$filepath</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getBladePageFiles">
+        getBladePageFiles()
+        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getBladePageFiles" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/DiscoveryService.php"><a href="files/packages-framework-src-services-discoveryservice.html"><abbr title="packages/framework/src/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">193</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get all the Blade files in the _pages directory.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getBladePageFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getDocumentationPageFiles">
+        getDocumentationPageFiles()
+        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getDocumentationPageFiles" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/DiscoveryService.php"><a href="files/packages-framework-src-services-discoveryservice.html"><abbr title="packages/framework/src/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">120</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get all the Markdown files in the _docs directory.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getDocumentationPageFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_getFileExtensionForModelFiles">
         getFileExtensionForModelFiles()
         <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getFileExtensionForModelFiles" class="headerlink"><i class="fas fa-link"></i></a>
@@ -328,7 +483,7 @@ process to determine where files are located and how to parse them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/DiscoveryService.php"><a href="files/packages-framework-src-services-discoveryservice.html"><abbr title="packages/framework/src/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -372,7 +527,7 @@ process to determine where files are located and how to parse them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/DiscoveryService.php"><a href="files/packages-framework-src-services-discoveryservice.html"><abbr title="packages/framework/src/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -409,6 +564,107 @@ process to determine where files are located and how to parse them.</p>
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getMarkdownPageFiles">
+        getMarkdownPageFiles()
+        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPageFiles" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/DiscoveryService.php"><a href="files/packages-framework-src-services-discoveryservice.html"><abbr title="packages/framework/src/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">170</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get all the Markdown files in the _pages directory.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getMarkdownPageFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMarkdownPostFiles">
+        getMarkdownPostFiles()
+        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPostFiles" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/DiscoveryService.php"><a href="files/packages-framework-src-services-discoveryservice.html"><abbr title="packages/framework/src/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">203</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get all the Markdown files in the _posts directory.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getMarkdownPostFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMediaAssetFiles">
+        getMediaAssetFiles()
+        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getMediaAssetFiles" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/DiscoveryService.php"><a href="files/packages-framework-src-services-discoveryservice.html"><abbr title="packages/framework/src/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">179</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get all the Media asset file paths.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getMediaAssetFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"><p>Returns a full file path, unlike the other get*List methods.</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_getParserClassForModel">
         getParserClassForModel()
         <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getParserClassForModel" class="headerlink"><i class="fas fa-link"></i></a>
@@ -416,7 +672,7 @@ process to determine where files are located and how to parse them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/DiscoveryService.php"><a href="files/packages-framework-src-services-discoveryservice.html"><abbr title="packages/framework/src/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -460,7 +716,7 @@ process to determine where files are located and how to parse them.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/DiscoveryService.php"><a href="files/packages-framework-src-services-discoveryservice.html"><abbr title="packages/framework/src/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -514,6 +770,66 @@ process to determine where files are located and how to parse them.</p>
     <span class="phpdocumentor-signature__response_type">object</span>
             &mdash;
             <section class="phpdocumentor-description"><p>The constructed Parser instance.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getSourceFileListForModel">
+        getSourceFileListForModel()
+        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getSourceFileListForModel" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/DiscoveryService.php"><a href="files/packages-framework-src-services-discoveryservice.html"><abbr title="packages/framework/src/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">133</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Supply a model::class constant and get a list of all the existing source file base names.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getSourceFileListForModel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$model</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|false</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$model</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">example</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>DiscoveryService::getSourceFileListForModel(BladePage::class)</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|false</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>array on success, false if the class was not found</p>
 </section>
 
     

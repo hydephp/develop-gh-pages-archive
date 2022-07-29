@@ -3236,49 +3236,9 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-BuildService.html#property_router"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\CollectionService",
-            "name": "CollectionService",
-            "summary": "The\u0020core\u0020service\u0020that\u0020powers\u0020all\u0020HydePHP\u0020file\u0020auto\u002Ddiscovery.",
-            "url": "classes/Hyde-Framework-Services-CollectionService.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AgetSourceFileListForModel\u0028\u0029",
-            "name": "getSourceFileListForModel",
-            "summary": "Supply\u0020a\u0020model\u003A\u003Aclass\u0020constant\u0020and\u0020get\u0020a\u0020list\u0020of\u0020all\u0020the\u0020existing\u0020source\u0020file\u0020base\u0020names.",
-            "url": "classes/Hyde-Framework-Services-CollectionService.html#method_getSourceFileListForModel"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AformatSlugForModel\u0028\u0029",
-            "name": "formatSlugForModel",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-CollectionService.html#method_formatSlugForModel"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AgetBladePageFiles\u0028\u0029",
-            "name": "getBladePageFiles",
-            "summary": "Get\u0020all\u0020the\u0020Blade\u0020files\u0020in\u0020the\u0020_pages\u0020directory.",
-            "url": "classes/Hyde-Framework-Services-CollectionService.html#method_getBladePageFiles"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AgetMarkdownPageFiles\u0028\u0029",
-            "name": "getMarkdownPageFiles",
-            "summary": "Get\u0020all\u0020the\u0020Markdown\u0020files\u0020in\u0020the\u0020_pages\u0020directory.",
-            "url": "classes/Hyde-Framework-Services-CollectionService.html#method_getMarkdownPageFiles"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AgetMarkdownPostFiles\u0028\u0029",
-            "name": "getMarkdownPostFiles",
-            "summary": "Get\u0020all\u0020the\u0020Markdown\u0020files\u0020in\u0020the\u0020_posts\u0020directory.",
-            "url": "classes/Hyde-Framework-Services-CollectionService.html#method_getMarkdownPostFiles"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AgetDocumentationPageFiles\u0028\u0029",
-            "name": "getDocumentationPageFiles",
-            "summary": "Get\u0020all\u0020the\u0020Markdown\u0020files\u0020in\u0020the\u0020_docs\u0020directory.",
-            "url": "classes/Hyde-Framework-Services-CollectionService.html#method_getDocumentationPageFiles"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\CollectionService\u003A\u003AgetMediaAssetFiles\u0028\u0029",
-            "name": "getMediaAssetFiles",
-            "summary": "Get\u0020all\u0020the\u0020Media\u0020asset\u0020file\u0020paths.",
-            "url": "classes/Hyde-Framework-Services-CollectionService.html#method_getMediaAssetFiles"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService",
             "name": "DiscoveryService",
-            "summary": "The\u0020Discovery\u0020Service\u0020\u0028previously\u0020called\u0020BuildService\u0029\u0020provides\nhelper\u0020methods\u0020for\u0020source\u0020file\u0020autodiscovery\u0020used\u0020in\u0020the\u0020building\nprocess\u0020to\u0020determine\u0020where\u0020files\u0020are\u0020located\u0020and\u0020how\u0020to\u0020parse\u0020them.",
+            "summary": "The\u0020core\u0020service\u0020that\u0020powers\u0020all\u0020HydePHP\u0020file\u0020auto\u002Ddiscovery.",
             "url": "classes/Hyde-Framework-Services-DiscoveryService.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetParserClassForModel\u0028\u0029",
@@ -3310,6 +3270,41 @@ Search.appendIndex(
             "name": "createClickableFilepath",
             "summary": "Create\u0020a\u0020filepath\u0020that\u0020can\u0020be\u0020opened\u0020in\u0020the\u0020browser\u0020from\u0020a\u0020terminal.",
             "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_createClickableFilepath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetDocumentationPageFiles\u0028\u0029",
+            "name": "getDocumentationPageFiles",
+            "summary": "Get\u0020all\u0020the\u0020Markdown\u0020files\u0020in\u0020the\u0020_docs\u0020directory.",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getDocumentationPageFiles"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetSourceFileListForModel\u0028\u0029",
+            "name": "getSourceFileListForModel",
+            "summary": "Supply\u0020a\u0020model\u003A\u003Aclass\u0020constant\u0020and\u0020get\u0020a\u0020list\u0020of\u0020all\u0020the\u0020existing\u0020source\u0020file\u0020base\u0020names.",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getSourceFileListForModel"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AformatSlugForModel\u0028\u0029",
+            "name": "formatSlugForModel",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_formatSlugForModel"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMarkdownPageFiles\u0028\u0029",
+            "name": "getMarkdownPageFiles",
+            "summary": "Get\u0020all\u0020the\u0020Markdown\u0020files\u0020in\u0020the\u0020_pages\u0020directory.",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPageFiles"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMediaAssetFiles\u0028\u0029",
+            "name": "getMediaAssetFiles",
+            "summary": "Get\u0020all\u0020the\u0020Media\u0020asset\u0020file\u0020paths.",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMediaAssetFiles"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetBladePageFiles\u0028\u0029",
+            "name": "getBladePageFiles",
+            "summary": "Get\u0020all\u0020the\u0020Blade\u0020files\u0020in\u0020the\u0020_pages\u0020directory.",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getBladePageFiles"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMarkdownPostFiles\u0028\u0029",
+            "name": "getMarkdownPostFiles",
+            "summary": "Get\u0020all\u0020the\u0020Markdown\u0020files\u0020in\u0020the\u0020_posts\u0020directory.",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPostFiles"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\FileCacheService",
             "name": "FileCacheService",
