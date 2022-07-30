@@ -117,7 +117,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -241,6 +241,13 @@ providing helpful methods for interacting with it.</dd>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-HydeKernel.html#method_formatHtmlPath">formatHtmlPath()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Format a link to an HTML file, allowing for pretty URLs, if enabled.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-HydeKernel.html#method_getBasePath">getBasePath()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -323,13 +330,6 @@ providing helpful methods for interacting with it.</dd>
                                 &nbsp;: string    </span>
 </dt>
 <dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-HydeKernel.html#method_pageLink">pageLink()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>Format a link to an HTML file, allowing for pretty URLs, if enabled.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-HydeKernel.html#method_path">path()</a>
@@ -415,7 +415,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -453,7 +453,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -497,7 +497,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">253</span>
+    <span class="phpdocumentor-element-found-in__line">256</span>
 
     </aside>
 
@@ -562,7 +562,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">173</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 
     </aside>
 
@@ -595,7 +595,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">181</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
@@ -628,7 +628,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -654,6 +654,64 @@ providing helpful methods for interacting with it.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_formatHtmlPath">
+        formatHtmlPath()
+        <a href="classes/Hyde-Framework-HydeKernel.html#method_formatHtmlPath" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">129</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Format a link to an HTML file, allowing for pretty URLs, if enabled.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">formatHtmlPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$destination</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$destination</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Framework\Testing\Unit\FileHelperPageLinkPrettyUrlTest">FileHelperPageLinkPrettyUrlTest</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getBasePath">
         getBasePath()
         <a href="classes/Hyde-Framework-HydeKernel.html#method_getBasePath" class="headerlink"><i class="fas fa-link"></i></a>
@@ -661,7 +719,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -694,7 +752,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">286</span>
+    <span class="phpdocumentor-element-found-in__line">289</span>
 
     </aside>
 
@@ -738,7 +796,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">301</span>
+    <span class="phpdocumentor-element-found-in__line">304</span>
 
     </aside>
 
@@ -782,7 +840,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -815,7 +873,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">291</span>
+    <span class="phpdocumentor-element-found-in__line">294</span>
 
     </aside>
 
@@ -859,7 +917,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">296</span>
+    <span class="phpdocumentor-element-found-in__line">299</span>
 
     </aside>
 
@@ -903,7 +961,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">275</span>
+    <span class="phpdocumentor-element-found-in__line">278</span>
 
     </aside>
 
@@ -960,7 +1018,7 @@ Hyde::path('_pages/foo') becomes Hyde::getBladePagePath('foo')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">309</span>
+    <span class="phpdocumentor-element-found-in__line">312</span>
 
     </aside>
 
@@ -1004,7 +1062,7 @@ Hyde::path('_pages/foo') becomes Hyde::getBladePagePath('foo')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -1048,7 +1106,7 @@ Hyde::path('_pages/foo') becomes Hyde::getBladePagePath('foo')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">218</span>
+    <span class="phpdocumentor-element-found-in__line">219</span>
 
     </aside>
 
@@ -1081,7 +1139,7 @@ Hyde::path('_pages/foo') becomes Hyde::getBladePagePath('foo')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">190</span>
 
     </aside>
 
@@ -1125,7 +1183,7 @@ Hyde::path('_pages/foo') becomes Hyde::getBladePagePath('foo')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -1162,64 +1220,6 @@ Hyde::path('_pages/foo') becomes Hyde::getBladePagePath('foo')</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_pageLink">
-        pageLink()
-        <a href="classes/Hyde-Framework-HydeKernel.html#method_pageLink" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">128</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Format a link to an HTML file, allowing for pretty URLs, if enabled.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">pageLink</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$destination</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$destination</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Framework\Testing\Unit\FileHelperPageLinkPrettyUrlTest">FileHelperPageLinkPrettyUrlTest</abbr></span>
-                                        
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_path">
         path()
         <a href="classes/Hyde-Framework-HydeKernel.html#method_path" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1227,7 +1227,7 @@ Hyde::path('_pages/foo') becomes Hyde::getBladePagePath('foo')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -1274,7 +1274,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">323</span>
+    <span class="phpdocumentor-element-found-in__line">326</span>
 
     </aside>
 
@@ -1318,7 +1318,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">155</span>
 
     </aside>
 
@@ -1377,7 +1377,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -1421,7 +1421,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">206</span>
+    <span class="phpdocumentor-element-found-in__line">207</span>
 
     </aside>
 
@@ -1481,7 +1481,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">233</span>
 
     </aside>
 
@@ -1524,7 +1524,7 @@ relative to the project root directory when supplying the path argument.</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Framework-Exceptions-BaseUrlNotSetException.html"><abbr title="\Hyde\Framework\Exceptions\BaseUrlNotSetException">BaseUrlNotSetException</abbr></a></span>
                                                             
                                                  <section class="phpdocumentor-description"><p>If no site URL is set and no default is provided</p>
 </section>
@@ -1551,7 +1551,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -1594,7 +1594,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
