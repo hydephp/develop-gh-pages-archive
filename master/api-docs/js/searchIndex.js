@@ -2091,6 +2091,16 @@ Search.appendIndex(
             "summary": "Return\u0020a\u0020qualified\u0020URI\u0020path,\u0020if\u0020SITE_URL\u0020is\u0020set\u0020in\u0020.env,\u0020else\u0020return\u0020false.",
             "url": "classes/Hyde-Framework-HydeKernel.html#method_uriPath"
         },                {
+            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AhasSiteUrl\u0028\u0029",
+            "name": "hasSiteUrl",
+            "summary": "Check\u0020if\u0020a\u0020site\u0020base\u0020URL\u0020has\u0020been\u0020set\u0020in\u0020config\u0020\u0028or\u0020.env\u0029.",
+            "url": "classes/Hyde-Framework-HydeKernel.html#method_hasSiteUrl"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003Aurl\u0028\u0029",
+            "name": "url",
+            "summary": "Return\u0020a\u0020qualified\u0020URI\u0020path\u0020to\u0020the\u0020supplied\u0020path\u0020if\u0020a\u0020base\u0020URL\u0020is\u0020set.",
+            "url": "classes/Hyde-Framework-HydeKernel.html#method_url"
+        },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003Acopy\u0028\u0029",
             "name": "copy",
             "summary": "Wrapper\u0020for\u0020the\u0020copy\u0020function,\u0020but\u0020allows\u0020choosing\u0020if\u0020files\u0020may\u0020be\u0020overwritten.",

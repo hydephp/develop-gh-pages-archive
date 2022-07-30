@@ -304,6 +304,13 @@ providing helpful methods for interacting with it.</dd>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-HydeKernel.html#method_hasSiteUrl">hasSiteUrl()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Check if a site base URL has been set in config (or .env).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-HydeKernel.html#method_image">image()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -358,6 +365,13 @@ providing helpful methods for interacting with it.</dd>
                                 &nbsp;: string|false    </span>
 </dt>
 <dd>Return a qualified URI path, if SITE_URL is set in .env, else return false.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-HydeKernel.html#method_url">url()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Return a qualified URI path to the supplied path if a base URL is set.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-HydeKernel.html#method_vendorPath">vendorPath()</a>
@@ -483,7 +497,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">221</span>
+    <span class="phpdocumentor-element-found-in__line">253</span>
 
     </aside>
 
@@ -680,7 +694,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">254</span>
+    <span class="phpdocumentor-element-found-in__line">286</span>
 
     </aside>
 
@@ -724,7 +738,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">269</span>
+    <span class="phpdocumentor-element-found-in__line">301</span>
 
     </aside>
 
@@ -801,7 +815,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">259</span>
+    <span class="phpdocumentor-element-found-in__line">291</span>
 
     </aside>
 
@@ -845,7 +859,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">264</span>
+    <span class="phpdocumentor-element-found-in__line">296</span>
 
     </aside>
 
@@ -889,7 +903,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">243</span>
+    <span class="phpdocumentor-element-found-in__line">275</span>
 
     </aside>
 
@@ -946,7 +960,7 @@ Hyde::path('_pages/foo') becomes Hyde::getBladePagePath('foo')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">277</span>
+    <span class="phpdocumentor-element-found-in__line">309</span>
 
     </aside>
 
@@ -1013,6 +1027,39 @@ Hyde::path('_pages/foo') becomes Hyde::getBladePagePath('foo')</p>
             </dd>
             </dl>
 
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasSiteUrl">
+        hasSiteUrl()
+        <a href="classes/Hyde-Framework-HydeKernel.html#method_hasSiteUrl" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">218</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Check if a site base URL has been set in config (or .env).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasSiteUrl</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+    
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1227,7 +1274,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">291</span>
+    <span class="phpdocumentor-element-found-in__line">323</span>
 
     </aside>
 
@@ -1365,7 +1412,7 @@ relative to the project root directory when supplying the path argument.</p>
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+            -deprecated                                            "
 >
     <h4 class="phpdocumentor-element__name" id="method_uriPath">
         uriPath()
@@ -1374,13 +1421,13 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">204</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Return a qualified URI path, if SITE_URL is set in .env, else return false.</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">uriPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|false</span></code>
 
@@ -1399,9 +1446,94 @@ relative to the project root directory when supplying the path argument.</p>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>v0.53.0-beta - Use Hyde::url() or Hyde::hasSiteUrl() instead.</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string|false</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_url">
+        url()
+        <a href="classes/Hyde-Framework-HydeKernel.html#method_url" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">232</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return a qualified URI path to the supplied path if a base URL is set.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">url</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$path</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>optional relative path suffix. Omit to return base url.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$default</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>optional default value to return if no site url is set.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>If no site URL is set and no default is provided</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     
