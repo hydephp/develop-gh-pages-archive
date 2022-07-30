@@ -896,6 +896,11 @@ Search.appendIndex(
             "summary": "Generates\u0020article\u0020metadata\u0020for\u0020a\u0020MarkdownPost.",
             "url": "classes/Hyde-Framework-Concerns-HasArticleMetadata.html"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\HasArticleMetadata\u003A\u003AgetRoute\u0028\u0029",
+            "name": "getRoute",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_getRoute"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\HasArticleMetadata\u003A\u003AconstructMetadata\u0028\u0029",
             "name": "constructMetadata",
             "summary": "",
@@ -1035,6 +1040,11 @@ Search.appendIndex(
             "name": "htmlTitle",
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_htmlTitle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\HasPageMetadata\u003A\u003AgetRoute\u0028\u0029",
+            "name": "getRoute",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_getRoute"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\HasPageMetadata\u003A\u003AgetCanonicalUrl\u0028\u0029",
             "name": "getCanonicalUrl",
