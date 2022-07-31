@@ -112,14 +112,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">File helper methods, bound to the HydeKernel instance, and is an integral part of the framework.</p>
 
-    <section class="phpdocumentor-description"><p>If a method uses the name <code class="prettyprint">path</code> it refers to an internal file path.
-if a method uses the name <code class="prettyprint">link</code> it refers to a web link used in Blade templates.</p>
+    <section class="phpdocumentor-description"><p>All paths are relative to the root of the application.</p>
 </section>
 
 
@@ -166,9 +165,9 @@ if a method uses the name <code class="prettyprint">link</code> it refers to a w
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Foundation-Filesystem.html#method_copy">copy()</a>
     <span>
-                                &nbsp;: bool|int    </span>
+                                &nbsp;: bool    </span>
 </dt>
-<dd>Wrapper for the copy function, but allows choosing if files may be overwritten.</dd>
+<dd>Wrapper for the copy function, but using project relative paths.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Foundation-Filesystem.html#method_getBasePath">getBasePath()</a>
@@ -234,6 +233,20 @@ if a method uses the name <code class="prettyprint">link</code> it refers to a w
 <dd>Decode an absolute path created with a Hyde::path() helper into its relative counterpart.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Foundation-Filesystem.html#method_touch">touch()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Touch one or more files in the project&#039;s directory.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Foundation-Filesystem.html#method_unlink">unlink()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Unlink one or more files in the project&#039;s directory.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Foundation-Filesystem.html#method_vendorPath">vendorPath()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -268,7 +281,7 @@ if a method uses the name <code class="prettyprint">link</code> it refers to a w
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -306,7 +319,7 @@ if a method uses the name <code class="prettyprint">link</code> it refers to a w
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -350,15 +363,15 @@ if a method uses the name <code class="prettyprint">link</code> it refers to a w
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Wrapper for the copy function, but allows choosing if files may be overwritten.</p>
+        <p class="phpdocumentor-summary">Wrapper for the copy function, but using project relative paths.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">copy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$force</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|int</span></code>
+                    <span class="phpdocumentor-signature__name">copy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -368,8 +381,7 @@ if a method uses the name <code class="prettyprint">link</code> it refers to a w
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The source file path.</p>
-</section>
+                    <section class="phpdocumentor-description"></section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -377,17 +389,7 @@ if a method uses the name <code class="prettyprint">link</code> it refers to a w
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The destination file path.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$force</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>If true, existing files will be overwritten.</p>
-</section>
+                    <section class="phpdocumentor-description"></section>
 
             </dd>
             </dl>
@@ -395,11 +397,9 @@ if a method uses the name <code class="prettyprint">link</code> it refers to a w
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool|int</span>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
-            <section class="phpdocumentor-description"><p>Returns true|false on copy() success|failure, or an error code on failure</p>
-</section>
-
+        
     
 </article>
                     <article
@@ -415,7 +415,7 @@ if a method uses the name <code class="prettyprint">link</code> it refers to a w
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -448,7 +448,7 @@ if a method uses the name <code class="prettyprint">link</code> it refers to a w
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -492,7 +492,7 @@ if a method uses the name <code class="prettyprint">link</code> it refers to a w
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -536,7 +536,7 @@ if a method uses the name <code class="prettyprint">link</code> it refers to a w
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
@@ -580,7 +580,7 @@ if a method uses the name <code class="prettyprint">link</code> it refers to a w
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -624,7 +624,7 @@ if a method uses the name <code class="prettyprint">link</code> it refers to a w
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -681,7 +681,7 @@ Hyde::path('_pages/foo') becomes Hyde::getBladePagePath('foo')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
     </aside>
 
@@ -725,7 +725,7 @@ Hyde::path('_pages/foo') becomes Hyde::getBladePagePath('foo')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -772,7 +772,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">146</span>
+    <span class="phpdocumentor-element-found-in__line">164</span>
 
     </aside>
 
@@ -809,6 +809,94 @@ relative to the project root directory when supplying the path argument.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_touch">
+        touch()
+        <a href="classes/Hyde-Framework-Foundation-Filesystem.html#method_touch" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">78</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Touch one or more files in the project&#039;s directory.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">touch</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$path</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_unlink">
+        unlink()
+        <a href="classes/Hyde-Framework-Foundation-Filesystem.html#method_unlink" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">94</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Unlink one or more files in the project&#039;s directory.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">unlink</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$path</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_vendorPath">
         vendorPath()
         <a href="classes/Hyde-Framework-Foundation-Filesystem.html#method_vendorPath" class="headerlink"><i class="fas fa-link"></i></a>
@@ -816,7 +904,7 @@ relative to the project root directory when supplying the path argument.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Filesystem.php"><a href="files/packages-framework-src-foundation-filesystem.html"><abbr title="packages/framework/src/Foundation/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 

@@ -316,11 +316,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-PublishesHomepageView.html#property_selected"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\PublishesHomepageView\u003A\u003A\u0024force",
-            "name": "force",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-PublishesHomepageView.html#property_force"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PublishesHydeViews",
             "name": "PublishesHydeViews",
             "summary": "",
@@ -1933,8 +1928,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Foundation\\Filesystem\u003A\u003Acopy\u0028\u0029",
             "name": "copy",
-            "summary": "Wrapper\u0020for\u0020the\u0020copy\u0020function,\u0020but\u0020allows\u0020choosing\u0020if\u0020files\u0020may\u0020be\u0020overwritten.",
+            "summary": "Wrapper\u0020for\u0020the\u0020copy\u0020function,\u0020but\u0020using\u0020project\u0020relative\u0020paths.",
             "url": "classes/Hyde-Framework-Foundation-Filesystem.html#method_copy"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\Filesystem\u003A\u003Atouch\u0028\u0029",
+            "name": "touch",
+            "summary": "Touch\u0020one\u0020or\u0020more\u0020files\u0020in\u0020the\u0020project\u0027s\u0020directory.",
+            "url": "classes/Hyde-Framework-Foundation-Filesystem.html#method_touch"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\Filesystem\u003A\u003Aunlink\u0028\u0029",
+            "name": "unlink",
+            "summary": "Unlink\u0020one\u0020or\u0020more\u0020files\u0020in\u0020the\u0020project\u0027s\u0020directory.",
+            "url": "classes/Hyde-Framework-Foundation-Filesystem.html#method_unlink"
         },                {
             "fqsen": "\\Hyde\\Framework\\Foundation\\Filesystem\u003A\u003AgetModelSourcePath\u0028\u0029",
             "name": "getModelSourcePath",
@@ -2290,6 +2295,16 @@ Search.appendIndex(
             "name": "copy",
             "summary": "",
             "url": "classes/Hyde-Framework-HydeKernel.html#method_copy"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003Atouch\u0028\u0029",
+            "name": "touch",
+            "summary": "",
+            "url": "classes/Hyde-Framework-HydeKernel.html#method_touch"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003Aunlink\u0028\u0029",
+            "name": "unlink",
+            "summary": "",
+            "url": "classes/Hyde-Framework-HydeKernel.html#method_unlink"
         },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AgetModelSourcePath\u0028\u0029",
             "name": "getModelSourcePath",
