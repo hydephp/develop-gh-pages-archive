@@ -2798,7 +2798,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A\u0024localPath",
             "name": "localPath",
-            "summary": "The\u0020path\u0020to\u0020the\u0020page\u0020relative\u0020to\u0020the\u0020configured\u0020docs\u0020directory.",
+            "summary": "The\u0020path\u0020to\u0020the\u0020page\u0020relative\u0020to\u0020the\u0020configured\u0020\u0060_docs\u0060\u0020directory.",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_localPath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPage",
@@ -2868,7 +2868,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Parsers\\DocumentationPageParser",
             "name": "DocumentationPageParser",
-            "summary": "Parses\u0020a\u0020Markdown\u0020file\u0020in\u0020the\u0020configured\u0020docs\u0020directory\u0020into\u0020a\u0020DocumentationPage\u0020object.",
+            "summary": "Parses\u0020a\u0020Markdown\u0020file\u0020in\u0020the\u0020configured\u0020\u0060_docs\u0060\u0020directory\u0020into\u0020a\u0020DocumentationPage\u0020object.",
             "url": "classes/Hyde-Framework-Models-Parsers-DocumentationPageParser.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Parsers\\DocumentationPageParser\u003A\u003Aexecute\u0028\u0029",
