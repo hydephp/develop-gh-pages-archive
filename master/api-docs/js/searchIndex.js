@@ -1541,6 +1541,16 @@ Search.appendIndex(
             "summary": "The\u0020HydeKernel\u0020encapsulates\u0020a\u0020HydePHP\u0020project,\nproviding\u0020helpful\u0020methods\u0020for\u0020interacting\u0020with\u0020it.",
             "url": "classes/Hyde-Framework-Contracts-HydeKernelContract.html"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\HydeKernelContract\u003A\u003AgetBasePath\u0028\u0029",
+            "name": "getBasePath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-HydeKernelContract.html#method_getBasePath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\HydeKernelContract\u003A\u003AsetBasePath\u0028\u0029",
+            "name": "setBasePath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-HydeKernelContract.html#method_setBasePath"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\IncludeFacadeContract",
             "name": "IncludeFacadeContract",
             "summary": "",
