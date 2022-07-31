@@ -1116,21 +1116,6 @@ Search.appendIndex(
             "summary": "Ensure\u0020the\u0020supplied\u0020directories\u0020exist\u0020by\u0020creating\u0020them\u0020if\u0020they\u0020don\u0027t.",
             "url": "classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectories"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\TransfersMediaAssetsForBuildCommands",
-            "name": "TransfersMediaAssetsForBuildCommands",
-            "summary": "Transfer\u0020all\u0020media\u0020assets\u0020to\u0020the\u0020build\u0020directory.",
-            "url": "classes/Hyde-Framework-Concerns-Internal-TransfersMediaAssetsForBuildCommands.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\TransfersMediaAssetsForBuildCommands\u003A\u003AtransferMediaAssets\u0028\u0029",
-            "name": "transferMediaAssets",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Internal-TransfersMediaAssetsForBuildCommands.html#method_transferMediaAssets"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\TransfersMediaAssetsForBuildCommands\u003A\u003AcanRunBuildAction\u0028\u0029",
-            "name": "canRunBuildAction",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Internal-TransfersMediaAssetsForBuildCommands.html#method_canRunBuildAction"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasConfigurableMarkdownFeatures",
             "name": "HasConfigurableMarkdownFeatures",
             "summary": "Allow\u0020the\u0020Markdown\u0020service\u0020to\u0020have\u0020configurable\u0020features.",
@@ -4205,11 +4190,6 @@ Search.appendIndex(
             "name": "FacadeHelpers",
             "summary": "",
             "url": "namespaces/hyde-framework-concerns-facadehelpers.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal",
-            "name": "Internal",
-            "summary": "",
-            "url": "namespaces/hyde-framework-concerns-internal.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown",
             "name": "Markdown",
