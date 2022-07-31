@@ -3468,7 +3468,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMarkdownPageFiles\u0028\u0029",
             "name": "getMarkdownPageFiles",
-            "summary": "Get\u0020all\u0020the\u0020Markdown\u0020files\u0020in\u0020the\u0020_pages\u0020directory.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPageFiles"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMediaAssetFiles\u0028\u0029",
@@ -3478,12 +3478,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetBladePageFiles\u0028\u0029",
             "name": "getBladePageFiles",
-            "summary": "Get\u0020all\u0020the\u0020Blade\u0020files\u0020in\u0020the\u0020_pages\u0020directory.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getBladePageFiles"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMarkdownPostFiles\u0028\u0029",
             "name": "getMarkdownPostFiles",
-            "summary": "Get\u0020all\u0020the\u0020Markdown\u0020files\u0020in\u0020the\u0020_posts\u0020directory.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPostFiles"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\FileCacheService",
