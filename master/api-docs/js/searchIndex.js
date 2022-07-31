@@ -1311,6 +1311,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#property_matter"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
+            "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method_compile"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A\u0024body",
             "name": "body",
             "summary": "",
@@ -1393,7 +1398,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetOutputPath\u0028\u0029",
             "name": "getOutputPath",
-            "summary": "",
+            "summary": "Get\u0020the\u0020path\u0020where\u0020the\u0020compiled\u0020page\u0020will\u0020be\u0020saved.",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getOutputPath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetCurrentPagePath\u0028\u0029",
@@ -1410,6 +1415,16 @@ Search.appendIndex(
             "name": "htmlTitle",
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_htmlTitle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetBladeView\u0028\u0029",
+            "name": "getBladeView",
+            "summary": "Get\u0020the\u0020Blade\u0020template\u0020for\u0020the\u0020page.",
+            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getBladeView"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
+            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_compile"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",
@@ -1430,6 +1445,11 @@ Search.appendIndex(
             "name": "parserClass",
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#property_parserClass"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003A\u0024template",
+            "name": "template",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#property_template"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003A\u0024slug",
             "name": "slug",
@@ -1520,6 +1540,26 @@ Search.appendIndex(
             "name": "getExecutionTime",
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-BuildTaskContract.html#method_getExecutionTime"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\CompilableContract",
+            "name": "CompilableContract",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-CompilableContract.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\CompilableContract\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
+            "url": "classes/Hyde-Framework-Contracts-CompilableContract.html#method_compile"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\CompilableContract\u003A\u003AgetOutputPath\u0028\u0029",
+            "name": "getOutputPath",
+            "summary": "Get\u0020the\u0020path\u0020where\u0020the\u0020compiled\u0020page\u0020will\u0020be\u0020saved.",
+            "url": "classes/Hyde-Framework-Contracts-CompilableContract.html#method_getOutputPath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\CompilableContract\u003A\u003AgetBladeView\u0028\u0029",
+            "name": "getBladeView",
+            "summary": "Get\u0020the\u0020Blade\u0020template\u0020for\u0020the\u0020page.",
+            "url": "classes/Hyde-Framework-Contracts-CompilableContract.html#method_getBladeView"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\HydeKernelContract",
             "name": "HydeKernelContract",
@@ -2726,6 +2766,16 @@ Search.appendIndex(
             "summary": "Since\u0020this\u0020model\u0020also\u0020acts\u0020as\u0020a\u0020Page\u0020parser,\nwe\u0020implement\u0020the\u0020execute\u0020method\u0020for\u0020compatability.",
             "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#method_execute"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003AgetBladeView\u0028\u0029",
+            "name": "getBladeView",
+            "summary": "Get\u0020the\u0020Blade\u0020template\u0020for\u0020the\u0020page.",
+            "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#method_getBladeView"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
+            "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#method_compile"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A\u0024view",
             "name": "view",
             "summary": "The\u0020name\u0020of\u0020the\u0020Blade\u0020View\u0020to\u0020compile.",
@@ -2791,6 +2841,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_parserClass"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A\u0024template",
+            "name": "template",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_template"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A\u0024category",
             "name": "category",
             "summary": "The\u0020sidebar\u0020category\u0020group,\u0020if\u0020any.",
@@ -2815,6 +2870,11 @@ Search.appendIndex(
             "name": "outputDirectory",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPage.html#property_outputDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPage\u003A\u003A\u0024template",
+            "name": "template",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPage.html#property_template"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPage\u003A\u003A\u0024parserClass",
             "name": "parserClass",
@@ -2865,6 +2925,11 @@ Search.appendIndex(
             "name": "parserClass",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_parserClass"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003A\u0024template",
+            "name": "template",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_template"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Parsers\\DocumentationPageParser",
             "name": "DocumentationPageParser",
@@ -4095,26 +4160,6 @@ Search.appendIndex(
             "name": "save",
             "summary": "Save\u0020the\u0020compiled\u0020HTML\u0020to\u0020file.",
             "url": "classes/Hyde-Framework-StaticPageBuilder.html#method_save"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\StaticPageBuilder\u003A\u003AcompileView\u0028\u0029",
-            "name": "compileView",
-            "summary": "Compile\u0020a\u0020custom\u0020Blade\u0020View\u0020into\u0020HTML.",
-            "url": "classes/Hyde-Framework-StaticPageBuilder.html#method_compileView"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\StaticPageBuilder\u003A\u003AcompilePost\u0028\u0029",
-            "name": "compilePost",
-            "summary": "Compile\u0020a\u0020Post\u0020into\u0020HTML\u0020using\u0020the\u0020Blade\u0020View.",
-            "url": "classes/Hyde-Framework-StaticPageBuilder.html#method_compilePost"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\StaticPageBuilder\u003A\u003AcompilePage\u0028\u0029",
-            "name": "compilePage",
-            "summary": "Compile\u0020a\u0020Markdown\u0020Page\u0020into\u0020HTML\u0020using\u0020the\u0020Blade\u0020View.",
-            "url": "classes/Hyde-Framework-StaticPageBuilder.html#method_compilePage"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\StaticPageBuilder\u003A\u003AcompileDocs\u0028\u0029",
-            "name": "compileDocs",
-            "summary": "Compile\u0020a\u0020Documentation\u0020page\u0020into\u0020HTML\u0020using\u0020the\u0020Blade\u0020View.",
-            "url": "classes/Hyde-Framework-StaticPageBuilder.html#method_compileDocs"
         },                {
             "fqsen": "\\Hyde\\Framework\\StaticPageBuilder\u003A\u003A\u0024outputPath",
             "name": "outputPath",
