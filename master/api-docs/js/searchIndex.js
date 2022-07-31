@@ -3441,11 +3441,6 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020source\u0020directory\u0020path\u0020of\u0020a\u0020model.",
             "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getFilePathForModelClassFiles"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AfindModelFromFilePath\u0028\u0029",
-            "name": "findModelFromFilePath",
-            "summary": "Determine\u0020the\u0020Page\u0020Model\u0020to\u0020use\u0020for\u0020a\u0020given\u0020file\u0020path.",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_findModelFromFilePath"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AcreateClickableFilepath\u0028\u0029",
             "name": "createClickableFilepath",
             "summary": "Create\u0020a\u0020filepath\u0020that\u0020can\u0020be\u0020opened\u0020in\u0020the\u0020browser\u0020from\u0020a\u0020terminal.",
