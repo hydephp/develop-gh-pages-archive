@@ -142,8 +142,6 @@ providing helpful methods for interacting with it.</dd>
         <dd>Generate a JSON file that can be used as a search index for documentation pages.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Actions-GeneratesSidebarTableOfContents.html"><abbr title="\Hyde\Framework\Actions\GeneratesSidebarTableOfContents">GeneratesSidebarTableOfContents</abbr></a></dt>
         <dd>Generates a table of contents for the Markdown document.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Actions-MarkdownConverter.html"><abbr title="\Hyde\Framework\Actions\MarkdownConverter">MarkdownConverter</abbr></a></dt>
-        <dd>Converts Markdown into HTML.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSitemap.html"><abbr title="\Hyde\Framework\Actions\PostBuildTasks\GenerateSitemap">GenerateSitemap</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Actions-PublishesHomepageView.html"><abbr title="\Hyde\Framework\Actions\PublishesHomepageView">PublishesHomepageView</abbr></a></dt>
@@ -202,6 +200,8 @@ providing helpful methods for interacting with it.</dd>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Facades-Includes.html"><abbr title="\Hyde\Framework\Facades\Includes">Includes</abbr></a></dt>
         <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Facades-Markdown.html"><abbr title="\Hyde\Framework\Facades\Markdown">Markdown</abbr></a></dt>
+        <dd>Markdown facade to access Markdown services.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Foundation-Filesystem.html"><abbr title="\Hyde\Framework\Foundation\Filesystem">Filesystem</abbr></a></dt>
         <dd>File helper methods, bound to the HydeKernel instance, and is an integral part of the framework.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Foundation-Hyperlinks.html"><abbr title="\Hyde\Framework\Foundation\Hyperlinks">Hyperlinks</abbr></a></dt>
@@ -210,8 +210,6 @@ providing helpful methods for interacting with it.</dd>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Helpers-Features.html"><abbr title="\Hyde\Framework\Helpers\Features">Features</abbr></a></dt>
         <dd>Allows features to be enabled and disabled in a simple object-oriented manner.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Helpers-Markdown.html"><abbr title="\Hyde\Framework\Helpers\Markdown">Markdown</abbr></a></dt>
-        <dd>General interface for Markdown services.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Helpers-Meta.html"><abbr title="\Hyde\Framework\Helpers\Meta">Meta</abbr></a></dt>
         <dd>Helpers to fluently declare HTML meta tags.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Hyde.html"><abbr title="\Hyde\Framework\Hyde">Hyde</abbr></a></dt>
@@ -259,6 +257,20 @@ such as Markdown components and YAML files using Hyde Autodiscovery.</dd>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Modules-DataCollections-Facades-MarkdownCollection.html"><abbr title="\Hyde\Framework\Modules\DataCollections\Facades\MarkdownCollection">MarkdownCollection</abbr></a></dt>
         <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html"><abbr title="\Hyde\Framework\Modules\Markdown\BladeDownProcessor">BladeDownProcessor</abbr></a></dt>
+        <dd>Markdown Processor to render Laravel Blade within Markdown files.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html"><abbr title="\Hyde\Framework\Modules\Markdown\CodeblockFilepathProcessor">CodeblockFilepathProcessor</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Modules-Markdown-MarkdownConverter.html"><abbr title="\Hyde\Framework\Modules\Markdown\MarkdownConverter">MarkdownConverter</abbr></a></dt>
+        <dd>The base Markdown converter class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html"><abbr title="\Hyde\Framework\Modules\Markdown\MarkdownFileParser">MarkdownFileParser</abbr></a></dt>
+        <dd>Prepares a Markdown file for further usage by extracting the Front Matter and creating MarkdownDocument object.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Modules-Markdown-MarkdownServiceProvider.html"><abbr title="\Hyde\Framework\Modules\Markdown\MarkdownServiceProvider">MarkdownServiceProvider</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html"><abbr title="\Hyde\Framework\Modules\Markdown\ShortcodeProcessor">ShortcodeProcessor</abbr></a></dt>
+        <dd>Handle shortcode processing for Markdown conversions.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html"><abbr title="\Hyde\Framework\Modules\Markdown\Shortcodes\AbstractColoredBlockquote">AbstractColoredBlockquote</abbr></a></dt>
+        <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-AssetService.html"><abbr title="\Hyde\Framework\Services\AssetService">AssetService</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-BuildHookService.html"><abbr title="\Hyde\Framework\Services\BuildHookService">BuildHookService</abbr></a></dt>
@@ -270,19 +282,9 @@ such as Markdown components and YAML files using Hyde Autodiscovery.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-HydeSmartDocs.html"><abbr title="\Hyde\Framework\Services\HydeSmartDocs">HydeSmartDocs</abbr></a></dt>
         <dd>Class to make Hyde documentation pages smarter,
 by dynamically enriching them with semantic HTML.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-Markdown-BladeDownProcessor.html"><abbr title="\Hyde\Framework\Services\Markdown\BladeDownProcessor">BladeDownProcessor</abbr></a></dt>
-        <dd>Markdown Processor to render Laravel Blade within Markdown files.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-Markdown-CodeblockFilepathProcessor.html"><abbr title="\Hyde\Framework\Services\Markdown\CodeblockFilepathProcessor">CodeblockFilepathProcessor</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-Markdown-ShortcodeProcessor.html"><abbr title="\Hyde\Framework\Services\Markdown\ShortcodeProcessor">ShortcodeProcessor</abbr></a></dt>
-        <dd>Handle shortcode processing for Markdown conversions.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-Markdown-Shortcodes-AbstractColoredBlockquote.html"><abbr title="\Hyde\Framework\Services\Markdown\Shortcodes\AbstractColoredBlockquote">AbstractColoredBlockquote</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-MarkdownConverterService.html"><abbr title="\Hyde\Framework\Services\MarkdownConverterService">MarkdownConverterService</abbr></a></dt>
-        <dd>Interface for the CommonMarkConverter,
-allowing for easy configuration of extensions.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-MarkdownFileService.html"><abbr title="\Hyde\Framework\Services\MarkdownFileService">MarkdownFileService</abbr></a></dt>
-        <dd>Prepares a Markdown file for further usage.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-MarkdownService.html"><abbr title="\Hyde\Framework\Services\MarkdownService">MarkdownService</abbr></a></dt>
+        <dd>Dynamically creates a Markdown converter tailored for the target model and setup,
+then converts the Markdown to HTML using both pre- and post-processors.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-RebuildService.html"><abbr title="\Hyde\Framework\Services\RebuildService">RebuildService</abbr></a></dt>
         <dd>Build static pages, but intelligently.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-RoutingService.html"><abbr title="\Hyde\Framework\Services\RoutingService">RoutingService</abbr></a></dt>
@@ -320,12 +322,6 @@ allowing for easy configuration of extensions.</dd>
         <dd>Generate Table of Contents as HTML from a Markdown document body.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html"><abbr title="\Hyde\Framework\Concerns\InteractsWithDirectories">InteractsWithDirectories</abbr></a></dt>
         <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Hyde-Framework-Concerns-Markdown-HasConfigurableMarkdownFeatures.html"><abbr title="\Hyde\Framework\Concerns\Markdown\HasConfigurableMarkdownFeatures">HasConfigurableMarkdownFeatures</abbr></a></dt>
-        <dd>Allow the Markdown service to have configurable features.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Hyde-Framework-Concerns-Markdown-HasMarkdownFeatures.html"><abbr title="\Hyde\Framework\Concerns\Markdown\HasMarkdownFeatures">HasMarkdownFeatures</abbr></a></dt>
-        <dd>Global Markdown Feature Handler.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Hyde-Framework-Concerns-Markdown-HasTorchlightIntegration.html"><abbr title="\Hyde\Framework\Concerns\Markdown\HasTorchlightIntegration">HasTorchlightIntegration</abbr></a></dt>
-        <dd>Helper methods for the Torchlight integration.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Hyde-Framework-Concerns-RegistersFileLocations.html"><abbr title="\Hyde\Framework\Concerns\RegistersFileLocations">RegistersFileLocations</abbr></a></dt>
         <dd>This trait registers the file paths for important Hyde locations.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Hyde-Framework-Concerns-ValidatesExistence.html"><abbr title="\Hyde\Framework\Concerns\ValidatesExistence">ValidatesExistence</abbr></a></dt>

@@ -261,16 +261,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-GeneratesSidebarTableOfContents.html#property_markdown"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\MarkdownConverter",
-            "name": "MarkdownConverter",
-            "summary": "Converts\u0020Markdown\u0020into\u0020HTML.",
-            "url": "classes/Hyde-Framework-Actions-MarkdownConverter.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\MarkdownConverter\u003A\u003Aparse\u0028\u0029",
-            "name": "parse",
-            "summary": "Parse\u0020the\u0020Markdown\u0020into\u0020HTML.",
-            "url": "classes/Hyde-Framework-Actions-MarkdownConverter.html#method_parse"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSitemap",
             "name": "GenerateSitemap",
             "summary": "",
@@ -1101,91 +1091,6 @@ Search.appendIndex(
             "summary": "Ensure\u0020the\u0020supplied\u0020directories\u0020exist\u0020by\u0020creating\u0020them\u0020if\u0020they\u0020don\u0027t.",
             "url": "classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectories"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasConfigurableMarkdownFeatures",
-            "name": "HasConfigurableMarkdownFeatures",
-            "summary": "Allow\u0020the\u0020Markdown\u0020service\u0020to\u0020have\u0020configurable\u0020features.",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasConfigurableMarkdownFeatures.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasConfigurableMarkdownFeatures\u003A\u003AaddFeature\u0028\u0029",
-            "name": "addFeature",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasConfigurableMarkdownFeatures.html#method_addFeature"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasConfigurableMarkdownFeatures\u003A\u003AremoveFeature\u0028\u0029",
-            "name": "removeFeature",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasConfigurableMarkdownFeatures.html#method_removeFeature"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasConfigurableMarkdownFeatures\u003A\u003AwithTableOfContents\u0028\u0029",
-            "name": "withTableOfContents",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasConfigurableMarkdownFeatures.html#method_withTableOfContents"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasConfigurableMarkdownFeatures\u003A\u003AwithPermalinks\u0028\u0029",
-            "name": "withPermalinks",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasConfigurableMarkdownFeatures.html#method_withPermalinks"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasConfigurableMarkdownFeatures\u003A\u003AhasFeature\u0028\u0029",
-            "name": "hasFeature",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasConfigurableMarkdownFeatures.html#method_hasFeature"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasConfigurableMarkdownFeatures\u003A\u003AcanEnablePermalinks\u0028\u0029",
-            "name": "canEnablePermalinks",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasConfigurableMarkdownFeatures.html#method_canEnablePermalinks"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasConfigurableMarkdownFeatures\u003A\u003AisDocumentationPage\u0028\u0029",
-            "name": "isDocumentationPage",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasConfigurableMarkdownFeatures.html#method_isDocumentationPage"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasConfigurableMarkdownFeatures\u003A\u003AcanEnableTorchlight\u0028\u0029",
-            "name": "canEnableTorchlight",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasConfigurableMarkdownFeatures.html#method_canEnableTorchlight"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasConfigurableMarkdownFeatures\u003A\u003A\u0024features",
-            "name": "features",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasConfigurableMarkdownFeatures.html#property_features"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasMarkdownFeatures",
-            "name": "HasMarkdownFeatures",
-            "summary": "Global\u0020Markdown\u0020Feature\u0020Handler.",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasMarkdownFeatures.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasMarkdownFeatures\u003A\u003AhasTableOfContents\u0028\u0029",
-            "name": "hasTableOfContents",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasMarkdownFeatures.html#method_hasTableOfContents"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasTorchlightIntegration",
-            "name": "HasTorchlightIntegration",
-            "summary": "Helper\u0020methods\u0020for\u0020the\u0020Torchlight\u0020integration.",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasTorchlightIntegration.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasTorchlightIntegration\u003A\u003AdetermineIfTorchlightAttributionShouldBeInjected\u0028\u0029",
-            "name": "determineIfTorchlightAttributionShouldBeInjected",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasTorchlightIntegration.html#method_determineIfTorchlightAttributionShouldBeInjected"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasTorchlightIntegration\u003A\u003AinjectTorchlightAttribution\u0028\u0029",
-            "name": "injectTorchlightAttribution",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasTorchlightIntegration.html#method_injectTorchlightAttribution"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasTorchlightIntegration\u003A\u003A\u0024useTorchlight",
-            "name": "useTorchlight",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasTorchlightIntegration.html#property_useTorchlight"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown\\HasTorchlightIntegration\u003A\u003A\u0024torchlightAttribution",
-            "name": "torchlightAttribution",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Markdown-HasTorchlightIntegration.html#property_torchlightAttribution"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations",
             "name": "RegistersFileLocations",
             "summary": "This\u0020trait\u0020registers\u0020the\u0020file\u0020paths\u0020for\u0020important\u0020Hyde\u0020locations.",
@@ -1891,6 +1796,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Facades-Includes.html#property_includesDirectory"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Facades\\Markdown",
+            "name": "Markdown",
+            "summary": "Markdown\u0020facade\u0020to\u0020access\u0020Markdown\u0020services.",
+            "url": "classes/Hyde-Framework-Facades-Markdown.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Facades\\Markdown\u003A\u003Aparse\u0028\u0029",
+            "name": "parse",
+            "summary": "Parse\u0020a\u0020Markdown\u0020string\u0020into\u0020HTML.",
+            "url": "classes/Hyde-Framework-Facades-Markdown.html#method_parse"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Foundation\\Filesystem",
             "name": "Filesystem",
             "summary": "File\u0020helper\u0020methods,\u0020bound\u0020to\u0020the\u0020HydeKernel\u0020instance,\u0020and\u0020is\u0020an\u0020integral\u0020part\u0020of\u0020the\u0020framework.",
@@ -2130,11 +2045,6 @@ Search.appendIndex(
             "name": "rss",
             "summary": "Can\u0020an\u0020RSS\u0020feed\u0020be\u0020generated\u003F",
             "url": "classes/Hyde-Framework-Helpers-Features.html#method_rss"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Helpers\\Markdown",
-            "name": "Markdown",
-            "summary": "General\u0020interface\u0020for\u0020Markdown\u0020services.",
-            "url": "classes/Hyde-Framework-Helpers-Markdown.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Meta",
             "name": "Meta",
@@ -2841,6 +2751,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_home"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AhasTableOfContents\u0028\u0029",
+            "name": "hasTableOfContents",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_hasTableOfContents"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",
             "summary": "",
@@ -3341,6 +3256,266 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-DataCollections-Facades-MarkdownCollection.html#method_get"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\BladeDownProcessor",
+            "name": "BladeDownProcessor",
+            "summary": "Markdown\u0020Processor\u0020to\u0020render\u0020Laravel\u0020Blade\u0020within\u0020Markdown\u0020files.",
+            "url": "classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\BladeDownProcessor\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html#method_render"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\BladeDownProcessor\u003A\u003Apreprocess\u0028\u0029",
+            "name": "preprocess",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html#method_preprocess"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\BladeDownProcessor\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html#method_process"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\BladeDownProcessor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\BladeDownProcessor\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html#method_run"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\BladeDownProcessor\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\BladeDownProcessor\u003A\u003AlineStartsWithDirective\u0028\u0029",
+            "name": "lineStartsWithDirective",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html#method_lineStartsWithDirective"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\BladeDownProcessor\u003A\u003AprocessLine\u0028\u0029",
+            "name": "processLine",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html#method_processLine"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\BladeDownProcessor\u003A\u003A\u0024html",
+            "name": "html",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html#property_html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\BladeDownProcessor\u003A\u003A\u0024output",
+            "name": "output",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html#property_output"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\BladeDownProcessor\u003A\u003A\u0024pageData",
+            "name": "pageData",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html#property_pageData"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor",
+            "name": "CodeblockFilepathProcessor",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003Apreprocess\u0028\u0029",
+            "name": "preprocess",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#method_preprocess"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#method_process"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003AlineMatchesPattern\u0028\u0029",
+            "name": "lineMatchesPattern",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#method_lineMatchesPattern"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003AtrimHydeDirective\u0028\u0029",
+            "name": "trimHydeDirective",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#method_trimHydeDirective"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003AresolveTemplate\u0028\u0029",
+            "name": "resolveTemplate",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#method_resolveTemplate"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003AresolveTorchlightCodeLine\u0028\u0029",
+            "name": "resolveTorchlightCodeLine",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#method_resolveTorchlightCodeLine"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003AresolveCodeLine\u0028\u0029",
+            "name": "resolveCodeLine",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#method_resolveCodeLine"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003A\u0024patterns",
+            "name": "patterns",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#property_patterns"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003A\u0024torchlightKey",
+            "name": "torchlightKey",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#property_torchlightKey"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownConverter",
+            "name": "MarkdownConverter",
+            "summary": "The\u0020base\u0020Markdown\u0020converter\u0020class.",
+            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownConverter.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownConverter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Create\u0020a\u0020new\u0020Markdown\u0020converter\u0020pre\u002Dconfigured\u0020for\u0020CommonMark.",
+            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownConverter.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownConverter\u003A\u003AgetEnvironment\u0028\u0029",
+            "name": "getEnvironment",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownConverter.html#method_getEnvironment"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser",
+            "name": "MarkdownFileParser",
+            "summary": "Prepares\u0020a\u0020Markdown\u0020file\u0020for\u0020further\u0020usage\u0020by\u0020extracting\u0020the\u0020Front\u0020Matter\u0020and\u0020creating\u0020MarkdownDocument\u0020object.",
+            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Get\u0020the\u0020processed\u0020Markdown\u0020file\u0020as\u0020a\u0020MarkdownDocument.",
+            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser\u003A\u003A\u0024matter",
+            "name": "matter",
+            "summary": "The\u0020extracted\u0020Front\u0020Matter.",
+            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html#property_matter"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser\u003A\u003A\u0024body",
+            "name": "body",
+            "summary": "The\u0020extracted\u0020Markdown\u0020body.",
+            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html#property_body"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownServiceProvider",
+            "name": "MarkdownServiceProvider",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownServiceProvider.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownServiceProvider\u003A\u003Aregister\u0028\u0029",
+            "name": "register",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownServiceProvider.html#method_register"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor",
+            "name": "ShortcodeProcessor",
+            "summary": "Handle\u0020shortcode\u0020processing\u0020for\u0020Markdown\u0020conversions.",
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003AprocessInput\u0028\u0029",
+            "name": "processInput",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_processInput"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003AgetOutput\u0028\u0029",
+            "name": "getOutput",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_getOutput"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_run"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_process"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003AdiscoverShortcodes\u0028\u0029",
+            "name": "discoverShortcodes",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_discoverShortcodes"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003AaddShortcodesFromArray\u0028\u0029",
+            "name": "addShortcodesFromArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_addShortcodesFromArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003AaddShortcode\u0028\u0029",
+            "name": "addShortcode",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_addShortcode"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003AexpandShortcode\u0028\u0029",
+            "name": "expandShortcode",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_expandShortcode"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003AdiscoverSignature\u0028\u0029",
+            "name": "discoverSignature",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_discoverSignature"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003A\u0024input",
+            "name": "input",
+            "summary": "The\u0020input\u0020Markdown\u0020document\u0020body.",
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#property_input"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003A\u0024output",
+            "name": "output",
+            "summary": "The\u0020processed\u0020Markdown\u0020document\u0020body.",
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#property_output"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003A\u0024shortcodes",
+            "name": "shortcodes",
+            "summary": "The\u0020activated\u0020shortcode\u0020instances.",
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#property_shortcodes"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\AbstractColoredBlockquote",
+            "name": "AbstractColoredBlockquote",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\AbstractColoredBlockquote\u003A\u003A\u0024signature",
+            "name": "signature",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html#property_signature"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\AbstractColoredBlockquote\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html#method_resolve"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\AbstractColoredBlockquote\u003A\u003Aexpand\u0028\u0029",
+            "name": "expand",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html#method_expand"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\AbstractColoredBlockquote\u003A\u003AgetClassNameFromSignature\u0028\u0029",
+            "name": "getClassNameFromSignature",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html#method_getClassNameFromSignature"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\AbstractColoredBlockquote\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html#method_get"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService",
             "name": "AssetService",
             "summary": "",
@@ -3576,315 +3751,145 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-HydeSmartDocs.html#property_footer"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\BladeDownProcessor",
-            "name": "BladeDownProcessor",
-            "summary": "Markdown\u0020Processor\u0020to\u0020render\u0020Laravel\u0020Blade\u0020within\u0020Markdown\u0020files.",
-            "url": "classes/Hyde-Framework-Services-Markdown-BladeDownProcessor.html"
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService",
+            "name": "MarkdownService",
+            "summary": "Dynamically\u0020creates\u0020a\u0020Markdown\u0020converter\u0020tailored\u0020for\u0020the\u0020target\u0020model\u0020and\u0020setup,\nthen\u0020converts\u0020the\u0020Markdown\u0020to\u0020HTML\u0020using\u0020both\u0020pre\u002D\u0020and\u0020post\u002Dprocessors.",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\BladeDownProcessor\u003A\u003Arender\u0028\u0029",
-            "name": "render",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-BladeDownProcessor.html#method_render"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\BladeDownProcessor\u003A\u003Apreprocess\u0028\u0029",
-            "name": "preprocess",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-BladeDownProcessor.html#method_preprocess"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\BladeDownProcessor\u003A\u003Aprocess\u0028\u0029",
-            "name": "process",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-BladeDownProcessor.html#method_process"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\BladeDownProcessor\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-BladeDownProcessor.html#method___construct"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\BladeDownProcessor\u003A\u003Arun\u0028\u0029",
-            "name": "run",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-BladeDownProcessor.html#method_run"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\BladeDownProcessor\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-BladeDownProcessor.html#method_get"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\BladeDownProcessor\u003A\u003AlineStartsWithDirective\u0028\u0029",
-            "name": "lineStartsWithDirective",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-BladeDownProcessor.html#method_lineStartsWithDirective"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\BladeDownProcessor\u003A\u003AprocessLine\u0028\u0029",
-            "name": "processLine",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-BladeDownProcessor.html#method_processLine"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\BladeDownProcessor\u003A\u003A\u0024html",
-            "name": "html",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-BladeDownProcessor.html#property_html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\BladeDownProcessor\u003A\u003A\u0024output",
-            "name": "output",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-BladeDownProcessor.html#property_output"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\BladeDownProcessor\u003A\u003A\u0024pageData",
-            "name": "pageData",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-BladeDownProcessor.html#property_pageData"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\CodeblockFilepathProcessor",
-            "name": "CodeblockFilepathProcessor",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-CodeblockFilepathProcessor.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\CodeblockFilepathProcessor\u003A\u003Apreprocess\u0028\u0029",
-            "name": "preprocess",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-CodeblockFilepathProcessor.html#method_preprocess"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\CodeblockFilepathProcessor\u003A\u003Aprocess\u0028\u0029",
-            "name": "process",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-CodeblockFilepathProcessor.html#method_process"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\CodeblockFilepathProcessor\u003A\u003AlineMatchesPattern\u0028\u0029",
-            "name": "lineMatchesPattern",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-CodeblockFilepathProcessor.html#method_lineMatchesPattern"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\CodeblockFilepathProcessor\u003A\u003AtrimHydeDirective\u0028\u0029",
-            "name": "trimHydeDirective",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-CodeblockFilepathProcessor.html#method_trimHydeDirective"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\CodeblockFilepathProcessor\u003A\u003AresolveTemplate\u0028\u0029",
-            "name": "resolveTemplate",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-CodeblockFilepathProcessor.html#method_resolveTemplate"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\CodeblockFilepathProcessor\u003A\u003AresolveTorchlightCodeLine\u0028\u0029",
-            "name": "resolveTorchlightCodeLine",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-CodeblockFilepathProcessor.html#method_resolveTorchlightCodeLine"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\CodeblockFilepathProcessor\u003A\u003AresolveCodeLine\u0028\u0029",
-            "name": "resolveCodeLine",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-CodeblockFilepathProcessor.html#method_resolveCodeLine"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\CodeblockFilepathProcessor\u003A\u003A\u0024patterns",
-            "name": "patterns",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-CodeblockFilepathProcessor.html#property_patterns"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\CodeblockFilepathProcessor\u003A\u003A\u0024torchlightKey",
-            "name": "torchlightKey",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-CodeblockFilepathProcessor.html#property_torchlightKey"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\ShortcodeProcessor",
-            "name": "ShortcodeProcessor",
-            "summary": "Handle\u0020shortcode\u0020processing\u0020for\u0020Markdown\u0020conversions.",
-            "url": "classes/Hyde-Framework-Services-Markdown-ShortcodeProcessor.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\ShortcodeProcessor\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-ShortcodeProcessor.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\ShortcodeProcessor\u003A\u003AprocessInput\u0028\u0029",
-            "name": "processInput",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-ShortcodeProcessor.html#method_processInput"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\ShortcodeProcessor\u003A\u003AgetOutput\u0028\u0029",
-            "name": "getOutput",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-ShortcodeProcessor.html#method_getOutput"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\ShortcodeProcessor\u003A\u003Arun\u0028\u0029",
-            "name": "run",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-ShortcodeProcessor.html#method_run"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\ShortcodeProcessor\u003A\u003Aprocess\u0028\u0029",
-            "name": "process",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-ShortcodeProcessor.html#method_process"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\ShortcodeProcessor\u003A\u003AdiscoverShortcodes\u0028\u0029",
-            "name": "discoverShortcodes",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-ShortcodeProcessor.html#method_discoverShortcodes"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\ShortcodeProcessor\u003A\u003AaddShortcodesFromArray\u0028\u0029",
-            "name": "addShortcodesFromArray",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-ShortcodeProcessor.html#method_addShortcodesFromArray"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\ShortcodeProcessor\u003A\u003AaddShortcode\u0028\u0029",
-            "name": "addShortcode",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-ShortcodeProcessor.html#method_addShortcode"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\ShortcodeProcessor\u003A\u003AexpandShortcode\u0028\u0029",
-            "name": "expandShortcode",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-ShortcodeProcessor.html#method_expandShortcode"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\ShortcodeProcessor\u003A\u003AdiscoverSignature\u0028\u0029",
-            "name": "discoverSignature",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-ShortcodeProcessor.html#method_discoverSignature"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\ShortcodeProcessor\u003A\u003A\u0024input",
-            "name": "input",
-            "summary": "The\u0020input\u0020Markdown\u0020document\u0020body.",
-            "url": "classes/Hyde-Framework-Services-Markdown-ShortcodeProcessor.html#property_input"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\ShortcodeProcessor\u003A\u003A\u0024output",
-            "name": "output",
-            "summary": "The\u0020processed\u0020Markdown\u0020document\u0020body.",
-            "url": "classes/Hyde-Framework-Services-Markdown-ShortcodeProcessor.html#property_output"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\ShortcodeProcessor\u003A\u003A\u0024shortcodes",
-            "name": "shortcodes",
-            "summary": "The\u0020activated\u0020shortcode\u0020instances.",
-            "url": "classes/Hyde-Framework-Services-Markdown-ShortcodeProcessor.html#property_shortcodes"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\Shortcodes\\AbstractColoredBlockquote",
-            "name": "AbstractColoredBlockquote",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-Shortcodes-AbstractColoredBlockquote.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\Shortcodes\\AbstractColoredBlockquote\u003A\u003A\u0024signature",
-            "name": "signature",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-Shortcodes-AbstractColoredBlockquote.html#property_signature"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\Shortcodes\\AbstractColoredBlockquote\u003A\u003Aresolve\u0028\u0029",
-            "name": "resolve",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-Shortcodes-AbstractColoredBlockquote.html#method_resolve"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\Shortcodes\\AbstractColoredBlockquote\u003A\u003Aexpand\u0028\u0029",
-            "name": "expand",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-Shortcodes-AbstractColoredBlockquote.html#method_expand"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\Shortcodes\\AbstractColoredBlockquote\u003A\u003AgetClassNameFromSignature\u0028\u0029",
-            "name": "getClassNameFromSignature",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-Shortcodes-AbstractColoredBlockquote.html#method_getClassNameFromSignature"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\Shortcodes\\AbstractColoredBlockquote\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-Markdown-Shortcodes-AbstractColoredBlockquote.html#method_get"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownConverterService",
-            "name": "MarkdownConverterService",
-            "summary": "Interface\u0020for\u0020the\u0020CommonMarkConverter,\nallowing\u0020for\u0020easy\u0020configuration\u0020of\u0020extensions.",
-            "url": "classes/Hyde-Framework-Services-MarkdownConverterService.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownConverterService\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownConverterService.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownConverterService\u003A\u003Aparse\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003Aparse\u0028\u0029",
             "name": "parse",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownConverterService.html#method_parse"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_parse"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownConverterService\u003A\u003AaddExtension\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AaddExtension\u0028\u0029",
             "name": "addExtension",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownConverterService.html#method_addExtension"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_addExtension"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownConverterService\u003A\u003AinitializeExtension\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AinitializeExtension\u0028\u0029",
             "name": "initializeExtension",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownConverterService.html#method_initializeExtension"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_initializeExtension"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownConverterService\u003A\u003AsetupConverter\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AsetupConverter\u0028\u0029",
             "name": "setupConverter",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownConverterService.html#method_setupConverter"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_setupConverter"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownConverterService\u003A\u003ArunPreprocessing\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003ArunPreprocessing\u0028\u0029",
             "name": "runPreprocessing",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownConverterService.html#method_runPreprocessing"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_runPreprocessing"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownConverterService\u003A\u003ArunPostProcessing\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003ArunPostProcessing\u0028\u0029",
             "name": "runPostProcessing",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownConverterService.html#method_runPostProcessing"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_runPostProcessing"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownConverterService\u003A\u003AgetExtensions\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AgetExtensions\u0028\u0029",
             "name": "getExtensions",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownConverterService.html#method_getExtensions"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_getExtensions"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownConverterService\u003A\u003A\u0024markdown",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AremoveFeature\u0028\u0029",
+            "name": "removeFeature",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_removeFeature"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AaddFeature\u0028\u0029",
+            "name": "addFeature",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_addFeature"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AwithPermalinks\u0028\u0029",
+            "name": "withPermalinks",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_withPermalinks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AisDocumentationPage\u0028\u0029",
+            "name": "isDocumentationPage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_isDocumentationPage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AwithTableOfContents\u0028\u0029",
+            "name": "withTableOfContents",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_withTableOfContents"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AcanEnableTorchlight\u0028\u0029",
+            "name": "canEnableTorchlight",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_canEnableTorchlight"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AcanEnablePermalinks\u0028\u0029",
+            "name": "canEnablePermalinks",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_canEnablePermalinks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AhasFeature\u0028\u0029",
+            "name": "hasFeature",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_hasFeature"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AdetermineIfTorchlightAttributionShouldBeInjected\u0028\u0029",
+            "name": "determineIfTorchlightAttributionShouldBeInjected",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_determineIfTorchlightAttributionShouldBeInjected"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AinjectTorchlightAttribution\u0028\u0029",
+            "name": "injectTorchlightAttribution",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_injectTorchlightAttribution"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024markdown",
             "name": "markdown",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownConverterService.html#property_markdown"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#property_markdown"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownConverterService\u003A\u003A\u0024sourceModel",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024sourceModel",
             "name": "sourceModel",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownConverterService.html#property_sourceModel"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#property_sourceModel"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownConverterService\u003A\u003A\u0024config",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownConverterService.html#property_config"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#property_config"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownConverterService\u003A\u003A\u0024extensions",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024extensions",
             "name": "extensions",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownConverterService.html#property_extensions"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#property_extensions"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownConverterService\u003A\u003A\u0024converter",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024converter",
             "name": "converter",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownConverterService.html#property_converter"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#property_converter"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownConverterService\u003A\u003A\u0024html",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024html",
             "name": "html",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownConverterService.html#property_html"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#property_html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownFileService",
-            "name": "MarkdownFileService",
-            "summary": "Prepares\u0020a\u0020Markdown\u0020file\u0020for\u0020further\u0020usage.",
-            "url": "classes/Hyde-Framework-Services-MarkdownFileService.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownFileService\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024features",
+            "name": "features",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownFileService.html#method___construct"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#property_features"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownFileService\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "Get\u0020the\u0020processed\u0020Markdown\u0020file\u0020as\u0020a\u0020MarkdownDocument.",
-            "url": "classes/Hyde-Framework-Services-MarkdownFileService.html#method_get"
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024useTorchlight",
+            "name": "useTorchlight",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#property_useTorchlight"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownFileService\u003A\u003A\u0024matter",
-            "name": "matter",
-            "summary": "The\u0020extracted\u0020Front\u0020Matter.",
-            "url": "classes/Hyde-Framework-Services-MarkdownFileService.html#property_matter"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownFileService\u003A\u003A\u0024body",
-            "name": "body",
-            "summary": "The\u0020extracted\u0020Markdown\u0020body.",
-            "url": "classes/Hyde-Framework-Services-MarkdownFileService.html#property_body"
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024torchlightAttribution",
+            "name": "torchlightAttribution",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#property_torchlightAttribution"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\RebuildService",
             "name": "RebuildService",
@@ -4241,11 +4246,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde-framework-concerns-facadehelpers.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Markdown",
-            "name": "Markdown",
-            "summary": "",
-            "url": "namespaces/hyde-framework-concerns-markdown.html"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts",
             "name": "Contracts",
             "summary": "",
@@ -4301,20 +4301,20 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde-framework-modules-datacollections-facades.html"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown",
+            "name": "Markdown",
+            "summary": "",
+            "url": "namespaces/hyde-framework-modules-markdown.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes",
+            "name": "Shortcodes",
+            "summary": "",
+            "url": "namespaces/hyde-framework-modules-markdown-shortcodes.html"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Services",
             "name": "Services",
             "summary": "",
             "url": "namespaces/hyde-framework-services.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown",
-            "name": "Markdown",
-            "summary": "",
-            "url": "namespaces/hyde-framework-services-markdown.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\Markdown\\Shortcodes",
-            "name": "Shortcodes",
-            "summary": "",
-            "url": "namespaces/hyde-framework-services-markdown-shortcodes.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Views\\Components",
             "name": "Components",
