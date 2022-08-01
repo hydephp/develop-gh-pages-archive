@@ -1061,16 +1061,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_canUseCanonicalUrl"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasPageMetadata\u003A\u003AcanUseSitemapLink\u0028\u0029",
-            "name": "canUseSitemapLink",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_canUseSitemapLink"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasPageMetadata\u003A\u003AcanUseRssFeedLink\u0028\u0029",
-            "name": "canUseRssFeedLink",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_canUseRssFeedLink"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\HasPageMetadata\u003A\u003AhasTwitterTitleInConfig\u0028\u0029",
             "name": "hasTwitterTitleInConfig",
             "summary": "",
@@ -2053,7 +2043,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AhasBlogPosts\u0028\u0029",
             "name": "hasBlogPosts",
-            "summary": "\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\nDetermine\u0020if\u0020a\u0020given\u0020feature\u0020is\u0020enabled.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Helpers-Features.html#method_hasBlogPosts"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AhasBladePages\u0028\u0029",
@@ -2093,7 +2083,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AblogPosts\u0028\u0029",
             "name": "blogPosts",
-            "summary": "\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\nEnable\u0020a\u0020given\u0020feature\u0020to\u0020be\u0020used\u0020in\u0020the\u0020config.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Helpers-Features.html#method_blogPosts"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AbladePages\u0028\u0029",
@@ -2130,6 +2120,16 @@ Search.appendIndex(
             "name": "torchlight",
             "summary": "",
             "url": "classes/Hyde-Framework-Helpers-Features.html#method_torchlight"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003Asitemap\u0028\u0029",
+            "name": "sitemap",
+            "summary": "Can\u0020a\u0020sitemap\u0020be\u0020generated\u003F",
+            "url": "classes/Hyde-Framework-Helpers-Features.html#method_sitemap"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003Arss\u0028\u0029",
+            "name": "rss",
+            "summary": "Can\u0020an\u0020RSS\u0020feed\u0020be\u0020generated\u003F",
+            "url": "classes/Hyde-Framework-Helpers-Features.html#method_rss"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Markdown",
             "name": "Markdown",
@@ -4036,11 +4036,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-RssFeedService.html#method_generateFeed"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\RssFeedService\u003A\u003AcanGenerateFeed\u0028\u0029",
-            "name": "canGenerateFeed",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-RssFeedService.html#method_canGenerateFeed"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\RssFeedService\u003A\u003A\u0024feed",
             "name": "feed",
             "summary": "",
@@ -4085,11 +4080,6 @@ Search.appendIndex(
             "name": "generateSitemap",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-SitemapService.html#method_generateSitemap"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\SitemapService\u003A\u003AcanGenerateSitemap\u0028\u0029",
-            "name": "canGenerateSitemap",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-SitemapService.html#method_canGenerateSitemap"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\SitemapService\u003A\u003A\u0024xmlElement",
             "name": "xmlElement",
