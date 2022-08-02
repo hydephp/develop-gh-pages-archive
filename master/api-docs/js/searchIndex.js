@@ -2396,6 +2396,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-DocumentationSidebar.html#method_findPriorityInConfig"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter",
+            "name": "FrontMatter",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-FrontMatter.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-FrontMatter.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-FrontMatter.html#method___toString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003A__get\u0028\u0029",
+            "name": "__get",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-FrontMatter.html#method___get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-FrontMatter.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-FrontMatter.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-FrontMatter.html#method_fromArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003A\u0024matter",
+            "name": "matter",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-FrontMatter.html#property_matter"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Image",
             "name": "Image",
             "summary": "Holds\u0020the\u0020information\u0020for\u0020an\u0020image.",
