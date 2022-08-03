@@ -2783,12 +2783,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A\u0024view",
             "name": "view",
-            "summary": "The\u0020name\u0020of\u0020the\u0020Blade\u0020View\u0020to\u0020compile.",
+            "summary": "The\u0020name\u0020of\u0020the\u0020Blade\u0020View\u0020to\u0020compile.\u0020Commonly\u0020stored\u0020in\u0020_pages\/\u007B\u0024identifier\u007D.blade.php.",
             "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#property_view"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A\u0024identifier",
             "name": "identifier",
-            "summary": "The\u0020page\u0020slug\u0020for\u0020compatibility.",
+            "summary": "The\u0020page\u0020identifier\u0020for\u0020compatibility.",
             "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#property_identifier"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A\u0024sourceDirectory",
