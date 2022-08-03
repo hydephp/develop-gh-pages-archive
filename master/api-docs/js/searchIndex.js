@@ -2841,10 +2841,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AgetSourcePath\u0028\u0029",
-            "name": "getSourcePath",
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AgetCurrentPagePath\u0028\u0029",
+            "name": "getCurrentPagePath",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_getSourcePath"
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_getCurrentPagePath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003Ahome\u0028\u0029",
             "name": "home",
@@ -2875,11 +2875,6 @@ Search.appendIndex(
             "name": "category",
             "summary": "The\u0020sidebar\u0020category\u0020group,\u0020if\u0020any.",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_category"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A\u0024localPath",
-            "name": "localPath",
-            "summary": "The\u0020path\u0020to\u0020the\u0020page\u0020relative\u0020to\u0020the\u0020configured\u0020\u0060_docs\u0060\u0020directory.",
-            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_localPath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPage",
             "name": "MarkdownPage",
