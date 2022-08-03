@@ -1251,10 +1251,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#property_title"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A\u0024slug",
-            "name": "slug",
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A\u0024identifier",
+            "name": "identifier",
             "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#property_slug"
+            "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#property_identifier"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A\u0024fileExtension",
             "name": "fileExtension",
@@ -1361,10 +1361,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#property_template"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003A\u0024slug",
-            "name": "slug",
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003A\u0024identifier",
+            "name": "identifier",
             "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#property_slug"
+            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#property_identifier"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\ActionContract",
             "name": "ActionContract",
@@ -2786,10 +2786,10 @@ Search.appendIndex(
             "summary": "The\u0020name\u0020of\u0020the\u0020Blade\u0020View\u0020to\u0020compile.",
             "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#property_view"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A\u0024slug",
-            "name": "slug",
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A\u0024identifier",
+            "name": "identifier",
             "summary": "The\u0020page\u0020slug\u0020for\u0020compatibility.",
-            "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#property_slug"
+            "url": "classes/Hyde-Framework-Models-Pages-BladePage.html#property_identifier"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",
