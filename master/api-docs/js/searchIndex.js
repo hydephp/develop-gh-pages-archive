@@ -2626,6 +2626,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#method_render"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "Return\u0020the\u0020Markdown\u0020document\u0020body\u0020explored\u0020by\u0020line\u0020into\u0020an\u0020array.",
+            "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#method_toArray"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003AparseFile\u0028\u0029",
             "name": "parseFile",
             "summary": "",
