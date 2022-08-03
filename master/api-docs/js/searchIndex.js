@@ -366,21 +366,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_parseMarkdownPage"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AparseMarkdownPost\u0028\u0029",
-            "name": "parseMarkdownPost",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_parseMarkdownPost"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AparseDocumentationPage\u0028\u0029",
-            "name": "parseDocumentationPage",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_parseDocumentationPage"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AgetDocumentationPageCategory\u0028\u0029",
-            "name": "getDocumentationPageCategory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_getDocumentationPageCategory"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "",
@@ -2841,6 +2826,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method___construct"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AgetDocumentationPageCategory\u0028\u0029",
+            "name": "getDocumentationPageCategory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_getDocumentationPageCategory"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AgetCurrentPagePath\u0028\u0029",
             "name": "getCurrentPagePath",
             "summary": "",
@@ -3350,6 +3340,11 @@ Search.appendIndex(
             "name": "get",
             "summary": "Get\u0020the\u0020processed\u0020Markdown\u0020file\u0020as\u0020a\u0020MarkdownDocument.",
             "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser\u003A\u003Aparse\u0028\u0029",
+            "name": "parse",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html#method_parse"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser\u003A\u003A\u0024matter",
             "name": "matter",
