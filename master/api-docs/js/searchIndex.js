@@ -216,11 +216,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-GeneratesDocumentationSearchIndexFile.html#method_generatePageObject"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesDocumentationSearchIndexFile\u003A\u003AgetSourceFileSlugs\u0028\u0029",
-            "name": "getSourceFileSlugs",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-GeneratesDocumentationSearchIndexFile.html#method_getSourceFileSlugs"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesDocumentationSearchIndexFile\u003A\u003AgetObject\u0028\u0029",
             "name": "getObject",
             "summary": "",
