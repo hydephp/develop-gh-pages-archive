@@ -171,21 +171,6 @@ Search.appendIndex(
             "summary": "Testing\u0020adding\u0020console\u0020debug\u0020output.",
             "url": "classes/Hyde-Framework-Actions-FindsContentLengthForImageObject.html#property_output"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\FindsTitleForDocument",
-            "name": "FindsTitleForDocument",
-            "summary": "Replaces\u0020\u0040see\u0020\\Hyde\\Framework\\Concerns\\HasDynamicTitle.",
-            "url": "classes/Hyde-Framework-Actions-FindsTitleForDocument.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\FindsTitleForDocument\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-FindsTitleForDocument.html#method_get"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\FindsTitleForDocument\u003A\u003AfindTitleTagInMarkdown\u0028\u0029",
-            "name": "findTitleTagInMarkdown",
-            "summary": "Attempt\u0020to\u0020find\u0020the\u0020title\u0020based\u0020on\u0020the\u0020first\u0020H1\u0020tag.",
-            "url": "classes/Hyde-Framework-Actions-FindsTitleForDocument.html#method_findTitleTagInMarkdown"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesDocumentationSearchIndexFile",
             "name": "GeneratesDocumentationSearchIndexFile",
             "summary": "Generate\u0020a\u0020JSON\u0020file\u0020that\u0020can\u0020be\u0020used\u0020as\u0020a\u0020search\u0020index\u0020for\u0020documentation\u0020pages.",
@@ -351,6 +336,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method___construct"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AconstructBaseModel\u0028\u0029",
+            "name": "constructBaseModel",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_constructBaseModel"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AparseBladePage\u0028\u0029",
             "name": "parseBladePage",
             "summary": "",
@@ -360,6 +350,26 @@ Search.appendIndex(
             "name": "parseMarkdownPage",
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_parseMarkdownPage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AconstructDynamicData\u0028\u0029",
+            "name": "constructDynamicData",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_constructDynamicData"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AfindTitleForPage\u0028\u0029",
+            "name": "findTitleForPage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_findTitleForPage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AfindTitleFromMarkdownHeadings\u0028\u0029",
+            "name": "findTitleFromMarkdownHeadings",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_findTitleFromMarkdownHeadings"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AgetDocumentationPageCategory\u0028\u0029",
+            "name": "getDocumentationPageCategory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_getDocumentationPageCategory"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -1015,26 +1025,6 @@ Search.appendIndex(
             "name": "date",
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-HasDateString.html#property_date"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasDynamicTitle",
-            "name": "HasDynamicTitle",
-            "summary": "Find\u0020and\u0020get\u0020the\u0020title\u0020to\u0020use\u0020for\u0020a\u0020Markdown\u0020Document.",
-            "url": "classes/Hyde-Framework-Concerns-HasDynamicTitle.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasDynamicTitle\u003A\u003AconstructDynamicTitle\u0028\u0029",
-            "name": "constructDynamicTitle",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasDynamicTitle.html#method_constructDynamicTitle"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasDynamicTitle\u003A\u003AfindTitleForDocument\u0028\u0029",
-            "name": "findTitleForDocument",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasDynamicTitle.html#method_findTitleForDocument"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasDynamicTitle\u003A\u003AfindTitleTagInMarkdown\u0028\u0029",
-            "name": "findTitleTagInMarkdown",
-            "summary": "Attempt\u0020to\u0020find\u0020the\u0020title\u0020based\u0020on\u0020the\u0020first\u0020H1\u0020tag.",
-            "url": "classes/Hyde-Framework-Concerns-HasDynamicTitle.html#method_findTitleTagInMarkdown"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\HasFeaturedImage",
             "name": "HasFeaturedImage",
@@ -2825,11 +2815,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AgetDocumentationPageCategory\u0028\u0029",
-            "name": "getDocumentationPageCategory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_getDocumentationPageCategory"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AgetCurrentPagePath\u0028\u0029",
             "name": "getCurrentPagePath",
