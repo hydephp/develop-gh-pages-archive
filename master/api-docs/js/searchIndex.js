@@ -1261,6 +1261,11 @@ Search.appendIndex(
             "summary": "Construct\u0020a\u0020new\u0020MarkdownPage\u0020object\u0020from\u0020constructed\u0020data\u0020types.",
             "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method___construct"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A__get\u0028\u0029",
+            "name": "__get",
+            "summary": "Get\u0020the\u0020value\u0020of\u0020the\u0020specified\u0020key\u0020from\u0020the\u0020front\u0020matter.",
+            "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method___get"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A\u0024matter",
             "name": "matter",
             "summary": "",
@@ -1550,6 +1555,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Construct\u0020a\u0020new\u0020MarkdownPage\u0020object\u0020from\u0020constructed\u0020data\u0020types.",
             "url": "classes/Hyde-Framework-Contracts-MarkdownPageContract.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPageContract\u003A\u003A__get\u0028\u0029",
+            "name": "__get",
+            "summary": "Get\u0020the\u0020value\u0020of\u0020the\u0020specified\u0020key\u0020from\u0020the\u0020front\u0020matter.",
+            "url": "classes/Hyde-Framework-Contracts-MarkdownPageContract.html#method___get"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownProcessorContract",
             "name": "MarkdownProcessorContract",
