@@ -1223,8 +1223,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Construct\u0020a\u0020new\u0020MarkdownPage\u0020object.\u0020Normally,\u0020this\u0020is\u0020done\u0020by\u0020the\u0020SourceFileParser.",
             "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003Amake\u0028\u0029",
+            "name": "make",
+            "summary": "Alternative\u0020to\u0020constructor,\u0020using\u0020primitive\u0020data\u0020types",
+            "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method_make"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A\u0024markdown",
             "name": "markdown",
@@ -1236,15 +1241,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#property_matter"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003Acompile\u0028\u0029",
-            "name": "compile",
-            "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
-            "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method_compile"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A\u0024body",
             "name": "body",
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#property_body"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
+            "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method_compile"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A\u0024title",
             "name": "title",
@@ -1490,6 +1495,36 @@ Search.appendIndex(
             "name": "blade",
             "summary": "Get\u0020the\u0020rendered\u0020Blade\u0020of\u0020a\u0020partial\u0020file\u0020in\u0020the\u0020includes\u0020directory.",
             "url": "classes/Hyde-Framework-Contracts-IncludeFacadeContract.html#method_blade"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownDocumentContract",
+            "name": "MarkdownDocumentContract",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-MarkdownDocumentContract.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownDocumentContract\u003A\u003Amatter\u0028\u0029",
+            "name": "matter",
+            "summary": "Get\u0020the\u0020front\u0020matter\u0020object,\u0020or\u0020a\u0020value\u0020from\u0020within.",
+            "url": "classes/Hyde-Framework-Contracts-MarkdownDocumentContract.html#method_matter"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownDocumentContract\u003A\u003Amarkdown\u0028\u0029",
+            "name": "markdown",
+            "summary": "Return\u0020the\u0020document\u0027s\u0020Markdown\u0020object.",
+            "url": "classes/Hyde-Framework-Contracts-MarkdownDocumentContract.html#method_markdown"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownDocumentContract\u003A\u003Abody\u0028\u0029",
+            "name": "body",
+            "summary": "Get\u0020the\u0020Markdown\u0020text\u0020body.",
+            "url": "classes/Hyde-Framework-Contracts-MarkdownDocumentContract.html#method_body"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPageContract",
+            "name": "MarkdownPageContract",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-MarkdownPageContract.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPageContract\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Construct\u0020a\u0020new\u0020MarkdownPage\u0020object.\u0020Normally,\u0020this\u0020is\u0020done\u0020by\u0020the\u0020SourceFileParser.",
+            "url": "classes/Hyde-Framework-Contracts-MarkdownPageContract.html#method___construct"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownProcessorContract",
             "name": "MarkdownProcessorContract",
@@ -2448,7 +2483,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter",
             "name": "FrontMatter",
-            "summary": "",
+            "summary": "Object\u0020representing\u0020the\u0020YAML\u0020front\u0020matter\u0020of\u0020a\u0020Markdown\u0020file.",
             "url": "classes/Hyde-Framework-Models-FrontMatter.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003A__construct\u0028\u0029",
@@ -2581,9 +2616,44 @@ Search.appendIndex(
             "summary": "The\u0020image\u0027s\u0020source\u0020\u0028for\u0020attribution\u0029.",
             "url": "classes/Hyde-Framework-Models-Image.html#property_credit"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown",
+            "name": "Markdown",
+            "summary": "A\u0020simple\u0020object\u0020representation\u0020of\u0020a\u0020Markdown\u0020file,\u0020with\u0020helpful\u0020methods\u0020to\u0020interact\u0020with\u0020it.",
+            "url": "classes/Hyde-Framework-Models-Markdown.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Markdown.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003AfromFile\u0028\u0029",
+            "name": "fromFile",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Markdown.html#method_fromFile"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Markdown.html#method_render"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Markdown.html#method___toString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "Return\u0020the\u0020Markdown\u0020document\u0020body\u0020explored\u0020by\u0020line\u0020into\u0020an\u0020array.",
+            "url": "classes/Hyde-Framework-Models-Markdown.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003A\u0024body",
+            "name": "body",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Markdown.html#property_body"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument",
             "name": "MarkdownDocument",
-            "summary": "",
+            "summary": "A\u0020MarkdownDocument\u0020is\u0020a\u0020simpler\u0020alternative\u0020to\u0020a\u0020MarkdownPage.",
             "url": "classes/Hyde-Framework-Models-MarkdownDocument.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003A__construct\u0028\u0029",
@@ -2596,35 +2666,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#method___toString"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003A__get\u0028\u0029",
-            "name": "__get",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#method___get"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003A\u0024matter",
             "name": "matter",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#property_matter"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003A\u0024markdown",
+            "name": "markdown",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#property_markdown"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003A\u0024body",
             "name": "body",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#property_body"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003Arender\u0028\u0029",
-            "name": "render",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#method_render"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
-            "summary": "Return\u0020the\u0020Markdown\u0020document\u0020body\u0020explored\u0020by\u0020line\u0020into\u0020an\u0020array.",
-            "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#method_toArray"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003AparseFile\u0028\u0029",
             "name": "parseFile",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#method_parseFile"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003Aparse\u0028\u0029",
+            "name": "parse",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#method_parse"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\NavigationMenu",
             "name": "NavigationMenu",
@@ -2816,11 +2881,6 @@ Search.appendIndex(
             "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020Page\u0020Models.",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method___construct"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AgetCurrentPagePath\u0028\u0029",
             "name": "getCurrentPagePath",
             "summary": "",
@@ -2883,7 +2943,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Construct\u0020a\u0020new\u0020MarkdownPage\u0020object.\u0020Normally,\u0020this\u0020is\u0020done\u0020by\u0020the\u0020SourceFileParser.",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method___construct"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AgetCanonicalLink\u0028\u0029",
@@ -3310,11 +3370,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Create\u0020a\u0020new\u0020Markdown\u0020converter\u0020pre\u002Dconfigured\u0020for\u0020CommonMark.",
             "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownConverter.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownConverter\u003A\u003AgetEnvironment\u0028\u0029",
-            "name": "getEnvironment",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownConverter.html#method_getEnvironment"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser",
             "name": "MarkdownFileParser",
