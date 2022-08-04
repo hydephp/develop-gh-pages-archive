@@ -256,6 +256,56 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-GeneratesSidebarTableOfContents.html#property_markdown"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PageModelConstructor",
+            "name": "PageModelConstructor",
+            "summary": "Dynamically\u0020constructs\u0020data\u0020for\u0020a\u0020page\u0020model.",
+            "url": "classes/Hyde-Framework-Actions-PageModelConstructor.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PageModelConstructor\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PageModelConstructor.html#method_run"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PageModelConstructor\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PageModelConstructor.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PageModelConstructor\u003A\u003AconstructDynamicData\u0028\u0029",
+            "name": "constructDynamicData",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PageModelConstructor.html#method_constructDynamicData"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PageModelConstructor\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PageModelConstructor.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PageModelConstructor\u003A\u003AgetDocumentationPageCategory\u0028\u0029",
+            "name": "getDocumentationPageCategory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PageModelConstructor.html#method_getDocumentationPageCategory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PageModelConstructor\u003A\u003AfindTitleForPage\u0028\u0029",
+            "name": "findTitleForPage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PageModelConstructor.html#method_findTitleForPage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PageModelConstructor\u003A\u003AfindTitleForMarkdownPage\u0028\u0029",
+            "name": "findTitleForMarkdownPage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PageModelConstructor.html#method_findTitleForMarkdownPage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PageModelConstructor\u003A\u003AfindTitleFromMarkdownHeadings\u0028\u0029",
+            "name": "findTitleFromMarkdownHeadings",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PageModelConstructor.html#method_findTitleFromMarkdownHeadings"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PageModelConstructor\u003A\u003A\u0024page",
+            "name": "page",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PageModelConstructor.html#property_page"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSitemap",
             "name": "GenerateSitemap",
             "summary": "",
@@ -350,26 +400,6 @@ Search.appendIndex(
             "name": "parseMarkdownPage",
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_parseMarkdownPage"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AconstructDynamicData\u0028\u0029",
-            "name": "constructDynamicData",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_constructDynamicData"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AfindTitleForPage\u0028\u0029",
-            "name": "findTitleForPage",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_findTitleForPage"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AfindTitleFromMarkdownHeadings\u0028\u0029",
-            "name": "findTitleFromMarkdownHeadings",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_findTitleFromMarkdownHeadings"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AgetDocumentationPageCategory\u0028\u0029",
-            "name": "getDocumentationPageCategory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_getDocumentationPageCategory"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003Aget\u0028\u0029",
             "name": "get",
