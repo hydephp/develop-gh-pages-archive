@@ -1848,8 +1848,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Facades\\Markdown\u003A\u003Aparse\u0028\u0029",
             "name": "parse",
-            "summary": "Parse\u0020a\u0020Markdown\u0020string\u0020into\u0020HTML.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Facades-Markdown.html#method_parse"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Facades\\Markdown\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "Render\u0020a\u0020Markdown\u0020string\u0020into\u0020HTML.",
+            "url": "classes/Hyde-Framework-Facades-Markdown.html#method_render"
         },                {
             "fqsen": "\\Hyde\\Framework\\Foundation\\Filesystem",
             "name": "Filesystem",
