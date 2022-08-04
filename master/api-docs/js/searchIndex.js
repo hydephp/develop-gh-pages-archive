@@ -2611,30 +2611,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Markdown.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003AfromFile\u0028\u0029",
-            "name": "fromFile",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Markdown.html#method_fromFile"
+            "url": "classes/Hyde-Framework-Models-Markdown.html#method___toString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003A\u0024body",
+            "name": "body",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Markdown.html#property_body"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003Acompile\u0028\u0029",
             "name": "compile",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Markdown.html#method_compile"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003A__toString\u0028\u0029",
-            "name": "__toString",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Markdown.html#method___toString"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
             "summary": "Return\u0020the\u0020Markdown\u0020document\u0020body\u0020explored\u0020by\u0020line\u0020into\u0020an\u0020array.",
             "url": "classes/Hyde-Framework-Models-Markdown.html#method_toArray"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003A\u0024body",
-            "name": "body",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003AfromFile\u0028\u0029",
+            "name": "fromFile",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Markdown.html#property_body"
+            "url": "classes/Hyde-Framework-Models-Markdown.html#method_fromFile"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003Arender\u0028\u0029",
             "name": "render",
