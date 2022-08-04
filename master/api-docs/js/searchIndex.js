@@ -1876,21 +1876,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Facades-Includes.html#property_includesDirectory"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Facades\\Markdown",
-            "name": "Markdown",
-            "summary": "Markdown\u0020facade\u0020to\u0020access\u0020Markdown\u0020services.",
-            "url": "classes/Hyde-Framework-Facades-Markdown.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Facades\\Markdown\u003A\u003Aparse\u0028\u0029",
-            "name": "parse",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Facades-Markdown.html#method_parse"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Facades\\Markdown\u003A\u003Arender\u0028\u0029",
-            "name": "render",
-            "summary": "Render\u0020a\u0020Markdown\u0020string\u0020into\u0020HTML.",
-            "url": "classes/Hyde-Framework-Facades-Markdown.html#method_render"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Foundation\\Filesystem",
             "name": "Filesystem",
             "summary": "File\u0020helper\u0020methods,\u0020bound\u0020to\u0020the\u0020HydeKernel\u0020instance,\u0020and\u0020is\u0020an\u0020integral\u0020part\u0020of\u0020the\u0020framework.",
@@ -2631,10 +2616,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Markdown.html#method_fromFile"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003Arender\u0028\u0029",
-            "name": "render",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Markdown.html#method_render"
+            "url": "classes/Hyde-Framework-Models-Markdown.html#method_compile"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
@@ -2650,6 +2635,11 @@ Search.appendIndex(
             "name": "body",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Markdown.html#property_body"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "Render\u0020a\u0020Markdown\u0020string\u0020into\u0020HTML.",
+            "url": "classes/Hyde-Framework-Models-Markdown.html#method_render"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument",
             "name": "MarkdownDocument",
