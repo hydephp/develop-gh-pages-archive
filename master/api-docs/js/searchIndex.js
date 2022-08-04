@@ -1266,6 +1266,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020value\u0020of\u0020the\u0020specified\u0020key\u0020from\u0020the\u0020front\u0020matter.",
             "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method___get"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A__set\u0028\u0029",
+            "name": "__set",
+            "summary": "Set\u0020the\u0020value\u0020of\u0020the\u0020specified\u0020key\u0020in\u0020the\u0020front\u0020matter.",
+            "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method___set"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A\u0024matter",
             "name": "matter",
             "summary": "",
@@ -1560,6 +1565,11 @@ Search.appendIndex(
             "name": "__get",
             "summary": "Get\u0020the\u0020value\u0020of\u0020the\u0020specified\u0020key\u0020from\u0020the\u0020front\u0020matter.",
             "url": "classes/Hyde-Framework-Contracts-MarkdownPageContract.html#method___get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPageContract\u003A\u003A__set\u0028\u0029",
+            "name": "__set",
+            "summary": "Set\u0020the\u0020value\u0020of\u0020the\u0020specified\u0020key\u0020in\u0020the\u0020front\u0020matter.",
+            "url": "classes/Hyde-Framework-Contracts-MarkdownPageContract.html#method___set"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownProcessorContract",
             "name": "MarkdownProcessorContract",
@@ -2525,6 +2535,11 @@ Search.appendIndex(
             "name": "get",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-FrontMatter.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-FrontMatter.html#method_set"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
