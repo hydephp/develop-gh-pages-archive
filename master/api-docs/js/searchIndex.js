@@ -1281,11 +1281,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#property_identifier"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A\u0024body",
-            "name": "body",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#property_body"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A\u0024title",
             "name": "title",
             "summary": "",
@@ -3416,10 +3411,10 @@ Search.appendIndex(
             "summary": "The\u0020extracted\u0020Front\u0020Matter.",
             "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html#property_matter"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser\u003A\u003A\u0024body",
-            "name": "body",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser\u003A\u003A\u0024markdown",
+            "name": "markdown",
             "summary": "The\u0020extracted\u0020Markdown\u0020body.",
-            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html#property_body"
+            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html#property_markdown"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownServiceProvider",
             "name": "MarkdownServiceProvider",
