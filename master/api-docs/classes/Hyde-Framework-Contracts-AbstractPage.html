@@ -110,15 +110,12 @@
             implements
                             <a href="classes/Hyde-Framework-Contracts-PageContract.html"><abbr title="\Hyde\Framework\Contracts\PageContract">PageContract</abbr></a>,                             <a href="classes/Hyde-Framework-Contracts-CompilableContract.html"><abbr title="\Hyde\Framework\Contracts\CompilableContract">CompilableContract</abbr></a>                    </span>
     
-            <span class="phpdocumentor-element__extends">
-            Uses
-                            <a href="classes/Hyde-Framework-Concerns-HasPageMetadata.html"><abbr title="\Hyde\Framework\Concerns\HasPageMetadata">HasPageMetadata</abbr></a>,                             <a href="classes/Hyde-Framework-Concerns-CanBeInNavigation.html"><abbr title="\Hyde\Framework\Concerns\CanBeInNavigation">CanBeInNavigation</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -257,7 +254,7 @@
 <dd>Get a collection of all pages, parsed into page models.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_canUseCanonicalUrl">canUseCanonicalUrl()</a>
+    <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_canUseCanonicalUrl">canUseCanonicalUrl()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
@@ -285,7 +282,7 @@
 <dd>Get the Blade template for the page.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_getCanonicalUrl">getCanonicalUrl()</a>
+    <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_getCanonicalUrl">getCanonicalUrl()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -299,7 +296,7 @@
 <dd>Get the URI path relative to the site root.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_getDynamicMetadata">getDynamicMetadata()</a>
+    <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_getDynamicMetadata">getDynamicMetadata()</a>
     <span>
                                 &nbsp;: array&lt;string|int, string&gt;    </span>
 </dt>
@@ -355,14 +352,14 @@
 <dd>Get the path to the source file, relative to the project root.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_hasOpenGraphTitleInConfig">hasOpenGraphTitleInConfig()</a>
+    <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_hasOpenGraphTitleInConfig">hasOpenGraphTitleInConfig()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_hasTwitterTitleInConfig">hasTwitterTitleInConfig()</a>
+    <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_hasTwitterTitleInConfig">hasTwitterTitleInConfig()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
@@ -383,14 +380,14 @@
 <dd>Get the front matter object, or a value from within.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-CanBeInNavigation.html#method_navigationMenuPriority">navigationMenuPriority()</a>
+    <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_navigationMenuPriority">navigationMenuPriority()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
 <dd>The relative priority, determining the position of the item in the menu.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-CanBeInNavigation.html#method_navigationMenuTitle">navigationMenuTitle()</a>
+    <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_navigationMenuTitle">navigationMenuTitle()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -411,21 +408,21 @@
 <dd>Qualify a page basename into a referenceable file path.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_renderPageMetadata">renderPageMetadata()</a>
+    <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_renderPageMetadata">renderPageMetadata()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-CanBeInNavigation.html#method_showInNavigation">showInNavigation()</a>
+    <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_showInNavigation">showInNavigation()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Should the item should be displayed in the navigation menu?</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_makeRssFeedLink">makeRssFeedLink()</a>
+    <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_makeRssFeedLink">makeRssFeedLink()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -459,7 +456,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -493,7 +490,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -527,7 +524,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -561,7 +558,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -595,7 +592,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -629,7 +626,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -667,7 +664,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -719,7 +716,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -775,7 +772,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -838,7 +835,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -879,12 +876,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_canUseCanonicalUrl">
         canUseCanonicalUrl()
-        <a href="classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_canUseCanonicalUrl" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_canUseCanonicalUrl" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasPageMetadata.php"><a href="files/packages-framework-src-concerns-haspagemetadata.html"><abbr title="packages/framework/src/Concerns/HasPageMetadata.php">HasPageMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
@@ -917,7 +914,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -965,7 +962,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -1011,7 +1008,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">155</span>
 
     </aside>
 
@@ -1054,12 +1051,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getCanonicalUrl">
         getCanonicalUrl()
-        <a href="classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_getCanonicalUrl" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_getCanonicalUrl" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasPageMetadata.php"><a href="files/packages-framework-src-concerns-haspagemetadata.html"><abbr title="packages/framework/src/Concerns/HasPageMetadata.php">HasPageMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -1092,7 +1089,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 
     </aside>
 
@@ -1135,12 +1132,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getDynamicMetadata">
         getDynamicMetadata()
-        <a href="classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_getDynamicMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_getDynamicMetadata" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasPageMetadata.php"><a href="files/packages-framework-src-concerns-haspagemetadata.html"><abbr title="packages/framework/src/Concerns/HasPageMetadata.php">HasPageMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">173</span>
 
     </aside>
 
@@ -1187,7 +1184,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -1235,7 +1232,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -1283,7 +1280,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -1343,7 +1340,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -1391,7 +1388,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -1437,7 +1434,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -1485,7 +1482,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -1528,12 +1525,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_hasOpenGraphTitleInConfig">
         hasOpenGraphTitleInConfig()
-        <a href="classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_hasOpenGraphTitleInConfig" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_hasOpenGraphTitleInConfig" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasPageMetadata.php"><a href="files/packages-framework-src-concerns-haspagemetadata.html"><abbr title="packages/framework/src/Concerns/HasPageMetadata.php">HasPageMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">228</span>
 
     </aside>
 
@@ -1561,12 +1558,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_hasTwitterTitleInConfig">
         hasTwitterTitleInConfig()
-        <a href="classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_hasTwitterTitleInConfig" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_hasTwitterTitleInConfig" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasPageMetadata.php"><a href="files/packages-framework-src-concerns-haspagemetadata.html"><abbr title="packages/framework/src/Concerns/HasPageMetadata.php">HasPageMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -1599,7 +1596,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">145</span>
 
     </aside>
 
@@ -1659,7 +1656,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -1719,12 +1716,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_navigationMenuPriority">
         navigationMenuPriority()
-        <a href="classes/Hyde-Framework-Concerns-CanBeInNavigation.html#method_navigationMenuPriority" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_navigationMenuPriority" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/CanBeInNavigation.php"><a href="files/packages-framework-src-concerns-canbeinnavigation.html"><abbr title="packages/framework/src/Concerns/CanBeInNavigation.php">CanBeInNavigation.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">275</span>
 
     </aside>
 
@@ -1752,12 +1749,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_navigationMenuTitle">
         navigationMenuTitle()
-        <a href="classes/Hyde-Framework-Concerns-CanBeInNavigation.html#method_navigationMenuTitle" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_navigationMenuTitle" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/CanBeInNavigation.php"><a href="files/packages-framework-src-concerns-canbeinnavigation.html"><abbr title="packages/framework/src/Concerns/CanBeInNavigation.php">CanBeInNavigation.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">307</span>
 
     </aside>
 
@@ -1790,7 +1787,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -1848,7 +1845,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -1903,12 +1900,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_renderPageMetadata">
         renderPageMetadata()
-        <a href="classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_renderPageMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_renderPageMetadata" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasPageMetadata.php"><a href="files/packages-framework-src-concerns-haspagemetadata.html"><abbr title="packages/framework/src/Concerns/HasPageMetadata.php">HasPageMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">211</span>
 
     </aside>
 
@@ -1936,12 +1933,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_showInNavigation">
         showInNavigation()
-        <a href="classes/Hyde-Framework-Concerns-CanBeInNavigation.html#method_showInNavigation" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_showInNavigation" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/CanBeInNavigation.php"><a href="files/packages-framework-src-concerns-canbeinnavigation.html"><abbr title="packages/framework/src/Concerns/CanBeInNavigation.php">CanBeInNavigation.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">247</span>
 
     </aside>
 
@@ -1969,12 +1966,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_makeRssFeedLink">
         makeRssFeedLink()
-        <a href="classes/Hyde-Framework-Concerns-HasPageMetadata.html#method_makeRssFeedLink" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_makeRssFeedLink" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasPageMetadata.php"><a href="files/packages-framework-src-concerns-haspagemetadata.html"><abbr title="packages/framework/src/Concerns/HasPageMetadata.php">HasPageMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">233</span>
 
     </aside>
 
