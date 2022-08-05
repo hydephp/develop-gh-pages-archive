@@ -31,6 +31,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#method_parse"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003AisValueArrayString\u0028\u0029",
+            "name": "isValueArrayString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#method_isValueArrayString"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003ASEARCH",
             "name": "SEARCH",
             "summary": "The\u0020directive\u0020signature\u0020used\u0020to\u0020determine\u0020if\u0020a\u0020line\u0020should\u0020be\u0020parsed.",
