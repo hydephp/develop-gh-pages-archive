@@ -1,6 +1,51 @@
 Search.appendIndex(
     [
                 {
+            "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser",
+            "name": "BladeMatterParser",
+            "summary": "Parse\u0020the\u0020front\u0020matter\u0020in\u0020a\u0020Blade\u0020file.",
+            "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003AparseFile\u0028\u0029",
+            "name": "parseFile",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#method_parseFile"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003AparseString\u0028\u0029",
+            "name": "parseString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#method_parseString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003Aparse\u0028\u0029",
+            "name": "parse",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#method_parse"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003ASEARCH",
+            "name": "SEARCH",
+            "summary": "The\u0020directive\u0020signature\u0020used\u0020to\u0020determine\u0020if\u0020a\u0020line\u0020should\u0020be\u0020parsed.",
+            "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#constant_SEARCH"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003A\u0024contents",
+            "name": "contents",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#property_contents"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003A\u0024matter",
+            "name": "matter",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#property_matter"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\ConvertsArrayToFrontMatter",
             "name": "ConvertsArrayToFrontMatter",
             "summary": "Convert\u0020an\u0020array\u0020into\u0020YAML\u0020Front\u0020Matter.",
@@ -395,6 +440,11 @@ Search.appendIndex(
             "name": "parseBladePage",
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_parseBladePage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AparseBladeMatter\u0028\u0029",
+            "name": "parseBladeMatter",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_parseBladeMatter"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AparseMarkdownPage\u0028\u0029",
             "name": "parseMarkdownPage",
@@ -1258,23 +1308,8 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Construct\u0020a\u0020new\u0020MarkdownPage\u0020object\u0020from\u0020constructed\u0020data\u0020types.",
-            "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A__get\u0028\u0029",
-            "name": "__get",
-            "summary": "Get\u0020the\u0020value\u0020of\u0020the\u0020specified\u0020key\u0020from\u0020the\u0020front\u0020matter.",
-            "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method___get"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A__set\u0028\u0029",
-            "name": "__set",
-            "summary": "Set\u0020the\u0020value\u0020of\u0020the\u0020specified\u0020key\u0020in\u0020the\u0020front\u0020matter.",
-            "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method___set"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A\u0024matter",
-            "name": "matter",
             "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#property_matter"
+            "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method___construct"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A\u0024markdown",
             "name": "markdown",
@@ -1345,6 +1380,26 @@ Search.appendIndex(
             "name": "getOutputLocation",
             "summary": "Get\u0020the\u0020proper\u0020site\u0020output\u0020path\u0020for\u0020a\u0020page\u0020model.",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getOutputLocation"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003A__get\u0028\u0029",
+            "name": "__get",
+            "summary": "Get\u0020the\u0020value\u0020of\u0020the\u0020specified\u0020key\u0020from\u0020the\u0020front\u0020matter.",
+            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method___get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003A__set\u0028\u0029",
+            "name": "__set",
+            "summary": "Set\u0020the\u0020value\u0020of\u0020the\u0020specified\u0020key\u0020in\u0020the\u0020front\u0020matter.",
+            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method___set"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003A\u0024matter",
+            "name": "matter",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#property_matter"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetSourcePath\u0028\u0029",
             "name": "getSourcePath",
@@ -1561,16 +1616,6 @@ Search.appendIndex(
             "summary": "Construct\u0020a\u0020new\u0020MarkdownPage\u0020object\u0020from\u0020constructed\u0020data\u0020types.",
             "url": "classes/Hyde-Framework-Contracts-MarkdownPageContract.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPageContract\u003A\u003A__get\u0028\u0029",
-            "name": "__get",
-            "summary": "Get\u0020the\u0020value\u0020of\u0020the\u0020specified\u0020key\u0020from\u0020the\u0020front\u0020matter.",
-            "url": "classes/Hyde-Framework-Contracts-MarkdownPageContract.html#method___get"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPageContract\u003A\u003A__set\u0028\u0029",
-            "name": "__set",
-            "summary": "Set\u0020the\u0020value\u0020of\u0020the\u0020specified\u0020key\u0020in\u0020the\u0020front\u0020matter.",
-            "url": "classes/Hyde-Framework-Contracts-MarkdownPageContract.html#method___set"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownProcessorContract",
             "name": "MarkdownProcessorContract",
             "summary": "",
@@ -1600,6 +1645,21 @@ Search.appendIndex(
             "name": "PageContract",
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-PageContract.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003A__get\u0028\u0029",
+            "name": "__get",
+            "summary": "Get\u0020the\u0020value\u0020of\u0020the\u0020specified\u0020key\u0020from\u0020the\u0020front\u0020matter.",
+            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method___get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003A__set\u0028\u0029",
+            "name": "__set",
+            "summary": "Set\u0020the\u0020value\u0020of\u0020the\u0020specified\u0020key\u0020in\u0020the\u0020front\u0020matter.",
+            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method___set"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003Amatter\u0028\u0029",
+            "name": "matter",
+            "summary": "Get\u0020the\u0020front\u0020matter\u0020object,\u0020or\u0020a\u0020value\u0020from\u0020within.",
+            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_matter"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003AgetSourceDirectory\u0028\u0029",
             "name": "getSourceDirectory",
@@ -2983,7 +3043,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Construct\u0020a\u0020new\u0020MarkdownPage\u0020object\u0020from\u0020constructed\u0020data\u0020types.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method___construct"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AgetCanonicalLink\u0028\u0029",
