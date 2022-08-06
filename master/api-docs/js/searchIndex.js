@@ -336,21 +336,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-PageModelConstructor.html#method_getDocumentationPageCategory"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\PageModelConstructor\u003A\u003AfindTitleForPage\u0028\u0029",
-            "name": "findTitleForPage",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-PageModelConstructor.html#method_findTitleForPage"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\PageModelConstructor\u003A\u003AfindTitleForMarkdownPage\u0028\u0029",
-            "name": "findTitleForMarkdownPage",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-PageModelConstructor.html#method_findTitleForMarkdownPage"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\PageModelConstructor\u003A\u003AfindTitleFromMarkdownHeadings\u0028\u0029",
-            "name": "findTitleFromMarkdownHeadings",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-PageModelConstructor.html#method_findTitleFromMarkdownHeadings"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PageModelConstructor\u003A\u003A\u0024page",
             "name": "page",
             "summary": "",
@@ -996,125 +981,60 @@ Search.appendIndex(
             "summary": "Do\u0020we\u0020satisfy\u0020the\u0020requirements\u0020to\u0020render\u0020an\u0020edit\u0020source\u0020button\u0020in\u0020the\u0020supplied\u0020position\u003F",
             "url": "classes/Hyde-Framework-Concerns-FacadeHelpers-HydeSmartDocsFacade.html#method_canRenderSourceLink"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasArticleMetadata",
-            "name": "HasArticleMetadata",
-            "summary": "Generates\u0020article\u0020metadata\u0020for\u0020a\u0020MarkdownPost.",
-            "url": "classes/Hyde-Framework-Concerns-HasArticleMetadata.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasArticleMetadata\u003A\u003AgetRoute\u0028\u0029",
-            "name": "getRoute",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema",
+            "name": "BlogPostSchema",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_getRoute"
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasArticleMetadata\u003A\u003AconstructMetadata\u0028\u0029",
-            "name": "constructMetadata",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema\u003A\u003AconstructBlogPostSchema\u0028\u0029",
+            "name": "constructBlogPostSchema",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_constructMetadata"
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#method_constructBlogPostSchema"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasArticleMetadata\u003A\u003AgetMetadata\u0028\u0029",
-            "name": "getMetadata",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema\u003A\u003A\u0024title",
+            "name": "title",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_getMetadata"
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_title"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasArticleMetadata\u003A\u003AgetMetaProperties\u0028\u0029",
-            "name": "getMetaProperties",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema\u003A\u003A\u0024description",
+            "name": "description",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_getMetaProperties"
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_description"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasArticleMetadata\u003A\u003AparseFrontMatterMetadata\u0028\u0029",
-            "name": "parseFrontMatterMetadata",
-            "summary": "Generate\u0020metadata\u0020from\u0020the\u0020front\u0020matter\u0020that\u0020can\u0020be\u0020used\u0020in\u0020standard\u0020\u003Cmeta\u003E\u0020tags.",
-            "url": "classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_parseFrontMatterMetadata"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasArticleMetadata\u003A\u003AmakeOpenGraphPropertiesForArticle\u0028\u0029",
-            "name": "makeOpenGraphPropertiesForArticle",
-            "summary": "Generate\u0020opengraph\u0020metadata\u0020from\u0020front\u0020matter\u0020for\u0020an\u0020og\u003Aarticle\u0020such\u0020as\u0020a\u0020blog\u0020post.",
-            "url": "classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_makeOpenGraphPropertiesForArticle"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasArticleMetadata\u003A\u003AgetAuthorName\u0028\u0029",
-            "name": "getAuthorName",
-            "summary": "Parse\u0020the\u0020author\u0020name\u0020string\u0020from\u0020front\u0020matter\u0020with\u0020support\u0020for\u0020both\u0020flat\u0020and\u0020array\u0020notation.",
-            "url": "classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_getAuthorName"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasArticleMetadata\u003A\u003AsetImageMetadata\u0028\u0029",
-            "name": "setImageMetadata",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema\u003A\u003A\u0024category",
+            "name": "category",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_setImageMetadata"
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_category"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasArticleMetadata\u003A\u003A\u0024metadata",
-            "name": "metadata",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasArticleMetadata.html#property_metadata"
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema\u003A\u003A\u0024date",
+            "name": "date",
+            "summary": "The\u0020date\u0020the\u0020post\u0020was\u0020published.",
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_date"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasArticleMetadata\u003A\u003A\u0024properties",
-            "name": "properties",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasArticleMetadata.html#property_properties"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasAuthor",
-            "name": "HasAuthor",
-            "summary": "Handle\u0020logic\u0020for\u0020Page\u0020models\u0020that\u0020have\u0020an\u0020Author.",
-            "url": "classes/Hyde-Framework-Concerns-HasAuthor.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasAuthor\u003A\u003AconstructAuthor\u0028\u0029",
-            "name": "constructAuthor",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasAuthor.html#method_constructAuthor"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasAuthor\u003A\u003AfindAuthor\u0028\u0029",
-            "name": "findAuthor",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasAuthor.html#method_findAuthor"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasAuthor\u003A\u003AcreateAuthor\u0028\u0029",
-            "name": "createAuthor",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasAuthor.html#method_createAuthor"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasAuthor\u003A\u003A\u0024author",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema\u003A\u003A\u0024author",
             "name": "author",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasAuthor.html#property_author"
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_author"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasDateString",
-            "name": "HasDateString",
-            "summary": "Create\u0020a\u0020DateString\u0020from\u0020a\u0020Page\u0020model\u0027s\u0020front\u0020matter.",
-            "url": "classes/Hyde-Framework-Concerns-HasDateString.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasDateString\u003A\u003AconstructDateString\u0028\u0029",
-            "name": "constructDateString",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasDateString.html#method_constructDateString"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasDateString\u003A\u003A\u0024date",
-            "name": "date",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasDateString.html#property_date"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasFeaturedImage",
-            "name": "HasFeaturedImage",
-            "summary": "Handle\u0020logic\u0020for\u0020Page\u0020models\u0020that\u0020have\u0020a\u0020Featured\u0020Image.",
-            "url": "classes/Hyde-Framework-Concerns-HasFeaturedImage.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasFeaturedImage\u003A\u003AconstructFeaturedImage\u0028\u0029",
-            "name": "constructFeaturedImage",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasFeaturedImage.html#method_constructFeaturedImage"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasFeaturedImage\u003A\u003AconstructBaseImage\u0028\u0029",
-            "name": "constructBaseImage",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasFeaturedImage.html#method_constructBaseImage"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasFeaturedImage\u003A\u003AconstructFullImage\u0028\u0029",
-            "name": "constructFullImage",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasFeaturedImage.html#method_constructFullImage"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasFeaturedImage\u003A\u003A\u0024image",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema\u003A\u003A\u0024image",
             "name": "image",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasFeaturedImage.html#property_image"
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_image"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\PageSchema",
+            "name": "PageSchema",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\PageSchema\u003A\u003AconstructPageSchema\u0028\u0029",
+            "name": "constructPageSchema",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#method_constructPageSchema"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\PageSchema\u003A\u003A\u0024title",
+            "name": "title",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#property_title"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\HasTableOfContents",
             "name": "HasTableOfContents",
@@ -2086,26 +2006,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Foundation-Hyperlinks.html#property_kernel"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Helpers\\Author",
-            "name": "Author",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Helpers-Author.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Helpers\\Author\u003A\u003Acreate\u0028\u0029",
-            "name": "create",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Helpers-Author.html#method_create"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Helpers\\Author\u003A\u003Aall\u0028\u0029",
-            "name": "all",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Helpers-Author.html#method_all"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Helpers\\Author\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Helpers-Author.html#method_get"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Features",
             "name": "Features",
             "summary": "Allows\u0020features\u0020to\u0020be\u0020enabled\u0020and\u0020disabled\u0020in\u0020a\u0020simple\u0020object\u002Doriented\u0020manner.",
@@ -2461,10 +2361,30 @@ Search.appendIndex(
             "summary": "Construct\u0020a\u0020new\u0020Author\u0020object.",
             "url": "classes/Hyde-Framework-Models-Author.html#method___construct"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Author.html#method___toString"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003AgetName\u0028\u0029",
             "name": "getName",
             "summary": "Get\u0020the\u0020author\u0027s\u0020preferred\u0020name.",
             "url": "classes/Hyde-Framework-Models-Author.html#method_getName"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Author.html#method_create"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Author.html#method_all"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Author.html#method_get"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003A\u0024username",
             "name": "username",
@@ -2490,6 +2410,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-DateString.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\DateString\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-DateString.html#method___toString"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\DateString\u003A\u003A\u0024string",
             "name": "string",
@@ -2596,10 +2521,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-FrontMatter.html#method_fromArray"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003A\u0024matter",
-            "name": "matter",
+            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003A\u0024data",
+            "name": "data",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-FrontMatter.html#property_matter"
+            "url": "classes/Hyde-Framework-Models-FrontMatter.html#property_data"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Image",
             "name": "Image",
@@ -3046,10 +2971,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getLatestPosts"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003A\u0024category",
-            "name": "category",
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AconstructMetadata\u0028\u0029",
+            "name": "constructMetadata",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_category"
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_constructMetadata"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AgetMetadata\u0028\u0029",
+            "name": "getMetadata",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getMetadata"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AgetMetaProperties\u0028\u0029",
+            "name": "getMetaProperties",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getMetaProperties"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AparseFrontMatterMetadata\u0028\u0029",
+            "name": "parseFrontMatterMetadata",
+            "summary": "Generate\u0020metadata\u0020from\u0020the\u0020front\u0020matter\u0020that\u0020can\u0020be\u0020used\u0020in\u0020standard\u0020\u003Cmeta\u003E\u0020tags.",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_parseFrontMatterMetadata"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AmakeOpenGraphPropertiesForArticle\u0028\u0029",
+            "name": "makeOpenGraphPropertiesForArticle",
+            "summary": "Generate\u0020opengraph\u0020metadata\u0020from\u0020front\u0020matter\u0020for\u0020an\u0020og\u003Aarticle\u0020such\u0020as\u0020a\u0020blog\u0020post.",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_makeOpenGraphPropertiesForArticle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AgetAuthorName\u0028\u0029",
+            "name": "getAuthorName",
+            "summary": "Parse\u0020the\u0020author\u0020name\u0020string\u0020from\u0020front\u0020matter\u0020with\u0020support\u0020for\u0020both\u0020flat\u0020and\u0020array\u0020notation.",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getAuthorName"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AsetImageMetadata\u0028\u0029",
+            "name": "setImageMetadata",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_setImageMetadata"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",
@@ -3065,6 +3020,16 @@ Search.appendIndex(
             "name": "template",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_template"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003A\u0024metadata",
+            "name": "metadata",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_metadata"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003A\u0024properties",
+            "name": "properties",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_properties"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Route",
             "name": "Route",
@@ -4291,6 +4256,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde-framework-actions.html"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\Constructors",
+            "name": "Constructors",
+            "summary": "",
+            "url": "namespaces/hyde-framework-actions-constructors.html"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks",
             "name": "PostBuildTasks",
             "summary": "",
@@ -4320,6 +4290,16 @@ Search.appendIndex(
             "name": "FacadeHelpers",
             "summary": "",
             "url": "namespaces/hyde-framework-concerns-facadehelpers.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas",
+            "name": "Schemas",
+            "summary": "",
+            "url": "namespaces/hyde-framework-concerns-frontmatter-schemas.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter",
+            "name": "FrontMatter",
+            "summary": "",
+            "url": "namespaces/hyde-framework-concerns-frontmatter.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns",
             "name": "Concerns",

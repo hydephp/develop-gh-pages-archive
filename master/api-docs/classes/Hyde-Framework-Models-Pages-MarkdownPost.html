@@ -113,7 +113,7 @@
     
             <span class="phpdocumentor-element__extends">
             Uses
-                            <a href="classes/Hyde-Framework-Concerns-HasAuthor.html"><abbr title="\Hyde\Framework\Concerns\HasAuthor">HasAuthor</abbr></a>,                             <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html"><abbr title="\Hyde\Framework\Concerns\HasArticleMetadata">HasArticleMetadata</abbr></a>,                             <a href="classes/Hyde-Framework-Concerns-HasDateString.html"><abbr title="\Hyde\Framework\Concerns\HasDateString">HasDateString</abbr></a>,                             <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html"><abbr title="\Hyde\Framework\Concerns\HasFeaturedImage">HasFeaturedImage</abbr></a>                    </span>
+                            <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html"><abbr title="\Hyde\Framework\Concerns\FrontMatter\Schemas\BlogPostSchema">BlogPostSchema</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
@@ -125,12 +125,22 @@
 
             <p class="phpdocumentor-summary">The base class for all Markdown-based Page Models.</p>
 
-    <section class="phpdocumentor-description"><p>Normally, you would use the SourceFileParser to construct a MarkdownPage object.</p>
-<p>Extends the AbstractPage class to provide relevant
-helpers for Markdown-based page model classes.</p>
-</section>
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Framework\Testing\Feature\MarkdownPostTest">MarkdownPostTest</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
 
 
 
@@ -144,23 +154,30 @@ helpers for Markdown-based page model classes.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#property_author">$author</a>
+    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_author">$author</a>
     <span>
-                        &nbsp;: <a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a>            </span>
+                        &nbsp;: <a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a>|null            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_category">$category</a>
+    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_category">$category</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-HasDateString.html#property_date">$date</a>
+    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_date">$date</a>
     <span>
                         &nbsp;: <a href="classes/Hyde-Framework-Models-DateString.html"><abbr title="\Hyde\Framework\Models\DateString">DateString</abbr></a>|null            </span>
+</dt>
+<dd>The date the post was published.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_description">$description</a>
+    <span>
+                        &nbsp;: string|null            </span>
 </dt>
 <dd></dd>
 
@@ -179,9 +196,9 @@ helpers for Markdown-based page model classes.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#property_image">$image</a>
+    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_image">$image</a>
     <span>
-                        &nbsp;: <a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a>            </span>
+                        &nbsp;: <a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a>|null            </span>
 </dt>
 <dd></dd>
 
@@ -200,7 +217,7 @@ helpers for Markdown-based page model classes.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#property_metadata">$metadata</a>
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_metadata">$metadata</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
@@ -214,7 +231,7 @@ helpers for Markdown-based page model classes.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#property_properties">$properties</a>
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_properties">$properties</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
@@ -235,7 +252,7 @@ helpers for Markdown-based page model classes.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#property_title">$title</a>
+    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#property_title">$title</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
@@ -282,41 +299,6 @@ helpers for Markdown-based page model classes.</p>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Compile the page into static HTML.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#method_constructAuthor">constructAuthor()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#method_constructBaseImage">constructBaseImage()</a>
-    <span>
-                                &nbsp;: <a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a>    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-HasDateString.html#method_constructDateString">constructDateString()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#method_constructFeaturedImage">constructFeaturedImage()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#method_constructFullImage">constructFullImage()</a>
-    <span>
-                                &nbsp;: <a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a>    </span>
-</dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_files">files()</a>
@@ -375,14 +357,14 @@ helpers for Markdown-based page model classes.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_getMetadata">getMetadata()</a>
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getMetadata">getMetadata()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_getMetaProperties">getMetaProperties()</a>
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getMetaProperties">getMetaProperties()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
@@ -522,35 +504,35 @@ helpers for Markdown-based page model classes.</p>
 <dd>Should the item should be displayed in the navigation menu?</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_constructMetadata">constructMetadata()</a>
+    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#method_constructBlogPostSchema">constructBlogPostSchema()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#method_createAuthor">createAuthor()</a>
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_constructMetadata">constructMetadata()</a>
     <span>
-                                &nbsp;: <a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a>    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#method_findAuthor">findAuthor()</a>
+    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#method_constructPageSchema">constructPageSchema()</a>
     <span>
-                                &nbsp;: <a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a>    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_getAuthorName">getAuthorName()</a>
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getAuthorName">getAuthorName()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>Parse the author name string from front matter with support for both flat and array notation.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_makeOpenGraphPropertiesForArticle">makeOpenGraphPropertiesForArticle()</a>
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_makeOpenGraphPropertiesForArticle">makeOpenGraphPropertiesForArticle()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -564,14 +546,14 @@ helpers for Markdown-based page model classes.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_parseFrontMatterMetadata">parseFrontMatterMetadata()</a>
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_parseFrontMatterMetadata">parseFrontMatterMetadata()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Generate metadata from the front matter that can be used in standard &lt;meta&gt; tags.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_setImageMetadata">setImageMetadata()</a>
+    <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_setImageMetadata">setImageMetadata()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -598,29 +580,52 @@ helpers for Markdown-based page model classes.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property_author">
         $author
-        <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#property_author" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_author" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasAuthor.php"><a href="files/packages-framework-src-concerns-hasauthor.html"><abbr title="packages/framework/src/Concerns/HasAuthor.php">HasAuthor.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/BlogPostSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-blogpostschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/BlogPostSchema.php">BlogPostSchema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a></span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a>|null</span>
     <span class="phpdocumentor-signature__name">$author</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <section class="phpdocumentor-description"></section>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">example</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>See author section</p>
+</section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">yamlType</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>string|array|optional</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
 </article>
                     <article
@@ -632,14 +637,14 @@ helpers for Markdown-based page model classes.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property_category">
         $category
-        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_category" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_category" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/BlogPostSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-blogpostschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/BlogPostSchema.php">BlogPostSchema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -648,13 +653,27 @@ helpers for Markdown-based page model classes.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$category</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <section class="phpdocumentor-description"></section>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">example</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>&quot;general&quot;, &quot;my favorite recipes&quot;</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
 </article>
                     <article
@@ -666,29 +685,101 @@ helpers for Markdown-based page model classes.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property_date">
         $date
-        <a href="classes/Hyde-Framework-Concerns-HasDateString.html#property_date" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_date" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasDateString.php"><a href="files/packages-framework-src-concerns-hasdatestring.html"><abbr title="packages/framework/src/Concerns/HasDateString.php">HasDateString.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/BlogPostSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-blogpostschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/BlogPostSchema.php">BlogPostSchema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The date the post was published.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Hyde-Framework-Models-DateString.html"><abbr title="\Hyde\Framework\Models\DateString">DateString</abbr></a>|null</span>
     <span class="phpdocumentor-signature__name">$date</span>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <section class="phpdocumentor-description"></section>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">example</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>'YYYY-MM-DD [HH:MM]' (Must be parsable by <code class="prettyprint">strtotime()</code>)</p>
+</section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">yamlType</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>string|optional</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_description">
+        $description
+        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_description" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/BlogPostSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-blogpostschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/BlogPostSchema.php">BlogPostSchema.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">17</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$description</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">example</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>&quot;A short description&quot;</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
 </article>
                     <article
@@ -707,7 +798,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -741,7 +832,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -768,29 +859,52 @@ helpers for Markdown-based page model classes.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property_image">
         $image
-        <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#property_image" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#property_image" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasFeaturedImage.php"><a href="files/packages-framework-src-concerns-hasfeaturedimage.html"><abbr title="packages/framework/src/Concerns/HasFeaturedImage.php">HasFeaturedImage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/BlogPostSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-blogpostschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/BlogPostSchema.php">BlogPostSchema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a></span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a>|null</span>
     <span class="phpdocumentor-signature__name">$image</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <section class="phpdocumentor-description"></section>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">example</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>See image section</p>
+</section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">yamlType</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>string|array|optional</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
 </article>
                     <article
@@ -843,7 +957,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -870,14 +984,14 @@ helpers for Markdown-based page model classes.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property_metadata">
         $metadata
-        <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#property_metadata" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_metadata" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasArticleMetadata.php"><a href="files/packages-framework-src-concerns-hasarticlemetadata.html"><abbr title="packages/framework/src/Concerns/HasArticleMetadata.php">HasArticleMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -911,7 +1025,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -938,14 +1052,14 @@ helpers for Markdown-based page model classes.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property_properties">
         $properties
-        <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#property_properties" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_properties" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasArticleMetadata.php"><a href="files/packages-framework-src-concerns-hasarticlemetadata.html"><abbr title="packages/framework/src/Concerns/HasArticleMetadata.php">HasArticleMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -979,7 +1093,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -1013,7 +1127,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -1036,23 +1150,23 @@ helpers for Markdown-based page model classes.</p>
             phpdocumentor-element
             -property
             -public
-                        -deprecated                                "
+                                                        "
 >
     <h4 class="phpdocumentor-element__name" id="property_title">
         $title
-        <a href="classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#property_title" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#property_title" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractMarkdownPage.php"><a href="files/packages-framework-src-contracts-abstractmarkdownpage.html"><abbr title="packages/framework/src/Contracts/AbstractMarkdownPage.php">AbstractMarkdownPage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-pageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php">PageSchema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
     
-    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+    <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$title</span>
@@ -1068,11 +1182,13 @@ helpers for Markdown-based page model classes.</p>
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">deprecated</span>
+                    <span class="phpdocumentor-tag__name">example</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                             
+                                                 <section class="phpdocumentor-description"><p>&quot;Home&quot;, &quot;About&quot;, &quot;Blog Feed&quot;</p>
+</section>
+
                                     </dd>
                         </dl>
 
@@ -1097,7 +1213,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -1156,7 +1272,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -1212,7 +1328,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -1275,7 +1391,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -1321,7 +1437,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">218</span>
+    <span class="phpdocumentor-element-found-in__line">222</span>
 
     </aside>
 
@@ -1354,7 +1470,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
@@ -1393,193 +1509,6 @@ helpers for Markdown-based page model classes.</p>
         class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_constructAuthor">
-        constructAuthor()
-        <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#method_constructAuthor" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasAuthor.php"><a href="files/packages-framework-src-concerns-hasauthor.html"><abbr title="packages/framework/src/Concerns/HasAuthor.php">HasAuthor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">18</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">constructAuthor</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_constructBaseImage">
-        constructBaseImage()
-        <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#method_constructBaseImage" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasFeaturedImage.php"><a href="files/packages-framework-src-concerns-hasfeaturedimage.html"><abbr title="packages/framework/src/Concerns/HasFeaturedImage.php">HasFeaturedImage.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">28</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">constructBaseImage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$image</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a></span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$image</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_constructDateString">
-        constructDateString()
-        <a href="classes/Hyde-Framework-Concerns-HasDateString.html#method_constructDateString" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasDateString.php"><a href="files/packages-framework-src-concerns-hasdatestring.html"><abbr title="packages/framework/src/Concerns/HasDateString.php">HasDateString.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">16</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">constructDateString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_constructFeaturedImage">
-        constructFeaturedImage()
-        <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#method_constructFeaturedImage" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasFeaturedImage.php"><a href="files/packages-framework-src-concerns-hasfeaturedimage.html"><abbr title="packages/framework/src/Concerns/HasFeaturedImage.php">HasFeaturedImage.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">16</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">constructFeaturedImage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_constructFullImage">
-        constructFullImage()
-        <a href="classes/Hyde-Framework-Concerns-HasFeaturedImage.html#method_constructFullImage" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasFeaturedImage.php"><a href="files/packages-framework-src-concerns-hasfeaturedimage.html"><abbr title="packages/framework/src/Concerns/HasFeaturedImage.php">HasFeaturedImage.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">41</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">constructFullImage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$image</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a></span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$image</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Image.html"><abbr title="\Hyde\Framework\Models\Image">Image</abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_files">
@@ -1589,7 +1518,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -1635,7 +1564,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">159</span>
 
     </aside>
 
@@ -1674,7 +1603,7 @@ helpers for Markdown-based page model classes.</p>
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+            -deprecated                                            "
 >
     <h4 class="phpdocumentor-element__name" id="method_getCanonicalLink">
         getCanonicalLink()
@@ -1683,19 +1612,33 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
     
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getCanonicalLink</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>v0.58.x-beta (may be moved to BlogPostSchema)</p>
+</section>
 
-    
-    
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
@@ -1716,7 +1659,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 
     </aside>
 
@@ -1749,7 +1692,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">133</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -1797,7 +1740,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">173</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -1844,7 +1787,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -1892,7 +1835,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -1920,12 +1863,12 @@ helpers for Markdown-based page model classes.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getMetadata">
         getMetadata()
-        <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_getMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getMetadata" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasArticleMetadata.php"><a href="files/packages-framework-src-concerns-hasarticlemetadata.html"><abbr title="packages/framework/src/Concerns/HasArticleMetadata.php">HasArticleMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -1953,12 +1896,12 @@ helpers for Markdown-based page model classes.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getMetaProperties">
         getMetaProperties()
-        <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_getMetaProperties" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getMetaProperties" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasArticleMetadata.php"><a href="files/packages-framework-src-concerns-hasarticlemetadata.html"><abbr title="packages/framework/src/Concerns/HasArticleMetadata.php">HasArticleMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -1991,7 +1934,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -2039,7 +1982,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -2099,7 +2042,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -2138,7 +2081,7 @@ helpers for Markdown-based page model classes.</p>
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+            -deprecated                                            "
 >
     <h4 class="phpdocumentor-element__name" id="method_getPostDescription">
         getPostDescription()
@@ -2147,19 +2090,33 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
     
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getPostDescription</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>v0.58.x-beta (pull description instead)</p>
+</section>
 
-    
-    
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
@@ -2180,7 +2137,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -2226,7 +2183,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -2274,7 +2231,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
@@ -2322,7 +2279,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">228</span>
+    <span class="phpdocumentor-element-found-in__line">232</span>
 
     </aside>
 
@@ -2355,7 +2312,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">223</span>
+    <span class="phpdocumentor-element-found-in__line">227</span>
 
     </aside>
 
@@ -2388,7 +2345,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">145</span>
+    <span class="phpdocumentor-element-found-in__line">149</span>
 
     </aside>
 
@@ -2564,7 +2521,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -2629,7 +2586,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">275</span>
+    <span class="phpdocumentor-element-found-in__line">279</span>
 
     </aside>
 
@@ -2662,7 +2619,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">307</span>
+    <span class="phpdocumentor-element-found-in__line">311</span>
 
     </aside>
 
@@ -2695,7 +2652,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -2753,7 +2710,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -2813,7 +2770,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">211</span>
+    <span class="phpdocumentor-element-found-in__line">215</span>
 
     </aside>
 
@@ -2846,7 +2803,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">247</span>
+    <span class="phpdocumentor-element-found-in__line">251</span>
 
     </aside>
 
@@ -2872,14 +2829,47 @@ helpers for Markdown-based page model classes.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_constructMetadata">
-        constructMetadata()
-        <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_constructMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_constructBlogPostSchema">
+        constructBlogPostSchema()
+        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#method_constructBlogPostSchema" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasArticleMetadata.php"><a href="files/packages-framework-src-concerns-hasarticlemetadata.html"><abbr title="packages/framework/src/Concerns/HasArticleMetadata.php">HasArticleMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/BlogPostSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-blogpostschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/BlogPostSchema.php">BlogPostSchema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">constructBlogPostSchema</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_constructMetadata">
+        constructMetadata()
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_constructMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -2905,40 +2895,29 @@ helpers for Markdown-based page model classes.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_createAuthor">
-        createAuthor()
-        <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#method_createAuthor" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_constructPageSchema">
+        constructPageSchema()
+        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#method_constructPageSchema" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasAuthor.php"><a href="files/packages-framework-src-concerns-hasauthor.html"><abbr title="packages/framework/src/Concerns/HasAuthor.php">HasAuthor.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-pageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php">PageSchema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">createAuthor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">constructPageSchema</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$data</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
+    
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -2947,66 +2926,22 @@ helpers for Markdown-based page model classes.</p>
         class="phpdocumentor-element
             -method
             -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_findAuthor">
-        findAuthor()
-        <a href="classes/Hyde-Framework-Concerns-HasAuthor.html#method_findAuthor" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasAuthor.php"><a href="files/packages-framework-src-concerns-hasauthor.html"><abbr title="packages/framework/src/Concerns/HasAuthor.php">HasAuthor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">35</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">findAuthor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$author</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a></span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$author</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Author.html"><abbr title="\Hyde\Framework\Models\Author">Author</abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
+            -deprecated                                            "
 >
     <h4 class="phpdocumentor-element__name" id="method_getAuthorName">
         getAuthorName()
-        <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_getAuthorName" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getAuthorName" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasArticleMetadata.php"><a href="files/packages-framework-src-concerns-hasarticlemetadata.html"><abbr title="packages/framework/src/Concerns/HasArticleMetadata.php">HasArticleMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Parse the author name string from front matter with support for both flat and array notation.</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">getAuthorName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$author</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
@@ -3023,6 +2958,21 @@ helpers for Markdown-based page model classes.</p>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>v0.58.x-beta (Use author model instead)</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
@@ -3038,12 +2988,12 @@ helpers for Markdown-based page model classes.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_makeOpenGraphPropertiesForArticle">
         makeOpenGraphPropertiesForArticle()
-        <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_makeOpenGraphPropertiesForArticle" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_makeOpenGraphPropertiesForArticle" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasArticleMetadata.php"><a href="files/packages-framework-src-concerns-hasarticlemetadata.html"><abbr title="packages/framework/src/Concerns/HasArticleMetadata.php">HasArticleMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -3076,7 +3026,7 @@ helpers for Markdown-based page model classes.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">233</span>
+    <span class="phpdocumentor-element-found-in__line">237</span>
 
     </aside>
 
@@ -3104,12 +3054,12 @@ helpers for Markdown-based page model classes.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_parseFrontMatterMetadata">
         parseFrontMatterMetadata()
-        <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_parseFrontMatterMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_parseFrontMatterMetadata" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasArticleMetadata.php"><a href="files/packages-framework-src-concerns-hasarticlemetadata.html"><abbr title="packages/framework/src/Concerns/HasArticleMetadata.php">HasArticleMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -3139,12 +3089,12 @@ helpers for Markdown-based page model classes.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_setImageMetadata">
         setImageMetadata()
-        <a href="classes/Hyde-Framework-Concerns-HasArticleMetadata.html#method_setImageMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_setImageMetadata" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/HasArticleMetadata.php"><a href="files/packages-framework-src-concerns-hasarticlemetadata.html"><abbr title="packages/framework/src/Concerns/HasArticleMetadata.php">HasArticleMetadata.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
