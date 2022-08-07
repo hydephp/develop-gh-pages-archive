@@ -3056,11 +3056,6 @@ Search.appendIndex(
             "summary": "Generate\u0020opengraph\u0020metadata\u0020from\u0020front\u0020matter\u0020for\u0020an\u0020og\u003Aarticle\u0020such\u0020as\u0020a\u0020blog\u0020post.",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_makeOpenGraphPropertiesForArticle"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AgetAuthorName\u0028\u0029",
-            "name": "getAuthorName",
-            "summary": "Parse\u0020the\u0020author\u0020name\u0020string\u0020from\u0020front\u0020matter\u0020with\u0020support\u0020for\u0020both\u0020flat\u0020and\u0020array\u0020notation.",
-            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getAuthorName"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AsetImageMetadata\u0028\u0029",
             "name": "setImageMetadata",
             "summary": "",
