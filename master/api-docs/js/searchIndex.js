@@ -1301,6 +1301,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method___construct"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AconstructPageSchemas\u0028\u0029",
+            "name": "constructPageSchemas",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_constructPageSchemas"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "Get\u0020a\u0020value\u0020from\u0020the\u0020computed\u0020page\u0020data,\u0020or\u0020fallback\u0020to\u0020the\u0020page\u0027s\u0020front\u0020matter,\u0020then\u0020to\u0020the\u0020default\u0020value.",
@@ -3010,6 +3015,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AconstructPageSchemas\u0028\u0029",
+            "name": "constructPageSchemas",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_constructPageSchemas"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AgetCanonicalLink\u0028\u0029",
             "name": "getCanonicalLink",
