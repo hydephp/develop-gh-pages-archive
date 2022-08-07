@@ -116,7 +116,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/BladePage.php"><a href="files/packages-framework-src-models-pages-bladepage.html"><abbr title="packages/framework/src/Models/Pages/BladePage.php">BladePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">11</span>
 
     </aside>
 
@@ -144,16 +144,23 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Models-Pages-BladePage.html#property_identifier">$identifier</a>
+    <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#property_identifier">$identifier</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd>The page identifier for compatibility.</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#property_matter">$matter</a>
     <span>
                         &nbsp;: <a href="classes/Hyde-Framework-Models-FrontMatter.html"><abbr title="\Hyde\Framework\Models\FrontMatter">FrontMatter</abbr></a>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#property_navigation">$navigation</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;|null            </span>
 </dt>
 <dd></dd>
 
@@ -183,7 +190,7 @@
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
+<dd>The title of the page used in the HTML &lt;title&gt; tag, among others.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Framework-Models-Pages-BladePage.html#property_view">$view</a>
@@ -198,20 +205,6 @@
                                 &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method___get">__get()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>Get the value of the specified key from the front matter.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method___set">__set()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Set the value of the specified key in the front matter.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_all">all()</a>
@@ -240,6 +233,13 @@
                                 &nbsp;: array&lt;string|int, string&gt;|false    </span>
 </dt>
 <dd>Get an array of all the source file slugs for the model.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_get">get()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Models-FrontMatter.html"><abbr title="\Hyde\Framework\Models\FrontMatter">FrontMatter</abbr></a>|mixed    </span>
+</dt>
+<dd>Get a value from the computed page data, or fallback to the page&#039;s front matter, then to the default value.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Models-Pages-BladePage.html#method_getBladeView">getBladeView()</a>
@@ -351,14 +351,14 @@
     <span>
                                 &nbsp;: int    </span>
 </dt>
-<dd>The relative priority, determining the position of the item in the menu.</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_navigationMenuTitle">navigationMenuTitle()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>The page title to display in the navigation menu.</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_parse">parse()</a>
@@ -386,7 +386,7 @@
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd>Should the item should be displayed in the navigation menu?</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#method_constructPageSchema">constructPageSchema()</a>
@@ -430,7 +430,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/BladePage.php"><a href="files/packages-framework-src-models-pages-bladepage.html"><abbr title="packages/framework/src/Models/Pages/BladePage.php">BladePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -457,27 +457,28 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_identifier">
         $identifier
-        <a href="classes/Hyde-Framework-Models-Pages-BladePage.html#property_identifier" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#property_identifier" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/BladePage.php"><a href="files/packages-framework-src-models-pages-bladepage.html"><abbr title="packages/framework/src/Models/Pages/BladePage.php">BladePage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The page identifier for compatibility.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$identifier</span>
     </code>
 
-    
-    
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -497,7 +498,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -507,6 +508,40 @@
         <span class="phpdocumentor-signature__type"><a href="classes/Hyde-Framework-Models-FrontMatter.html"><abbr title="\Hyde\Framework\Models\FrontMatter">FrontMatter</abbr></a></span>
     <span class="phpdocumentor-signature__name">$matter</span>
     </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_navigation">
+        $navigation
+        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#property_navigation" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-pageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php">PageSchema.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">18</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;|null</span>
+    <span class="phpdocumentor-signature__name">$navigation</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -531,7 +566,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/BladePage.php"><a href="files/packages-framework-src-models-pages-bladepage.html"><abbr title="packages/framework/src/Models/Pages/BladePage.php">BladePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -565,7 +600,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/BladePage.php"><a href="files/packages-framework-src-models-pages-bladepage.html"><abbr title="packages/framework/src/Models/Pages/BladePage.php">BladePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -599,7 +634,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -633,11 +668,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-pageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php">PageSchema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">The title of the page used in the HTML &lt;title&gt; tag, among others.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
@@ -681,7 +717,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/BladePage.php"><a href="files/packages-framework-src-models-pages-bladepage.html"><abbr title="packages/framework/src/Models/Pages/BladePage.php">BladePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -718,14 +754,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/BladePage.php"><a href="files/packages-framework-src-models-pages-bladepage.html"><abbr title="packages/framework/src/Models/Pages/BladePage.php">BladePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$view</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$view</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Models-FrontMatter.html"><abbr title="\Hyde\Framework\Models\FrontMatter">FrontMatter</abbr></a>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -737,131 +773,19 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$matter</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Models-FrontMatter.html"><abbr title="\Hyde\Framework\Models\FrontMatter">FrontMatter</abbr></a>|array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___get">
-        __get()
-        <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method___get" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">107</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get the value of the specified key from the front matter.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">interitDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___set">
-        __set()
-        <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method___set" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">113</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Set the value of the specified key in the front matter.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -879,7 +803,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -925,7 +849,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">222</span>
+    <span class="phpdocumentor-element-found-in__line">215</span>
 
     </aside>
 
@@ -958,7 +882,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/BladePage.php"><a href="files/packages-framework-src-models-pages-bladepage.html"><abbr title="packages/framework/src/Models/Pages/BladePage.php">BladePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -1006,7 +930,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -1045,6 +969,71 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_get">
+        get()
+        <a href="classes/Hyde-Framework-Contracts-AbstractPage.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">106</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get a value from the computed page data, or fallback to the page&#039;s front matter, then to the default value.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-FrontMatter.html"><abbr title="\Hyde\Framework\Models\FrontMatter">FrontMatter</abbr></a>|mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$default</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-FrontMatter.html"><abbr title="\Hyde\Framework\Models\FrontMatter">FrontMatter</abbr></a>|mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getBladeView">
         getBladeView()
         <a href="classes/Hyde-Framework-Models-Pages-BladePage.html#method_getBladeView" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1052,7 +1041,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/BladePage.php"><a href="files/packages-framework-src-models-pages-bladepage.html"><abbr title="packages/framework/src/Models/Pages/BladePage.php">BladePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -1100,7 +1089,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">160</span>
 
     </aside>
 
@@ -1133,7 +1122,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -1181,7 +1170,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">177</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -1228,7 +1217,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -1276,7 +1265,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -1324,7 +1313,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -1384,7 +1373,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -1432,7 +1421,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -1478,7 +1467,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -1526,7 +1515,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -1574,7 +1563,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">225</span>
 
     </aside>
 
@@ -1607,7 +1596,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">227</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 
     </aside>
 
@@ -1640,7 +1629,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -1648,22 +1637,10 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">htmlTitle</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">htmlTitle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$title</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>An optional override title, so Blade templates can use the method until we implement static Blade parsing.</p>
-</section>
-
-            </dd>
-            </dl>
-
+    
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -1700,7 +1677,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -1765,17 +1742,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">279</span>
+    <span class="phpdocumentor-element-found-in__line">241</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The relative priority, determining the position of the item in the menu.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">navigationMenuPriority</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
-    
+        <section class="phpdocumentor-description"></section>
+
     
     
 
@@ -1798,17 +1775,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">311</span>
+    <span class="phpdocumentor-element-found-in__line">246</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The page title to display in the navigation menu.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">navigationMenuTitle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-    
+        <section class="phpdocumentor-description"></section>
+
     
     
 
@@ -1831,7 +1808,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -1889,7 +1866,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -1949,7 +1926,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">215</span>
+    <span class="phpdocumentor-element-found-in__line">208</span>
 
     </aside>
 
@@ -1982,17 +1959,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">251</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Should the item should be displayed in the navigation menu?</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">showInNavigation</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-    
+        <section class="phpdocumentor-description"></section>
+
     
     
 
@@ -2015,7 +1992,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-pageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php">PageSchema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -2048,7 +2025,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractPage.php"><a href="files/packages-framework-src-contracts-abstractpage.html"><abbr title="packages/framework/src/Contracts/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">237</span>
+    <span class="phpdocumentor-element-found-in__line">230</span>
 
     </aside>
 
