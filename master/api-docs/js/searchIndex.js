@@ -1081,6 +1081,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#method_constructPageSchema"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\PageSchema\u003A\u003AmakeCanonicalUrl\u0028\u0029",
+            "name": "makeCanonicalUrl",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#method_makeCanonicalUrl"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\PageSchema\u003A\u003A\u0024title",
             "name": "title",
             "summary": "The\u0020title\u0020of\u0020the\u0020page\u0020used\u0020in\u0020the\u0020HTML\u0020\u003Ctitle\u003E\u0020tag,\u0020among\u0020others.",
@@ -1088,8 +1093,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\PageSchema\u003A\u003A\u0024navigation",
             "name": "navigation",
-            "summary": "",
+            "summary": "The\u0020settings\u0020for\u0020how\u0020the\u0020page\u0020should\u0020be\u0020presented\u0020in\u0020the\u0020navigation\u0020menu.",
             "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#property_navigation"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\PageSchema\u003A\u003A\u0024canonicalUrl",
+            "name": "canonicalUrl",
+            "summary": "The\u0020canonical\u0020URL\u0020of\u0020the\u0020page.",
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#property_canonicalUrl"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\HasTableOfContents",
             "name": "HasTableOfContents",
@@ -1341,40 +1351,10 @@ Search.appendIndex(
             "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_compile"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetCanonicalUrl\u0028\u0029",
-            "name": "getCanonicalUrl",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getCanonicalUrl"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetDynamicMetadata\u0028\u0029",
-            "name": "getDynamicMetadata",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getDynamicMetadata"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003ArenderPageMetadata\u0028\u0029",
             "name": "renderPageMetadata",
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_renderPageMetadata"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AcanUseCanonicalUrl\u0028\u0029",
-            "name": "canUseCanonicalUrl",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_canUseCanonicalUrl"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AhasTwitterTitleInConfig\u0028\u0029",
-            "name": "hasTwitterTitleInConfig",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_hasTwitterTitleInConfig"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AhasOpenGraphTitleInConfig\u0028\u0029",
-            "name": "hasOpenGraphTitleInConfig",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_hasOpenGraphTitleInConfig"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AmakeRssFeedLink\u0028\u0029",
-            "name": "makeRssFeedLink",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_makeRssFeedLink"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AshowInNavigation\u0028\u0029",
             "name": "showInNavigation",
@@ -2171,6 +2151,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Helpers-Meta.html#method_property"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Meta\u003A\u003Alink\u0028\u0029",
+            "name": "link",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Meta.html#method_link"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Meta\u003A\u003Arender\u0028\u0029",
             "name": "render",
             "summary": "",
@@ -2185,6 +2170,16 @@ Search.appendIndex(
             "name": "getGlobalMeta",
             "summary": "",
             "url": "classes/Hyde-Framework-Helpers-Meta.html#method_getGlobalMeta"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Meta\u003A\u003AgetDynamicMeta\u0028\u0029",
+            "name": "getDynamicMeta",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Meta.html#method_getDynamicMeta"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Meta\u003A\u003AgetConfiguredMeta\u0028\u0029",
+            "name": "getConfiguredMeta",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Meta.html#method_getConfiguredMeta"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Meta\u003A\u003AformatOpenGraphProperty\u0028\u0029",
             "name": "formatOpenGraphProperty",
