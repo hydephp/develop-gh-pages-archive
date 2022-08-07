@@ -426,20 +426,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AconstructBaseModel\u0028\u0029",
-            "name": "constructBaseModel",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_constructBaseModel"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AparseBladePage\u0028\u0029",
             "name": "parseBladePage",
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_parseBladePage"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AparseBladeMatter\u0028\u0029",
-            "name": "parseBladeMatter",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_parseBladeMatter"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AparseMarkdownPage\u0028\u0029",
             "name": "parseMarkdownPage",
@@ -451,10 +441,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_get"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003A\u0024slug",
-            "name": "slug",
+            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003A\u0024identifier",
+            "name": "identifier",
             "summary": "",
-            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#property_slug"
+            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#property_identifier"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003A\u0024page",
             "name": "page",

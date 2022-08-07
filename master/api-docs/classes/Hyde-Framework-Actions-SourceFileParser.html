@@ -154,16 +154,16 @@ and may also conduct pre-processing and/or data validation/assembly.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Framework-Actions-SourceFileParser.html#property_page">$page</a>
+    <a href="classes/Hyde-Framework-Actions-SourceFileParser.html#property_identifier">$identifier</a>
     <span>
-                        &nbsp;: <a href="classes/Hyde-Framework-Contracts-PageContract.html"><abbr title="\Hyde\Framework\Contracts\PageContract">PageContract</abbr></a>            </span>
+                        &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Framework-Actions-SourceFileParser.html#property_slug">$slug</a>
+    <a href="classes/Hyde-Framework-Actions-SourceFileParser.html#property_page">$page</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: <a href="classes/Hyde-Framework-Contracts-PageContract.html"><abbr title="\Hyde\Framework\Contracts\PageContract">PageContract</abbr></a>            </span>
 </dt>
 <dd></dd>
 
@@ -187,20 +187,6 @@ and may also conduct pre-processing and/or data validation/assembly.</p>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Check if a supplied source file exists or throw an exception.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Actions-SourceFileParser.html#method_constructBaseModel">constructBaseModel()</a>
-    <span>
-                                &nbsp;: <a href="classes/Hyde-Framework-Models-Pages-BladePage.html"><abbr title="\Hyde\Framework\Models\Pages\BladePage">BladePage</abbr></a>|<a href="classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html"><abbr title="\Hyde\Framework\Contracts\AbstractMarkdownPage">AbstractMarkdownPage</abbr></a>    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Actions-SourceFileParser.html#method_parseBladeMatter">parseBladeMatter()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Actions-SourceFileParser.html#method_parseBladePage">parseBladePage()</a>
@@ -235,6 +221,40 @@ and may also conduct pre-processing and/or data validation/assembly.</p>
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_identifier">
+        $identifier
+        <a href="classes/Hyde-Framework-Actions-SourceFileParser.html#property_identifier" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Actions/SourceFileParser.php"><a href="files/packages-framework-src-actions-sourcefileparser.html"><abbr title="packages/framework/src/Actions/SourceFileParser.php">SourceFileParser.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">25</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$identifier</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_page">
         $page
         <a href="classes/Hyde-Framework-Actions-SourceFileParser.html#property_page" class="headerlink"><i class="fas fa-link"></i></a>
@@ -253,40 +273,6 @@ and may also conduct pre-processing and/or data validation/assembly.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><a href="classes/Hyde-Framework-Contracts-PageContract.html"><abbr title="\Hyde\Framework\Contracts\PageContract">PageContract</abbr></a></span>
     <span class="phpdocumentor-signature__name">$page</span>
-    </code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_slug">
-        $slug
-        <a href="classes/Hyde-Framework-Actions-SourceFileParser.html#property_slug" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Actions/SourceFileParser.php"><a href="files/packages-framework-src-actions-sourcefileparser.html"><abbr title="packages/framework/src/Actions/SourceFileParser.php">SourceFileParser.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">25</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$slug</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -323,7 +309,7 @@ and may also conduct pre-processing and/or data validation/assembly.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$slug</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -338,7 +324,7 @@ and may also conduct pre-processing and/or data validation/assembly.</p>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$slug</span>
+                <span class="phpdocumentor-signature__argument__name">$identifier</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -368,7 +354,7 @@ and may also conduct pre-processing and/or data validation/assembly.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Actions/SourceFileParser.php"><a href="files/packages-framework-src-actions-sourcefileparser.html"><abbr title="packages/framework/src/Actions/SourceFileParser.php">SourceFileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -462,94 +448,6 @@ and may also conduct pre-processing and/or data validation/assembly.</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_constructBaseModel">
-        constructBaseModel()
-        <a href="classes/Hyde-Framework-Actions-SourceFileParser.html#method_constructBaseModel" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Actions/SourceFileParser.php"><a href="files/packages-framework-src-actions-sourcefileparser.html"><abbr title="packages/framework/src/Actions/SourceFileParser.php">SourceFileParser.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">36</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">constructBaseModel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Pages-BladePage.html"><abbr title="\Hyde\Framework\Models\Pages\BladePage">BladePage</abbr></a>|<a href="classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html"><abbr title="\Hyde\Framework\Contracts\AbstractMarkdownPage">AbstractMarkdownPage</abbr></a></span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pageClass</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Models-Pages-BladePage.html"><abbr title="\Hyde\Framework\Models\Pages\BladePage">BladePage</abbr></a>|<a href="classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html"><abbr title="\Hyde\Framework\Contracts\AbstractMarkdownPage">AbstractMarkdownPage</abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_parseBladeMatter">
-        parseBladeMatter()
-        <a href="classes/Hyde-Framework-Actions-SourceFileParser.html#method_parseBladeMatter" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Actions/SourceFileParser.php"><a href="files/packages-framework-src-actions-sourcefileparser.html"><abbr title="packages/framework/src/Actions/SourceFileParser.php">SourceFileParser.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">50</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">parseBladeMatter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contents</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$contents</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_parseBladePage">
         parseBladePage()
         <a href="classes/Hyde-Framework-Actions-SourceFileParser.html#method_parseBladePage" class="headerlink"><i class="fas fa-link"></i></a>
@@ -557,7 +455,7 @@ and may also conduct pre-processing and/or data validation/assembly.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Actions/SourceFileParser.php"><a href="files/packages-framework-src-actions-sourcefileparser.html"><abbr title="packages/framework/src/Actions/SourceFileParser.php">SourceFileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -590,7 +488,7 @@ and may also conduct pre-processing and/or data validation/assembly.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Actions/SourceFileParser.php"><a href="files/packages-framework-src-actions-sourcefileparser.html"><abbr title="packages/framework/src/Actions/SourceFileParser.php">SourceFileParser.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
