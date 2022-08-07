@@ -1311,6 +1311,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#property_matter"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetIdentifier\u0028\u0029",
+            "name": "getIdentifier",
+            "summary": "Get\u0020the\u0020page\u0020model\u0027s\u0020identifier\u0020property.",
+            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getIdentifier"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetSourcePath\u0028\u0029",
             "name": "getSourcePath",
             "summary": "Get\u0020the\u0020path\u0020to\u0020the\u0020source\u0020file,\u0020relative\u0020to\u0020the\u0020project\u0020root.",
@@ -1655,6 +1660,11 @@ Search.appendIndex(
             "name": "getOutputLocation",
             "summary": "Get\u0020the\u0020proper\u0020site\u0020output\u0020path\u0020for\u0020a\u0020page\u0020model.",
             "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_getOutputLocation"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003AgetIdentifier\u0028\u0029",
+            "name": "getIdentifier",
+            "summary": "Get\u0020the\u0020page\u0020model\u0027s\u0020identifier\u0020property.",
+            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_getIdentifier"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003AgetSourcePath\u0028\u0029",
             "name": "getSourcePath",
