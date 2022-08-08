@@ -2591,6 +2591,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Image.html#method___construct"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Image.html#method___toString"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003Amake\u0028\u0029",
             "name": "make",
             "summary": "Dynamically\u0020create\u0020an\u0020image\u0020based\u0020on\u0020string\u0020or\u0020front\u0020matter\u0020array",
@@ -2641,9 +2646,14 @@ Search.appendIndex(
             "summary": "Used\u0020in\u0020resources\\views\\components\\post\\image.blade.php\u0020to\u0020add\u0020meta\u0020tags\u0020with\u0020itemprop\u0020attributes.",
             "url": "classes/Hyde-Framework-Models-Image.html#method_getMetadataArray"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003AgetPath\u0028\u0029",
+            "name": "getPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Image.html#method_getPath"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A\u0024path",
             "name": "path",
-            "summary": "The\u0020image\u0027s\u0020path\u0020\u0028if\u0020it\u0020is\u0020stored\u0020locally\u0029.",
+            "summary": "The\u0020image\u0027s\u0020path\u0020\u0028if\u0020it\u0020is\u0020stored\u0020locally\u0020\u0028in\u0020the\u0020_media\u0020directory\u0029\u0029.",
             "url": "classes/Hyde-Framework-Models-Image.html#property_path"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A\u0024uri",
