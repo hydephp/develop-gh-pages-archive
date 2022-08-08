@@ -1691,6 +1691,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020route\u0020for\u0020the\u0020page.",
             "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_getRoute"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
+            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_compile"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003AhtmlTitle\u0028\u0029",
             "name": "htmlTitle",
             "summary": "Get\u0020the\u0020page\u0020title\u0020to\u0020display\u0020in\u0020the\u0020\u003Chead\u003E\u0020section\u0027s\u0020\u003Ctitle\u003E\u0020tag.",
