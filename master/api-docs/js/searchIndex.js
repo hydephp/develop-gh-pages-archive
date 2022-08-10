@@ -1241,6 +1241,11 @@ Search.appendIndex(
             "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
             "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method_compile"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003Asave\u0028\u0029",
+            "name": "save",
+            "summary": "Save\u0020the\u0020Markdown\u0020page\u0020object\u0020to\u0020disk\u0020by\u0020compiling\u0020the\nfront\u0020matter\u0020array\u0020to\u0020YAML\u0020and\u0020writing\u0020the\u0020body\u0020to\u0020the\u0020file.",
+            "url": "classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html#method_save"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage\u003A\u003A\u0024identifier",
             "name": "identifier",
             "summary": "",
@@ -1570,6 +1575,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Construct\u0020a\u0020new\u0020MarkdownPage\u0020object\u0020from\u0020constructed\u0020data\u0020types.",
             "url": "classes/Hyde-Framework-Contracts-MarkdownPageContract.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPageContract\u003A\u003Asave\u0028\u0029",
+            "name": "save",
+            "summary": "Save\u0020the\u0020Markdown\u0020page\u0020object\u0020to\u0020disk\u0020by\u0020compiling\u0020the\nfront\u0020matter\u0020array\u0020to\u0020YAML\u0020and\u0020writing\u0020the\u0020body\u0020to\u0020the\u0020file.",
+            "url": "classes/Hyde-Framework-Contracts-MarkdownPageContract.html#method_save"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownProcessorContract",
             "name": "MarkdownProcessorContract",
