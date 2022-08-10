@@ -1126,6 +1126,16 @@ Search.appendIndex(
             "summary": "Ensure\u0020the\u0020supplied\u0020directories\u0020exist\u0020by\u0020creating\u0020them\u0020if\u0020they\u0020don\u0027t.",
             "url": "classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectories"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\JsonSerializesArrayable",
+            "name": "JsonSerializesArrayable",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-JsonSerializesArrayable.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\JsonSerializesArrayable\u003A\u003AjsonSerialize\u0028\u0029",
+            "name": "jsonSerialize",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-JsonSerializesArrayable.html#method_jsonSerialize"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations",
             "name": "RegistersFileLocations",
             "summary": "This\u0020trait\u0020registers\u0020the\u0020file\u0020paths\u0020for\u0020important\u0020Hyde\u0020locations.",
@@ -2186,6 +2196,11 @@ Search.appendIndex(
             "summary": "Can\u0020an\u0020RSS\u0020feed\u0020be\u0020generated\u003F",
             "url": "classes/Hyde-Framework-Helpers-Features.html#method_rss"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Features.html#method_toArray"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Meta",
             "name": "Meta",
             "summary": "Helpers\u0020to\u0020fluently\u0020declare\u0020HTML\u0020meta\u0020tags.",
@@ -2425,6 +2440,11 @@ Search.appendIndex(
             "name": "pathToRelative",
             "summary": "",
             "url": "classes/Hyde-Framework-HydeKernel.html#method_pathToRelative"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-HydeKernel.html#method_toArray"
         },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003A\u0024basePath",
             "name": "basePath",
@@ -3315,6 +3335,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Construct\u0020a\u0020new\u0020Route\u0020instance\u0020for\u0020the\u0020given\u0020page\u0020model.",
             "url": "classes/Hyde-Framework-Models-Route.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Route.html#method_toArray"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AgetPageType\u0028\u0029",
             "name": "getPageType",

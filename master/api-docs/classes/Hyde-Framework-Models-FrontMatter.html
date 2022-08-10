@@ -108,14 +108,17 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Illuminate\Contracts\Support\Arrayable">Arrayable</abbr>,                             <abbr title="\Stringable">Stringable</abbr>                    </span>
+                            <abbr title="\Illuminate\Contracts\Support\Arrayable">Arrayable</abbr>,                             <abbr title="\Stringable">Stringable</abbr>,                             <abbr title="\JsonSerializable">JsonSerializable</abbr>                    </span>
     
+            <span class="phpdocumentor-element__extends">
+            Uses
+                            <a href="classes/Hyde-Framework-Concerns-JsonSerializesArrayable.html"><abbr title="\Hyde\Framework\Concerns\JsonSerializesArrayable">JsonSerializesArrayable</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/FrontMatter.php"><a href="files/packages-framework-src-models-frontmatter.html"><abbr title="packages/framework/src/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -157,6 +160,8 @@ Use $page-&gt;matter('foo') to access raw data.</p>
             <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Illuminate\Contracts\Support\Arrayable">Arrayable</abbr></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Stringable">Stringable</abbr></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\JsonSerializable">JsonSerializable</abbr></dt>
         <dd></dd>
     
     
@@ -220,6 +225,13 @@ Use $page-&gt;matter('foo') to access raw data.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Concerns-JsonSerializesArrayable.html#method_jsonSerialize">jsonSerialize()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Models-FrontMatter.html#method_set">set()</a>
     <span>
                                 &nbsp;: static    </span>
@@ -261,7 +273,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/FrontMatter.php"><a href="files/packages-framework-src-models-frontmatter.html"><abbr title="packages/framework/src/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -299,7 +311,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/FrontMatter.php"><a href="files/packages-framework-src-models-frontmatter.html"><abbr title="packages/framework/src/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -343,7 +355,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/FrontMatter.php"><a href="files/packages-framework-src-models-frontmatter.html"><abbr title="packages/framework/src/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -387,7 +399,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/FrontMatter.php"><a href="files/packages-framework-src-models-frontmatter.html"><abbr title="packages/framework/src/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -420,7 +432,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/FrontMatter.php"><a href="files/packages-framework-src-models-frontmatter.html"><abbr title="packages/framework/src/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -464,7 +476,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/FrontMatter.php"><a href="files/packages-framework-src-models-frontmatter.html"><abbr title="packages/framework/src/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -516,7 +528,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/FrontMatter.php"><a href="files/packages-framework-src-models-frontmatter.html"><abbr title="packages/framework/src/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -553,6 +565,51 @@ Use $page-&gt;matter('foo') to access raw data.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_jsonSerialize">
+        jsonSerialize()
+        <a href="classes/Hyde-Framework-Concerns-JsonSerializesArrayable.html#method_jsonSerialize" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/JsonSerializesArrayable.php"><a href="files/packages-framework-src-concerns-jsonserializesarrayable.html"><abbr title="packages/framework/src/Concerns/JsonSerializesArrayable.php">JsonSerializesArrayable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">8</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">jsonSerialize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_set">
         set()
         <a href="classes/Hyde-Framework-Models-FrontMatter.html#method_set" class="headerlink"><i class="fas fa-link"></i></a>
@@ -560,7 +617,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/FrontMatter.php"><a href="files/packages-framework-src-models-frontmatter.html"><abbr title="packages/framework/src/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -612,7 +669,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/FrontMatter.php"><a href="files/packages-framework-src-models-frontmatter.html"><abbr title="packages/framework/src/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
