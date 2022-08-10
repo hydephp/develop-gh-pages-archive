@@ -105,6 +105,9 @@
                     <td class="phpdocumentor-cell"><a href="reports/deprecated.html#packages/framework/src/Contracts/AssetServiceContract.php">packages/framework/src/Contracts/AssetServiceContract.php</a></td>
                 </tr>
                             <tr>
+                    <td class="phpdocumentor-cell"><a href="reports/deprecated.html#packages/framework/src/Contracts/RoutingServiceContract.php">packages/framework/src/Contracts/RoutingServiceContract.php</a></td>
+                </tr>
+                            <tr>
                     <td class="phpdocumentor-cell"><a href="reports/deprecated.html#packages/framework/src/Models/MarkdownDocument.php">packages/framework/src/Models/MarkdownDocument.php</a></td>
                 </tr>
                             <tr>
@@ -114,7 +117,16 @@
                     <td class="phpdocumentor-cell"><a href="reports/deprecated.html#packages/framework/src/Models/Pages/MarkdownPost.php">packages/framework/src/Models/Pages/MarkdownPost.php</a></td>
                 </tr>
                             <tr>
+                    <td class="phpdocumentor-cell"><a href="reports/deprecated.html#packages/framework/src/Models/Route.php">packages/framework/src/Models/Route.php</a></td>
+                </tr>
+                            <tr>
+                    <td class="phpdocumentor-cell"><a href="reports/deprecated.html#packages/framework/src/RouteCollection.php">packages/framework/src/RouteCollection.php</a></td>
+                </tr>
+                            <tr>
                     <td class="phpdocumentor-cell"><a href="reports/deprecated.html#packages/framework/src/Services/AssetService.php">packages/framework/src/Services/AssetService.php</a></td>
+                </tr>
+                            <tr>
+                    <td class="phpdocumentor-cell"><a href="reports/deprecated.html#packages/framework/src/Services/RoutingService.php">packages/framework/src/Services/RoutingService.php</a></td>
                 </tr>
                     </table>
         
@@ -146,6 +158,27 @@ alternatively, recreating in the DiscoveryService</p>
                             <td class="phpdocumentor-cell">17</td>
                             <td class="phpdocumentor-cell"><a href="classes/Hyde-Framework-Contracts-AssetServiceContract.html#method_stylePath"><abbr title="\Hyde\Framework\Contracts\AssetServiceContract::stylePath()">AssetServiceContract::stylePath()</abbr></a></td>
                             <td class="phpdocumentor-cell"><p>v0.50.x - Use cdnLink() instead.</p>
+</td>
+                        </tr>
+                                                </table>
+                    <a id="packages/framework/src/Contracts/RoutingServiceContract.php"></a>
+            <h3><abbr title="packages/framework/src/Contracts/RoutingServiceContract.php">RoutingServiceContract.php</abbr></h3>
+            <table>
+                <tr>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Element</th>
+                    <th class="phpdocumentor-heading">Reason</th>
+                </tr>
+                                                            <tr>
+                            <td class="phpdocumentor-cell">10</td>
+                            <td class="phpdocumentor-cell"><a href="classes/Hyde-Framework-Contracts-RoutingServiceContract.html"><abbr title="\Hyde\Framework\Contracts\RoutingServiceContract">RoutingServiceContract</abbr></a></td>
+                            <td class="phpdocumentor-cell"><p>v0.59.0-beta Use new RouteCollection instead.</p>
+</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell">19</td>
+                            <td class="phpdocumentor-cell"><a href="classes/Hyde-Framework-Contracts-RoutingServiceContract.html#method_getInstance"><abbr title="\Hyde\Framework\Contracts\RoutingServiceContract::getInstance()">RoutingServiceContract::getInstance()</abbr></a></td>
+                            <td class="phpdocumentor-cell"><p>v0.59.0-beta No longer needs to be a singleton.</p>
 </td>
                         </tr>
                                                 </table>
@@ -205,6 +238,36 @@ alternatively, recreating in the DiscoveryService</p>
 </td>
                         </tr>
                                                 </table>
+                    <a id="packages/framework/src/Models/Route.php"></a>
+            <h3><abbr title="packages/framework/src/Models/Route.php">Route.php</abbr></h3>
+            <table>
+                <tr>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Element</th>
+                    <th class="phpdocumentor-heading">Reason</th>
+                </tr>
+                                                            <tr>
+                            <td class="phpdocumentor-cell">88</td>
+                            <td class="phpdocumentor-cell"><a href="classes/Hyde-Framework-Models-Route.html#method_constructRouteKey"><abbr title="\Hyde\Framework\Models\Route::constructRouteKey()">Route::constructRouteKey()</abbr></a></td>
+                            <td class="phpdocumentor-cell"><p>Use the route key property</p>
+</td>
+                        </tr>
+                                                </table>
+                    <a id="packages/framework/src/RouteCollection.php"></a>
+            <h3><abbr title="packages/framework/src/RouteCollection.php">RouteCollection.php</abbr></h3>
+            <table>
+                <tr>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Element</th>
+                    <th class="phpdocumentor-heading">Reason</th>
+                </tr>
+                                                            <tr>
+                            <td class="phpdocumentor-cell">44</td>
+                            <td class="phpdocumentor-cell"><a href="classes/Hyde-Framework-RouteCollection.html#method_getRoutesForModel"><abbr title="\Hyde\Framework\RouteCollection::getRoutesForModel()">RouteCollection::getRoutesForModel()</abbr></a></td>
+                            <td class="phpdocumentor-cell"><p>Will be merged into getRoutes()</p>
+</td>
+                        </tr>
+                                                </table>
                     <a id="packages/framework/src/Services/AssetService.php"></a>
             <h3><abbr title="packages/framework/src/Services/AssetService.php">AssetService.php</abbr></h3>
             <table>
@@ -218,6 +281,20 @@ alternatively, recreating in the DiscoveryService</p>
                             <td class="phpdocumentor-cell"><a href="classes/Hyde-Framework-Services-AssetService.html#method_stylePath"><abbr title="\Hyde\Framework\Services\AssetService::stylePath()">AssetService::stylePath()</abbr></a></td>
                             <td class="phpdocumentor-cell"><p>v0.50.x - Use cdnLink() instead.</p>
 </td>
+                        </tr>
+                                                </table>
+                    <a id="packages/framework/src/Services/RoutingService.php"></a>
+            <h3><abbr title="packages/framework/src/Services/RoutingService.php">RoutingService.php</abbr></h3>
+            <table>
+                <tr>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Element</th>
+                    <th class="phpdocumentor-heading">Reason</th>
+                </tr>
+                                                            <tr>
+                            <td class="phpdocumentor-cell">37</td>
+                            <td class="phpdocumentor-cell"><a href="classes/Hyde-Framework-Services-RoutingService.html#method_getInstance"><abbr title="\Hyde\Framework\Services\RoutingService::getInstance()">RoutingService::getInstance()</abbr></a></td>
+                            <td class="phpdocumentor-cell"></td>
                         </tr>
                                                 </table>
             </div>

@@ -208,6 +208,13 @@ providing helpful methods for interacting with it.</dd>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Hyde-Framework-HydeKernel.html#property_booted">$booted</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-HydeKernel.html#property_filesystem">$filesystem</a>
     <span>
                         &nbsp;: <a href="classes/Hyde-Framework-Foundation-Filesystem.html"><abbr title="\Hyde\Framework\Foundation\Filesystem">Filesystem</abbr></a>            </span>
@@ -221,10 +228,31 @@ providing helpful methods for interacting with it.</dd>
 </dt>
 <dd></dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Hyde-Framework-HydeKernel.html#property_pages">$pages</a>
+    <span>
+                        &nbsp;: <a href="classes/Hyde-Framework-PageCollection.html"><abbr title="\Hyde\Framework\PageCollection">PageCollection</abbr></a>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Hyde-Framework-HydeKernel.html#property_routes">$routes</a>
+    <span>
+                        &nbsp;: <a href="classes/Hyde-Framework-RouteCollection.html"><abbr title="\Hyde\Framework\RouteCollection">RouteCollection</abbr></a>            </span>
+</dt>
+<dd></dd>
+
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-HydeKernel.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-HydeKernel.html#method_boot">boot()</a>
+    <span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
@@ -348,6 +376,13 @@ providing helpful methods for interacting with it.</dd>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-HydeKernel.html#method_pages">pages()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Framework-PageCollection.html"><abbr title="\Hyde\Framework\PageCollection">PageCollection</abbr></a>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-HydeKernel.html#method_path">path()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -365,6 +400,13 @@ providing helpful methods for interacting with it.</dd>
     <a href="classes/Hyde-Framework-HydeKernel.html#method_relativeLink">relativeLink()</a>
     <span>
                                 &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-HydeKernel.html#method_routes">routes()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Framework-RouteCollection.html"><abbr title="\Hyde\Framework\RouteCollection">RouteCollection</abbr></a>    </span>
 </dt>
 <dd></dd>
 
@@ -410,6 +452,13 @@ providing helpful methods for interacting with it.</dd>
 </dt>
 <dd></dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-HydeKernel.html#method_bootKernel">bootKernel()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
         </dl>
 
 
@@ -448,6 +497,40 @@ providing helpful methods for interacting with it.</dd>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$basePath</span>
     </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_booted">
+        $booted
+        <a href="classes/Hyde-Framework-HydeKernel.html#property_booted" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$booted</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -524,6 +607,74 @@ providing helpful methods for interacting with it.</dd>
     
 
 </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_pages">
+        $pages
+        <a href="classes/Hyde-Framework-HydeKernel.html#property_pages" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">33</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Hyde-Framework-PageCollection.html"><abbr title="\Hyde\Framework\PageCollection">PageCollection</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$pages</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_routes">
+        $routes
+        <a href="classes/Hyde-Framework-HydeKernel.html#property_routes" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Hyde-Framework-RouteCollection.html"><abbr title="\Hyde\Framework\RouteCollection">RouteCollection</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$routes</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
             </section>
 
             <section class="phpdocumentor-methods">
@@ -544,7 +695,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -579,6 +730,39 @@ providing helpful methods for interacting with it.</dd>
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_boot">
+        boot()
+        <a href="classes/Hyde-Framework-HydeKernel.html#method_boot" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">boot</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_copy">
@@ -588,7 +772,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -640,7 +824,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -673,7 +857,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -706,7 +890,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -739,7 +923,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -783,7 +967,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -816,7 +1000,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">181</span>
 
     </aside>
 
@@ -860,7 +1044,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">196</span>
 
     </aside>
 
@@ -904,7 +1088,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -937,7 +1121,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">152</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -981,7 +1165,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">191</span>
 
     </aside>
 
@@ -1025,7 +1209,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
@@ -1077,7 +1261,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">201</span>
 
     </aside>
 
@@ -1121,7 +1305,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -1165,7 +1349,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 
@@ -1198,7 +1382,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -1250,7 +1434,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -1287,6 +1471,39 @@ providing helpful methods for interacting with it.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_pages">
+        pages()
+        <a href="classes/Hyde-Framework-HydeKernel.html#method_pages" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">97</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">pages</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-PageCollection.html"><abbr title="\Hyde\Framework\PageCollection">PageCollection</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-PageCollection.html"><abbr title="\Hyde\Framework\PageCollection">PageCollection</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_path">
         path()
         <a href="classes/Hyde-Framework-HydeKernel.html#method_path" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1294,7 +1511,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -1338,7 +1555,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 
     </aside>
 
@@ -1382,7 +1599,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -1419,6 +1636,39 @@ providing helpful methods for interacting with it.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_routes">
+        routes()
+        <a href="classes/Hyde-Framework-HydeKernel.html#method_routes" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">106</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">routes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-RouteCollection.html"><abbr title="\Hyde\Framework\RouteCollection">RouteCollection</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-RouteCollection.html"><abbr title="\Hyde\Framework\RouteCollection">RouteCollection</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setBasePath">
         setBasePath()
         <a href="classes/Hyde-Framework-HydeKernel.html#method_setBasePath" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1426,7 +1676,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -1470,7 +1720,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -1514,7 +1764,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
@@ -1558,7 +1808,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -1610,7 +1860,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 
     </aside>
 
@@ -1654,7 +1904,7 @@ providing helpful methods for interacting with it.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -1670,6 +1920,39 @@ providing helpful methods for interacting with it.</dd>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_bootKernel">
+        bootKernel()
+        <a href="classes/Hyde-Framework-HydeKernel.html#method_bootKernel" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/HydeKernel.php"><a href="files/packages-framework-src-hydekernel.html"><abbr title="packages/framework/src/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">bootKernel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
