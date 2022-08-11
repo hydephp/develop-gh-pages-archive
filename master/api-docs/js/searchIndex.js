@@ -3871,51 +3871,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html#method_get"
         },                {
-            "fqsen": "\\Hyde\\Framework\\PageCollection",
-            "name": "PageCollection",
-            "summary": "",
-            "url": "classes/Hyde-Framework-PageCollection.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\PageCollection\u003A\u003Aboot\u0028\u0029",
-            "name": "boot",
-            "summary": "",
-            "url": "classes/Hyde-Framework-PageCollection.html#method_boot"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\PageCollection\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-PageCollection.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\PageCollection\u003A\u003AgetPage\u0028\u0029",
-            "name": "getPage",
-            "summary": "",
-            "url": "classes/Hyde-Framework-PageCollection.html#method_getPage"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\PageCollection\u003A\u003AgetPages\u0028\u0029",
-            "name": "getPages",
-            "summary": "",
-            "url": "classes/Hyde-Framework-PageCollection.html#method_getPages"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\PageCollection\u003A\u003AdiscoverPages\u0028\u0029",
-            "name": "discoverPages",
-            "summary": "",
-            "url": "classes/Hyde-Framework-PageCollection.html#method_discoverPages"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\PageCollection\u003A\u003AdiscoverPagesFor\u0028\u0029",
-            "name": "discoverPagesFor",
-            "summary": "",
-            "url": "classes/Hyde-Framework-PageCollection.html#method_discoverPagesFor"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\PageCollection\u003A\u003AparsePagesFor\u0028\u0029",
-            "name": "parsePagesFor",
-            "summary": "",
-            "url": "classes/Hyde-Framework-PageCollection.html#method_parsePagesFor"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\PageCollection\u003A\u003Adiscover\u0028\u0029",
-            "name": "discover",
-            "summary": "",
-            "url": "classes/Hyde-Framework-PageCollection.html#method_discover"
-        },                {
             "fqsen": "\\Hyde\\Framework\\RouteCollection",
             "name": "RouteCollection",
             "summary": "",

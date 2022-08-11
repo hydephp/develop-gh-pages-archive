@@ -345,7 +345,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getLatestPosts">getLatestPosts()</a>
     <span>
-                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
+                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html"><abbr title="\Hyde\Framework\Models\Pages\MarkdownPost">MarkdownPost</abbr></a>&gt;    </span>
 </dt>
 <dd></dd>
 
@@ -373,7 +373,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getPostDescription">getPostDescription()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: string|null    </span>
 </dt>
 <dd></dd>
 
@@ -1785,22 +1785,21 @@ front matter array to YAML and writing the body to the file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/MarkdownPost.php"><a href="files/packages-framework-src-models-pages-markdownpost.html"><abbr title="packages/framework/src/Models/Pages/MarkdownPost.php">MarkdownPost.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getLatestPosts</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getLatestPosts</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html"><abbr title="\Hyde\Framework\Models\Pages\MarkdownPost">MarkdownPost</abbr></a>&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html"><abbr title="\Hyde\Framework\Models\Pages\MarkdownPost">MarkdownPost</abbr></a>&gt;</span>
             &mdash;
         
     
@@ -1981,7 +1980,7 @@ front matter array to YAML and writing the body to the file.</dd>
     
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getPostDescription</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getPostDescription</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
     
     
@@ -2003,7 +2002,7 @@ front matter array to YAML and writing the body to the file.</dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
             &mdash;
         
     
