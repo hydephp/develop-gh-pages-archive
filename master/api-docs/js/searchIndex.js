@@ -53,7 +53,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsNavigationDataForPage",
             "name": "FindsNavigationDataForPage",
-            "summary": "",
+            "summary": "Finds\u0020the\u0020appropriate\u0020navigation\u0020data\u0020for\u0020a\u0020page.",
             "url": "classes/Hyde-Framework-Actions-Constructors-FindsNavigationDataForPage.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsNavigationDataForPage\u003A\u003Arun\u0028\u0029",
@@ -73,7 +73,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsNavigationDataForPage\u003A\u003AgetNavigationMenuTitle\u0028\u0029",
             "name": "getNavigationMenuTitle",
-            "summary": "",
+            "summary": "Note\u0020that\u0020this\u0020also\u0020affects\u0020the\u0020documentation\u0020sidebar\u0020titles.",
             "url": "classes/Hyde-Framework-Actions-Constructors-FindsNavigationDataForPage.html#method_getNavigationMenuTitle"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsNavigationDataForPage\u003A\u003AgetNavigationMenuVisible\u0028\u0029",
@@ -4255,6 +4255,16 @@ Search.appendIndex(
             "name": "injectTorchlightAttribution",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_injectTorchlightAttribution"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AconfigurePermalinksExtension\u0028\u0029",
+            "name": "configurePermalinksExtension",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_configurePermalinksExtension"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AenableAllHtmlElements\u0028\u0029",
+            "name": "enableAllHtmlElements",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_enableAllHtmlElements"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024markdown",
             "name": "markdown",
