@@ -2936,10 +2936,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Metadata-Metadata.html#method_generate"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Metadata\\Metadata\u003A\u003AaddDynamicPageMetadata\u0028\u0029",
+            "name": "addDynamicPageMetadata",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Metadata-Metadata.html#method_addDynamicPageMetadata"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Metadata\\Metadata\u003A\u003AaddMetadataForMarkdownPost\u0028\u0029",
             "name": "addMetadataForMarkdownPost",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Metadata-Metadata.html#method_addMetadataForMarkdownPost"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Metadata\\Metadata\u003A\u003AaddPostMetadataIfExists\u0028\u0029",
+            "name": "addPostMetadataIfExists",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Metadata-Metadata.html#method_addPostMetadataIfExists"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Metadata\\Metadata\u003A\u003AgetPrefixedArray\u0028\u0029",
             "name": "getPrefixedArray",
