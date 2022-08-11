@@ -2281,6 +2281,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Hyde.html#method_version"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Hyde\u003A\u003AgetFacadeRoot\u0028\u0029",
+            "name": "getFacadeRoot",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Hyde.html#method_getFacadeRoot"
+        },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel",
             "name": "HydeKernel",
             "summary": "Encapsulates\u0020a\u0020HydePHP\u0020project,\u0020providing\u0020helpful\u0020methods\u0020for\u0020interacting\u0020with\u0020it.",
@@ -2291,15 +2296,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-HydeKernel.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AbootKernel\u0028\u0029",
-            "name": "bootKernel",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_bootKernel"
-        },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003Aboot\u0028\u0029",
             "name": "boot",
             "summary": "",
             "url": "classes/Hyde-Framework-HydeKernel.html#method_boot"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AsetInstance\u0028\u0029",
+            "name": "setInstance",
+            "summary": "",
+            "url": "classes/Hyde-Framework-HydeKernel.html#method_setInstance"
         },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AgetInstance\u0028\u0029",
             "name": "getInstance",
@@ -2445,6 +2450,11 @@ Search.appendIndex(
             "name": "toArray",
             "summary": "",
             "url": "classes/Hyde-Framework-HydeKernel.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003A\u0024instance",
+            "name": "instance",
+            "summary": "",
+            "url": "classes/Hyde-Framework-HydeKernel.html#property_instance"
         },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003A\u0024basePath",
             "name": "basePath",
