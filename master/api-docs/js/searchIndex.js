@@ -471,11 +471,6 @@ Search.appendIndex(
             "summary": "Execute\u0020the\u0020console\u0020command.",
             "url": "classes/Hyde-Framework-Commands-HydeBuildRssFeedCommand.html#method_handle"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildRssFeedCommand\u003A\u003ArunPreflightCheck\u0028\u0029",
-            "name": "runPreflightCheck",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildRssFeedCommand.html#method_runPreflightCheck"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildRssFeedCommand\u003A\u003AgetExecutionTimeInMs\u0028\u0029",
             "name": "getExecutionTimeInMs",
             "summary": "",
@@ -4300,16 +4295,6 @@ Search.appendIndex(
             "name": "features",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-MarkdownService.html#property_features"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024useTorchlight",
-            "name": "useTorchlight",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownService.html#property_useTorchlight"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024torchlightAttribution",
-            "name": "torchlightAttribution",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownService.html#property_torchlightAttribution"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\RebuildService",
             "name": "RebuildService",
