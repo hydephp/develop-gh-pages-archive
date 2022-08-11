@@ -471,11 +471,6 @@ Search.appendIndex(
             "summary": "Execute\u0020the\u0020console\u0020command.",
             "url": "classes/Hyde-Framework-Commands-HydeBuildRssFeedCommand.html#method_handle"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildRssFeedCommand\u003A\u003AgetExecutionTimeInMs\u0028\u0029",
-            "name": "getExecutionTimeInMs",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildRssFeedCommand.html#method_getExecutionTimeInMs"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildRssFeedCommand\u003A\u003A\u0024signature",
             "name": "signature",
             "summary": "The\u0020signature\u0020of\u0020the\u0020command.",
@@ -496,20 +491,10 @@ Search.appendIndex(
             "summary": "Execute\u0020the\u0020console\u0020command.",
             "url": "classes/Hyde-Framework-Commands-HydeBuildSearchCommand.html#method_handle"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSearchCommand\u003A\u003AcreateSearchPage\u0028\u0029",
-            "name": "createSearchPage",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildSearchCommand.html#method_createSearchPage"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSearchCommand\u003A\u003AguesstimateGenerationTime\u0028\u0029",
             "name": "guesstimateGenerationTime",
             "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeBuildSearchCommand.html#method_guesstimateGenerationTime"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSearchCommand\u003A\u003AgetExecutionTimeInMs\u0028\u0029",
-            "name": "getExecutionTimeInMs",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildSearchCommand.html#method_getExecutionTimeInMs"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSearchCommand\u003A\u003A\u0024signature",
             "name": "signature",
@@ -535,11 +520,6 @@ Search.appendIndex(
             "name": "runPreflightCheck",
             "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeBuildSitemapCommand.html#method_runPreflightCheck"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSitemapCommand\u003A\u003AgetExecutionTimeInMs\u0028\u0029",
-            "name": "getExecutionTimeInMs",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildSitemapCommand.html#method_getExecutionTimeInMs"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSitemapCommand\u003A\u003A\u0024signature",
             "name": "signature",
@@ -940,6 +920,21 @@ Search.appendIndex(
             "name": "service",
             "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeValidateCommand.html#property_service"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\ActionCommand",
+            "name": "ActionCommand",
+            "summary": "Base\u0020class\u0020for\u0020commands\u0020that\u0020run\u0020a\u0020simple\u0020action.",
+            "url": "classes/Hyde-Framework-Concerns-ActionCommand.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\ActionCommand\u003A\u003Aaction\u0028\u0029",
+            "name": "action",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-ActionCommand.html#method_action"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\ActionCommand\u003A\u003AgetExecutionTimeInMs\u0028\u0029",
+            "name": "getExecutionTimeInMs",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-ActionCommand.html#method_getExecutionTimeInMs"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Commands\\AsksToRebuildSite",
             "name": "AsksToRebuildSite",
@@ -4611,6 +4606,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde-framework-commands.html"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns",
+            "name": "Concerns",
+            "summary": "",
+            "url": "namespaces/hyde-framework-concerns.html"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Commands",
             "name": "Commands",
             "summary": "",
@@ -4625,11 +4625,6 @@ Search.appendIndex(
             "name": "FrontMatter",
             "summary": "",
             "url": "namespaces/hyde-framework-concerns-frontmatter.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns",
-            "name": "Concerns",
-            "summary": "",
-            "url": "namespaces/hyde-framework-concerns.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts",
             "name": "Contracts",
