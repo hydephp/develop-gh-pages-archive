@@ -128,8 +128,8 @@ providing helpful methods for interacting with it.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                     <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Framework-HydeKernel.html"><abbr title="\Hyde\Framework\HydeKernel">HydeKernel</abbr></a></span>
                                         
-                                                 <section class="phpdocumentor-description"><p>It is bound into the Laravel Application Service Container,
-and can be accessed in a few ways.</p>
+                                                 <section class="phpdocumentor-description"><p>It is stored as a singleton in the HydeKernel class, and is bound into the
+Laravel Application Service Container, and can be accessed in a few ways.</p>
 <ul>
 <li>Commonly, you'll use the Hyde facade:</li>
 </ul>
@@ -205,6 +205,13 @@ and can be accessed in a few ways.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                         <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Contracts-HydeKernelContract.html#method_boot">boot()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Contracts-HydeKernelContract.html#method_getBasePath">getBasePath()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -212,9 +219,23 @@ and can be accessed in a few ways.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Contracts-HydeKernelContract.html#method_getInstance">getInstance()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Contracts-HydeKernelContract.html"><abbr title="\Hyde\Framework\Contracts\HydeKernelContract">HydeKernelContract</abbr></a>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Contracts-HydeKernelContract.html#method_setBasePath">setBasePath()</a>
     <span>
                                 &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Contracts-HydeKernelContract.html#method_setInstance">setInstance()</a>
+    <span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
@@ -235,6 +256,39 @@ and can be accessed in a few ways.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_boot">
+        boot()
+        <a href="classes/Hyde-Framework-Contracts-HydeKernelContract.html#method_boot" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/HydeKernelContract.php"><a href="files/packages-framework-src-contracts-hydekernelcontract.html"><abbr title="packages/framework/src/Contracts/HydeKernelContract.php">HydeKernelContract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">boot</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getBasePath">
         getBasePath()
         <a href="classes/Hyde-Framework-Contracts-HydeKernelContract.html#method_getBasePath" class="headerlink"><i class="fas fa-link"></i></a>
@@ -242,7 +296,7 @@ and can be accessed in a few ways.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/HydeKernelContract.php"><a href="files/packages-framework-src-contracts-hydekernelcontract.html"><abbr title="packages/framework/src/Contracts/HydeKernelContract.php">HydeKernelContract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -266,6 +320,39 @@ and can be accessed in a few ways.</p>
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getInstance">
+        getInstance()
+        <a href="classes/Hyde-Framework-Contracts-HydeKernelContract.html#method_getInstance" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/HydeKernelContract.php"><a href="files/packages-framework-src-contracts-hydekernelcontract.html"><abbr title="packages/framework/src/Contracts/HydeKernelContract.php">HydeKernelContract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getInstance</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-HydeKernelContract.html"><abbr title="\Hyde\Framework\Contracts\HydeKernelContract">HydeKernelContract</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-HydeKernelContract.html"><abbr title="\Hyde\Framework\Contracts\HydeKernelContract">HydeKernelContract</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_setBasePath">
@@ -275,7 +362,7 @@ and can be accessed in a few ways.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/HydeKernelContract.php"><a href="files/packages-framework-src-contracts-hydekernelcontract.html"><abbr title="packages/framework/src/Contracts/HydeKernelContract.php">HydeKernelContract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -302,6 +389,50 @@ and can be accessed in a few ways.</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setInstance">
+        setInstance()
+        <a href="classes/Hyde-Framework-Contracts-HydeKernelContract.html#method_setInstance" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/HydeKernelContract.php"><a href="files/packages-framework-src-contracts-hydekernelcontract.html"><abbr title="packages/framework/src/Contracts/HydeKernelContract.php">HydeKernelContract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">32</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">setInstance</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Contracts-HydeKernelContract.html"><abbr title="\Hyde\Framework\Contracts\HydeKernelContract">HydeKernelContract</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$instance</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$instance</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Contracts-HydeKernelContract.html"><abbr title="\Hyde\Framework\Contracts\HydeKernelContract">HydeKernelContract</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     

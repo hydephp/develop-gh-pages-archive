@@ -956,26 +956,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-Commands-AsksToRebuildSite.html#method_askToRebuildSite"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\FacadeHelpers\\HydeSmartDocsFacade",
-            "name": "HydeSmartDocsFacade",
-            "summary": "Provide\u0020static\u0020facade\u0020methods,\u0020and\u0020instance\u0020helpers\u0020for\u0020HydeSmartDocs.",
-            "url": "classes/Hyde-Framework-Concerns-FacadeHelpers-HydeSmartDocsFacade.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\FacadeHelpers\\HydeSmartDocsFacade\u003A\u003Acreate\u0028\u0029",
-            "name": "create",
-            "summary": "Create\u0020a\u0020new\u0020HydeSmartDocs\u0020instance,\u0020process,\u0020and\u0020return\u0020it.",
-            "url": "classes/Hyde-Framework-Concerns-FacadeHelpers-HydeSmartDocsFacade.html#method_create"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\FacadeHelpers\\HydeSmartDocsFacade\u003A\u003AhasTorchlight\u0028\u0029",
-            "name": "hasTorchlight",
-            "summary": "Does\u0020the\u0020current\u0020document\u0020use\u0020Torchlight\u003F",
-            "url": "classes/Hyde-Framework-Concerns-FacadeHelpers-HydeSmartDocsFacade.html#method_hasTorchlight"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\FacadeHelpers\\HydeSmartDocsFacade\u003A\u003AcanRenderSourceLink\u0028\u0029",
-            "name": "canRenderSourceLink",
-            "summary": "Do\u0020we\u0020satisfy\u0020the\u0020requirements\u0020to\u0020render\u0020an\u0020edit\u0020source\u0020button\u0020in\u0020the\u0020supplied\u0020position\u003F",
-            "url": "classes/Hyde-Framework-Concerns-FacadeHelpers-HydeSmartDocsFacade.html#method_canRenderSourceLink"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema",
             "name": "BlogPostSchema",
             "summary": "",
@@ -1128,13 +1108,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\JsonSerializesArrayable",
             "name": "JsonSerializesArrayable",
-            "summary": "",
+            "summary": "Automatically\u0020serializes\u0020an\u0020Arrayable\u0020interface\u0020when\u0020JSON\u0020is\u0020requested.",
             "url": "classes/Hyde-Framework-Concerns-JsonSerializesArrayable.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\JsonSerializesArrayable\u003A\u003AjsonSerialize\u0028\u0029",
             "name": "jsonSerialize",
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-JsonSerializesArrayable.html#method_jsonSerialize"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\JsonSerializesArrayable\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-JsonSerializesArrayable.html#method_toArray"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations",
             "name": "RegistersFileLocations",
@@ -1521,6 +1506,21 @@ Search.appendIndex(
             "summary": "The\u0020HydeKernel\u0020encapsulates\u0020a\u0020HydePHP\u0020project,\nproviding\u0020helpful\u0020methods\u0020for\u0020interacting\u0020with\u0020it.",
             "url": "classes/Hyde-Framework-Contracts-HydeKernelContract.html"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\HydeKernelContract\u003A\u003Aboot\u0028\u0029",
+            "name": "boot",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-HydeKernelContract.html#method_boot"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\HydeKernelContract\u003A\u003AsetInstance\u0028\u0029",
+            "name": "setInstance",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-HydeKernelContract.html#method_setInstance"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\HydeKernelContract\u003A\u003AgetInstance\u0028\u0029",
+            "name": "getInstance",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-HydeKernelContract.html#method_getInstance"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\HydeKernelContract\u003A\u003AgetBasePath\u0028\u0029",
             "name": "getBasePath",
             "summary": "",
@@ -1815,6 +1815,11 @@ Search.appendIndex(
             "name": "home",
             "summary": "Get\u0020the\u0020home\u0020route,\u0020usually\u0020the\u0020index\u0020page\u0020route.",
             "url": "classes/Hyde-Framework-Contracts-RouteFacadeContract.html#method_home"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\RouteFacadeContract\u003A\u003Aexists\u0028\u0029",
+            "name": "exists",
+            "summary": "Determine\u0020if\u0020the\u0020supplied\u0020route\u0020key\u0020exists\u0020in\u0020the\u0020route\u0020index.",
+            "url": "classes/Hyde-Framework-Contracts-RouteFacadeContract.html#method_exists"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\RoutingServiceContract",
             "name": "RoutingServiceContract",
@@ -2270,11 +2275,6 @@ Search.appendIndex(
             "name": "Hyde",
             "summary": "General\u0020facade\u0020for\u0020Hyde\u0020services.",
             "url": "classes/Hyde-Framework-Hyde.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Hyde\u003A\u003AgetFacadeAccessor\u0028\u0029",
-            "name": "getFacadeAccessor",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Hyde.html#method_getFacadeAccessor"
         },                {
             "fqsen": "\\Hyde\\Framework\\Hyde\u003A\u003Aversion\u0028\u0029",
             "name": "version",
@@ -3346,10 +3346,20 @@ Search.appendIndex(
             "summary": "Construct\u0020a\u0020new\u0020Route\u0020instance\u0020for\u0020the\u0020given\u0020page\u0020model.",
             "url": "classes/Hyde-Framework-Models-Route.html#method___construct"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "Cast\u0020a\u0020route\u0020object\u0020into\u0020a\u0020string\u0020that\u0020can\u0020be\u0020used\u0020in\u0020a\u0020href\u0020attribute.",
+            "url": "classes/Hyde-Framework-Models-Route.html#method___toString"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Route.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AgetLink\u0028\u0029",
+            "name": "getLink",
+            "summary": "Resolve\u0020a\u0020site\u0020web\u0020link\u0020to\u0020the\u0020file,\u0020using\u0020pretty\u0020URLs\u0020if\u0020enabled.",
+            "url": "classes/Hyde-Framework-Models-Route.html#method_getLink"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AgetPageType\u0028\u0029",
             "name": "getPageType",
@@ -3380,16 +3390,6 @@ Search.appendIndex(
             "name": "getQualifiedUrl",
             "summary": "Get\u0020the\u0020qualified\u0020URL\u0020for\u0020the\u0020route,\u0020using\u0020pretty\u0020URLs\u0020if\u0020enabled.",
             "url": "classes/Hyde-Framework-Models-Route.html#method_getQualifiedUrl"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AgetLink\u0028\u0029",
-            "name": "getLink",
-            "summary": "Resolve\u0020a\u0020site\u0020web\u0020link\u0020to\u0020the\u0020file,\u0020using\u0020pretty\u0020URLs\u0020if\u0020enabled.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_getLink"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003A__toString\u0028\u0029",
-            "name": "__toString",
-            "summary": "Cast\u0020a\u0020route\u0020object\u0020into\u0020a\u0020string\u0020that\u0020can\u0020be\u0020used\u0020in\u0020a\u0020href\u0020attribute.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method___toString"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AconstructRouteKey\u0028\u0029",
             "name": "constructRouteKey",
@@ -3433,7 +3433,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003Aexists\u0028\u0029",
             "name": "exists",
-            "summary": "",
+            "summary": "Determine\u0020if\u0020the\u0020supplied\u0020route\u0020key\u0020exists\u0020in\u0020the\u0020route\u0020index.",
             "url": "classes/Hyde-Framework-Models-Route.html#method_exists"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003A\u0024sourceModel",
@@ -4176,6 +4176,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-HydeSmartDocs.html#method_renderSourceLink"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\HydeSmartDocs\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "Create\u0020a\u0020new\u0020HydeSmartDocs\u0020instance,\u0020process,\u0020and\u0020return\u0020it.",
+            "url": "classes/Hyde-Framework-Services-HydeSmartDocs.html#method_create"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\HydeSmartDocs\u003A\u003AhasTorchlight\u0028\u0029",
+            "name": "hasTorchlight",
+            "summary": "Does\u0020the\u0020current\u0020document\u0020use\u0020Torchlight\u003F",
+            "url": "classes/Hyde-Framework-Services-HydeSmartDocs.html#method_hasTorchlight"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\HydeSmartDocs\u003A\u003AcanRenderSourceLink\u0028\u0029",
+            "name": "canRenderSourceLink",
+            "summary": "Do\u0020we\u0020satisfy\u0020the\u0020requirements\u0020to\u0020render\u0020an\u0020edit\u0020source\u0020button\u0020in\u0020the\u0020supplied\u0020position\u003F",
+            "url": "classes/Hyde-Framework-Services-HydeSmartDocs.html#method_canRenderSourceLink"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\HydeSmartDocs\u003A\u003A\u0024page",
             "name": "page",
             "summary": "",
@@ -4660,11 +4675,6 @@ Search.appendIndex(
             "name": "Commands",
             "summary": "",
             "url": "namespaces/hyde-framework-concerns-commands.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\FacadeHelpers",
-            "name": "FacadeHelpers",
-            "summary": "",
-            "url": "namespaces/hyde-framework-concerns-facadehelpers.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas",
             "name": "Schemas",
