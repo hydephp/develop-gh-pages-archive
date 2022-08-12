@@ -1258,47 +1258,47 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetSourceDirectory\u0028\u0029",
             "name": "getSourceDirectory",
-            "summary": "Get\u0020the\u0020directory\u0020in\u0020where\u0020source\u0020files\u0020are\u0020stored.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getSourceDirectory"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetOutputDirectory\u0028\u0029",
             "name": "getOutputDirectory",
-            "summary": "Get\u0020the\u0020output\u0020subdirectory\u0020to\u0020store\u0020compiled\u0020HTML.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getOutputDirectory"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetFileExtension\u0028\u0029",
             "name": "getFileExtension",
-            "summary": "Get\u0020the\u0020file\u0020extension\u0020of\u0020the\u0020source\u0020files.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getFileExtension"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003Aparse\u0028\u0029",
             "name": "parse",
-            "summary": "Parse\u0020a\u0020source\u0020file\u0020slug\u0020into\u0020a\u0020page\u0020model.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_parse"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003Afiles\u0028\u0029",
             "name": "files",
-            "summary": "Get\u0020an\u0020array\u0020of\u0020all\u0020the\u0020source\u0020file\u0020slugs\u0020for\u0020the\u0020model.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_files"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003Aall\u0028\u0029",
             "name": "all",
-            "summary": "Get\u0020a\u0020collection\u0020of\u0020all\u0020pages,\u0020parsed\u0020into\u0020page\u0020models.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_all"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AqualifyBasename\u0028\u0029",
             "name": "qualifyBasename",
-            "summary": "Qualify\u0020a\u0020page\u0020basename\u0020into\u0020a\u0020referenceable\u0020file\u0020path.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_qualifyBasename"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetOutputLocation\u0028\u0029",
             "name": "getOutputLocation",
-            "summary": "Get\u0020the\u0020proper\u0020site\u0020output\u0020path\u0020for\u0020a\u0020page\u0020model.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getOutputLocation"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003Aget\u0028\u0029",
             "name": "get",
-            "summary": "Get\u0020a\u0020value\u0020from\u0020the\u0020computed\u0020page\u0020data,\u0020or\u0020fallback\u0020to\u0020the\u0020page\u0027s\u0020front\u0020matter,\u0020then\u0020to\u0020the\u0020default\u0020value.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_get"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003A\u0024matter",
@@ -1308,17 +1308,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003Ahas\u0028\u0029",
             "name": "has",
-            "summary": "See\u0020if\u0020a\u0020value\u0020exists\u0020in\u0020the\u0020computed\u0020page\u0020data\u0020or\u0020the\u0020front\u0020matter.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_has"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetIdentifier\u0028\u0029",
             "name": "getIdentifier",
-            "summary": "Get\u0020the\u0020page\u0020model\u0027s\u0020identifier\u0020property.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getIdentifier"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetSourcePath\u0028\u0029",
             "name": "getSourcePath",
-            "summary": "Get\u0020the\u0020path\u0020to\u0020the\u0020source\u0020file,\u0020relative\u0020to\u0020the\u0020project\u0020root.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getSourcePath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetOutputPath\u0028\u0029",
@@ -1328,17 +1328,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetCurrentPagePath\u0028\u0029",
             "name": "getCurrentPagePath",
-            "summary": "Get\u0020the\u0020URI\u0020path\u0020relative\u0020to\u0020the\u0020site\u0020root.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getCurrentPagePath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetRoute\u0028\u0029",
             "name": "getRoute",
-            "summary": "Get\u0020the\u0020route\u0020for\u0020the\u0020page.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getRoute"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AhtmlTitle\u0028\u0029",
             "name": "htmlTitle",
-            "summary": "Get\u0020the\u0020page\u0020title\u0020to\u0020display\u0020in\u0020the\u0020\u003Chead\u003E\u0020section\u0027s\u0020\u003Ctitle\u003E\u0020tag.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_htmlTitle"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetBladeView\u0028\u0029",
@@ -1620,101 +1620,6 @@ Search.appendIndex(
             "name": "uniqueKey",
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-MetadataItemContract.html#method_uniqueKey"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract",
-            "name": "PageContract",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "Get\u0020a\u0020value\u0020from\u0020the\u0020computed\u0020page\u0020data,\u0020or\u0020fallback\u0020to\u0020the\u0020page\u0027s\u0020front\u0020matter,\u0020then\u0020to\u0020the\u0020default\u0020value.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_get"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003Amatter\u0028\u0029",
-            "name": "matter",
-            "summary": "Get\u0020the\u0020front\u0020matter\u0020object,\u0020or\u0020a\u0020value\u0020from\u0020within.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_matter"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003Ahas\u0028\u0029",
-            "name": "has",
-            "summary": "See\u0020if\u0020a\u0020value\u0020exists\u0020in\u0020the\u0020computed\u0020page\u0020data\u0020or\u0020the\u0020front\u0020matter.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_has"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003AgetSourceDirectory\u0028\u0029",
-            "name": "getSourceDirectory",
-            "summary": "Get\u0020the\u0020directory\u0020in\u0020where\u0020source\u0020files\u0020are\u0020stored.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_getSourceDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003AgetOutputDirectory\u0028\u0029",
-            "name": "getOutputDirectory",
-            "summary": "Get\u0020the\u0020output\u0020subdirectory\u0020to\u0020store\u0020compiled\u0020HTML.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_getOutputDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003AgetFileExtension\u0028\u0029",
-            "name": "getFileExtension",
-            "summary": "Get\u0020the\u0020file\u0020extension\u0020of\u0020the\u0020source\u0020files.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_getFileExtension"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003Aparse\u0028\u0029",
-            "name": "parse",
-            "summary": "Parse\u0020a\u0020source\u0020file\u0020slug\u0020into\u0020a\u0020page\u0020model.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_parse"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003Afiles\u0028\u0029",
-            "name": "files",
-            "summary": "Get\u0020an\u0020array\u0020of\u0020all\u0020the\u0020source\u0020file\u0020slugs\u0020for\u0020the\u0020model.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_files"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003Aall\u0028\u0029",
-            "name": "all",
-            "summary": "Get\u0020a\u0020collection\u0020of\u0020all\u0020pages,\u0020parsed\u0020into\u0020page\u0020models.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_all"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003AqualifyBasename\u0028\u0029",
-            "name": "qualifyBasename",
-            "summary": "Qualify\u0020a\u0020page\u0020basename\u0020into\u0020a\u0020referenceable\u0020file\u0020path.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_qualifyBasename"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003AgetOutputLocation\u0028\u0029",
-            "name": "getOutputLocation",
-            "summary": "Get\u0020the\u0020proper\u0020site\u0020output\u0020path\u0020for\u0020a\u0020page\u0020model.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_getOutputLocation"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003AgetIdentifier\u0028\u0029",
-            "name": "getIdentifier",
-            "summary": "Get\u0020the\u0020page\u0020model\u0027s\u0020identifier\u0020property.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_getIdentifier"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003AgetSourcePath\u0028\u0029",
-            "name": "getSourcePath",
-            "summary": "Get\u0020the\u0020path\u0020to\u0020the\u0020source\u0020file,\u0020relative\u0020to\u0020the\u0020project\u0020root.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_getSourcePath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003AgetOutputPath\u0028\u0029",
-            "name": "getOutputPath",
-            "summary": "Get\u0020the\u0020path\u0020where\u0020the\u0020compiled\u0020page\u0020will\u0020be\u0020saved.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_getOutputPath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003AgetCurrentPagePath\u0028\u0029",
-            "name": "getCurrentPagePath",
-            "summary": "Get\u0020the\u0020URI\u0020path\u0020relative\u0020to\u0020the\u0020site\u0020root.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_getCurrentPagePath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003AgetRoute\u0028\u0029",
-            "name": "getRoute",
-            "summary": "Get\u0020the\u0020route\u0020for\u0020the\u0020page.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_getRoute"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003Acompile\u0028\u0029",
-            "name": "compile",
-            "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_compile"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\PageContract\u003A\u003AhtmlTitle\u0028\u0029",
-            "name": "htmlTitle",
-            "summary": "Get\u0020the\u0020page\u0020title\u0020to\u0020display\u0020in\u0020the\u0020\u003Chead\u003E\u0020section\u0027s\u0020\u003Ctitle\u003E\u0020tag.",
-            "url": "classes/Hyde-Framework-Contracts-PageContract.html#method_htmlTitle"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\RouteContract",
             "name": "RouteContract",
