@@ -114,11 +114,12 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/RouteCollection.php"><a href="files/packages-framework-src-routecollection.html"><abbr title="packages/framework/src/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">Pseudo-Router for Hyde.</p>
+
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -140,7 +141,19 @@
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                     <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Framework\Testing\Feature\RouteTest">RouteTest</abbr></span>
                                         
-                                             
+                                                 <section class="phpdocumentor-description"><p>This is not a router in the traditional sense that it decides where to go.
+Instead, it creates a pre-generated object encapsulating the Hyde autodiscovery.</p>
+<p>This not only let us emulate Laravel route helpers, but also serve as the
+canonical source of truth for the vital HydePHP autodiscovery process.</p>
+<p>The routes defined can then also be used to power the RealtimeCompiler without
+having to reverse-engineer the source file mapping.</p>
+<p>Routes are not intended to be added manually, instead the route index is created using
+the exact same rules as the current autodiscovery process and compiled file output.</p>
+<p>The route index serves as a multidimensional mapping allowing you to
+determine where a source file will be compiled to, and where a compiled
+file was generated from.</p>
+</section>
+
                                     </dd>
                         </dl>
 
@@ -178,13 +191,6 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-RouteCollection.html#method_getRoutes">getRoutes()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-RouteCollection.html#method_getRoutesForModel">getRoutesForModel()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
@@ -246,7 +252,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/RouteCollection.php"><a href="files/packages-framework-src-routecollection.html"><abbr title="packages/framework/src/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -284,7 +290,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/RouteCollection.php"><a href="files/packages-framework-src-routecollection.html"><abbr title="packages/framework/src/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -330,7 +336,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/RouteCollection.php"><a href="files/packages-framework-src-routecollection.html"><abbr title="packages/framework/src/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -374,55 +380,23 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/RouteCollection.php"><a href="files/packages-framework-src-routecollection.html"><abbr title="packages/framework/src/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getRoutes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">getRoutes</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
         <section class="phpdocumentor-description"></section>
 
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-            -deprecated                                            "
->
-    <h4 class="phpdocumentor-element__name" id="method_getRoutesForModel">
-        getRoutesForModel()
-        <a href="classes/Hyde-Framework-RouteCollection.html#method_getRoutesForModel" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/RouteCollection.php"><a href="files/packages-framework-src-routecollection.html"><abbr title="packages/framework/src/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">44</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getRoutesForModel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pageClass</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -430,21 +404,6 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">deprecated</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Will be merged into getRoutes()</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">self</span>
@@ -465,7 +424,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/RouteCollection.php"><a href="files/packages-framework-src-routecollection.html"><abbr title="packages/framework/src/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -509,7 +468,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/RouteCollection.php"><a href="files/packages-framework-src-routecollection.html"><abbr title="packages/framework/src/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -553,7 +512,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/RouteCollection.php"><a href="files/packages-framework-src-routecollection.html"><abbr title="packages/framework/src/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -586,7 +545,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/RouteCollection.php"><a href="files/packages-framework-src-routecollection.html"><abbr title="packages/framework/src/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 

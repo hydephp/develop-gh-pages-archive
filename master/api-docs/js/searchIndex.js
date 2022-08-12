@@ -806,11 +806,6 @@ Search.appendIndex(
             "summary": "Output\u0020the\u0020contents\u0020of\u0020an\u0020exception.",
             "url": "classes/Hyde-Framework-Commands-HydeRebuildStaticSiteCommand.html#method_handleException"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeRebuildStaticSiteCommand\u003A\u003AgetOutputPath\u0028\u0029",
-            "name": "getOutputPath",
-            "summary": "Get\u0020the\u0020output\u0020path\u0020for\u0020the\u0020given\u0020source\u0020file\u0020path.",
-            "url": "classes/Hyde-Framework-Commands-HydeRebuildStaticSiteCommand.html#method_getOutputPath"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeRebuildStaticSiteCommand\u003A\u003A\u0024signature",
             "name": "signature",
             "summary": "The\u0020signature\u0020of\u0020the\u0020command.",
@@ -1331,6 +1326,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getCurrentPagePath"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetRouteKey\u0028\u0029",
+            "name": "getRouteKey",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractPage.html#method_getRouteKey"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractPage\u003A\u003AgetRoute\u0028\u0029",
             "name": "getRoute",
             "summary": "",
@@ -1425,11 +1425,6 @@ Search.appendIndex(
             "name": "version",
             "summary": "The\u0020HydeFront\u0020version\u0020to\u0020load.",
             "url": "classes/Hyde-Framework-Contracts-AssetServiceContract.html#method_version"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\AssetServiceContract\u003A\u003AstylePath\u0028\u0029",
-            "name": "stylePath",
-            "summary": "Return\u0020the\u0020main\u0020Hyde\u0020stylesheet\u0020location\/path.",
-            "url": "classes/Hyde-Framework-Contracts-AssetServiceContract.html#method_stylePath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AssetServiceContract\u003A\u003AconstructCdnPath\u0028\u0029",
             "name": "constructCdnPath",
@@ -1715,31 +1710,6 @@ Search.appendIndex(
             "name": "exists",
             "summary": "Determine\u0020if\u0020the\u0020supplied\u0020route\u0020key\u0020exists\u0020in\u0020the\u0020route\u0020index.",
             "url": "classes/Hyde-Framework-Contracts-RouteFacadeContract.html#method_exists"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\RoutingServiceContract",
-            "name": "RoutingServiceContract",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-RoutingServiceContract.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\RoutingServiceContract\u003A\u003AgetInstance\u0028\u0029",
-            "name": "getInstance",
-            "summary": "Get\u0020the\u0020Singleton\u0020instance\u0020of\u0020the\u0020Router.",
-            "url": "classes/Hyde-Framework-Contracts-RoutingServiceContract.html#method_getInstance"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\RoutingServiceContract\u003A\u003AgetRoutes\u0028\u0029",
-            "name": "getRoutes",
-            "summary": "Get\u0020the\u0020routes\u0020discovered\u0020by\u0020the\u0020router.",
-            "url": "classes/Hyde-Framework-Contracts-RoutingServiceContract.html#method_getRoutes"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\RoutingServiceContract\u003A\u003AgetRoutesForModel\u0028\u0029",
-            "name": "getRoutesForModel",
-            "summary": "Get\u0020all\u0020discovered\u0020routes\u0020for\u0020the\u0020given\u0020page\u0020class.",
-            "url": "classes/Hyde-Framework-Contracts-RoutingServiceContract.html#method_getRoutesForModel"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\RoutingServiceContract\u003A\u003AaddRoute\u0028\u0029",
-            "name": "addRoute",
-            "summary": "Add\u0020a\u0020route\u0020to\u0020the\u0020router\u0020index.",
-            "url": "classes/Hyde-Framework-Contracts-RoutingServiceContract.html#method_addRoute"
         },                {
             "fqsen": "\\Hyde\\Framework\\Exceptions\\BaseUrlNotSetException",
             "name": "BaseUrlNotSetException",
@@ -2761,20 +2731,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#property_markdown"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003AparseFile\u0028\u0029",
-            "name": "parseFile",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#method_parseFile"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003Aparse\u0028\u0029",
             "name": "parse",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#method_parse"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003A\u0024body",
-            "name": "body",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#property_body"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Metadata\\LinkItem",
             "name": "LinkItem",
@@ -2985,11 +2945,6 @@ Search.appendIndex(
             "name": "sort",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-NavigationMenu.html#method_sort"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\NavigationMenu\u003A\u003AgetHomeLink\u0028\u0029",
-            "name": "getHomeLink",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-NavigationMenu.html#method_getHomeLink"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\NavigationMenu\u003A\u003AfilterHiddenItems\u0028\u0029",
             "name": "filterHiddenItems",
@@ -3211,16 +3166,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_constructPageSchemas"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AgetCanonicalLink\u0028\u0029",
-            "name": "getCanonicalLink",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getCanonicalLink"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AgetPostDescription\u0028\u0029",
-            "name": "getPostDescription",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_getPostDescription"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AgetLatestPosts\u0028\u0029",
             "name": "getLatestPosts",
             "summary": "",
@@ -3295,11 +3240,6 @@ Search.appendIndex(
             "name": "getQualifiedUrl",
             "summary": "Get\u0020the\u0020qualified\u0020URL\u0020for\u0020the\u0020route,\u0020using\u0020pretty\u0020URLs\u0020if\u0020enabled.",
             "url": "classes/Hyde-Framework-Models-Route.html#method_getQualifiedUrl"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AconstructRouteKey\u0028\u0029",
-            "name": "constructRouteKey",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_constructRouteKey"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -3778,7 +3718,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\RouteCollection",
             "name": "RouteCollection",
-            "summary": "",
+            "summary": "Pseudo\u002DRouter\u0020for\u0020Hyde.",
             "url": "classes/Hyde-Framework-RouteCollection.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\RouteCollection\u003A\u003Aboot\u0028\u0029",
@@ -3800,11 +3740,6 @@ Search.appendIndex(
             "name": "getRoutes",
             "summary": "",
             "url": "classes/Hyde-Framework-RouteCollection.html#method_getRoutes"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\RouteCollection\u003A\u003AgetRoutesForModel\u0028\u0029",
-            "name": "getRoutesForModel",
-            "summary": "",
-            "url": "classes/Hyde-Framework-RouteCollection.html#method_getRoutesForModel"
         },                {
             "fqsen": "\\Hyde\\Framework\\RouteCollection\u003A\u003AaddRoute\u0028\u0029",
             "name": "addRoute",
@@ -3835,11 +3770,6 @@ Search.appendIndex(
             "name": "version",
             "summary": "The\u0020default\u0020HydeFront\u0020version\u0020to\u0020load.",
             "url": "classes/Hyde-Framework-Services-AssetService.html#property_version"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AstylePath\u0028\u0029",
-            "name": "stylePath",
-            "summary": "Return\u0020the\u0020main\u0020Hyde\u0020stylesheet\u0020location\/path.",
-            "url": "classes/Hyde-Framework-Services-AssetService.html#method_stylePath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AconstructCdnPath\u0028\u0029",
             "name": "constructCdnPath",
@@ -4240,31 +4170,6 @@ Search.appendIndex(
             "name": "builder",
             "summary": "The\u0020page\u0020builder\u0020instance.",
             "url": "classes/Hyde-Framework-Services-RebuildService.html#property_builder"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\RoutingService",
-            "name": "RoutingService",
-            "summary": "Pseudo\u002DRouter\u0020for\u0020Hyde.",
-            "url": "classes/Hyde-Framework-Services-RoutingService.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\RoutingService\u003A\u003AgetInstance\u0028\u0029",
-            "name": "getInstance",
-            "summary": "Get\u0020the\u0020Singleton\u0020instance\u0020of\u0020the\u0020Router.",
-            "url": "classes/Hyde-Framework-Services-RoutingService.html#method_getInstance"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\RoutingService\u003A\u003AgetRoutes\u0028\u0029",
-            "name": "getRoutes",
-            "summary": "Get\u0020all\u0020routes\u0020discovered\u0020by\u0020the\u0020autodiscovery\u0020process.",
-            "url": "classes/Hyde-Framework-Services-RoutingService.html#method_getRoutes"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\RoutingService\u003A\u003AgetRoutesForModel\u0028\u0029",
-            "name": "getRoutesForModel",
-            "summary": "Get\u0020all\u0020discovered\u0020routes\u0020for\u0020the\u0020given\u0020page\u0020class.",
-            "url": "classes/Hyde-Framework-Services-RoutingService.html#method_getRoutesForModel"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\RoutingService\u003A\u003AaddRoute\u0028\u0029",
-            "name": "addRoute",
-            "summary": "Add\u0020a\u0020route\u0020to\u0020the\u0020router\u0020index.",
-            "url": "classes/Hyde-Framework-Services-RoutingService.html#method_addRoute"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\RssFeedService",
             "name": "RssFeedService",
