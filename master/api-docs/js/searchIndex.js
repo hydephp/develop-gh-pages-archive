@@ -1901,6 +1901,51 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Foundation-Hyperlinks.html#property_kernel"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\RouteCollection",
+            "name": "RouteCollection",
+            "summary": "Pseudo\u002DRouter\u0020for\u0020Hyde.",
+            "url": "classes/Hyde-Framework-Foundation-RouteCollection.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\RouteCollection\u003A\u003Aboot\u0028\u0029",
+            "name": "boot",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-RouteCollection.html#method_boot"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\RouteCollection\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-RouteCollection.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\RouteCollection\u003A\u003AsetKernel\u0028\u0029",
+            "name": "setKernel",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-RouteCollection.html#method_setKernel"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\RouteCollection\u003A\u003AgetRoutes\u0028\u0029",
+            "name": "getRoutes",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-RouteCollection.html#method_getRoutes"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\RouteCollection\u003A\u003AaddRoute\u0028\u0029",
+            "name": "addRoute",
+            "summary": "This\u0020internal\u0020method\u0020adds\u0020the\u0020specified\u0020route\u0020to\u0020the\u0020route\u0020index.",
+            "url": "classes/Hyde-Framework-Foundation-RouteCollection.html#method_addRoute"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\RouteCollection\u003A\u003Adiscover\u0028\u0029",
+            "name": "discover",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-RouteCollection.html#method_discover"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\RouteCollection\u003A\u003AdiscoverRoutes\u0028\u0029",
+            "name": "discoverRoutes",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-RouteCollection.html#method_discoverRoutes"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\RouteCollection\u003A\u003A\u0024kernel",
+            "name": "kernel",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-RouteCollection.html#property_kernel"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Features",
             "name": "Features",
             "summary": "Allows\u0020features\u0020to\u0020be\u0020enabled\u0020and\u0020disabled\u0020in\u0020a\u0020simple\u0020object\u002Doriented\u0020manner.",
@@ -3650,51 +3695,6 @@ Search.appendIndex(
             "name": "get",
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html#method_get"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\RouteCollection",
-            "name": "RouteCollection",
-            "summary": "Pseudo\u002DRouter\u0020for\u0020Hyde.",
-            "url": "classes/Hyde-Framework-RouteCollection.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\RouteCollection\u003A\u003Aboot\u0028\u0029",
-            "name": "boot",
-            "summary": "",
-            "url": "classes/Hyde-Framework-RouteCollection.html#method_boot"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\RouteCollection\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-RouteCollection.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\RouteCollection\u003A\u003AsetKernel\u0028\u0029",
-            "name": "setKernel",
-            "summary": "",
-            "url": "classes/Hyde-Framework-RouteCollection.html#method_setKernel"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\RouteCollection\u003A\u003AgetRoutes\u0028\u0029",
-            "name": "getRoutes",
-            "summary": "",
-            "url": "classes/Hyde-Framework-RouteCollection.html#method_getRoutes"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\RouteCollection\u003A\u003AaddRoute\u0028\u0029",
-            "name": "addRoute",
-            "summary": "This\u0020internal\u0020method\u0020adds\u0020the\u0020specified\u0020route\u0020to\u0020the\u0020route\u0020index.",
-            "url": "classes/Hyde-Framework-RouteCollection.html#method_addRoute"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\RouteCollection\u003A\u003Adiscover\u0028\u0029",
-            "name": "discover",
-            "summary": "",
-            "url": "classes/Hyde-Framework-RouteCollection.html#method_discover"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\RouteCollection\u003A\u003AdiscoverRoutes\u0028\u0029",
-            "name": "discoverRoutes",
-            "summary": "",
-            "url": "classes/Hyde-Framework-RouteCollection.html#method_discoverRoutes"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\RouteCollection\u003A\u003A\u0024kernel",
-            "name": "kernel",
-            "summary": "",
-            "url": "classes/Hyde-Framework-RouteCollection.html#property_kernel"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService",
             "name": "AssetService",
