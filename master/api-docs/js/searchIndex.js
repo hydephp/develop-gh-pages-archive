@@ -1001,16 +1001,6 @@ Search.appendIndex(
             "summary": "The\u0020canonical\u0020URL\u0020of\u0020the\u0020page.",
             "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#property_canonicalUrl"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasTableOfContents",
-            "name": "HasTableOfContents",
-            "summary": "Generate\u0020Table\u0020of\u0020Contents\u0020as\u0020HTML\u0020from\u0020a\u0020Markdown\u0020document\u0020body.",
-            "url": "classes/Hyde-Framework-Concerns-HasTableOfContents.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\HasTableOfContents\u003A\u003AgetTableOfContents\u0028\u0029",
-            "name": "getTableOfContents",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-HasTableOfContents.html#method_getTableOfContents"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\InteractsWithDirectories",
             "name": "InteractsWithDirectories",
             "summary": "",
@@ -2995,6 +2985,11 @@ Search.appendIndex(
             "name": "hasTableOfContents",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_hasTableOfContents"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AgetTableOfContents\u0028\u0029",
+            "name": "getTableOfContents",
+            "summary": "Generate\u0020Table\u0020of\u0020Contents\u0020as\u0020HTML\u0020from\u0020a\u0020Markdown\u0020document\u0020body.",
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_getTableOfContents"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",
