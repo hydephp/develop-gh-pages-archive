@@ -2186,100 +2186,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-HydeKernel.html#property_routes"
         },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AmakeTitle\u0028\u0029",
-            "name": "makeTitle",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_makeTitle"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AformatHtmlPath\u0028\u0029",
-            "name": "formatHtmlPath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_formatHtmlPath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003ArelativeLink\u0028\u0029",
-            "name": "relativeLink",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_relativeLink"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003Aimage\u0028\u0029",
-            "name": "image",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_image"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AhasSiteUrl\u0028\u0029",
-            "name": "hasSiteUrl",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_hasSiteUrl"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003Aurl\u0028\u0029",
-            "name": "url",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_url"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003Apath\u0028\u0029",
-            "name": "path",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_path"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AvendorPath\u0028\u0029",
-            "name": "vendorPath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_vendorPath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003Acopy\u0028\u0029",
-            "name": "copy",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_copy"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003Atouch\u0028\u0029",
-            "name": "touch",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_touch"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003Aunlink\u0028\u0029",
-            "name": "unlink",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_unlink"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AgetModelSourcePath\u0028\u0029",
-            "name": "getModelSourcePath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_getModelSourcePath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AgetBladePagePath\u0028\u0029",
-            "name": "getBladePagePath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_getBladePagePath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AgetMarkdownPagePath\u0028\u0029",
-            "name": "getMarkdownPagePath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_getMarkdownPagePath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AgetMarkdownPostPath\u0028\u0029",
-            "name": "getMarkdownPostPath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_getMarkdownPostPath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AgetDocumentationPagePath\u0028\u0029",
-            "name": "getDocumentationPagePath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_getDocumentationPagePath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AgetSiteOutputPath\u0028\u0029",
-            "name": "getSiteOutputPath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_getSiteOutputPath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003ApathToRelative\u0028\u0029",
-            "name": "pathToRelative",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_pathToRelative"
-        },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
             "summary": "",
             "url": "classes/Hyde-Framework-HydeKernel.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AneedsToBeBooted\u0028\u0029",
+            "name": "needsToBeBooted",
+            "summary": "",
+            "url": "classes/Hyde-Framework-HydeKernel.html#method_needsToBeBooted"
         },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003A\u0024instance",
             "name": "instance",
@@ -4395,6 +4310,11 @@ Search.appendIndex(
             "name": "Foundation",
             "summary": "",
             "url": "namespaces/hyde-framework-foundation.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\Concerns",
+            "name": "Concerns",
+            "summary": "",
+            "url": "namespaces/hyde-framework-foundation-concerns.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers",
             "name": "Helpers",
