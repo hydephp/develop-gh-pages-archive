@@ -2111,35 +2111,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-HydeKernel.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003Aboot\u0028\u0029",
-            "name": "boot",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_boot"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AsetInstance\u0028\u0029",
-            "name": "setInstance",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_setInstance"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AgetInstance\u0028\u0029",
-            "name": "getInstance",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_getInstance"
-        },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003Aversion\u0028\u0029",
             "name": "version",
             "summary": "",
             "url": "classes/Hyde-Framework-HydeKernel.html#method_version"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AgetBasePath\u0028\u0029",
-            "name": "getBasePath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_getBasePath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AsetBasePath\u0028\u0029",
-            "name": "setBasePath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_setBasePath"
         },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003Afeatures\u0028\u0029",
             "name": "features",
@@ -2161,30 +2136,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-HydeKernel.html#method_currentRoute"
         },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003A\u0024files",
-            "name": "files",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#property_files"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003A\u0024pages",
-            "name": "pages",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#property_pages"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003A\u0024routes",
-            "name": "routes",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#property_routes"
-        },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
             "summary": "",
             "url": "classes/Hyde-Framework-HydeKernel.html#method_toArray"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AneedsToBeBooted\u0028\u0029",
-            "name": "needsToBeBooted",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_needsToBeBooted"
         },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003A\u0024instance",
             "name": "instance",
@@ -2205,6 +2160,21 @@ Search.appendIndex(
             "name": "hyperlinks",
             "summary": "",
             "url": "classes/Hyde-Framework-HydeKernel.html#property_hyperlinks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003A\u0024files",
+            "name": "files",
+            "summary": "",
+            "url": "classes/Hyde-Framework-HydeKernel.html#property_files"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003A\u0024pages",
+            "name": "pages",
+            "summary": "",
+            "url": "classes/Hyde-Framework-HydeKernel.html#property_pages"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003A\u0024routes",
+            "name": "routes",
+            "summary": "",
+            "url": "classes/Hyde-Framework-HydeKernel.html#property_routes"
         },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003A\u0024booted",
             "name": "booted",
@@ -4301,15 +4271,15 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde-framework-facades.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Foundation",
-            "name": "Foundation",
-            "summary": "",
-            "url": "namespaces/hyde-framework-foundation.html"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Foundation\\Concerns",
             "name": "Concerns",
             "summary": "",
             "url": "namespaces/hyde-framework-foundation-concerns.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation",
+            "name": "Foundation",
+            "summary": "",
+            "url": "namespaces/hyde-framework-foundation.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers",
             "name": "Helpers",
