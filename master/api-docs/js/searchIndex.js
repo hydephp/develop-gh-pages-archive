@@ -2196,6 +2196,11 @@ Search.appendIndex(
             "summary": "Bootstrap\u0020any\u0020application\u0020services.",
             "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_boot"
         },                {
+            "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003AinitializeConfiguration\u0028\u0029",
+            "name": "initializeConfiguration",
+            "summary": "",
+            "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_initializeConfiguration"
+        },                {
             "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003AregisterHydeConsoleCommands\u0028\u0029",
             "name": "registerHydeConsoleCommands",
             "summary": "Register\u0020the\u0020HydeCLI\u0020console\u0020commands.",
@@ -4150,6 +4155,31 @@ Search.appendIndex(
             "name": "check_for_conflicts_between_blade_and_markdown_pages",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-ValidationService.html#method_check_for_conflicts_between_blade_and_markdown_pages"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\YamlConfigurationService",
+            "name": "YamlConfigurationService",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-YamlConfigurationService.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\YamlConfigurationService\u003A\u003Aboot\u0028\u0029",
+            "name": "boot",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-YamlConfigurationService.html#method_boot"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\YamlConfigurationService\u003A\u003AhasFile\u0028\u0029",
+            "name": "hasFile",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-YamlConfigurationService.html#method_hasFile"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\YamlConfigurationService\u003A\u003AgetFile\u0028\u0029",
+            "name": "getFile",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-YamlConfigurationService.html#method_getFile"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\YamlConfigurationService\u003A\u003AgetYaml\u0028\u0029",
+            "name": "getYaml",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-YamlConfigurationService.html#method_getYaml"
         },                {
             "fqsen": "\\Hyde\\Framework\\StaticPageBuilder",
             "name": "StaticPageBuilder",
