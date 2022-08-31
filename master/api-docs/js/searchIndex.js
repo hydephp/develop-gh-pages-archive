@@ -281,6 +281,51 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-GeneratesSidebarTableOfContents.html#property_markdown"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateRssFeed",
+            "name": "GenerateRssFeed",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateRssFeed\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html#method_run"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateRssFeed\u003A\u003Athen\u0028\u0029",
+            "name": "then",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html#method_then"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateRssFeed\u003A\u003A\u0024description",
+            "name": "description",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html#property_description"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSearch",
+            "name": "GenerateSearch",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSearch.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSearch\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSearch.html#method_run"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSearch\u003A\u003Athen\u0028\u0029",
+            "name": "then",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSearch.html#method_then"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSearch\u003A\u003AguesstimateGenerationTime\u0028\u0029",
+            "name": "guesstimateGenerationTime",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSearch.html#method_guesstimateGenerationTime"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSearch\u003A\u003A\u0024description",
+            "name": "description",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSearch.html#property_description"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSitemap",
             "name": "GenerateSitemap",
             "summary": "",
@@ -398,72 +443,62 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildRssFeedCommand",
             "name": "HydeBuildRssFeedCommand",
-            "summary": "Hyde\u0020Command\u0020to\u0020run\u0020the\u0020Build\u0020Process\u0020for\u0020the\u0020RSS\u0020Feed.",
+            "summary": "Hyde\u0020command\u0020to\u0020run\u0020the\u0020build\u0020process\u0020for\u0020the\u0020RSS\u0020feed.",
             "url": "classes/Hyde-Framework-Commands-HydeBuildRssFeedCommand.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildRssFeedCommand\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
-            "summary": "Execute\u0020the\u0020console\u0020command.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeBuildRssFeedCommand.html#method_handle"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildRssFeedCommand\u003A\u003A\u0024signature",
             "name": "signature",
-            "summary": "The\u0020signature\u0020of\u0020the\u0020command.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeBuildRssFeedCommand.html#property_signature"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildRssFeedCommand\u003A\u003A\u0024description",
             "name": "description",
-            "summary": "The\u0020description\u0020of\u0020the\u0020command.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeBuildRssFeedCommand.html#property_description"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSearchCommand",
             "name": "HydeBuildSearchCommand",
-            "summary": "Hyde\u0020Command\u0020to\u0020run\u0020the\u0020Build\u0020Process\u0020for\u0020the\u0020DocumentationSearchIndex.",
+            "summary": "Hyde\u0020command\u0020to\u0020run\u0020the\u0020build\u0020process\u0020for\u0020the\u0020documentation\u0020search\u0020index.",
             "url": "classes/Hyde-Framework-Commands-HydeBuildSearchCommand.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSearchCommand\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
-            "summary": "Execute\u0020the\u0020console\u0020command.",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildSearchCommand.html#method_handle"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSearchCommand\u003A\u003AguesstimateGenerationTime\u0028\u0029",
-            "name": "guesstimateGenerationTime",
             "summary": "",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildSearchCommand.html#method_guesstimateGenerationTime"
+            "url": "classes/Hyde-Framework-Commands-HydeBuildSearchCommand.html#method_handle"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSearchCommand\u003A\u003A\u0024signature",
             "name": "signature",
-            "summary": "The\u0020signature\u0020of\u0020the\u0020command.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeBuildSearchCommand.html#property_signature"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSearchCommand\u003A\u003A\u0024description",
             "name": "description",
-            "summary": "The\u0020description\u0020of\u0020the\u0020command.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeBuildSearchCommand.html#property_description"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSitemapCommand",
             "name": "HydeBuildSitemapCommand",
-            "summary": "Hyde\u0020Command\u0020to\u0020run\u0020the\u0020Build\u0020Process\u0020for\u0020the\u0020Sitemap.",
+            "summary": "Hyde\u0020command\u0020to\u0020run\u0020the\u0020build\u0020process\u0020for\u0020the\u0020sitemap.",
             "url": "classes/Hyde-Framework-Commands-HydeBuildSitemapCommand.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSitemapCommand\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
-            "summary": "Execute\u0020the\u0020console\u0020command.",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildSitemapCommand.html#method_handle"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSitemapCommand\u003A\u003ArunPreflightCheck\u0028\u0029",
-            "name": "runPreflightCheck",
             "summary": "",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildSitemapCommand.html#method_runPreflightCheck"
+            "url": "classes/Hyde-Framework-Commands-HydeBuildSitemapCommand.html#method_handle"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSitemapCommand\u003A\u003A\u0024signature",
             "name": "signature",
-            "summary": "The\u0020signature\u0020of\u0020the\u0020command.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeBuildSitemapCommand.html#property_signature"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSitemapCommand\u003A\u003A\u0024description",
             "name": "description",
-            "summary": "The\u0020description\u0020of\u0020the\u0020command.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeBuildSitemapCommand.html#property_description"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand",
@@ -1120,6 +1155,11 @@ Search.appendIndex(
             "name": "timeStart",
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractBuildTask.html#property_timeStart"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractBuildTask\u003A\u003A\u0024exitCode",
+            "name": "exitCode",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractBuildTask.html#property_exitCode"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractMarkdownPage",
             "name": "AbstractMarkdownPage",
