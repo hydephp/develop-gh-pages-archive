@@ -316,6 +316,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSearch.html#method_then"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSearch\u003A\u003AnormalizePath\u0028\u0029",
+            "name": "normalizePath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSearch.html#method_normalizePath"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSearch\u003A\u003AguesstimateGenerationTime\u0028\u0029",
             "name": "guesstimateGenerationTime",
             "summary": "",
@@ -1145,6 +1150,11 @@ Search.appendIndex(
             "name": "writeln",
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-AbstractBuildTask.html#method_writeln"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractBuildTask\u003A\u003AcreatedSiteFile\u0028\u0029",
+            "name": "createdSiteFile",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-AbstractBuildTask.html#method_createdSiteFile"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\AbstractBuildTask\u003A\u003A\u0024description",
             "name": "description",
