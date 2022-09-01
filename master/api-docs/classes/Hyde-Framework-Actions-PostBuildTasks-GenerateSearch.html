@@ -169,7 +169,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Contracts-AbstractBuildTask.html#method_createdSiteFile">createdSiteFile()</a>
     <span>
-                                &nbsp;: void    </span>
+                                &nbsp;: static    </span>
 </dt>
 <dd></dd>
 
@@ -223,6 +223,13 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Contracts-AbstractBuildTask.html#method_withExecutionTime">withExecutionTime()</a>
+    <span>
+                                &nbsp;: static    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Contracts-AbstractBuildTask.html#method_write">write()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -240,13 +247,6 @@
     <a href="classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSearch.html#method_guesstimateGenerationTime">guesstimateGenerationTime()</a>
     <span>
                                 &nbsp;: int|float    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSearch.html#method_normalizePath">normalizePath()</a>
-    <span>
-                                &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
@@ -435,7 +435,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">createdSiteFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">createdSiteFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -454,7 +454,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
+    <span class="phpdocumentor-signature__response_type">static</span>
             &mdash;
         
     
@@ -720,6 +720,39 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_withExecutionTime">
+        withExecutionTime()
+        <a href="classes/Hyde-Framework-Contracts-AbstractBuildTask.html#method_withExecutionTime" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/AbstractBuildTask.php"><a href="files/packages-framework-src-contracts-abstractbuildtask.html"><abbr title="packages/framework/src/Contracts/AbstractBuildTask.php">AbstractBuildTask.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">81</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withExecutionTime</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">static</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_write">
         write()
         <a href="classes/Hyde-Framework-Contracts-AbstractBuildTask.html#method_write" class="headerlink"><i class="fas fa-link"></i></a>
@@ -815,7 +848,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Actions/PostBuildTasks/GenerateSearch.php"><a href="files/packages-framework-src-actions-postbuildtasks-generatesearch.html"><abbr title="packages/framework/src/Actions/PostBuildTasks/GenerateSearch.php">GenerateSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -831,50 +864,6 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">int|float</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_normalizePath">
-        normalizePath()
-        <a href="classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSearch.html#method_normalizePath" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Actions/PostBuildTasks/GenerateSearch.php"><a href="files/packages-framework-src-actions-postbuildtasks-generatesearch.html"><abbr title="packages/framework/src/Actions/PostBuildTasks/GenerateSearch.php">GenerateSearch.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">40</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">normalizePath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$path</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     
