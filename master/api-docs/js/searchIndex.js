@@ -2263,13 +2263,33 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Author",
             "name": "Author",
-            "summary": "The\u0020Post\u0020Author\u0020Object\u0020Model.",
+            "summary": "The\u0020Post\u0020Author\u0020model\u0020object.",
             "url": "classes/Hyde-Framework-Models-Author.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Construct\u0020a\u0020new\u0020Author\u0020object.",
             "url": "classes/Hyde-Framework-Models-Author.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003Amake\u0028\u0029",
+            "name": "make",
+            "summary": "Dynamically\u0020get\u0020or\u0020create\u0020an\u0020author\u0020based\u0020on\u0020a\u0020username\u0020string\u0020or\u0020front\u0020matter\u0020array",
+            "url": "classes/Hyde-Framework-Models-Author.html#method_make"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Author.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Author.html#method_all"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Author.html#method_create"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
@@ -2278,28 +2298,8 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003AgetName\u0028\u0029",
             "name": "getName",
-            "summary": "Get\u0020the\u0020author\u0027s\u0020preferred\u0020name.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Models-Author.html#method_getName"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003Acreate\u0028\u0029",
-            "name": "create",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Author.html#method_create"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003Amake\u0028\u0029",
-            "name": "make",
-            "summary": "Dynamically\u0020get\u0020or\u0020create\u0020an\u0020author\u0020based\u0020on\u0020string\u0020or\u0020front\u0020matter\u0020array",
-            "url": "classes/Hyde-Framework-Models-Author.html#method_make"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003Aall\u0028\u0029",
-            "name": "all",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Author.html#method_all"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Author.html#method_get"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003AfindUsername\u0028\u0029",
             "name": "findUsername",
