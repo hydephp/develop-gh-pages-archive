@@ -3661,6 +3661,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-BuildHookService.html#method_getPostBuildTasks"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003AfindTasksInAppDirectory\u0028\u0029",
+            "name": "findTasksInAppDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildHookService.html#method_findTasksInAppDirectory"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003Arun\u0028\u0029",
             "name": "run",
             "summary": "",
