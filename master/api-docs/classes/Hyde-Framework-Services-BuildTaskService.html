@@ -96,7 +96,7 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    BuildHookService
+    BuildTaskService
 
     
             <div class="phpdocumentor-element__package">
@@ -110,13 +110,14 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildHookService.php"><a href="files/packages-framework-src-services-buildhookservice.html"><abbr title="packages/framework/src/Services/BuildHookService.php">BuildHookService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildTaskService.php"><a href="files/packages-framework-src-services-buildtaskservice.html"><abbr title="packages/framework/src/Services/BuildTaskService.php">BuildTaskService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">This service manages the build tasks that are called after the site has been compiled using the build command.</p>
+
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -128,7 +129,7 @@
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Framework\Testing\Feature\Services\BuildHookServiceTest">BuildHookServiceTest</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Framework\Testing\Feature\Services\BuildTaskServiceTest">BuildTaskServiceTest</abbr></span>
                                         
                                              
                                     </dd>
@@ -146,63 +147,63 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Services-BuildHookService.html#property_postBuildTasks">$postBuildTasks</a>
+    <a href="classes/Hyde-Framework-Services-BuildTaskService.html#property_postBuildTasks">$postBuildTasks</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd>Offers a hook for packages to add custom build tasks.</dd>
+<dd>Information for package developers: This offers a hook for packages to add custom build tasks.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Framework-Services-BuildHookService.html#property_output">$output</a>
+    <a href="classes/Hyde-Framework-Services-BuildTaskService.html#property_output">$output</a>
     <span>
                         &nbsp;: <abbr title="\Illuminate\Console\OutputStyle">OutputStyle</abbr>|null            </span>
 </dt>
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-BuildHookService.html#method___construct">__construct()</a>
+    <a href="classes/Hyde-Framework-Services-BuildTaskService.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-BuildHookService.html#method_findTasksInAppDirectory">findTasksInAppDirectory()</a>
+    <a href="classes/Hyde-Framework-Services-BuildTaskService.html#method_findTasksInAppDirectory">findTasksInAppDirectory()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-BuildHookService.html#method_getPostBuildTasks">getPostBuildTasks()</a>
+    <a href="classes/Hyde-Framework-Services-BuildTaskService.html#method_getPostBuildTasks">getPostBuildTasks()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-BuildHookService.html#method_run">run()</a>
+    <a href="classes/Hyde-Framework-Services-BuildTaskService.html#method_run">run()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-BuildHookService.html#method_runIf">runIf()</a>
+    <a href="classes/Hyde-Framework-Services-BuildTaskService.html#method_runIf">runIf()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-BuildHookService.html#method_runPostBuildTasks">runPostBuildTasks()</a>
+    <a href="classes/Hyde-Framework-Services-BuildTaskService.html#method_runPostBuildTasks">runPostBuildTasks()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Services-BuildHookService.html#method_runTask">runTask()</a>
+    <a href="classes/Hyde-Framework-Services-BuildTaskService.html#method_runTask">runTask()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
@@ -218,7 +219,7 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Hyde-Framework-Services-BuildHookService.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Services-BuildTaskService.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -229,18 +230,18 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_postBuildTasks">
         $postBuildTasks
-        <a href="classes/Hyde-Framework-Services-BuildHookService.html#property_postBuildTasks" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Services-BuildTaskService.html#property_postBuildTasks" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildHookService.php"><a href="files/packages-framework-src-services-buildhookservice.html"><abbr title="packages/framework/src/Services/BuildHookService.php">BuildHookService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildTaskService.php"><a href="files/packages-framework-src-services-buildtaskservice.html"><abbr title="packages/framework/src/Services/BuildTaskService.php">BuildTaskService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Offers a hook for packages to add custom build tasks.</p>
+        <p class="phpdocumentor-summary">Information for package developers: This offers a hook for packages to add custom build tasks.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -248,7 +249,9 @@
     <span class="phpdocumentor-signature__name">$postBuildTasks</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>Make sure to add the fully qualified class name to the array and doing so by merging the array, not overwriting it.</p>
+</section>
+
         <section class="phpdocumentor-description"></section>
 
     
@@ -263,14 +266,14 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_output">
         $output
-        <a href="classes/Hyde-Framework-Services-BuildHookService.html#property_output" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Services-BuildTaskService.html#property_output" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildHookService.php"><a href="files/packages-framework-src-services-buildhookservice.html"><abbr title="packages/framework/src/Services/BuildHookService.php">BuildHookService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildTaskService.php"><a href="files/packages-framework-src-services-buildtaskservice.html"><abbr title="packages/framework/src/Services/BuildTaskService.php">BuildTaskService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -293,7 +296,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Hyde-Framework-Services-BuildHookService.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Services-BuildTaskService.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -303,12 +306,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Hyde-Framework-Services-BuildHookService.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Services-BuildTaskService.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildHookService.php"><a href="files/packages-framework-src-services-buildhookservice.html"><abbr title="packages/framework/src/Services/BuildHookService.php">BuildHookService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildTaskService.php"><a href="files/packages-framework-src-services-buildtaskservice.html"><abbr title="packages/framework/src/Services/BuildTaskService.php">BuildTaskService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -347,12 +350,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_findTasksInAppDirectory">
         findTasksInAppDirectory()
-        <a href="classes/Hyde-Framework-Services-BuildHookService.html#method_findTasksInAppDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Services-BuildTaskService.html#method_findTasksInAppDirectory" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildHookService.php"><a href="files/packages-framework-src-services-buildhookservice.html"><abbr title="packages/framework/src/Services/BuildHookService.php">BuildHookService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildTaskService.php"><a href="files/packages-framework-src-services-buildtaskservice.html"><abbr title="packages/framework/src/Services/BuildTaskService.php">BuildTaskService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -380,12 +383,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getPostBuildTasks">
         getPostBuildTasks()
-        <a href="classes/Hyde-Framework-Services-BuildHookService.html#method_getPostBuildTasks" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Services-BuildTaskService.html#method_getPostBuildTasks" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildHookService.php"><a href="files/packages-framework-src-services-buildhookservice.html"><abbr title="packages/framework/src/Services/BuildHookService.php">BuildHookService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildTaskService.php"><a href="files/packages-framework-src-services-buildtaskservice.html"><abbr title="packages/framework/src/Services/BuildTaskService.php">BuildTaskService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -413,12 +416,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_run">
         run()
-        <a href="classes/Hyde-Framework-Services-BuildHookService.html#method_run" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Services-BuildTaskService.html#method_run" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildHookService.php"><a href="files/packages-framework-src-services-buildhookservice.html"><abbr title="packages/framework/src/Services/BuildHookService.php">BuildHookService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildTaskService.php"><a href="files/packages-framework-src-services-buildtaskservice.html"><abbr title="packages/framework/src/Services/BuildTaskService.php">BuildTaskService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -457,12 +460,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_runIf">
         runIf()
-        <a href="classes/Hyde-Framework-Services-BuildHookService.html#method_runIf" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Services-BuildTaskService.html#method_runIf" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildHookService.php"><a href="files/packages-framework-src-services-buildhookservice.html"><abbr title="packages/framework/src/Services/BuildHookService.php">BuildHookService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildTaskService.php"><a href="files/packages-framework-src-services-buildtaskservice.html"><abbr title="packages/framework/src/Services/BuildTaskService.php">BuildTaskService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -509,12 +512,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_runPostBuildTasks">
         runPostBuildTasks()
-        <a href="classes/Hyde-Framework-Services-BuildHookService.html#method_runPostBuildTasks" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Services-BuildTaskService.html#method_runPostBuildTasks" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildHookService.php"><a href="files/packages-framework-src-services-buildhookservice.html"><abbr title="packages/framework/src/Services/BuildHookService.php">BuildHookService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildTaskService.php"><a href="files/packages-framework-src-services-buildtaskservice.html"><abbr title="packages/framework/src/Services/BuildTaskService.php">BuildTaskService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -542,12 +545,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_runTask">
         runTask()
-        <a href="classes/Hyde-Framework-Services-BuildHookService.html#method_runTask" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Services-BuildTaskService.html#method_runTask" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildHookService.php"><a href="files/packages-framework-src-services-buildhookservice.html"><abbr title="packages/framework/src/Services/BuildHookService.php">BuildHookService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Services/BuildTaskService.php"><a href="files/packages-framework-src-services-buildtaskservice.html"><abbr title="packages/framework/src/Services/BuildTaskService.php">BuildTaskService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -656,7 +659,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Hyde-Framework-Services-BuildHookService.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Hyde-Framework-Services-BuildTaskService.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

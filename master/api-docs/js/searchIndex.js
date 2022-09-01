@@ -3641,56 +3641,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-AssetService.html#method_hasMediaFile"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService",
-            "name": "BuildHookService",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildHookService.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildHookService.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003ArunPostBuildTasks\u0028\u0029",
-            "name": "runPostBuildTasks",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildHookService.html#method_runPostBuildTasks"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003AgetPostBuildTasks\u0028\u0029",
-            "name": "getPostBuildTasks",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildHookService.html#method_getPostBuildTasks"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003AfindTasksInAppDirectory\u0028\u0029",
-            "name": "findTasksInAppDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildHookService.html#method_findTasksInAppDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003Arun\u0028\u0029",
-            "name": "run",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildHookService.html#method_run"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003ArunIf\u0028\u0029",
-            "name": "runIf",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildHookService.html#method_runIf"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003ArunTask\u0028\u0029",
-            "name": "runTask",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildHookService.html#method_runTask"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003A\u0024postBuildTasks",
-            "name": "postBuildTasks",
-            "summary": "Offers\u0020a\u0020hook\u0020for\u0020packages\u0020to\u0020add\u0020custom\u0020build\u0020tasks.",
-            "url": "classes/Hyde-Framework-Services-BuildHookService.html#property_postBuildTasks"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildHookService\u003A\u003A\u0024output",
-            "name": "output",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildHookService.html#property_output"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\BuildService",
             "name": "BuildService",
             "summary": "Moves\u0020logic\u0020from\u0020the\u0020build\u0020command\u0020to\u0020a\u0020service.",
@@ -3755,6 +3705,56 @@ Search.appendIndex(
             "name": "router",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-BuildService.html#property_router"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService",
+            "name": "BuildTaskService",
+            "summary": "This\u0020service\u0020manages\u0020the\u0020build\u0020tasks\u0020that\u0020are\u0020called\u0020after\u0020the\u0020site\u0020has\u0020been\u0020compiled\u0020using\u0020the\u0020build\u0020command.",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003ArunPostBuildTasks\u0028\u0029",
+            "name": "runPostBuildTasks",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_runPostBuildTasks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AgetPostBuildTasks\u0028\u0029",
+            "name": "getPostBuildTasks",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_getPostBuildTasks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AfindTasksInAppDirectory\u0028\u0029",
+            "name": "findTasksInAppDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_findTasksInAppDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003Arun\u0028\u0029",
+            "name": "run",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_run"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003ArunIf\u0028\u0029",
+            "name": "runIf",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_runIf"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003ArunTask\u0028\u0029",
+            "name": "runTask",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_runTask"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003A\u0024postBuildTasks",
+            "name": "postBuildTasks",
+            "summary": "Information\u0020for\u0020package\u0020developers\u003A\u0020This\u0020offers\u0020a\u0020hook\u0020for\u0020packages\u0020to\u0020add\u0020custom\u0020build\u0020tasks.",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#property_postBuildTasks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003A\u0024output",
+            "name": "output",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#property_output"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\FileCacheService",
             "name": "FileCacheService",
