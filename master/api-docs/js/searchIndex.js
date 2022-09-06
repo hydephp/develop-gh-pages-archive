@@ -296,6 +296,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html#method_run"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest\u003A\u003AhashOutputPath\u0028\u0029",
+            "name": "hashOutputPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html#method_hashOutputPath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest\u003A\u003A\u0024description",
+            "name": "description",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html#property_description"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateRssFeed",
             "name": "GenerateRssFeed",
             "summary": "",
