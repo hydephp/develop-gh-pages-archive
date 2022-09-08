@@ -486,16 +486,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-StaticPageBuilder.html#property_page"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Application",
-            "name": "Application",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Application.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Application\u003A\u003AregisterBaseBindings\u0028\u0029",
-            "name": "registerBaseBindings",
-            "summary": "\u007B\u0040inheritdoc\u007D",
-            "url": "classes/Hyde-Framework-Application.html#method_registerBaseBindings"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildRssFeedCommand",
             "name": "HydeBuildRssFeedCommand",
             "summary": "Hyde\u0020command\u0020to\u0020run\u0020the\u0020build\u0020process\u0020for\u0020the\u0020RSS\u0020feed.",
@@ -1790,6 +1780,16 @@ Search.appendIndex(
             "name": "includesDirectory",
             "summary": "",
             "url": "classes/Hyde-Framework-Facades-Includes.html#property_includesDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\Application",
+            "name": "Application",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-Application.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\Application\u003A\u003AregisterBaseBindings\u0028\u0029",
+            "name": "registerBaseBindings",
+            "summary": "\u007B\u0040inheritdoc\u007D",
+            "url": "classes/Hyde-Framework-Foundation-Application.html#method_registerBaseBindings"
         },                {
             "fqsen": "\\Hyde\\Framework\\Foundation\\Filesystem",
             "name": "Filesystem",
@@ -4246,16 +4246,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde-framework-actions-postbuildtasks.html"
         },                {
-            "fqsen": "\\Hyde\\Framework",
-            "name": "Framework",
-            "summary": "",
-            "url": "namespaces/hyde-framework.html"
-        },                {
-            "fqsen": "\\Hyde",
-            "name": "Hyde",
-            "summary": "",
-            "url": "namespaces/hyde.html"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Commands",
             "name": "Commands",
             "summary": "",
@@ -4296,20 +4286,30 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde-framework-facades.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Foundation\\Concerns",
-            "name": "Concerns",
-            "summary": "",
-            "url": "namespaces/hyde-framework-foundation-concerns.html"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Foundation",
             "name": "Foundation",
             "summary": "",
             "url": "namespaces/hyde-framework-foundation.html"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\Concerns",
+            "name": "Concerns",
+            "summary": "",
+            "url": "namespaces/hyde-framework-foundation-concerns.html"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Helpers",
             "name": "Helpers",
             "summary": "",
             "url": "namespaces/hyde-framework-helpers.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework",
+            "name": "Framework",
+            "summary": "",
+            "url": "namespaces/hyde-framework.html"
+        },                {
+            "fqsen": "\\Hyde",
+            "name": "Hyde",
+            "summary": "",
+            "url": "namespaces/hyde.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models",
             "name": "Models",
