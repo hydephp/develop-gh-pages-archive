@@ -1051,11 +1051,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-AbstractPage.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\AbstractPage\u003A\u003AconstructPageSchemas\u0028\u0029",
-            "name": "constructPageSchemas",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-AbstractPage.html#method_constructPageSchemas"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\AbstractPage\u003A\u003AgetSourceDirectory\u0028\u0029",
             "name": "getSourceDirectory",
             "summary": "",
@@ -1221,30 +1216,70 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-Commands-AsksToRebuildSite.html#method_askToRebuildSite"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema",
-            "name": "BlogPostSchema",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas",
+            "name": "ConstructsPageSchemas",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html"
+            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema\u003A\u003AconstructBlogPostSchema\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AconstructPageSchemas\u0028\u0029",
+            "name": "constructPageSchemas",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_constructPageSchemas"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AconstructPageSchema\u0028\u0029",
+            "name": "constructPageSchema",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_constructPageSchema"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AmakeCanonicalUrl\u0028\u0029",
+            "name": "makeCanonicalUrl",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_makeCanonicalUrl"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AconstructBlogPostSchema\u0028\u0029",
             "name": "constructBlogPostSchema",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#method_constructBlogPostSchema"
+            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_constructBlogPostSchema"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema\u003A\u003AmakeDescription\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AmakeDescription\u0028\u0029",
             "name": "makeDescription",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#method_makeDescription"
+            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_makeDescription"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema\u003A\u003AgetAuthor\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AgetAuthor\u0028\u0029",
             "name": "getAuthor",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#method_getAuthor"
+            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_getAuthor"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema\u003A\u003AgetImage\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AgetImage\u0028\u0029",
             "name": "getImage",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html#method_getImage"
+            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_getImage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AconstructDocumentationPageSchema\u0028\u0029",
+            "name": "constructDocumentationPageSchema",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_constructDocumentationPageSchema"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AgetDocumentationPageCategory\u0028\u0029",
+            "name": "getDocumentationPageCategory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_getDocumentationPageCategory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AfindPriorityInConfig\u0028\u0029",
+            "name": "findPriorityInConfig",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_findPriorityInConfig"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AusesSchema\u0028\u0029",
+            "name": "usesSchema",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_usesSchema"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema",
+            "name": "BlogPostSchema",
+            "summary": "These\u0020are\u0020the\u0020front\u0020matter\u0020properties\u0020that\u0020are\u0020supported\u0020for\u0020Hyde\u0020blog\u0020posts.",
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-BlogPostSchema.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\BlogPostSchema\u003A\u003A\u0024title",
             "name": "title",
@@ -1278,23 +1313,8 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\DocumentationPageSchema",
             "name": "DocumentationPageSchema",
-            "summary": "",
+            "summary": "These\u0020are\u0020the\u0020front\u0020matter\u0020properties\u0020that\u0020are\u0020supported\u0020for\u0020Hyde\u0020documentation\u0020pages.",
             "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\DocumentationPageSchema\u003A\u003AconstructDocumentationPageSchema\u0028\u0029",
-            "name": "constructDocumentationPageSchema",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#method_constructDocumentationPageSchema"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\DocumentationPageSchema\u003A\u003AgetDocumentationPageCategory\u0028\u0029",
-            "name": "getDocumentationPageCategory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#method_getDocumentationPageCategory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\DocumentationPageSchema\u003A\u003AfindPriorityInConfig\u0028\u0029",
-            "name": "findPriorityInConfig",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#method_findPriorityInConfig"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\DocumentationPageSchema\u003A\u003A\u0024category",
             "name": "category",
@@ -1318,18 +1338,8 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\PageSchema",
             "name": "PageSchema",
-            "summary": "",
+            "summary": "These\u0020are\u0020the\u0020front\u0020matter\u0020properties\u0020that\u0020are\u0020supported\u0020for\u0020all\u002A\u0020Hyde\u0020pages.",
             "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\PageSchema\u003A\u003AconstructPageSchema\u0028\u0029",
-            "name": "constructPageSchema",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#method_constructPageSchema"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\PageSchema\u003A\u003AmakeCanonicalUrl\u0028\u0029",
-            "name": "makeCanonicalUrl",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#method_makeCanonicalUrl"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\PageSchema\u003A\u003A\u0024title",
             "name": "title",
@@ -3020,11 +3030,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AconstructPageSchemas\u0028\u0029",
-            "name": "constructPageSchemas",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method_constructPageSchemas"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AgetLatestPosts\u0028\u0029",
             "name": "getLatestPosts",
