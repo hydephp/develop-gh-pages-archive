@@ -1736,16 +1736,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Exceptions-UnsupportedPageTypeException.html#property_code"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Facades\\Asset",
-            "name": "Asset",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Facades-Asset.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Facades\\Asset\u003A\u003AgetFacadeAccessor\u0028\u0029",
-            "name": "getFacadeAccessor",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Facades-Asset.html#method_getFacadeAccessor"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Foundation\\Application",
             "name": "Application",
             "summary": "",
@@ -1900,6 +1890,16 @@ Search.appendIndex(
             "name": "runDiscovery",
             "summary": "",
             "url": "classes/Hyde-Framework-Foundation-RouteCollection.html#method_runDiscovery"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Asset",
+            "name": "Asset",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Asset.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Asset\u003A\u003AgetFacadeAccessor\u0028\u0029",
+            "name": "getFacadeAccessor",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Asset.html#method_getFacadeAccessor"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Features",
             "name": "Features",
@@ -4275,11 +4275,6 @@ Search.appendIndex(
             "name": "Exceptions",
             "summary": "",
             "url": "namespaces/hyde-framework-exceptions.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Facades",
-            "name": "Facades",
-            "summary": "",
-            "url": "namespaces/hyde-framework-facades.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Foundation",
             "name": "Foundation",
