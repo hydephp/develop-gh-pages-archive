@@ -51,6 +51,51 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#property_matter"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsContentLengthForImageObject",
+            "name": "FindsContentLengthForImageObject",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-Constructors-FindsContentLengthForImageObject.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsContentLengthForImageObject\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-Constructors-FindsContentLengthForImageObject.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsContentLengthForImageObject\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "Execute\u0020the\u0020action.",
+            "url": "classes/Hyde-Framework-Actions-Constructors-FindsContentLengthForImageObject.html#method_execute"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsContentLengthForImageObject\u003A\u003AisImageStoredRemotely\u0028\u0029",
+            "name": "isImageStoredRemotely",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-Constructors-FindsContentLengthForImageObject.html#method_isImageStoredRemotely"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsContentLengthForImageObject\u003A\u003AfetchRemoteImageInformation\u0028\u0029",
+            "name": "fetchRemoteImageInformation",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-Constructors-FindsContentLengthForImageObject.html#method_fetchRemoteImageInformation"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsContentLengthForImageObject\u003A\u003AfetchLocalImageInformation\u0028\u0029",
+            "name": "fetchLocalImageInformation",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-Constructors-FindsContentLengthForImageObject.html#method_fetchLocalImageInformation"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsContentLengthForImageObject\u003A\u003Awrite\u0028\u0029",
+            "name": "write",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-Constructors-FindsContentLengthForImageObject.html#method_write"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsContentLengthForImageObject\u003A\u003A\u0024image",
+            "name": "image",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-Constructors-FindsContentLengthForImageObject.html#property_image"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsContentLengthForImageObject\u003A\u003A\u0024output",
+            "name": "output",
+            "summary": "Testing\u0020adding\u0020console\u0020debug\u0020output.",
+            "url": "classes/Hyde-Framework-Actions-Constructors-FindsContentLengthForImageObject.html#property_output"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsNavigationDataForPage",
             "name": "FindsNavigationDataForPage",
             "summary": "Finds\u0020the\u0020appropriate\u0020navigation\u0020data\u0020for\u0020a\u0020page.",
@@ -215,51 +260,6 @@ Search.appendIndex(
             "name": "force",
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#property_force"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\FindsContentLengthForImageObject",
-            "name": "FindsContentLengthForImageObject",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-FindsContentLengthForImageObject.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\FindsContentLengthForImageObject\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-FindsContentLengthForImageObject.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\FindsContentLengthForImageObject\u003A\u003Aexecute\u0028\u0029",
-            "name": "execute",
-            "summary": "Execute\u0020the\u0020action.",
-            "url": "classes/Hyde-Framework-Actions-FindsContentLengthForImageObject.html#method_execute"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\FindsContentLengthForImageObject\u003A\u003AisImageStoredRemotely\u0028\u0029",
-            "name": "isImageStoredRemotely",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-FindsContentLengthForImageObject.html#method_isImageStoredRemotely"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\FindsContentLengthForImageObject\u003A\u003AfetchRemoteImageInformation\u0028\u0029",
-            "name": "fetchRemoteImageInformation",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-FindsContentLengthForImageObject.html#method_fetchRemoteImageInformation"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\FindsContentLengthForImageObject\u003A\u003AfetchLocalImageInformation\u0028\u0029",
-            "name": "fetchLocalImageInformation",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-FindsContentLengthForImageObject.html#method_fetchLocalImageInformation"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\FindsContentLengthForImageObject\u003A\u003Awrite\u0028\u0029",
-            "name": "write",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-FindsContentLengthForImageObject.html#method_write"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\FindsContentLengthForImageObject\u003A\u003A\u0024image",
-            "name": "image",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-FindsContentLengthForImageObject.html#property_image"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\FindsContentLengthForImageObject\u003A\u003A\u0024output",
-            "name": "output",
-            "summary": "Testing\u0020adding\u0020console\u0020debug\u0020output.",
-            "url": "classes/Hyde-Framework-Actions-FindsContentLengthForImageObject.html#property_output"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesSidebarTableOfContents",
             "name": "GeneratesSidebarTableOfContents",
@@ -526,6 +526,56 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeBuildSearchCommand.html#property_description"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSiteCommand",
+            "name": "HydeBuildSiteCommand",
+            "summary": "Hyde\u0020Command\u0020to\u0020run\u0020the\u0020Build\u0020Process.",
+            "url": "classes/Hyde-Framework-Commands-HydeBuildSiteCommand.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSiteCommand\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "Execute\u0020the\u0020console\u0020command.",
+            "url": "classes/Hyde-Framework-Commands-HydeBuildSiteCommand.html#method_handle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSiteCommand\u003A\u003ArunPostBuildActions\u0028\u0029",
+            "name": "runPostBuildActions",
+            "summary": "Run\u0020any\u0020post\u002Dbuild\u0020actions.",
+            "url": "classes/Hyde-Framework-Commands-HydeBuildSiteCommand.html#method_runPostBuildActions"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSiteCommand\u003A\u003ArunNodeCommand\u0028\u0029",
+            "name": "runNodeCommand",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeBuildSiteCommand.html#method_runNodeCommand"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSiteCommand\u003A\u003AcanGenerateSitemap\u0028\u0029",
+            "name": "canGenerateSitemap",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeBuildSiteCommand.html#method_canGenerateSitemap"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSiteCommand\u003A\u003AcanGenerateFeed\u0028\u0029",
+            "name": "canGenerateFeed",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeBuildSiteCommand.html#method_canGenerateFeed"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSiteCommand\u003A\u003AcanGenerateSearch\u0028\u0029",
+            "name": "canGenerateSearch",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeBuildSiteCommand.html#method_canGenerateSearch"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSiteCommand\u003A\u003A\u0024signature",
+            "name": "signature",
+            "summary": "The\u0020signature\u0020of\u0020the\u0020command.",
+            "url": "classes/Hyde-Framework-Commands-HydeBuildSiteCommand.html#property_signature"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSiteCommand\u003A\u003A\u0024description",
+            "name": "description",
+            "summary": "The\u0020description\u0020of\u0020the\u0020command.",
+            "url": "classes/Hyde-Framework-Commands-HydeBuildSiteCommand.html#property_description"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSiteCommand\u003A\u003A\u0024service",
+            "name": "service",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeBuildSiteCommand.html#property_service"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildSitemapCommand",
             "name": "HydeBuildSitemapCommand",
             "summary": "Hyde\u0020command\u0020to\u0020run\u0020the\u0020build\u0020process\u0020for\u0020the\u0020sitemap.",
@@ -545,56 +595,6 @@ Search.appendIndex(
             "name": "description",
             "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydeBuildSitemapCommand.html#property_description"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand",
-            "name": "HydeBuildStaticSiteCommand",
-            "summary": "Hyde\u0020Command\u0020to\u0020run\u0020the\u0020Build\u0020Process.",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand\u003A\u003Ahandle\u0028\u0029",
-            "name": "handle",
-            "summary": "Execute\u0020the\u0020console\u0020command.",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#method_handle"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand\u003A\u003ArunPostBuildActions\u0028\u0029",
-            "name": "runPostBuildActions",
-            "summary": "Run\u0020any\u0020post\u002Dbuild\u0020actions.",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#method_runPostBuildActions"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand\u003A\u003ArunNodeCommand\u0028\u0029",
-            "name": "runNodeCommand",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#method_runNodeCommand"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand\u003A\u003AcanGenerateSitemap\u0028\u0029",
-            "name": "canGenerateSitemap",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#method_canGenerateSitemap"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand\u003A\u003AcanGenerateFeed\u0028\u0029",
-            "name": "canGenerateFeed",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#method_canGenerateFeed"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand\u003A\u003AcanGenerateSearch\u0028\u0029",
-            "name": "canGenerateSearch",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#method_canGenerateSearch"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand\u003A\u003A\u0024signature",
-            "name": "signature",
-            "summary": "The\u0020signature\u0020of\u0020the\u0020command.",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#property_signature"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand\u003A\u003A\u0024description",
-            "name": "description",
-            "summary": "The\u0020description\u0020of\u0020the\u0020command.",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#property_description"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Commands\\HydeBuildStaticSiteCommand\u003A\u003A\u0024service",
-            "name": "service",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Commands-HydeBuildStaticSiteCommand.html#property_service"
         },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeDebugCommand",
             "name": "HydeDebugCommand",
@@ -3716,31 +3716,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-BuildTaskService.html#property_output"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\FileCacheService",
-            "name": "FileCacheService",
-            "summary": "Helper\u0020methods\u0020to\u0020interact\u0020with\u0020the\u0020filecache.",
-            "url": "classes/Hyde-Framework-Services-FileCacheService.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\FileCacheService\u003A\u003AgetFilecache\u0028\u0029",
-            "name": "getFilecache",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-FileCacheService.html#method_getFilecache"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\FileCacheService\u003A\u003AgetChecksums\u0028\u0029",
-            "name": "getChecksums",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-FileCacheService.html#method_getChecksums"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\FileCacheService\u003A\u003AchecksumMatchesAny\u0028\u0029",
-            "name": "checksumMatchesAny",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-FileCacheService.html#method_checksumMatchesAny"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\FileCacheService\u003A\u003AunixsumFile\u0028\u0029",
-            "name": "unixsumFile",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-FileCacheService.html#method_unixsumFile"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService",
             "name": "MarkdownService",
             "summary": "Dynamically\u0020creates\u0020a\u0020Markdown\u0020converter\u0020tailored\u0020for\u0020the\u0020target\u0020model\u0020and\u0020setup,\nthen\u0020converts\u0020the\u0020Markdown\u0020to\u0020HTML\u0020using\u0020both\u0020pre\u002D\u0020and\u0020post\u002Dprocessors.",
@@ -4170,6 +4145,31 @@ Search.appendIndex(
             "name": "check_for_conflicts_between_blade_and_markdown_pages",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-ValidationService.html#method_check_for_conflicts_between_blade_and_markdown_pages"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ViewDiffService",
+            "name": "ViewDiffService",
+            "summary": "Helper\u0020methods\u0020to\u0020interact\u0020with\u0020the\u0020filecache.",
+            "url": "classes/Hyde-Framework-Services-ViewDiffService.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ViewDiffService\u003A\u003AgetFilecache\u0028\u0029",
+            "name": "getFilecache",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ViewDiffService.html#method_getFilecache"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ViewDiffService\u003A\u003AgetChecksums\u0028\u0029",
+            "name": "getChecksums",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ViewDiffService.html#method_getChecksums"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ViewDiffService\u003A\u003AchecksumMatchesAny\u0028\u0029",
+            "name": "checksumMatchesAny",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ViewDiffService.html#method_checksumMatchesAny"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ViewDiffService\u003A\u003AunixsumFile\u0028\u0029",
+            "name": "unixsumFile",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ViewDiffService.html#method_unixsumFile"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\YamlConfigurationService",
             "name": "YamlConfigurationService",
