@@ -108,33 +108,14 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">This contract defines the methods that a Route object must implement.</p>
 
-    <section class="phpdocumentor-description"><p>These methods are each applied to the single route instance.</p>
-<p>In Hyde, the route models also serve as a facade for all routes, see the dedicated interface:</p>
-</section>
 
 
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Framework-Contracts-RouteFacadeContract.html"><abbr title="\Hyde\Framework\Contracts\RouteFacadeContract">RouteFacadeContract</abbr></a></span>
-                                        
-                                                 <section class="phpdocumentor-description"><p>for the static facade methods.</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
 
 
@@ -160,6 +141,55 @@
                                 &nbsp;: string    </span>
 </dt>
 <dd>Cast a route object into a string that can be used in a href attribute.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_all">all()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Foundation-RouteCollection.html"><abbr title="\Hyde\Framework\Foundation\RouteCollection">RouteCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>&gt;    </span>
+</dt>
+<dd>Get all routes from the Router index.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_current">current()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>    </span>
+</dt>
+<dd>Get the current route for the page being rendered.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_exists">exists()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Determine if the supplied route key exists in the route index.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_get">get()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>    </span>
+</dt>
+<dd>Get a route from the Router index for the specified route key.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_getFromKey">getFromKey()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>    </span>
+</dt>
+<dd>Get a route from the Router index for the specified route key.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_getFromModel">getFromModel()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>    </span>
+</dt>
+<dd>Get a route from the Router index for the supplied page model.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_getFromSource">getFromSource()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>    </span>
+</dt>
+<dd>Get a route from the Router index for the specified source file path.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_getLink">getLink()</a>
@@ -210,6 +240,13 @@
 </dt>
 <dd>Get the source model for the route.</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_home">home()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>    </span>
+</dt>
+<dd>Get the home route, usually the index page route.</dd>
+
         </dl>
 
 
@@ -234,7 +271,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -277,7 +314,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -303,6 +340,351 @@
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_all">
+        all()
+        <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_all" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">121</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get all routes from the Router index.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">all</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Foundation-RouteCollection.html"><abbr title="\Hyde\Framework\Foundation\RouteCollection">RouteCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Foundation-RouteCollection.html"><abbr title="\Hyde\Framework\Foundation\RouteCollection">RouteCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a>&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_current">
+        current()
+        <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_current" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">126</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the current route for the page being rendered.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">current</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_exists">
+        exists()
+        <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_exists" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">139</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Determine if the supplied route key exists in the route index.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">exists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routeKey</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$routeKey</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get">
+        get()
+        <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">84</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get a route from the Router index for the specified route key.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routeKey</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Alias for static::getFromKey().</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$routeKey</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Example: posts/foo.md</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Framework-Exceptions-RouteNotFoundException.html"><abbr title="\Hyde\Framework\Exceptions\RouteNotFoundException">RouteNotFoundException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getFromKey">
+        getFromKey()
+        <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_getFromKey" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">94</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get a route from the Router index for the specified route key.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getFromKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routeKey</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$routeKey</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Example: posts/foo.md</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Framework-Exceptions-RouteNotFoundException.html"><abbr title="\Hyde\Framework\Exceptions\RouteNotFoundException">RouteNotFoundException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getFromModel">
+        getFromModel()
+        <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_getFromModel" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">114</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get a route from the Router index for the supplied page model.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getFromModel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Hyde\Framework\Contracts\PageContract">PageContract</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$page</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Hyde\Framework\Contracts\PageContract">PageContract</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Framework-Exceptions-RouteNotFoundException.html"><abbr title="\Hyde\Framework\Exceptions\RouteNotFoundException">RouteNotFoundException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getFromSource">
+        getFromSource()
+        <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_getFromSource" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">104</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get a route from the Router index for the specified source file path.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getFromSource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sourceFilePath</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$sourceFilePath</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Example: _posts/foo.md</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Framework-Exceptions-RouteNotFoundException.html"><abbr title="\Hyde\Framework\Exceptions\RouteNotFoundException">RouteNotFoundException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_getLink">
@@ -312,7 +694,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -347,7 +729,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -382,7 +764,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -415,7 +797,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -450,7 +832,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -485,7 +867,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -520,7 +902,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -536,6 +918,39 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\Hyde\Framework\Contracts\PageContract">PageContract</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_home">
+        home()
+        <a href="classes/Hyde-Framework-Contracts-RouteContract.html#method_home" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/RouteContract.php"><a href="files/packages-framework-src-contracts-routecontract.html"><abbr title="packages/framework/src/Contracts/RouteContract.php">RouteContract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">131</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the home route, usually the index page route.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">home</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></span>
             &mdash;
         
     
