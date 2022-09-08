@@ -104,16 +104,9 @@
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-ActionContract.html"><abbr title="\Hyde\Framework\Contracts\ActionContract">ActionContract</abbr></a></dt>
         <dd>Interface ActionContract.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-AssetServiceContract.html"><abbr title="\Hyde\Framework\Contracts\AssetServiceContract">AssetServiceContract</abbr></a></dt>
-        <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-BuildTaskContract.html"><abbr title="\Hyde\Framework\Contracts\BuildTaskContract">BuildTaskContract</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-CompilableContract.html"><abbr title="\Hyde\Framework\Contracts\CompilableContract">CompilableContract</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-HydeKernelContract.html"><abbr title="\Hyde\Framework\Contracts\HydeKernelContract">HydeKernelContract</abbr></a></dt>
-        <dd>The HydeKernel encapsulates a HydePHP project,
-providing helpful methods for interacting with it.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-IncludeFacadeContract.html"><abbr title="\Hyde\Framework\Contracts\IncludeFacadeContract">IncludeFacadeContract</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-MarkdownDocumentContract.html"><abbr title="\Hyde\Framework\Contracts\MarkdownDocumentContract">MarkdownDocumentContract</abbr></a></dt>
         <dd></dd>
@@ -158,6 +151,8 @@ providing helpful methods for interacting with it.</dd>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Actions-SourceFileParser.html"><abbr title="\Hyde\Framework\Actions\SourceFileParser">SourceFileParser</abbr></a></dt>
         <dd>Parses a source file and returns a new page model instance for it.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Actions-StaticPageBuilder.html"><abbr title="\Hyde\Framework\Actions\StaticPageBuilder">StaticPageBuilder</abbr></a></dt>
+        <dd>Converts a Page Model into a static HTML page.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Application.html"><abbr title="\Hyde\Framework\Application">Application</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Commands-HydeBuildRssFeedCommand.html"><abbr title="\Hyde\Framework\Commands\HydeBuildRssFeedCommand">HydeBuildRssFeedCommand</abbr></a></dt>
@@ -188,13 +183,11 @@ providing helpful methods for interacting with it.</dd>
         <dd>Publish the Hyde Config Files.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Commands-HydeValidateCommand.html"><abbr title="\Hyde\Framework\Commands\HydeValidateCommand">HydeValidateCommand</abbr></a></dt>
         <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Concerns-ActionCommand.html"><abbr title="\Hyde\Framework\Concerns\ActionCommand">ActionCommand</abbr></a></dt>
-        <dd>Base class for commands that run a simple action.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Contracts-AbstractBuildTask.html"><abbr title="\Hyde\Framework\Contracts\AbstractBuildTask">AbstractBuildTask</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Concerns-AbstractBuildTask.html"><abbr title="\Hyde\Framework\Concerns\AbstractBuildTask">AbstractBuildTask</abbr></a></dt>
         <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Contracts-AbstractMarkdownPage.html"><abbr title="\Hyde\Framework\Contracts\AbstractMarkdownPage">AbstractMarkdownPage</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Concerns-AbstractMarkdownPage.html"><abbr title="\Hyde\Framework\Concerns\AbstractMarkdownPage">AbstractMarkdownPage</abbr></a></dt>
         <dd>The base class for all Markdown-based Page Models.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Contracts-AbstractPage.html"><abbr title="\Hyde\Framework\Contracts\AbstractPage">AbstractPage</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Concerns-AbstractPage.html"><abbr title="\Hyde\Framework\Concerns\AbstractPage">AbstractPage</abbr></a></dt>
         <dd>To ensure compatibility with the Hyde Framework, all Page Models should extend this class.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Exceptions-BaseUrlNotSetException.html"><abbr title="\Hyde\Framework\Exceptions\BaseUrlNotSetException">BaseUrlNotSetException</abbr></a></dt>
         <dd></dd>
@@ -286,7 +279,7 @@ such as Markdown components and YAML files using Hyde Autodiscovery.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html"><abbr title="\Hyde\Framework\Modules\Markdown\Shortcodes\AbstractColoredBlockquote">AbstractColoredBlockquote</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-AssetService.html"><abbr title="\Hyde\Framework\Services\AssetService">AssetService</abbr></a></dt>
-        <dd></dd>
+        <dd>Handles the retrieval of core asset files. Commonly used through the Asset facade.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-BuildService.html"><abbr title="\Hyde\Framework\Services\BuildService">BuildService</abbr></a></dt>
         <dd>Moves logic from the build command to a service.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-BuildTaskService.html"><abbr title="\Hyde\Framework\Services\BuildTaskService">BuildTaskService</abbr></a></dt>
@@ -309,8 +302,6 @@ by dynamically enriching them with semantic HTML.</dd>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-YamlConfigurationService.html"><abbr title="\Hyde\Framework\Services\YamlConfigurationService">YamlConfigurationService</abbr></a></dt>
         <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-StaticPageBuilder.html"><abbr title="\Hyde\Framework\StaticPageBuilder">StaticPageBuilder</abbr></a></dt>
-        <dd>Converts a Page Model into a static HTML page.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Views-Components-LinkComponent.html"><abbr title="\Hyde\Framework\Views\Components\LinkComponent">LinkComponent</abbr></a></dt>
         <dd></dd>
     
