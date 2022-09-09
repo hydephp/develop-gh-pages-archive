@@ -1408,7 +1408,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations\u003A\u003AstoreCompiledSiteIn\u0028\u0029",
             "name": "storeCompiledSiteIn",
-            "summary": "The\u0020absolute\u0020path\u0020to\u0020the\u0020directory\u0020when\u0020the\u0020compiled\u0020site\u0020is\u0020stored.",
+            "summary": "The\u0020relative\u0020path\u0020to\u0020the\u0020directory\u0020when\u0020the\u0020compiled\u0020site\u0020is\u0020stored.",
             "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_storeCompiledSiteIn"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\ValidatesExistence",
