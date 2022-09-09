@@ -1816,10 +1816,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Foundation-Filesystem.html#method_getDocumentationPagePath"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Foundation\\Filesystem\u003A\u003AgetSiteOutputPath\u0028\u0029",
-            "name": "getSiteOutputPath",
+            "fqsen": "\\Hyde\\Framework\\Foundation\\Filesystem\u003A\u003AsitePath\u0028\u0029",
+            "name": "sitePath",
             "summary": "Get\u0020the\u0020absolute\u0020path\u0020to\u0020the\u0020compiled\u0020site\u0020directory,\u0020or\u0020a\u0020file\u0020within\u0020it.",
-            "url": "classes/Hyde-Framework-Foundation-Filesystem.html#method_getSiteOutputPath"
+            "url": "classes/Hyde-Framework-Foundation-Filesystem.html#method_sitePath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Foundation\\Filesystem\u003A\u003ApathToRelative\u0028\u0029",
             "name": "pathToRelative",
