@@ -1121,11 +1121,6 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020path\u0020where\u0020the\u0020compiled\u0020page\u0020will\u0020be\u0020saved.",
             "url": "classes/Hyde-Framework-Concerns-AbstractPage.html#method_getOutputPath"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\AbstractPage\u003A\u003AgetCurrentPagePath\u0028\u0029",
-            "name": "getCurrentPagePath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-AbstractPage.html#method_getCurrentPagePath"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\AbstractPage\u003A\u003AgetRouteKey\u0028\u0029",
             "name": "getRouteKey",
             "summary": "",
@@ -2941,10 +2936,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AgetCurrentPagePath\u0028\u0029",
-            "name": "getCurrentPagePath",
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AgetRouteKey\u0028\u0029",
+            "name": "getRouteKey",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_getCurrentPagePath"
+            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method_getRouteKey"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003Ahome\u0028\u0029",
             "name": "home",
