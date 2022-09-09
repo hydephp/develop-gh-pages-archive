@@ -91,27 +91,46 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework.html">Framework</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-concerns.html">Concerns</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-concerns-frontmatter.html">FrontMatter</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-concerns-frontmatter-schemas.html">Schemas</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-contracts.html">Contracts</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-contracts-frontmatter.html">FrontMatter</a></li>
     </ul>
 
-    <article class="phpdocumentor-element -trait">
+    <article class="phpdocumentor-element -interface">
         <h2 class="phpdocumentor-content__title">
-    DocumentationPageSchema
+    PageSchema
+                <div class="phpdocumentor-element__package">
+            in
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li><a href="packages/Application.html">Application</a></li>
+                            </ul>
+        </div>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-documentationpageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php">DocumentationPageSchema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/FrontMatter/PageSchema.php"><a href="files/packages-framework-src-contracts-frontmatter-pageschema.html"><abbr title="packages/framework/src/Contracts/FrontMatter/PageSchema.php">PageSchema.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">These are the front matter properties that are supported for Hyde documentation pages.</p>
+            <p class="phpdocumentor-summary">The front matter properties supported by the following HydePHP page types and their children.</p>
 
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Framework-Concerns-AbstractPage.html"><abbr title="\Hyde\Framework\Concerns\AbstractPage">AbstractPage</abbr></a></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
 
 
 
@@ -124,178 +143,83 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_category">$category</a>
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Hyde-Framework-Contracts-FrontMatter-PageSchema.html#constant_NAVIGATION_SCHEMA">NAVIGATION_SCHEMA</a>
     <span>
-                        &nbsp;: string|null            </span>
+        &nbsp;= [&#039;title&#039; =&gt; &#039;string&#039;, &#039;hidden&#039; =&gt; &#039;bool&#039;, &#039;priority&#039; =&gt; &#039;int&#039;]                            </span>
 </dt>
-<dd>The sidebar category group, if any.</dd>
+<dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_hidden">$hidden</a>
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Hyde-Framework-Contracts-FrontMatter-PageSchema.html#constant_PAGE_SCHEMA">PAGE_SCHEMA</a>
     <span>
-                        &nbsp;: bool|null            </span>
+        &nbsp;= [&#039;title&#039; =&gt; &#039;string&#039;, &#039;canonicalUrl&#039; =&gt; &#039;string|url&#039;, &#039;navigation&#039; =&gt; &#039;array|navigation&#039;]                            </span>
 </dt>
-<dd>Hides the page from the sidebar.</dd>
+<dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_label">$label</a>
-    <span>
-                        &nbsp;: string|null            </span>
-</dt>
-<dd>The label for the page shown in the sidebar.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_priority">$priority</a>
-    <span>
-                        &nbsp;: int|null            </span>
-</dt>
-<dd>The priority of the page used for ordering the sidebar.</dd>
-
-            </dl>
+                    </dl>
 
 
 
         
-    <section class="phpdocumentor-properties">
-        <h3 class="phpdocumentor-elements__header" id="properties">
-            Properties
-            <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Hyde-Framework-Contracts-FrontMatter-PageSchema.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_category">
-        $category
-        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_category" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NAVIGATION_SCHEMA">
+        NAVIGATION_SCHEMA
+        <a href="classes/Hyde-Framework-Contracts-FrontMatter-PageSchema.html#constant_NAVIGATION_SCHEMA" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
+
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-documentationpageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php">DocumentationPageSchema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/FrontMatter/PageSchema.php"><a href="files/packages-framework-src-contracts-frontmatter-pageschema.html"><abbr title="packages/framework/src/Contracts/FrontMatter/PageSchema.php">PageSchema.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The sidebar category group, if any.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$category</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NAVIGATION_SCHEMA</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;title&#039; =&gt; &#039;string&#039;, &#039;hidden&#039; =&gt; &#039;bool&#039;, &#039;priority&#039; =&gt; &#039;int&#039;]</span>
+</code>
 
-        <section class="phpdocumentor-description"><p>Can be overridden in front matter, or by putting the
-source file in a subdirectory of the same category name.</p>
-</section>
+
+        <section class="phpdocumentor-description"></section>
 
         <section class="phpdocumentor-description"></section>
 
     
 
 </article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_hidden">
-        $hidden
-        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_hidden" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_PAGE_SCHEMA">
+        PAGE_SCHEMA
+        <a href="classes/Hyde-Framework-Contracts-FrontMatter-PageSchema.html#constant_PAGE_SCHEMA" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
+
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-documentationpageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php">DocumentationPageSchema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/FrontMatter/PageSchema.php"><a href="files/packages-framework-src-contracts-frontmatter-pageschema.html"><abbr title="packages/framework/src/Contracts/FrontMatter/PageSchema.php">PageSchema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Hides the page from the sidebar.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">bool|null</span>
-    <span class="phpdocumentor-signature__name">$hidden</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
-
     
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">PAGE_SCHEMA</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;title&#039; =&gt; &#039;string&#039;, &#039;canonicalUrl&#039; =&gt; &#039;string|url&#039;, &#039;navigation&#039; =&gt; &#039;array|navigation&#039;]</span>
+</code>
+
+
         <section class="phpdocumentor-description"></section>
 
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_label">
-        $label
-        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_label" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-documentationpageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php">DocumentationPageSchema.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">23</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The label for the page shown in the sidebar.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$label</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
-
-    
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_priority">
-        $priority
-        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_priority" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-documentationpageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php">DocumentationPageSchema.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">33</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The priority of the page used for ordering the sidebar.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">int|null</span>
-    <span class="phpdocumentor-signature__name">$priority</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
-
-    
         <section class="phpdocumentor-description"></section>
 
     
@@ -380,7 +304,7 @@ source file in a subdirectory of the same category name.</p>
 </section>
             </div>
         </div>
-        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Hyde-Framework-Contracts-FrontMatter-PageSchema.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

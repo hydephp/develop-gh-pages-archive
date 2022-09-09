@@ -110,10 +110,10 @@
                             </ul>
         </div>
     
+            <span class="phpdocumentor-element__implements">
+            implements
+                            <a href="classes/Hyde-Framework-Contracts-FrontMatter-DocumentationPageSchema.html"><abbr title="\Hyde\Framework\Contracts\FrontMatter\DocumentationPageSchema">DocumentationPageSchema</abbr></a>                    </span>
     
-            <span class="phpdocumentor-element__extends">
-            Uses
-                            <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html"><abbr title="\Hyde\Framework\Concerns\FrontMatter\Schemas\DocumentationPageSchema">DocumentationPageSchema</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
@@ -135,6 +135,18 @@ helpers for Markdown-based page model classes.</p>
 
 
 
+<h3 id="interfaces_class_traits">
+    Interfaces, Classes, Traits and Enums
+    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-FrontMatter-DocumentationPageSchema.html"><abbr title="\Hyde\Framework\Contracts\FrontMatter\DocumentationPageSchema">DocumentationPageSchema</abbr></a></dt>
+        <dd>The front matter properties supported by the following HydePHP page types and their children.</dd>
+    
+    
+    
+    </dl>
 
 
 <h3 id="toc">
@@ -144,18 +156,18 @@ helpers for Markdown-based page model classes.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#property_canonicalUrl">$canonicalUrl</a>
+    <a href="classes/Hyde-Framework-Concerns-AbstractPage.html#property_canonicalUrl">$canonicalUrl</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
-<dd>The canonical URL of the page.</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_category">$category</a>
+    <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_category">$category</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
-<dd>The sidebar category group, if any.</dd>
+<dd>The sidebar category group, if any. Can be overridden in front matter, or by putting the source file in a subdirectory of the same category name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Framework-Concerns-AbstractPage.html#property_fileExtension">$fileExtension</a>
@@ -165,7 +177,7 @@ helpers for Markdown-based page model classes.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_hidden">$hidden</a>
+    <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_hidden">$hidden</a>
     <span>
                         &nbsp;: bool|null            </span>
 </dt>
@@ -179,7 +191,7 @@ helpers for Markdown-based page model classes.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_label">$label</a>
+    <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_label">$label</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
@@ -207,11 +219,11 @@ helpers for Markdown-based page model classes.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#property_navigation">$navigation</a>
+    <a href="classes/Hyde-Framework-Concerns-AbstractPage.html#property_navigation">$navigation</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;|null            </span>
 </dt>
-<dd>The settings for how the page should be presented in the navigation menu.</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_outputDirectory">$outputDirectory</a>
@@ -221,7 +233,7 @@ helpers for Markdown-based page model classes.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_priority">$priority</a>
+    <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_priority">$priority</a>
     <span>
                         &nbsp;: int|null            </span>
 </dt>
@@ -249,11 +261,11 @@ helpers for Markdown-based page model classes.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#property_title">$title</a>
+    <a href="classes/Hyde-Framework-Concerns-AbstractPage.html#property_title">$title</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd>The title of the page used in the HTML &lt;title&gt; tag, among others.</dd>
+<dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method___construct">__construct()</a>
@@ -543,13 +555,6 @@ front matter array to YAML and writing the body to the file.</dd>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_usesSchema">usesSchema()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-<dd></dd>
-
         </dl>
 
 
@@ -571,53 +576,29 @@ front matter array to YAML and writing the body to the file.</dd>
 >
     <h4 class="phpdocumentor-element__name" id="property_canonicalUrl">
         $canonicalUrl
-        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#property_canonicalUrl" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Concerns-AbstractPage.html#property_canonicalUrl" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-pageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php">PageSchema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The canonical URL of the page.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$canonicalUrl</span>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
-    
+        <section class="phpdocumentor-description"></section>
+
         <section class="phpdocumentor-description"></section>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">yamlType</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>string|optional</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">example</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>&quot;https://example.com/about&quot;</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
 </article>
                     <article
@@ -629,18 +610,18 @@ front matter array to YAML and writing the body to the file.</dd>
 >
     <h4 class="phpdocumentor-element__name" id="property_category">
         $category
-        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_category" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_category" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-documentationpageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php">DocumentationPageSchema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The sidebar category group, if any.</p>
+        <p class="phpdocumentor-summary">The sidebar category group, if any. Can be overridden in front matter, or by putting the source file in a subdirectory of the same category name.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -648,10 +629,7 @@ front matter array to YAML and writing the body to the file.</dd>
     <span class="phpdocumentor-signature__name">$category</span>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
-        <section class="phpdocumentor-description"><p>Can be overridden in front matter, or by putting the
-source file in a subdirectory of the same category name.</p>
-</section>
-
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -673,7 +651,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -700,14 +678,14 @@ source file in a subdirectory of the same category name.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property_hidden">
         $hidden
-        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_hidden" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_hidden" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-documentationpageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php">DocumentationPageSchema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -741,7 +719,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -768,12 +746,12 @@ source file in a subdirectory of the same category name.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property_label">
         $label
-        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_label" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_label" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-documentationpageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php">DocumentationPageSchema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">23</span>
 
@@ -843,7 +821,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -877,7 +855,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -904,59 +882,29 @@ source file in a subdirectory of the same category name.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property_navigation">
         $navigation
-        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#property_navigation" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Concerns-AbstractPage.html#property_navigation" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-pageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php">PageSchema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The settings for how the page should be presented in the navigation menu.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;|null</span>
     <span class="phpdocumentor-signature__name">$navigation</span>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
-        <section class="phpdocumentor-description"><p>All array values are optional, as long as the array is not empty.</p>
-</section>
+        <section class="phpdocumentor-description"></section>
 
         <section class="phpdocumentor-description"></section>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">yamlType</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>array|optional</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">example</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><pre class="prettyprint"><code class="language-yaml">navigation:
-  title: &quot;Home&quot;
-  hidden: true
-  priority: 1
-</code></pre>
-</section>
-
-                                    </dd>
-                        </dl>
 
 </article>
                     <article
@@ -975,7 +923,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -1002,14 +950,14 @@ source file in a subdirectory of the same category name.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property_priority">
         $priority
-        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-DocumentationPageSchema.html#property_priority" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_priority" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-documentationpageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/DocumentationPageSchema.php">DocumentationPageSchema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -1043,7 +991,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -1077,7 +1025,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
@@ -1111,7 +1059,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -1138,53 +1086,29 @@ source file in a subdirectory of the same category name.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property_title">
         $title
-        <a href="classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#property_title" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Concerns-AbstractPage.html#property_title" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php"><a href="files/packages-framework-src-concerns-frontmatter-schemas-pageschema.html"><abbr title="packages/framework/src/Concerns/FrontMatter/Schemas/PageSchema.php">PageSchema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The title of the page used in the HTML &lt;title&gt; tag, among others.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$title</span>
     </code>
 
-    
+        <section class="phpdocumentor-description"></section>
+
         <section class="phpdocumentor-description"></section>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">example</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>&quot;Home&quot;, &quot;About&quot;, &quot;Blog Feed&quot;</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">yamlType</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>string|optional</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
 </article>
             </section>
@@ -1207,7 +1131,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -1279,7 +1203,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -1324,7 +1248,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">185</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 
     </aside>
 
@@ -1372,7 +1296,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -1417,7 +1341,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
@@ -1481,7 +1405,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
@@ -1529,7 +1453,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -1574,7 +1498,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -1619,7 +1543,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -1664,7 +1588,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -1709,7 +1633,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -1765,7 +1689,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -1813,7 +1737,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -1858,7 +1782,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">164</span>
 
     </aside>
 
@@ -1903,7 +1827,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -1948,7 +1872,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -1993,7 +1917,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -2026,7 +1950,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
@@ -2090,7 +2014,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -2123,7 +2047,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -2156,7 +2080,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">173</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
@@ -2317,7 +2241,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -2381,7 +2305,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">200</span>
 
     </aside>
 
@@ -2414,7 +2338,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">202</span>
+    <span class="phpdocumentor-element-found-in__line">205</span>
 
     </aside>
 
@@ -2447,7 +2371,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -2503,7 +2427,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -2559,7 +2483,7 @@ source file in a subdirectory of the same category name.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">187</span>
+    <span class="phpdocumentor-element-found-in__line">190</span>
 
     </aside>
 
@@ -2639,7 +2563,7 @@ front matter array to YAML and writing the body to the file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/AbstractPage.php"><a href="files/packages-framework-src-concerns-abstractpage.html"><abbr title="packages/framework/src/Concerns/AbstractPage.php">AbstractPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">192</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
@@ -2672,7 +2596,7 @@ front matter array to YAML and writing the body to the file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/ConstructsPageSchemas.php"><a href="files/packages-framework-src-concerns-constructspageschemas.html"><abbr title="packages/framework/src/Concerns/ConstructsPageSchemas.php">ConstructsPageSchemas.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -2705,7 +2629,7 @@ front matter array to YAML and writing the body to the file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/ConstructsPageSchemas.php"><a href="files/packages-framework-src-concerns-constructspageschemas.html"><abbr title="packages/framework/src/Concerns/ConstructsPageSchemas.php">ConstructsPageSchemas.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -2738,7 +2662,7 @@ front matter array to YAML and writing the body to the file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/ConstructsPageSchemas.php"><a href="files/packages-framework-src-concerns-constructspageschemas.html"><abbr title="packages/framework/src/Concerns/ConstructsPageSchemas.php">ConstructsPageSchemas.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -2771,7 +2695,7 @@ front matter array to YAML and writing the body to the file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/ConstructsPageSchemas.php"><a href="files/packages-framework-src-concerns-constructspageschemas.html"><abbr title="packages/framework/src/Concerns/ConstructsPageSchemas.php">ConstructsPageSchemas.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
@@ -2804,7 +2728,7 @@ front matter array to YAML and writing the body to the file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/ConstructsPageSchemas.php"><a href="files/packages-framework-src-concerns-constructspageschemas.html"><abbr title="packages/framework/src/Concerns/ConstructsPageSchemas.php">ConstructsPageSchemas.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -2837,7 +2761,7 @@ front matter array to YAML and writing the body to the file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/ConstructsPageSchemas.php"><a href="files/packages-framework-src-concerns-constructspageschemas.html"><abbr title="packages/framework/src/Concerns/ConstructsPageSchemas.php">ConstructsPageSchemas.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -2870,7 +2794,7 @@ front matter array to YAML and writing the body to the file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/ConstructsPageSchemas.php"><a href="files/packages-framework-src-concerns-constructspageschemas.html"><abbr title="packages/framework/src/Concerns/ConstructsPageSchemas.php">ConstructsPageSchemas.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -2903,7 +2827,7 @@ front matter array to YAML and writing the body to the file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/ConstructsPageSchemas.php"><a href="files/packages-framework-src-concerns-constructspageschemas.html"><abbr title="packages/framework/src/Concerns/ConstructsPageSchemas.php">ConstructsPageSchemas.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -2936,7 +2860,7 @@ front matter array to YAML and writing the body to the file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/ConstructsPageSchemas.php"><a href="files/packages-framework-src-concerns-constructspageschemas.html"><abbr title="packages/framework/src/Concerns/ConstructsPageSchemas.php">ConstructsPageSchemas.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -2969,7 +2893,7 @@ front matter array to YAML and writing the body to the file.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/ConstructsPageSchemas.php"><a href="files/packages-framework-src-concerns-constructspageschemas.html"><abbr title="packages/framework/src/Concerns/ConstructsPageSchemas.php">ConstructsPageSchemas.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -2985,50 +2909,6 @@ front matter array to YAML and writing the body to the file.</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_usesSchema">
-        usesSchema()
-        <a href="classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_usesSchema" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Concerns/ConstructsPageSchemas.php"><a href="files/packages-framework-src-concerns-constructspageschemas.html"><abbr title="packages/framework/src/Concerns/ConstructsPageSchemas.php">ConstructsPageSchemas.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">124</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">usesSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$schema</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     
