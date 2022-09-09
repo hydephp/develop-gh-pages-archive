@@ -1356,6 +1356,36 @@ Search.appendIndex(
             "summary": "The\u0020canonical\u0020URL\u0020of\u0020the\u0020page.",
             "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-PageSchema.html#property_canonicalUrl"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\Schemas",
+            "name": "Schemas",
+            "summary": "Class\u0020representation\u0020of\u0020all\u0020the\u0020available\u0020schema\u0020traits\u0020with\u0020helpers\u0020to\u0020access\u0020them.",
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-Schemas.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\Schemas\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-Schemas.html#method_all"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\Schemas\u003A\u003AgetPageArray\u0028\u0029",
+            "name": "getPageArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-Schemas.html#method_getPageArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\Schemas\u003A\u003AgetBlogPostArray\u0028\u0029",
+            "name": "getBlogPostArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-Schemas.html#method_getBlogPostArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\Schemas\u003A\u003AgetDocumentationPageArray\u0028\u0029",
+            "name": "getDocumentationPageArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-Schemas.html#method_getDocumentationPageArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\FrontMatter\\Schemas\\Schemas\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-FrontMatter-Schemas-Schemas.html#method_get"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\InteractsWithDirectories",
             "name": "InteractsWithDirectories",
             "summary": "",
