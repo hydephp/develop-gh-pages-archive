@@ -1003,7 +1003,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\AbstractMarkdownPage",
             "name": "AbstractMarkdownPage",
-            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020Page\u0020Models.",
+            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020page\u0020models.",
             "url": "classes/Hyde-Framework-Concerns-AbstractMarkdownPage.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\AbstractMarkdownPage\u003A\u003Amake\u0028\u0029",
@@ -2753,7 +2753,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage",
             "name": "DocumentationPage",
-            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020Page\u0020Models.",
+            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020page\u0020models.",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A__construct\u0028\u0029",
@@ -2818,7 +2818,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPage",
             "name": "MarkdownPage",
-            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020Page\u0020Models.",
+            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020page\u0020models.",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPage.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPage\u003A\u003A\u0024sourceDirectory",
@@ -2838,7 +2838,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost",
             "name": "MarkdownPost",
-            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020Page\u0020Models.",
+            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020page\u0020models.",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003A__construct\u0028\u0029",
