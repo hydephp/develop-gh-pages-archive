@@ -156,7 +156,7 @@
     <span>
                         &nbsp;: string|null            </span>
 </dt>
-<dd>The sidebar category group, if any. Can be overridden in front matter, or by putting the source file in a subdirectory of the same category name.</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Framework-Concerns-BaseMarkdownPage.html#property_fileExtension">$fileExtension</a>
@@ -166,25 +166,11 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_hidden">$hidden</a>
-    <span>
-                        &nbsp;: bool|null            </span>
-</dt>
-<dd>Hides the page from the sidebar.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Framework-Concerns-BaseMarkdownPage.html#property_identifier">$identifier</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_label">$label</a>
-    <span>
-                        &nbsp;: string|null            </span>
-</dt>
-<dd>The label for the page shown in the sidebar.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Framework-Concerns-BaseMarkdownPage.html#property_markdown">$markdown</a>
@@ -199,13 +185,6 @@
                         &nbsp;: string            </span>
 </dt>
 <dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_priority">$priority</a>
-    <span>
-                        &nbsp;: int|null            </span>
-</dt>
-<dd>The priority of the page used for ordering the sidebar.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_sourceDirectory">$sourceDirectory</a>
@@ -309,7 +288,7 @@ front matter array to YAML and writing the body to the file.</dd>
             phpdocumentor-element
             -property
             -public
-                                                        "
+                        -deprecated                                "
 >
     <h4 class="phpdocumentor-element__name" id="property_category">
         $category
@@ -320,13 +299,12 @@ front matter array to YAML and writing the body to the file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The sidebar category group, if any. Can be overridden in front matter, or by putting the source file in a subdirectory of the same category name.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$category</span>
@@ -336,6 +314,22 @@ front matter array to YAML and writing the body to the file.</dd>
         <section class="phpdocumentor-description"></section>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>Will be replaced by navigation.group
+The sidebar category group, if any. Can be overridden in front matter, or by putting the source file in a subdirectory of the same category name.</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
 </article>
                     <article
@@ -379,40 +373,6 @@ front matter array to YAML and writing the body to the file.</dd>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_hidden">
-        $hidden
-        <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_hidden" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">26</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Hides the page from the sidebar.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">bool|null</span>
-    <span class="phpdocumentor-signature__name">$hidden</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
-
-    
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="property_identifier">
         $identifier
         <a href="classes/Hyde-Framework-Concerns-BaseMarkdownPage.html#property_identifier" class="headerlink"><i class="fas fa-link"></i></a>
@@ -435,40 +395,6 @@ front matter array to YAML and writing the body to the file.</dd>
 
         <section class="phpdocumentor-description"></section>
 
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_label">
-        $label
-        <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_label" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">23</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The label for the page shown in the sidebar.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$label</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
-
-    
         <section class="phpdocumentor-description"></section>
 
     
@@ -537,40 +463,6 @@ front matter array to YAML and writing the body to the file.</dd>
 
         <section class="phpdocumentor-description"></section>
 
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_priority">
-        $priority
-        <a href="classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_priority" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">29</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The priority of the page used for ordering the sidebar.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">int|null</span>
-    <span class="phpdocumentor-signature__name">$priority</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
-
-    
         <section class="phpdocumentor-description"></section>
 
     
@@ -664,7 +556,7 @@ front matter array to YAML and writing the body to the file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -779,7 +671,7 @@ front matter array to YAML and writing the body to the file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -812,7 +704,7 @@ front matter array to YAML and writing the body to the file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -857,7 +749,7 @@ front matter array to YAML and writing the body to the file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -890,7 +782,7 @@ front matter array to YAML and writing the body to the file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -923,7 +815,7 @@ front matter array to YAML and writing the body to the file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Pages/DocumentationPage.php"><a href="files/packages-framework-src-models-pages-documentationpage.html"><abbr title="packages/framework/src/Models/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
