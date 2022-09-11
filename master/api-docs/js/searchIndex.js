@@ -1001,45 +1001,45 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-AbstractBuildTask.html#property_exitCode"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\AbstractMarkdownPage",
-            "name": "AbstractMarkdownPage",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\BaseMarkdownPage",
+            "name": "BaseMarkdownPage",
             "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020page\u0020models.",
-            "url": "classes/Hyde-Framework-Concerns-AbstractMarkdownPage.html"
+            "url": "classes/Hyde-Framework-Concerns-BaseMarkdownPage.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\AbstractMarkdownPage\u003A\u003Amake\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\BaseMarkdownPage\u003A\u003Amake\u0028\u0029",
             "name": "make",
             "summary": "Alternative\u0020to\u0020constructor,\u0020using\u0020primitive\u0020data\u0020types.",
-            "url": "classes/Hyde-Framework-Concerns-AbstractMarkdownPage.html#method_make"
+            "url": "classes/Hyde-Framework-Concerns-BaseMarkdownPage.html#method_make"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\AbstractMarkdownPage\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\BaseMarkdownPage\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Construct\u0020a\u0020new\u0020MarkdownPage\u0020object\u0020from\u0020constructed\u0020data\u0020types.",
-            "url": "classes/Hyde-Framework-Concerns-AbstractMarkdownPage.html#method___construct"
+            "url": "classes/Hyde-Framework-Concerns-BaseMarkdownPage.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\AbstractMarkdownPage\u003A\u003A\u0024markdown",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\BaseMarkdownPage\u003A\u003A\u0024markdown",
             "name": "markdown",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-AbstractMarkdownPage.html#property_markdown"
+            "url": "classes/Hyde-Framework-Concerns-BaseMarkdownPage.html#property_markdown"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\AbstractMarkdownPage\u003A\u003Acompile\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\BaseMarkdownPage\u003A\u003Acompile\u0028\u0029",
             "name": "compile",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-AbstractMarkdownPage.html#method_compile"
+            "url": "classes/Hyde-Framework-Concerns-BaseMarkdownPage.html#method_compile"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\AbstractMarkdownPage\u003A\u003Asave\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\BaseMarkdownPage\u003A\u003Asave\u0028\u0029",
             "name": "save",
             "summary": "Save\u0020the\u0020Markdown\u0020page\u0020object\u0020to\u0020disk\u0020by\u0020compiling\u0020the\nfront\u0020matter\u0020array\u0020to\u0020YAML\u0020and\u0020writing\u0020the\u0020body\u0020to\u0020the\u0020file.",
-            "url": "classes/Hyde-Framework-Concerns-AbstractMarkdownPage.html#method_save"
+            "url": "classes/Hyde-Framework-Concerns-BaseMarkdownPage.html#method_save"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\AbstractMarkdownPage\u003A\u003A\u0024identifier",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\BaseMarkdownPage\u003A\u003A\u0024identifier",
             "name": "identifier",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-AbstractMarkdownPage.html#property_identifier"
+            "url": "classes/Hyde-Framework-Concerns-BaseMarkdownPage.html#property_identifier"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\AbstractMarkdownPage\u003A\u003A\u0024fileExtension",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\BaseMarkdownPage\u003A\u003A\u0024fileExtension",
             "name": "fileExtension",
             "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-AbstractMarkdownPage.html#property_fileExtension"
+            "url": "classes/Hyde-Framework-Concerns-BaseMarkdownPage.html#property_fileExtension"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Commands\\AsksToRebuildSite",
             "name": "AsksToRebuildSite",
