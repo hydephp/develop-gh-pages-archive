@@ -1051,61 +1051,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-Commands-AsksToRebuildSite.html#method_askToRebuildSite"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas",
-            "name": "ConstructsPageSchemas",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AconstructPageSchemas\u0028\u0029",
-            "name": "constructPageSchemas",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_constructPageSchemas"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AconstructPageSchema\u0028\u0029",
-            "name": "constructPageSchema",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_constructPageSchema"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AmakeCanonicalUrl\u0028\u0029",
-            "name": "makeCanonicalUrl",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_makeCanonicalUrl"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AconstructBlogPostSchema\u0028\u0029",
-            "name": "constructBlogPostSchema",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_constructBlogPostSchema"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AmakeDescription\u0028\u0029",
-            "name": "makeDescription",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_makeDescription"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AgetAuthor\u0028\u0029",
-            "name": "getAuthor",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_getAuthor"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AgetImage\u0028\u0029",
-            "name": "getImage",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_getImage"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AconstructDocumentationPageSchema\u0028\u0029",
-            "name": "constructDocumentationPageSchema",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_constructDocumentationPageSchema"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AgetDocumentationPageCategory\u0028\u0029",
-            "name": "getDocumentationPageCategory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_getDocumentationPageCategory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\ConstructsPageSchemas\u003A\u003AfindPriorityInConfig\u0028\u0029",
-            "name": "findPriorityInConfig",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-ConstructsPageSchemas.html#method_findPriorityInConfig"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\InteractsWithDirectories",
             "name": "InteractsWithDirectories",
             "summary": "",
@@ -1120,6 +1065,61 @@ Search.appendIndex(
             "name": "needsDirectories",
             "summary": "Ensure\u0020the\u0020supplied\u0020directories\u0020exist\u0020by\u0020creating\u0020them\u0020if\u0020they\u0020don\u0027t.",
             "url": "classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectories"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\ConstructsPageSchemas",
+            "name": "ConstructsPageSchemas",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-Internal-ConstructsPageSchemas.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\ConstructsPageSchemas\u003A\u003AconstructPageSchemas\u0028\u0029",
+            "name": "constructPageSchemas",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-Internal-ConstructsPageSchemas.html#method_constructPageSchemas"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\ConstructsPageSchemas\u003A\u003AconstructPageSchema\u0028\u0029",
+            "name": "constructPageSchema",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-Internal-ConstructsPageSchemas.html#method_constructPageSchema"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\ConstructsPageSchemas\u003A\u003AmakeCanonicalUrl\u0028\u0029",
+            "name": "makeCanonicalUrl",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-Internal-ConstructsPageSchemas.html#method_makeCanonicalUrl"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\ConstructsPageSchemas\u003A\u003AconstructBlogPostSchema\u0028\u0029",
+            "name": "constructBlogPostSchema",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-Internal-ConstructsPageSchemas.html#method_constructBlogPostSchema"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\ConstructsPageSchemas\u003A\u003AmakeDescription\u0028\u0029",
+            "name": "makeDescription",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-Internal-ConstructsPageSchemas.html#method_makeDescription"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\ConstructsPageSchemas\u003A\u003AgetAuthor\u0028\u0029",
+            "name": "getAuthor",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-Internal-ConstructsPageSchemas.html#method_getAuthor"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\ConstructsPageSchemas\u003A\u003AgetImage\u0028\u0029",
+            "name": "getImage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-Internal-ConstructsPageSchemas.html#method_getImage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\ConstructsPageSchemas\u003A\u003AconstructDocumentationPageSchema\u0028\u0029",
+            "name": "constructDocumentationPageSchema",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-Internal-ConstructsPageSchemas.html#method_constructDocumentationPageSchema"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\ConstructsPageSchemas\u003A\u003AgetDocumentationPageCategory\u0028\u0029",
+            "name": "getDocumentationPageCategory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-Internal-ConstructsPageSchemas.html#method_getDocumentationPageCategory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\ConstructsPageSchemas\u003A\u003AfindPriorityInConfig\u0028\u0029",
+            "name": "findPriorityInConfig",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-Internal-ConstructsPageSchemas.html#method_findPriorityInConfig"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\JsonSerializesArrayable",
             "name": "JsonSerializesArrayable",
@@ -4105,6 +4105,11 @@ Search.appendIndex(
             "name": "Commands",
             "summary": "",
             "url": "namespaces/hyde-framework-concerns-commands.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\Internal",
+            "name": "Internal",
+            "summary": "",
+            "url": "namespaces/hyde-framework-concerns-internal.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts",
             "name": "Contracts",
