@@ -1196,11 +1196,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-FrontMatter-BlogPostSchema.html#constant_AUTHOR_SCHEMA"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\FrontMatter\\BlogPostSchema\u003A\u003AFEATURED_IMAGE_SCHEMA",
-            "name": "FEATURED_IMAGE_SCHEMA",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-FrontMatter-BlogPostSchema.html#constant_FEATURED_IMAGE_SCHEMA"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\FrontMatter\\DocumentationPageSchema",
             "name": "DocumentationPageSchema",
             "summary": "",
@@ -1220,6 +1215,16 @@ Search.appendIndex(
             "name": "PAGE_SCHEMA",
             "summary": "",
             "url": "classes/Hyde-Framework-Contracts-FrontMatter-PageSchema.html#constant_PAGE_SCHEMA"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\FrontMatter\\Support\\FeaturedImageSchema",
+            "name": "FeaturedImageSchema",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-FrontMatter-Support-FeaturedImageSchema.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\FrontMatter\\Support\\FeaturedImageSchema\u003A\u003AFEATURED_IMAGE_SCHEMA",
+            "name": "FEATURED_IMAGE_SCHEMA",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-FrontMatter-Support-FeaturedImageSchema.html#constant_FEATURED_IMAGE_SCHEMA"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\FrontMatter\\Support\\NavigationSchema",
             "name": "NavigationSchema",
