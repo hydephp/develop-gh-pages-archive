@@ -1806,16 +1806,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-HydeKernel.html#method_hasFeature"
         },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AcurrentPage\u0028\u0029",
-            "name": "currentPage",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_currentPage"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AcurrentRoute\u0028\u0029",
-            "name": "currentRoute",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeKernel.html#method_currentRoute"
-        },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
             "summary": "",
