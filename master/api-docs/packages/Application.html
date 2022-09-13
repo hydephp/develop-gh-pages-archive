@@ -126,8 +126,6 @@
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-MetadataItemContract.html"><abbr title="\Hyde\Framework\Contracts\MetadataItemContract">MetadataItemContract</abbr></a></dt>
         <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-RouteContract.html"><abbr title="\Hyde\Framework\Contracts\RouteContract">RouteContract</abbr></a></dt>
-        <dd>This contract defines the methods that a Route object must implement.</dd>
     
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Actions-BladeMatterParser.html"><abbr title="\Hyde\Framework\Actions\BladeMatterParser">BladeMatterParser</abbr></a></dt>
         <dd>Parse the front matter in a Blade file.</dd>
@@ -246,7 +244,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Models-Navigation-NavigationMenu.html"><abbr title="\Hyde\Framework\Models\Navigation\NavigationMenu">NavigationMenu</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Models-Navigation-NavItem.html"><abbr title="\Hyde\Framework\Models\Navigation\NavItem">NavItem</abbr></a></dt>
-        <dd>Abstraction for a navigation menu item.</dd>
+        <dd>Abstraction for a navigation menu item. Used by the NavigationMenu and DocumentationSidebar classes.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Models-NavigationData.html"><abbr title="\Hyde\Framework\Models\NavigationData">NavigationData</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Models-Pages-BladePage.html"><abbr title="\Hyde\Framework\Models\Pages\BladePage">BladePage</abbr></a></dt>
@@ -258,7 +256,9 @@
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Models-Pages-MarkdownPost.html"><abbr title="\Hyde\Framework\Models\Pages\MarkdownPost">MarkdownPost</abbr></a></dt>
         <dd>The base class for all Markdown-based page models.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Models-Route.html"><abbr title="\Hyde\Framework\Models\Route">Route</abbr></a></dt>
-        <dd></dd>
+        <dd>The Route class bridges the gaps between Hyde pages and their respective compiled static webpages
+by providing helper methods and information allowing you to easily access and interact with the
+various paths associated with a page, both source and compiled file paths as well as the URL.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Models-ValidationResult.html"><abbr title="\Hyde\Framework\Models\ValidationResult">ValidationResult</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Modules-DataCollections-DataCollection.html"><abbr title="\Hyde\Framework\Modules\DataCollections\DataCollection">DataCollection</abbr></a></dt>
