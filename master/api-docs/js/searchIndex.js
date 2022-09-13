@@ -1496,10 +1496,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Foundation-Hyperlinks.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Foundation\\Hyperlinks\u003A\u003AformatHtmlPath\u0028\u0029",
-            "name": "formatHtmlPath",
-            "summary": "Format\u0020a\u0020link\u0020to\u0020an\u0020HTML\u0020file,\u0020allowing\u0020for\u0020pretty\u0020URLs,\u0020if\u0020enabled.",
-            "url": "classes/Hyde-Framework-Foundation-Hyperlinks.html#method_formatHtmlPath"
+            "fqsen": "\\Hyde\\Framework\\Foundation\\Hyperlinks\u003A\u003AformatLink\u0028\u0029",
+            "name": "formatLink",
+            "summary": "Format\u0020a\u0020web\u0020link\u0020to\u0020an\u0020HTML\u0020file,\u0020allowing\u0020for\u0020pretty\u0020URLs,\u0020if\u0020enabled.",
+            "url": "classes/Hyde-Framework-Foundation-Hyperlinks.html#method_formatLink"
         },                {
             "fqsen": "\\Hyde\\Framework\\Foundation\\Hyperlinks\u003A\u003ArelativeLink\u0028\u0029",
             "name": "relativeLink",
