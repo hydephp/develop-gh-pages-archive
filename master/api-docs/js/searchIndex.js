@@ -1518,7 +1518,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Foundation\\Hyperlinks\u003A\u003Aurl\u0028\u0029",
             "name": "url",
-            "summary": "Return\u0020a\u0020qualified\u0020URI\u0020path\u0020to\u0020the\u0020supplied\u0020path\u0020if\u0020a\u0020base\u0020URL\u0020is\u0020set.",
+            "summary": "Return\u0020a\u0020qualified\u0020URL\u0020to\u0020the\u0020supplied\u0020path\u0020if\u0020a\u0020base\u0020URL\u0020is\u0020set.",
             "url": "classes/Hyde-Framework-Foundation-Hyperlinks.html#method_url"
         },                {
             "fqsen": "\\Hyde\\Framework\\Foundation\\Hyperlinks\u003A\u003A\u0024kernel",
@@ -1943,7 +1943,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003A\u0024website",
             "name": "website",
-            "summary": "The\u0020author\u0027s\u0020website\u0020URI.",
+            "summary": "The\u0020author\u0027s\u0020website\u0020URL.",
             "url": "classes/Hyde-Framework-Models-Author.html#property_website"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\DateString",
@@ -2111,10 +2111,10 @@ Search.appendIndex(
             "summary": "The\u0020image\u0027s\u0020path\u0020\u0028if\u0020it\u0020is\u0020stored\u0020locally\u0020\u0028in\u0020the\u0020_media\u0020directory\u0029\u0029.",
             "url": "classes/Hyde-Framework-Models-Image.html#property_path"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A\u0024uri",
-            "name": "uri",
-            "summary": "The\u0020image\u0027s\u0020URI\u0020\u0028if\u0020stored\u0020externally\u0029.",
-            "url": "classes/Hyde-Framework-Models-Image.html#property_uri"
+            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A\u0024url",
+            "name": "url",
+            "summary": "The\u0020image\u0027s\u0020URL\u0020\u0028if\u0020stored\u0020externally\u0029.",
+            "url": "classes/Hyde-Framework-Models-Image.html#property_url"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A\u0024description",
             "name": "description",
@@ -2508,7 +2508,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Navigation\\NavItem\u003A\u003AtoLink\u0028\u0029",
             "name": "toLink",
-            "summary": "Create\u0020a\u0020new\u0020navigation\u0020menu\u0020item\u0020leading\u0020to\u0020an\u0020external\u0020URI.",
+            "summary": "Create\u0020a\u0020new\u0020navigation\u0020menu\u0020item\u0020leading\u0020to\u0020a\u0020external\u0020URI.",
             "url": "classes/Hyde-Framework-Models-Navigation-NavItem.html#method_toLink"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Navigation\\NavItem\u003A\u003AtoRoute\u0028\u0029",
