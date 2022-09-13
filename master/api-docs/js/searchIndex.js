@@ -2253,13 +2253,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Metadata\\MetadataBag",
             "name": "MetadataBag",
-            "summary": "",
+            "summary": "Holds\u0020the\u0020metadata\u0020tags\u0020for\u0020a\u0020page\u0020or\u0020the\u0020site\u0020model.",
             "url": "classes/Hyde-Framework-Models-Metadata-MetadataBag.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Metadata\\MetadataBag\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Metadata-MetadataBag.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Metadata\\MetadataBag\u003A\u003AtoHtml\u0028\u0029",
+            "name": "toHtml",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Metadata-MetadataBag.html#method_toHtml"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Metadata\\MetadataBag\u003A\u003Arender\u0028\u0029",
             "name": "render",
