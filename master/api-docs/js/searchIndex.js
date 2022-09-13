@@ -2906,6 +2906,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Route.html#property_uriPath"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Site",
+            "name": "Site",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Site.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Site\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Site.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Site\u003A\u003A\u0024url",
+            "name": "url",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Site.html#property_url"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Site\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Site.html#property_name"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Site\u003A\u003A\u0024language",
+            "name": "language",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Site.html#property_language"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult",
             "name": "ValidationResult",
             "summary": "",
