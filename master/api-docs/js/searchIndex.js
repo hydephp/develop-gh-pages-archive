@@ -1301,26 +1301,6 @@ Search.appendIndex(
             "summary": "Return\u0020the\u0020document\u0027s\u0020Markdown\u0020object.",
             "url": "classes/Hyde-Framework-Contracts-MarkdownDocumentContract.html#method_markdown"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPageContract",
-            "name": "MarkdownPageContract",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-MarkdownPageContract.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPageContract\u003A\u003Amake\u0028\u0029",
-            "name": "make",
-            "summary": "Alternative\u0020to\u0020constructor,\u0020using\u0020primitive\u0020data\u0020types.",
-            "url": "classes/Hyde-Framework-Contracts-MarkdownPageContract.html#method_make"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPageContract\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Construct\u0020a\u0020new\u0020MarkdownPage\u0020object\u0020from\u0020constructed\u0020data\u0020types.",
-            "url": "classes/Hyde-Framework-Contracts-MarkdownPageContract.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPageContract\u003A\u003Asave\u0028\u0029",
-            "name": "save",
-            "summary": "Save\u0020the\u0020Markdown\u0020page\u0020object\u0020to\u0020disk\u0020by\u0020compiling\u0020the\nfront\u0020matter\u0020array\u0020to\u0020YAML\u0020and\u0020writing\u0020the\u0020body\u0020to\u0020the\u0020file.",
-            "url": "classes/Hyde-Framework-Contracts-MarkdownPageContract.html#method_save"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownProcessorContract",
             "name": "MarkdownProcessorContract",
             "summary": "",
