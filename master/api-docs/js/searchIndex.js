@@ -2658,7 +2658,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage",
             "name": "BladePage",
-            "summary": "A\u0020basic\u0020wrapper\u0020for\u0020the\u0020custom\u0020Blade\u0020View\u0020compiler.",
+            "summary": "Page\u0020class\u0020for\u0020Blade\u0020pages.",
             "url": "classes/Hyde-Framework-Models-Pages-BladePage.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage\u003A\u003A__construct\u0028\u0029",
@@ -2698,7 +2698,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage",
             "name": "DocumentationPage",
-            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020page\u0020models.",
+            "summary": "Page\u0020class\u0020for\u0020documentation\u0020pages.",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A__construct\u0028\u0029",
@@ -2748,7 +2748,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\HtmlPage",
             "name": "HtmlPage",
-            "summary": "",
+            "summary": "Page\u0020class\u0020for\u0020HTML\u0020pages.",
             "url": "classes/Hyde-Framework-Models-Pages-HtmlPage.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\HtmlPage\u003A\u003Acontents\u0028\u0029",
@@ -2778,7 +2778,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPage",
             "name": "MarkdownPage",
-            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020page\u0020models.",
+            "summary": "Page\u0020class\u0020for\u0020Markdown\u0020pages.",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPage.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPage\u003A\u003A\u0024sourceDirectory",
@@ -2798,7 +2798,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost",
             "name": "MarkdownPost",
-            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Markdown\u002Dbased\u0020page\u0020models.",
+            "summary": "Page\u0020class\u0020for\u0020Markdown\u0020posts.",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003A__construct\u0028\u0029",
