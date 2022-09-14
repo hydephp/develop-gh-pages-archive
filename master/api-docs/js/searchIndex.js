@@ -2511,6 +2511,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Navigation-DocumentationSidebar.html#method_filterDocumentationPage"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Navigation\\NavigationData",
+            "name": "NavigationData",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Navigation-NavigationData.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Navigation\\NavigationData\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Navigation-NavigationData.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Navigation\\NavigationData\u003A\u003Amake\u0028\u0029",
+            "name": "make",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Navigation-NavigationData.html#method_make"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Navigation\\NavigationData\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Navigation-NavigationData.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Navigation\\NavigationData\u003A\u003A\u0024label",
+            "name": "label",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Navigation-NavigationData.html#property_label"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Navigation\\NavigationData\u003A\u003A\u0024group",
+            "name": "group",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Navigation-NavigationData.html#property_group"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Navigation\\NavigationData\u003A\u003A\u0024hidden",
+            "name": "hidden",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Navigation-NavigationData.html#property_hidden"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Navigation\\NavigationData\u003A\u003A\u0024priority",
+            "name": "priority",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Navigation-NavigationData.html#property_priority"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Navigation\\NavigationMenu",
             "name": "NavigationMenu",
             "summary": "",
@@ -2650,46 +2690,6 @@ Search.appendIndex(
             "name": "hidden",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Navigation-NavItem.html#property_hidden"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\NavigationData",
-            "name": "NavigationData",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-NavigationData.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\NavigationData\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-NavigationData.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\NavigationData\u003A\u003Amake\u0028\u0029",
-            "name": "make",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-NavigationData.html#method_make"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\NavigationData\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-NavigationData.html#method_toArray"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\NavigationData\u003A\u003A\u0024label",
-            "name": "label",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-NavigationData.html#property_label"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\NavigationData\u003A\u003A\u0024group",
-            "name": "group",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-NavigationData.html#property_group"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\NavigationData\u003A\u003A\u0024hidden",
-            "name": "hidden",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-NavigationData.html#property_hidden"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\NavigationData\u003A\u003A\u0024priority",
-            "name": "priority",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-NavigationData.html#property_priority"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\BladePage",
             "name": "BladePage",
