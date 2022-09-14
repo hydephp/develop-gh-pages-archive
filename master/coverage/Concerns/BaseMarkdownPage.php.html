@@ -123,7 +123,7 @@
       </tr>
 
       <tr>
-       <td class="success">&nbsp;<a href="#52"><abbr title="__construct(string $identifier, ?Hyde\Framework\Models\FrontMatter $matter, ?Hyde\Framework\Models\Markdown $markdown)">__construct</abbr></a></td>
+       <td class="success">&nbsp;<a href="#52"><abbr title="__construct(string $identifier, ?Hyde\Framework\Models\Markdown\FrontMatter $matter, ?Hyde\Framework\Models\Markdown\Markdown $markdown)">__construct</abbr></a></td>
        <td class="success big">       <div class="progress">
          <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" style="width: 100.00%">
            <span class="sr-only">100.00% covered (success)</span>
@@ -145,7 +145,7 @@
       </tr>
 
       <tr>
-       <td class="success">&nbsp;<a href="#62"><abbr title="markdown(): Hyde\Framework\Models\Markdown">markdown</abbr></a></td>
+       <td class="success">&nbsp;<a href="#62"><abbr title="markdown(): Hyde\Framework\Models\Markdown\Markdown">markdown</abbr></a></td>
        <td class="success big">       <div class="progress">
          <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" style="width: 100.00%">
            <span class="sr-only">100.00% covered (success)</span>
@@ -222,8 +222,8 @@
     <tr class=" d-flex"><td  class="col-1 text-right"><a id="4" href="#4">4</a></td><td class="col-11 codeLine"></td></tr>
     <tr class=" d-flex"><td  class="col-1 text-right"><a id="5" href="#5">5</a></td><td class="col-11 codeLine"><span class="keyword">use</span><span class="default">&nbsp;</span><span class="default">Hyde\Framework\Contracts\MarkdownDocumentContract</span><span class="keyword">;</span></td></tr>
     <tr class=" d-flex"><td  class="col-1 text-right"><a id="6" href="#6">6</a></td><td class="col-11 codeLine"><span class="keyword">use</span><span class="default">&nbsp;</span><span class="default">Hyde\Framework\Hyde</span><span class="keyword">;</span></td></tr>
-    <tr class=" d-flex"><td  class="col-1 text-right"><a id="7" href="#7">7</a></td><td class="col-11 codeLine"><span class="keyword">use</span><span class="default">&nbsp;</span><span class="default">Hyde\Framework\Models\FrontMatter</span><span class="keyword">;</span></td></tr>
-    <tr class=" d-flex"><td  class="col-1 text-right"><a id="8" href="#8">8</a></td><td class="col-11 codeLine"><span class="keyword">use</span><span class="default">&nbsp;</span><span class="default">Hyde\Framework\Models\Markdown</span><span class="keyword">;</span></td></tr>
+    <tr class=" d-flex"><td  class="col-1 text-right"><a id="7" href="#7">7</a></td><td class="col-11 codeLine"><span class="keyword">use</span><span class="default">&nbsp;</span><span class="default">Hyde\Framework\Models\Markdown\FrontMatter</span><span class="keyword">;</span></td></tr>
+    <tr class=" d-flex"><td  class="col-1 text-right"><a id="8" href="#8">8</a></td><td class="col-11 codeLine"><span class="keyword">use</span><span class="default">&nbsp;</span><span class="default">Hyde\Framework\Models\Markdown\Markdown</span><span class="keyword">;</span></td></tr>
     <tr class=" d-flex"><td  class="col-1 text-right"><a id="9" href="#9">9</a></td><td class="col-11 codeLine"></td></tr>
     <tr class=" d-flex"><td  class="col-1 text-right"><a id="10" href="#10">10</a></td><td class="col-11 codeLine"><span class="comment">/**</span></td></tr>
     <tr class=" d-flex"><td  class="col-1 text-right"><a id="11" href="#11">11</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;*&nbsp;The&nbsp;base&nbsp;class&nbsp;for&nbsp;all&nbsp;Markdown-based&nbsp;page&nbsp;models.</span></td></tr>
@@ -259,13 +259,13 @@
     <tr class=" d-flex"><td  class="col-1 text-right"><a id="41" href="#41">41</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Construct&nbsp;a&nbsp;new&nbsp;MarkdownPage&nbsp;object&nbsp;from&nbsp;constructed&nbsp;data&nbsp;types.</span></td></tr>
     <tr class=" d-flex"><td  class="col-1 text-right"><a id="42" href="#42">42</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Normally,&nbsp;this&nbsp;is&nbsp;done&nbsp;by&nbsp;the&nbsp;SourceFileParser.</span></td></tr>
     <tr class=" d-flex"><td  class="col-1 text-right"><a id="43" href="#43">43</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span></td></tr>
-    <tr class=" d-flex"><td  class="col-1 text-right"><a id="44" href="#44">44</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@see&nbsp;\Hyde\Framework\Actions\SourceFileParser</span></td></tr>
-    <tr class=" d-flex"><td  class="col-1 text-right"><a id="45" href="#45">45</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span></td></tr>
-    <tr class=" d-flex"><td  class="col-1 text-right"><a id="46" href="#46">46</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;The&nbsp;types&nbsp;are&nbsp;strictly&nbsp;enforced&nbsp;to&nbsp;ensure&nbsp;a&nbsp;predictable&nbsp;behavior&nbsp;and&nbsp;constant&nbsp;access&nbsp;interface.</span></td></tr>
+    <tr class=" d-flex"><td  class="col-1 text-right"><a id="44" href="#44">44</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;&nbsp;string&nbsp;&nbsp;$identifier</span></td></tr>
+    <tr class=" d-flex"><td  class="col-1 text-right"><a id="45" href="#45">45</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;&nbsp;\Hyde\Framework\Models\Markdown\FrontMatter|null&nbsp;&nbsp;$matter</span></td></tr>
+    <tr class=" d-flex"><td  class="col-1 text-right"><a id="46" href="#46">46</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;&nbsp;\Hyde\Framework\Models\Markdown\Markdown|null&nbsp;&nbsp;$markdown</span></td></tr>
     <tr class=" d-flex"><td  class="col-1 text-right"><a id="47" href="#47">47</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span></td></tr>
-    <tr class=" d-flex"><td  class="col-1 text-right"><a id="48" href="#48">48</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;&nbsp;string&nbsp;&nbsp;$identifier</span></td></tr>
-    <tr class=" d-flex"><td  class="col-1 text-right"><a id="49" href="#49">49</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;&nbsp;\Hyde\Framework\Models\FrontMatter|null&nbsp;&nbsp;$matter</span></td></tr>
-    <tr class=" d-flex"><td  class="col-1 text-right"><a id="50" href="#50">50</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;&nbsp;\Hyde\Framework\Models\Markdown|null&nbsp;&nbsp;$markdown</span></td></tr>
+    <tr class=" d-flex"><td  class="col-1 text-right"><a id="48" href="#48">48</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*@see&nbsp;\Hyde\Framework\Actions\SourceFileParser</span></td></tr>
+    <tr class=" d-flex"><td  class="col-1 text-right"><a id="49" href="#49">49</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span></td></tr>
+    <tr class=" d-flex"><td  class="col-1 text-right"><a id="50" href="#50">50</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;The&nbsp;types&nbsp;are&nbsp;strictly&nbsp;enforced&nbsp;to&nbsp;ensure&nbsp;a&nbsp;predictable&nbsp;behavior&nbsp;and&nbsp;constant&nbsp;access&nbsp;interface.</span></td></tr>
     <tr class=" d-flex"><td  class="col-1 text-right"><a id="51" href="#51">51</a></td><td class="col-11 codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span></td></tr>
     <tr class=" d-flex"><td  class="col-1 text-right"><a id="52" href="#52">52</a></td><td class="col-11 codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">__construct</span><span class="keyword">(</span><span class="default">string</span><span class="default">&nbsp;</span><span class="default">$identifier</span><span class="default">&nbsp;</span><span class="keyword">=</span><span class="default">&nbsp;</span><span class="default">''</span><span class="keyword">,</span><span class="default">&nbsp;</span><span class="keyword">?</span><span class="default">FrontMatter</span><span class="default">&nbsp;</span><span class="default">$matter</span><span class="default">&nbsp;</span><span class="keyword">=</span><span class="default">&nbsp;</span><span class="default">null</span><span class="keyword">,</span><span class="default">&nbsp;</span><span class="keyword">?</span><span class="default">Markdown</span><span class="default">&nbsp;</span><span class="default">$markdown</span><span class="default">&nbsp;</span><span class="keyword">=</span><span class="default">&nbsp;</span><span class="default">null</span><span class="keyword">)</span></td></tr>
     <tr class=" d-flex"><td  class="col-1 text-right"><a id="53" href="#53">53</a></td><td class="col-11 codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">{</span></td></tr>
@@ -314,7 +314,7 @@
     <h4>Legend</h4>
     <p><span class="success"><strong>Executed</strong></span><span class="danger"><strong>Not Executed</strong></span><span class="warning"><strong>Dead Code</strong></span></p>
     <p>
-     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.17</a> using <a href="https://secure.php.net/" target="_top">PHP 8.0.22</a> and <a href="https://phpunit.de/">PHPUnit 9.5.24</a> at Wed Sep 14 19:57:25 UTC 2022.</small>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.17</a> using <a href="https://secure.php.net/" target="_top">PHP 8.0.22</a> and <a href="https://phpunit.de/">PHPUnit 9.5.24</a> at Wed Sep 14 20:13:59 UTC 2022.</small>
     </p>
     <a title="Back to the top" id="toplink" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M12 11L6 5l-6 6h12z"/></svg>

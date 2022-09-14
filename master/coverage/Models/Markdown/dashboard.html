@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Dashboard for /home/runner/work/develop/develop/packages/framework/src/Models/Metadata</title>
+  <title>Dashboard for /home/runner/work/develop/develop/packages/framework/src/Models/Markdown</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="../../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
@@ -18,7 +18,7 @@
        <ol class="breadcrumb">
          <li class="breadcrumb-item"><a href="../../index.html">/home/runner/work/develop/develop/packages/framework/src</a></li>
          <li class="breadcrumb-item"><a href="../index.html">Models</a></li>
-         <li class="breadcrumb-item"><a href="index.html">Metadata</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Markdown</a></li>
          <li class="breadcrumb-item active">(Dashboard)</li>
 
        </ol>
@@ -156,7 +156,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#classCoverageDistribution svg')
-      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,4], "Class Coverage"))
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,3], "Class Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -174,7 +174,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#methodCoverageDistribution svg')
-      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,21], "Method Coverage"))
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,20], "Method Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -224,7 +224,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Cyclomatic Complexity');
 
     d3.select('#classComplexity svg')
-      .datum(getComplexityData([[100,4,"<a href=\"LinkItem.php.html#7\">Hyde\\Framework\\Models\\Metadata\\LinkItem<\/a>"],[100,24,"<a href=\"MetadataBag.php.html#16\">Hyde\\Framework\\Models\\Metadata\\MetadataBag<\/a>"],[100,3,"<a href=\"MetadataItem.php.html#7\">Hyde\\Framework\\Models\\Metadata\\MetadataItem<\/a>"],[100,5,"<a href=\"OpenGraphItem.php.html#7\">Hyde\\Framework\\Models\\Metadata\\OpenGraphItem<\/a>"]], 'Class Complexity'))
+      .datum(getComplexityData([[100,9,"<a href=\"FrontMatter.php.html#24\">Hyde\\Framework\\Models\\Markdown\\FrontMatter<\/a>"],[100,8,"<a href=\"Markdown.php.html#14\">Hyde\\Framework\\Models\\Markdown\\Markdown<\/a>"],[100,8,"<a href=\"MarkdownDocument.php.html#15\">Hyde\\Framework\\Models\\Markdown\\MarkdownDocument<\/a>"]], 'Class Complexity'))
       .transition()
       .duration(500)
       .call(chart);
@@ -248,7 +248,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Method Complexity');
 
     d3.select('#methodComplexity svg')
-      .datum(getComplexityData([[100,1,"<a href=\"LinkItem.php.html#9\">Hyde\\Framework\\Models\\Metadata\\LinkItem::__construct<\/a>"],[100,2,"<a href=\"LinkItem.php.html#13\">Hyde\\Framework\\Models\\Metadata\\LinkItem::__toString<\/a>"],[100,1,"<a href=\"LinkItem.php.html#26\">Hyde\\Framework\\Models\\Metadata\\LinkItem::uniqueKey<\/a>"],[100,2,"<a href=\"MetadataBag.php.html#25\">Hyde\\Framework\\Models\\Metadata\\MetadataBag::__construct<\/a>"],[100,1,"<a href=\"MetadataBag.php.html#33\">Hyde\\Framework\\Models\\Metadata\\MetadataBag::toHtml<\/a>"],[100,1,"<a href=\"MetadataBag.php.html#38\">Hyde\\Framework\\Models\\Metadata\\MetadataBag::render<\/a>"],[100,1,"<a href=\"MetadataBag.php.html#43\">Hyde\\Framework\\Models\\Metadata\\MetadataBag::get<\/a>"],[100,4,"<a href=\"MetadataBag.php.html#53\">Hyde\\Framework\\Models\\Metadata\\MetadataBag::add<\/a>"],[100,1,"<a href=\"MetadataBag.php.html#68\">Hyde\\Framework\\Models\\Metadata\\MetadataBag::generate<\/a>"],[100,4,"<a href=\"MetadataBag.php.html#73\">Hyde\\Framework\\Models\\Metadata\\MetadataBag::addDynamicPageMetadata<\/a>"],[100,4,"<a href=\"MetadataBag.php.html#89\">Hyde\\Framework\\Models\\Metadata\\MetadataBag::addMetadataForMarkdownPost<\/a>"],[100,2,"<a href=\"MetadataBag.php.html#111\">Hyde\\Framework\\Models\\Metadata\\MetadataBag::addPostMetadataIfExists<\/a>"],[100,2,"<a href=\"MetadataBag.php.html#118\">Hyde\\Framework\\Models\\Metadata\\MetadataBag::getPrefixedArray<\/a>"],[100,2,"<a href=\"MetadataBag.php.html#128\">Hyde\\Framework\\Models\\Metadata\\MetadataBag::resolveImageLink<\/a>"],[100,1,"<a href=\"MetadataItem.php.html#9\">Hyde\\Framework\\Models\\Metadata\\MetadataItem::__construct<\/a>"],[100,1,"<a href=\"MetadataItem.php.html#13\">Hyde\\Framework\\Models\\Metadata\\MetadataItem::__toString<\/a>"],[100,1,"<a href=\"MetadataItem.php.html#18\">Hyde\\Framework\\Models\\Metadata\\MetadataItem::uniqueKey<\/a>"],[100,1,"<a href=\"OpenGraphItem.php.html#9\">Hyde\\Framework\\Models\\Metadata\\OpenGraphItem::__construct<\/a>"],[100,1,"<a href=\"OpenGraphItem.php.html#14\">Hyde\\Framework\\Models\\Metadata\\OpenGraphItem::__toString<\/a>"],[100,1,"<a href=\"OpenGraphItem.php.html#19\">Hyde\\Framework\\Models\\Metadata\\OpenGraphItem::uniqueKey<\/a>"],[100,2,"<a href=\"OpenGraphItem.php.html#24\">Hyde\\Framework\\Models\\Metadata\\OpenGraphItem::normalizeProperty<\/a>"]], 'Method Complexity'))
+      .datum(getComplexityData([[100,1,"<a href=\"FrontMatter.php.html#30\">Hyde\\Framework\\Models\\Markdown\\FrontMatter::__construct<\/a>"],[100,1,"<a href=\"FrontMatter.php.html#35\">Hyde\\Framework\\Models\\Markdown\\FrontMatter::__toString<\/a>"],[100,1,"<a href=\"FrontMatter.php.html#40\">Hyde\\Framework\\Models\\Markdown\\FrontMatter::__get<\/a>"],[100,2,"<a href=\"FrontMatter.php.html#45\">Hyde\\Framework\\Models\\Markdown\\FrontMatter::get<\/a>"],[100,1,"<a href=\"FrontMatter.php.html#54\">Hyde\\Framework\\Models\\Markdown\\FrontMatter::set<\/a>"],[100,1,"<a href=\"FrontMatter.php.html#61\">Hyde\\Framework\\Models\\Markdown\\FrontMatter::has<\/a>"],[100,1,"<a href=\"FrontMatter.php.html#66\">Hyde\\Framework\\Models\\Markdown\\FrontMatter::toArray<\/a>"],[100,1,"<a href=\"FrontMatter.php.html#71\">Hyde\\Framework\\Models\\Markdown\\FrontMatter::fromArray<\/a>"],[100,1,"<a href=\"Markdown.php.html#18\">Hyde\\Framework\\Models\\Markdown\\Markdown::__construct<\/a>"],[100,1,"<a href=\"Markdown.php.html#23\">Hyde\\Framework\\Models\\Markdown\\Markdown::__toString<\/a>"],[100,1,"<a href=\"Markdown.php.html#28\">Hyde\\Framework\\Models\\Markdown\\Markdown::body<\/a>"],[100,1,"<a href=\"Markdown.php.html#33\">Hyde\\Framework\\Models\\Markdown\\Markdown::compile<\/a>"],[100,1,"<a href=\"Markdown.php.html#43\">Hyde\\Framework\\Models\\Markdown\\Markdown::toArray<\/a>"],[100,1,"<a href=\"Markdown.php.html#48\">Hyde\\Framework\\Models\\Markdown\\Markdown::fromFile<\/a>"],[100,2,"<a href=\"Markdown.php.html#61\">Hyde\\Framework\\Models\\Markdown\\Markdown::render<\/a>"],[100,3,"<a href=\"MarkdownDocument.php.html#20\">Hyde\\Framework\\Models\\Markdown\\MarkdownDocument::__construct<\/a>"],[100,1,"<a href=\"MarkdownDocument.php.html#26\">Hyde\\Framework\\Models\\Markdown\\MarkdownDocument::__toString<\/a>"],[100,2,"<a href=\"MarkdownDocument.php.html#31\">Hyde\\Framework\\Models\\Markdown\\MarkdownDocument::matter<\/a>"],[100,1,"<a href=\"MarkdownDocument.php.html#36\">Hyde\\Framework\\Models\\Markdown\\MarkdownDocument::markdown<\/a>"],[100,1,"<a href=\"MarkdownDocument.php.html#41\">Hyde\\Framework\\Models\\Markdown\\MarkdownDocument::parse<\/a>"]], 'Method Complexity'))
       .transition()
       .duration(500)
       .call(chart);

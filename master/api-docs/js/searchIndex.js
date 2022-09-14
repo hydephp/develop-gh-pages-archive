@@ -2056,56 +2056,6 @@ Search.appendIndex(
             "summary": "Shorter\u0020version\u0020of\u0020the\u0020sentence\u0020string.",
             "url": "classes/Hyde-Framework-Models-DateString.html#property_short"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter",
-            "name": "FrontMatter",
-            "summary": "Object\u0020representing\u0020the\u0020YAML\u0020front\u0020matter\u0020of\u0020a\u0020Markdown\u0020file.",
-            "url": "classes/Hyde-Framework-Models-FrontMatter.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-FrontMatter.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003A__toString\u0028\u0029",
-            "name": "__toString",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-FrontMatter.html#method___toString"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003A__get\u0028\u0029",
-            "name": "__get",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-FrontMatter.html#method___get"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-FrontMatter.html#method_get"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003Aset\u0028\u0029",
-            "name": "set",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-FrontMatter.html#method_set"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003Ahas\u0028\u0029",
-            "name": "has",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-FrontMatter.html#method_has"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-FrontMatter.html#method_toArray"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003AfromArray\u0028\u0029",
-            "name": "fromArray",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-FrontMatter.html#method_fromArray"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\FrontMatter\u003A\u003A\u0024data",
-            "name": "data",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-FrontMatter.html#property_data"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Image",
             "name": "Image",
             "summary": "Holds\u0020the\u0020information\u0020for\u0020an\u0020image.",
@@ -2221,75 +2171,125 @@ Search.appendIndex(
             "summary": "The\u0020image\u0027s\u0020source\u0020\u0028for\u0020attribution\u0029.",
             "url": "classes/Hyde-Framework-Models-Image.html#property_credit"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Markdown",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\FrontMatter",
+            "name": "FrontMatter",
+            "summary": "Object\u0020representing\u0020the\u0020YAML\u0020front\u0020matter\u0020of\u0020a\u0020Markdown\u0020file.",
+            "url": "classes/Hyde-Framework-Models-Markdown-FrontMatter.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\FrontMatter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Markdown-FrontMatter.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\FrontMatter\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Markdown-FrontMatter.html#method___toString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\FrontMatter\u003A\u003A__get\u0028\u0029",
+            "name": "__get",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Markdown-FrontMatter.html#method___get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\FrontMatter\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Markdown-FrontMatter.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\FrontMatter\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Markdown-FrontMatter.html#method_set"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\FrontMatter\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Markdown-FrontMatter.html#method_has"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\FrontMatter\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Markdown-FrontMatter.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\FrontMatter\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Markdown-FrontMatter.html#method_fromArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\FrontMatter\u003A\u003A\u0024data",
+            "name": "data",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Markdown-FrontMatter.html#property_data"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\Markdown",
             "name": "Markdown",
             "summary": "A\u0020simple\u0020object\u0020representation\u0020of\u0020a\u0020Markdown\u0020file,\u0020with\u0020helpful\u0020methods\u0020to\u0020interact\u0020with\u0020it.",
-            "url": "classes/Hyde-Framework-Models-Markdown.html"
+            "url": "classes/Hyde-Framework-Models-Markdown-Markdown.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\Markdown\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Markdown.html#method___construct"
+            "url": "classes/Hyde-Framework-Models-Markdown-Markdown.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003A__toString\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\Markdown\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Markdown.html#method___toString"
+            "url": "classes/Hyde-Framework-Models-Markdown-Markdown.html#method___toString"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003A\u0024body",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\Markdown\u003A\u003A\u0024body",
             "name": "body",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Markdown.html#property_body"
+            "url": "classes/Hyde-Framework-Models-Markdown-Markdown.html#property_body"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003Acompile\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\Markdown\u003A\u003Acompile\u0028\u0029",
             "name": "compile",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Markdown.html#method_compile"
+            "url": "classes/Hyde-Framework-Models-Markdown-Markdown.html#method_compile"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003AtoArray\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\Markdown\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
             "summary": "Return\u0020the\u0020Markdown\u0020document\u0020body\u0020explored\u0020by\u0020line\u0020into\u0020an\u0020array.",
-            "url": "classes/Hyde-Framework-Models-Markdown.html#method_toArray"
+            "url": "classes/Hyde-Framework-Models-Markdown-Markdown.html#method_toArray"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003AfromFile\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\Markdown\u003A\u003AfromFile\u0028\u0029",
             "name": "fromFile",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Markdown.html#method_fromFile"
+            "url": "classes/Hyde-Framework-Models-Markdown-Markdown.html#method_fromFile"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\u003A\u003Arender\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\Markdown\u003A\u003Arender\u0028\u0029",
             "name": "render",
             "summary": "Render\u0020a\u0020Markdown\u0020string\u0020into\u0020HTML.",
-            "url": "classes/Hyde-Framework-Models-Markdown.html#method_render"
+            "url": "classes/Hyde-Framework-Models-Markdown-Markdown.html#method_render"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\MarkdownDocument",
             "name": "MarkdownDocument",
             "summary": "A\u0020MarkdownDocument\u0020is\u0020a\u0020simpler\u0020alternative\u0020to\u0020a\u0020MarkdownPage.",
-            "url": "classes/Hyde-Framework-Models-MarkdownDocument.html"
+            "url": "classes/Hyde-Framework-Models-Markdown-MarkdownDocument.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\MarkdownDocument\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#method___construct"
+            "url": "classes/Hyde-Framework-Models-Markdown-MarkdownDocument.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003A__toString\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\MarkdownDocument\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#method___toString"
+            "url": "classes/Hyde-Framework-Models-Markdown-MarkdownDocument.html#method___toString"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003A\u0024matter",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\MarkdownDocument\u003A\u003A\u0024matter",
             "name": "matter",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#property_matter"
+            "url": "classes/Hyde-Framework-Models-Markdown-MarkdownDocument.html#property_matter"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003A\u0024markdown",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\MarkdownDocument\u003A\u003A\u0024markdown",
             "name": "markdown",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#property_markdown"
+            "url": "classes/Hyde-Framework-Models-Markdown-MarkdownDocument.html#property_markdown"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\MarkdownDocument\u003A\u003Aparse\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\MarkdownDocument\u003A\u003Aparse\u0028\u0029",
             "name": "parse",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-MarkdownDocument.html#method_parse"
+            "url": "classes/Hyde-Framework-Models-Markdown-MarkdownDocument.html#method_parse"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Metadata\\LinkItem",
             "name": "LinkItem",
@@ -4210,6 +4210,11 @@ Search.appendIndex(
             "name": "Models",
             "summary": "",
             "url": "namespaces/hyde-framework-models.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Markdown",
+            "name": "Markdown",
+            "summary": "",
+            "url": "namespaces/hyde-framework-models-markdown.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Metadata",
             "name": "Metadata",
