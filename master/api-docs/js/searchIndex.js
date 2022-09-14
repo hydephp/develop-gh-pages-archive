@@ -796,6 +796,51 @@ Search.appendIndex(
             "summary": "The\u0020source\u0020path.",
             "url": "classes/Hyde-Framework-Commands-HydeRebuildStaticSiteCommand.html#property_path"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeRouteListCommand",
+            "name": "HydeRouteListCommand",
+            "summary": "Hyde\u0020command\u0020to\u0020display\u0020the\u0020list\u0020of\u0020site\u0020routes.",
+            "url": "classes/Hyde-Framework-Commands-HydeRouteListCommand.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeRouteListCommand\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeRouteListCommand.html#method_handle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeRouteListCommand\u003A\u003AgetRoutes\u0028\u0029",
+            "name": "getRoutes",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeRouteListCommand.html#method_getRoutes"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeRouteListCommand\u003A\u003AformatPageType\u0028\u0029",
+            "name": "formatPageType",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeRouteListCommand.html#method_formatPageType"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeRouteListCommand\u003A\u003AformatSourcePath\u0028\u0029",
+            "name": "formatSourcePath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeRouteListCommand.html#method_formatSourcePath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeRouteListCommand\u003A\u003AformatOutputPath\u0028\u0029",
+            "name": "formatOutputPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeRouteListCommand.html#method_formatOutputPath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeRouteListCommand\u003A\u003AclickablePathLink\u0028\u0029",
+            "name": "clickablePathLink",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeRouteListCommand.html#method_clickablePathLink"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeRouteListCommand\u003A\u003A\u0024signature",
+            "name": "signature",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeRouteListCommand.html#property_signature"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydeRouteListCommand\u003A\u003A\u0024description",
+            "name": "description",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydeRouteListCommand.html#property_description"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydeServeCommand",
             "name": "HydeServeCommand",
             "summary": "Start\u0020the\u0020realtime\u0020compiler\u0020server.",
