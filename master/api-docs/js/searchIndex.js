@@ -1796,6 +1796,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Helpers-Meta.html#method_getConfiguredMeta"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Redirect",
+            "name": "Redirect",
+            "summary": "A\u0020basic\u0020redirect\u0020page.\u0020Is\u0020not\u0020discoverable\u0020by\u0020Hyde,\u0020instead\u0020you\u0020manually\u0020need\u0020to\u0020create\u0020the\u0020pages.",
+            "url": "classes/Hyde-Framework-Helpers-Redirect.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Redirect\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Redirect.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Redirect\u003A\u003Amake\u0028\u0029",
+            "name": "make",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Redirect.html#method_make"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Redirect\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Redirect.html#method_render"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Redirect\u003A\u003Astore\u0028\u0029",
+            "name": "store",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Redirect.html#method_store"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Redirect\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Redirect.html#property_path"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Redirect\u003A\u003A\u0024destination",
+            "name": "destination",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Redirect.html#property_destination"
+        },                {
             "fqsen": "\\hyde\u0028\u0029",
             "name": "hyde",
             "summary": "Get\u0020the\u0020available\u0020HydeKernel\u0020instance.",
