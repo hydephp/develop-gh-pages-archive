@@ -1606,11 +1606,6 @@ Search.appendIndex(
             "summary": "Determine\u0020if\u0020the\u0020given\u0020specified\u0020is\u0020enabled.",
             "url": "classes/Hyde-Framework-Helpers-Features.html#method_enabled"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AhasBlogPosts\u0028\u0029",
-            "name": "hasBlogPosts",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Helpers-Features.html#method_hasBlogPosts"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AhasHtmlPages\u0028\u0029",
             "name": "hasHtmlPages",
             "summary": "",
@@ -1625,6 +1620,11 @@ Search.appendIndex(
             "name": "hasMarkdownPages",
             "summary": "",
             "url": "classes/Hyde-Framework-Helpers-Features.html#method_hasMarkdownPages"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AhasMarkdownPosts\u0028\u0029",
+            "name": "hasMarkdownPosts",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Features.html#method_hasMarkdownPosts"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AhasDocumentationPages\u0028\u0029",
             "name": "hasDocumentationPages",
@@ -1651,11 +1651,6 @@ Search.appendIndex(
             "summary": "Torchlight\u0020is\u0020by\u0020default\u0020enabled\u0020automatically\u0020when\u0020an\u0020API\u0020token\nis\u0020set\u0020in\u0020the\u0020.env\u0020file\u0020but\u0020is\u0020disabled\u0020when\u0020running\u0020tests.",
             "url": "classes/Hyde-Framework-Helpers-Features.html#method_hasTorchlight"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AblogPosts\u0028\u0029",
-            "name": "blogPosts",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Helpers-Features.html#method_blogPosts"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AhtmlPages\u0028\u0029",
             "name": "htmlPages",
             "summary": "",
@@ -1670,6 +1665,11 @@ Search.appendIndex(
             "name": "markdownPages",
             "summary": "",
             "url": "classes/Hyde-Framework-Helpers-Features.html#method_markdownPages"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AmarkdownPosts\u0028\u0029",
+            "name": "markdownPosts",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Features.html#method_markdownPosts"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AdocumentationPages\u0028\u0029",
             "name": "documentationPages",
