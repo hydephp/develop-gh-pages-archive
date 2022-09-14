@@ -406,6 +406,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_get"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AconstructPage\u0028\u0029",
+            "name": "constructPage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_constructPage"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003A\u0024identifier",
             "name": "identifier",
             "summary": "",
