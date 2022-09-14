@@ -3491,10 +3491,20 @@ Search.appendIndex(
             "summary": "Alias\u0020for\u0020constructCdnPath.",
             "url": "classes/Hyde-Framework-Services-AssetService.html#method_cdnLink"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AmediaLink\u0028\u0029",
+            "name": "mediaLink",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-AssetService.html#method_mediaLink"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AhasMediaFile\u0028\u0029",
             "name": "hasMediaFile",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-AssetService.html#method_hasMediaFile"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AgetCacheBustKey\u0028\u0029",
+            "name": "getCacheBustKey",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-AssetService.html#method_getCacheBustKey"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\BuildService",
             "name": "BuildService",
