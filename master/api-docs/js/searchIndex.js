@@ -391,6 +391,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method___construct"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AconstructPage\u0028\u0029",
+            "name": "constructPage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_constructPage"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AparseBladePage\u0028\u0029",
             "name": "parseBladePage",
             "summary": "",
@@ -405,11 +410,6 @@ Search.appendIndex(
             "name": "get",
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_get"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003AconstructPage\u0028\u0029",
-            "name": "constructPage",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-SourceFileParser.html#method_constructPage"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser\u003A\u003A\u0024identifier",
             "name": "identifier",
@@ -1611,6 +1611,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Helpers-Features.html#method_hasBlogPosts"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AhasHtmlPages\u0028\u0029",
+            "name": "hasHtmlPages",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Features.html#method_hasHtmlPages"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AhasBladePages\u0028\u0029",
             "name": "hasBladePages",
             "summary": "",
@@ -1650,6 +1655,11 @@ Search.appendIndex(
             "name": "blogPosts",
             "summary": "",
             "url": "classes/Hyde-Framework-Helpers-Features.html#method_blogPosts"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AhtmlPages\u0028\u0029",
+            "name": "htmlPages",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Helpers-Features.html#method_htmlPages"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Features\u003A\u003AbladePages\u0028\u0029",
             "name": "bladePages",
@@ -2735,6 +2745,36 @@ Search.appendIndex(
             "name": "template",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#property_template"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\HtmlPage",
+            "name": "HtmlPage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-HtmlPage.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\HtmlPage\u003A\u003Acontents\u0028\u0029",
+            "name": "contents",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-HtmlPage.html#method_contents"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\HtmlPage\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-HtmlPage.html#method_compile"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\HtmlPage\u003A\u003A\u0024sourceDirectory",
+            "name": "sourceDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-HtmlPage.html#property_sourceDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\HtmlPage\u003A\u003A\u0024outputDirectory",
+            "name": "outputDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-HtmlPage.html#property_outputDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\HtmlPage\u003A\u003A\u0024fileExtension",
+            "name": "fileExtension",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Pages-HtmlPage.html#property_fileExtension"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPage",
             "name": "MarkdownPage",
