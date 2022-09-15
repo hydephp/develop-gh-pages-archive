@@ -3323,18 +3323,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor",
             "name": "CodeblockFilepathProcessor",
-            "summary": "",
+            "summary": "Resolves\u0020file\u0020path\u0020comments\u0020found\u0020in\u0020Markdown\u0020code\u0020blocks\u0020into\u0020a\u0020neat\u0020badge\u0020shown\u0020in\u0020the\u0020top\u0020right\u0020corner.",
             "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003Apreprocess\u0028\u0029",
             "name": "preprocess",
-            "summary": "",
+            "summary": "Extract\u0020lines\u0020matching\u0020the\u0020shortcode\u0020pattern\u0020and\u0020replace\u0020them\u0020with\u0020meta\u002Dblocks\u0020that\u0020will\u0020be\u0020processed\u0020later.",
             "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#method_preprocess"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003Aprocess\u0028\u0029",
-            "name": "process",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#method_process"
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003Apostprocess\u0028\u0029",
+            "name": "postprocess",
+            "summary": "Process\u0020the\u0020meta\u002Dblocks\u0020added\u0020by\u0020the\u0020preprocessor,\u0020injecting\u0020the\u0020filepath\u0020badge\u0020template\u0020into\u0020the\u0020code\u0020block.",
+            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#method_postprocess"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003AlineMatchesPattern\u0028\u0029",
             "name": "lineMatchesPattern",
@@ -3351,15 +3351,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#method_resolveTemplate"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003AresolveTorchlightCodeLine\u0028\u0029",
-            "name": "resolveTorchlightCodeLine",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003AinjectLabelToTorchlightCodeLine\u0028\u0029",
+            "name": "injectLabelToTorchlightCodeLine",
             "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#method_resolveTorchlightCodeLine"
+            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#method_injectLabelToTorchlightCodeLine"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003AresolveCodeLine\u0028\u0029",
-            "name": "resolveCodeLine",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003AinjectLabelToCodeLine\u0028\u0029",
+            "name": "injectLabelToCodeLine",
             "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#method_resolveCodeLine"
+            "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#method_injectLabelToCodeLine"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\CodeblockFilepathProcessor\u003A\u003A\u0024patterns",
             "name": "patterns",
@@ -3375,6 +3375,11 @@ Search.appendIndex(
             "name": "ShortcodeProcessor",
             "summary": "Handle\u0020all\u0020shortcode\u0020processing\u0020for\u0020a\u0020Markdown\u0020conversion.",
             "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003Apreprocess\u0028\u0029",
+            "name": "preprocess",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_preprocess"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
@@ -3395,11 +3400,6 @@ Search.appendIndex(
             "name": "run",
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_run"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003Apreprocess\u0028\u0029",
-            "name": "preprocess",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_preprocess"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003AdiscoverShortcodes\u0028\u0029",
             "name": "discoverShortcodes",
