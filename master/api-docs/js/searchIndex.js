@@ -2571,11 +2571,6 @@ Search.appendIndex(
             "summary": "Page\u0020class\u0020for\u0020documentation\u0020pages.",
             "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Construct\u0020a\u0020new\u0020MarkdownPage\u0020object\u0020from\u0020constructed\u0020data\u0020types.",
-            "url": "classes/Hyde-Framework-Models-Pages-DocumentationPage.html#method___construct"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\DocumentationPage\u003A\u003AgetRouteKey\u0028\u0029",
             "name": "getRouteKey",
             "summary": "",
@@ -2670,11 +2665,6 @@ Search.appendIndex(
             "name": "MarkdownPost",
             "summary": "Page\u0020class\u0020for\u0020Markdown\u0020posts.",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Construct\u0020a\u0020new\u0020MarkdownPage\u0020object\u0020from\u0020constructed\u0020data\u0020types.",
-            "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#method___construct"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Pages\\MarkdownPost\u003A\u003AgetLatestPosts\u0028\u0029",
             "name": "getLatestPosts",
