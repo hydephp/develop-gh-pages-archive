@@ -3361,16 +3361,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#property_torchlightKey"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownServiceProvider",
-            "name": "MarkdownServiceProvider",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownServiceProvider.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownServiceProvider\u003A\u003Aregister\u0028\u0029",
-            "name": "register",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownServiceProvider.html#method_register"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor",
             "name": "ShortcodeProcessor",
             "summary": "Handle\u0020shortcode\u0020processing\u0020for\u0020Markdown\u0020conversions.",
