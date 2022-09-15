@@ -109,7 +109,7 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Hyde-Framework-Contracts-MarkdownProcessorContract.html"><abbr title="\Hyde\Framework\Contracts\MarkdownProcessorContract">MarkdownProcessorContract</abbr></a>                    </span>
+                            <a href="classes/Hyde-Framework-Contracts-MarkdownPreProcessorContract.html"><abbr title="\Hyde\Framework\Contracts\MarkdownPreProcessorContract">MarkdownPreProcessorContract</abbr></a>                    </span>
     
     </h2>
 
@@ -163,8 +163,8 @@ do not use regex, as that would make them harder to read.</p>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-MarkdownProcessorContract.html"><abbr title="\Hyde\Framework\Contracts\MarkdownProcessorContract">MarkdownProcessorContract</abbr></a></dt>
-        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-MarkdownPreProcessorContract.html"><abbr title="\Hyde\Framework\Contracts\MarkdownPreProcessorContract">MarkdownPreProcessorContract</abbr></a></dt>
+        <dd>Process Markdown before it is converted to HTML.</dd>
     
     
     
@@ -227,7 +227,7 @@ do not use regex, as that would make them harder to read.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_process">process()</a>
+    <a href="classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_preprocess">preprocess()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -560,9 +560,9 @@ do not use regex, as that would make them harder to read.</p>
             -public
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_process">
-        process()
-        <a href="classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_process" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_preprocess">
+        preprocess()
+        <a href="classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_preprocess" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Markdown/ShortcodeProcessor.php"><a href="files/packages-framework-src-modules-markdown-shortcodeprocessor.html"><abbr title="packages/framework/src/Modules/Markdown/ShortcodeProcessor.php">ShortcodeProcessor.php</abbr></a></abbr>
@@ -574,7 +574,7 @@ do not use regex, as that would make them harder to read.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">process</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">preprocess</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>

@@ -1341,15 +1341,25 @@ Search.appendIndex(
             "summary": "Return\u0020the\u0020document\u0027s\u0020Markdown\u0020object.",
             "url": "classes/Hyde-Framework-Contracts-MarkdownDocumentContract.html#method_markdown"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownProcessorContract",
-            "name": "MarkdownProcessorContract",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-MarkdownProcessorContract.html"
+            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPostProcessorContract",
+            "name": "MarkdownPostProcessorContract",
+            "summary": "Process\u0020Markdown\u0020after\u0020it\u0020is\u0020converted\u0020to\u0020HTML.",
+            "url": "classes/Hyde-Framework-Contracts-MarkdownPostProcessorContract.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownProcessorContract\u003A\u003Aprocess\u0028\u0029",
-            "name": "process",
+            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPostProcessorContract\u003A\u003Apostprocess\u0028\u0029",
+            "name": "postprocess",
             "summary": "",
-            "url": "classes/Hyde-Framework-Contracts-MarkdownProcessorContract.html#method_process"
+            "url": "classes/Hyde-Framework-Contracts-MarkdownPostProcessorContract.html#method_postprocess"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPreProcessorContract",
+            "name": "MarkdownPreProcessorContract",
+            "summary": "Process\u0020Markdown\u0020before\u0020it\u0020is\u0020converted\u0020to\u0020HTML.",
+            "url": "classes/Hyde-Framework-Contracts-MarkdownPreProcessorContract.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownPreProcessorContract\u003A\u003Apreprocess\u0028\u0029",
+            "name": "preprocess",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Contracts-MarkdownPreProcessorContract.html#method_preprocess"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\MarkdownShortcodeContract",
             "name": "MarkdownShortcodeContract",
@@ -3386,10 +3396,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_run"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003Aprocess\u0028\u0029",
-            "name": "process",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003Apreprocess\u0028\u0029",
+            "name": "preprocess",
             "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_process"
+            "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#method_preprocess"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003AdiscoverShortcodes\u0028\u0029",
             "name": "discoverShortcodes",
