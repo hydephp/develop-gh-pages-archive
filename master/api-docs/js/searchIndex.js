@@ -241,6 +241,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-GeneratesSidebarTableOfContents.html#property_markdown"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\MarkdownConverter",
+            "name": "MarkdownConverter",
+            "summary": "The\u0020base\u0020Markdown\u0020converter\u0020class.",
+            "url": "classes/Hyde-Framework-Actions-MarkdownConverter.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\MarkdownConverter\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Create\u0020a\u0020new\u0020Markdown\u0020converter\u0020pre\u002Dconfigured\u0020for\u0020CommonMark.",
+            "url": "classes/Hyde-Framework-Actions-MarkdownConverter.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\MarkdownFileParser",
+            "name": "MarkdownFileParser",
+            "summary": "Prepares\u0020a\u0020Markdown\u0020file\u0020for\u0020further\u0020usage\u0020by\u0020extracting\u0020the\u0020Front\u0020Matter\u0020and\u0020creating\u0020MarkdownDocument\u0020object.",
+            "url": "classes/Hyde-Framework-Actions-MarkdownFileParser.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\MarkdownFileParser\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-MarkdownFileParser.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\MarkdownFileParser\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Get\u0020the\u0020processed\u0020Markdown\u0020file\u0020as\u0020a\u0020MarkdownDocument.",
+            "url": "classes/Hyde-Framework-Actions-MarkdownFileParser.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\MarkdownFileParser\u003A\u003Aparse\u0028\u0029",
+            "name": "parse",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-MarkdownFileParser.html#method_parse"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\MarkdownFileParser\u003A\u003A\u0024matter",
+            "name": "matter",
+            "summary": "The\u0020extracted\u0020Front\u0020Matter.",
+            "url": "classes/Hyde-Framework-Actions-MarkdownFileParser.html#property_matter"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\MarkdownFileParser\u003A\u003A\u0024markdown",
+            "name": "markdown",
+            "summary": "The\u0020extracted\u0020Markdown\u0020body.",
+            "url": "classes/Hyde-Framework-Actions-MarkdownFileParser.html#property_markdown"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest",
             "name": "GenerateBuildManifest",
             "summary": "",
@@ -3320,46 +3360,6 @@ Search.appendIndex(
             "name": "torchlightKey",
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-Markdown-CodeblockFilepathProcessor.html#property_torchlightKey"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownConverter",
-            "name": "MarkdownConverter",
-            "summary": "The\u0020base\u0020Markdown\u0020converter\u0020class.",
-            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownConverter.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownConverter\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Create\u0020a\u0020new\u0020Markdown\u0020converter\u0020pre\u002Dconfigured\u0020for\u0020CommonMark.",
-            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownConverter.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser",
-            "name": "MarkdownFileParser",
-            "summary": "Prepares\u0020a\u0020Markdown\u0020file\u0020for\u0020further\u0020usage\u0020by\u0020extracting\u0020the\u0020Front\u0020Matter\u0020and\u0020creating\u0020MarkdownDocument\u0020object.",
-            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "Get\u0020the\u0020processed\u0020Markdown\u0020file\u0020as\u0020a\u0020MarkdownDocument.",
-            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html#method_get"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser\u003A\u003Aparse\u0028\u0029",
-            "name": "parse",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html#method_parse"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser\u003A\u003A\u0024matter",
-            "name": "matter",
-            "summary": "The\u0020extracted\u0020Front\u0020Matter.",
-            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html#property_matter"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownFileParser\u003A\u003A\u0024markdown",
-            "name": "markdown",
-            "summary": "The\u0020extracted\u0020Markdown\u0020body.",
-            "url": "classes/Hyde-Framework-Modules-Markdown-MarkdownFileParser.html#property_markdown"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\MarkdownServiceProvider",
             "name": "MarkdownServiceProvider",
