@@ -3373,7 +3373,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor",
             "name": "ShortcodeProcessor",
-            "summary": "Handle\u0020shortcode\u0020processing\u0020for\u0020Markdown\u0020conversions.",
+            "summary": "Handle\u0020all\u0020shortcode\u0020processing\u0020for\u0020a\u0020Markdown\u0020conversion.",
             "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\ShortcodeProcessor\u003A\u003A__construct\u0028\u0029",
@@ -3441,35 +3441,35 @@ Search.appendIndex(
             "summary": "The\u0020activated\u0020shortcode\u0020instances.",
             "url": "classes/Hyde-Framework-Modules-Markdown-ShortcodeProcessor.html#property_shortcodes"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\AbstractColoredBlockquote",
-            "name": "AbstractColoredBlockquote",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\ColoredBlockquotes",
+            "name": "ColoredBlockquotes",
             "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html"
+            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-ColoredBlockquotes.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\AbstractColoredBlockquote\u003A\u003A\u0024signature",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\ColoredBlockquotes\u003A\u003A\u0024signature",
             "name": "signature",
             "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html#property_signature"
+            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-ColoredBlockquotes.html#property_signature"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\AbstractColoredBlockquote\u003A\u003Aresolve\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\ColoredBlockquotes\u003A\u003Aresolve\u0028\u0029",
             "name": "resolve",
             "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html#method_resolve"
+            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-ColoredBlockquotes.html#method_resolve"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\AbstractColoredBlockquote\u003A\u003Aexpand\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\ColoredBlockquotes\u003A\u003Aexpand\u0028\u0029",
             "name": "expand",
             "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html#method_expand"
+            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-ColoredBlockquotes.html#method_expand"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\AbstractColoredBlockquote\u003A\u003AgetClassNameFromSignature\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\ColoredBlockquotes\u003A\u003AgetClassNameFromSignature\u0028\u0029",
             "name": "getClassNameFromSignature",
             "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html#method_getClassNameFromSignature"
+            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-ColoredBlockquotes.html#method_getClassNameFromSignature"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\AbstractColoredBlockquote\u003A\u003Aget\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\Shortcodes\\ColoredBlockquotes\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-AbstractColoredBlockquote.html#method_get"
+            "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-ColoredBlockquotes.html#method_get"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService",
             "name": "AssetService",
