@@ -3276,10 +3276,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html#method_preprocess"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\BladeDownProcessor\u003A\u003Aprocess\u0028\u0029",
-            "name": "process",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\BladeDownProcessor\u003A\u003Apostprocess\u0028\u0029",
+            "name": "postprocess",
             "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html#method_process"
+            "url": "classes/Hyde-Framework-Modules-Markdown-BladeDownProcessor.html#method_postprocess"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Markdown\\BladeDownProcessor\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
@@ -3651,10 +3651,45 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_setupConverter"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003ArunPreprocessing\u0028\u0029",
-            "name": "runPreprocessing",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AenableDynamicExtensions\u0028\u0029",
+            "name": "enableDynamicExtensions",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_runPreprocessing"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_enableDynamicExtensions"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AenableConfigDefinedExtensions\u0028\u0029",
+            "name": "enableConfigDefinedExtensions",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_enableConfigDefinedExtensions"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AmergeMarkdownConfiguration\u0028\u0029",
+            "name": "mergeMarkdownConfiguration",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_mergeMarkdownConfiguration"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AregisterPreProcessors\u0028\u0029",
+            "name": "registerPreProcessors",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_registerPreProcessors"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AregisterPostProcessors\u0028\u0029",
+            "name": "registerPostProcessors",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_registerPostProcessors"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AregisterPreProcessor\u0028\u0029",
+            "name": "registerPreProcessor",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_registerPreProcessor"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AregisterPostProcessor\u0028\u0029",
+            "name": "registerPostProcessor",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_registerPostProcessor"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003ArunPreProcessing\u0028\u0029",
+            "name": "runPreProcessing",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_runPreProcessing"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003ArunPostProcessing\u0028\u0029",
             "name": "runPostProcessing",
@@ -3760,6 +3795,16 @@ Search.appendIndex(
             "name": "features",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-MarkdownService.html#property_features"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024preprocessors",
+            "name": "preprocessors",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#property_preprocessors"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024postprocessors",
+            "name": "postprocessors",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#property_postprocessors"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\RebuildService",
             "name": "RebuildService",
