@@ -3636,55 +3636,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_parse"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AaddExtension\u0028\u0029",
-            "name": "addExtension",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_addExtension"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AinitializeExtension\u0028\u0029",
-            "name": "initializeExtension",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_initializeExtension"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AsetupConverter\u0028\u0029",
             "name": "setupConverter",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_setupConverter"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AenableDynamicExtensions\u0028\u0029",
-            "name": "enableDynamicExtensions",
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AaddExtension\u0028\u0029",
+            "name": "addExtension",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_enableDynamicExtensions"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AenableConfigDefinedExtensions\u0028\u0029",
-            "name": "enableConfigDefinedExtensions",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_enableConfigDefinedExtensions"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AmergeMarkdownConfiguration\u0028\u0029",
-            "name": "mergeMarkdownConfiguration",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_mergeMarkdownConfiguration"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AregisterPreProcessors\u0028\u0029",
-            "name": "registerPreProcessors",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_registerPreProcessors"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AregisterPostProcessors\u0028\u0029",
-            "name": "registerPostProcessors",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_registerPostProcessors"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AregisterPreProcessor\u0028\u0029",
-            "name": "registerPreProcessor",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_registerPreProcessor"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AregisterPostProcessor\u0028\u0029",
-            "name": "registerPostProcessor",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_registerPostProcessor"
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_addExtension"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003ArunPreProcessing\u0028\u0029",
             "name": "runPreProcessing",
