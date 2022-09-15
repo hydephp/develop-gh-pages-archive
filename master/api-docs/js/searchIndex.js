@@ -1956,221 +1956,6 @@ Search.appendIndex(
             "summary": "Register\u0020module\u0020service\u0020providers.",
             "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_registerModuleServiceProviders"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author",
-            "name": "Author",
-            "summary": "The\u0020Post\u0020Author\u0020model\u0020object.",
-            "url": "classes/Hyde-Framework-Models-Author.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Construct\u0020a\u0020new\u0020Author\u0020object.",
-            "url": "classes/Hyde-Framework-Models-Author.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003Amake\u0028\u0029",
-            "name": "make",
-            "summary": "Dynamically\u0020get\u0020or\u0020create\u0020an\u0020author\u0020based\u0020on\u0020a\u0020username\u0020string\u0020or\u0020front\u0020matter\u0020array",
-            "url": "classes/Hyde-Framework-Models-Author.html#method_make"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Author.html#method_get"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003Aall\u0028\u0029",
-            "name": "all",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Author.html#method_all"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003Acreate\u0028\u0029",
-            "name": "create",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Author.html#method_create"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003A__toString\u0028\u0029",
-            "name": "__toString",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Author.html#method___toString"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003AgetName\u0028\u0029",
-            "name": "getName",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Author.html#method_getName"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003AfindUsername\u0028\u0029",
-            "name": "findUsername",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Author.html#method_findUsername"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003A\u0024username",
-            "name": "username",
-            "summary": "The\u0020username\u0020of\u0020the\u0020author.",
-            "url": "classes/Hyde-Framework-Models-Author.html#property_username"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003A\u0024name",
-            "name": "name",
-            "summary": "The\u0020display\u0020name\u0020of\u0020the\u0020author.",
-            "url": "classes/Hyde-Framework-Models-Author.html#property_name"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Author\u003A\u003A\u0024website",
-            "name": "website",
-            "summary": "The\u0020author\u0027s\u0020website\u0020URL.",
-            "url": "classes/Hyde-Framework-Models-Author.html#property_website"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\DateString",
-            "name": "DateString",
-            "summary": "Parse\u0020a\u0020date\u0020string\u0020and\u0020create\u0020normalized\u0020formats.",
-            "url": "classes/Hyde-Framework-Models-DateString.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\DateString\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-DateString.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\DateString\u003A\u003A__toString\u0028\u0029",
-            "name": "__toString",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-DateString.html#method___toString"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\DateString\u003A\u003A\u0024string",
-            "name": "string",
-            "summary": "The\u0020original\u0020date\u0020string.",
-            "url": "classes/Hyde-Framework-Models-DateString.html#property_string"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\DateString\u003A\u003A\u0024dateTimeObject",
-            "name": "dateTimeObject",
-            "summary": "The\u0020parsed\u0020date\u0020object.",
-            "url": "classes/Hyde-Framework-Models-DateString.html#property_dateTimeObject"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\DateString\u003A\u003A\u0024datetime",
-            "name": "datetime",
-            "summary": "The\u0020machine\u002Dreadable\u0020datetime\u0020string.",
-            "url": "classes/Hyde-Framework-Models-DateString.html#property_datetime"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\DateString\u003A\u003A\u0024sentence",
-            "name": "sentence",
-            "summary": "The\u0020human\u002Dreadable\u0020sentence\u0020string.",
-            "url": "classes/Hyde-Framework-Models-DateString.html#property_sentence"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\DateString\u003A\u003A\u0024short",
-            "name": "short",
-            "summary": "Shorter\u0020version\u0020of\u0020the\u0020sentence\u0020string.",
-            "url": "classes/Hyde-Framework-Models-DateString.html#property_short"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image",
-            "name": "Image",
-            "summary": "Holds\u0020the\u0020information\u0020for\u0020an\u0020image.",
-            "url": "classes/Hyde-Framework-Models-Image.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Image.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A__toString\u0028\u0029",
-            "name": "__toString",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Image.html#method___toString"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003Amake\u0028\u0029",
-            "name": "make",
-            "summary": "Dynamically\u0020create\u0020an\u0020image\u0020based\u0020on\u0020string\u0020or\u0020front\u0020matter\u0020array",
-            "url": "classes/Hyde-Framework-Models-Image.html#method_make"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003AfromSource\u0028\u0029",
-            "name": "fromSource",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Image.html#method_fromSource"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003AgetSource\u0028\u0029",
-            "name": "getSource",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Image.html#method_getSource"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003AgetLink\u0028\u0029",
-            "name": "getLink",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Image.html#method_getLink"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003AgetContentLength\u0028\u0029",
-            "name": "getContentLength",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Image.html#method_getContentLength"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003AgetImageAuthorAttributionString\u0028\u0029",
-            "name": "getImageAuthorAttributionString",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Image.html#method_getImageAuthorAttributionString"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003AgetCopyrightString\u0028\u0029",
-            "name": "getCopyrightString",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Image.html#method_getCopyrightString"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003AgetLicenseString\u0028\u0029",
-            "name": "getLicenseString",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Image.html#method_getLicenseString"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003AgetFluentAttribution\u0028\u0029",
-            "name": "getFluentAttribution",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Image.html#method_getFluentAttribution"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003AgetMetadataArray\u0028\u0029",
-            "name": "getMetadataArray",
-            "summary": "Used\u0020in\u0020resources\\views\\components\\post\\image.blade.php\u0020to\u0020add\u0020meta\u0020tags\u0020with\u0020itemprop\u0020attributes.",
-            "url": "classes/Hyde-Framework-Models-Image.html#method_getMetadataArray"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003AgetPath\u0028\u0029",
-            "name": "getPath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Models-Image.html#method_getPath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A\u0024path",
-            "name": "path",
-            "summary": "The\u0020image\u0027s\u0020path\u0020\u0028if\u0020it\u0020is\u0020stored\u0020locally\u0020\u0028in\u0020the\u0020_media\u0020directory\u0029\u0029.",
-            "url": "classes/Hyde-Framework-Models-Image.html#property_path"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A\u0024url",
-            "name": "url",
-            "summary": "The\u0020image\u0027s\u0020URL\u0020\u0028if\u0020stored\u0020externally\u0029.",
-            "url": "classes/Hyde-Framework-Models-Image.html#property_url"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A\u0024description",
-            "name": "description",
-            "summary": "The\u0020image\u0027s\u0020description.\u0020\u0028Used\u0020for\u0020alt\u0020text\u0020for\u0020screen\u0020readers.\u0029\nYou\u0020should\u0020always\u0020set\u0020this\u0020to\u0020provide\u0020accessibility.",
-            "url": "classes/Hyde-Framework-Models-Image.html#property_description"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A\u0024title",
-            "name": "title",
-            "summary": "The\u0020image\u0027s\u0020title.\u0020\u0028Shows\u0020a\u0020tooltip\u0020on\u0020hover.\u0029\nExample\u003A\u0020\u0022My\u0020Cat\u0020Archer\u0022.",
-            "url": "classes/Hyde-Framework-Models-Image.html#property_title"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A\u0024copyright",
-            "name": "copyright",
-            "summary": "The\u0020image\u0027s\u0020copyright.",
-            "url": "classes/Hyde-Framework-Models-Image.html#property_copyright"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A\u0024license",
-            "name": "license",
-            "summary": "The\u0020image\u0027s\u0020license\u0020name.",
-            "url": "classes/Hyde-Framework-Models-Image.html#property_license"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A\u0024licenseUrl",
-            "name": "licenseUrl",
-            "summary": "The\u0020image\u0027s\u0020license\u0020URL.",
-            "url": "classes/Hyde-Framework-Models-Image.html#property_licenseUrl"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A\u0024author",
-            "name": "author",
-            "summary": "The\u0020image\u0027s\u0020author.",
-            "url": "classes/Hyde-Framework-Models-Image.html#property_author"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Image\u003A\u003A\u0024credit",
-            "name": "credit",
-            "summary": "The\u0020image\u0027s\u0020source\u0020\u0028for\u0020attribution\u0029.",
-            "url": "classes/Hyde-Framework-Models-Image.html#property_credit"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Markdown\\FrontMatter",
             "name": "FrontMatter",
             "summary": "Object\u0020representing\u0020the\u0020YAML\u0020front\u0020matter\u0020of\u0020a\u0020Markdown\u0020file.",
@@ -2891,255 +2676,470 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Pages-MarkdownPost.html#property_image"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Author",
+            "name": "Author",
+            "summary": "The\u0020Post\u0020Author\u0020model\u0020object.",
+            "url": "classes/Hyde-Framework-Models-Support-Author.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Author\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Construct\u0020a\u0020new\u0020Author\u0020object.",
+            "url": "classes/Hyde-Framework-Models-Support-Author.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Author\u003A\u003Amake\u0028\u0029",
+            "name": "make",
+            "summary": "Dynamically\u0020get\u0020or\u0020create\u0020an\u0020author\u0020based\u0020on\u0020a\u0020username\u0020string\u0020or\u0020front\u0020matter\u0020array",
+            "url": "classes/Hyde-Framework-Models-Support-Author.html#method_make"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Author\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Author.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Author\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Author.html#method_all"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Author\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Author.html#method_create"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Author\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Author.html#method___toString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Author\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Author.html#method_getName"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Author\u003A\u003AfindUsername\u0028\u0029",
+            "name": "findUsername",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Author.html#method_findUsername"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Author\u003A\u003A\u0024username",
+            "name": "username",
+            "summary": "The\u0020username\u0020of\u0020the\u0020author.",
+            "url": "classes/Hyde-Framework-Models-Support-Author.html#property_username"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Author\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "The\u0020display\u0020name\u0020of\u0020the\u0020author.",
+            "url": "classes/Hyde-Framework-Models-Support-Author.html#property_name"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Author\u003A\u003A\u0024website",
+            "name": "website",
+            "summary": "The\u0020author\u0027s\u0020website\u0020URL.",
+            "url": "classes/Hyde-Framework-Models-Support-Author.html#property_website"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\DateString",
+            "name": "DateString",
+            "summary": "Parse\u0020a\u0020date\u0020string\u0020and\u0020create\u0020normalized\u0020formats.",
+            "url": "classes/Hyde-Framework-Models-Support-DateString.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\DateString\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-DateString.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\DateString\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-DateString.html#method___toString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\DateString\u003A\u003A\u0024string",
+            "name": "string",
+            "summary": "The\u0020original\u0020date\u0020string.",
+            "url": "classes/Hyde-Framework-Models-Support-DateString.html#property_string"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\DateString\u003A\u003A\u0024dateTimeObject",
+            "name": "dateTimeObject",
+            "summary": "The\u0020parsed\u0020date\u0020object.",
+            "url": "classes/Hyde-Framework-Models-Support-DateString.html#property_dateTimeObject"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\DateString\u003A\u003A\u0024datetime",
+            "name": "datetime",
+            "summary": "The\u0020machine\u002Dreadable\u0020datetime\u0020string.",
+            "url": "classes/Hyde-Framework-Models-Support-DateString.html#property_datetime"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\DateString\u003A\u003A\u0024sentence",
+            "name": "sentence",
+            "summary": "The\u0020human\u002Dreadable\u0020sentence\u0020string.",
+            "url": "classes/Hyde-Framework-Models-Support-DateString.html#property_sentence"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\DateString\u003A\u003A\u0024short",
+            "name": "short",
+            "summary": "Shorter\u0020version\u0020of\u0020the\u0020sentence\u0020string.",
+            "url": "classes/Hyde-Framework-Models-Support-DateString.html#property_short"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image",
+            "name": "Image",
+            "summary": "Holds\u0020the\u0020information\u0020for\u0020an\u0020image.",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#method___toString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003Amake\u0028\u0029",
+            "name": "make",
+            "summary": "Dynamically\u0020create\u0020an\u0020image\u0020based\u0020on\u0020string\u0020or\u0020front\u0020matter\u0020array",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#method_make"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003AfromSource\u0028\u0029",
+            "name": "fromSource",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#method_fromSource"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003AgetSource\u0028\u0029",
+            "name": "getSource",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#method_getSource"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003AgetLink\u0028\u0029",
+            "name": "getLink",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#method_getLink"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003AgetContentLength\u0028\u0029",
+            "name": "getContentLength",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#method_getContentLength"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003AgetImageAuthorAttributionString\u0028\u0029",
+            "name": "getImageAuthorAttributionString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#method_getImageAuthorAttributionString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003AgetCopyrightString\u0028\u0029",
+            "name": "getCopyrightString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#method_getCopyrightString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003AgetLicenseString\u0028\u0029",
+            "name": "getLicenseString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#method_getLicenseString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003AgetFluentAttribution\u0028\u0029",
+            "name": "getFluentAttribution",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#method_getFluentAttribution"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003AgetMetadataArray\u0028\u0029",
+            "name": "getMetadataArray",
+            "summary": "Used\u0020in\u0020resources\\views\\components\\post\\image.blade.php\u0020to\u0020add\u0020meta\u0020tags\u0020with\u0020itemprop\u0020attributes.",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#method_getMetadataArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003AgetPath\u0028\u0029",
+            "name": "getPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#method_getPath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "The\u0020image\u0027s\u0020path\u0020\u0028if\u0020it\u0020is\u0020stored\u0020locally\u0020\u0028in\u0020the\u0020_media\u0020directory\u0029\u0029.",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#property_path"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003A\u0024url",
+            "name": "url",
+            "summary": "The\u0020image\u0027s\u0020URL\u0020\u0028if\u0020stored\u0020externally\u0029.",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#property_url"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003A\u0024description",
+            "name": "description",
+            "summary": "The\u0020image\u0027s\u0020description.\u0020\u0028Used\u0020for\u0020alt\u0020text\u0020for\u0020screen\u0020readers.\u0029\nYou\u0020should\u0020always\u0020set\u0020this\u0020to\u0020provide\u0020accessibility.",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#property_description"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003A\u0024title",
+            "name": "title",
+            "summary": "The\u0020image\u0027s\u0020title.\u0020\u0028Shows\u0020a\u0020tooltip\u0020on\u0020hover.\u0029\nExample\u003A\u0020\u0022My\u0020Cat\u0020Archer\u0022.",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#property_title"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003A\u0024copyright",
+            "name": "copyright",
+            "summary": "The\u0020image\u0027s\u0020copyright.",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#property_copyright"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003A\u0024license",
+            "name": "license",
+            "summary": "The\u0020image\u0027s\u0020license\u0020name.",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#property_license"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003A\u0024licenseUrl",
+            "name": "licenseUrl",
+            "summary": "The\u0020image\u0027s\u0020license\u0020URL.",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#property_licenseUrl"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003A\u0024author",
+            "name": "author",
+            "summary": "The\u0020image\u0027s\u0020author.",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#property_author"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Image\u003A\u003A\u0024credit",
+            "name": "credit",
+            "summary": "The\u0020image\u0027s\u0020source\u0020\u0028for\u0020attribution\u0029.",
+            "url": "classes/Hyde-Framework-Models-Support-Image.html#property_credit"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route",
             "name": "Route",
             "summary": "The\u0020Route\u0020class\u0020bridges\u0020the\u0020gaps\u0020between\u0020Hyde\u0020pages\u0020and\u0020their\u0020respective\u0020compiled\u0020static\u0020webpages\nby\u0020providing\u0020helper\u0020methods\u0020and\u0020information\u0020allowing\u0020you\u0020to\u0020easily\u0020access\u0020and\u0020interact\u0020with\u0020the\nvarious\u0020paths\u0020associated\u0020with\u0020a\u0020page,\u0020both\u0020source\u0020and\u0020compiled\u0020file\u0020paths\u0020as\u0020well\u0020as\u0020the\u0020URL.",
-            "url": "classes/Hyde-Framework-Models-Route.html"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Construct\u0020a\u0020new\u0020Route\u0020instance\u0020for\u0020the\u0020given\u0020page\u0020model.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method___construct"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003A__toString\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
             "summary": "Cast\u0020a\u0020route\u0020object\u0020into\u0020a\u0020string\u0020that\u0020can\u0020be\u0020used\u0020in\u0020a\u0020href\u0020attribute.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method___toString"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method___toString"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AtoArray\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
             "summary": "Get\u0020the\u0020instance\u0020as\u0020an\u0020array.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_toArray"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_toArray"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AgetLink\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003AgetLink\u0028\u0029",
             "name": "getLink",
             "summary": "Resolve\u0020a\u0020site\u0020web\u0020link\u0020to\u0020the\u0020file,\u0020using\u0020pretty\u0020URLs\u0020if\u0020enabled.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_getLink"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_getLink"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AgetPageType\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003AgetPageType\u0028\u0029",
             "name": "getPageType",
             "summary": "Get\u0020the\u0020page\u0020type\u0020for\u0020the\u0020route.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_getPageType"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_getPageType"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AgetSourceModel\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003AgetSourceModel\u0028\u0029",
             "name": "getSourceModel",
             "summary": "Get\u0020the\u0020source\u0020model\u0020for\u0020the\u0020route.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_getSourceModel"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_getSourceModel"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AgetRouteKey\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003AgetRouteKey\u0028\u0029",
             "name": "getRouteKey",
             "summary": "Get\u0020the\u0020unique\u0020route\u0020key\u0020for\u0020the\u0020route.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_getRouteKey"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_getRouteKey"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AgetSourcePath\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003AgetSourcePath\u0028\u0029",
             "name": "getSourcePath",
             "summary": "Get\u0020the\u0020path\u0020to\u0020the\u0020source\u0020file.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_getSourcePath"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_getSourcePath"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AgetOutputPath\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003AgetOutputPath\u0028\u0029",
             "name": "getOutputPath",
             "summary": "Get\u0020the\u0020path\u0020to\u0020the\u0020output\u0020file.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_getOutputPath"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_getOutputPath"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AgetQualifiedUrl\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003AgetQualifiedUrl\u0028\u0029",
             "name": "getQualifiedUrl",
             "summary": "Get\u0020the\u0020qualified\u0020URL\u0020for\u0020the\u0020route,\u0020using\u0020pretty\u0020URLs\u0020if\u0020enabled.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_getQualifiedUrl"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_getQualifiedUrl"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003Ais\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003Ais\u0028\u0029",
             "name": "is",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_is"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_is"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003Aget\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020route\u0020index\u0020for\u0020the\u0020specified\u0020route\u0020key.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_get"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_get"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AgetFromKey\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003AgetFromKey\u0028\u0029",
             "name": "getFromKey",
             "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020route\u0020index\u0020for\u0020the\u0020specified\u0020route\u0020key.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_getFromKey"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_getFromKey"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AgetFromSource\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003AgetFromSource\u0028\u0029",
             "name": "getFromSource",
             "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020route\u0020index\u0020for\u0020the\u0020specified\u0020source\u0020file\u0020path.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_getFromSource"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_getFromSource"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003AgetFromModel\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003AgetFromModel\u0028\u0029",
             "name": "getFromModel",
             "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020route\u0020index\u0020for\u0020the\u0020supplied\u0020page\u0020model.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_getFromModel"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_getFromModel"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003Aall\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003Aall\u0028\u0029",
             "name": "all",
             "summary": "Get\u0020all\u0020routes\u0020from\u0020the\u0020route\u0020index.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_all"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_all"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003Acurrent\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003Acurrent\u0028\u0029",
             "name": "current",
             "summary": "Get\u0020the\u0020current\u0020route\u0020for\u0020the\u0020page\u0020being\u0020rendered.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_current"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_current"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003Ahome\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003Ahome\u0028\u0029",
             "name": "home",
             "summary": "Get\u0020the\u0020home\u0020route,\u0020usually\u0020the\u0020index\u0020page\u0020route.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_home"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_home"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003Aexists\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003Aexists\u0028\u0029",
             "name": "exists",
             "summary": "Determine\u0020if\u0020the\u0020supplied\u0020route\u0020key\u0020exists\u0020in\u0020the\u0020route\u0020index.",
-            "url": "classes/Hyde-Framework-Models-Route.html#method_exists"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#method_exists"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003A\u0024sourceModel",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003A\u0024sourceModel",
             "name": "sourceModel",
             "summary": "The\u0020source\u0020model\u0020for\u0020the\u0020route.",
-            "url": "classes/Hyde-Framework-Models-Route.html#property_sourceModel"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#property_sourceModel"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003A\u0024routeKey",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003A\u0024routeKey",
             "name": "routeKey",
             "summary": "The\u0020unique\u0020route\u0020key\u0020for\u0020the\u0020route.",
-            "url": "classes/Hyde-Framework-Models-Route.html#property_routeKey"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#property_routeKey"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003A\u0024sourcePath",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003A\u0024sourcePath",
             "name": "sourcePath",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Route.html#property_sourcePath"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#property_sourcePath"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003A\u0024outputPath",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003A\u0024outputPath",
             "name": "outputPath",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Route.html#property_outputPath"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#property_outputPath"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Route\u003A\u003A\u0024uriPath",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003A\u0024uriPath",
             "name": "uriPath",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Route.html#property_uriPath"
+            "url": "classes/Hyde-Framework-Models-Support-Route.html#property_uriPath"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Site",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Site",
             "name": "Site",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Site.html"
+            "url": "classes/Hyde-Framework-Models-Support-Site.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Site\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Site\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Site.html#method___construct"
+            "url": "classes/Hyde-Framework-Models-Support-Site.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Site\u003A\u003A\u0024url",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Site\u003A\u003A\u0024url",
             "name": "url",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Site.html#property_url"
+            "url": "classes/Hyde-Framework-Models-Support-Site.html#property_url"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Site\u003A\u003A\u0024name",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Site\u003A\u003A\u0024name",
             "name": "name",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Site.html#property_name"
+            "url": "classes/Hyde-Framework-Models-Support-Site.html#property_name"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Site\u003A\u003A\u0024language",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Site\u003A\u003A\u0024language",
             "name": "language",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Site.html#property_language"
+            "url": "classes/Hyde-Framework-Models-Support-Site.html#property_language"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\Site\u003A\u003Ametadata\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Site\u003A\u003Ametadata\u0028\u0029",
             "name": "metadata",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-Site.html#method_metadata"
+            "url": "classes/Hyde-Framework-Models-Support-Site.html#method_metadata"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult",
             "name": "ValidationResult",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method___construct"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003Apass\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003Apass\u0028\u0029",
             "name": "pass",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_pass"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#method_pass"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003Afail\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003Afail\u0028\u0029",
             "name": "fail",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_fail"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#method_fail"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003Askip\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003Askip\u0028\u0029",
             "name": "skip",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_skip"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#method_skip"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AwithTip\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003AwithTip\u0028\u0029",
             "name": "withTip",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_withTip"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#method_withTip"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003A\u0024tip",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003A\u0024tip",
             "name": "tip",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#property_tip"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#property_tip"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003A\u0024skipped",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003A\u0024skipped",
             "name": "skipped",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#property_skipped"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#property_skipped"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003A\u0024passed",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003A\u0024passed",
             "name": "passed",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#property_passed"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#property_passed"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003Afailed\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003Afailed\u0028\u0029",
             "name": "failed",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_failed"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#method_failed"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AstatusCode\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003AstatusCode\u0028\u0029",
             "name": "statusCode",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_statusCode"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#method_statusCode"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003A\u0024message",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003A\u0024message",
             "name": "message",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#property_message"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#property_message"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AformattedMessage\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003AformattedMessage\u0028\u0029",
             "name": "formattedMessage",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_formattedMessage"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#method_formattedMessage"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AformatResult\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003AformatResult\u0028\u0029",
             "name": "formatResult",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_formatResult"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#method_formatResult"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AformatPassed\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003AformatPassed\u0028\u0029",
             "name": "formatPassed",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_formatPassed"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#method_formatPassed"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AformatFailed\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003AformatFailed\u0028\u0029",
             "name": "formatFailed",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_formatFailed"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#method_formatFailed"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AformatSkipped\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003AformatSkipped\u0028\u0029",
             "name": "formatSkipped",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_formatSkipped"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#method_formatSkipped"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AformatTimeString\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003AformatTimeString\u0028\u0029",
             "name": "formatTimeString",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_formatTimeString"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#method_formatTimeString"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models\\ValidationResult\u003A\u003AformatTip\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult\u003A\u003AformatTip\u0028\u0029",
             "name": "formatTip",
             "summary": "",
-            "url": "classes/Hyde-Framework-Models-ValidationResult.html#method_formatTip"
+            "url": "classes/Hyde-Framework-Models-Support-ValidationResult.html#method_formatTip"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections\\DataCollection",
             "name": "DataCollection",
@@ -4206,15 +4206,15 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Models",
-            "name": "Models",
-            "summary": "",
-            "url": "namespaces/hyde-framework-models.html"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Markdown",
             "name": "Markdown",
             "summary": "",
             "url": "namespaces/hyde-framework-models-markdown.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models",
+            "name": "Models",
+            "summary": "",
+            "url": "namespaces/hyde-framework-models.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Metadata",
             "name": "Metadata",
@@ -4230,6 +4230,11 @@ Search.appendIndex(
             "name": "Pages",
             "summary": "",
             "url": "namespaces/hyde-framework-models-pages.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support",
+            "name": "Support",
+            "summary": "",
+            "url": "namespaces/hyde-framework-models-support.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\DataCollections",
             "name": "DataCollections",
