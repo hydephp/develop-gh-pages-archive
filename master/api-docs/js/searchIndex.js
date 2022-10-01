@@ -301,6 +301,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html#method_hashOutputPath"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest\u003A\u003AhashSourcePath\u0028\u0029",
+            "name": "hashSourcePath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html#method_hashSourcePath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest\u003A\u003AgetManifestPath\u0028\u0029",
+            "name": "getManifestPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html#method_getManifestPath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest\u003A\u003AjsonEncodeOutput\u0028\u0029",
+            "name": "jsonEncodeOutput",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html#method_jsonEncodeOutput"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest\u003A\u003A\u0024description",
             "name": "description",
             "summary": "",
