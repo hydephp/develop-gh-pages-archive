@@ -3626,6 +3626,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-BuildTaskService.html#property_output"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ChecksumService",
+            "name": "ChecksumService",
+            "summary": "Helper\u0020methods\u0020to\u0020interact\u0020with\u0020the\u0020filecache.\u0020The\u0020filecache\u0020is\u0020used\u0020to\u0020compare\npublished\u0020Blade\u0020views\u0020with\u0020the\u0020original\u0020Blade\u0020views\u0020in\u0020the\u0020Hyde\u0020Framework\nso\u0020the\u0020user\u0020can\u0020be\u0020warned\u0020before\u0020overwriting\u0020their\u0020customizations.",
+            "url": "classes/Hyde-Framework-Services-ChecksumService.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ChecksumService\u003A\u003AgetFilecache\u0028\u0029",
+            "name": "getFilecache",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ChecksumService.html#method_getFilecache"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ChecksumService\u003A\u003AgetChecksums\u0028\u0029",
+            "name": "getChecksums",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ChecksumService.html#method_getChecksums"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ChecksumService\u003A\u003AchecksumMatchesAny\u0028\u0029",
+            "name": "checksumMatchesAny",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ChecksumService.html#method_checksumMatchesAny"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\ChecksumService\u003A\u003AunixsumFile\u0028\u0029",
+            "name": "unixsumFile",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-ChecksumService.html#method_unixsumFile"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService",
             "name": "MarkdownService",
             "summary": "Dynamically\u0020creates\u0020a\u0020Markdown\u0020converter\u0020tailored\u0020for\u0020the\u0020target\u0020model\u0020and\u0020setup,\nthen\u0020converts\u0020the\u0020Markdown\u0020to\u0020HTML\u0020using\u0020both\u0020pre\u002D\u0020and\u0020post\u002Dprocessors.",
@@ -4060,31 +4085,6 @@ Search.appendIndex(
             "name": "check_for_conflicts_between_blade_and_markdown_pages",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-ValidationService.html#method_check_for_conflicts_between_blade_and_markdown_pages"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\ViewDiffService",
-            "name": "ViewDiffService",
-            "summary": "Helper\u0020methods\u0020to\u0020interact\u0020with\u0020the\u0020filecache.\u0020The\u0020filecache\u0020is\u0020used\u0020to\u0020compare\npublished\u0020Blade\u0020views\u0020with\u0020the\u0020original\u0020Blade\u0020views\u0020in\u0020the\u0020Hyde\u0020Framework\nso\u0020the\u0020user\u0020can\u0020be\u0020warned\u0020before\u0020overwriting\u0020their\u0020customizations.",
-            "url": "classes/Hyde-Framework-Services-ViewDiffService.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\ViewDiffService\u003A\u003AgetFilecache\u0028\u0029",
-            "name": "getFilecache",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-ViewDiffService.html#method_getFilecache"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\ViewDiffService\u003A\u003AgetChecksums\u0028\u0029",
-            "name": "getChecksums",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-ViewDiffService.html#method_getChecksums"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\ViewDiffService\u003A\u003AchecksumMatchesAny\u0028\u0029",
-            "name": "checksumMatchesAny",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-ViewDiffService.html#method_checksumMatchesAny"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\ViewDiffService\u003A\u003AunixsumFile\u0028\u0029",
-            "name": "unixsumFile",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-ViewDiffService.html#method_unixsumFile"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\YamlConfigurationService",
             "name": "YamlConfigurationService",
