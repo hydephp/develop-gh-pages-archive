@@ -2806,6 +2806,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Support-DateString.html#method___toString"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\DateString\u003A\u003ADATETIME_FORMAT",
+            "name": "DATETIME_FORMAT",
+            "summary": "Date\u0020format\u0020constants",
+            "url": "classes/Hyde-Framework-Models-Support-DateString.html#constant_DATETIME_FORMAT"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\DateString\u003A\u003ASENTENCE_FORMAT",
+            "name": "SENTENCE_FORMAT",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-DateString.html#constant_SENTENCE_FORMAT"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\DateString\u003A\u003ASHORT_FORMAT",
+            "name": "SHORT_FORMAT",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-DateString.html#constant_SHORT_FORMAT"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Support\\DateString\u003A\u003A\u0024string",
             "name": "string",
             "summary": "The\u0020original\u0020date\u0020string.",
