@@ -1951,6 +1951,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-HydeKernel.html#method_toArray"
         },                {
+            "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003AVERSION",
+            "name": "VERSION",
+            "summary": "",
+            "url": "classes/Hyde-Framework-HydeKernel.html#constant_VERSION"
+        },                {
             "fqsen": "\\Hyde\\Framework\\HydeKernel\u003A\u003A\u0024instance",
             "name": "instance",
             "summary": "",
