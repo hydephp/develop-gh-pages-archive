@@ -91,22 +91,31 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework.html">Framework</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-contracts.html">Contracts</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-modules.html">Modules</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-modules-metadata.html">Metadata</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-modules-metadata-models.html">Models</a></li>
     </ul>
 
-    <article class="phpdocumentor-element -interface">
+    <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    MetadataItemContract
-                <div class="phpdocumentor-element__package">
-            in
+    MetadataElement
+
+        <span class="phpdocumentor-element__extends">
+        extends <a href="classes/Hyde-Framework-Modules-Metadata-Models-BaseMetadataElement.html"><abbr title="\Hyde\Framework\Modules\Metadata\Models\BaseMetadataElement">BaseMetadataElement</abbr></a>
+    </span>
+    
+            <div class="phpdocumentor-element__package">
+            in package
             <ul class="phpdocumentor-breadcrumbs">
-                                    <li><a href="packages/Application.html">Application</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
                             </ul>
         </div>
+    
+    
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/MetadataItemContract.php"><a href="files/packages-framework-src-contracts-metadataitemcontract.html"><abbr title="packages/framework/src/Contracts/MetadataItemContract.php">MetadataItemContract.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Metadata/Models/MetadataElement.php"><a href="files/packages-framework-src-modules-metadata-models-metadataelement.html"><abbr title="packages/framework/src/Modules/Metadata/Models/MetadataElement.php">MetadataElement.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">5</span>
 
@@ -128,15 +137,36 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                        <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Contracts-MetadataItemContract.html#method___toString">__toString()</a>
+                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Hyde-Framework-Modules-Metadata-Models-MetadataElement.html#property_content">$content</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Hyde-Framework-Modules-Metadata-Models-MetadataElement.html#property_name">$name</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd></dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Modules-Metadata-Models-MetadataElement.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Modules-Metadata-Models-MetadataElement.html#method___toString">__toString()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Contracts-MetadataItemContract.html#method_uniqueKey">uniqueKey()</a>
+    <a href="classes/Hyde-Framework-Modules-Metadata-Models-MetadataElement.html#method_uniqueKey">uniqueKey()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -148,11 +178,139 @@
 
         
 
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Hyde-Framework-Modules-Metadata-Models-MetadataElement.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_content">
+        $content
+        <a href="classes/Hyde-Framework-Modules-Metadata-Models-MetadataElement.html#property_content" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Metadata/Models/MetadataElement.php"><a href="files/packages-framework-src-modules-metadata-models-metadataelement.html"><abbr title="packages/framework/src/Modules/Metadata/Models/MetadataElement.php">MetadataElement.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">8</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$content</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_name">
+        $name
+        <a href="classes/Hyde-Framework-Modules-Metadata-Models-MetadataElement.html#property_name" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Metadata/Models/MetadataElement.php"><a href="files/packages-framework-src-modules-metadata-models-metadataelement.html"><abbr title="packages/framework/src/Modules/Metadata/Models/MetadataElement.php">MetadataElement.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">7</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$name</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
+
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Hyde-Framework-Contracts-MetadataItemContract.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Modules-Metadata-Models-MetadataElement.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Hyde-Framework-Modules-Metadata-Models-MetadataElement.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Metadata/Models/MetadataElement.php"><a href="files/packages-framework-src-modules-metadata-models-metadataelement.html"><abbr title="packages/framework/src/Modules/Metadata/Models/MetadataElement.php">MetadataElement.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">10</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$content</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
                     <article
         class="phpdocumentor-element
             -method
@@ -161,12 +319,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___toString">
         __toString()
-        <a href="classes/Hyde-Framework-Contracts-MetadataItemContract.html#method___toString" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Modules-Metadata-Models-MetadataElement.html#method___toString" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/MetadataItemContract.php"><a href="files/packages-framework-src-contracts-metadataitemcontract.html"><abbr title="packages/framework/src/Contracts/MetadataItemContract.php">MetadataItemContract.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Metadata/Models/MetadataElement.php"><a href="files/packages-framework-src-modules-metadata-models-metadataelement.html"><abbr title="packages/framework/src/Modules/Metadata/Models/MetadataElement.php">MetadataElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -194,12 +352,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_uniqueKey">
         uniqueKey()
-        <a href="classes/Hyde-Framework-Contracts-MetadataItemContract.html#method_uniqueKey" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Modules-Metadata-Models-MetadataElement.html#method_uniqueKey" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Contracts/MetadataItemContract.php"><a href="files/packages-framework-src-contracts-metadataitemcontract.html"><abbr title="packages/framework/src/Contracts/MetadataItemContract.php">MetadataItemContract.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Metadata/Models/MetadataElement.php"><a href="files/packages-framework-src-modules-metadata-models-metadataelement.html"><abbr title="packages/framework/src/Modules/Metadata/Models/MetadataElement.php">MetadataElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -297,7 +455,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Hyde-Framework-Contracts-MetadataItemContract.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Hyde-Framework-Modules-Metadata-Models-MetadataElement.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

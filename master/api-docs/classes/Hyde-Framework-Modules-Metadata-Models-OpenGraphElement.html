@@ -91,14 +91,18 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework.html">Framework</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-models.html">Models</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-models-metadata.html">Metadata</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-modules.html">Modules</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-modules-metadata.html">Metadata</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-modules-metadata-models.html">Models</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    OpenGraphItem
+    OpenGraphElement
 
+        <span class="phpdocumentor-element__extends">
+        extends <a href="classes/Hyde-Framework-Modules-Metadata-Models-BaseMetadataElement.html"><abbr title="\Hyde\Framework\Modules\Metadata\Models\BaseMetadataElement">BaseMetadataElement</abbr></a>
+    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -107,16 +111,13 @@
                             </ul>
         </div>
     
-            <span class="phpdocumentor-element__implements">
-            implements
-                            <a href="classes/Hyde-Framework-Contracts-MetadataItemContract.html"><abbr title="\Hyde\Framework\Contracts\MetadataItemContract">MetadataItemContract</abbr></a>,                             <abbr title="\Stringable">Stringable</abbr>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Metadata/OpenGraphItem.php"><a href="files/packages-framework-src-models-metadata-opengraphitem.html"><abbr title="packages/framework/src/Models/Metadata/OpenGraphItem.php">OpenGraphItem.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Metadata/Models/OpenGraphElement.php"><a href="files/packages-framework-src-modules-metadata-models-opengraphelement.html"><abbr title="packages/framework/src/Modules/Metadata/Models/OpenGraphElement.php">OpenGraphElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">5</span>
 
     </aside>
 
@@ -128,20 +129,6 @@
 
 
 
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Contracts-MetadataItemContract.html"><abbr title="\Hyde\Framework\Contracts\MetadataItemContract">MetadataItemContract</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Stringable">Stringable</abbr></dt>
-        <dd></dd>
-    
-    
-    
-    </dl>
 
 
 <h3 id="toc">
@@ -151,44 +138,44 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Framework-Models-Metadata-OpenGraphItem.html#property_content">$content</a>
+    <a href="classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#property_content">$content</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Framework-Models-Metadata-OpenGraphItem.html#property_property">$property</a>
+    <a href="classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#property_property">$property</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Models-Metadata-OpenGraphItem.html#method___construct">__construct()</a>
+    <a href="classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Models-Metadata-OpenGraphItem.html#method___toString">__toString()</a>
+    <a href="classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#method___toString">__toString()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Models-Metadata-OpenGraphItem.html#method_uniqueKey">uniqueKey()</a>
+    <a href="classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#method_uniqueKey">uniqueKey()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Models-Metadata-OpenGraphItem.html#method_normalizeProperty">normalizeProperty()</a>
+    <a href="classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#method_normalizeProperty">normalizeProperty()</a>
     <span>
-                                &nbsp;: void    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
@@ -202,7 +189,7 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Hyde-Framework-Models-Metadata-OpenGraphItem.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -213,14 +200,14 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_content">
         $content
-        <a href="classes/Hyde-Framework-Models-Metadata-OpenGraphItem.html#property_content" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#property_content" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Metadata/OpenGraphItem.php"><a href="files/packages-framework-src-models-metadata-opengraphitem.html"><abbr title="packages/framework/src/Models/Metadata/OpenGraphItem.php">OpenGraphItem.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Metadata/Models/OpenGraphElement.php"><a href="files/packages-framework-src-modules-metadata-models-opengraphelement.html"><abbr title="packages/framework/src/Modules/Metadata/Models/OpenGraphElement.php">OpenGraphElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">8</span>
 
     </aside>
 
@@ -247,14 +234,14 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_property">
         $property
-        <a href="classes/Hyde-Framework-Models-Metadata-OpenGraphItem.html#property_property" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#property_property" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Metadata/OpenGraphItem.php"><a href="files/packages-framework-src-models-metadata-opengraphitem.html"><abbr title="packages/framework/src/Models/Metadata/OpenGraphItem.php">OpenGraphItem.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Metadata/Models/OpenGraphElement.php"><a href="files/packages-framework-src-modules-metadata-models-opengraphelement.html"><abbr title="packages/framework/src/Modules/Metadata/Models/OpenGraphElement.php">OpenGraphElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">7</span>
 
     </aside>
 
@@ -277,7 +264,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Hyde-Framework-Models-Metadata-OpenGraphItem.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -287,12 +274,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Hyde-Framework-Models-Metadata-OpenGraphItem.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Metadata/OpenGraphItem.php"><a href="files/packages-framework-src-models-metadata-opengraphitem.html"><abbr title="packages/framework/src/Models/Metadata/OpenGraphItem.php">OpenGraphItem.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Metadata/Models/OpenGraphElement.php"><a href="files/packages-framework-src-modules-metadata-models-opengraphelement.html"><abbr title="packages/framework/src/Modules/Metadata/Models/OpenGraphElement.php">OpenGraphElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">10</span>
 
     </aside>
 
@@ -339,12 +326,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___toString">
         __toString()
-        <a href="classes/Hyde-Framework-Models-Metadata-OpenGraphItem.html#method___toString" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#method___toString" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Metadata/OpenGraphItem.php"><a href="files/packages-framework-src-models-metadata-opengraphitem.html"><abbr title="packages/framework/src/Models/Metadata/OpenGraphItem.php">OpenGraphItem.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Metadata/Models/OpenGraphElement.php"><a href="files/packages-framework-src-modules-metadata-models-opengraphelement.html"><abbr title="packages/framework/src/Modules/Metadata/Models/OpenGraphElement.php">OpenGraphElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -372,12 +359,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_uniqueKey">
         uniqueKey()
-        <a href="classes/Hyde-Framework-Models-Metadata-OpenGraphItem.html#method_uniqueKey" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#method_uniqueKey" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Metadata/OpenGraphItem.php"><a href="files/packages-framework-src-models-metadata-opengraphitem.html"><abbr title="packages/framework/src/Models/Metadata/OpenGraphItem.php">OpenGraphItem.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Metadata/Models/OpenGraphElement.php"><a href="files/packages-framework-src-modules-metadata-models-opengraphelement.html"><abbr title="packages/framework/src/Modules/Metadata/Models/OpenGraphElement.php">OpenGraphElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -405,27 +392,38 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_normalizeProperty">
         normalizeProperty()
-        <a href="classes/Hyde-Framework-Models-Metadata-OpenGraphItem.html#method_normalizeProperty" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#method_normalizeProperty" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Models/Metadata/OpenGraphItem.php"><a href="files/packages-framework-src-models-metadata-opengraphitem.html"><abbr title="packages/framework/src/Models/Metadata/OpenGraphItem.php">OpenGraphItem.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Modules/Metadata/Models/OpenGraphElement.php"><a href="files/packages-framework-src-modules-metadata-models-opengraphelement.html"><abbr title="packages/framework/src/Modules/Metadata/Models/OpenGraphElement.php">OpenGraphElement.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">normalizeProperty</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">normalizeProperty</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$property</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
+    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     
@@ -508,7 +506,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Hyde-Framework-Models-Metadata-OpenGraphItem.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
