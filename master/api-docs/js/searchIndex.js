@@ -756,6 +756,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Commands-HydePublishHomepageCommand.html#method_canExistingIndexFileBeOverwritten"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Commands\\HydePublishHomepageCommand\u003A\u003AaskToRebuildSite\u0028\u0029",
+            "name": "askToRebuildSite",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Commands-HydePublishHomepageCommand.html#method_askToRebuildSite"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Commands\\HydePublishHomepageCommand\u003A\u003A\u0024signature",
             "name": "signature",
             "summary": "",
@@ -1105,16 +1110,6 @@ Search.appendIndex(
             "name": "fileExtension",
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-BaseMarkdownPage.html#property_fileExtension"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Commands\\AsksToRebuildSite",
-            "name": "AsksToRebuildSite",
-            "summary": "Used\u0020in\u0020Commands\u0020to\u0020ask\u0020the\u0020user\u0020if\u0020they\u0020want\u0020to\u0020rebuild\u0020the\u0020site,\u0020and\u0020if\u0020so,\u0020rebuild\u0020it.",
-            "url": "classes/Hyde-Framework-Concerns-Commands-AsksToRebuildSite.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Commands\\AsksToRebuildSite\u003A\u003AaskToRebuildSite\u0028\u0029",
-            "name": "askToRebuildSite",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-Commands-AsksToRebuildSite.html#method_askToRebuildSite"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\InteractsWithDirectories",
             "name": "InteractsWithDirectories",
@@ -2883,7 +2878,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Support\\Site",
             "name": "Site",
-            "summary": "",
+            "summary": "Object\u0020representation\u0020for\u0020the\u0020HydePHP\u0020site.",
             "url": "classes/Hyde-Framework-Models-Support-Site.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Support\\Site\u003A\u003A__construct\u0028\u0029",
@@ -4175,11 +4170,6 @@ Search.appendIndex(
             "name": "Concerns",
             "summary": "",
             "url": "namespaces/hyde-framework-concerns.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\Commands",
-            "name": "Commands",
-            "summary": "",
-            "url": "namespaces/hyde-framework-concerns-commands.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Internal",
             "name": "Internal",
