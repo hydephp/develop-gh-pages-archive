@@ -1121,6 +1121,11 @@ Search.appendIndex(
             "summary": "Ensure\u0020the\u0020supplied\u0020directories\u0020exist\u0020by\u0020creating\u0020them\u0020if\u0020they\u0020don\u0027t.",
             "url": "classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectories"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\InteractsWithDirectories\u003A\u003AneedsParentDirectory\u0028\u0029",
+            "name": "needsParentDirectory",
+            "summary": "Ensure\u0020the\u0020supplied\u0020file\u0027s\u0020parent\u0020directory\u0020exists\u0020by\u0020creating\u0020it\u0020if\u0020it\u0020does\u0020not.",
+            "url": "classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsParentDirectory"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\Internal\\ConstructsPageSchemas",
             "name": "ConstructsPageSchemas",
             "summary": "",
@@ -3366,20 +3371,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-Metadata-MetadataBag.html#property_generics"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\Models\\BaseMetadataElement",
-            "name": "BaseMetadataElement",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataElementContract",
+            "name": "MetadataElementContract",
             "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Metadata-Models-BaseMetadataElement.html"
+            "url": "classes/Hyde-Framework-Modules-Metadata-MetadataElementContract.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\Models\\BaseMetadataElement\u003A\u003A__toString\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataElementContract\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
             "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Metadata-Models-BaseMetadataElement.html#method___toString"
+            "url": "classes/Hyde-Framework-Modules-Metadata-MetadataElementContract.html#method___toString"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\Models\\BaseMetadataElement\u003A\u003AuniqueKey\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataElementContract\u003A\u003AuniqueKey\u0028\u0029",
             "name": "uniqueKey",
             "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Metadata-Models-BaseMetadataElement.html#method_uniqueKey"
+            "url": "classes/Hyde-Framework-Modules-Metadata-MetadataElementContract.html#method_uniqueKey"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\Models\\LinkElement",
             "name": "LinkElement",
