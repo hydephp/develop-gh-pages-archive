@@ -63,7 +63,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsContentLengthForImageObject\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
-            "summary": "Execute\u0020the\u0020action.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Actions-Constructors-FindsContentLengthForImageObject.html#method_execute"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\Constructors\\FindsContentLengthForImageObject\u003A\u003AisImageStoredRemotely\u0028\u0029",
@@ -233,7 +233,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesSidebarTableOfContents\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
-            "summary": "Execute\u0020the\u0020action.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Actions-GeneratesSidebarTableOfContents.html#method_execute"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesSidebarTableOfContents\u003A\u003A\u0024markdown",
@@ -398,7 +398,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PublishesHomepageView\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
-            "summary": "Execute\u0020the\u0020action.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Actions-PublishesHomepageView.html#method_execute"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PublishesHomepageView\u003A\u003A\u0024homePages",
@@ -423,7 +423,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PublishesHydeViews\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
-            "summary": "Execute\u0020the\u0020action.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Actions-PublishesHydeViews.html#method_execute"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PublishesHydeViews\u003A\u003A\u0024options",
@@ -1220,16 +1220,6 @@ Search.appendIndex(
             "name": "validateExistence",
             "summary": "Check\u0020if\u0020a\u0020supplied\u0020source\u0020file\u0020exists\u0020or\u0020throw\u0020an\u0020exception.",
             "url": "classes/Hyde-Framework-Concerns-ValidatesExistence.html#method_validateExistence"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\ActionContract",
-            "name": "ActionContract",
-            "summary": "Interface\u0020ActionContract.",
-            "url": "classes/Hyde-Framework-Contracts-ActionContract.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Contracts\\ActionContract\u003A\u003Aexecute\u0028\u0029",
-            "name": "execute",
-            "summary": "Execute\u0020the\u0020action.",
-            "url": "classes/Hyde-Framework-Contracts-ActionContract.html#method_execute"
         },                {
             "fqsen": "\\Hyde\\Framework\\Contracts\\BuildTaskContract",
             "name": "BuildTaskContract",
