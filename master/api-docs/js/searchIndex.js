@@ -496,11 +496,6 @@ Search.appendIndex(
             "summary": "Save\u0020the\u0020compiled\u0020HTML\u0020to\u0020file.",
             "url": "classes/Hyde-Framework-Actions-StaticPageBuilder.html#method_save"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\StaticPageBuilder\u003A\u003A\u0024outputPath",
-            "name": "outputPath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-StaticPageBuilder.html#property_outputPath"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\StaticPageBuilder\u003A\u003A\u0024page",
             "name": "page",
             "summary": "",
@@ -2905,6 +2900,11 @@ Search.appendIndex(
             "name": "metadata",
             "summary": "",
             "url": "classes/Hyde-Framework-Models-Support-Site.html#method_metadata"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Models\\Support\\Site\u003A\u003A\u0024outputPath",
+            "name": "outputPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Models-Support-Site.html#property_outputPath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Support\\ValidationResult",
             "name": "ValidationResult",
