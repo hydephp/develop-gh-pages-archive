@@ -2173,7 +2173,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Navigation\\NavigationData",
             "name": "NavigationData",
-            "summary": "",
+            "summary": "Object\u0020implementation\u0020for\u0020the\u0020NavigationSchema.\u0020It\u0020extends\u0020the\u0020ArrayObject\u0020class\u0020so\nthat\u0020its\u0020data\u0020can\u0020be\u0020accessed\u0020using\u0020dot\u0020notation\u0020in\u0020the\u0020page\u0027s\u0020front\u0020matter\u0020data.",
             "url": "classes/Hyde-Framework-Models-Navigation-NavigationData.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Navigation\\NavigationData\u003A\u003A__construct\u0028\u0029",
