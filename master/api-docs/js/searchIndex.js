@@ -1783,53 +1783,33 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Meta",
             "name": "Meta",
-            "summary": "Helpers\u0020to\u0020fluently\u0020declare\u0020HTML\u0020meta\u0020tags.",
+            "summary": "Helpers\u0020to\u0020fluently\u0020declare\u0020HTML\u0020meta\u0020elements\u0020using\u0020their\u0020object\u0020representations.",
             "url": "classes/Hyde-Framework-Helpers-Meta.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Meta\u003A\u003Aname\u0028\u0029",
             "name": "name",
-            "summary": "",
+            "summary": "Create\u0020a\u0020new\u0020\u003Cmeta\u003E\u0020element\u0020class\u0020with\u0020the\u0020given\u0020name\u0020and\u0020content.",
             "url": "classes/Hyde-Framework-Helpers-Meta.html#method_name"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Meta\u003A\u003Aproperty\u0028\u0029",
             "name": "property",
-            "summary": "",
+            "summary": "Create\u0020a\u0020new\u0020\u003Cmeta\u003E\u0020element\u0020class\u0020with\u0020the\u0020given\u0020OpenGraph\u0020property\u0020and\u0020content.",
             "url": "classes/Hyde-Framework-Helpers-Meta.html#method_property"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Meta\u003A\u003Alink\u0028\u0029",
             "name": "link",
-            "summary": "",
+            "summary": "Create\u0020a\u0020new\u0020\u003Clink\u003E\u0020element\u0020class\u0020with\u0020the\u0020given\u0020rel\u0020and\u0020href.",
             "url": "classes/Hyde-Framework-Helpers-Meta.html#method_link"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Meta\u003A\u003Aget\u0028\u0029",
             "name": "get",
-            "summary": "",
+            "summary": "Get\u0020the\u0020global\u0020metadata\u0020bag.",
             "url": "classes/Hyde-Framework-Helpers-Meta.html#method_get"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Meta\u003A\u003Arender\u0028\u0029",
             "name": "render",
-            "summary": "",
+            "summary": "Render\u0020the\u0020global\u0020metadata\u0020bag.",
             "url": "classes/Hyde-Framework-Helpers-Meta.html#method_render"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Helpers\\Meta\u003A\u003AfilterUnique\u0028\u0029",
-            "name": "filterUnique",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Helpers-Meta.html#method_filterUnique"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Helpers\\Meta\u003A\u003AgetGlobalMeta\u0028\u0029",
-            "name": "getGlobalMeta",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Helpers-Meta.html#method_getGlobalMeta"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Helpers\\Meta\u003A\u003AgetDynamicMeta\u0028\u0029",
-            "name": "getDynamicMeta",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Helpers-Meta.html#method_getDynamicMeta"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Helpers\\Meta\u003A\u003AgetConfiguredMeta\u0028\u0029",
-            "name": "getConfiguredMeta",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Helpers-Meta.html#method_getConfiguredMeta"
         },                {
             "fqsen": "\\Hyde\\Framework\\Helpers\\Redirect",
             "name": "Redirect",
@@ -3286,15 +3266,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-Markdown-Shortcodes-ColoredBlockquotes.html#method_get"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\GlobalMetadataBag",
+            "name": "GlobalMetadataBag",
+            "summary": "Holds\u0020the\u0020metadata\u0020tags\u0020for\u0020a\u0020page\u0020or\u0020the\u0020site\u0020model.",
+            "url": "classes/Hyde-Framework-Modules-Metadata-GlobalMetadataBag.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\GlobalMetadataBag\u003A\u003Amake\u0028\u0029",
+            "name": "make",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Metadata-GlobalMetadataBag.html#method_make"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\GlobalMetadataBag\u003A\u003AfilterDuplicateMetadata\u0028\u0029",
+            "name": "filterDuplicateMetadata",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Metadata-GlobalMetadataBag.html#method_filterDuplicateMetadata"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataBag",
             "name": "MetadataBag",
             "summary": "Holds\u0020the\u0020metadata\u0020tags\u0020for\u0020a\u0020page\u0020or\u0020the\u0020site\u0020model.",
             "url": "classes/Hyde-Framework-Modules-Metadata-MetadataBag.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataBag\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Metadata-MetadataBag.html#method___construct"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataBag\u003A\u003AtoHtml\u0028\u0029",
             "name": "toHtml",
@@ -3316,40 +3306,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-Metadata-MetadataBag.html#method_add"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataBag\u003A\u003Agenerate\u0028\u0029",
-            "name": "generate",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataBag\u003A\u003AaddElement\u0028\u0029",
+            "name": "addElement",
             "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Metadata-MetadataBag.html#method_generate"
+            "url": "classes/Hyde-Framework-Modules-Metadata-MetadataBag.html#method_addElement"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataBag\u003A\u003AaddDynamicPageMetadata\u0028\u0029",
-            "name": "addDynamicPageMetadata",
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataBag\u003A\u003AaddGenericElement\u0028\u0029",
+            "name": "addGenericElement",
             "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Metadata-MetadataBag.html#method_addDynamicPageMetadata"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataBag\u003A\u003AaddMetadataForMarkdownPost\u0028\u0029",
-            "name": "addMetadataForMarkdownPost",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Metadata-MetadataBag.html#method_addMetadataForMarkdownPost"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataBag\u003A\u003AaddPostMetadataIfExists\u0028\u0029",
-            "name": "addPostMetadataIfExists",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Metadata-MetadataBag.html#method_addPostMetadataIfExists"
+            "url": "classes/Hyde-Framework-Modules-Metadata-MetadataBag.html#method_addGenericElement"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataBag\u003A\u003AgetPrefixedArray\u0028\u0029",
             "name": "getPrefixedArray",
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-Metadata-MetadataBag.html#method_getPrefixedArray"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataBag\u003A\u003AresolveImageLink\u0028\u0029",
-            "name": "resolveImageLink",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Metadata-MetadataBag.html#method_resolveImageLink"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataBag\u003A\u003A\u0024page",
-            "name": "page",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Modules-Metadata-MetadataBag.html#property_page"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataBag\u003A\u003A\u0024links",
             "name": "links",
@@ -3373,7 +3343,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataElementContract",
             "name": "MetadataElementContract",
-            "summary": "",
+            "summary": "The\u0020methods\u0020the\u0020object\u0020representations\u0020for\u0020Metadata\u0020element\u0020classes\u0020must\u0020implement.",
             "url": "classes/Hyde-Framework-Modules-Metadata-MetadataElementContract.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\MetadataElementContract\u003A\u003A__toString\u0028\u0029",
@@ -3490,6 +3460,46 @@ Search.appendIndex(
             "name": "content",
             "summary": "",
             "url": "classes/Hyde-Framework-Modules-Metadata-Models-OpenGraphElement.html#property_content"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\PageMetadataBag",
+            "name": "PageMetadataBag",
+            "summary": "Holds\u0020the\u0020metadata\u0020tags\u0020for\u0020a\u0020page\u0020or\u0020the\u0020site\u0020model.",
+            "url": "classes/Hyde-Framework-Modules-Metadata-PageMetadataBag.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\PageMetadataBag\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Metadata-PageMetadataBag.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\PageMetadataBag\u003A\u003Agenerate\u0028\u0029",
+            "name": "generate",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Metadata-PageMetadataBag.html#method_generate"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\PageMetadataBag\u003A\u003AaddDynamicPageMetadata\u0028\u0029",
+            "name": "addDynamicPageMetadata",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Metadata-PageMetadataBag.html#method_addDynamicPageMetadata"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\PageMetadataBag\u003A\u003AaddMetadataForMarkdownPost\u0028\u0029",
+            "name": "addMetadataForMarkdownPost",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Metadata-PageMetadataBag.html#method_addMetadataForMarkdownPost"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\PageMetadataBag\u003A\u003AaddPostMetadataIfExists\u0028\u0029",
+            "name": "addPostMetadataIfExists",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Metadata-PageMetadataBag.html#method_addPostMetadataIfExists"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\PageMetadataBag\u003A\u003AresolveImageLink\u0028\u0029",
+            "name": "resolveImageLink",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Metadata-PageMetadataBag.html#method_resolveImageLink"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Modules\\Metadata\\PageMetadataBag\u003A\u003A\u0024page",
+            "name": "page",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Modules-Metadata-PageMetadataBag.html#property_page"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService",
             "name": "AssetService",
