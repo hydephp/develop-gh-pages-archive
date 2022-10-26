@@ -1476,6 +1476,46 @@ Search.appendIndex(
             "summary": "\u007B\u0040inheritdoc\u007D",
             "url": "classes/Hyde-Framework-Foundation-Application.html#method_registerBaseBindings"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\FileCollection",
+            "name": "FileCollection",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-FileCollection.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\FileCollection\u003A\u003AgetSourceFiles\u0028\u0029",
+            "name": "getSourceFiles",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-FileCollection.html#method_getSourceFiles"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\FileCollection\u003A\u003AgetAllSourceFiles\u0028\u0029",
+            "name": "getAllSourceFiles",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-FileCollection.html#method_getAllSourceFiles"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\FileCollection\u003A\u003AgetSourceFilesFor\u0028\u0029",
+            "name": "getSourceFilesFor",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-FileCollection.html#method_getSourceFilesFor"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\FileCollection\u003A\u003AgetMediaFiles\u0028\u0029",
+            "name": "getMediaFiles",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-FileCollection.html#method_getMediaFiles"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\FileCollection\u003A\u003ArunDiscovery\u0028\u0029",
+            "name": "runDiscovery",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-FileCollection.html#method_runDiscovery"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\FileCollection\u003A\u003AdiscoverFilesFor\u0028\u0029",
+            "name": "discoverFilesFor",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-FileCollection.html#method_discoverFilesFor"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Foundation\\FileCollection\u003A\u003AdiscoverMediaAssetFiles\u0028\u0029",
+            "name": "discoverMediaAssetFiles",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Foundation-FileCollection.html#method_discoverMediaAssetFiles"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Foundation\\Filesystem",
             "name": "Filesystem",
             "summary": "File\u0020helper\u0020methods,\u0020bound\u0020to\u0020the\u0020HydeKernel\u0020instance,\u0020and\u0020is\u0020an\u0020integral\u0020part\u0020of\u0020the\u0020framework.",
