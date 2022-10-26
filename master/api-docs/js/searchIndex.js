@@ -2828,7 +2828,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003Ais\u0028\u0029",
             "name": "is",
-            "summary": "",
+            "summary": "Determine\u0020if\u0020the\u0020route\u0020instance\u0020matches\u0020another\u0020route\u0020or\u0020route\u0020key.",
             "url": "classes/Hyde-Framework-Models-Support-Route.html#method_is"
         },                {
             "fqsen": "\\Hyde\\Framework\\Models\\Support\\Route\u003A\u003Aget\u0028\u0029",
