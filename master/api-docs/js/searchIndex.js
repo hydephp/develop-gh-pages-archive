@@ -226,6 +226,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-MakePostCommand.html#method_handle"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\MakePostCommand\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-MakePostCommand.html#method_getTitle"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\MakePostCommand\u003A\u003AgetSelections\u0028\u0029",
+            "name": "getSelections",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-MakePostCommand.html#method_getSelections"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\MakePostCommand\u003A\u003AdisplaySelections\u0028\u0029",
+            "name": "displaySelections",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-MakePostCommand.html#method_displaySelections"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\MakePostCommand\u003A\u003AcreatePostFile\u0028\u0029",
+            "name": "createPostFile",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-MakePostCommand.html#method_createPostFile"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\MakePostCommand\u003A\u003A\u0024signature",
             "name": "signature",
             "summary": "",
