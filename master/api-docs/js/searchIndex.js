@@ -1146,35 +1146,45 @@ Search.appendIndex(
             "summary": "Save\u0020the\u0020class\u0020object\u0020to\u0020a\u0020Markdown\u0020file.",
             "url": "classes/Hyde-Framework-Actions-CreatesNewMarkdownPostFile.html#method_save"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewMarkdownPostFile\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "Get\u0020the\u0020class\u0020data\u0020as\u0020an\u0020array.",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewMarkdownPostFile.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewMarkdownPostFile\u003A\u003AgetIdentifier\u0028\u0029",
+            "name": "getIdentifier",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewMarkdownPostFile.html#method_getIdentifier"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewMarkdownPostFile\u003A\u003A\u0024title",
             "name": "title",
-            "summary": "The\u0020Post\u0020Title.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewMarkdownPostFile.html#property_title"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewMarkdownPostFile\u003A\u003A\u0024description",
             "name": "description",
-            "summary": "The\u0020Post\u0020Meta\u0020Description.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewMarkdownPostFile.html#property_description"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewMarkdownPostFile\u003A\u003A\u0024category",
             "name": "category",
-            "summary": "The\u0020Primary\u0020Post\u0020Category.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewMarkdownPostFile.html#property_category"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewMarkdownPostFile\u003A\u003A\u0024author",
             "name": "author",
-            "summary": "The\u0020Username\u0020of\u0020the\u0020Author.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewMarkdownPostFile.html#property_author"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewMarkdownPostFile\u003A\u003A\u0024date",
             "name": "date",
-            "summary": "The\u0020Publishing\u0020Date.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewMarkdownPostFile.html#property_date"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewMarkdownPostFile\u003A\u003A\u0024slug",
-            "name": "slug",
-            "summary": "The\u0020Post\u0020Slug.",
-            "url": "classes/Hyde-Framework-Actions-CreatesNewMarkdownPostFile.html#property_slug"
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewMarkdownPostFile\u003A\u003A\u0024identifier",
+            "name": "identifier",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewMarkdownPostFile.html#property_identifier"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile",
             "name": "CreatesNewPageSourceFile",
