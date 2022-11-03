@@ -161,10 +161,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-MakePageCommand.html#method_validateOptions"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-MakePageCommand.html#method_getTitle"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003AgetQualifiedPageType\u0028\u0029",
+            "name": "getQualifiedPageType",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-MakePageCommand.html#method_getQualifiedPageType"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003AgetSelectedType\u0028\u0029",
             "name": "getSelectedType",
             "summary": "",
             "url": "classes/Hyde-Console-Commands-MakePageCommand.html#method_getSelectedType"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003AgetTypeSelection\u0028\u0029",
+            "name": "getTypeSelection",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-MakePageCommand.html#method_getTypeSelection"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003AgetTypeOption\u0028\u0029",
+            "name": "getTypeOption",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-MakePageCommand.html#method_getTypeOption"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003A\u0024signature",
             "name": "signature",
@@ -186,10 +206,10 @@ Search.appendIndex(
             "summary": "The\u0020selected\u0020page\u0020type.",
             "url": "classes/Hyde-Console-Commands-MakePageCommand.html#property_selectedType"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003A\u0024type",
-            "name": "type",
-            "summary": "The\u0020page\u0020type.",
-            "url": "classes/Hyde-Console-Commands-MakePageCommand.html#property_type"
+            "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003A\u0024pageClass",
+            "name": "pageClass",
+            "summary": "The\u0020page\u0020class\u0020type.",
+            "url": "classes/Hyde-Console-Commands-MakePageCommand.html#property_pageClass"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003A\u0024force",
             "name": "force",
@@ -1196,6 +1216,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method___construct"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AgetOutputPath\u0028\u0029",
+            "name": "getOutputPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_getOutputPath"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AparseTitle\u0028\u0029",
             "name": "parseTitle",
             "summary": "",
@@ -1206,30 +1231,60 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_parseSlug"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AcanSaveFile\u0028\u0029",
-            "name": "canSaveFile",
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AnormalizeSubdirectory\u0028\u0029",
+            "name": "normalizeSubdirectory",
             "summary": "",
-            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_canSaveFile"
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_normalizeSubdirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AmakeOutputPath\u0028\u0029",
+            "name": "makeOutputPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_makeOutputPath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AcreatePage\u0028\u0029",
             "name": "createPage",
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createPage"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AcreateMarkdownFile\u0028\u0029",
-            "name": "createMarkdownFile",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createMarkdownFile"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AcreateBladeFile\u0028\u0029",
             "name": "createBladeFile",
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createBladeFile"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AcreateMarkdownFile\u0028\u0029",
+            "name": "createMarkdownFile",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createMarkdownFile"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AcreateDocumentationFile\u0028\u0029",
             "name": "createDocumentationFile",
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createDocumentationFile"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AformatIdentifier\u0028\u0029",
+            "name": "formatIdentifier",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_formatIdentifier"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AvalidateType\u0028\u0029",
+            "name": "validateType",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_validateType"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AfailIfFileCannotBeSaved\u0028\u0029",
+            "name": "failIfFileCannotBeSaved",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_failIfFileCannotBeSaved"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AprepareOutputDirectory\u0028\u0029",
+            "name": "prepareOutputDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_prepareOutputDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AcreateFile\u0028\u0029",
+            "name": "createFile",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createFile"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003A\u0024title",
             "name": "title",

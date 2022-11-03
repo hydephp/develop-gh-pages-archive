@@ -139,7 +139,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -173,35 +173,7 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_force">$force</a>
-    <span>
-                        &nbsp;: bool            </span>
-</dt>
-<dd>Can the file be overwritten?</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_selectedType">$selectedType</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd>The selected page type.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_title">$title</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd>The page title.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_type">$type</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd>The page type.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_description">$description</a>
     <span>
                         &nbsp;: string            </span>
@@ -209,11 +181,39 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_force">$force</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+<dd>Can the file be overwritten?</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_pageClass">$pageClass</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>The page class type.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_selectedType">$selectedType</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>The selected page type.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_signature">$signature</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_title">$title</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>The page title.</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Console-Commands-MakePageCommand.html#method_handle">handle()</a>
@@ -223,7 +223,35 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Console-Commands-MakePageCommand.html#method_getQualifiedPageType">getQualifiedPageType()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Console-Commands-MakePageCommand.html#method_getSelectedType">getSelectedType()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Console-Commands-MakePageCommand.html#method_getTitle">getTitle()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Console-Commands-MakePageCommand.html#method_getTypeOption">getTypeOption()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Console-Commands-MakePageCommand.html#method_getTypeSelection">getTypeSelection()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -252,142 +280,6 @@
         class="
             phpdocumentor-element
             -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_force">
-        $force
-        <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_force" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">50</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Can the file be overwritten?</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$force</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_selectedType">
-        $selectedType
-        <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_selectedType" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">40</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The selected page type.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$selectedType</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_title">
-        $title
-        <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_title" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">35</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The page title.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$title</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_type">
-        $type
-        <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_type" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">45</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The page type.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$type</span>
-    </code>
-
-    
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
             -protected
                                                         "
 >
@@ -400,7 +292,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -423,6 +315,107 @@
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_force">
+        $force
+        <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_force" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">54</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Can the file be overwritten?</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$force</span>
+    </code>
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_pageClass">
+        $pageClass
+        <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_pageClass" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The page class type.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$pageClass</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_selectedType">
+        $selectedType
+        <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_selectedType" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">42</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The selected page type.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$selectedType</span>
+    </code>
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_signature">
         $signature
         <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_signature" class="headerlink"><i class="fas fa-link"></i></a>
@@ -432,7 +425,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -450,6 +443,40 @@
 
     
     
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_title">
+        $title
+        <a href="classes/Hyde-Console-Commands-MakePageCommand.html#property_title" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">37</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The page title.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$title</span>
+    </code>
+
+    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -473,7 +500,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -499,6 +526,39 @@
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getQualifiedPageType">
+        getQualifiedPageType()
+        <a href="classes/Hyde-Console-Commands-MakePageCommand.html#method_getQualifiedPageType" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">88</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getQualifiedPageType</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getSelectedType">
         getSelectedType()
         <a href="classes/Hyde-Console-Commands-MakePageCommand.html#method_getSelectedType" class="headerlink"><i class="fas fa-link"></i></a>
@@ -506,7 +566,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -532,6 +592,105 @@
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getTitle">
+        getTitle()
+        <a href="classes/Hyde-Console-Commands-MakePageCommand.html#method_getTitle" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">81</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getTitle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getTypeOption">
+        getTypeOption()
+        <a href="classes/Hyde-Console-Commands-MakePageCommand.html#method_getTypeOption" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">108</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getTypeOption</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getTypeSelection">
+        getTypeSelection()
+        <a href="classes/Hyde-Console-Commands-MakePageCommand.html#method_getTypeSelection" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">103</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getTypeSelection</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_validateOptions">
         validateOptions()
         <a href="classes/Hyde-Console-Commands-MakePageCommand.html#method_validateOptions" class="headerlink"><i class="fas fa-link"></i></a>
@@ -539,7 +698,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/MakePageCommand.php"><a href="files/packages-framework-src-console-commands-makepagecommand.html"><abbr title="packages/framework/src/Console/Commands/MakePageCommand.php">MakePageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 

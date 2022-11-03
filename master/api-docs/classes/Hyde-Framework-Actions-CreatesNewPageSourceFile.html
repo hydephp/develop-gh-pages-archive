@@ -139,7 +139,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -173,35 +173,35 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
+                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#property_force">$force</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#property_outputPath">$outputPath</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#property_slug">$slug</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#property_subDir">$subDir</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#property_title">$title</a>
     <span>
                         &nbsp;: string            </span>
@@ -216,37 +216,9 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_canSaveFile">canSaveFile()</a>
+    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_getOutputPath">getOutputPath()</a>
     <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createBladeFile">createBladeFile()</a>
-    <span>
-                                &nbsp;: int|false    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createDocumentationFile">createDocumentationFile()</a>
-    <span>
-                                &nbsp;: int|false    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createMarkdownFile">createMarkdownFile()</a>
-    <span>
-                                &nbsp;: int|false    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createPage">createPage()</a>
-    <span>
-                                &nbsp;: int|false    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
@@ -271,17 +243,94 @@
 </dt>
 <dd>Ensure the supplied file&#039;s parent directory exists by creating it if it does not.</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createBladeFile">createBladeFile()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createDocumentationFile">createDocumentationFile()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createFile">createFile()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createMarkdownFile">createMarkdownFile()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createPage">createPage()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_failIfFileCannotBeSaved">failIfFileCannotBeSaved()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_formatIdentifier">formatIdentifier()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_makeOutputPath">makeOutputPath()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_normalizeSubdirectory">normalizeSubdirectory()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_parseSlug">parseSlug()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_parseTitle">parseTitle()</a>
     <span>
                                 &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_prepareOutputDirectory">prepareOutputDirectory()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_validateType">validateType()</a>
+    <span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
@@ -301,7 +350,7 @@
         class="
             phpdocumentor-element
             -property
-            -public
+            -protected
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="property_force">
@@ -313,13 +362,13 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$force</span>
      = <span class="phpdocumentor-signature__default-value">false</span></code>
@@ -335,7 +384,7 @@
         class="
             phpdocumentor-element
             -property
-            -public
+            -protected
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="property_outputPath">
@@ -347,13 +396,13 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$outputPath</span>
     </code>
@@ -369,7 +418,7 @@
         class="
             phpdocumentor-element
             -property
-            -public
+            -protected
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="property_slug">
@@ -381,13 +430,13 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$slug</span>
     </code>
@@ -403,7 +452,7 @@
         class="
             phpdocumentor-element
             -property
-            -public
+            -protected
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="property_subDir">
@@ -415,13 +464,13 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$subDir</span>
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
@@ -437,7 +486,7 @@
         class="
             phpdocumentor-element
             -property
-            -public
+            -protected
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="property_title">
@@ -449,13 +498,13 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$title</span>
     </code>
@@ -487,7 +536,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -540,65 +589,21 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_canSaveFile">
-        canSaveFile()
-        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_canSaveFile" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getOutputPath">
+        getOutputPath()
+        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_getOutputPath" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">canSaveFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$path</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_createBladeFile">
-        createBladeFile()
-        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createBladeFile" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">98</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">createBladeFile</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|false</span></code>
+                    <span class="phpdocumentor-signature__name">getOutputPath</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -606,117 +611,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|false</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_createDocumentationFile">
-        createDocumentationFile()
-        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createDocumentationFile" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">121</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">createDocumentationFile</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|false</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|false</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_createMarkdownFile">
-        createMarkdownFile()
-        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createMarkdownFile" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">86</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">createMarkdownFile</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|false</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|false</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_createPage">
-        createPage()
-        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createPage" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">59</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">createPage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|false</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|false</span>
+    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     
@@ -864,7 +759,359 @@
                     <article
         class="phpdocumentor-element
             -method
-            -public
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_createBladeFile">
+        createBladeFile()
+        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createBladeFile" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">90</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">createBladeFile</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_createDocumentationFile">
+        createDocumentationFile()
+        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createDocumentationFile" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">112</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">createDocumentationFile</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_createFile">
+        createFile()
+        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createFile" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">142</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">createFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contents</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$contents</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_createMarkdownFile">
+        createMarkdownFile()
+        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createMarkdownFile" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">107</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">createMarkdownFile</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_createPage">
+        createPage()
+        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createPage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">81</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">createPage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_failIfFileCannotBeSaved">
+        failIfFileCannotBeSaved()
+        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_failIfFileCannotBeSaved" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">129</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">failIfFileCannotBeSaved</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$path</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_formatIdentifier">
+        formatIdentifier()
+        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_formatIdentifier" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">117</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">formatIdentifier</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_makeOutputPath">
+        makeOutputPath()
+        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_makeOutputPath" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">makeOutputPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pageClass</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_normalizeSubdirectory">
+        normalizeSubdirectory()
+        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_normalizeSubdirectory" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">70</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">normalizeSubdirectory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$title</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_parseSlug">
@@ -874,13 +1121,13 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">parseSlug</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
@@ -908,7 +1155,7 @@
                     <article
         class="phpdocumentor-element
             -method
-            -public
+            -protected
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_parseTitle">
@@ -918,13 +1165,13 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">parseTitle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
@@ -945,6 +1192,83 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_prepareOutputDirectory">
+        prepareOutputDirectory()
+        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_prepareOutputDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">136</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">prepareOutputDirectory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_validateType">
+        validateType()
+        <a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_validateType" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php"><a href="files/packages-framework-src-framework-actions-createsnewpagesourcefile.html"><abbr title="packages/framework/src/Framework/Actions/CreatesNewPageSourceFile.php">CreatesNewPageSourceFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">122</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">validateType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pageClass</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
