@@ -4588,7 +4588,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Support\\Models\\Redirect\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Create\u0020a\u0020new\u0020redirect\u0020page\u0020file\u0020in\u0020the\u0020project\u0027s\u0020site\u0020output\u0020directory.",
             "url": "classes/Hyde-Support-Models-Redirect.html#method___construct"
         },                {
             "fqsen": "\\Hyde\\Support\\Models\\Redirect\u003A\u003Amake\u0028\u0029",
@@ -4605,6 +4605,11 @@ Search.appendIndex(
             "name": "store",
             "summary": "",
             "url": "classes/Hyde-Support-Models-Redirect.html#method_store"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\Redirect\u003A\u003AnormalizePath\u0028\u0029",
+            "name": "normalizePath",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-Redirect.html#method_normalizePath"
         },                {
             "fqsen": "\\Hyde\\Support\\Models\\Redirect\u003A\u003A\u0024path",
             "name": "path",
