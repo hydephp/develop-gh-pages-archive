@@ -4621,6 +4621,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Support-Models-Redirect.html#property_destination"
         },                {
+            "fqsen": "\\Hyde\\Support\\Models\\Redirect\u003A\u003A\u0024showText",
+            "name": "showText",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-Redirect.html#property_showText"
+        },                {
             "fqsen": "\\Hyde\\Support\\Models\\Route",
             "name": "Route",
             "summary": "The\u0020Route\u0020class\u0020bridges\u0020the\u0020gaps\u0020between\u0020Hyde\u0020pages\u0020and\u0020their\u0020respective\u0020compiled\u0020static\u0020webpages\nby\u0020providing\u0020helper\u0020methods\u0020and\u0020information\u0020allowing\u0020you\u0020to\u0020easily\u0020access\u0020and\u0020interact\u0020with\u0020the\nvarious\u0020paths\u0020associated\u0020with\u0020a\u0020page,\u0020both\u0020source\u0020and\u0020compiled\u0020file\u0020paths\u0020as\u0020well\u0020as\u0020the\u0020URL.",
