@@ -115,13 +115,17 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework.html">Framework</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-services.html">Services</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-features.html">Features</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-features-xmlgenerators.html">XmlGenerators</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    RssFeedService
+    RssFeedGenerator
 
+        <span class="phpdocumentor-element__extends">
+        extends <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html"><abbr title="\Hyde\Framework\Features\XmlGenerators\BaseXmlGenerator">BaseXmlGenerator</abbr></a>
+    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -134,9 +138,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-rssfeedgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php">RssFeedGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -164,13 +168,6 @@
                                         
                                              
                                     </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">phpstan-consistent-constructor</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
                         </dl>
 
 
@@ -184,85 +181,113 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#property_feed">$feed</a>
+                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#property_xmlElement">$xmlElement</a>
     <span>
                         &nbsp;: <abbr title="\SimpleXMLElement">SimpleXMLElement</abbr>            </span>
 </dt>
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method___construct">__construct()</a>
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
+<dd>Create a new XML generator instance.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_generate">generate()</a>
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_generate">generate()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_generateFeed">generateFeed()</a>
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_getDescription">getDescription()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getDescription">getDescription()</a>
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_getFilename">getFilename()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getXML">getXML()</a>
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method_getXml">getXml()</a>
     <span>
                                 &nbsp;: string    </span>
+</dt>
+<dd>Get the XML document as a string.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method_getXmlElement">getXmlElement()</a>
+    <span>
+                                &nbsp;: <abbr title="\SimpleXMLElement">SimpleXMLElement</abbr>    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_outputFilename">outputFilename()</a>
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method_make">make()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Generate a new XML document and get the contents as a string.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_addAtomLinkItem">addAtomLinkItem()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_addBaseChannelItems">addBaseChannelItems()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_addDynamicItemData">addDynamicItemData()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_addItem">addItem()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_constructBaseElement">constructBaseElement()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method_escape">escape()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addBaseChannelItems">addBaseChannelItems()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addDynamicItemData">addDynamicItemData()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addItem">addItem()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getImageLength">getImageLength()</a>
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_getImageLength">getImageLength()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getImageType">getImageType()</a>
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_getImageType">getImageType()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -278,33 +303,33 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Hyde-Framework-Services-RssFeedService.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
             phpdocumentor-element
             -property
-            -public
+            -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_feed">
-        $feed
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#property_feed" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_xmlElement">
+        $xmlElement
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#property_xmlElement" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\SimpleXMLElement">SimpleXMLElement</abbr></span>
-    <span class="phpdocumentor-signature__name">$feed</span>
+    <span class="phpdocumentor-signature__name">$xmlElement</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -319,7 +344,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Hyde-Framework-Services-RssFeedService.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -329,22 +354,22 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Create a new XML generator instance.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -362,12 +387,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_generate">
         generate()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_generate" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_generate" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-rssfeedgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php">RssFeedGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -393,47 +418,14 @@
             -public
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_generateFeed">
-        generateFeed()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_generateFeed" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">30</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">generateFeed</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
     <h4 class="phpdocumentor-element__name" id="method_getDescription">
         getDescription()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getDescription" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_getDescription" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-rssfeedgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php">RssFeedGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -457,23 +449,23 @@
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getXML">
-        getXML()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getXML" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getFilename">
+        getFilename()
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_getFilename" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-rssfeedgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php">RssFeedGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getXML</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getFilename</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -490,26 +482,92 @@
         class="phpdocumentor-element
             -method
             -public
-                                    -static                    "
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="method_outputFilename">
-        outputFilename()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_outputFilename" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getXml">
+        getXml()
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method_getXml" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">35</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the XML document as a string.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getXml</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getXmlElement">
+        getXmlElement()
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method_getXmlElement" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">outputFilename</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getXmlElement</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\SimpleXMLElement">SimpleXMLElement</abbr></span></code>
 
         <section class="phpdocumentor-description"></section>
 
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\SimpleXMLElement">SimpleXMLElement</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_make">
+        make()
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method_make" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">21</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generate a new XML document and get the contents as a string.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">make</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
     
     
 
@@ -525,14 +583,47 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_addBaseChannelItems">
-        addBaseChannelItems()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addBaseChannelItems" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_addAtomLinkItem">
+        addAtomLinkItem()
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_addAtomLinkItem" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-rssfeedgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php">RssFeedGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">addAtomLinkItem</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_addBaseChannelItems">
+        addBaseChannelItems()
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_addBaseChannelItems" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-rssfeedgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php">RssFeedGenerator.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -560,12 +651,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_addDynamicItemData">
         addDynamicItemData()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addDynamicItemData" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_addDynamicItemData" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-rssfeedgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php">RssFeedGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -612,12 +703,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_addItem">
         addItem()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addItem" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_addItem" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-rssfeedgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php">RssFeedGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -654,14 +745,91 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getImageLength">
-        getImageLength()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getImageLength" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_constructBaseElement">
+        constructBaseElement()
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_constructBaseElement" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-rssfeedgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php">RssFeedGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">constructBaseElement</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_escape">
+        escape()
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method_escape" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">escape</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getImageLength">
+        getImageLength()
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_getImageLength" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-rssfeedgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php">RssFeedGenerator.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -700,12 +868,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getImageType">
         getImageType()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getImageType" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_getImageType" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-rssfeedgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/RssFeedGenerator.php">RssFeedGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -814,7 +982,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
