@@ -136,7 +136,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -213,28 +213,7 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getDefaultOutputFilename">getDefaultOutputFilename()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getDescription">getDescription()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getLink">getLink()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getTitle">getTitle()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -247,22 +226,22 @@
 </dt>
 <dd></dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_outputFilename">outputFilename()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addAdditionalChannelData">addAdditionalChannelData()</a>
+    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addBaseChannelItems">addBaseChannelItems()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addAdditionalItemData">addAdditionalItemData()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addInitialChannelItems">addInitialChannelItems()</a>
+    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addDynamicItemData">addDynamicItemData()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -276,7 +255,14 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_xmlEscape">xmlEscape()</a>
+    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getImageLength">getImageLength()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getImageType">getImageType()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -310,7 +296,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -348,7 +334,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -381,7 +367,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -390,23 +376,10 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">generate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
+        <section class="phpdocumentor-description"></section>
+
     
     
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                            
-                                             
-                                    </dd>
-                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">static</span>
@@ -427,7 +400,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -453,39 +426,6 @@
             -public
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getDefaultOutputFilename">
-        getDefaultOutputFilename()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getDefaultOutputFilename" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">143</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getDefaultOutputFilename</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
     <h4 class="phpdocumentor-element__name" id="method_getDescription">
         getDescription()
         <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getDescription" class="headerlink"><i class="fas fa-link"></i></a>
@@ -493,7 +433,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -501,72 +441,6 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getDescription</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_getLink">
-        getLink()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getLink" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">133</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getLink</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_getTitle">
-        getTitle()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getTitle" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">126</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getTitle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -592,7 +466,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -615,24 +489,57 @@
                     <article
         class="phpdocumentor-element
             -method
-            -protected
-                                                        "
+            -public
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_addAdditionalChannelData">
-        addAdditionalChannelData()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addAdditionalChannelData" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_outputFilename">
+        outputFilename()
+        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_outputFilename" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">outputFilename</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_addBaseChannelItems">
+        addBaseChannelItems()
+        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addBaseChannelItems" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">addAdditionalChannelData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">addBaseChannelItems</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -651,21 +558,21 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_addAdditionalItemData">
-        addAdditionalItemData()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addAdditionalItemData" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_addDynamicItemData">
+        addDynamicItemData()
+        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addDynamicItemData" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">addAdditionalItemData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\SimpleXMLElement">SimpleXMLElement</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$item</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-MarkdownPost.html"><abbr title="\Hyde\Pages\MarkdownPost">MarkdownPost</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$post</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">addDynamicItemData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\SimpleXMLElement">SimpleXMLElement</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$item</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-MarkdownPost.html"><abbr title="\Hyde\Pages\MarkdownPost">MarkdownPost</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$post</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -703,39 +610,6 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_addInitialChannelItems">
-        addInitialChannelItems()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addInitialChannelItems" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">90</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">addInitialChannelItems</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_addItem">
         addItem()
         <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_addItem" class="headerlink"><i class="fas fa-link"></i></a>
@@ -743,7 +617,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -778,31 +652,75 @@
         class="phpdocumentor-element
             -method
             -protected
-                                    -static                    "
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="method_xmlEscape">
-        xmlEscape()
-        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_xmlEscape" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getImageLength">
+        getImageLength()
+        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getImageLength" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">xmlEscape</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getImageLength</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-MarkdownPost.html"><abbr title="\Hyde\Pages\MarkdownPost">MarkdownPost</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$post</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$string</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__name">$post</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-MarkdownPost.html"><abbr title="\Hyde\Pages\MarkdownPost">MarkdownPost</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getImageType">
+        getImageType()
+        <a href="classes/Hyde-Framework-Services-RssFeedService.html#method_getImageType" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/RssFeedService.php"><a href="files/packages-framework-src-framework-services-rssfeedservice.html"><abbr title="packages/framework/src/Framework/Services/RssFeedService.php">RssFeedService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">126</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getImageType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-MarkdownPost.html"><abbr title="\Hyde\Pages\MarkdownPost">MarkdownPost</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$post</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$post</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-MarkdownPost.html"><abbr title="\Hyde\Pages\MarkdownPost">MarkdownPost</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
