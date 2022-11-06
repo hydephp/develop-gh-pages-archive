@@ -713,7 +713,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
-            "summary": "",
+            "summary": "Get\u0020an\u0020array\u0020representation\u0020of\u0020the\u0020features\u0020and\u0020their\u0020status.",
             "url": "classes/Hyde-Facades-Features.html#method_toArray"
         },                {
             "fqsen": "\\Hyde\\Facades\\Includes",
@@ -3138,7 +3138,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003AtoLink\u0028\u0029",
             "name": "toLink",
-            "summary": "Create\u0020a\u0020new\u0020navigation\u0020menu\u0020item\u0020leading\u0020to\u0020a\u0020external\u0020URI.",
+            "summary": "Create\u0020a\u0020new\u0020navigation\u0020menu\u0020item\u0020leading\u0020to\u0020an\u0020external\u0020URI.",
             "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#method_toLink"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003AtoRoute\u0028\u0029",
@@ -3420,6 +3420,66 @@ Search.appendIndex(
             "name": "unixsumFile",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-ChecksumService.html#method_unixsumFile"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService",
+            "name": "DiscoveryService",
+            "summary": "The\u0020core\u0020service\u0020that\u0020powers\u0020all\u0020HydePHP\u0020file\u0020auto\u002Ddiscovery.",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetSourceFileListForModel\u0028\u0029",
+            "name": "getSourceFileListForModel",
+            "summary": "Supply\u0020a\u0020model\u003A\u003Aclass\u0020constant\u0020and\u0020get\u0020a\u0020list\u0020of\u0020all\u0020the\u0020existing\u0020source\u0020file\u0020base\u0020names.",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getSourceFileListForModel"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetModelFileExtension\u0028\u0029",
+            "name": "getModelFileExtension",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getModelFileExtension"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetModelSourceDirectory\u0028\u0029",
+            "name": "getModelSourceDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getModelSourceDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetBladePageFiles\u0028\u0029",
+            "name": "getBladePageFiles",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getBladePageFiles"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMarkdownPageFiles\u0028\u0029",
+            "name": "getMarkdownPageFiles",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPageFiles"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMarkdownPostFiles\u0028\u0029",
+            "name": "getMarkdownPostFiles",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPostFiles"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetDocumentationPageFiles\u0028\u0029",
+            "name": "getDocumentationPageFiles",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getDocumentationPageFiles"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMediaAssetFiles\u0028\u0029",
+            "name": "getMediaAssetFiles",
+            "summary": "Get\u0020all\u0020the\u0020Media\u0020asset\u0020file\u0020paths.",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMediaAssetFiles"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AcreateClickableFilepath\u0028\u0029",
+            "name": "createClickableFilepath",
+            "summary": "Create\u0020a\u0020filepath\u0020that\u0020can\u0020be\u0020opened\u0020in\u0020the\u0020browser\u0020from\u0020a\u0020terminal.",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_createClickableFilepath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AformatSlugForModel\u0028\u0029",
+            "name": "formatSlugForModel",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_formatSlugForModel"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMediaGlobPattern\u0028\u0029",
+            "name": "getMediaGlobPattern",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMediaGlobPattern"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService",
             "name": "MarkdownService",
@@ -4298,12 +4358,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Pages\\BladePage\u003A\u003AgetBladeView\u0028\u0029",
             "name": "getBladeView",
-            "summary": "",
+            "summary": "Get\u0020the\u0020Blade\u0020template\u0020for\u0020the\u0020page.",
             "url": "classes/Hyde-Pages-BladePage.html#method_getBladeView"
         },                {
             "fqsen": "\\Hyde\\Pages\\BladePage\u003A\u003Acompile\u0028\u0029",
             "name": "compile",
-            "summary": "",
+            "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
             "url": "classes/Hyde-Pages-BladePage.html#method_compile"
         },                {
             "fqsen": "\\Hyde\\Pages\\BladePage\u003A\u003A\u0024sourceDirectory",
@@ -4348,7 +4408,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Pages\\Concerns\\BaseMarkdownPage\u003A\u003Acompile\u0028\u0029",
             "name": "compile",
-            "summary": "",
+            "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
             "url": "classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_compile"
         },                {
             "fqsen": "\\Hyde\\Pages\\Concerns\\BaseMarkdownPage\u003A\u003Asave\u0028\u0029",
@@ -4360,6 +4420,166 @@ Search.appendIndex(
             "name": "fileExtension",
             "summary": "",
             "url": "classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#property_fileExtension"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage",
+            "name": "HydePage",
+            "summary": "The\u0020base\u0020class\u0020for\u0020all\u0020Hyde\u0020pages.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003Amake\u0028\u0029",
+            "name": "make",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_make"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003Aparse\u0028\u0029",
+            "name": "parse",
+            "summary": "Parse\u0020a\u0020source\u0020file\u0020into\u0020a\u0020page\u0020model\u0020instance.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_parse"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003Afiles\u0028\u0029",
+            "name": "files",
+            "summary": "Get\u0020an\u0020array\u0020of\u0020all\u0020the\u0020source\u0020file\u0020identifiers\u0020for\u0020the\u0020model.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_files"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "Get\u0020a\u0020collection\u0020of\u0020all\u0020pages,\u0020parsed\u0020into\u0020page\u0020models.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_all"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024sourceDirectory",
+            "name": "sourceDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_sourceDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024outputDirectory",
+            "name": "outputDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_outputDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024fileExtension",
+            "name": "fileExtension",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_fileExtension"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AsourcePath\u0028\u0029",
+            "name": "sourcePath",
+            "summary": "Qualify\u0020a\u0020page\u0020identifier\u0020into\u0020a\u0020local\u0020file\u0020path\u0020for\u0020the\u0020page\u0020source\u0020file\u0020relative\u0020to\u0020the\u0020project\u0020root.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_sourcePath"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AoutputPath\u0028\u0029",
+            "name": "outputPath",
+            "summary": "Qualify\u0020a\u0020page\u0020identifier\u0020into\u0020a\u0020target\u0020output\u0020file\u0020path\u0020relative\u0020to\u0020the\u0020_site\u0020output\u0020directory.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_outputPath"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_compile"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AgetSourcePath\u0028\u0029",
+            "name": "getSourcePath",
+            "summary": "Get\u0020the\u0020path\u0020to\u0020the\u0020instance\u0020source\u0020file,\u0020relative\u0020to\u0020the\u0020project\u0020root.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_getSourcePath"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AgetOutputPath\u0028\u0029",
+            "name": "getOutputPath",
+            "summary": "Get\u0020the\u0020path\u0020where\u0020the\u0020compiled\u0020page\u0020will\u0020be\u0020saved.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_getOutputPath"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AgetRouteKey\u0028\u0029",
+            "name": "getRouteKey",
+            "summary": "Get\u0020the\u0020route\u0020key\u0020for\u0020the\u0020page.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_getRouteKey"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AgetRoute\u0028\u0029",
+            "name": "getRoute",
+            "summary": "Get\u0020the\u0020route\u0020for\u0020the\u0020page.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_getRoute"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AgetLink\u0028\u0029",
+            "name": "getLink",
+            "summary": "Format\u0020the\u0020page\u0020instance\u0020to\u0020a\u0020URL\u0020path\u0020\u0028relative\u0020to\u0020site\u0020root\u0029\u0020with\u0020support\u0020for\u0020pretty\u0020URLs\u0020if\u0020enabled.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_getLink"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AgetIdentifier\u0028\u0029",
+            "name": "getIdentifier",
+            "summary": "Get\u0020the\u0020page\u0020model\u0027s\u0020identifier\u0020property.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_getIdentifier"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AgetBladeView\u0028\u0029",
+            "name": "getBladeView",
+            "summary": "Get\u0020the\u0020Blade\u0020template\u0020for\u0020the\u0020page.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_getBladeView"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AhtmlTitle\u0028\u0029",
+            "name": "htmlTitle",
+            "summary": "Get\u0020the\u0020page\u0020title\u0020to\u0020display\u0020in\u0020HTML\u0020tags\u0020like\u0020\u003Ctitle\u003E\u0020and\u0020\u003Cmeta\u003E\u0020tags.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_htmlTitle"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024metadata",
+            "name": "metadata",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_metadata"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AshowInNavigation\u0028\u0029",
+            "name": "showInNavigation",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_showInNavigation"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AnavigationMenuPriority\u0028\u0029",
+            "name": "navigationMenuPriority",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_navigationMenuPriority"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AnavigationMenuLabel\u0028\u0029",
+            "name": "navigationMenuLabel",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_navigationMenuLabel"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AnavigationMenuGroup\u0028\u0029",
+            "name": "navigationMenuGroup",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_navigationMenuGroup"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024template",
+            "name": "template",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_template"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024identifier",
+            "name": "identifier",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_identifier"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024routeKey",
+            "name": "routeKey",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_routeKey"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024matter",
+            "name": "matter",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_matter"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024title",
+            "name": "title",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_title"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024canonicalUrl",
+            "name": "canonicalUrl",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_canonicalUrl"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024navigation",
+            "name": "navigation",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_navigation"
         },                {
             "fqsen": "\\Hyde\\Pages\\DocumentationPage",
             "name": "DocumentationPage",
@@ -4423,7 +4643,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Pages\\HtmlPage\u003A\u003Acompile\u0028\u0029",
             "name": "compile",
-            "summary": "",
+            "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
             "url": "classes/Hyde-Pages-HtmlPage.html#method_compile"
         },                {
             "fqsen": "\\Hyde\\Pages\\HtmlPage\u003A\u003A\u0024sourceDirectory",

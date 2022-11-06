@@ -120,11 +120,8 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    BaseMarkdownPage
+    HydePage
 
-        <span class="phpdocumentor-element__extends">
-        extends <a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a>
-    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -135,19 +132,31 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <a href="classes/Hyde-Markdown-Contracts-MarkdownDocumentContract.html"><abbr title="\Hyde\Markdown\Contracts\MarkdownDocumentContract">MarkdownDocumentContract</abbr></a>                    </span>
+                            <a href="classes/Hyde-Markdown-Contracts-FrontMatter-PageSchema.html"><abbr title="\Hyde\Markdown\Contracts\FrontMatter\PageSchema">PageSchema</abbr></a>                    </span>
     
+            <span class="phpdocumentor-element__extends">
+            Uses
+                            <a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html"><abbr title="\Hyde\Framework\Concerns\InteractsWithFrontMatter">InteractsWithFrontMatter</abbr></a>,                             <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html"><abbr title="\Hyde\Framework\Factories\Concerns\HasFactory">HasFactory</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php"><a href="files/packages-framework-src-pages-concerns-basemarkdownpage.html"><abbr title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php">BaseMarkdownPage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">The base class for all Markdown-based page models.</p>
+            <p class="phpdocumentor-summary">The base class for all Hyde pages.</p>
 
+    <section class="phpdocumentor-description"><p>To ensure compatibility with the Hyde Framework, all page models should extend this class.
+Markdown-based pages can extend the BaseMarkdownPage class to get relevant helpers.</p>
+<p>Unlike other frameworks, in general you don't instantiate pages yourself in Hyde,
+instead, the page models acts as blueprints defining information for Hyde to
+know how to parse a file, and what data around it should be generated.</p>
+<p>To create a parsed file instance, you'd typically just create a source file,
+and you can then access the parsed file from the HydeKernel's page index.
+The source files are usually parsed by the SourceFileParser action.</p>
+</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -159,31 +168,7 @@
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Pages-MarkdownPage.html"><abbr title="\Hyde\Pages\MarkdownPage">MarkdownPage</abbr></a></span>
-                                        
-                                             
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Pages-MarkdownPost.html"><abbr title="\Hyde\Pages\MarkdownPost">MarkdownPost</abbr></a></span>
-                                        
-                                             
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Pages-DocumentationPage.html"><abbr title="\Hyde\Pages\DocumentationPage">DocumentationPage</abbr></a></span>
-                                        
-                                             
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a></span>
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html"><abbr title="\Hyde\Pages\Concerns\BaseMarkdownPage">BaseMarkdownPage</abbr></a></span>
                                         
                                              
                                     </dd>
@@ -206,7 +191,7 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Markdown-Contracts-MarkdownDocumentContract.html"><abbr title="\Hyde\Markdown\Contracts\MarkdownDocumentContract">MarkdownDocumentContract</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Markdown-Contracts-FrontMatter-PageSchema.html"><abbr title="\Hyde\Markdown\Contracts\FrontMatter\PageSchema">PageSchema</abbr></a></dt>
         <dd></dd>
     
     
@@ -228,7 +213,7 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#property_fileExtension">$fileExtension</a>
+    <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_fileExtension">$fileExtension</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
@@ -238,13 +223,6 @@
     <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_identifier">$identifier</a>
     <span>
                         &nbsp;: string            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#property_markdown">$markdown</a>
-    <span>
-                        &nbsp;: <a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a>            </span>
 </dt>
 <dd></dd>
 
@@ -305,7 +283,7 @@
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method___construct">__construct()</a>
+    <a href="classes/Hyde-Pages-Concerns-HydePage.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -319,7 +297,7 @@
 <dd>Get a collection of all pages, parsed into page models.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_compile">compile()</a>
+    <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_compile">compile()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -417,18 +395,11 @@
 <dd>Get the page title to display in HTML tags like &lt;title&gt; and &lt;meta&gt; tags.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_make">make()</a>
+    <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_make">make()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 <dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_markdown">markdown()</a>
-    <span>
-                                &nbsp;: <a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a>    </span>
-</dt>
-<dd>Return the document&#039;s Markdown object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_matter">matter()</a>
@@ -487,14 +458,6 @@
 <dd>Parse a source file into a page model instance.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_save">save()</a>
-    <span>
-                                &nbsp;: $this    </span>
-</dt>
-<dd>Save the Markdown page object to disk by compiling the
-front matter array to YAML and writing the body to the file.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_showInNavigation">showInNavigation()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -539,7 +502,7 @@ front matter array to YAML and writing the body to the file.</dd>
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Pages-Concerns-HydePage.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -584,14 +547,14 @@ front matter array to YAML and writing the body to the file.</dd>
 >
     <h4 class="phpdocumentor-element__name" id="property_fileExtension">
         $fileExtension
-        <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#property_fileExtension" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_fileExtension" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php"><a href="files/packages-framework-src-pages-concerns-basemarkdownpage.html"><abbr title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php">BaseMarkdownPage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -600,7 +563,7 @@ front matter array to YAML and writing the body to the file.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$fileExtension</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;.md&#039;</span></code>
+    </code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -634,40 +597,6 @@ front matter array to YAML and writing the body to the file.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$identifier</span>
-    </code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_markdown">
-        $markdown
-        <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#property_markdown" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php"><a href="files/packages-framework-src-pages-concerns-basemarkdownpage.html"><abbr title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php">BaseMarkdownPage.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">23</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$markdown</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -954,7 +883,7 @@ front matter array to YAML and writing the body to the file.</dd>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Pages-Concerns-HydePage.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -964,19 +893,19 @@ front matter array to YAML and writing the body to the file.</dd>
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Pages-Concerns-HydePage.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php"><a href="files/packages-framework-src-pages-concerns-basemarkdownpage.html"><abbr title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php">BaseMarkdownPage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -994,14 +923,6 @@ front matter array to YAML and writing the body to the file.</dd>
                 <span class="phpdocumentor-signature__argument__name">$matter</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$markdown</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a>|string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -1053,16 +974,16 @@ front matter array to YAML and writing the body to the file.</dd>
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                        -abstract                                "
 >
     <h4 class="phpdocumentor-element__name" id="method_compile">
         compile()
-        <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_compile" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_compile" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php"><a href="files/packages-framework-src-pages-concerns-basemarkdownpage.html"><abbr title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php">BaseMarkdownPage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -1070,24 +991,11 @@ front matter array to YAML and writing the body to the file.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">compile</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+    <span class="phpdocumentor-signature__abstract">abstract</span>                <span class="phpdocumentor-signature__name">compile</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
@@ -1597,19 +1505,19 @@ identify pages, similar to how named routes work in Laravel.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_make">
         make()
-        <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_make" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_make" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php"><a href="files/packages-framework-src-pages-concerns-basemarkdownpage.html"><abbr title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php">BaseMarkdownPage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">make</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">make</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1631,66 +1539,12 @@ identify pages, similar to how named routes work in Laravel.</p>
                     <section class="phpdocumentor-description"></section>
 
             </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$body</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a>|string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
             </dl>
 
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">static</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_markdown">
-        markdown()
-        <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_markdown" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php"><a href="files/packages-framework-src-pages-concerns-basemarkdownpage.html"><abbr title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php">BaseMarkdownPage.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">40</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Return the document&#039;s Markdown object.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">markdown</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a></span></code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a></span>
             &mdash;
         
     
@@ -2009,40 +1863,6 @@ identify pages, similar to how named routes work in Laravel.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_save">
-        save()
-        <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_save" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php"><a href="files/packages-framework-src-pages-concerns-basemarkdownpage.html"><abbr title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php">BaseMarkdownPage.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">60</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Save the Markdown page object to disk by compiling the
-front matter array to YAML and writing the body to the file.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">save</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_showInNavigation">
         showInNavigation()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_showInNavigation" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2291,7 +2111,7 @@ front matter array to YAML and writing the body to the file.</p>
 </section>
             </div>
         </div>
-        <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Hyde-Pages-Concerns-HydePage.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
