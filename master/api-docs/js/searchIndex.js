@@ -3256,6 +3256,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method_escape"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\XmlGenerators\\BaseXmlGenerator\u003A\u003AaddChild\u0028\u0029",
+            "name": "addChild",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method_addChild"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\XmlGenerators\\BaseXmlGenerator\u003A\u003A\u0024xmlElement",
             "name": "xmlElement",
             "summary": "",
