@@ -271,6 +271,20 @@ by dynamically enriching them with semantic HTML.</p>
 <dd>Do we satisfy the requirements to render an edit source button in the supplied position?</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html#method_getTokenizedDataArray">getTokenizedDataArray()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html#method_normalizeBody">normalizeBody()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html#method_renderSourceLink">renderSourceLink()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -355,7 +369,7 @@ by dynamically enriching them with semantic HTML.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$footer</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -389,7 +403,7 @@ by dynamically enriching them with semantic HTML.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$header</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -486,14 +500,14 @@ by dynamically enriching them with semantic HTML.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php"><a href="files/packages-framework-src-framework-features-documentation-semanticdocumentationarticle.html"><abbr title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php">SemanticDocumentationArticle.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-DocumentationPage.html"><abbr title="\Hyde\Pages\DocumentationPage">DocumentationPage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$html</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-DocumentationPage.html"><abbr title="\Hyde\Pages\DocumentationPage">DocumentationPage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -502,14 +516,6 @@ by dynamically enriching them with semantic HTML.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$page</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-DocumentationPage.html"><abbr title="\Hyde\Pages\DocumentationPage">DocumentationPage</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$html</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
@@ -538,7 +544,7 @@ by dynamically enriching them with semantic HTML.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php"><a href="files/packages-framework-src-framework-features-documentation-semanticdocumentationarticle.html"><abbr title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php">SemanticDocumentationArticle.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -546,7 +552,7 @@ by dynamically enriching them with semantic HTML.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-DocumentationPage.html"><abbr title="\Hyde\Pages\DocumentationPage">DocumentationPage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$html</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-DocumentationPage.html"><abbr title="\Hyde\Pages\DocumentationPage">DocumentationPage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -556,16 +562,7 @@ by dynamically enriching them with semantic HTML.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-DocumentationPage.html"><abbr title="\Hyde\Pages\DocumentationPage">DocumentationPage</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The source page object</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$html</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>compiled HTML content</p>
+                    <section class="phpdocumentor-description"><p>The source page object to process.</p>
 </section>
 
             </dd>
@@ -594,7 +591,7 @@ by dynamically enriching them with semantic HTML.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php"><a href="files/packages-framework-src-framework-features-documentation-semanticdocumentationarticle.html"><abbr title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php">SemanticDocumentationArticle.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -627,7 +624,7 @@ by dynamically enriching them with semantic HTML.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php"><a href="files/packages-framework-src-framework-features-documentation-semanticdocumentationarticle.html"><abbr title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php">SemanticDocumentationArticle.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -660,7 +657,7 @@ by dynamically enriching them with semantic HTML.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php"><a href="files/packages-framework-src-framework-features-documentation-semanticdocumentationarticle.html"><abbr title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php">SemanticDocumentationArticle.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -693,7 +690,7 @@ by dynamically enriching them with semantic HTML.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php"><a href="files/packages-framework-src-framework-features-documentation-semanticdocumentationarticle.html"><abbr title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php">SemanticDocumentationArticle.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -726,7 +723,7 @@ by dynamically enriching them with semantic HTML.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php"><a href="files/packages-framework-src-framework-features-documentation-semanticdocumentationarticle.html"><abbr title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php">SemanticDocumentationArticle.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
@@ -759,7 +756,7 @@ by dynamically enriching them with semantic HTML.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php"><a href="files/packages-framework-src-framework-features-documentation-semanticdocumentationarticle.html"><abbr title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php">SemanticDocumentationArticle.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -792,7 +789,7 @@ by dynamically enriching them with semantic HTML.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php"><a href="files/packages-framework-src-framework-features-documentation-semanticdocumentationarticle.html"><abbr title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php">SemanticDocumentationArticle.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -810,7 +807,8 @@ by dynamically enriching them with semantic HTML.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -828,6 +826,72 @@ by dynamically enriching them with semantic HTML.</p>
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getTokenizedDataArray">
+        getTokenizedDataArray()
+        <a href="classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html#method_getTokenizedDataArray" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php"><a href="files/packages-framework-src-framework-features-documentation-semanticdocumentationarticle.html"><abbr title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php">SemanticDocumentationArticle.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">86</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getTokenizedDataArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_normalizeBody">
+        normalizeBody()
+        <a href="classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html#method_normalizeBody" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php"><a href="files/packages-framework-src-framework-features-documentation-semanticdocumentationarticle.html"><abbr title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php">SemanticDocumentationArticle.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">96</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">normalizeBody</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_renderSourceLink">
         renderSourceLink()
         <a href="classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html#method_renderSourceLink" class="headerlink"><i class="fas fa-link"></i></a>
@@ -835,7 +899,7 @@ by dynamically enriching them with semantic HTML.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php"><a href="files/packages-framework-src-framework-features-documentation-semanticdocumentationarticle.html"><abbr title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php">SemanticDocumentationArticle.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 
     </aside>
 
@@ -868,7 +932,7 @@ by dynamically enriching them with semantic HTML.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php"><a href="files/packages-framework-src-framework-features-documentation-semanticdocumentationarticle.html"><abbr title="packages/framework/src/Framework/Features/Documentation/SemanticDocumentationArticle.php">SemanticDocumentationArticle.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 

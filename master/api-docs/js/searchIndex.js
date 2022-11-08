@@ -2706,6 +2706,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html#method_tokenize"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Documentation\\SemanticDocumentationArticle\u003A\u003AgetTokenizedDataArray\u0028\u0029",
+            "name": "getTokenizedDataArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html#method_getTokenizedDataArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Documentation\\SemanticDocumentationArticle\u003A\u003AnormalizeBody\u0028\u0029",
+            "name": "normalizeBody",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html#method_normalizeBody"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Documentation\\SemanticDocumentationArticle\u003A\u003AaddDynamicHeaderContent\u0028\u0029",
             "name": "addDynamicHeaderContent",
             "summary": "",
@@ -2721,15 +2731,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html#method_renderSourceLink"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Documentation\\SemanticDocumentationArticle\u003A\u003AhasTorchlight\u0028\u0029",
-            "name": "hasTorchlight",
-            "summary": "Does\u0020the\u0020current\u0020document\u0020use\u0020Torchlight\u003F",
-            "url": "classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html#method_hasTorchlight"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Documentation\\SemanticDocumentationArticle\u003A\u003AcanRenderSourceLink\u0028\u0029",
             "name": "canRenderSourceLink",
             "summary": "Do\u0020we\u0020satisfy\u0020the\u0020requirements\u0020to\u0020render\u0020an\u0020edit\u0020source\u0020button\u0020in\u0020the\u0020supplied\u0020position\u003F",
             "url": "classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html#method_canRenderSourceLink"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Documentation\\SemanticDocumentationArticle\u003A\u003AhasTorchlight\u0028\u0029",
+            "name": "hasTorchlight",
+            "summary": "Does\u0020the\u0020current\u0020document\u0020use\u0020Torchlight\u003F",
+            "url": "classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html#method_hasTorchlight"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Documentation\\SemanticDocumentationArticle\u003A\u003A\u0024page",
             "name": "page",
@@ -4118,12 +4128,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Markdown\\Models\\Markdown\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Create\u0020a\u0020new\u0020Markdown\u0020object\u0020from\u0020a\u0020string.",
             "url": "classes/Hyde-Markdown-Models-Markdown.html#method___construct"
         },                {
             "fqsen": "\\Hyde\\Markdown\\Models\\Markdown\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
-            "summary": "",
+            "summary": "Get\u0020the\u0020source\u0020Markdown\u0020body.",
             "url": "classes/Hyde-Markdown-Models-Markdown.html#method___toString"
         },                {
             "fqsen": "\\Hyde\\Markdown\\Models\\Markdown\u003A\u003A\u0024body",
@@ -4133,17 +4143,22 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Markdown\\Models\\Markdown\u003A\u003Acompile\u0028\u0029",
             "name": "compile",
-            "summary": "",
+            "summary": "Compile\u0020the\u0020Markdown\u0020body\u0020to\u0020a\u0020string\u0020of\u0020HTML.",
             "url": "classes/Hyde-Markdown-Models-Markdown.html#method_compile"
+        },                {
+            "fqsen": "\\Hyde\\Markdown\\Models\\Markdown\u003A\u003AtoHtml\u0028\u0029",
+            "name": "toHtml",
+            "summary": "Same\u0020as\u0020Markdown\u003A\u003Acompile\u0028\u0029,\u0020but\u0020returns\u0020an\u0020HtmlString\u0020object.",
+            "url": "classes/Hyde-Markdown-Models-Markdown.html#method_toHtml"
         },                {
             "fqsen": "\\Hyde\\Markdown\\Models\\Markdown\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
-            "summary": "Return\u0020the\u0020Markdown\u0020document\u0020body\u0020explored\u0020by\u0020line\u0020into\u0020an\u0020array.",
+            "summary": "Get\u0020the\u0020Markdown\u0020document\u0020body\u0020as\u0020an\u0020array\u0020of\u0020lines.",
             "url": "classes/Hyde-Markdown-Models-Markdown.html#method_toArray"
         },                {
             "fqsen": "\\Hyde\\Markdown\\Models\\Markdown\u003A\u003AfromFile\u0028\u0029",
             "name": "fromFile",
-            "summary": "",
+            "summary": "Parse\u0020a\u0020Markdown\u0020file\u0020into\u0020a\u0020new\u0020Markdown\u0020object.",
             "url": "classes/Hyde-Markdown-Models-Markdown.html#method_fromFile"
         },                {
             "fqsen": "\\Hyde\\Markdown\\Models\\Markdown\u003A\u003Arender\u0028\u0029",
