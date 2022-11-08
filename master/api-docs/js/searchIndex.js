@@ -3606,21 +3606,6 @@ Search.appendIndex(
             "summary": "The\u0020core\u0020service\u0020that\u0020powers\u0020all\u0020HydePHP\u0020file\u0020auto\u002Ddiscovery.",
             "url": "classes/Hyde-Framework-Services-DiscoveryService.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetSourceFileListForModel\u0028\u0029",
-            "name": "getSourceFileListForModel",
-            "summary": "Supply\u0020a\u0020model\u003A\u003Aclass\u0020constant\u0020and\u0020get\u0020a\u0020list\u0020of\u0020all\u0020the\u0020existing\u0020source\u0020file\u0020base\u0020names.",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getSourceFileListForModel"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetModelFileExtension\u0028\u0029",
-            "name": "getModelFileExtension",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getModelFileExtension"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetModelSourceDirectory\u0028\u0029",
-            "name": "getModelSourceDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getModelSourceDirectory"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetBladePageFiles\u0028\u0029",
             "name": "getBladePageFiles",
             "summary": "",
@@ -3641,25 +3626,55 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getDocumentationPageFiles"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMediaAssetFiles\u0028\u0029",
-            "name": "getMediaAssetFiles",
-            "summary": "Get\u0020all\u0020the\u0020Media\u0020asset\u0020file\u0020paths.",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMediaAssetFiles"
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetSourceFileListForModel\u0028\u0029",
+            "name": "getSourceFileListForModel",
+            "summary": "Supply\u0020a\u0020model\u003A\u003Aclass\u0020constant\u0020and\u0020get\u0020a\u0020list\u0020of\u0020all\u0020the\u0020existing\u0020source\u0020file\u0020base\u0020names.",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getSourceFileListForModel"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetModelFileExtension\u0028\u0029",
+            "name": "getModelFileExtension",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getModelFileExtension"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetModelSourceDirectory\u0028\u0029",
+            "name": "getModelSourceDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getModelSourceDirectory"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AcreateClickableFilepath\u0028\u0029",
             "name": "createClickableFilepath",
             "summary": "Create\u0020a\u0020filepath\u0020that\u0020can\u0020be\u0020opened\u0020in\u0020the\u0020browser\u0020from\u0020a\u0020terminal.",
             "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_createClickableFilepath"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AformatSlugForModel\u0028\u0029",
-            "name": "formatSlugForModel",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_formatSlugForModel"
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003ApathToIdentifier\u0028\u0029",
+            "name": "pathToIdentifier",
+            "summary": "Format\u0020a\u0020filename\u0020to\u0020an\u0020identifier\u0020for\u0020a\u0020given\u0020model.\u0020Unlike\u0020the\u0020basename\u0020function,\u0020any\u0020nested\u0020paths\nwithin\u0020the\u0020source\u0020directory\u0020are\u0020retained\u0020in\u0020order\u0020to\u0020satisfy\u0020the\u0020page\u0020identifier\u0020definition.",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_pathToIdentifier"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMediaAssetFiles\u0028\u0029",
+            "name": "getMediaAssetFiles",
+            "summary": "Get\u0020all\u0020the\u0020Media\u0020asset\u0020file\u0020paths.",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMediaAssetFiles"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMediaGlobPattern\u0028\u0029",
             "name": "getMediaGlobPattern",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMediaGlobPattern"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AparseConfiguredMediaExtensions\u0028\u0029",
+            "name": "parseConfiguredMediaExtensions",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_parseConfiguredMediaExtensions"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AremoveSpaces\u0028\u0029",
+            "name": "removeSpaces",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_removeSpaces"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003ADEFAULT_MEDIA_EXTENSIONS",
+            "name": "DEFAULT_MEDIA_EXTENSIONS",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#constant_DEFAULT_MEDIA_EXTENSIONS"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService",
             "name": "MarkdownService",
