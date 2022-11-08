@@ -4646,20 +4646,15 @@ Search.appendIndex(
             "summary": "Page\u0020class\u0020for\u0020documentation\u0020pages.",
             "url": "classes/Hyde-Pages-DocumentationPage.html"
         },                {
-            "fqsen": "\\Hyde\\Pages\\DocumentationPage\u003A\u003AgetRouteKey\u0028\u0029",
-            "name": "getRouteKey",
+            "fqsen": "\\Hyde\\Pages\\DocumentationPage\u003A\u003Ahome\u0028\u0029",
+            "name": "home",
             "summary": "",
-            "url": "classes/Hyde-Pages-DocumentationPage.html#method_getRouteKey"
+            "url": "classes/Hyde-Pages-DocumentationPage.html#method_home"
         },                {
             "fqsen": "\\Hyde\\Pages\\DocumentationPage\u003A\u003AgetOnlineSourcePath\u0028\u0029",
             "name": "getOnlineSourcePath",
             "summary": "",
             "url": "classes/Hyde-Pages-DocumentationPage.html#method_getOnlineSourcePath"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\DocumentationPage\u003A\u003Ahome\u0028\u0029",
-            "name": "home",
-            "summary": "",
-            "url": "classes/Hyde-Pages-DocumentationPage.html#method_home"
         },                {
             "fqsen": "\\Hyde\\Pages\\DocumentationPage\u003A\u003AhasTableOfContents\u0028\u0029",
             "name": "hasTableOfContents",
@@ -4670,11 +4665,6 @@ Search.appendIndex(
             "name": "getTableOfContents",
             "summary": "Generate\u0020Table\u0020of\u0020Contents\u0020as\u0020HTML\u0020from\u0020a\u0020Markdown\u0020document\u0020body.",
             "url": "classes/Hyde-Pages-DocumentationPage.html#method_getTableOfContents"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\DocumentationPage\u003A\u003AgetOutputPath\u0028\u0029",
-            "name": "getOutputPath",
-            "summary": "Return\u0020the\u0020output\u0020path\u0020for\u0020the\u0020identifier\u0020basename\u0020so\u0020nested\u0020pages\u0020are\u0020flattened.",
-            "url": "classes/Hyde-Pages-DocumentationPage.html#method_getOutputPath"
         },                {
             "fqsen": "\\Hyde\\Pages\\DocumentationPage\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",

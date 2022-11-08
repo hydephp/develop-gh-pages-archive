@@ -136,6 +136,9 @@
             implements
                             <a href="classes/Hyde-Markdown-Contracts-FrontMatter-DocumentationPageSchema.html"><abbr title="\Hyde\Markdown\Contracts\FrontMatter\DocumentationPageSchema">DocumentationPageSchema</abbr></a>                    </span>
     
+            <span class="phpdocumentor-element__extends">
+            Uses
+                            <abbr title="\Hyde\Pages\Concerns\UsesFlattenedOutputPaths">UsesFlattenedOutputPaths</abbr>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
@@ -352,11 +355,11 @@ The Markdown will be compiled to HTML using the documentation page layout to the
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Pages-DocumentationPage.html#method_getOutputPath">getOutputPath()</a>
+    <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getOutputPath">getOutputPath()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Return the output path for the identifier basename so nested pages are flattened.</dd>
+<dd>Get the path where the compiled page will be saved.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getRoute">getRoute()</a>
@@ -366,11 +369,11 @@ The Markdown will be compiled to HTML using the documentation page layout to the
 <dd>Get the route for the page.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Pages-DocumentationPage.html#method_getRouteKey">getRouteKey()</a>
+    <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getRouteKey">getRouteKey()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
+<dd>Get the route key for the page.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getSourcePath">getSourcePath()</a>
@@ -793,7 +796,7 @@ front matter array to YAML and writing the body to the file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/DocumentationPage.php"><a href="files/packages-framework-src-pages-documentationpage.html"><abbr title="packages/framework/src/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -861,7 +864,7 @@ front matter array to YAML and writing the body to the file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/DocumentationPage.php"><a href="files/packages-framework-src-pages-documentationpage.html"><abbr title="packages/framework/src/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -895,7 +898,7 @@ front matter array to YAML and writing the body to the file.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/DocumentationPage.php"><a href="files/packages-framework-src-pages-documentationpage.html"><abbr title="packages/framework/src/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -1359,7 +1362,7 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/DocumentationPage.php"><a href="files/packages-framework-src-pages-documentationpage.html"><abbr title="packages/framework/src/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -1400,16 +1403,16 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getOutputPath">
         getOutputPath()
-        <a href="classes/Hyde-Pages-DocumentationPage.html#method_getOutputPath" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getOutputPath" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/DocumentationPage.php"><a href="files/packages-framework-src-pages-documentationpage.html"><abbr title="packages/framework/src/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Return the output path for the identifier basename so nested pages are flattened.</p>
+        <p class="phpdocumentor-summary">Get the path where the compiled page will be saved.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1422,7 +1425,9 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>Path relative to the site output directory.</p>
+</section>
+
     
 </article>
                     <article
@@ -1468,41 +1473,36 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getRouteKey">
         getRouteKey()
-        <a href="classes/Hyde-Pages-DocumentationPage.html#method_getRouteKey" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getRouteKey" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/DocumentationPage.php"><a href="files/packages-framework-src-pages-documentationpage.html"><abbr title="packages/framework/src/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">189</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Get the route key for the page.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getRouteKey</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+        <section class="phpdocumentor-description"><p>The route key is the URL path relative to the site root.</p>
+<p>For example, if the compiled page will be saved to _site/docs/index.html,
+then this method will return 'docs/index'. Route keys are used to
+identify pages, similar to how named routes work in Laravel.</p>
+</section>
+
     
     
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>The page's route key.</p>
+</section>
+
     
 </article>
                     <article
@@ -1551,7 +1551,7 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/DocumentationPage.php"><a href="files/packages-framework-src-pages-documentationpage.html"><abbr title="packages/framework/src/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -1628,7 +1628,7 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/DocumentationPage.php"><a href="files/packages-framework-src-pages-documentationpage.html"><abbr title="packages/framework/src/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -1661,7 +1661,7 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/DocumentationPage.php"><a href="files/packages-framework-src-pages-documentationpage.html"><abbr title="packages/framework/src/Pages/DocumentationPage.php">DocumentationPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
