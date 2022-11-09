@@ -891,15 +891,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-FileCollection.html#method_getSourceFiles"
         },                {
-            "fqsen": "\\Hyde\\Foundation\\FileCollection\u003A\u003AgetAllSourceFiles\u0028\u0029",
-            "name": "getAllSourceFiles",
-            "summary": "",
-            "url": "classes/Hyde-Foundation-FileCollection.html#method_getAllSourceFiles"
-        },                {
             "fqsen": "\\Hyde\\Foundation\\FileCollection\u003A\u003AgetSourceFilesFor\u0028\u0029",
             "name": "getSourceFilesFor",
             "summary": "",
             "url": "classes/Hyde-Foundation-FileCollection.html#method_getSourceFilesFor"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\FileCollection\u003A\u003AgetAllSourceFiles\u0028\u0029",
+            "name": "getAllSourceFiles",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-FileCollection.html#method_getAllSourceFiles"
         },                {
             "fqsen": "\\Hyde\\Foundation\\FileCollection\u003A\u003AgetMediaFiles\u0028\u0029",
             "name": "getMediaFiles",
