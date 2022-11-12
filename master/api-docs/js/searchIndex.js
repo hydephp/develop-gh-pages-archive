@@ -1046,6 +1046,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-HydeKernel.html#property_basePath"
         },                {
+            "fqsen": "\\Hyde\\Foundation\\HydeKernel\u003A\u003A\u0024sourceRoot",
+            "name": "sourceRoot",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-HydeKernel.html#property_sourceRoot"
+        },                {
             "fqsen": "\\Hyde\\Foundation\\HydeKernel\u003A\u003A\u0024filesystem",
             "name": "filesystem",
             "summary": "",
@@ -1438,7 +1443,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PublishesHydeViews",
             "name": "PublishesHydeViews",
-            "summary": "",
+            "summary": "Publish\u0020one\u0020or\u0020more\u0020of\u0020the\u0020Hyde\u0020Blade\u0020views.",
             "url": "classes/Hyde-Framework-Actions-PublishesHydeViews.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PublishesHydeViews\u003A\u003A__construct\u0028\u0029",
@@ -4580,6 +4585,11 @@ Search.appendIndex(
             "name": "outputPath",
             "summary": "Qualify\u0020a\u0020page\u0020identifier\u0020into\u0020a\u0020target\u0020output\u0020file\u0020path\u0020relative\u0020to\u0020the\u0020_site\u0020output\u0020directory.",
             "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_outputPath"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003Apath\u0028\u0029",
+            "name": "path",
+            "summary": "Get\u0020an\u0020absolute\u0020file\u0020path\u0020to\u0020the\u0020page\u0027s\u0020source\u0020directory,\u0020or\u0020a\u0020file\u0020within\u0020it.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_path"
         },                {
             "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003Acompile\u0028\u0029",
             "name": "compile",
