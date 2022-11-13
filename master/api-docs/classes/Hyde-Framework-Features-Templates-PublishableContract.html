@@ -115,49 +115,32 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework.html">Framework</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-actions.html">Actions</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-features.html">Features</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-features-templates.html">Templates</a></li>
     </ul>
 
-    <article class="phpdocumentor-element -class">
+    <article class="phpdocumentor-element -interface">
         <h2 class="phpdocumentor-content__title">
-    PublishesHomepageView
-
-    
-            <div class="phpdocumentor-element__package">
-            in package
+    PublishableContract
+                <div class="phpdocumentor-element__package">
+            in
             <ul class="phpdocumentor-breadcrumbs">
-                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
+                                    <li><a href="packages/Application.html">Application</a></li>
                             </ul>
         </div>
-    
-    
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PublishesHomepageView.php"><a href="files/packages-framework-src-framework-actions-publisheshomepageview.html"><abbr title="packages/framework/src/Framework/Actions/PublishesHomepageView.php">PublishesHomepageView.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Templates/PublishableContract.php"><a href="files/packages-framework-src-framework-features-templates-publishablecontract.html"><abbr title="packages/framework/src/Framework/Features/Templates/PublishableContract.php">PublishableContract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">7</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Publish one of the Hyde homepages.</p>
+        
+    <section class="phpdocumentor-description"></section>
 
 
-
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Framework\Testing\Feature\Actions\PublishesHomepageViewTest">PublishesHomepageViewTest</abbr></span>
-                                        
-                                             
-                                    </dd>
-                        </dl>
 
 
 
@@ -170,31 +153,38 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Actions-PublishesHomepageView.html#property_homePages">$homePages</a>
+                        <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_getDescription">getDescription()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Framework-Actions-PublishesHomepageView.html#property_selected">$selected</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd></dd>
-
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Actions-PublishesHomepageView.html#method___construct">__construct()</a>
-    <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Actions-PublishesHomepageView.html#method_execute">execute()</a>
+    <a href="classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_getOutputPath">getOutputPath()</a>
     <span>
-                                &nbsp;: bool|int    </span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_getTitle">getTitle()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_publish">publish()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_toArray">toArray()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd></dd>
 
@@ -204,117 +194,140 @@
 
         
 
-        
-    <section class="phpdocumentor-properties">
-        <h3 class="phpdocumentor-elements__header" id="properties">
-            Properties
-            <a href="classes/Hyde-Framework-Actions-PublishesHomepageView.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-            -static                                            "
->
-    <h4 class="phpdocumentor-element__name" id="property_homePages">
-        $homePages
-        <a href="classes/Hyde-Framework-Actions-PublishesHomepageView.html#property_homePages" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PublishesHomepageView.php"><a href="files/packages-framework-src-framework-actions-publisheshomepageview.html"><abbr title="packages/framework/src/Framework/Actions/PublishesHomepageView.php">PublishesHomepageView.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">16</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$homePages</span>
-     = <span class="phpdocumentor-signature__default-value">[&#039;welcome&#039; =&gt; [&#039;name&#039; =&gt; &#039;Welcome&#039;, &#039;path&#039; =&gt; &#039;resources/views/homepages/welcome.blade.php&#039;, &#039;description&#039; =&gt; &#039;The default welcome page.&#039;], &#039;posts&#039; =&gt; [&#039;name&#039; =&gt; &#039;Posts Feed&#039;, &#039;path&#039; =&gt; &#039;resources/views/homepages/post-feed.blade.php&#039;, &#039;description&#039; =&gt; &#039;A feed of your latest posts. Perfect for a blog site!&#039;], &#039;blank&#039; =&gt; [&#039;name&#039; =&gt; &#039;Blank Starter&#039;, &#039;path&#039; =&gt; &#039;resources/views/homepages/blank.blade.php&#039;, &#039;description&#039; =&gt; &#039;A blank Blade template with just the base layout.&#039;]]</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_selected">
-        $selected
-        <a href="classes/Hyde-Framework-Actions-PublishesHomepageView.html#property_selected" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PublishesHomepageView.php"><a href="files/packages-framework-src-framework-actions-publisheshomepageview.html"><abbr title="packages/framework/src/Framework/Actions/PublishesHomepageView.php">PublishesHomepageView.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">34</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$selected</span>
-    </code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-            </section>
-
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Hyde-Framework-Actions-PublishesHomepageView.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Features-Templates-PublishableContract.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/Hyde-Framework-Actions-PublishesHomepageView.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getDescription">
+        getDescription()
+        <a href="classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_getDescription" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PublishesHomepageView.php"><a href="files/packages-framework-src-framework-actions-publisheshomepageview.html"><abbr title="packages/framework/src/Framework/Actions/PublishesHomepageView.php">PublishesHomepageView.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Templates/PublishableContract.php"><a href="files/packages-framework-src-framework-features-templates-publishablecontract.html"><abbr title="packages/framework/src/Framework/Features/Templates/PublishableContract.php">PublishableContract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$selected</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getDescription</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getOutputPath">
+        getOutputPath()
+        <a href="classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_getOutputPath" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Templates/PublishableContract.php"><a href="files/packages-framework-src-framework-features-templates-publishablecontract.html"><abbr title="packages/framework/src/Framework/Features/Templates/PublishableContract.php">PublishableContract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">15</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getOutputPath</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getTitle">
+        getTitle()
+        <a href="classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_getTitle" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Templates/PublishableContract.php"><a href="files/packages-framework-src-framework-features-templates-publishablecontract.html"><abbr title="packages/framework/src/Framework/Features/Templates/PublishableContract.php">PublishableContract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">11</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getTitle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_publish">
+        publish()
+        <a href="classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_publish" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Templates/PublishableContract.php"><a href="files/packages-framework-src-framework-features-templates-publishablecontract.html"><abbr title="packages/framework/src/Framework/Features/Templates/PublishableContract.php">PublishableContract.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">9</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">publish</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$force</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$selected</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
+                <span class="phpdocumentor-signature__argument__name">$force</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -324,7 +337,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     
@@ -333,23 +346,23 @@
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_execute">
-        execute()
-        <a href="classes/Hyde-Framework-Actions-PublishesHomepageView.html#method_execute" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_toArray">
+        toArray()
+        <a href="classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_toArray" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PublishesHomepageView.php"><a href="files/packages-framework-src-framework-actions-publisheshomepageview.html"><abbr title="packages/framework/src/Framework/Actions/PublishesHomepageView.php">PublishesHomepageView.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Templates/PublishableContract.php"><a href="files/packages-framework-src-framework-features-templates-publishablecontract.html"><abbr title="packages/framework/src/Framework/Features/Templates/PublishableContract.php">PublishableContract.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">execute</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|int</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -357,7 +370,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool|int</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
         
     
@@ -440,7 +453,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Hyde-Framework-Actions-PublishesHomepageView.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Hyde-Framework-Features-Templates-PublishableContract.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

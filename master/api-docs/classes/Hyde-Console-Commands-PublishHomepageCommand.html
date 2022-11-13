@@ -134,12 +134,15 @@
         </div>
     
     
+            <span class="phpdocumentor-element__extends">
+            Uses
+                            <a href="classes/Hyde-Console-Concerns-AsksToRebuildSite.html"><abbr title="\Hyde\Console\Concerns\AsksToRebuildSite">AsksToRebuildSite</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
@@ -181,13 +184,6 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#property_selected">$selected</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#property_signature">$signature</a>
     <span>
                         &nbsp;: string            </span>
@@ -202,14 +198,14 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_askToRebuildSite">askToRebuildSite()</a>
+    <a href="classes/Hyde-Console-Concerns-AsksToRebuildSite.html#method_askToRebuildSite">askToRebuildSite()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_canExistingIndexFileBeOverwritten">canExistingIndexFileBeOverwritten()</a>
+    <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_canExistingFileBeOverwritten">canExistingFileBeOverwritten()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
@@ -223,7 +219,28 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_getTemplateOptions">getTemplateOptions()</a>
+    <span>
+                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_isTheExistingFileADefaultOne">isTheExistingFileADefaultOne()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_parseChoiceIntoKey">parseChoiceIntoKey()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_parseSelection">parseSelection()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -264,7 +281,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -287,40 +304,6 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_selected">
-        $selected
-        <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#property_selected" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">27</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$selected</span>
-    </code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="property_signature">
         $signature
         <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#property_signature" class="headerlink"><i class="fas fa-link"></i></a>
@@ -330,7 +313,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -367,7 +350,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -395,12 +378,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_askToRebuildSite">
         askToRebuildSite()
-        <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_askToRebuildSite" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Console-Concerns-AsksToRebuildSite.html#method_askToRebuildSite" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Concerns/AsksToRebuildSite.php"><a href="files/packages-framework-src-console-concerns-askstorebuildsite.html"><abbr title="packages/framework/src/Console/Concerns/AsksToRebuildSite.php">AsksToRebuildSite.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">11</span>
 
     </aside>
 
@@ -426,21 +409,21 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_canExistingIndexFileBeOverwritten">
-        canExistingIndexFileBeOverwritten()
-        <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_canExistingIndexFileBeOverwritten" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_canExistingFileBeOverwritten">
+        canExistingFileBeOverwritten()
+        <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_canExistingFileBeOverwritten" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">canExistingIndexFileBeOverwritten</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">canExistingFileBeOverwritten</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -492,6 +475,72 @@
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getTemplateOptions">
+        getTemplateOptions()
+        <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_getTemplateOptions" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">77</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getTemplateOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isTheExistingFileADefaultOne">
+        isTheExistingFileADefaultOne()
+        <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_isTheExistingFileADefaultOne" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">100</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">isTheExistingFileADefaultOne</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_parseChoiceIntoKey">
         parseChoiceIntoKey()
         <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_parseChoiceIntoKey" class="headerlink"><i class="fas fa-link"></i></a>
@@ -499,7 +548,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -536,6 +585,39 @@
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_parseSelection">
+        parseSelection()
+        <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_parseSelection" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">parseSelection</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_promptForHomepage">
         promptForHomepage()
         <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_promptForHomepage" class="headerlink"><i class="fas fa-link"></i></a>
@@ -543,7 +625,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 

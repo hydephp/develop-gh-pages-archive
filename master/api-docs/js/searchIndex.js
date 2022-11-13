@@ -281,6 +281,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_handle"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand\u003A\u003AparseSelection\u0028\u0029",
+            "name": "parseSelection",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_parseSelection"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand\u003A\u003ApromptForHomepage\u0028\u0029",
             "name": "promptForHomepage",
             "summary": "",
@@ -291,20 +296,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_formatPublishableChoices"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand\u003A\u003AgetTemplateOptions\u0028\u0029",
+            "name": "getTemplateOptions",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_getTemplateOptions"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand\u003A\u003AparseChoiceIntoKey\u0028\u0029",
             "name": "parseChoiceIntoKey",
             "summary": "",
             "url": "classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_parseChoiceIntoKey"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand\u003A\u003AcanExistingIndexFileBeOverwritten\u0028\u0029",
-            "name": "canExistingIndexFileBeOverwritten",
+            "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand\u003A\u003AcanExistingFileBeOverwritten\u0028\u0029",
+            "name": "canExistingFileBeOverwritten",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_canExistingIndexFileBeOverwritten"
+            "url": "classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_canExistingFileBeOverwritten"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand\u003A\u003AaskToRebuildSite\u0028\u0029",
-            "name": "askToRebuildSite",
+            "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand\u003A\u003AisTheExistingFileADefaultOne\u0028\u0029",
+            "name": "isTheExistingFileADefaultOne",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_askToRebuildSite"
+            "url": "classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_isTheExistingFileADefaultOne"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand\u003A\u003A\u0024signature",
             "name": "signature",
@@ -315,11 +325,6 @@ Search.appendIndex(
             "name": "description",
             "summary": "",
             "url": "classes/Hyde-Console-Commands-PublishHomepageCommand.html#property_description"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand\u003A\u003A\u0024selected",
-            "name": "selected",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-PublishHomepageCommand.html#property_selected"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PublishViewsCommand",
             "name": "PublishViewsCommand",
@@ -560,6 +565,16 @@ Search.appendIndex(
             "name": "service",
             "summary": "",
             "url": "classes/Hyde-Console-Commands-ValidateCommand.html#property_service"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Concerns\\AsksToRebuildSite",
+            "name": "AsksToRebuildSite",
+            "summary": "",
+            "url": "classes/Hyde-Console-Concerns-AsksToRebuildSite.html"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Concerns\\AsksToRebuildSite\u003A\u003AaskToRebuildSite\u0028\u0029",
+            "name": "askToRebuildSite",
+            "summary": "",
+            "url": "classes/Hyde-Console-Concerns-AsksToRebuildSite.html#method_askToRebuildSite"
         },                {
             "fqsen": "\\Hyde\\Console\\HydeConsoleServiceProvider",
             "name": "HydeConsoleServiceProvider",
@@ -1415,31 +1430,6 @@ Search.appendIndex(
             "name": "markdown",
             "summary": "The\u0020extracted\u0020Markdown\u0020body.",
             "url": "classes/Hyde-Framework-Actions-MarkdownFileParser.html#property_markdown"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\PublishesHomepageView",
-            "name": "PublishesHomepageView",
-            "summary": "Publish\u0020one\u0020of\u0020the\u0020Hyde\u0020homepages.",
-            "url": "classes/Hyde-Framework-Actions-PublishesHomepageView.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\PublishesHomepageView\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-PublishesHomepageView.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\PublishesHomepageView\u003A\u003Aexecute\u0028\u0029",
-            "name": "execute",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-PublishesHomepageView.html#method_execute"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\PublishesHomepageView\u003A\u003A\u0024homePages",
-            "name": "homePages",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-PublishesHomepageView.html#property_homePages"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\PublishesHomepageView\u003A\u003A\u0024selected",
-            "name": "selected",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-PublishesHomepageView.html#property_selected"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PublishesHydeViews",
             "name": "PublishesHydeViews",
@@ -3265,6 +3255,91 @@ Search.appendIndex(
             "name": "boot",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Session-SessionServiceProvider.html#method_boot"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableContract",
+            "name": "PublishableContract",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableContract.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableContract\u003A\u003Apublish\u0028\u0029",
+            "name": "publish",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_publish"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableContract\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_getTitle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableContract\u003A\u003AgetDescription\u0028\u0029",
+            "name": "getDescription",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_getDescription"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableContract\u003A\u003AgetOutputPath\u0028\u0029",
+            "name": "getOutputPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_getOutputPath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableContract\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView",
+            "name": "PublishableView",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003Apublish\u0028\u0029",
+            "name": "publish",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#method_publish"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003AgetTitle\u0028\u0029",
+            "name": "getTitle",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#method_getTitle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003AgetDescription\u0028\u0029",
+            "name": "getDescription",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#method_getDescription"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003AgetOutputPath\u0028\u0029",
+            "name": "getOutputPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#method_getOutputPath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003AgetSourcePath\u0028\u0029",
+            "name": "getSourcePath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#method_getSourcePath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003A\u0024title",
+            "name": "title",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#property_title"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003A\u0024desc",
+            "name": "desc",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#property_desc"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#property_path"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003A\u0024outputPath",
+            "name": "outputPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#property_outputPath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\XmlGenerators\\BaseXmlGenerator",
             "name": "BaseXmlGenerator",
@@ -5201,6 +5276,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde-console-commands.html"
         },                {
+            "fqsen": "\\Hyde\\Console\\Concerns",
+            "name": "Concerns",
+            "summary": "",
+            "url": "namespaces/hyde-console-concerns.html"
+        },                {
             "fqsen": "\\Hyde\\Console",
             "name": "Console",
             "summary": "",
@@ -5315,6 +5395,11 @@ Search.appendIndex(
             "name": "Session",
             "summary": "",
             "url": "namespaces/hyde-framework-features-session.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Templates",
+            "name": "Templates",
+            "summary": "",
+            "url": "namespaces/hyde-framework-features-templates.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\XmlGenerators",
             "name": "XmlGenerators",
