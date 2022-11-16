@@ -3596,25 +3596,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-BuildService.html#method_transferMediaAssets"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AgetDiscoveredModels\u0028\u0029",
-            "name": "getDiscoveredModels",
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AgetClassNamesForDiscoveredPageModels\u0028\u0029",
+            "name": "getClassNamesForDiscoveredPageModels",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_getDiscoveredModels"
+            "url": "classes/Hyde-Framework-Services-BuildService.html#method_getClassNamesForDiscoveredPageModels"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AcompilePagesForClass\u0028\u0029",
             "name": "compilePagesForClass",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-BuildService.html#method_compilePagesForClass"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AcompileRoute\u0028\u0029",
-            "name": "compileRoute",
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AgetClassPluralName\u0028\u0029",
+            "name": "getClassPluralName",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_compileRoute"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AgetModelPluralName\u0028\u0029",
-            "name": "getModelPluralName",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_getModelPluralName"
+            "url": "classes/Hyde-Framework-Services-BuildService.html#method_getClassPluralName"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AisItSafeToCleanOutputDirectory\u0028\u0029",
             "name": "isItSafeToCleanOutputDirectory",
@@ -3630,6 +3625,11 @@ Search.appendIndex(
             "name": "askIfUnsafeDirectoryShouldBeEmptied",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-BuildService.html#method_askIfUnsafeDirectoryShouldBeEmptied"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AsafeOutputDirectories\u0028\u0029",
+            "name": "safeOutputDirectories",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildService.html#method_safeOutputDirectories"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003A\u0024router",
             "name": "router",

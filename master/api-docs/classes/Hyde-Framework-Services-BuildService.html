@@ -254,21 +254,14 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Services-BuildService.html#method_compileRoute">compileRoute()</a>
+    <a href="classes/Hyde-Framework-Services-BuildService.html#method_getClassNamesForDiscoveredPageModels">getClassNamesForDiscoveredPageModels()</a>
     <span>
-                                &nbsp;: <abbr title="\Closure">Closure</abbr>    </span>
+                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;array-key, class-string<\Hyde\Pages\Concerns\HydePage>&gt;    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Services-BuildService.html#method_getDiscoveredModels">getDiscoveredModels()</a>
-    <span>
-                                &nbsp;: <a href="classes/Hyde-Foundation-RouteCollection.html"><abbr title="\Hyde\Foundation\RouteCollection">RouteCollection</abbr></a>&lt;array-key, class-string<\Hyde\Pages\Concerns\HydePage>&gt;    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Services-BuildService.html#method_getModelPluralName">getModelPluralName()</a>
+    <a href="classes/Hyde-Framework-Services-BuildService.html#method_getClassPluralName">getClassPluralName()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -285,6 +278,13 @@
     <a href="classes/Hyde-Framework-Services-BuildService.html#method_isOutputDirectoryWhitelisted">isOutputDirectoryWhitelisted()</a>
     <span>
                                 &nbsp;: bool    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Services-BuildService.html#method_safeOutputDirectories">safeOutputDirectories()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd></dd>
 
@@ -639,7 +639,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/BuildService.php"><a href="files/packages-framework-src-framework-services-buildservice.html"><abbr title="packages/framework/src/Framework/Services/BuildService.php">BuildService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -679,19 +679,17 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">compilePagesForClass</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">compilePagesForClass</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pageClass</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -709,43 +707,28 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_compileRoute">
-        compileRoute()
-        <a href="classes/Hyde-Framework-Services-BuildService.html#method_compileRoute" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getClassNamesForDiscoveredPageModels">
+        getClassNamesForDiscoveredPageModels()
+        <a href="classes/Hyde-Framework-Services-BuildService.html#method_getClassNamesForDiscoveredPageModels" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/BuildService.php"><a href="files/packages-framework-src-framework-services-buildservice.html"><abbr title="packages/framework/src/Framework/Services/BuildService.php">BuildService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">compileRoute</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Closure">Closure</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">getClassNamesForDiscoveredPageModels</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;array-key, class-string<\Hyde\Pages\Concerns\HydePage>&gt;</span></code>
 
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-return</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>\Closure(\Hyde\Support\Models\Route):string</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Closure">Closure</abbr></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;array-key, class-string<\Hyde\Pages\Concerns\HydePage>&gt;</span>
             &mdash;
         
     
@@ -756,53 +739,21 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getDiscoveredModels">
-        getDiscoveredModels()
-        <a href="classes/Hyde-Framework-Services-BuildService.html#method_getDiscoveredModels" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getClassPluralName">
+        getClassPluralName()
+        <a href="classes/Hyde-Framework-Services-BuildService.html#method_getClassPluralName" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/BuildService.php"><a href="files/packages-framework-src-framework-services-buildservice.html"><abbr title="packages/framework/src/Framework/Services/BuildService.php">BuildService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">getDiscoveredModels</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-RouteCollection.html"><abbr title="\Hyde\Foundation\RouteCollection">RouteCollection</abbr></a>&lt;array-key, class-string<\Hyde\Pages\Concerns\HydePage>&gt;</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-RouteCollection.html"><abbr title="\Hyde\Foundation\RouteCollection">RouteCollection</abbr></a>&lt;array-key, class-string<\Hyde\Pages\Concerns\HydePage>&gt;</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getModelPluralName">
-        getModelPluralName()
-        <a href="classes/Hyde-Framework-Services-BuildService.html#method_getModelPluralName" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/BuildService.php"><a href="files/packages-framework-src-framework-services-buildservice.html"><abbr title="packages/framework/src/Framework/Services/BuildService.php">BuildService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">107</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">getModelPluralName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getClassPluralName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -839,7 +790,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/BuildService.php"><a href="files/packages-framework-src-framework-services-buildservice.html"><abbr title="packages/framework/src/Framework/Services/BuildService.php">BuildService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -872,7 +823,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/BuildService.php"><a href="files/packages-framework-src-framework-services-buildservice.html"><abbr title="packages/framework/src/Framework/Services/BuildService.php">BuildService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
@@ -888,6 +839,39 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_safeOutputDirectories">
+        safeOutputDirectories()
+        <a href="classes/Hyde-Framework-Services-BuildService.html#method_safeOutputDirectories" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/BuildService.php"><a href="files/packages-framework-src-framework-services-buildservice.html"><abbr title="packages/framework/src/Framework/Services/BuildService.php">BuildService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">128</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">safeOutputDirectories</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
         
     
