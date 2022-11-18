@@ -3596,11 +3596,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-BuildService.html#method_transferMediaAssets"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AgetClassNamesForDiscoveredPageModels\u0028\u0029",
-            "name": "getClassNamesForDiscoveredPageModels",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_getClassNamesForDiscoveredPageModels"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AcompilePagesForClass\u0028\u0029",
             "name": "compilePagesForClass",
             "summary": "",
