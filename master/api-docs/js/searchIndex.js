@@ -3566,6 +3566,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-AssetService.html#method_hasMediaFile"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AinjectTailwindConfig\u0028\u0029",
+            "name": "injectTailwindConfig",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-AssetService.html#method_injectTailwindConfig"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AgetCacheBustKey\u0028\u0029",
             "name": "getCacheBustKey",
             "summary": "",
