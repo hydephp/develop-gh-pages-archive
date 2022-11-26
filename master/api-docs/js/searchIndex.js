@@ -1006,6 +1006,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020absolute\u0020path\u0020to\u0020the\u0020compiled\u0020site\u0020directory,\u0020or\u0020a\u0020file\u0020within\u0020it.",
             "url": "classes/Hyde-Foundation-Filesystem.html#method_sitePath"
         },                {
+            "fqsen": "\\Hyde\\Foundation\\Filesystem\u003A\u003ApathToAbsolute\u0028\u0029",
+            "name": "pathToAbsolute",
+            "summary": "Get\u0020an\u0020absolute\u0020file\u0020path\u0020from\u0020a\u0020supplied\u0020relative\u0020path.",
+            "url": "classes/Hyde-Foundation-Filesystem.html#method_pathToAbsolute"
+        },                {
             "fqsen": "\\Hyde\\Foundation\\Filesystem\u003A\u003ApathToRelative\u0028\u0029",
             "name": "pathToRelative",
             "summary": "Decode\u0020an\u0020absolute\u0020path\u0020created\u0020with\u0020a\u0020Hyde\u003A\u003Apath\u0028\u0029\u0020helper\u0020into\u0020its\u0020relative\u0020counterpart.",
