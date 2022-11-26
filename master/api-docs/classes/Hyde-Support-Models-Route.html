@@ -132,17 +132,17 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Stringable">Stringable</abbr>,                             <abbr title="\JsonSerializable">JsonSerializable</abbr>,                             <abbr title="\Illuminate\Contracts\Support\Arrayable">Arrayable</abbr>                    </span>
+                            <abbr title="\Stringable">Stringable</abbr>,                             <abbr title="\Hyde\Support\Contracts\SerializableContract">SerializableContract</abbr>                    </span>
     
             <span class="phpdocumentor-element__extends">
             Uses
-                            <a href="classes/Hyde-Support-Concerns-JsonSerializesArrayable.html"><abbr title="\Hyde\Support\Concerns\JsonSerializesArrayable">JsonSerializesArrayable</abbr></a>                    </span>
+                            <a href="classes/Hyde-Support-Concerns-Serializable.html"><abbr title="\Hyde\Support\Concerns\Serializable">Serializable</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -181,9 +181,7 @@ class links them all together, and what powerful information you can gain from i
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Stringable">Stringable</abbr></dt>
         <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\JsonSerializable">JsonSerializable</abbr></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Illuminate\Contracts\Support\Arrayable">Arrayable</abbr></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Hyde\Support\Contracts\SerializableContract">SerializableContract</abbr></dt>
         <dd></dd>
     
     
@@ -310,7 +308,7 @@ class links them all together, and what powerful information you can gain from i
 <dd>Determine if the route instance matches another route or route key.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Support-Concerns-JsonSerializesArrayable.html#method_jsonSerialize">jsonSerialize()</a>
+    <a href="classes/Hyde-Support-Concerns-Serializable.html#method_jsonSerialize">jsonSerialize()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
@@ -320,6 +318,13 @@ class links them all together, and what powerful information you can gain from i
     <a href="classes/Hyde-Support-Models-Route.html#method_toArray">toArray()</a>
     <span>
                                 &nbsp;: array&lt;string, string&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Support-Concerns-Serializable.html#method_toJson">toJson()</a>
+    <span>
+                                &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
@@ -351,7 +356,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -389,7 +394,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -433,7 +438,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -466,7 +471,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -499,7 +504,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -532,7 +537,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">133</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
@@ -576,7 +581,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -620,7 +625,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -653,7 +658,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -697,7 +702,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -730,7 +735,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -763,7 +768,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -796,7 +801,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -829,7 +834,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -862,7 +867,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -895,7 +900,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -934,12 +939,12 @@ class links them all together, and what powerful information you can gain from i
 >
     <h4 class="phpdocumentor-element__name" id="method_jsonSerialize">
         jsonSerialize()
-        <a href="classes/Hyde-Support-Concerns-JsonSerializesArrayable.html#method_jsonSerialize" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Support-Concerns-Serializable.html#method_jsonSerialize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Concerns/JsonSerializesArrayable.php"><a href="files/packages-framework-src-support-concerns-jsonserializesarrayable.html"><abbr title="packages/framework/src/Support/Concerns/JsonSerializesArrayable.php">JsonSerializesArrayable.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Concerns/Serializable.php"><a href="files/packages-framework-src-support-concerns-serializable.html"><abbr title="packages/framework/src/Support/Concerns/Serializable.php">Serializable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -984,7 +989,7 @@ class links them all together, and what powerful information you can gain from i
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/Route.php"><a href="files/packages-framework-src-support-models-route.html"><abbr title="packages/framework/src/Support/Models/Route.php">Route.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -999,6 +1004,62 @@ class links them all together, and what powerful information you can gain from i
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_toJson">
+        toJson()
+        <a href="classes/Hyde-Support-Concerns-Serializable.html#method_toJson" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Concerns/Serializable.php"><a href="files/packages-framework-src-support-concerns-serializable.html"><abbr title="packages/framework/src/Support/Concerns/Serializable.php">Serializable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">25</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toJson</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$options</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     

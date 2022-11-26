@@ -5206,20 +5206,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Pages-MarkdownPost.html#property_image"
         },                {
-            "fqsen": "\\Hyde\\Support\\Concerns\\JsonSerializesArrayable",
-            "name": "JsonSerializesArrayable",
+            "fqsen": "\\Hyde\\Support\\Concerns\\Serializable",
+            "name": "Serializable",
             "summary": "Automatically\u0020serializes\u0020an\u0020Arrayable\u0020interface\u0020when\u0020JSON\u0020is\u0020requested.",
-            "url": "classes/Hyde-Support-Concerns-JsonSerializesArrayable.html"
+            "url": "classes/Hyde-Support-Concerns-Serializable.html"
         },                {
-            "fqsen": "\\Hyde\\Support\\Concerns\\JsonSerializesArrayable\u003A\u003AjsonSerialize\u0028\u0029",
-            "name": "jsonSerialize",
-            "summary": "",
-            "url": "classes/Hyde-Support-Concerns-JsonSerializesArrayable.html#method_jsonSerialize"
-        },                {
-            "fqsen": "\\Hyde\\Support\\Concerns\\JsonSerializesArrayable\u003A\u003AtoArray\u0028\u0029",
+            "fqsen": "\\Hyde\\Support\\Concerns\\Serializable\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
             "summary": "",
-            "url": "classes/Hyde-Support-Concerns-JsonSerializesArrayable.html#method_toArray"
+            "url": "classes/Hyde-Support-Concerns-Serializable.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Concerns\\Serializable\u003A\u003AjsonSerialize\u0028\u0029",
+            "name": "jsonSerialize",
+            "summary": "",
+            "url": "classes/Hyde-Support-Concerns-Serializable.html#method_jsonSerialize"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Concerns\\Serializable\u003A\u003AtoJson\u0028\u0029",
+            "name": "toJson",
+            "summary": "",
+            "url": "classes/Hyde-Support-Concerns-Serializable.html#method_toJson"
         },                {
             "fqsen": "\\Hyde\\Support\\Contracts\\FilesystemContract",
             "name": "FilesystemContract",

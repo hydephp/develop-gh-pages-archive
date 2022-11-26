@@ -131,17 +131,17 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Illuminate\Contracts\Support\Arrayable">Arrayable</abbr>,                             <abbr title="\JsonSerializable">JsonSerializable</abbr>                    </span>
+                            <abbr title="\Hyde\Support\Contracts\SerializableContract">SerializableContract</abbr>                    </span>
     
             <span class="phpdocumentor-element__extends">
             Uses
-                            <abbr title="\Hyde\Foundation\Concerns\HandlesFoundationCollections">HandlesFoundationCollections</abbr>,                             <abbr title="\Hyde\Foundation\Concerns\ImplementsStringHelpers">ImplementsStringHelpers</abbr>,                             <abbr title="\Hyde\Foundation\Concerns\ForwardsHyperlinks">ForwardsHyperlinks</abbr>,                             <abbr title="\Hyde\Foundation\Concerns\ForwardsFilesystem">ForwardsFilesystem</abbr>,                             <abbr title="\Hyde\Foundation\Concerns\ManagesHydeKernel">ManagesHydeKernel</abbr>,                             <abbr title="\Hyde\Foundation\Concerns\ManagesViewData">ManagesViewData</abbr>,                             <a href="classes/Hyde-Support-Concerns-JsonSerializesArrayable.html"><abbr title="\Hyde\Support\Concerns\JsonSerializesArrayable">JsonSerializesArrayable</abbr></a>,                             <abbr title="\Illuminate\Support\Traits\Macroable">Macroable</abbr>                    </span>
+                            <abbr title="\Hyde\Foundation\Concerns\HandlesFoundationCollections">HandlesFoundationCollections</abbr>,                             <abbr title="\Hyde\Foundation\Concerns\ImplementsStringHelpers">ImplementsStringHelpers</abbr>,                             <abbr title="\Hyde\Foundation\Concerns\ForwardsHyperlinks">ForwardsHyperlinks</abbr>,                             <abbr title="\Hyde\Foundation\Concerns\ForwardsFilesystem">ForwardsFilesystem</abbr>,                             <abbr title="\Hyde\Foundation\Concerns\ManagesHydeKernel">ManagesHydeKernel</abbr>,                             <abbr title="\Hyde\Foundation\Concerns\ManagesViewData">ManagesViewData</abbr>,                             <a href="classes/Hyde-Support-Concerns-Serializable.html"><abbr title="\Hyde\Support\Concerns\Serializable">Serializable</abbr></a>,                             <abbr title="\Illuminate\Support\Traits\Macroable">Macroable</abbr>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -223,9 +223,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Illuminate\Contracts\Support\Arrayable">Arrayable</abbr></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\JsonSerializable">JsonSerializable</abbr></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Hyde\Support\Contracts\SerializableContract">SerializableContract</abbr></dt>
         <dd></dd>
     
     
@@ -331,7 +329,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Support-Concerns-JsonSerializesArrayable.html#method_jsonSerialize">jsonSerialize()</a>
+    <a href="classes/Hyde-Support-Concerns-Serializable.html#method_jsonSerialize">jsonSerialize()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
@@ -341,6 +339,13 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <a href="classes/Hyde-Foundation-HydeKernel.html#method_toArray">toArray()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Support-Concerns-Serializable.html#method_toJson">toJson()</a>
+    <span>
+                                &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
@@ -370,7 +375,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -414,7 +419,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -448,7 +453,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -482,7 +487,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -516,7 +521,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -550,7 +555,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -584,7 +589,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -618,7 +623,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -652,7 +657,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -686,7 +691,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -724,7 +729,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -776,7 +781,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -809,7 +814,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -848,12 +853,12 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
 >
     <h4 class="phpdocumentor-element__name" id="method_jsonSerialize">
         jsonSerialize()
-        <a href="classes/Hyde-Support-Concerns-JsonSerializesArrayable.html#method_jsonSerialize" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Support-Concerns-Serializable.html#method_jsonSerialize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Concerns/JsonSerializesArrayable.php"><a href="files/packages-framework-src-support-concerns-jsonserializesarrayable.html"><abbr title="packages/framework/src/Support/Concerns/JsonSerializesArrayable.php">JsonSerializesArrayable.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Concerns/Serializable.php"><a href="files/packages-framework-src-support-concerns-serializable.html"><abbr title="packages/framework/src/Support/Concerns/Serializable.php">Serializable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -898,7 +903,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -943,6 +948,62 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_toJson">
+        toJson()
+        <a href="classes/Hyde-Support-Concerns-Serializable.html#method_toJson" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Concerns/Serializable.php"><a href="files/packages-framework-src-support-concerns-serializable.html"><abbr title="packages/framework/src/Support/Concerns/Serializable.php">Serializable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">25</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toJson</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$options</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_version">
@@ -952,7 +1013,7 @@ by type-hinting the HydeKernel::class, or use the hyde() function to get the Ker
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/HydeKernel.php"><a href="files/packages-framework-src-foundation-hydekernel.html"><abbr title="packages/framework/src/Foundation/HydeKernel.php">HydeKernel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
