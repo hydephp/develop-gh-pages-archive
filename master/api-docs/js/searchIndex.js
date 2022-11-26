@@ -1001,20 +1001,20 @@ Search.appendIndex(
             "summary": "Empty\u0020the\u0020specified\u0020directory\u0020of\u0020all\u0020files\u0020and\u0020folders.",
             "url": "classes/Hyde-Facades-Filesystem.html#method_cleanDirectory"
         },                {
-            "fqsen": "\\Hyde\\Facades\\Filesystem\u003A\u003Akernel\u0028\u0029",
-            "name": "kernel",
+            "fqsen": "\\Hyde\\Facades\\Filesystem\u003A\u003AqualifyPossiblePathArray\u0028\u0029",
+            "name": "qualifyPossiblePathArray",
             "summary": "",
-            "url": "classes/Hyde-Facades-Filesystem.html#method_kernel"
+            "url": "classes/Hyde-Facades-Filesystem.html#method_qualifyPossiblePathArray"
         },                {
             "fqsen": "\\Hyde\\Facades\\Filesystem\u003A\u003Afilesystem\u0028\u0029",
             "name": "filesystem",
             "summary": "",
             "url": "classes/Hyde-Facades-Filesystem.html#method_filesystem"
         },                {
-            "fqsen": "\\Hyde\\Facades\\Filesystem\u003A\u003AqualifyPossiblePathArray\u0028\u0029",
-            "name": "qualifyPossiblePathArray",
+            "fqsen": "\\Hyde\\Facades\\Filesystem\u003A\u003Akernel\u0028\u0029",
+            "name": "kernel",
             "summary": "",
-            "url": "classes/Hyde-Facades-Filesystem.html#method_qualifyPossiblePathArray"
+            "url": "classes/Hyde-Facades-Filesystem.html#method_kernel"
         },                {
             "fqsen": "\\Hyde\\Facades\\Includes",
             "name": "Includes",
@@ -1300,6 +1300,11 @@ Search.appendIndex(
             "name": "getDocumentationPagePath",
             "summary": "",
             "url": "classes/Hyde-Foundation-Filesystem.html#method_getDocumentationPagePath"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Filesystem\u003A\u003AsmartGlob\u0028\u0029",
+            "name": "smartGlob",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Filesystem.html#method_smartGlob"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Filesystem\u003A\u003Aimplode\u0028\u0029",
             "name": "implode",
