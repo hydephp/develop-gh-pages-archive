@@ -736,6 +736,11 @@ Search.appendIndex(
             "summary": "Proxies\u0020the\u0020Laravel\u0020File\u0020facade\u0020with\u0020extra\u0020features\u0020and\u0020helpers\u0020tailored\u0020for\u0020HydePHP.",
             "url": "classes/Hyde-Facades-Filesystem.html"
         },                {
+            "fqsen": "\\Hyde\\Facades\\Filesystem\u003A\u003AbasePath\u0028\u0029",
+            "name": "basePath",
+            "summary": "Get\u0020the\u0020base\u0020path\u0020of\u0020the\u0020HydePHP\u0020project.",
+            "url": "classes/Hyde-Facades-Filesystem.html#method_basePath"
+        },                {
             "fqsen": "\\Hyde\\Facades\\Filesystem\u003A\u003AabsolutePath\u0028\u0029",
             "name": "absolutePath",
             "summary": "Format\u0020the\u0020given\u0020project\u0020path\u0020to\u0020be\u0020absolute.\u0020Already\u0020absolute\u0020paths\u0020are\u0020normalized.",
@@ -995,6 +1000,11 @@ Search.appendIndex(
             "name": "cleanDirectory",
             "summary": "Empty\u0020the\u0020specified\u0020directory\u0020of\u0020all\u0020files\u0020and\u0020folders.",
             "url": "classes/Hyde-Facades-Filesystem.html#method_cleanDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Facades\\Filesystem\u003A\u003Akernel\u0028\u0029",
+            "name": "kernel",
+            "summary": "",
+            "url": "classes/Hyde-Facades-Filesystem.html#method_kernel"
         },                {
             "fqsen": "\\Hyde\\Facades\\Filesystem\u003A\u003Afilesystem\u0028\u0029",
             "name": "filesystem",
