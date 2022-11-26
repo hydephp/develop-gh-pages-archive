@@ -1016,6 +1016,11 @@ Search.appendIndex(
             "summary": "Decode\u0020an\u0020absolute\u0020path\u0020created\u0020with\u0020a\u0020Hyde\u003A\u003Apath\u0028\u0029\u0020helper\u0020into\u0020its\u0020relative\u0020counterpart.",
             "url": "classes/Hyde-Foundation-Filesystem.html#method_pathToRelative"
         },                {
+            "fqsen": "\\Hyde\\Foundation\\Filesystem\u003A\u003Aimplode\u0028\u0029",
+            "name": "implode",
+            "summary": "Implode\u0020path\u0020components\u0020into\u0020a\u0020string\u0020with\u0020directory\u0020separators.",
+            "url": "classes/Hyde-Foundation-Filesystem.html#method_implode"
+        },                {
             "fqsen": "\\Hyde\\Foundation\\Filesystem\u003A\u003A\u0024kernel",
             "name": "kernel",
             "summary": "",
