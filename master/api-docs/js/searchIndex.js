@@ -4926,6 +4926,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Pages-Concerns-HydePage.html#method___construct"
         },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Get\u0020a\u0020page\u0020instance\u0020from\u0020the\u0020Kernel\u0027s\u0020page\u0020index\u0020by\u0020its\u0020identifier.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_get"
+        },                {
             "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003Aparse\u0028\u0029",
             "name": "parse",
             "summary": "Parse\u0020a\u0020source\u0020file\u0020into\u0020a\u0020page\u0020model\u0020instance.",
