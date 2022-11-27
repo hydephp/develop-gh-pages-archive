@@ -1621,10 +1621,10 @@ Search.appendIndex(
             "summary": "Adds\u0020methods\u0020to\u0020a\u0020class\u0020to\u0020allow\u0020it\u0020to\u0020fluently\u0020interact\u0020with\u0020the\u0020front\u0020matter.",
             "url": "classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\InteractsWithFrontMatter\u003A\u003Aget\u0028\u0029",
-            "name": "get",
+            "fqsen": "\\Hyde\\Framework\\Concerns\\InteractsWithFrontMatter\u003A\u003Adata\u0028\u0029",
+            "name": "data",
             "summary": "Get\u0020a\u0020value\u0020from\u0020the\u0020computed\u0020page\u0020data,\u0020or\u0020fallback\u0020to\u0020the\u0020page\u0027s\u0020front\u0020matter,\u0020then\u0020to\u0020the\u0020default\u0020value.",
-            "url": "classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_get"
+            "url": "classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_data"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\InteractsWithFrontMatter\u003A\u003Amatter\u0028\u0029",
             "name": "matter",
