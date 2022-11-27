@@ -5136,6 +5136,11 @@ Search.appendIndex(
             "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
             "url": "classes/Hyde-Pages-HtmlPage.html#method_compile"
         },                {
+            "fqsen": "\\Hyde\\Pages\\HtmlPage\u003A\u003AgetBladeView\u0028\u0029",
+            "name": "getBladeView",
+            "summary": "Get\u0020the\u0020Blade\u0020template\u0020for\u0020the\u0020page.",
+            "url": "classes/Hyde-Pages-HtmlPage.html#method_getBladeView"
+        },                {
             "fqsen": "\\Hyde\\Pages\\HtmlPage\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",
             "summary": "",
