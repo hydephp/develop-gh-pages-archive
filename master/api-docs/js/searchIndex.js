@@ -5476,6 +5476,16 @@ Search.appendIndex(
             "summary": "Empty\u0020the\u0020specified\u0020directory\u0020of\u0020all\u0020files\u0020and\u0020folders.",
             "url": "classes/Hyde-Support-Contracts-FilesystemContract.html#method_cleanDirectory"
         },                {
+            "fqsen": "\\Hyde\\Support\\Facades\\Render",
+            "name": "Render",
+            "summary": "Manages\u0020data\u0020for\u0020the\u0020current\u0020page\u0020being\u0020rendered\/compiled.",
+            "url": "classes/Hyde-Support-Facades-Render.html"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Facades\\Render\u003A\u003AgetFacadeAccessor\u0028\u0029",
+            "name": "getFacadeAccessor",
+            "summary": "",
+            "url": "classes/Hyde-Support-Facades-Render.html#method_getFacadeAccessor"
+        },                {
             "fqsen": "\\Hyde\\Support\\Models\\DateString",
             "name": "DateString",
             "summary": "Parse\u0020a\u0020date\u0020string\u0020and\u0020create\u0020normalized\u0020formats.",
@@ -5575,6 +5585,71 @@ Search.appendIndex(
             "name": "showText",
             "summary": "",
             "url": "classes/Hyde-Support-Models-Redirect.html#property_showText"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\Render",
+            "name": "Render",
+            "summary": "Contains\u0020data\u0020for\u0020the\u0020current\u0020page\u0020being\u0020rendered\/compiled.",
+            "url": "classes/Hyde-Support-Models-Render.html"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\Render\u003A\u003AsetPage\u0028\u0029",
+            "name": "setPage",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-Render.html#method_setPage"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\Render\u003A\u003AgetPage\u0028\u0029",
+            "name": "getPage",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-Render.html#method_getPage"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\Render\u003A\u003AgetCurrentRoute\u0028\u0029",
+            "name": "getCurrentRoute",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-Render.html#method_getCurrentRoute"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\Render\u003A\u003AgetCurrentPage\u0028\u0029",
+            "name": "getCurrentPage",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-Render.html#method_getCurrentPage"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\Render\u003A\u003AshareToView\u0028\u0029",
+            "name": "shareToView",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-Render.html#method_shareToView"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\Render\u003A\u003Ashare\u0028\u0029",
+            "name": "share",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-Render.html#method_share"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\Render\u003A\u003AclearData\u0028\u0029",
+            "name": "clearData",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-Render.html#method_clearData"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\Render\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-Render.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\Render\u003A\u003AhandleFallback\u0028\u0029",
+            "name": "handleFallback",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-Render.html#method_handleFallback"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\Render\u003A\u003A\u0024page",
+            "name": "page",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-Render.html#property_page"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\Render\u003A\u003A\u0024currentRoute",
+            "name": "currentRoute",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-Render.html#property_currentRoute"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\Render\u003A\u003A\u0024currentPage",
+            "name": "currentPage",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-Render.html#property_currentPage"
         },                {
             "fqsen": "\\Hyde\\Support\\Models\\Route",
             "name": "Route",
@@ -6035,6 +6110,11 @@ Search.appendIndex(
             "name": "Contracts",
             "summary": "",
             "url": "namespaces/hyde-support-contracts.html"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Facades",
+            "name": "Facades",
+            "summary": "",
+            "url": "namespaces/hyde-support-facades.html"
         },                {
             "fqsen": "\\Hyde\\Support\\Models",
             "name": "Models",
