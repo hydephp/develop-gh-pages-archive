@@ -1866,6 +1866,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-Internal-ForwardsIlluminateFilesystem.html#method_cleanDirectory"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\InvokableAction",
+            "name": "InvokableAction",
+            "summary": "Base\u0020class\u0020for\u0020invokable\u0020actions.\u0020Provides\u0020a\u0020helper\u0020to\u0020invoke\u0020the\u0020action\u0020statically.",
+            "url": "classes/Hyde-Framework-Concerns-InvokableAction.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\InvokableAction\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-InvokableAction.html#method___invoke"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\InvokableAction\u003A\u003Acall\u0028\u0029",
+            "name": "call",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-InvokableAction.html#method_call"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations",
             "name": "RegistersFileLocations",
             "summary": "This\u0020trait\u0020registers\u0020the\u0020file\u0020paths\u0020for\u0020important\u0020Hyde\u0020locations.",
