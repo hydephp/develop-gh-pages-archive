@@ -2456,6 +2456,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_findGroupFromMatter"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AgetSubdirectoryConfiguration\u0028\u0029",
+            "name": "getSubdirectoryConfiguration",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getSubdirectoryConfiguration"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003ASCHEMA",
             "name": "SCHEMA",
             "summary": "The\u0020front\u0020matter\u0020properties\u0020supported\u0020by\u0020this\u0020factory.",
