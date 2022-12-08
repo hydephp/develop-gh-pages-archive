@@ -3466,10 +3466,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filterDuplicateItems"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AfilterDropdownItems\u0028\u0029",
+            "name": "filterDropdownItems",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filterDropdownItems"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AfilterDocumentationPage\u0028\u0029",
             "name": "filterDocumentationPage",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filterDocumentationPage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AhasDropdowns\u0028\u0029",
+            "name": "hasDropdowns",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_hasDropdowns"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AgetDropdowns\u0028\u0029",
+            "name": "getDropdowns",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_getDropdowns"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AcanBeInDropdown\u0028\u0029",
+            "name": "canBeInDropdown",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_canBeInDropdown"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AdropdownsEnabled\u0028\u0029",
+            "name": "dropdownsEnabled",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_dropdownsEnabled"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AmakeDropdowns\u0028\u0029",
+            "name": "makeDropdowns",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_makeDropdowns"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003A\u0024currentRoute",
             "name": "currentRoute",
@@ -3480,6 +3510,11 @@ Search.appendIndex(
             "name": "items",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#property_items"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003A\u0024dropdowns",
+            "name": "dropdowns",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#property_dropdowns"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem",
             "name": "NavItem",
