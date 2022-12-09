@@ -123,6 +123,9 @@
         <h2 class="phpdocumentor-content__title">
     NavigationMenu
 
+        <span class="phpdocumentor-element__extends">
+        extends <a href="classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html"><abbr title="\Hyde\Framework\Features\Navigation\BaseNavigationMenu">BaseNavigationMenu</abbr></a>
+    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -137,7 +140,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
@@ -157,13 +160,6 @@
                                         
                                              
                                     </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">phpstan-consistent-constructor</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
                         </dl>
 
 
@@ -178,42 +174,28 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#property_currentRoute">$currentRoute</a>
-    <span>
-                        &nbsp;: <a href="classes/Hyde-Support-Models-Route.html"><abbr title="\Hyde\Support\Models\Route">Route</abbr></a>            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#property_items">$items</a>
+    <a href="classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#property_items">$items</a>
     <span>
                         &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>            </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#property_dropdowns">$dropdowns</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd></dd>
-
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method___construct">__construct()</a>
+    <a href="classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_create">create()</a>
+    <a href="classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_create">create()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filter">filter()</a>
+    <a href="classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_filter">filter()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
@@ -229,7 +211,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_getDropdowns">getDropdowns()</a>
     <span>
-                                &nbsp;: array&lt;string, array&lt;string|int, <a href="classes/Hyde-Framework-Features-Navigation-NavItem.html"><abbr title="\Hyde\Framework\Features\Navigation\NavItem">NavItem</abbr></a>&gt;&gt;    </span>
+                                &nbsp;: array&lt;string, <a href="classes/Hyde-Framework-Features-Navigation-DropdownNavItem.html"><abbr title="\Hyde\Framework\Features\Navigation\DropdownNavItem">DropdownNavItem</abbr></a>&gt;    </span>
 </dt>
 <dd></dd>
 
@@ -241,7 +223,7 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_sort">sort()</a>
+    <a href="classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_sort">sort()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
@@ -262,37 +244,30 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filterDocumentationPage">filterDocumentationPage()</a>
+    <a href="classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_filterDuplicateItems">filterDuplicateItems()</a>
+    <span>
+                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_filterHiddenItems">filterHiddenItems()</a>
+    <span>
+                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_putGroupedItemsInDropdowns">putGroupedItemsInDropdowns()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_shouldItemBeHidden">shouldItemBeHidden()</a>
     <span>
                                 &nbsp;: bool    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filterDropdownItems">filterDropdownItems()</a>
-    <span>
-                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filterDuplicateItems">filterDuplicateItems()</a>
-    <span>
-                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filterHiddenItems">filterHiddenItems()</a>
-    <span>
-                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_makeDropdowns">makeDropdowns()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd></dd>
 
@@ -315,50 +290,16 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_currentRoute">
-        $currentRoute
-        <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#property_currentRoute" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">22</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Hyde-Support-Models-Route.html"><abbr title="\Hyde\Support\Models\Route">Route</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$currentRoute</span>
-    </code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="property_items">
         $items
-        <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#property_items" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#property_items" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/BaseNavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-basenavigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/BaseNavigationMenu.php">BaseNavigationMenu.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -376,38 +317,6 @@
     
 
 </article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_dropdowns">
-        $dropdowns
-        <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#property_dropdowns" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">27</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$dropdowns</span>
-    </code>
-
-    
-    
-    
-
-</article>
             </section>
 
             <section class="phpdocumentor-methods">
@@ -419,23 +328,23 @@
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                                -final        "
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/BaseNavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-basenavigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/BaseNavigationMenu.php">BaseNavigationMenu.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+        <span class="phpdocumentor-signature__final">final</span>            <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -456,12 +365,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_create">
         create()
-        <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_create" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_create" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/BaseNavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-basenavigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/BaseNavigationMenu.php">BaseNavigationMenu.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -489,12 +398,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_filter">
         filter()
-        <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filter" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_filter" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/BaseNavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-basenavigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/BaseNavigationMenu.php">BaseNavigationMenu.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -526,7 +435,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -558,21 +467,21 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getDropdowns</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, array&lt;string|int, <a href="classes/Hyde-Framework-Features-Navigation-NavItem.html"><abbr title="\Hyde\Framework\Features\Navigation\NavItem">NavItem</abbr></a>&gt;&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getDropdowns</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, <a href="classes/Hyde-Framework-Features-Navigation-DropdownNavItem.html"><abbr title="\Hyde\Framework\Features\Navigation\DropdownNavItem">DropdownNavItem</abbr></a>&gt;</span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string, array&lt;string|int, <a href="classes/Hyde-Framework-Features-Navigation-NavItem.html"><abbr title="\Hyde\Framework\Features\Navigation\NavItem">NavItem</abbr></a>&gt;&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string, <a href="classes/Hyde-Framework-Features-Navigation-DropdownNavItem.html"><abbr title="\Hyde\Framework\Features\Navigation\DropdownNavItem">DropdownNavItem</abbr></a>&gt;</span>
             &mdash;
         
     
@@ -590,7 +499,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -618,12 +527,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_sort">
         sort()
-        <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_sort" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_sort" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/BaseNavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-basenavigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/BaseNavigationMenu.php">BaseNavigationMenu.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -655,7 +564,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -699,7 +608,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -725,91 +634,14 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_filterDocumentationPage">
-        filterDocumentationPage()
-        <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filterDocumentationPage" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">101</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">filterDocumentationPage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Features-Navigation-NavItem.html"><abbr title="\Hyde\Framework\Features\Navigation\NavItem">NavItem</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$item</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$item</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Features-Navigation-NavItem.html"><abbr title="\Hyde\Framework\Features\Navigation\NavItem">NavItem</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_filterDropdownItems">
-        filterDropdownItems()
-        <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filterDropdownItems" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">92</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">filterDropdownItems</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_filterDuplicateItems">
         filterDuplicateItems()
-        <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filterDuplicateItems" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_filterDuplicateItems" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/BaseNavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-basenavigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/BaseNavigationMenu.php">BaseNavigationMenu.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -837,12 +669,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_filterHiddenItems">
         filterHiddenItems()
-        <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filterHiddenItems" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_filterHiddenItems" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/BaseNavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-basenavigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/BaseNavigationMenu.php">BaseNavigationMenu.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -868,21 +700,21 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_makeDropdowns">
-        makeDropdowns()
-        <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_makeDropdowns" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_putGroupedItemsInDropdowns">
+        putGroupedItemsInDropdowns()
+        <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_putGroupedItemsInDropdowns" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">makeDropdowns</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">putGroupedItemsInDropdowns</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -890,7 +722,51 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_shouldItemBeHidden">
+        shouldItemBeHidden()
+        <a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_shouldItemBeHidden" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php"><a href="files/packages-framework-src-framework-features-navigation-navigationmenu.html"><abbr title="packages/framework/src/Framework/Features/Navigation/NavigationMenu.php">NavigationMenu.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">81</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">shouldItemBeHidden</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Features-Navigation-NavItem.html"><abbr title="\Hyde\Framework\Features\Navigation\NavItem">NavItem</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$item</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$item</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Features-Navigation-NavItem.html"><abbr title="\Hyde\Framework\Features\Navigation\NavItem">NavItem</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     

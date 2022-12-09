@@ -3351,6 +3351,56 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Metadata-PageMetadataBag.html#property_page"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\BaseNavigationMenu",
+            "name": "BaseNavigationMenu",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\BaseNavigationMenu\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\BaseNavigationMenu\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_create"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\BaseNavigationMenu\u003A\u003Agenerate\u0028\u0029",
+            "name": "generate",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_generate"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\BaseNavigationMenu\u003A\u003Afilter\u0028\u0029",
+            "name": "filter",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_filter"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\BaseNavigationMenu\u003A\u003Asort\u0028\u0029",
+            "name": "sort",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_sort"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\BaseNavigationMenu\u003A\u003AfilterHiddenItems\u0028\u0029",
+            "name": "filterHiddenItems",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_filterHiddenItems"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\BaseNavigationMenu\u003A\u003AfilterDuplicateItems\u0028\u0029",
+            "name": "filterDuplicateItems",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_filterDuplicateItems"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\BaseNavigationMenu\u003A\u003AshouldItemBeHidden\u0028\u0029",
+            "name": "shouldItemBeHidden",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#method_shouldItemBeHidden"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\BaseNavigationMenu\u003A\u003A\u0024items",
+            "name": "items",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-BaseNavigationMenu.html#property_items"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DocumentationSidebar",
             "name": "DocumentationSidebar",
             "summary": "",
@@ -3376,15 +3426,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-DocumentationSidebar.html#method_getItemsInGroup"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DocumentationSidebar\u003A\u003AgetPriorityForRoute\u0028\u0029",
-            "name": "getPriorityForRoute",
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DocumentationSidebar\u003A\u003AshouldItemBeHidden\u0028\u0029",
+            "name": "shouldItemBeHidden",
             "summary": "",
-            "url": "classes/Hyde-Framework-Features-Navigation-DocumentationSidebar.html#method_getPriorityForRoute"
+            "url": "classes/Hyde-Framework-Features-Navigation-DocumentationSidebar.html#method_shouldItemBeHidden"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DocumentationSidebar\u003A\u003AfilterDocumentationPage\u0028\u0029",
-            "name": "filterDocumentationPage",
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DropdownNavItem",
+            "name": "DropdownNavItem",
+            "summary": "A\u0020navigation\u0020item\u0020that\u0020contains\u0020other\u0020navigation\u0020items.",
+            "url": "classes/Hyde-Framework-Features-Navigation-DropdownNavItem.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DropdownNavItem\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Create\u0020a\u0020new\u0020navigation\u0020menu\u0020item.",
+            "url": "classes/Hyde-Framework-Features-Navigation-DropdownNavItem.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DropdownNavItem\u003A\u003AfromArray\u0028\u0029",
+            "name": "fromArray",
             "summary": "",
-            "url": "classes/Hyde-Framework-Features-Navigation-DocumentationSidebar.html#method_filterDocumentationPage"
+            "url": "classes/Hyde-Framework-Features-Navigation-DropdownNavItem.html#method_fromArray"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DropdownNavItem\u003A\u003A\u0024items",
+            "name": "items",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-DropdownNavItem.html#property_items"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DropdownNavItem\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-DropdownNavItem.html#property_name"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DropdownNavItem\u003A\u003A\u0024href",
+            "name": "href",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-DropdownNavItem.html#property_href"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationData",
             "name": "NavigationData",
@@ -3431,50 +3506,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003Acreate\u0028\u0029",
-            "name": "create",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_create"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003Agenerate\u0028\u0029",
             "name": "generate",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_generate"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003Afilter\u0028\u0029",
-            "name": "filter",
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AputGroupedItemsInDropdowns\u0028\u0029",
+            "name": "putGroupedItemsInDropdowns",
             "summary": "",
-            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filter"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003Asort\u0028\u0029",
-            "name": "sort",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_sort"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AfilterHiddenItems\u0028\u0029",
-            "name": "filterHiddenItems",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filterHiddenItems"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AfilterDuplicateItems\u0028\u0029",
-            "name": "filterDuplicateItems",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filterDuplicateItems"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AfilterDropdownItems\u0028\u0029",
-            "name": "filterDropdownItems",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filterDropdownItems"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AfilterDocumentationPage\u0028\u0029",
-            "name": "filterDocumentationPage",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_filterDocumentationPage"
+            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_putGroupedItemsInDropdowns"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AhasDropdowns\u0028\u0029",
             "name": "hasDropdowns",
@@ -3496,25 +3536,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_dropdownsEnabled"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AmakeDropdowns\u0028\u0029",
-            "name": "makeDropdowns",
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AshouldItemBeHidden\u0028\u0029",
+            "name": "shouldItemBeHidden",
             "summary": "",
-            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_makeDropdowns"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003A\u0024currentRoute",
-            "name": "currentRoute",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#property_currentRoute"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003A\u0024items",
-            "name": "items",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#property_items"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003A\u0024dropdowns",
-            "name": "dropdowns",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#property_dropdowns"
+            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_shouldItemBeHidden"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem",
             "name": "NavItem",
@@ -3570,6 +3595,11 @@ Search.appendIndex(
             "name": "getGroup",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#method_getGroup"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003AgetRoute\u0028\u0029",
+            "name": "getRoute",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#method_getRoute"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003AnormalizeGroupKey\u0028\u0029",
             "name": "normalizeGroupKey",
