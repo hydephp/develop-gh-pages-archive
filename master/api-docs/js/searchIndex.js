@@ -4276,6 +4276,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_enableAllHtmlElements"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AstripIndentation\u0028\u0029",
+            "name": "stripIndentation",
+            "summary": "Normalize\u0020indentation\u0020for\u0020an\u0020un\u002Dcompiled\u0020Markdown\u0020string.",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_stripIndentation"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024markdown",
             "name": "markdown",
             "summary": "",
