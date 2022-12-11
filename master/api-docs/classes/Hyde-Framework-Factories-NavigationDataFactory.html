@@ -145,7 +145,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -297,16 +297,16 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_findGroupFromMatter">findGroupFromMatter()</a>
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getSubdirectoryConfiguration">getSubdirectoryConfiguration()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getSubdirectoryConfiguration">getSubdirectoryConfiguration()</a>
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_invert">invert()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: bool|null    </span>
 </dt>
 <dd></dd>
 
@@ -341,11 +341,60 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_makePriority">makePriority()</a>
     <span>
-                                &nbsp;: int|null    </span>
+                                &nbsp;: int    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_offset">offset()</a>
+    <span>
+                                &nbsp;: int|null    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_canUseSubdirectoryForGroups">canUseSubdirectoryForGroups()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_defaultGroup">defaultGroup()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getSubdirectoryName">getSubdirectoryName()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_pageIsInSubdirectory">pageIsInSubdirectory()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForGroupInFrontMatter">searchForGroupInFrontMatter()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForHiddenInFrontMatter">searchForHiddenInFrontMatter()</a>
+    <span>
+                                &nbsp;: bool|null    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForLabelInConfig">searchForLabelInConfig()</a>
     <span>
                                 &nbsp;: string|null    </span>
@@ -353,23 +402,37 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_findPriorityInNavigationConfig">findPriorityInNavigationConfig()</a>
-    <span>
-                                &nbsp;: int|null    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_findPriorityInSidebarConfig">findPriorityInSidebarConfig()</a>
-    <span>
-                                &nbsp;: int|null    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getDocumentationPageGroup">getDocumentationPageGroup()</a>
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForLabelInFrontMatter">searchForLabelInFrontMatter()</a>
     <span>
                                 &nbsp;: string|null    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInConfigs">searchForPriorityInConfigs()</a>
+    <span>
+                                &nbsp;: int|null    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInFrontMatter">searchForPriorityInFrontMatter()</a>
+    <span>
+                                &nbsp;: int|null    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInNavigationConfig">searchForPriorityInNavigationConfig()</a>
+    <span>
+                                &nbsp;: int|null    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInSidebarConfig">searchForPriorityInSidebarConfig()</a>
+    <span>
+                                &nbsp;: int|null    </span>
 </dt>
 <dd></dd>
 
@@ -392,7 +455,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -422,7 +485,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -451,7 +514,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -495,7 +558,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -529,7 +592,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -563,7 +626,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -597,7 +660,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -631,7 +694,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -665,7 +728,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -699,7 +762,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -733,7 +796,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -767,7 +830,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -805,7 +868,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -1005,7 +1068,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -1031,39 +1094,6 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_findGroupFromMatter">
-        findGroupFromMatter()
-        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_findGroupFromMatter" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">174</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">findGroupFromMatter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                    -static                    "
->
     <h4 class="phpdocumentor-element__name" id="method_getSubdirectoryConfiguration">
         getSubdirectoryConfiguration()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getSubdirectoryConfiguration" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1071,14 +1101,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">181</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getSubdirectoryConfiguration</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getSubdirectoryConfiguration</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1097,6 +1127,50 @@
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_invert">
+        invert()
+        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_invert" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">192</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">invert</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_isInstanceOf">
         isInstanceOf()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_isInstanceOf" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1104,7 +1178,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -1148,7 +1222,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -1181,7 +1255,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -1214,7 +1288,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -1247,18 +1321,70 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">makePriority</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+                    <span class="phpdocumentor-signature__name">makePriority</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
         <section class="phpdocumentor-description"></section>
 
     
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_offset">
+        offset()
+        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_offset" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">197</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">offset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$offset</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1270,7 +1396,205 @@
                     <article
         class="phpdocumentor-element
             -method
-            -protected
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_canUseSubdirectoryForGroups">
+        canUseSubdirectoryForGroups()
+        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_canUseSubdirectoryForGroups" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">161</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">canUseSubdirectoryForGroups</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_defaultGroup">
+        defaultGroup()
+        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_defaultGroup" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">167</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">defaultGroup</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getSubdirectoryName">
+        getSubdirectoryName()
+        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getSubdirectoryName" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">177</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getSubdirectoryName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_pageIsInSubdirectory">
+        pageIsInSubdirectory()
+        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_pageIsInSubdirectory" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">172</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">pageIsInSubdirectory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_searchForGroupInFrontMatter">
+        searchForGroupInFrontMatter()
+        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForGroupInFrontMatter" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">109</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">searchForGroupInFrontMatter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_searchForHiddenInFrontMatter">
+        searchForHiddenInFrontMatter()
+        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForHiddenInFrontMatter" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">115</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">searchForHiddenInFrontMatter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_searchForLabelInConfig">
@@ -1280,13 +1604,13 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
+    <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">searchForLabelInConfig</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
         <section class="phpdocumentor-description"></section>
@@ -1306,109 +1630,21 @@
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_findPriorityInNavigationConfig">
-        findPriorityInNavigationConfig()
-        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_findPriorityInNavigationConfig" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_searchForLabelInFrontMatter">
+        searchForLabelInFrontMatter()
+        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForLabelInFrontMatter" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">findPriorityInNavigationConfig</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$config</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|null</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_findPriorityInSidebarConfig">
-        findPriorityInSidebarConfig()
-        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_findPriorityInSidebarConfig" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">132</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">findPriorityInSidebarConfig</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$config</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|null</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getDocumentationPageGroup">
-        getDocumentationPageGroup()
-        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getDocumentationPageGroup" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">145</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">getDocumentationPageGroup</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+                    <span class="phpdocumentor-signature__name">searchForLabelInFrontMatter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1417,6 +1653,138 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_searchForPriorityInConfigs">
+        searchForPriorityInConfigs()
+        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInConfigs" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">135</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">searchForPriorityInConfigs</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_searchForPriorityInFrontMatter">
+        searchForPriorityInFrontMatter()
+        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInFrontMatter" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">121</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">searchForPriorityInFrontMatter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_searchForPriorityInNavigationConfig">
+        searchForPriorityInNavigationConfig()
+        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInNavigationConfig" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">156</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">searchForPriorityInNavigationConfig</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_searchForPriorityInSidebarConfig">
+        searchForPriorityInSidebarConfig()
+        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInSidebarConfig" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">142</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">searchForPriorityInSidebarConfig</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int|null</span>
             &mdash;
         
     

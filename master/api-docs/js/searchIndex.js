@@ -2426,40 +2426,85 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_makePriority"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AfindPriorityInNavigationConfig\u0028\u0029",
-            "name": "findPriorityInNavigationConfig",
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AsearchForLabelInFrontMatter\u0028\u0029",
+            "name": "searchForLabelInFrontMatter",
             "summary": "",
-            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_findPriorityInNavigationConfig"
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForLabelInFrontMatter"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AfindPriorityInSidebarConfig\u0028\u0029",
-            "name": "findPriorityInSidebarConfig",
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AsearchForGroupInFrontMatter\u0028\u0029",
+            "name": "searchForGroupInFrontMatter",
             "summary": "",
-            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_findPriorityInSidebarConfig"
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForGroupInFrontMatter"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AgetDocumentationPageGroup\u0028\u0029",
-            "name": "getDocumentationPageGroup",
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AsearchForHiddenInFrontMatter\u0028\u0029",
+            "name": "searchForHiddenInFrontMatter",
             "summary": "",
-            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getDocumentationPageGroup"
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForHiddenInFrontMatter"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AsearchForPriorityInFrontMatter\u0028\u0029",
+            "name": "searchForPriorityInFrontMatter",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInFrontMatter"
         },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AsearchForLabelInConfig\u0028\u0029",
             "name": "searchForLabelInConfig",
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForLabelInConfig"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AisInstanceOf\u0028\u0029",
-            "name": "isInstanceOf",
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AsearchForPriorityInConfigs\u0028\u0029",
+            "name": "searchForPriorityInConfigs",
             "summary": "",
-            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_isInstanceOf"
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInConfigs"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AfindGroupFromMatter\u0028\u0029",
-            "name": "findGroupFromMatter",
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AsearchForPriorityInSidebarConfig\u0028\u0029",
+            "name": "searchForPriorityInSidebarConfig",
             "summary": "",
-            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_findGroupFromMatter"
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInSidebarConfig"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AsearchForPriorityInNavigationConfig\u0028\u0029",
+            "name": "searchForPriorityInNavigationConfig",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInNavigationConfig"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AcanUseSubdirectoryForGroups\u0028\u0029",
+            "name": "canUseSubdirectoryForGroups",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_canUseSubdirectoryForGroups"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AdefaultGroup\u0028\u0029",
+            "name": "defaultGroup",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_defaultGroup"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003ApageIsInSubdirectory\u0028\u0029",
+            "name": "pageIsInSubdirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_pageIsInSubdirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AgetSubdirectoryName\u0028\u0029",
+            "name": "getSubdirectoryName",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getSubdirectoryName"
         },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AgetSubdirectoryConfiguration\u0028\u0029",
             "name": "getSubdirectoryConfiguration",
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getSubdirectoryConfiguration"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AisInstanceOf\u0028\u0029",
+            "name": "isInstanceOf",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_isInstanceOf"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003Ainvert\u0028\u0029",
+            "name": "invert",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_invert"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003Aoffset\u0028\u0029",
+            "name": "offset",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_offset"
         },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003ASCHEMA",
             "name": "SCHEMA",
