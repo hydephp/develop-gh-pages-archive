@@ -4491,16 +4491,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html#constant_AUTHOR_SCHEMA"
         },                {
-            "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\DocumentationPageSchema",
-            "name": "DocumentationPageSchema",
-            "summary": "",
-            "url": "classes/Hyde-Markdown-Contracts-FrontMatter-DocumentationPageSchema.html"
-        },                {
-            "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\DocumentationPageSchema\u003A\u003ADOCUMENTATION_PAGE_SCHEMA",
-            "name": "DOCUMENTATION_PAGE_SCHEMA",
-            "summary": "",
-            "url": "classes/Hyde-Markdown-Contracts-FrontMatter-DocumentationPageSchema.html#constant_DOCUMENTATION_PAGE_SCHEMA"
-        },                {
             "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\PageSchema",
             "name": "PageSchema",
             "summary": "",
