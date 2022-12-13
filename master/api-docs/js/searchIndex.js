@@ -766,6 +766,11 @@ Search.appendIndex(
             "summary": "Unlink\u0020one\u0020or\u0020more\u0020files\u0020in\u0020the\u0020project\u0027s\u0020directory.",
             "url": "classes/Hyde-Facades-Filesystem.html#method_unlink"
         },                {
+            "fqsen": "\\Hyde\\Facades\\Filesystem\u003A\u003AunlinkIfExists\u0028\u0029",
+            "name": "unlinkIfExists",
+            "summary": "Unlink\u0020a\u0020file\u0020in\u0020the\u0020project\u0027s\u0020directory,\u0020but\u0020only\u0020if\u0020it\u0020exists.",
+            "url": "classes/Hyde-Facades-Filesystem.html#method_unlinkIfExists"
+        },                {
             "fqsen": "\\Hyde\\Facades\\Filesystem\u003A\u003AgetContents\u0028\u0029",
             "name": "getContents",
             "summary": "Get\u0020the\u0020contents\u0020of\u0020a\u0020file.",
@@ -1050,6 +1055,11 @@ Search.appendIndex(
             "name": "unlink",
             "summary": "Unlink\u0020one\u0020or\u0020more\u0020files\u0020in\u0020the\u0020project\u0027s\u0020directory.",
             "url": "classes/Hyde-Foundation-Filesystem.html#method_unlink"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Filesystem\u003A\u003AunlinkIfExists\u0028\u0029",
+            "name": "unlinkIfExists",
+            "summary": "Unlink\u0020a\u0020file\u0020in\u0020the\u0020project\u0027s\u0020directory,\u0020but\u0020only\u0020if\u0020it\u0020exists.",
+            "url": "classes/Hyde-Foundation-Filesystem.html#method_unlinkIfExists"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Filesystem\u003A\u003AgetModelSourcePath\u0028\u0029",
             "name": "getModelSourcePath",

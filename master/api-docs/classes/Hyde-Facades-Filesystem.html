@@ -577,6 +577,13 @@ The helpers here will then prepend the project root to the path before actually 
 </dt>
 <dd>Unlink one or more files in the project&#039;s directory.</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Facades-Filesystem.html#method_unlinkIfExists">unlinkIfExists()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Unlink a file in the project&#039;s directory, but only if it exists.</dd>
+
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Facades-Filesystem.html#method_filesystem">filesystem()</a>
     <span>
@@ -1740,7 +1747,7 @@ The helpers here will then prepend the project root to the path before actually 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Facades/Filesystem.php"><a href="files/packages-framework-src-facades-filesystem.html"><abbr title="packages/framework/src/Facades/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -3100,7 +3107,7 @@ The helpers here will then prepend the project root to the path before actually 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Facades/Filesystem.php"><a href="files/packages-framework-src-facades-filesystem.html"><abbr title="packages/framework/src/Facades/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -3761,6 +3768,51 @@ the returned collection will only contain relative paths.</p>
                     <article
         class="phpdocumentor-element
             -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_unlinkIfExists">
+        unlinkIfExists()
+        <a href="classes/Hyde-Facades-Filesystem.html#method_unlinkIfExists" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Facades/Filesystem.php"><a href="files/packages-framework-src-facades-filesystem.html"><abbr title="packages/framework/src/Facades/Filesystem.php">Filesystem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">101</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Unlink a file in the project&#039;s directory, but only if it exists.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">unlinkIfExists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$path</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>True if the file was unlinked, false if it did not exist or failed to unlink.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
             -protected
                                     -static                    "
 >
@@ -3771,7 +3823,7 @@ the returned collection will only contain relative paths.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Facades/Filesystem.php"><a href="files/packages-framework-src-facades-filesystem.html"><abbr title="packages/framework/src/Facades/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 
     </aside>
 
@@ -3804,7 +3856,7 @@ the returned collection will only contain relative paths.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Facades/Filesystem.php"><a href="files/packages-framework-src-facades-filesystem.html"><abbr title="packages/framework/src/Facades/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -3837,7 +3889,7 @@ the returned collection will only contain relative paths.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Facades/Filesystem.php"><a href="files/packages-framework-src-facades-filesystem.html"><abbr title="packages/framework/src/Facades/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 
     </aside>
 
