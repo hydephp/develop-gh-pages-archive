@@ -5621,6 +5621,106 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Support-Facades-Render.html#method_getFacadeAccessor"
         },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\MediaFile",
+            "name": "MediaFile",
+            "summary": "File\u0020abstraction\u0020for\u0020a\u0020project\u0020media\u0020file.",
+            "url": "classes/Hyde-Support-Filesystem-MediaFile.html"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\MediaFile\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-MediaFile.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\MediaFile\u003A\u003AgetContentLength\u0028\u0029",
+            "name": "getContentLength",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-MediaFile.html#method_getContentLength"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\MediaFile\u003A\u003AgetMimeType\u0028\u0029",
+            "name": "getMimeType",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-MediaFile.html#method_getMimeType"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile",
+            "name": "ProjectFile",
+            "summary": "Filesystem\u0020abstraction\u0020for\u0020a\u0020file\u0020stored\u0020in\u0020the\u0020project.",
+            "url": "classes/Hyde-Support-Filesystem-ProjectFile.html"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile\u003A\u003Amake\u0028\u0029",
+            "name": "make",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-ProjectFile.html#method_make"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-ProjectFile.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-ProjectFile.html#method___toString"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-ProjectFile.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-ProjectFile.html#method_getName"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile\u003A\u003AgetPath\u0028\u0029",
+            "name": "getPath",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-ProjectFile.html#method_getPath"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile\u003A\u003AgetAbsolutePath\u0028\u0029",
+            "name": "getAbsolutePath",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-ProjectFile.html#method_getAbsolutePath"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile\u003A\u003AgetContents\u0028\u0029",
+            "name": "getContents",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-ProjectFile.html#method_getContents"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile\u003A\u003AgetExtension\u0028\u0029",
+            "name": "getExtension",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-ProjectFile.html#method_getExtension"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-ProjectFile.html#property_path"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\SourceFile",
+            "name": "SourceFile",
+            "summary": "File\u0020abstraction\u0020for\u0020a\u0020project\u0020source\u0020file.",
+            "url": "classes/Hyde-Support-Filesystem-SourceFile.html"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\SourceFile\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-SourceFile.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\SourceFile\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-SourceFile.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\SourceFile\u003A\u003AwithoutDirectoryPrefix\u0028\u0029",
+            "name": "withoutDirectoryPrefix",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-SourceFile.html#method_withoutDirectoryPrefix"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\SourceFile\u003A\u003A\u0024model",
+            "name": "model",
+            "summary": "The\u0020associated\u0020page\u0020class\u0020string.",
+            "url": "classes/Hyde-Support-Filesystem-SourceFile.html#property_model"
+        },                {
             "fqsen": "\\Hyde\\Support\\Models\\DateString",
             "name": "DateString",
             "summary": "Parse\u0020a\u0020date\u0020string\u0020and\u0020create\u0020normalized\u0020formats.",
@@ -6250,6 +6350,11 @@ Search.appendIndex(
             "name": "Facades",
             "summary": "",
             "url": "namespaces/hyde-support-facades.html"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem",
+            "name": "Filesystem",
+            "summary": "",
+            "url": "namespaces/hyde-support-filesystem.html"
         },                {
             "fqsen": "\\Hyde\\Support\\Models",
             "name": "Models",
