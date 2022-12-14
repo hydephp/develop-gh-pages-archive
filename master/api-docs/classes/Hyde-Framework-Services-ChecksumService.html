@@ -136,11 +136,11 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/ChecksumService.php"><a href="files/packages-framework-src-framework-services-checksumservice.html"><abbr title="packages/framework/src/Framework/Services/ChecksumService.php">ChecksumService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Helper methods to interact with the filecache. The filecache is used to compare
+            <p class="phpdocumentor-summary">Helper methods to interact with the virtual filecache that is used to compare
 published Blade views with the original Blade views in the Hyde Framework
 so the user can be warned before overwriting their customizations.</p>
 
@@ -194,11 +194,18 @@ so the user can be warned before overwriting their customizations.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Services-ChecksumService.html#method_unixsum">unixsum()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>A EOL agnostic wrapper for calculating MD5 checksums.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-ChecksumService.html#method_unixsumFile">unixsumFile()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
+<dd>Shorthand for {@see static::unixsum()} but loads a file.</dd>
 
         </dl>
 
@@ -226,7 +233,7 @@ so the user can be warned before overwriting their customizations.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/ChecksumService.php"><a href="files/packages-framework-src-framework-services-checksumservice.html"><abbr title="packages/framework/src/Framework/Services/ChecksumService.php">ChecksumService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -270,7 +277,7 @@ so the user can be warned before overwriting their customizations.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/ChecksumService.php"><a href="files/packages-framework-src-framework-services-checksumservice.html"><abbr title="packages/framework/src/Framework/Services/ChecksumService.php">ChecksumService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -303,7 +310,7 @@ so the user can be warned before overwriting their customizations.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/ChecksumService.php"><a href="files/packages-framework-src-framework-services-checksumservice.html"><abbr title="packages/framework/src/Framework/Services/ChecksumService.php">ChecksumService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -329,6 +336,66 @@ so the user can be warned before overwriting their customizations.</p>
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_unixsum">
+        unixsum()
+        <a href="classes/Hyde-Framework-Services-ChecksumService.html#method_unixsum" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/ChecksumService.php"><a href="files/packages-framework-src-framework-services-checksumservice.html"><abbr title="packages/framework/src/Framework/Services/ChecksumService.php">ChecksumService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">64</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A EOL agnostic wrapper for calculating MD5 checksums.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">unixsum</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"><p>This function is not cryptographically secure.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="https://github.com/hydephp/framework/issues/85"><abbr title="https://github.com/hydephp/framework/issues/85">https://github.com/hydephp/framework/issues/85</abbr></a></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_unixsumFile">
         unixsumFile()
         <a href="classes/Hyde-Framework-Services-ChecksumService.html#method_unixsumFile" class="headerlink"><i class="fas fa-link"></i></a>
@@ -336,16 +403,19 @@ so the user can be warned before overwriting their customizations.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/ChecksumService.php"><a href="files/packages-framework-src-framework-services-checksumservice.html"><abbr title="packages/framework/src/Framework/Services/ChecksumService.php">ChecksumService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Shorthand for {@see static::unixsum()} but loads a file.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">unixsumFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>Note that unlink most filesystem methods, the file path is expected
+to be absolute as the file might not be in the project directory.</p>
+</section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
