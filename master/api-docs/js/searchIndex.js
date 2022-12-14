@@ -781,11 +781,6 @@ Search.appendIndex(
             "summary": "Write\u0020the\u0020contents\u0020of\u0020a\u0020file.",
             "url": "classes/Hyde-Facades-Filesystem.html#method_putContents"
         },                {
-            "fqsen": "\\Hyde\\Facades\\Filesystem\u003A\u003AqualifyPossiblePathArray\u0028\u0029",
-            "name": "qualifyPossiblePathArray",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Filesystem.html#method_qualifyPossiblePathArray"
-        },                {
             "fqsen": "\\Hyde\\Facades\\Filesystem\u003A\u003Afilesystem\u0028\u0029",
             "name": "filesystem",
             "summary": "",
@@ -930,6 +925,41 @@ Search.appendIndex(
             "name": "registerBaseBindings",
             "summary": "\u007B\u0040inheritdoc\u007D",
             "url": "classes/Hyde-Foundation-Application.html#method_registerBaseBindings"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Concerns\\BaseFoundationCollection",
+            "name": "BaseFoundationCollection",
+            "summary": "Base\u0020class\u0020for\u0020the\u0020kernel\u0020auto\u002Ddiscovery\u0020collections.",
+            "url": "classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Concerns\\BaseFoundationCollection\u003A\u003ArunDiscovery\u0028\u0029",
+            "name": "runDiscovery",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_runDiscovery"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Concerns\\BaseFoundationCollection\u003A\u003Aboot\u0028\u0029",
+            "name": "boot",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_boot"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Concerns\\BaseFoundationCollection\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Concerns\\BaseFoundationCollection\u003A\u003AsetKernel\u0028\u0029",
+            "name": "setKernel",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_setKernel"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Concerns\\BaseFoundationCollection\u003A\u003AgetInstance\u0028\u0029",
+            "name": "getInstance",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_getInstance"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Concerns\\BaseFoundationCollection\u003A\u003A\u0024kernel",
+            "name": "kernel",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#property_kernel"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Facades\\FileCollection",
             "name": "FileCollection",
@@ -1275,6 +1305,31 @@ Search.appendIndex(
             "name": "parse",
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#method_parse"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003AlineMatchesFrontMatter\u0028\u0029",
+            "name": "lineMatchesFrontMatter",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#method_lineMatchesFrontMatter"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003AextractKey\u0028\u0029",
+            "name": "extractKey",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#method_extractKey"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003AextractValue\u0028\u0029",
+            "name": "extractValue",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#method_extractValue"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003AgetValueWithType\u0028\u0029",
+            "name": "getValueWithType",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#method_getValueWithType"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003AparseArrayString\u0028\u0029",
+            "name": "parseArrayString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html#method_parseArrayString"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003AisValueArrayString\u0028\u0029",
             "name": "isValueArrayString",
@@ -2986,6 +3041,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateSearch.html#property_description"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateSearch\u003A\u003A\u0024guesstimationFactor",
+            "name": "guesstimationFactor",
+            "summary": "Estimated\u0020processing\u0020time\u0020per\u0020file\u0020in\u0020ms.",
+            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateSearch.html#property_guesstimationFactor"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateSitemap",
             "name": "GenerateSitemap",
             "summary": "",
@@ -3105,6 +3165,11 @@ Search.appendIndex(
             "name": "renderFooter",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html#method_renderFooter"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Documentation\\SemanticDocumentationArticle\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html#method_process"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Documentation\\SemanticDocumentationArticle\u003A\u003Atokenize\u0028\u0029",
             "name": "tokenize",

@@ -115,14 +115,15 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-foundation.html">Foundation</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-foundation-concerns.html">Concerns</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    FileCollection
+    BaseFoundationCollection
 
         <span class="phpdocumentor-element__extends">
-        extends <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html"><abbr title="\Hyde\Foundation\Concerns\BaseFoundationCollection">BaseFoundationCollection</abbr></a>
+        extends <abbr title="\Illuminate\Support\Collection">Collection</abbr>
     </span>
     
             <div class="phpdocumentor-element__package">
@@ -136,17 +137,14 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/FileCollection.php"><a href="files/packages-framework-src-foundation-filecollection.html"><abbr title="packages/framework/src/Foundation/FileCollection.php">FileCollection.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php"><a href="files/packages-framework-src-foundation-concerns-basefoundationcollection.html"><abbr title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php">BaseFoundationCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">The FileCollection contains all the discovered source and media files.</p>
+            <p class="phpdocumentor-summary">Base class for the kernel auto-discovery collections.</p>
 
-    <section class="phpdocumentor-description"><p>This class is stored as a singleton in the HydeKernel.
-You would commonly access it via one of the facades:</p>
-</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -158,7 +156,7 @@ You would commonly access it via one of the facades:</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Foundation-Facades-FileCollection.html"><abbr title="\Hyde\Foundation\Facades\FileCollection">FileCollection</abbr></a></span>
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Foundation-FileCollection.html"><abbr title="\Hyde\Foundation\FileCollection">FileCollection</abbr></a></span>
                                         
                                              
                                     </dd>
@@ -166,7 +164,23 @@ You would commonly access it via one of the facades:</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Hyde::files()">Hyde::files()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Foundation\PageCollection">PageCollection</abbr></span>
+                                        
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Foundation-RouteCollection.html"><abbr title="\Hyde\Foundation\RouteCollection">RouteCollection</abbr></a></span>
+                                        
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Framework\Testing\Unit\BaseFoundationCollectionTest">BaseFoundationCollectionTest</abbr></span>
                                         
                                              
                                     </dd>
@@ -198,37 +212,9 @@ You would commonly access it via one of the facades:</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Foundation-FileCollection.html#method_getAllSourceFiles">getAllSourceFiles()</a>
-    <span>
-                                &nbsp;: <a href="classes/Hyde-Foundation-FileCollection.html"><abbr title="\Hyde\Foundation\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_getInstance">getInstance()</a>
     <span>
                                 &nbsp;: $this    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Foundation-FileCollection.html#method_getMediaFiles">getMediaFiles()</a>
-    <span>
-                                &nbsp;: <a href="classes/Hyde-Foundation-FileCollection.html"><abbr title="\Hyde\Foundation\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-MediaFile.html"><abbr title="\Hyde\Support\Filesystem\MediaFile">MediaFile</abbr></a>&gt;    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Foundation-FileCollection.html#method_getSourceFiles">getSourceFiles()</a>
-    <span>
-                                &nbsp;: <a href="classes/Hyde-Foundation-FileCollection.html"><abbr title="\Hyde\Foundation\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Foundation-FileCollection.html#method_getSourceFilesFor">getSourceFilesFor()</a>
-    <span>
-                                &nbsp;: <a href="classes/Hyde-Foundation-FileCollection.html"><abbr title="\Hyde\Foundation\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;    </span>
 </dt>
 <dd></dd>
 
@@ -240,21 +226,7 @@ You would commonly access it via one of the facades:</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Foundation-FileCollection.html#method_discoverFilesFor">discoverFilesFor()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Foundation-FileCollection.html#method_discoverMediaAssetFiles">discoverMediaAssetFiles()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Foundation-FileCollection.html#method_runDiscovery">runDiscovery()</a>
+    <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_runDiscovery">runDiscovery()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
@@ -277,7 +249,7 @@ You would commonly access it via one of the facades:</p>
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Hyde-Foundation-FileCollection.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -318,7 +290,7 @@ You would commonly access it via one of the facades:</p>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Hyde-Foundation-FileCollection.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -370,38 +342,6 @@ You would commonly access it via one of the facades:</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getAllSourceFiles">
-        getAllSourceFiles()
-        <a href="classes/Hyde-Foundation-FileCollection.html#method_getAllSourceFiles" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/FileCollection.php"><a href="files/packages-framework-src-foundation-filecollection.html"><abbr title="packages/framework/src/Foundation/FileCollection.php">FileCollection.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">50</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getAllSourceFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-FileCollection.html"><abbr title="\Hyde\Foundation\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-FileCollection.html"><abbr title="\Hyde\Foundation\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_getInstance">
         getInstance()
         <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_getInstance" class="headerlink"><i class="fas fa-link"></i></a>
@@ -424,122 +364,6 @@ You would commonly access it via one of the facades:</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">$this</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getMediaFiles">
-        getMediaFiles()
-        <a href="classes/Hyde-Foundation-FileCollection.html#method_getMediaFiles" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/FileCollection.php"><a href="files/packages-framework-src-foundation-filecollection.html"><abbr title="packages/framework/src/Foundation/FileCollection.php">FileCollection.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">56</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getMediaFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-FileCollection.html"><abbr title="\Hyde\Foundation\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-MediaFile.html"><abbr title="\Hyde\Support\Filesystem\MediaFile">MediaFile</abbr></a>&gt;</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-FileCollection.html"><abbr title="\Hyde\Foundation\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-MediaFile.html"><abbr title="\Hyde\Support\Filesystem\MediaFile">MediaFile</abbr></a>&gt;</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getSourceFiles">
-        getSourceFiles()
-        <a href="classes/Hyde-Foundation-FileCollection.html#method_getSourceFiles" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/FileCollection.php"><a href="files/packages-framework-src-foundation-filecollection.html"><abbr title="packages/framework/src/Foundation/FileCollection.php">FileCollection.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">35</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getSourceFiles</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-FileCollection.html"><abbr title="\Hyde\Foundation\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pageClass</span>
-                : <span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage>|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-FileCollection.html"><abbr title="\Hyde\Foundation\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getSourceFilesFor">
-        getSourceFilesFor()
-        <a href="classes/Hyde-Foundation-FileCollection.html#method_getSourceFilesFor" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/FileCollection.php"><a href="files/packages-framework-src-foundation-filecollection.html"><abbr title="packages/framework/src/Foundation/FileCollection.php">FileCollection.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">44</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getSourceFilesFor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-FileCollection.html"><abbr title="\Hyde\Foundation\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pageClass</span>
-                : <span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-FileCollection.html"><abbr title="\Hyde\Foundation\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;</span>
             &mdash;
         
     
@@ -592,98 +416,23 @@ You would commonly access it via one of the facades:</p>
         class="phpdocumentor-element
             -method
             -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_discoverFilesFor">
-        discoverFilesFor()
-        <a href="classes/Hyde-Foundation-FileCollection.html#method_discoverFilesFor" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/FileCollection.php"><a href="files/packages-framework-src-foundation-filecollection.html"><abbr title="packages/framework/src/Foundation/FileCollection.php">FileCollection.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">91</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">discoverFilesFor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pageClass</span>
-                : <span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_discoverMediaAssetFiles">
-        discoverMediaAssetFiles()
-        <a href="classes/Hyde-Foundation-FileCollection.html#method_discoverMediaAssetFiles" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/FileCollection.php"><a href="files/packages-framework-src-foundation-filecollection.html"><abbr title="packages/framework/src/Foundation/FileCollection.php">FileCollection.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">101</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">discoverMediaAssetFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
+                        -abstract                                "
 >
     <h4 class="phpdocumentor-element__name" id="method_runDiscovery">
         runDiscovery()
-        <a href="classes/Hyde-Foundation-FileCollection.html#method_runDiscovery" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_runDiscovery" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/FileCollection.php"><a href="files/packages-framework-src-foundation-filecollection.html"><abbr title="packages/framework/src/Foundation/FileCollection.php">FileCollection.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php"><a href="files/packages-framework-src-foundation-concerns-basefoundationcollection.html"><abbr title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php">BaseFoundationCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">runDiscovery</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+    <span class="phpdocumentor-signature__abstract">abstract</span>                <span class="phpdocumentor-signature__name">runDiscovery</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -817,7 +566,7 @@ You would commonly access it via one of the facades:</p>
 </section>
             </div>
         </div>
-        <a href="classes/Hyde-Foundation-FileCollection.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
