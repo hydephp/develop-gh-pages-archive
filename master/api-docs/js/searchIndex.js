@@ -1276,6 +1276,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-RouteCollection.html#method_runDiscovery"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\AnonymousViewCompiler",
+            "name": "AnonymousViewCompiler",
+            "summary": "Compile\u0020any\u0020Blade\u0020file\u0020using\u0020the\u0020Blade\u0020facade\u0020as\u0020it\u0020allows\u0020us\u0020to\u0020render\nit\u0020without\u0020having\u0020to\u0020register\u0020the\u0020directory\u0020with\u0020the\u0020view\u0020finder.",
+            "url": "classes/Hyde-Framework-Actions-AnonymousViewCompiler.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\AnonymousViewCompiler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-AnonymousViewCompiler.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\AnonymousViewCompiler\u003A\u003A__invoke\u0028\u0029",
+            "name": "__invoke",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-AnonymousViewCompiler.html#method___invoke"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\AnonymousViewCompiler\u003A\u003A\u0024viewPath",
+            "name": "viewPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-AnonymousViewCompiler.html#property_viewPath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\AnonymousViewCompiler\u003A\u003A\u0024data",
+            "name": "data",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-AnonymousViewCompiler.html#property_data"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser",
             "name": "BladeMatterParser",
             "summary": "Parse\u0020the\u0020front\u0020matter\u0020in\u0020a\u0020Blade\u0020file.",
