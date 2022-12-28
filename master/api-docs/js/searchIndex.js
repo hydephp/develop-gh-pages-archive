@@ -4611,6 +4611,41 @@ Search.appendIndex(
             "summary": "Remove\u0020trailing\u0020slashes\u0020from\u0020the\u0020start\u0020and\u0020end\u0020of\u0020a\u0020string.",
             "url": "namespaces/default.html#function_unslash"
         },                {
+            "fqsen": "\\Hyde\\hyde\u0028\u0029",
+            "name": "hyde",
+            "summary": "Get\u0020the\u0020available\u0020HydeKernel\u0020instance.",
+            "url": "namespaces/hyde.html#function_hyde"
+        },                {
+            "fqsen": "\\Hyde\\unslash\u0028\u0029",
+            "name": "unslash",
+            "summary": "Remove\u0020trailing\u0020slashes\u0020from\u0020the\u0020start\u0020and\u0020end\u0020of\u0020a\u0020string.",
+            "url": "namespaces/hyde.html#function_unslash"
+        },                {
+            "fqsen": "\\Hyde\\make_title\u0028\u0029",
+            "name": "make_title",
+            "summary": "",
+            "url": "namespaces/hyde.html#function_make_title"
+        },                {
+            "fqsen": "\\Hyde\\normalize_newlines\u0028\u0029",
+            "name": "normalize_newlines",
+            "summary": "",
+            "url": "namespaces/hyde.html#function_normalize_newlines"
+        },                {
+            "fqsen": "\\Hyde\\strip_newlines\u0028\u0029",
+            "name": "strip_newlines",
+            "summary": "",
+            "url": "namespaces/hyde.html#function_strip_newlines"
+        },                {
+            "fqsen": "\\Hyde\\trim_slashes\u0028\u0029",
+            "name": "trim_slashes",
+            "summary": "",
+            "url": "namespaces/hyde.html#function_trim_slashes"
+        },                {
+            "fqsen": "\\Hyde\\markdown\u0028\u0029",
+            "name": "markdown",
+            "summary": "",
+            "url": "namespaces/hyde.html#function_markdown"
+        },                {
             "fqsen": "\\Hyde\\Hyde",
             "name": "Hyde",
             "summary": "General\u0020facade\u0020for\u0020Hyde\u0020services.",
