@@ -4641,11 +4641,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde.html#function_trim_slashes"
         },                {
-            "fqsen": "\\Hyde\\markdown\u0028\u0029",
-            "name": "markdown",
-            "summary": "",
-            "url": "namespaces/hyde.html#function_markdown"
-        },                {
             "fqsen": "\\Hyde\\Hyde",
             "name": "Hyde",
             "summary": "General\u0020facade\u0020for\u0020Hyde\u0020services.",
