@@ -4641,6 +4641,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde.html#function_trim_slashes"
         },                {
+            "fqsen": "\\Hyde\\evaluate_arrayable\u0028\u0029",
+            "name": "evaluate_arrayable",
+            "summary": "",
+            "url": "namespaces/hyde.html#function_evaluate_arrayable"
+        },                {
             "fqsen": "\\Hyde\\Hyde",
             "name": "Hyde",
             "summary": "General\u0020facade\u0020for\u0020Hyde\u0020services.",
