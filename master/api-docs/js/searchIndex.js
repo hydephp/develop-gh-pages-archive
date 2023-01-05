@@ -993,7 +993,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Foundation\\FileCollection",
             "name": "FileCollection",
-            "summary": "The\u0020FileCollection\u0020contains\u0020all\u0020the\u0020discovered\u0020source\u0020and\u0020media\u0020files.",
+            "summary": "The\u0020FileCollection\u0020contains\u0020all\u0020the\u0020discovered\u0020source\u0020and\u0020media\u0020files,\nand\u0020thus\u0020has\u0020an\u0020integral\u0020role\u0020in\u0020the\u0020Hyde\u0020Auto\u0020Discovery\u0020process.",
             "url": "classes/Hyde-Foundation-FileCollection.html"
         },                {
             "fqsen": "\\Hyde\\Foundation\\FileCollection\u003A\u003AgetSourceFiles\u0028\u0029",
@@ -1210,6 +1210,11 @@ Search.appendIndex(
             "name": "booted",
             "summary": "",
             "url": "classes/Hyde-Foundation-HydeKernel.html#property_booted"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\HydeKernel\u003A\u003A\u0024pageClasses",
+            "name": "pageClasses",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-HydeKernel.html#property_pageClasses"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Hyperlinks",
             "name": "Hyperlinks",
