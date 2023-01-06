@@ -5513,13 +5513,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Create\u0020a\u0020new\u0020virtual\u0020page\u0020instance.",
             "url": "classes/Hyde-Pages-VirtualPage.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A\u0024contents",
-            "name": "contents",
+            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003AgetContents\u0028\u0029",
+            "name": "getContents",
             "summary": "",
-            "url": "classes/Hyde-Pages-VirtualPage.html#property_contents"
+            "url": "classes/Hyde-Pages-VirtualPage.html#method_getContents"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003AgetBladeView\u0028\u0029",
+            "name": "getBladeView",
+            "summary": "Get\u0020the\u0020Blade\u0020template\u0020for\u0020the\u0020page.",
+            "url": "classes/Hyde-Pages-VirtualPage.html#method_getBladeView"
         },                {
             "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003Acompile\u0028\u0029",
             "name": "compile",
@@ -5540,6 +5545,16 @@ Search.appendIndex(
             "name": "fileExtension",
             "summary": "",
             "url": "classes/Hyde-Pages-VirtualPage.html#property_fileExtension"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A\u0024contents",
+            "name": "contents",
+            "summary": "",
+            "url": "classes/Hyde-Pages-VirtualPage.html#property_contents"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A\u0024view",
+            "name": "view",
+            "summary": "",
+            "url": "classes/Hyde-Pages-VirtualPage.html#property_view"
         },                {
             "fqsen": "\\Hyde\\Support\\Concerns\\Serializable",
             "name": "Serializable",
