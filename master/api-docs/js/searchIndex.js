@@ -5496,6 +5496,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Pages-MarkdownPost.html#property_image"
         },                {
+            "fqsen": "\\Hyde\\Pages\\VirtualPage",
+            "name": "VirtualPage",
+            "summary": "A\u0020virtual\u0020page\u0020is\u0020a\u0020page\u0020that\u0020does\u0020not\u0020have\u0020a\u0020source\u0020file.",
+            "url": "classes/Hyde-Pages-VirtualPage.html"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003Amake\u0028\u0029",
+            "name": "make",
+            "summary": "",
+            "url": "classes/Hyde-Pages-VirtualPage.html#method_make"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Pages-VirtualPage.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A\u0024contents",
+            "name": "contents",
+            "summary": "",
+            "url": "classes/Hyde-Pages-VirtualPage.html#property_contents"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
+            "url": "classes/Hyde-Pages-VirtualPage.html#method_compile"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A\u0024sourceDirectory",
+            "name": "sourceDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Pages-VirtualPage.html#property_sourceDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A\u0024outputDirectory",
+            "name": "outputDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Pages-VirtualPage.html#property_outputDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A\u0024fileExtension",
+            "name": "fileExtension",
+            "summary": "",
+            "url": "classes/Hyde-Pages-VirtualPage.html#property_fileExtension"
+        },                {
             "fqsen": "\\Hyde\\Support\\Concerns\\Serializable",
             "name": "Serializable",
             "summary": "Automatically\u0020serializes\u0020an\u0020Arrayable\u0020interface\u0020when\u0020JSON\u0020is\u0020requested.",
