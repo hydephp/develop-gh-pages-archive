@@ -5351,6 +5351,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_navigation"
         },                {
+            "fqsen": "\\Hyde\\Pages\\Contracts\\DynamicPage",
+            "name": "DynamicPage",
+            "summary": "This\u0020interface\u0020is\u0020used\u0020to\u0020mark\u0020page\u0020classes\u0020that\u0020are\u0020dynamically\u0020generated,\n\u0028i.e.\u0020not\u0020based\u0020on\u0020a\u0020source\u0020file\u0029,\u0020or\u0020that\u0020have\u0020dynamic\u0020path\u0020information.",
+            "url": "classes/Hyde-Pages-Contracts-DynamicPage.html"
+        },                {
             "fqsen": "\\Hyde\\Pages\\DocumentationPage",
             "name": "DocumentationPage",
             "summary": "Page\u0020class\u0020for\u0020documentation\u0020pages.",
@@ -6505,6 +6510,11 @@ Search.appendIndex(
             "name": "Concerns",
             "summary": "",
             "url": "namespaces/hyde-pages-concerns.html"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Contracts",
+            "name": "Contracts",
+            "summary": "",
+            "url": "namespaces/hyde-pages-contracts.html"
         },                {
             "fqsen": "\\Hyde\\Support\\Concerns",
             "name": "Concerns",
