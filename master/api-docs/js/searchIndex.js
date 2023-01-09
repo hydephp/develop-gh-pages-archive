@@ -1268,7 +1268,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Foundation\\RouteCollection\u003A\u003AaddRoute\u0028\u0029",
             "name": "addRoute",
-            "summary": "This\u0020internal\u0020method\u0020adds\u0020the\u0020specified\u0020route\u0020to\u0020the\u0020route\u0020index.",
+            "summary": "This\u0020method\u0020adds\u0020the\u0020specified\u0020route\u0020to\u0020the\u0020route\u0020index.",
             "url": "classes/Hyde-Foundation-RouteCollection.html#method_addRoute"
         },                {
             "fqsen": "\\Hyde\\Foundation\\RouteCollection\u003A\u003Adiscover\u0028\u0029",

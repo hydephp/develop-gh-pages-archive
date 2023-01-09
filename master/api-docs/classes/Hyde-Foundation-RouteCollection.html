@@ -208,7 +208,7 @@ the compiled web accessible URI routes the static site generator creates.</p>
     <span>
                                 &nbsp;: self    </span>
 </dt>
-<dd>This internal method adds the specified route to the route index.</dd>
+<dd>This method adds the specified route to the route index.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_boot">boot()</a>
@@ -325,18 +325,27 @@ the compiled web accessible URI routes the static site generator creates.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/RouteCollection.php"><a href="files/packages-framework-src-foundation-routecollection.html"><abbr title="packages/framework/src/Foundation/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">This internal method adds the specified route to the route index.</p>
+        <p class="phpdocumentor-summary">This method adds the specified route to the route index.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">addRoute</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Support-Models-Route.html"><abbr title="\Hyde\Support\Models\Route">Route</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$route</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
-        <section class="phpdocumentor-description"><p>It's made public so package developers can hook into the routing system.
-As a package developer, you will need to make sure your route leads to something.</p>
+        <section class="phpdocumentor-description"><p>It can be used by package developers to hook into the routing system.</p>
+<p>Note that this method when used outside of this class is only intended to be used for adding on-off routes;
+If you are registering multiple routes, you may instead want to register an entire custom page class,
+as that will allow you to utilize the full power of the HydePHP autodiscovery. In addition,
+you might actually rather want to use the page collection's addPage method instead,
+as all pages there are automatically also added as routes here as well.</p>
+<p>When using this method, take notice of the following things:</p>
+<ol>
+<li>Be sure to register the route before the HydeKernel boots.</li>
+<li>Make sure the route leads to something that can be compiled.</li>
+</ol>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -536,7 +545,7 @@ As a package developer, you will need to make sure your route leads to something
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/RouteCollection.php"><a href="files/packages-framework-src-foundation-routecollection.html"><abbr title="packages/framework/src/Foundation/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -580,7 +589,7 @@ As a package developer, you will need to make sure your route leads to something
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/RouteCollection.php"><a href="files/packages-framework-src-foundation-routecollection.html"><abbr title="packages/framework/src/Foundation/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
