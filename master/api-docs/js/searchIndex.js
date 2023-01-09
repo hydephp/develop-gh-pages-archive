@@ -4116,66 +4116,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-AssetService.html#method_getCacheBustKey"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService",
-            "name": "BuildService",
-            "summary": "Moves\u0020logic\u0020from\u0020the\u0020build\u0020command\u0020to\u0020a\u0020service.",
-            "url": "classes/Hyde-Framework-Services-BuildService.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AcompileStaticPages\u0028\u0029",
-            "name": "compileStaticPages",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_compileStaticPages"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AcleanOutputDirectory\u0028\u0029",
-            "name": "cleanOutputDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_cleanOutputDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AtransferMediaAssets\u0028\u0029",
-            "name": "transferMediaAssets",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_transferMediaAssets"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AcompilePagesForClass\u0028\u0029",
-            "name": "compilePagesForClass",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_compilePagesForClass"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AgetClassPluralName\u0028\u0029",
-            "name": "getClassPluralName",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_getClassPluralName"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AisItSafeToCleanOutputDirectory\u0028\u0029",
-            "name": "isItSafeToCleanOutputDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_isItSafeToCleanOutputDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AisOutputDirectoryWhitelisted\u0028\u0029",
-            "name": "isOutputDirectoryWhitelisted",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_isOutputDirectoryWhitelisted"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AaskIfUnsafeDirectoryShouldBeEmptied\u0028\u0029",
-            "name": "askIfUnsafeDirectoryShouldBeEmptied",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_askIfUnsafeDirectoryShouldBeEmptied"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AsafeOutputDirectories\u0028\u0029",
-            "name": "safeOutputDirectories",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_safeOutputDirectories"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003A\u0024router",
-            "name": "router",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#property_router"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService",
             "name": "BuildTaskService",
             "summary": "This\u0020service\u0020manages\u0020the\u0020build\u0020tasks\u0020that\u0020are\u0020called\u0020after\u0020the\u0020site\u0020has\u0020been\u0020compiled\u0020using\u0020the\u0020build\u0020command.",
