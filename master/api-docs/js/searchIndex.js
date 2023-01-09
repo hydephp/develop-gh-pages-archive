@@ -4071,6 +4071,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_initializeConfiguration"
         },                {
+            "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003AregisterPageModels\u0028\u0029",
+            "name": "registerPageModels",
+            "summary": "Register\u0020the\u0020page\u0020model\u0020classes\u0020that\u0020Hyde\u0020should\u0020use.",
+            "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_registerPageModels"
+        },                {
             "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003AregisterModuleServiceProviders\u0028\u0029",
             "name": "registerModuleServiceProviders",
             "summary": "Register\u0020module\u0020service\u0020providers.",
