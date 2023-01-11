@@ -961,6 +961,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#property_kernel"
         },                {
+            "fqsen": "\\Hyde\\Foundation\\Concerns\\HydeExtension",
+            "name": "HydeExtension",
+            "summary": "When\u0020creating\u0020a\u0020HydePHP\u0020extension,\u0020you\u0020should\u0020create\u0020a\u0020class\u0020that\u0020extends\u0020this\u0020one.",
+            "url": "classes/Hyde-Foundation-Concerns-HydeExtension.html"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Concerns\\HydeExtension\u003A\u003AgetPageClasses\u0028\u0029",
+            "name": "getPageClasses",
+            "summary": "If\u0020your\u0020extension\u0020adds\u0020new\u0020page\u0020classes,\u0020you\u0020should\u0020register\u0020them\u0020here.",
+            "url": "classes/Hyde-Foundation-Concerns-HydeExtension.html#method_getPageClasses"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Concerns\\HydeExtension\u003A\u003AdiscoverFiles\u0028\u0029",
+            "name": "discoverFiles",
+            "summary": "If\u0020your\u0020extension\u0020needs\u0020to\u0020hook\u0020into\u0020the\u0020file\u0020discovery\u0020process,\nyou\u0020can\u0020configure\u0020the\u0020following\u0020handler\u0020method.\u0020It\u0020will\u0020be\u0020called\nat\u0020the\u0020end\u0020of\u0020the\u0020file\u0020discovery\u0020process.\u0020The\u0020collection\u0020instance\nwill\u0020be\u0020injected,\u0020so\u0020that\u0020you\u0020can\u0020interact\u0020with\u0020it\u0020directly.",
+            "url": "classes/Hyde-Foundation-Concerns-HydeExtension.html#method_discoverFiles"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Concerns\\HydeExtension\u003A\u003AdiscoverPages\u0028\u0029",
+            "name": "discoverPages",
+            "summary": "If\u0020your\u0020extension\u0020needs\u0020to\u0020hook\u0020into\u0020the\u0020page\u0020discovery\u0020process,\nyou\u0020can\u0020configure\u0020the\u0020following\u0020handler\u0020method.\u0020It\u0020will\u0020be\u0020called\nat\u0020the\u0020end\u0020of\u0020the\u0020page\u0020discovery\u0020process.\u0020The\u0020collection\u0020instance\nwill\u0020be\u0020injected,\u0020so\u0020that\u0020you\u0020can\u0020interact\u0020with\u0020it\u0020directly.",
+            "url": "classes/Hyde-Foundation-Concerns-HydeExtension.html#method_discoverPages"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Concerns\\HydeExtension\u003A\u003AdiscoverRoutes\u0028\u0029",
+            "name": "discoverRoutes",
+            "summary": "If\u0020your\u0020extension\u0020needs\u0020to\u0020hook\u0020into\u0020the\u0020route\u0020discovery\u0020process,\nyou\u0020can\u0020configure\u0020the\u0020following\u0020handler\u0020method.\u0020It\u0020will\u0020be\u0020called\nat\u0020the\u0020end\u0020of\u0020the\u0020route\u0020discovery\u0020process.\u0020The\u0020collection\u0020instance\nwill\u0020be\u0020injected,\u0020so\u0020that\u0020you\u0020can\u0020interact\u0020with\u0020it\u0020directly.",
+            "url": "classes/Hyde-Foundation-Concerns-HydeExtension.html#method_discoverRoutes"
+        },                {
             "fqsen": "\\Hyde\\Foundation\\Facades\\FileCollection",
             "name": "FileCollection",
             "summary": "",
@@ -1215,6 +1240,11 @@ Search.appendIndex(
             "name": "pageClasses",
             "summary": "",
             "url": "classes/Hyde-Foundation-HydeKernel.html#property_pageClasses"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\HydeKernel\u003A\u003A\u0024extensions",
+            "name": "extensions",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-HydeKernel.html#property_extensions"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Hyperlinks",
             "name": "Hyperlinks",
