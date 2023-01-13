@@ -5483,7 +5483,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003Amake\u0028\u0029",
             "name": "make",
-            "summary": "",
+            "summary": "Static\u0020alias\u0020for\u0020the\u0020constructor.",
             "url": "classes/Hyde-Pages-VirtualPage.html#method_make"
         },                {
             "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A__construct\u0028\u0029",
@@ -5503,8 +5503,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003Acompile\u0028\u0029",
             "name": "compile",
-            "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
+            "summary": "Get\u0020the\u0020contents\u0020that\u0020will\u0020be\u0020saved\u0020to\u0020disk\u0020for\u0020this\u0020page.",
             "url": "classes/Hyde-Pages-VirtualPage.html#method_compile"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003Amacro\u0028\u0029",
+            "name": "macro",
+            "summary": "Register\u0020a\u0020macro\u0020for\u0020the\u0020instance.",
+            "url": "classes/Hyde-Pages-VirtualPage.html#method_macro"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A__call\u0028\u0029",
+            "name": "__call",
+            "summary": "Dynamically\u0020handle\u0020calls\u0020to\u0020the\u0020class.",
+            "url": "classes/Hyde-Pages-VirtualPage.html#method___call"
         },                {
             "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",
@@ -5530,6 +5540,11 @@ Search.appendIndex(
             "name": "view",
             "summary": "",
             "url": "classes/Hyde-Pages-VirtualPage.html#property_view"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A\u0024macros",
+            "name": "macros",
+            "summary": "",
+            "url": "classes/Hyde-Pages-VirtualPage.html#property_macros"
         },                {
             "fqsen": "\\Hyde\\Support\\Concerns\\Serializable",
             "name": "Serializable",
