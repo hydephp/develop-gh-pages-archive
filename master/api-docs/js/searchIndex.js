@@ -3811,6 +3811,141 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#property_hidden"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator",
+            "name": "Paginator",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003Agenerate\u0028\u0029",
+            "name": "generate",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_generate"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AsetCurrentPage\u0028\u0029",
+            "name": "setCurrentPage",
+            "summary": "Set\u0020the\u0020current\u0020page\u0020number.",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_setCurrentPage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003A\u0024currentPage",
+            "name": "currentPage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#property_currentPage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AgetPaginatedItems\u0028\u0029",
+            "name": "getPaginatedItems",
+            "summary": "Get\u0020the\u0020paginated\u0020collection",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_getPaginatedItems"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AgetItemsForPage\u0028\u0029",
+            "name": "getItemsForPage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_getItemsForPage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AgetPageLinks\u0028\u0029",
+            "name": "getPageLinks",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_getPageLinks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AperPage\u0028\u0029",
+            "name": "perPage",
+            "summary": "The\u0020number\u0020of\u0020items\u0020to\u0020be\u0020shown\u0020per\u0020page.",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_perPage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AtotalPages\u0028\u0029",
+            "name": "totalPages",
+            "summary": "Get\u0020the\u0020total\u0020number\u0020of\u0020pages.",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_totalPages"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AhasMultiplePages\u0028\u0029",
+            "name": "hasMultiplePages",
+            "summary": "Determine\u0020if\u0020there\u0020are\u0020enough\u0020items\u0020to\u0020split\u0020into\u0020multiple\u0020pages.",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_hasMultiplePages"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AlastPage\u0028\u0029",
+            "name": "lastPage",
+            "summary": "Get\u0020the\u0020page\u0020number\u0020of\u0020the\u0020last\u0020available\u0020page.",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_lastPage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AcanNavigateBack\u0028\u0029",
+            "name": "canNavigateBack",
+            "summary": "Determine\u0020if\u0020there\u0020are\u0020fewer\u0020items\u0020after\u0020the\u0020cursor\u0020in\u0020the\u0020data\u0020store.",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_canNavigateBack"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AcanNavigateForward\u0028\u0029",
+            "name": "canNavigateForward",
+            "summary": "Determine\u0020if\u0020there\u0020are\u0020more\u0020items\u0020after\u0020the\u0020cursor\u0020in\u0020the\u0020data\u0020store.",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_canNavigateForward"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003ApreviousPageNumber\u0028\u0029",
+            "name": "previousPageNumber",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_previousPageNumber"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AnextPageNumber\u0028\u0029",
+            "name": "nextPageNumber",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_nextPageNumber"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003Aprevious\u0028\u0029",
+            "name": "previous",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_previous"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003Anext\u0028\u0029",
+            "name": "next",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_next"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AfirstItemNumberOnPage\u0028\u0029",
+            "name": "firstItemNumberOnPage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_firstItemNumberOnPage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AvalidateCurrentPageValue\u0028\u0029",
+            "name": "validateCurrentPageValue",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_validateCurrentPageValue"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AformatPageName\u0028\u0029",
+            "name": "formatPageName",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_formatPageName"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AformatLink\u0028\u0029",
+            "name": "formatLink",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_formatLink"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AgetRoute\u0028\u0029",
+            "name": "getRoute",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_getRoute"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003AfirstPage\u0028\u0029",
+            "name": "firstPage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#method_firstPage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003A\u0024paginatedItems",
+            "name": "paginatedItems",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#property_paginatedItems"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003A\u0024pageSize",
+            "name": "pageSize",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#property_pageSize"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Paginator\u003A\u003A\u0024routeBasename",
+            "name": "routeBasename",
+            "summary": "Optionally\u0020provide\u0020a\u0020route\u0020basename\u0020to\u0020be\u0020used\u0020in\u0020generating\u0020the\u0020pagination\u0020links.",
+            "url": "classes/Hyde-Framework-Features-Paginator.html#property_routeBasename"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Session\\SessionServiceProvider",
             "name": "SessionServiceProvider",
             "summary": "",
@@ -6391,11 +6526,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde-framework-features-blogging.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features",
-            "name": "Features",
-            "summary": "",
-            "url": "namespaces/hyde-framework-features.html"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks",
             "name": "BuildTasks",
             "summary": "",
@@ -6435,6 +6565,11 @@ Search.appendIndex(
             "name": "Navigation",
             "summary": "",
             "url": "namespaces/hyde-framework-features-navigation.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features",
+            "name": "Features",
+            "summary": "",
+            "url": "namespaces/hyde-framework-features.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Session",
             "name": "Session",
