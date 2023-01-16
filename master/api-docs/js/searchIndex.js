@@ -4761,6 +4761,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde.html#function_evaluate_arrayable"
         },                {
+            "fqsen": "\\Hyde\\yaml_encode\u0028\u0029",
+            "name": "yaml_encode",
+            "summary": "",
+            "url": "namespaces/hyde.html#function_yaml_encode"
+        },                {
+            "fqsen": "\\Hyde\\yaml_decode\u0028\u0029",
+            "name": "yaml_decode",
+            "summary": "",
+            "url": "namespaces/hyde.html#function_yaml_decode"
+        },                {
             "fqsen": "\\Hyde\\Hyde",
             "name": "Hyde",
             "summary": "General\u0020facade\u0020for\u0020Hyde\u0020services.",
