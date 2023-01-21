@@ -4546,6 +4546,16 @@ Search.appendIndex(
             "summary": "Normalize\u0020indentation\u0020for\u0020an\u0020un\u002Dcompiled\u0020Markdown\u0020string.",
             "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_normalizeIndentationLevel"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AgetNormalizedLines\u0028\u0029",
+            "name": "getNormalizedLines",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_getNormalizedLines"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AfindLineContentPositions\u0028\u0029",
+            "name": "findLineContentPositions",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_findLineContentPositions"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024markdown",
             "name": "markdown",
             "summary": "",
