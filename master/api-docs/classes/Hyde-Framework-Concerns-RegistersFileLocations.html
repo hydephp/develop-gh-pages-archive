@@ -165,7 +165,7 @@ here done automatically when registering the provider.</dd>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
+<dd>Register the optional output directories.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_registerSourceDirectories">registerSourceDirectories()</a>
@@ -205,7 +205,7 @@ here done automatically when registering the provider.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/RegistersFileLocations.php"><a href="files/packages-framework-src-framework-concerns-registersfilelocations.html"><abbr title="packages/framework/src/Framework/Concerns/RegistersFileLocations.php">RegistersFileLocations.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -251,16 +251,20 @@ here done automatically when registering the provider.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/RegistersFileLocations.php"><a href="files/packages-framework-src-framework-concerns-registersfilelocations.html"><abbr title="packages/framework/src/Framework/Concerns/RegistersFileLocations.php">RegistersFileLocations.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Register the optional output directories.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">registerOutputDirectories</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$directoryMapping</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>Some HTML pages, like Blade and Markdown pages are stored right in the _site/ directory.
+However, some pages, like docs and posts are in subdirectories of the _site/ directory.
+Location string should be relative to the root of the application.</p>
+</section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -275,6 +279,21 @@ here done automatically when registering the provider.</p>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">example</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>registerOutputDirectories([HydePage::class =&gt; 'docs'])</p>
+</section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
@@ -357,7 +376,7 @@ usually the root of the project.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/RegistersFileLocations.php"><a href="files/packages-framework-src-framework-concerns-registersfilelocations.html"><abbr title="packages/framework/src/Framework/Concerns/RegistersFileLocations.php">RegistersFileLocations.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 

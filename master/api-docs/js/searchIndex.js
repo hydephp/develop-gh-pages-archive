@@ -2018,7 +2018,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations\u003A\u003AregisterOutputDirectories\u0028\u0029",
             "name": "registerOutputDirectories",
-            "summary": "",
+            "summary": "Register\u0020the\u0020optional\u0020output\u0020directories.",
             "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_registerOutputDirectories"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations\u003A\u003AdiscoverBladeViewsIn\u0028\u0029",
