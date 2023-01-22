@@ -196,7 +196,7 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#property_timeStart">$timeStart</a>
+    <a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#property_timeStart">$timeStart</a>
     <span>
                         &nbsp;: float            </span>
 </dt>
@@ -273,6 +273,20 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_getExecutionTimeInMs">getExecutionTimeInMs()</a>
+    <span>
+                                &nbsp;: int|float    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_getExecutionTimeString">getExecutionTimeString()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_getManifestPath">getManifestPath()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -297,6 +311,20 @@
     <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_jsonEncodeOutput">jsonEncodeOutput()</a>
     <span>
                                 &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_startClock">startClock()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_stopClock">stopClock()</a>
+    <span>
+                                &nbsp;: float    </span>
 </dt>
 <dd></dd>
 
@@ -362,7 +390,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -410,7 +438,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -435,14 +463,14 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_timeStart">
         $timeStart
-        <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#property_timeStart" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#property_timeStart" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/TracksExecutionTime.php"><a href="files/packages-framework-src-framework-concerns-tracksexecutiontime.html"><abbr title="packages/framework/src/Framework/Concerns/TracksExecutionTime.php">TracksExecutionTime.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
@@ -524,7 +552,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -568,7 +596,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -592,7 +620,7 @@
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+            -deprecated                                            "
 >
     <h4 class="phpdocumentor-element__name" id="method_getExecutionTime">
         getExecutionTime()
@@ -601,19 +629,33 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
     
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getExecutionTime</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>Will be removed before 1.0.0 - Use $this-&gt;getExecutionTimeString() instead</p>
+</section>
 
-    
-    
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
@@ -634,7 +676,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -700,7 +742,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -733,7 +775,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -766,7 +808,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -810,7 +852,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -837,6 +879,72 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getExecutionTimeInMs">
+        getExecutionTimeInMs()
+        <a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_getExecutionTimeInMs" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/TracksExecutionTime.php"><a href="files/packages-framework-src-framework-concerns-tracksexecutiontime.html"><abbr title="packages/framework/src/Framework/Concerns/TracksExecutionTime.php">TracksExecutionTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">24</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getExecutionTimeInMs</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|float</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int|float</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getExecutionTimeString">
+        getExecutionTimeString()
+        <a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_getExecutionTimeString" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/TracksExecutionTime.php"><a href="files/packages-framework-src-framework-concerns-tracksexecutiontime.html"><abbr title="packages/framework/src/Framework/Concerns/TracksExecutionTime.php">TracksExecutionTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">29</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getExecutionTimeString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     
@@ -1002,6 +1110,72 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_startClock">
+        startClock()
+        <a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_startClock" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/TracksExecutionTime.php"><a href="files/packages-framework-src-framework-concerns-tracksexecutiontime.html"><abbr title="packages/framework/src/Framework/Concerns/TracksExecutionTime.php">TracksExecutionTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">14</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">startClock</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_stopClock">
+        stopClock()
+        <a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_stopClock" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/TracksExecutionTime.php"><a href="files/packages-framework-src-framework-concerns-tracksexecutiontime.html"><abbr title="packages/framework/src/Framework/Concerns/TracksExecutionTime.php">TracksExecutionTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">19</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">stopClock</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">float</span>
             &mdash;
         
     

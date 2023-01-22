@@ -551,16 +551,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-ValidateCommand.html#property_description"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\ValidateCommand\u003A\u003A\u0024time_start",
-            "name": "time_start",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-ValidateCommand.html#property_time_start"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\ValidateCommand\u003A\u003A\u0024time_total",
-            "name": "time_total",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-ValidateCommand.html#property_time_total"
-        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ValidateCommand\u003A\u003A\u0024service",
             "name": "service",
             "summary": "",
@@ -2046,6 +2036,36 @@ Search.appendIndex(
             "summary": "The\u0020relative\u0020path\u0020to\u0020the\u0020directory\u0020when\u0020the\u0020compiled\u0020site\u0020is\u0020stored.",
             "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_storeCompiledSiteIn"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\TracksExecutionTime",
+            "name": "TracksExecutionTime",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-TracksExecutionTime.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\TracksExecutionTime\u003A\u003AstartClock\u0028\u0029",
+            "name": "startClock",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_startClock"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\TracksExecutionTime\u003A\u003AstopClock\u0028\u0029",
+            "name": "stopClock",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_stopClock"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\TracksExecutionTime\u003A\u003AgetExecutionTimeInMs\u0028\u0029",
+            "name": "getExecutionTimeInMs",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_getExecutionTimeInMs"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\TracksExecutionTime\u003A\u003AgetExecutionTimeString\u0028\u0029",
+            "name": "getExecutionTimeString",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_getExecutionTimeString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\TracksExecutionTime\u003A\u003A\u0024timeStart",
+            "name": "timeStart",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-TracksExecutionTime.html#property_timeStart"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\ValidatesExistence",
             "name": "ValidatesExistence",
             "summary": "Validate\u0020the\u0020existence\u0020of\u0020a\u0020Page\u0020model\u0027s\u0020source\u0020file.",
@@ -3021,11 +3041,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#property_description"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003A\u0024timeStart",
-            "name": "timeStart",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#property_timeStart"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003A\u0024exitCode",
             "name": "exitCode",
             "summary": "",
@@ -3175,11 +3190,6 @@ Search.appendIndex(
             "name": "key",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-DataCollections-DataCollection.html#property_key"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollection\u003A\u003A\u0024timeStart",
-            "name": "timeStart",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-DataCollections-DataCollection.html#property_timeStart"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollection\u003A\u003A\u0024parseTimeInMs",
             "name": "parseTimeInMs",
@@ -4205,11 +4215,6 @@ Search.appendIndex(
             "name": "getFormattedProcessingTime",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-XmlGenerators-SitemapGenerator.html#method_getFormattedProcessingTime"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\XmlGenerators\\SitemapGenerator\u003A\u003A\u0024timeStart",
-            "name": "timeStart",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-XmlGenerators-SitemapGenerator.html#property_timeStart"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\XmlGenerators\\XmlGeneratorContract",
             "name": "XmlGeneratorContract",
