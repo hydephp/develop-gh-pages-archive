@@ -6076,11 +6076,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Support-Models-Render.html#method_toArray"
         },                {
-            "fqsen": "\\Hyde\\Support\\Models\\Render\u003A\u003AhandleFallback\u0028\u0029",
-            "name": "handleFallback",
-            "summary": "",
-            "url": "classes/Hyde-Support-Models-Render.html#method_handleFallback"
-        },                {
             "fqsen": "\\Hyde\\Support\\Models\\Render\u003A\u003A\u0024page",
             "name": "page",
             "summary": "",
