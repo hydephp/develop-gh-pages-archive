@@ -3991,21 +3991,6 @@ Search.appendIndex(
             "summary": "Optionally\u0020provide\u0020a\u0020route\u0020basename\u0020to\u0020be\u0020used\u0020in\u0020generating\u0020the\u0020pagination\u0020links.",
             "url": "classes/Hyde-Framework-Features-Paginator.html#property_routeBasename"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Session\\SessionServiceProvider",
-            "name": "SessionServiceProvider",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Session-SessionServiceProvider.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Session\\SessionServiceProvider\u003A\u003Aregister\u0028\u0029",
-            "name": "register",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Session-SessionServiceProvider.html#method_register"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Session\\SessionServiceProvider\u003A\u003Aboot\u0028\u0029",
-            "name": "boot",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Session-SessionServiceProvider.html#method_boot"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableContract",
             "name": "PublishableContract",
             "summary": "",
@@ -6455,11 +6440,6 @@ Search.appendIndex(
             "name": "Features",
             "summary": "",
             "url": "namespaces/hyde-framework-features.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Session",
-            "name": "Session",
-            "summary": "",
-            "url": "namespaces/hyde-framework-features-session.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Templates",
             "name": "Templates",
