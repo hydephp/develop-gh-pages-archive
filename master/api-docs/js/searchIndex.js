@@ -581,6 +581,21 @@ Search.appendIndex(
             "summary": "Write\u0020a\u0020nicely\u0020formatted\u0020and\u0020consistent\u0020message\u0020to\u0020the\u0020console.\u0020Using\u0020InfoComment\u0020for\u0020a\u0020lack\u0020of\u0020a\u0020better\u0020term.",
             "url": "classes/Hyde-Console-Concerns-Command.html#method_infoComment"
         },                {
+            "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003Agray\u0028\u0029",
+            "name": "gray",
+            "summary": "",
+            "url": "classes/Hyde-Console-Concerns-Command.html#method_gray"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AinlineGray\u0028\u0029",
+            "name": "inlineGray",
+            "summary": "",
+            "url": "classes/Hyde-Console-Concerns-Command.html#method_inlineGray"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AindentedLine\u0028\u0029",
+            "name": "indentedLine",
+            "summary": "",
+            "url": "classes/Hyde-Console-Concerns-Command.html#method_indentedLine"
+        },                {
             "fqsen": "\\Hyde\\Console\\HydeConsoleServiceProvider",
             "name": "HydeConsoleServiceProvider",
             "summary": "Register\u0020the\u0020HydeCLI\u0020console\u0020commands.",
