@@ -1336,6 +1336,11 @@ Search.appendIndex(
             "summary": "Compile\u0020any\u0020Blade\u0020file\u0020using\u0020the\u0020Blade\u0020facade\u0020as\u0020it\u0020allows\u0020us\u0020to\u0020render\nit\u0020without\u0020having\u0020to\u0020register\u0020the\u0020directory\u0020with\u0020the\u0020view\u0020finder.",
             "url": "classes/Hyde-Framework-Actions-AnonymousViewCompiler.html"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\AnonymousViewCompiler\u003A\u003Acall\u0028\u0029",
+            "name": "call",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-AnonymousViewCompiler.html#method_call"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\AnonymousViewCompiler\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
@@ -2010,21 +2015,6 @@ Search.appendIndex(
             "name": "cleanDirectory",
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-Internal-ForwardsIlluminateFilesystem.html#method_cleanDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\InvokableAction",
-            "name": "InvokableAction",
-            "summary": "Base\u0020class\u0020for\u0020invokable\u0020actions.\u0020Provides\u0020a\u0020helper\u0020to\u0020invoke\u0020the\u0020action\u0020statically.",
-            "url": "classes/Hyde-Framework-Concerns-InvokableAction.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\InvokableAction\u003A\u003A__invoke\u0028\u0029",
-            "name": "__invoke",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-InvokableAction.html#method___invoke"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Concerns\\InvokableAction\u003A\u003Acall\u0028\u0029",
-            "name": "call",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Concerns-InvokableAction.html#method_call"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations",
             "name": "RegistersFileLocations",
