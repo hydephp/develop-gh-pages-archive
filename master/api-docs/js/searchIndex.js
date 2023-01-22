@@ -5886,6 +5886,11 @@ Search.appendIndex(
             "summary": "File\u0020abstraction\u0020for\u0020a\u0020project\u0020source\u0020file.",
             "url": "classes/Hyde-Support-Filesystem-SourceFile.html"
         },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\SourceFile\u003A\u003Amake\u0028\u0029",
+            "name": "make",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-SourceFile.html#method_make"
+        },                {
             "fqsen": "\\Hyde\\Support\\Filesystem\\SourceFile\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
