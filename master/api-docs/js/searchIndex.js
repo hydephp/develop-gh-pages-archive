@@ -576,6 +576,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Concerns-AsksToRebuildSite.html#method_askToRebuildSite"
         },                {
+            "fqsen": "\\Hyde\\Console\\Concerns\\Command",
+            "name": "Command",
+            "summary": "",
+            "url": "classes/Hyde-Console-Concerns-Command.html"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AcreateClickableFilepath\u0028\u0029",
+            "name": "createClickableFilepath",
+            "summary": "Create\u0020a\u0020filepath\u0020that\u0020can\u0020be\u0020opened\u0020in\u0020the\u0020browser\u0020from\u0020a\u0020terminal.",
+            "url": "classes/Hyde-Console-Concerns-Command.html#method_createClickableFilepath"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AinfoComment\u0028\u0029",
+            "name": "infoComment",
+            "summary": "Write\u0020a\u0020nicely\u0020formatted\u0020and\u0020consistent\u0020message\u0020to\u0020the\u0020console.\u0020Using\u0020InfoComment\u0020for\u0020a\u0020lack\u0020of\u0020a\u0020better\u0020term.",
+            "url": "classes/Hyde-Console-Concerns-Command.html#method_infoComment"
+        },                {
             "fqsen": "\\Hyde\\Console\\HydeConsoleServiceProvider",
             "name": "HydeConsoleServiceProvider",
             "summary": "Register\u0020the\u0020HydeCLI\u0020console\u0020commands.",
@@ -4475,11 +4490,6 @@ Search.appendIndex(
             "name": "getModelSourceDirectory",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getModelSourceDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AcreateClickableFilepath\u0028\u0029",
-            "name": "createClickableFilepath",
-            "summary": "Create\u0020a\u0020filepath\u0020that\u0020can\u0020be\u0020opened\u0020in\u0020the\u0020browser\u0020from\u0020a\u0020terminal.",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_createClickableFilepath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003ApathToIdentifier\u0028\u0029",
             "name": "pathToIdentifier",
