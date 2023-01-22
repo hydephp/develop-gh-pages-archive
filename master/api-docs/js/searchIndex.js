@@ -526,15 +526,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-ValidateCommand.html#method_handle"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\ValidateCommand\u003A\u003Acheck\u0028\u0029",
-            "name": "check",
+            "fqsen": "\\Hyde\\Console\\Commands\\ValidateCommand\u003A\u003ArunCheck\u0028\u0029",
+            "name": "runCheck",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-ValidateCommand.html#method_check"
+            "url": "classes/Hyde-Console-Commands-ValidateCommand.html#method_runCheck"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\ValidateCommand\u003A\u003Atime\u0028\u0029",
-            "name": "time",
+            "fqsen": "\\Hyde\\Console\\Commands\\ValidateCommand\u003A\u003AgetCheckTime\u0028\u0029",
+            "name": "getCheckTime",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-ValidateCommand.html#method_time"
+            "url": "classes/Hyde-Console-Commands-ValidateCommand.html#method_getCheckTime"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ValidateCommand\u003A\u003AtimeTotal\u0028\u0029",
             "name": "timeTotal",
