@@ -2746,6 +2746,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020source\u0020of\u0020the\u0020image,\u0020must\u0020be\u0020usable\u0020within\u0020the\u0020src\u0020attribute\u0020of\u0020an\u0020image\u0020tag,\nand\u0020is\u0020thus\u0020not\u0020necessarily\u0020the\u0020path\u0020to\u0020the\u0020source\u0020image\u0020on\u0020disk.",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_getSource"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003AsetSource\u0028\u0029",
+            "name": "setSource",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_setSource"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003AgetContentLength\u0028\u0029",
             "name": "getContentLength",
             "summary": "",
@@ -2826,6 +2831,11 @@ Search.appendIndex(
             "summary": "Used\u0020in\u0020resources\/views\/components\/post\/image.blade.php\u0020to\u0020add\u0020meta\u0020tags\u0020with\u0020itemprop\u0020attributes.",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_getMetadataArray"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003A\u0024source",
+            "name": "source",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#property_source"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003A\u0024altText",
             "name": "altText",
             "summary": "",
@@ -2890,11 +2900,6 @@ Search.appendIndex(
             "name": "storageValidatedPath",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html#method_storageValidatedPath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\LocalFeaturedImage\u003A\u003A\u0024source",
-            "name": "source",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html#property_source"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\PostAuthor",
             "name": "PostAuthor",
@@ -2975,11 +2980,6 @@ Search.appendIndex(
             "name": "getContentLength",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-RemoteFeaturedImage.html#method_getContentLength"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\RemoteFeaturedImage\u003A\u003A\u0024source",
-            "name": "source",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-RemoteFeaturedImage.html#property_source"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask",
             "name": "BuildTask",
