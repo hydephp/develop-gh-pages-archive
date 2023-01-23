@@ -84,6 +84,129 @@
         
                     <?php/** @var \Hyde\Framework\Features\Navigation\DocumentationSidebar $sidebar */?>
 <ul id="sidebar-navigation" role="list">
+		<li class="sidebar-group mb-4 mt-4 first:mt-0" role="listitem">
+		<h4 class="sidebar-group-heading text-base font-semibold mb-2 -ml-1">Advanced Features</h4>
+		<ul class="sidebar-group-list ml-4" role="list">
+							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/introduction.html">Introduction</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/autodiscovery.html">Autodiscovery</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/automatic-routing.html">Automatic Routing</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/dynamic-data-discovery.html">Dynamic Data Discovery</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/page-models.html">Page models</a>
+	</li>					</ul>
+	</li>
+		<li class="sidebar-group mb-4 mt-4 first:mt-0" role="listitem">
+		<h4 class="sidebar-group-heading text-base font-semibold mb-2 -ml-1">Creating Content</h4>
+		<ul class="sidebar-group-list ml-4" role="list">
+							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/blog-posts.html">Creating Blog Posts</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/compile-and-deploy.html">Compile and Deploy your site</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/documentation-pages.html">Creating Documentation Pages</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/managing-assets.html">Managing and Compiling Assets</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/static-pages.html">Creating Static Pages</a>
+	</li>					</ul>
+	</li>
+		<li class="sidebar-group mb-4 mt-4 first:mt-0" role="listitem">
+		<h4 class="sidebar-group-heading text-base font-semibold mb-2 -ml-1">Digging Deeper</h4>
+		<ul class="sidebar-group-list ml-4" role="list">
+							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/advanced-customization.html">Advanced Customization</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/advanced-markdown.html">Advanced Markdown</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/collections.html" aria-current="true">File-based Collections</a>
+				<span class="sr-only">Table of contents</span>
+		<ul class="table-of-contents">
+<li>
+<a href="#introduction-to-hyde-data-collections">Introduction to Hyde Data Collections</a>
+<ul>
+<li>
+<a href="#enabling-the-feature">Enabling the feature</a>
+</li>
+<li>
+<a href="#high-level-concept-overview">High-Level Concept Overview</a>
+</li>
+<li>
+<a href="#markdown-collections---hands-on-guide">Markdown Collections - Hands on Guide</a>
+<ul>
+<li>
+<a href="#setting-up-the-file-structure">Setting up the file structure</a>
+</li>
+<li>
+<a href="#using-the-facade-to-access-the-collections">Using the Facade to Access the Collections</a>
+</li>
+<li>
+<a href="#implementing-it-in-a-blade-view">Implementing it in a Blade view</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+			</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/customization.html">Customizing your Site</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/extensions.html">Extensions and Integrations</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/troubleshooting.html">Troubleshooting</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/updating-hyde.html">Updating Hyde</a>
+	</li>					</ul>
+	</li>
+		<li class="sidebar-group mb-4 mt-4 first:mt-0" role="listitem">
+		<h4 class="sidebar-group-heading text-base font-semibold mb-2 -ml-1">Getting Started</h4>
+		<ul class="sidebar-group-list ml-4" role="list">
+							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/architecture-concepts.html">Key HydePHP Concepts</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/console-commands.html">Console Commands</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/quickstart.html">Quickstart Guide</a>
+	</li>					</ul>
+	</li>
+		<li class="sidebar-group mb-4 mt-4 first:mt-0" role="listitem">
+		<h4 class="sidebar-group-heading text-base font-semibold mb-2 -ml-1">Redirects</h4>
+		<ul class="sidebar-group-list ml-4" role="list">
+							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/directory-structure.html">Directory Structure</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/getting-started.html">Getting Started</a>
+	</li>							<li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../docs/installation.html">Installation</a>
+	</li>					</ul>
+	</li>
 	</ul>            </nav>
     <footer id="sidebar-footer" class="h-16 absolute p-4 w-full bottom-0 left-0 text-center leading-8">
         <p>
