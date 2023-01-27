@@ -3218,7 +3218,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollection\u003A\u003Amarkdown\u0028\u0029",
             "name": "markdown",
-            "summary": "Get\u0020a\u0020collection\u0020of\u0020Markdown\u0020documents\u0020in\u0020the\u0020_data\/\u003C\u0024key\u003E\u0020directory.",
+            "summary": "Get\u0020a\u0020collection\u0020of\u0020Markdown\u0020documents\u0020in\u0020the\u0020resources\/collections\/\u003C\u0024key\u003E\u0020directory.",
             "url": "classes/Hyde-Framework-Features-DataCollections-DataCollection.html#method_markdown"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollection\u003A\u003A\u0024key",

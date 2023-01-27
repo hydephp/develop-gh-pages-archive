@@ -237,13 +237,13 @@
 <h3>High-Level Concept Overview<a id="high-level-concept-overview" href="#high-level-concept-overview" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>To make collections easy to use and understand, Hyde makes a few assumptions about the structure of your collections. Follow these conventions and creating dynamic static sites will be a breeze.</p>
 <ol>
-<li>Collections are stored in the new <code>_data</code> directory.</li>
+<li>Collections are stored in the new <code>resources/collections</code> directory.</li>
 <li>Each subdirectory in here can be a collection.</li>
 <li>Data collections are automatically generated when you use the Facade you will learn about below.</li>
 <li>When using one of the facades, you need to specify the collection name, this name is the name of the subdirectory.</li>
 <li>Each subdirectory should probably only have the same filetype to prevent developer confusion, but this is not enforced.</li>
 <li>Unlike Markdown pages, files starting with underscores are not ignored.</li>
-<li>You can customize the base <code>_data</code> directory through a service provider.</li>
+<li>You can customize the base <code>resources/collections</code> directory through a service provider.</li>
 </ol>
 <h3>Markdown Collections - Hands on Guide<a id="markdown-collections---hands-on-guide" href="#markdown-collections---hands-on-guide" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <h4>Setting up the file structure<a id="setting-up-the-file-structure" href="#setting-up-the-file-structure" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
@@ -251,14 +251,14 @@
 <p>We start by setting up our directory structure. We will create a <code>testimonials</code> subdirectory, which will be the collection name.</p>
 <p>In it we will place Markdown files. Each file will be a testimonial. The Markdown will be parsed into a MarkdownDocument object which parses any optional YAML front matter.</p>
 <p>Here is the sample Markdown we will use:</p>
-<pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_data/testimonials/1.md</small>---
+<pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>resources/collections/testimonials/1.md</small>---
 author: John Doe
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit...
 </code></pre>
 <p>Let's take a look at our directory structure. I just copied the same file a few times. You can name the files anything you want, I kept it simple and just numbered them.</p>
-<pre><code class="language-tree">_data
+<pre><code class="language-tree">resources/collections
 └── testimonials
     ├── 1.md
     ├── 2.md
