@@ -3226,11 +3226,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-DataCollections-DataCollection.html#property_key"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollection\u003A\u003A\u0024parseTimeInMs",
-            "name": "parseTimeInMs",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-DataCollections-DataCollection.html#property_parseTimeInMs"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollection\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",
             "summary": "",
