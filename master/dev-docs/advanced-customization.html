@@ -149,6 +149,14 @@
 <a href="#customizing-source-directories-">Customizing source directories 🧪</a>
 </li>
 <li>
+<a href="#custom-source-root-directory-">Custom source root directory 🧪</a>
+<ul>
+<li>
+<a href="#automatic-change-">Automatic change 🧪</a>
+</li>
+</ul>
+</li>
+<li>
 <a href="#customizing-the-output-directory-">Customizing the output directory ⚠</a>
 <ul>
 <li>
@@ -265,6 +273,13 @@ public function register(): void
     ]);
 }
 </code></pre>
+<h2>Custom source root directory 🧪<a id="custom-source-root-directory-" href="#custom-source-root-directory-" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>HydePHP will by default look for the underscored source directories in the root of your project.
+If you're not happy with this, it's easy to change! For example, you might want everything in a 'src'
+subdirectory. That's easy enough, just set the value of the <code>source_root</code> setting in config/hyde.php to <code>'src'</code>!</p>
+<h3>Automatic change 🧪<a id="automatic-change-" href="#automatic-change-" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>You can even make this change automatically with the <code>php hyde change:sourceDirectory</code> command!</p>
+<p>When run, Hyde will update the source directory setting in the config file, then create the directory if it doesn't exist, then move all source directories into it.</p>
 <h2>Customizing the output directory ⚠<a id="customizing-the-output-directory-" href="#customizing-the-output-directory-" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <blockquote class="danger">Hyde deletes all files in the output directory before compiling the site. Don't set this path to a directory that contains important files!</blockquote>
 <p>If you want to store your compiled website in a different directory than

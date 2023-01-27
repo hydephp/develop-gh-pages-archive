@@ -121,6 +121,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-BuildSitemapCommand.html#property_description"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand",
+            "name": "ChangeSourceDirectoryCommand",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#method_handle"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003AisNonEmptyDirectory\u0028\u0029",
+            "name": "isNonEmptyDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#method_isNonEmptyDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003A\u0024signature",
+            "name": "signature",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#property_signature"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003A\u0024description",
+            "name": "description",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#property_description"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003A\u0024hidden",
+            "name": "hidden",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#property_hidden"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\DebugCommand",
             "name": "DebugCommand",
             "summary": "Hyde\u0020Command\u0020to\u0020print\u0020debug\u0020information.",
