@@ -701,11 +701,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Facades-Features.html#method_hasDocumentationPages"
         },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AhasDataCollections\u0028\u0029",
-            "name": "hasDataCollections",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_hasDataCollections"
-        },                {
             "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AhasDocumentationSearch\u0028\u0029",
             "name": "hasDocumentationSearch",
             "summary": "",
@@ -750,11 +745,6 @@ Search.appendIndex(
             "name": "documentationSearch",
             "summary": "",
             "url": "classes/Hyde-Facades-Features.html#method_documentationSearch"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AdataCollections\u0028\u0029",
-            "name": "dataCollections",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_dataCollections"
         },                {
             "fqsen": "\\Hyde\\Facades\\Features\u003A\u003Adarkmode\u0028\u0029",
             "name": "darkmode",
@@ -3230,21 +3220,6 @@ Search.appendIndex(
             "name": "sourceDirectory",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-DataCollections-DataCollection.html#property_sourceDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollectionServiceProvider",
-            "name": "DataCollectionServiceProvider",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-DataCollections-DataCollectionServiceProvider.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollectionServiceProvider\u003A\u003Aregister\u0028\u0029",
-            "name": "register",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-DataCollections-DataCollectionServiceProvider.html#method_register"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollectionServiceProvider\u003A\u003Aboot\u0028\u0029",
-            "name": "boot",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-DataCollections-DataCollectionServiceProvider.html#method_boot"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\Facades\\MarkdownCollection",
             "name": "MarkdownCollection",

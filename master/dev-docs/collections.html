@@ -141,9 +141,6 @@
 <a href="#introduction-to-hyde-data-collections">Introduction to Hyde Data Collections</a>
 <ul>
 <li>
-<a href="#enabling-the-feature">Enabling the feature</a>
-</li>
-<li>
 <a href="#high-level-concept-overview">High-Level Concept Overview</a>
 </li>
 <li>
@@ -222,34 +219,26 @@
     </header>
     <section id="document-main-content" itemprop="articleBody">
         <blockquote class="info">This article covers advanced usage intended for those who are writing their own Blade views, and is not required as Hyde comes pre-packaged with many templates for you to use.</blockquote>
-<blockquote class="warning">This feature was added in v0.43.0-beta.</blockquote>
 <h2>Introduction to Hyde Data Collections<a id="introduction-to-hyde-data-collections" href="#introduction-to-hyde-data-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Hyde provides <code>DataCollections</code>, a subset of <a href="https://laravel.com/docs/9.x/collections">Laravel Collections</a> giving you a similar developer experience to working with Eloquent Collections, but here, it's all entirely file-based.</p>
 <p>You get the have access to all Laravel Collection methods so you are encouraged to read the <a href="https://laravel.com/docs/9.x/collections">Laravel Collections documentation</a> for more information.</p>
 <p>Currently only a Markdown collection type is added, but more types like YAML are planned.</p>
-<h3>Enabling the feature<a id="enabling-the-feature" href="#enabling-the-feature" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>You may need to enable the module by adding the feature to your Hyde configuration file's <code>features</code> array:</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>   'features' =&gt; [
-        Features::dataCollections(),
-    ],
-
-</code></pre>
 <h3>High-Level Concept Overview<a id="high-level-concept-overview" href="#high-level-concept-overview" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>To make collections easy to use and understand, Hyde makes a few assumptions about the structure of your collections. Follow these conventions and creating dynamic static sites will be a breeze.</p>
 <ol>
 <li>Collections are stored in the new <code>resources/collections</code> directory.</li>
 <li>Each subdirectory in here can be a collection.</li>
-<li>Data collections are automatically generated when you use the Facade you will learn about below.</li>
+<li>Data collections are automatically generated from the source files when you use the Facade you will learn about below.</li>
 <li>When using one of the facades, you need to specify the collection name, this name is the name of the subdirectory.</li>
 <li>Each subdirectory should probably only have the same filetype to prevent developer confusion, but this is not enforced.</li>
 <li>Unlike Markdown pages, files starting with underscores are not ignored.</li>
-<li>You can customize the base <code>resources/collections</code> directory through a service provider.</li>
+<li>You can customize the source directory for collections through a service provider.</li>
 </ol>
 <h3>Markdown Collections - Hands on Guide<a id="markdown-collections---hands-on-guide" href="#markdown-collections---hands-on-guide" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <h4>Setting up the file structure<a id="setting-up-the-file-structure" href="#setting-up-the-file-structure" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>I think the best way to explain DataCollections is through examples. Let's create a Blade page with customer testimonials.</p>
 <p>We start by setting up our directory structure. We will create a <code>testimonials</code> subdirectory, which will be the collection name.</p>
-<p>In it we will place Markdown files. Each file will be a testimonial. The Markdown will be parsed into a MarkdownDocument object which parses any optional YAML front matter.</p>
+<p>In it we will place Markdown files. Each file will be a testimonial. The Markdown will be parsed into a <code>MarkdownDocument</code> object which parses any optional YAML front matter.</p>
 <p>Here is the sample Markdown we will use:</p>
 <pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>resources/collections/testimonials/1.md</small>---
 author: John Doe
@@ -267,7 +256,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit...
     └── 5.md
 </code></pre>
 <h4>Using the Facade to Access the Collections<a id="using-the-facade-to-access-the-collections" href="#using-the-facade-to-access-the-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Now for the fun part! We will use the <code>MarkdownCollection</code> facade to access all our files into a convenient object. The class is already aliased to the facade, so you don't need to use any namespaces.</p>
+<p>Now for the fun part! We will use the <code>MarkdownCollection</code> facade to access all our files into a convenient object. The class is registered with an alias, so you don't need to include any namespaces when in a Blade file.</p>
 <p>The general syntax to use the facade is as follows:</p>
 <pre><code class="language-blade">MarkdownCollection::get('subdirectory_name')
 </code></pre>
