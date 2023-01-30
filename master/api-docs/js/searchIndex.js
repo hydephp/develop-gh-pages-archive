@@ -151,6 +151,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#method_validateDirectoryCanBeUsed"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003AvalidateSubdirectoryCanBeUsed\u0028\u0029",
+            "name": "validateSubdirectoryCanBeUsed",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#method_validateSubdirectoryCanBeUsed"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003AassembleSubdirectoryPath\u0028\u0029",
             "name": "assembleSubdirectoryPath",
             "summary": "",
