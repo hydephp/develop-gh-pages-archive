@@ -48,7 +48,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\BuildSiteCommand\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
-            "summary": "",
+            "summary": "The\u0020base\u0020handle\u0020method\u0020that\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes.",
             "url": "classes/Hyde-Console-Commands-BuildSiteCommand.html#method_handle"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\BuildSiteCommand\u003A\u003ArunPreBuildActions\u0028\u0029",
@@ -128,7 +128,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
-            "summary": "",
+            "summary": "The\u0020base\u0020handle\u0020method\u0020that\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes.",
             "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#method_handle"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003AgetPageDirectories\u0028\u0029",
@@ -443,7 +443,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticSiteCommand\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
-            "summary": "",
+            "summary": "The\u0020base\u0020handle\u0020method\u0020that\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes.",
             "url": "classes/Hyde-Console-Commands-RebuildStaticSiteCommand.html#method_handle"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticSiteCommand\u003A\u003AsanitizePathString\u0028\u0029",
@@ -456,10 +456,10 @@ Search.appendIndex(
             "summary": "Validate\u0020the\u0020path\u0020to\u0020catch\u0020common\u0020errors.",
             "url": "classes/Hyde-Console-Commands-RebuildStaticSiteCommand.html#method_validate"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticSiteCommand\u003A\u003AhandleException\u0028\u0029",
-            "name": "handleException",
+            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticSiteCommand\u003A\u003AwithException\u0028\u0029",
+            "name": "withException",
             "summary": "Output\u0020the\u0020contents\u0020of\u0020an\u0020exception.",
-            "url": "classes/Hyde-Console-Commands-RebuildStaticSiteCommand.html#method_handleException"
+            "url": "classes/Hyde-Console-Commands-RebuildStaticSiteCommand.html#method_withException"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticSiteCommand\u003A\u003A\u0024signature",
             "name": "signature",
@@ -483,7 +483,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
-            "summary": "",
+            "summary": "The\u0020base\u0020handle\u0020method\u0020that\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes.",
             "url": "classes/Hyde-Console-Commands-RouteListCommand.html#method_handle"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003AgetRoutes\u0028\u0029",
@@ -636,6 +636,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Concerns-Command.html"
         },                {
+            "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "The\u0020base\u0020handle\u0020method\u0020that\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes.",
+            "url": "classes/Hyde-Console-Concerns-Command.html#method_handle"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AsafeHandle\u0028\u0029",
+            "name": "safeHandle",
+            "summary": "This\u0020method\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes\u0020to\u0020provide\u0020automatic\u0020exception\u0020handling.",
+            "url": "classes/Hyde-Console-Concerns-Command.html#method_safeHandle"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AhandleException\u0028\u0029",
+            "name": "handleException",
+            "summary": "Handle\u0020an\u0020exception\u0020that\u0020occurred\u0020during\u0020command\u0020execution.",
+            "url": "classes/Hyde-Console-Concerns-Command.html#method_handleException"
+        },                {
             "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AcreateClickableFilepath\u0028\u0029",
             "name": "createClickableFilepath",
             "summary": "Create\u0020a\u0020filepath\u0020that\u0020can\u0020be\u0020opened\u0020in\u0020the\u0020browser\u0020from\u0020a\u0020terminal.",
@@ -660,6 +675,11 @@ Search.appendIndex(
             "name": "indentedLine",
             "summary": "",
             "url": "classes/Hyde-Console-Concerns-Command.html#method_indentedLine"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AUSER_EXIT",
+            "name": "USER_EXIT",
+            "summary": "",
+            "url": "classes/Hyde-Console-Concerns-Command.html#constant_USER_EXIT"
         },                {
             "fqsen": "\\Hyde\\Console\\HydeConsoleServiceProvider",
             "name": "HydeConsoleServiceProvider",
