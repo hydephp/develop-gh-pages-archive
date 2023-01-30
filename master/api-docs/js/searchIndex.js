@@ -131,10 +131,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#method_handle"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003AisNonEmptyDirectory\u0028\u0029",
-            "name": "isNonEmptyDirectory",
+            "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003AgetPageDirectories\u0028\u0029",
+            "name": "getPageDirectories",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#method_isNonEmptyDirectory"
+            "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#method_getPageDirectories"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003AgetValidatedName\u0028\u0029",
+            "name": "getValidatedName",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#method_getValidatedName"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003AvalidateName\u0028\u0029",
+            "name": "validateName",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#method_validateName"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003AvalidateDirectoryCanBeUsed\u0028\u0029",
+            "name": "validateDirectoryCanBeUsed",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#method_validateDirectoryCanBeUsed"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003AassembleSubdirectoryPath\u0028\u0029",
+            "name": "assembleSubdirectoryPath",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#method_assembleSubdirectoryPath"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003AdirectoryContainsFiles\u0028\u0029",
+            "name": "directoryContainsFiles",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#method_directoryContainsFiles"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003AupdateConfigurationFile\u0028\u0029",
+            "name": "updateConfigurationFile",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html#method_updateConfigurationFile"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003A\u0024signature",
             "name": "signature",
