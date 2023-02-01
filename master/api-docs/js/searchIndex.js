@@ -3206,20 +3206,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateSearch.html#method_then"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateSearch\u003A\u003AguesstimateGenerationTime\u0028\u0029",
-            "name": "guesstimateGenerationTime",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateSearch.html#method_guesstimateGenerationTime"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateSearch\u003A\u003A\u0024description",
             "name": "description",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateSearch.html#property_description"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateSearch\u003A\u003A\u0024guesstimationFactor",
-            "name": "guesstimationFactor",
-            "summary": "Estimated\u0020processing\u0020time\u0020per\u0020file\u0020in\u0020ms.",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateSearch.html#property_guesstimationFactor"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateSitemap",
             "name": "GenerateSitemap",
