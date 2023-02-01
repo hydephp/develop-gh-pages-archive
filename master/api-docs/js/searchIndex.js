@@ -4926,6 +4926,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Hyde.html#method_getFacadeRoot"
         },                {
+            "fqsen": "\\Hyde\\Hyde\u003A\u003Akernel\u0028\u0029",
+            "name": "kernel",
+            "summary": "",
+            "url": "classes/Hyde-Hyde.html#method_kernel"
+        },                {
             "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\BlogPostSchema",
             "name": "BlogPostSchema",
             "summary": "",
