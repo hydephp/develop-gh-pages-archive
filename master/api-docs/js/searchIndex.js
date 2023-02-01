@@ -983,7 +983,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Facades\\Site",
             "name": "Site",
-            "summary": "Object\u0020representation\u0020for\u0020the\u0020HydePHP\u0020site.",
+            "summary": "Object\u0020representation\u0020for\u0020the\u0020HydePHP\u0020site\u0020and\u0020its\u0020configuration.",
             "url": "classes/Hyde-Facades-Site.html"
         },                {
             "fqsen": "\\Hyde\\Facades\\Site\u003A\u003Aurl\u0028\u0029",
@@ -1005,6 +1005,16 @@ Search.appendIndex(
             "name": "metadata",
             "summary": "",
             "url": "classes/Hyde-Facades-Site.html#method_metadata"
+        },                {
+            "fqsen": "\\Hyde\\Facades\\Site\u003A\u003AgetOutputPath\u0028\u0029",
+            "name": "getOutputPath",
+            "summary": "",
+            "url": "classes/Hyde-Facades-Site.html#method_getOutputPath"
+        },                {
+            "fqsen": "\\Hyde\\Facades\\Site\u003A\u003AsetOutputPath\u0028\u0029",
+            "name": "setOutputPath",
+            "summary": "",
+            "url": "classes/Hyde-Facades-Site.html#method_setOutputPath"
         },                {
             "fqsen": "\\Hyde\\Facades\\Site\u003A\u003A\u0024outputPath",
             "name": "outputPath",
