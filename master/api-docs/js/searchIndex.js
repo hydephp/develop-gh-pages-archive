@@ -1006,20 +1006,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Facades-Site.html#method_metadata"
         },                {
-            "fqsen": "\\Hyde\\Facades\\Site\u003A\u003AgetOutputPath\u0028\u0029",
-            "name": "getOutputPath",
+            "fqsen": "\\Hyde\\Facades\\Site\u003A\u003AgetOutputDirectory\u0028\u0029",
+            "name": "getOutputDirectory",
             "summary": "",
-            "url": "classes/Hyde-Facades-Site.html#method_getOutputPath"
+            "url": "classes/Hyde-Facades-Site.html#method_getOutputDirectory"
         },                {
-            "fqsen": "\\Hyde\\Facades\\Site\u003A\u003AsetOutputPath\u0028\u0029",
-            "name": "setOutputPath",
+            "fqsen": "\\Hyde\\Facades\\Site\u003A\u003AsetOutputDirectory\u0028\u0029",
+            "name": "setOutputDirectory",
             "summary": "",
-            "url": "classes/Hyde-Facades-Site.html#method_setOutputPath"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Site\u003A\u003A\u0024outputPath",
-            "name": "outputPath",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Site.html#property_outputPath"
+            "url": "classes/Hyde-Facades-Site.html#method_setOutputDirectory"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Application",
             "name": "Application",
@@ -1310,6 +1305,11 @@ Search.appendIndex(
             "name": "sourceRoot",
             "summary": "",
             "url": "classes/Hyde-Foundation-HydeKernel.html#property_sourceRoot"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\HydeKernel\u003A\u003A\u0024outputDirectory",
+            "name": "outputDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-HydeKernel.html#property_outputDirectory"
         },                {
             "fqsen": "\\Hyde\\Foundation\\HydeKernel\u003A\u003A\u0024filesystem",
             "name": "filesystem",
