@@ -1006,6 +1006,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Facades-Site.html#method_metadata"
         },                {
+            "fqsen": "\\Hyde\\Facades\\Site\u003A\u003Apath\u0028\u0029",
+            "name": "path",
+            "summary": "",
+            "url": "classes/Hyde-Facades-Site.html#method_path"
+        },                {
             "fqsen": "\\Hyde\\Facades\\Site\u003A\u003AgetOutputDirectory\u0028\u0029",
             "name": "getOutputDirectory",
             "summary": "",
