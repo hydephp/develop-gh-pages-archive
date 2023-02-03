@@ -621,6 +621,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-ValidateCommand.html#property_service"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\VendorPublishCommand",
+            "name": "VendorPublishCommand",
+            "summary": "Publish\u0020any\u0020publishable\u0020assets\u0020from\u0020vendor\u0020packages.",
+            "url": "classes/Hyde-Console-Commands-VendorPublishCommand.html"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\VendorPublishCommand\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "Our\u0020child\u0020method\u0020filters\u0020the\u0020options\u0020available\u0020to\u0020the\u0020parent\u0020method.",
+            "url": "classes/Hyde-Console-Commands-VendorPublishCommand.html#method_handle"
+        },                {
             "fqsen": "\\Hyde\\Console\\Concerns\\AsksToRebuildSite",
             "name": "AsksToRebuildSite",
             "summary": "",
