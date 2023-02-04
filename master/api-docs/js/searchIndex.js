@@ -343,7 +343,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
-            "summary": "",
+            "summary": "The\u0020base\u0020handle\u0020method\u0020that\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes.",
             "url": "classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_handle"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand\u003A\u003AparseSelection\u0028\u0029",
@@ -390,6 +390,11 @@ Search.appendIndex(
             "name": "description",
             "summary": "",
             "url": "classes/Hyde-Console-Commands-PublishHomepageCommand.html#property_description"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand\u003A\u003A\u0024options",
+            "name": "options",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-PublishHomepageCommand.html#property_options"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PublishViewsCommand",
             "name": "PublishViewsCommand",
@@ -4036,91 +4041,6 @@ Search.appendIndex(
             "summary": "Optionally\u0020provide\u0020a\u0020route\u0020basename\u0020to\u0020be\u0020used\u0020in\u0020generating\u0020the\u0020pagination\u0020links.",
             "url": "classes/Hyde-Framework-Features-Paginator.html#property_routeBasename"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableContract",
-            "name": "PublishableContract",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableContract.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableContract\u003A\u003Apublish\u0028\u0029",
-            "name": "publish",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_publish"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableContract\u003A\u003AgetTitle\u0028\u0029",
-            "name": "getTitle",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_getTitle"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableContract\u003A\u003AgetDescription\u0028\u0029",
-            "name": "getDescription",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_getDescription"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableContract\u003A\u003AgetOutputPath\u0028\u0029",
-            "name": "getOutputPath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_getOutputPath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableContract\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableContract.html#method_toArray"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView",
-            "name": "PublishableView",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003Apublish\u0028\u0029",
-            "name": "publish",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#method_publish"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003AgetTitle\u0028\u0029",
-            "name": "getTitle",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#method_getTitle"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003AgetDescription\u0028\u0029",
-            "name": "getDescription",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#method_getDescription"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003AgetOutputPath\u0028\u0029",
-            "name": "getOutputPath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#method_getOutputPath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003AgetSourcePath\u0028\u0029",
-            "name": "getSourcePath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#method_getSourcePath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#method_toArray"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003A\u0024title",
-            "name": "title",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#property_title"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003A\u0024desc",
-            "name": "desc",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#property_desc"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003A\u0024path",
-            "name": "path",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#property_path"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates\\PublishableView\u003A\u003A\u0024outputPath",
-            "name": "outputPath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Templates-PublishableView.html#property_outputPath"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\XmlGenerators\\BaseXmlGenerator",
             "name": "BaseXmlGenerator",
             "summary": "",
@@ -6495,11 +6415,6 @@ Search.appendIndex(
             "name": "Features",
             "summary": "",
             "url": "namespaces/hyde-framework-features.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Templates",
-            "name": "Templates",
-            "summary": "",
-            "url": "namespaces/hyde-framework-features-templates.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\XmlGenerators",
             "name": "XmlGenerators",
