@@ -431,11 +431,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-PublishViewsCommand.html#property_description"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\PublishViewsCommand\u003A\u003A\u0024selected",
-            "name": "selected",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-PublishViewsCommand.html#property_selected"
-        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PublishViewsCommand\u003A\u003A\u0024options",
             "name": "options",
             "summary": "",
