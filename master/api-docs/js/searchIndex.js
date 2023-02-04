@@ -581,6 +581,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-UpdateConfigsCommand.html#property_description"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\UpdateConfigsCommand\u003A\u003A\u0024hidden",
+            "name": "hidden",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-UpdateConfigsCommand.html#property_hidden"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ValidateCommand",
             "name": "ValidateCommand",
             "summary": "",
