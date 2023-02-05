@@ -2648,7 +2648,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003AsetSource\u0028\u0029",
             "name": "setSource",
-            "summary": "",
+            "summary": "Called\u0020from\u0020constructor\u0020to\u0020allow\u0020child\u0020classes\u0020to\u0020validate\u0020and\u0020transform\u0020the\u0020value\u0020as\u0020needed\u0020before\u0020assignment.",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_setSource"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003AgetContentLength\u0028\u0029",
@@ -2778,7 +2778,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\LocalFeaturedImage\u003A\u003AsetSource\u0028\u0029",
             "name": "setSource",
-            "summary": "",
+            "summary": "Called\u0020from\u0020constructor\u0020to\u0020allow\u0020child\u0020classes\u0020to\u0020validate\u0020and\u0020transform\u0020the\u0020value\u0020as\u0020needed\u0020before\u0020assignment.",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html#method_setSource"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\LocalFeaturedImage\u003A\u003AgetSource\u0028\u0029",
@@ -2796,10 +2796,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html#method_storagePath"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\LocalFeaturedImage\u003A\u003AstorageValidatedPath\u0028\u0029",
-            "name": "storageValidatedPath",
+            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\LocalFeaturedImage\u003A\u003AvalidatedStoragePath\u0028\u0029",
+            "name": "validatedStoragePath",
             "summary": "",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html#method_storageValidatedPath"
+            "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html#method_validatedStoragePath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\PostAuthor",
             "name": "PostAuthor",
@@ -2868,7 +2868,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\RemoteFeaturedImage\u003A\u003AsetSource\u0028\u0029",
             "name": "setSource",
-            "summary": "",
+            "summary": "Called\u0020from\u0020constructor\u0020to\u0020allow\u0020child\u0020classes\u0020to\u0020validate\u0020and\u0020transform\u0020the\u0020value\u0020as\u0020needed\u0020before\u0020assignment.",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-RemoteFeaturedImage.html#method_setSource"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\RemoteFeaturedImage\u003A\u003AgetSource\u0028\u0029",
