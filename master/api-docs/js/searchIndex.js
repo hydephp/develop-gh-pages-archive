@@ -1406,6 +1406,11 @@ Search.appendIndex(
             "summary": "Inject\u0020the\u0020proper\u0020number\u0020of\u0020\u0060..\/\u0060\u0020before\u0020the\u0020links\u0020in\u0020Blade\u0020templates.",
             "url": "classes/Hyde-Foundation-Hyperlinks.html#method_relativeLink"
         },                {
+            "fqsen": "\\Hyde\\Foundation\\Hyperlinks\u003A\u003AmediaLink\u0028\u0029",
+            "name": "mediaLink",
+            "summary": "Gets\u0020a\u0020relative\u0020web\u0020link\u0020to\u0020the\u0020given\u0020file\u0020stored\u0020in\u0020the\u0020_site\/media\u0020folder.",
+            "url": "classes/Hyde-Foundation-Hyperlinks.html#method_mediaLink"
+        },                {
             "fqsen": "\\Hyde\\Foundation\\Hyperlinks\u003A\u003Aimage\u0028\u0029",
             "name": "image",
             "summary": "Gets\u0020a\u0020relative\u0020web\u0020link\u0020to\u0020the\u0020given\u0020image\u0020stored\u0020in\u0020the\u0020_site\/media\u0020folder.",
