@@ -157,6 +157,9 @@
 </ul>
 </li>
 <li>
+<a href="#custom-media-directory-">Custom media directory 🧪</a>
+</li>
+<li>
 <a href="#customizing-the-output-directory-">Customizing the output directory ⚠</a>
 <ul>
 <li>
@@ -280,6 +283,15 @@ subdirectory. That's easy enough, just set the value of the <code>source_root</c
 <h3>Automatic change 🧪<a id="automatic-change-" href="#automatic-change-" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>You can even make this change automatically with the <code>php hyde change:sourceDirectory</code> command!</p>
 <p>When run, Hyde will update the source directory setting in the config file, then create the directory if it doesn't exist, then move all source directories into it.</p>
+<h2>Custom media directory 🧪<a id="custom-media-directory-" href="#custom-media-directory-" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>The media directory houses assets like images and stylesheets. The default directory is <code>_media</code>, and upon building the site,
+Hyde will copy all files in this directory to <code>_site/media</code> (or whatever your configured output and media directories are).</p>
+<p>You can change the path to this directory by setting the <code>media_directory</code> setting in <code>config/site.php</code>.
+Note that this change will affect both the source and output directories. For example, if you set the value to <code>assets</code>,
+all files from <code>assets</code> will be copied to <code>_site/assets</code>.</p>
+<p>If the setting starts with an underscore, that will be removed from the output directory, so files in <code>_assets</code> will be copied to <code>_site/assets</code>.</p>
+<blockquote class="info">Note that you will likely need to manually update `webpack.mix.js` so Laravel Mix can compile the assets correctly.</blockquote>
+<blockquote class="info">You will of course also need to copy over any existing files from the old directory to the new one.</blockquote>
 <h2>Customizing the output directory ⚠<a id="customizing-the-output-directory-" href="#customizing-the-output-directory-" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <blockquote class="danger">Hyde deletes all files in the output directory before compiling the site. Don't set this path to a directory that contains important files!</blockquote>
 <p>If you want to store your compiled website in a different directory than

@@ -1221,10 +1221,20 @@ Search.appendIndex(
             "summary": "Decode\u0020an\u0020absolute\u0020path\u0020created\u0020with\u0020a\u0020Hyde\u003A\u003Apath\u0028\u0029\u0020helper\u0020into\u0020its\u0020relative\u0020counterpart.",
             "url": "classes/Hyde-Foundation-Filesystem.html#method_pathToRelative"
         },                {
+            "fqsen": "\\Hyde\\Foundation\\Filesystem\u003A\u003AmediaPath\u0028\u0029",
+            "name": "mediaPath",
+            "summary": "Get\u0020the\u0020absolute\u0020path\u0020to\u0020the\u0020media\u0020source\u0020directory,\u0020or\u0020a\u0020file\u0020within\u0020it.",
+            "url": "classes/Hyde-Foundation-Filesystem.html#method_mediaPath"
+        },                {
             "fqsen": "\\Hyde\\Foundation\\Filesystem\u003A\u003AsitePath\u0028\u0029",
             "name": "sitePath",
             "summary": "Get\u0020the\u0020absolute\u0020path\u0020to\u0020the\u0020compiled\u0020site\u0020directory,\u0020or\u0020a\u0020file\u0020within\u0020it.",
             "url": "classes/Hyde-Foundation-Filesystem.html#method_sitePath"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Filesystem\u003A\u003AsiteMediaPath\u0028\u0029",
+            "name": "siteMediaPath",
+            "summary": "Get\u0020the\u0020absolute\u0020path\u0020to\u0020the\u0020compiled\u0020site\u0027s\u0020media\u0020directory,\u0020or\u0020a\u0020file\u0020within\u0020it.",
+            "url": "classes/Hyde-Foundation-Filesystem.html#method_siteMediaPath"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Filesystem\u003A\u003AvendorPath\u0028\u0029",
             "name": "vendorPath",
@@ -1345,6 +1355,11 @@ Search.appendIndex(
             "name": "outputDirectory",
             "summary": "",
             "url": "classes/Hyde-Foundation-HydeKernel.html#property_outputDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\HydeKernel\u003A\u003A\u0024mediaDirectory",
+            "name": "mediaDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-HydeKernel.html#property_mediaDirectory"
         },                {
             "fqsen": "\\Hyde\\Foundation\\HydeKernel\u003A\u003A\u0024filesystem",
             "name": "filesystem",
@@ -1933,8 +1948,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations\u003A\u003AstoreCompiledSiteIn\u0028\u0029",
             "name": "storeCompiledSiteIn",
-            "summary": "The\u0020relative\u0020path\u0020to\u0020the\u0020directory\u0020when\u0020the\u0020compiled\u0020site\u0020is\u0020stored.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_storeCompiledSiteIn"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations\u003A\u003AuseMediaDirectory\u0028\u0029",
+            "name": "useMediaDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_useMediaDirectory"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\TracksExecutionTime",
             "name": "TracksExecutionTime",
@@ -2300,6 +2320,11 @@ Search.appendIndex(
             "name": "normalizeLocalImagePath",
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#method_normalizeLocalImagePath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\FeaturedImageFactory\u003A\u003AisRemote\u0028\u0029",
+            "name": "isRemote",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#method_isRemote"
         },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\FeaturedImageFactory\u003A\u003ASCHEMA",
             "name": "SCHEMA",
@@ -2800,6 +2825,11 @@ Search.appendIndex(
             "name": "validatedStoragePath",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html#method_validatedStoragePath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\LocalFeaturedImage\u003A\u003AreplaceSlashes\u0028\u0029",
+            "name": "replaceSlashes",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html#method_replaceSlashes"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\PostAuthor",
             "name": "PostAuthor",
