@@ -5373,7 +5373,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Pages\\Contracts\\DynamicPage",
             "name": "DynamicPage",
-            "summary": "This\u0020interface\u0020is\u0020used\u0020to\u0020mark\u0020page\u0020classes\u0020that\u0020are\u0020dynamically\u0020generated,\n\u0028i.e.\u0020not\u0020based\u0020on\u0020a\u0020source\u0020file\u0029,\u0020or\u0020that\u0020have\u0020dynamic\u0020path\u0020information.",
+            "summary": "",
             "url": "classes/Hyde-Pages-Contracts-DynamicPage.html"
         },                {
             "fqsen": "\\Hyde\\Pages\\DocumentationPage",
@@ -5451,6 +5451,76 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Pages-HtmlPage.html#property_fileExtension"
         },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage",
+            "name": "InMemoryPage",
+            "summary": "Extendable\u0020class\u0020for\u0020in\u002Dmemory\u0020\u0028or\u0020virtual\u0029\u0020Hyde\u0020pages\u0020that\u0020are\u0020not\u0020based\u0020on\u0020any\u0020source\u0020files.",
+            "url": "classes/Hyde-Pages-InMemoryPage.html"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003Amake\u0028\u0029",
+            "name": "make",
+            "summary": "Static\u0020alias\u0020for\u0020the\u0020constructor.",
+            "url": "classes/Hyde-Pages-InMemoryPage.html#method_make"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Create\u0020a\u0020new\u0020virtual\u0020page\u0020instance.",
+            "url": "classes/Hyde-Pages-InMemoryPage.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003AgetContents\u0028\u0029",
+            "name": "getContents",
+            "summary": "",
+            "url": "classes/Hyde-Pages-InMemoryPage.html#method_getContents"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003AgetBladeView\u0028\u0029",
+            "name": "getBladeView",
+            "summary": "Get\u0020the\u0020Blade\u0020template\u0020for\u0020the\u0020page.",
+            "url": "classes/Hyde-Pages-InMemoryPage.html#method_getBladeView"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "Get\u0020the\u0020contents\u0020that\u0020will\u0020be\u0020saved\u0020to\u0020disk\u0020for\u0020this\u0020page.",
+            "url": "classes/Hyde-Pages-InMemoryPage.html#method_compile"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003Amacro\u0028\u0029",
+            "name": "macro",
+            "summary": "Register\u0020a\u0020macro\u0020for\u0020the\u0020instance.",
+            "url": "classes/Hyde-Pages-InMemoryPage.html#method_macro"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003A__call\u0028\u0029",
+            "name": "__call",
+            "summary": "Dynamically\u0020handle\u0020calls\u0020to\u0020the\u0020class.",
+            "url": "classes/Hyde-Pages-InMemoryPage.html#method___call"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003A\u0024sourceDirectory",
+            "name": "sourceDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Pages-InMemoryPage.html#property_sourceDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003A\u0024outputDirectory",
+            "name": "outputDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Pages-InMemoryPage.html#property_outputDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003A\u0024fileExtension",
+            "name": "fileExtension",
+            "summary": "",
+            "url": "classes/Hyde-Pages-InMemoryPage.html#property_fileExtension"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003A\u0024contents",
+            "name": "contents",
+            "summary": "",
+            "url": "classes/Hyde-Pages-InMemoryPage.html#property_contents"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003A\u0024view",
+            "name": "view",
+            "summary": "",
+            "url": "classes/Hyde-Pages-InMemoryPage.html#property_view"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003A\u0024macros",
+            "name": "macros",
+            "summary": "",
+            "url": "classes/Hyde-Pages-InMemoryPage.html#property_macros"
+        },                {
             "fqsen": "\\Hyde\\Pages\\MarkdownPage",
             "name": "MarkdownPage",
             "summary": "Page\u0020class\u0020for\u0020Markdown\u0020pages.",
@@ -5520,76 +5590,6 @@ Search.appendIndex(
             "name": "image",
             "summary": "",
             "url": "classes/Hyde-Pages-MarkdownPost.html#property_image"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\VirtualPage",
-            "name": "VirtualPage",
-            "summary": "A\u0020virtual\u0020page\u0020is\u0020a\u0020page\u0020that\u0020does\u0020not\u0020have\u0020a\u0020source\u0020file.",
-            "url": "classes/Hyde-Pages-VirtualPage.html"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003Amake\u0028\u0029",
-            "name": "make",
-            "summary": "Static\u0020alias\u0020for\u0020the\u0020constructor.",
-            "url": "classes/Hyde-Pages-VirtualPage.html#method_make"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Create\u0020a\u0020new\u0020virtual\u0020page\u0020instance.",
-            "url": "classes/Hyde-Pages-VirtualPage.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003AgetContents\u0028\u0029",
-            "name": "getContents",
-            "summary": "",
-            "url": "classes/Hyde-Pages-VirtualPage.html#method_getContents"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003AgetBladeView\u0028\u0029",
-            "name": "getBladeView",
-            "summary": "Get\u0020the\u0020Blade\u0020template\u0020for\u0020the\u0020page.",
-            "url": "classes/Hyde-Pages-VirtualPage.html#method_getBladeView"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003Acompile\u0028\u0029",
-            "name": "compile",
-            "summary": "Get\u0020the\u0020contents\u0020that\u0020will\u0020be\u0020saved\u0020to\u0020disk\u0020for\u0020this\u0020page.",
-            "url": "classes/Hyde-Pages-VirtualPage.html#method_compile"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003Amacro\u0028\u0029",
-            "name": "macro",
-            "summary": "Register\u0020a\u0020macro\u0020for\u0020the\u0020instance.",
-            "url": "classes/Hyde-Pages-VirtualPage.html#method_macro"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A__call\u0028\u0029",
-            "name": "__call",
-            "summary": "Dynamically\u0020handle\u0020calls\u0020to\u0020the\u0020class.",
-            "url": "classes/Hyde-Pages-VirtualPage.html#method___call"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A\u0024sourceDirectory",
-            "name": "sourceDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Pages-VirtualPage.html#property_sourceDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A\u0024outputDirectory",
-            "name": "outputDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Pages-VirtualPage.html#property_outputDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A\u0024fileExtension",
-            "name": "fileExtension",
-            "summary": "",
-            "url": "classes/Hyde-Pages-VirtualPage.html#property_fileExtension"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A\u0024contents",
-            "name": "contents",
-            "summary": "",
-            "url": "classes/Hyde-Pages-VirtualPage.html#property_contents"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A\u0024view",
-            "name": "view",
-            "summary": "",
-            "url": "classes/Hyde-Pages-VirtualPage.html#property_view"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\VirtualPage\u003A\u003A\u0024macros",
-            "name": "macros",
-            "summary": "",
-            "url": "classes/Hyde-Pages-VirtualPage.html#property_macros"
         },                {
             "fqsen": "\\Hyde\\Support\\Concerns\\Serializable",
             "name": "Serializable",
