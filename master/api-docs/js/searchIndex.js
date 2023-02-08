@@ -1093,7 +1093,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Foundation\\Concerns\\HydeExtension\u003A\u003AgetPageClasses\u0028\u0029",
             "name": "getPageClasses",
-            "summary": "If\u0020your\u0020extension\u0020adds\u0020new\u0020page\u0020classes,\u0020you\u0020should\u0020register\u0020them\u0020here.",
+            "summary": "If\u0020your\u0020extension\u0020adds\u0020new\u0020discoverable\u0020page\u0020classes,\u0020you\u0020should\u0020register\u0020them\u0020here.",
             "url": "classes/Hyde-Foundation-Concerns-HydeExtension.html#method_getPageClasses"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Concerns\\HydeExtension\u003A\u003AdiscoverFiles\u0028\u0029",
