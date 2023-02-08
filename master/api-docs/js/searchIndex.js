@@ -1281,11 +1281,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-Filesystem.html#method_smartGlob"
         },                {
-            "fqsen": "\\Hyde\\Foundation\\Filesystem\u003A\u003Aimplode\u0028\u0029",
-            "name": "implode",
-            "summary": "Implode\u0020path\u0020components\u0020into\u0020a\u0020string\u0020with\u0020directory\u0020separators.",
-            "url": "classes/Hyde-Foundation-Filesystem.html#method_implode"
-        },                {
             "fqsen": "\\Hyde\\Foundation\\Filesystem\u003A\u003A\u0024kernel",
             "name": "kernel",
             "summary": "",
@@ -4655,6 +4650,21 @@ Search.appendIndex(
             "name": "yaml_decode",
             "summary": "",
             "url": "namespaces/hyde.html#function_yaml_decode"
+        },                {
+            "fqsen": "\\Hyde\\path_join\u0028\u0029",
+            "name": "path_join",
+            "summary": "",
+            "url": "namespaces/hyde.html#function_path_join"
+        },                {
+            "fqsen": "\\Hyde\\system_path_join\u0028\u0029",
+            "name": "system_path_join",
+            "summary": "",
+            "url": "namespaces/hyde.html#function_system_path_join"
+        },                {
+            "fqsen": "\\Hyde\\normalize_slashes\u0028\u0029",
+            "name": "normalize_slashes",
+            "summary": "",
+            "url": "namespaces/hyde.html#function_normalize_slashes"
         },                {
             "fqsen": "\\Hyde\\Hyde",
             "name": "Hyde",
