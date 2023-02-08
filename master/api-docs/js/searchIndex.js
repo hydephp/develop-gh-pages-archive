@@ -4656,11 +4656,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde.html#function_path_join"
         },                {
-            "fqsen": "\\Hyde\\system_path_join\u0028\u0029",
-            "name": "system_path_join",
-            "summary": "",
-            "url": "namespaces/hyde.html#function_system_path_join"
-        },                {
             "fqsen": "\\Hyde\\normalize_slashes\u0028\u0029",
             "name": "normalize_slashes",
             "summary": "",
