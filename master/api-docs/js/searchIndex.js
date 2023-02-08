@@ -5656,11 +5656,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Support-Filesystem-ProjectFile.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile\u003A\u003A__toString\u0028\u0029",
-            "name": "__toString",
-            "summary": "",
-            "url": "classes/Hyde-Support-Filesystem-ProjectFile.html#method___toString"
-        },                {
             "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
             "summary": "",
