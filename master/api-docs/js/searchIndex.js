@@ -441,45 +441,35 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-PublishViewsCommand.html#property_options"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticSiteCommand",
-            "name": "RebuildStaticSiteCommand",
+            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticPageCommand",
+            "name": "RebuildStaticPageCommand",
             "summary": "Hyde\u0020Command\u0020to\u0020build\u0020a\u0020single\u0020static\u0020site\u0020file.",
-            "url": "classes/Hyde-Console-Commands-RebuildStaticSiteCommand.html"
+            "url": "classes/Hyde-Console-Commands-RebuildStaticPageCommand.html"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticSiteCommand\u003A\u003Ahandle\u0028\u0029",
+            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticPageCommand\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
             "summary": "The\u0020base\u0020handle\u0020method\u0020that\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes.",
-            "url": "classes/Hyde-Console-Commands-RebuildStaticSiteCommand.html#method_handle"
+            "url": "classes/Hyde-Console-Commands-RebuildStaticPageCommand.html#method_handle"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticSiteCommand\u003A\u003AsanitizePathString\u0028\u0029",
-            "name": "sanitizePathString",
-            "summary": "Perform\u0020a\u0020basic\u0020sanitation\u0020to\u0020strip\u0020trailing\u0020characters.",
-            "url": "classes/Hyde-Console-Commands-RebuildStaticSiteCommand.html#method_sanitizePathString"
+            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticPageCommand\u003A\u003AgetNormalizedPathString\u0028\u0029",
+            "name": "getNormalizedPathString",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-RebuildStaticPageCommand.html#method_getNormalizedPathString"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticSiteCommand\u003A\u003Avalidate\u0028\u0029",
-            "name": "validate",
-            "summary": "Validate\u0020the\u0020path\u0020to\u0020catch\u0020common\u0020errors.",
-            "url": "classes/Hyde-Console-Commands-RebuildStaticSiteCommand.html#method_validate"
+            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticPageCommand\u003A\u003AmakeBuildTask\u0028\u0029",
+            "name": "makeBuildTask",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-RebuildStaticPageCommand.html#method_makeBuildTask"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticSiteCommand\u003A\u003AwithException\u0028\u0029",
-            "name": "withException",
-            "summary": "Output\u0020the\u0020contents\u0020of\u0020an\u0020exception.",
-            "url": "classes/Hyde-Console-Commands-RebuildStaticSiteCommand.html#method_withException"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticSiteCommand\u003A\u003A\u0024signature",
+            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticPageCommand\u003A\u003A\u0024signature",
             "name": "signature",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-RebuildStaticSiteCommand.html#property_signature"
+            "url": "classes/Hyde-Console-Commands-RebuildStaticPageCommand.html#property_signature"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticSiteCommand\u003A\u003A\u0024description",
+            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticPageCommand\u003A\u003A\u0024description",
             "name": "description",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-RebuildStaticSiteCommand.html#property_description"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticSiteCommand\u003A\u003A\u0024path",
-            "name": "path",
-            "summary": "The\u0020source\u0020path.",
-            "url": "classes/Hyde-Console-Commands-RebuildStaticSiteCommand.html#property_path"
+            "url": "classes/Hyde-Console-Commands-RebuildStaticPageCommand.html#property_description"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand",
             "name": "RouteListCommand",
