@@ -4076,11 +4076,6 @@ Search.appendIndex(
             "summary": "Register\u0020module\u0020service\u0020providers.",
             "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_registerModuleServiceProviders"
         },                {
-            "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003AgetConfigurationProvider\u0028\u0029",
-            "name": "getConfigurationProvider",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_getConfigurationProvider"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService",
             "name": "AssetService",
             "summary": "Handles\u0020the\u0020retrieval\u0020of\u0020core\u0020asset\u0020files.\u0020Commonly\u0020used\u0020through\u0020the\u0020Asset\u0020facade.",
