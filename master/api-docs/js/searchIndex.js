@@ -1111,6 +1111,11 @@ Search.appendIndex(
             "summary": "If\u0020your\u0020extension\u0020needs\u0020to\u0020hook\u0020into\u0020the\u0020route\u0020discovery\u0020process,\nyou\u0020can\u0020configure\u0020the\u0020following\u0020handler\u0020method.\u0020It\u0020will\u0020be\u0020called\nat\u0020the\u0020end\u0020of\u0020the\u0020route\u0020discovery\u0020process.\u0020The\u0020collection\u0020instance\nwill\u0020be\u0020injected,\u0020so\u0020that\u0020you\u0020can\u0020interact\u0020with\u0020it\u0020directly.",
             "url": "classes/Hyde-Foundation-Concerns-HydeExtension.html#method_discoverRoutes"
         },                {
+            "fqsen": "\\Hyde\\Foundation\\ConsoleKernel",
+            "name": "ConsoleKernel",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-ConsoleKernel.html"
+        },                {
             "fqsen": "\\Hyde\\Foundation\\Facades\\FileCollection",
             "name": "FileCollection",
             "summary": "",
