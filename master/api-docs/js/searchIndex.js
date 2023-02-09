@@ -1451,6 +1451,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-Providers-ConfigurationServiceProvider.html#method_boot"
         },                {
+            "fqsen": "\\Hyde\\Foundation\\Providers\\ViewServiceProvider",
+            "name": "ViewServiceProvider",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Providers-ViewServiceProvider.html"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Providers\\ViewServiceProvider\u003A\u003Aregister\u0028\u0029",
+            "name": "register",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Providers-ViewServiceProvider.html#method_register"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Providers\\ViewServiceProvider\u003A\u003Aboot\u0028\u0029",
+            "name": "boot",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Providers-ViewServiceProvider.html#method_boot"
+        },                {
             "fqsen": "\\Hyde\\Foundation\\RouteCollection",
             "name": "RouteCollection",
             "summary": "The\u0020RouteCollection\u0020contains\u0020all\u0020the\u0020routes,\u0020making\u0020it\u0020the\u0020Pseudo\u002DRouter\u0020for\u0020Hyde.",
