@@ -1431,6 +1431,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-Hyperlinks.html#property_kernel"
         },                {
+            "fqsen": "\\Hyde\\Foundation\\Providers\\ConfigurationServiceProvider",
+            "name": "ConfigurationServiceProvider",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Providers-ConfigurationServiceProvider.html"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Providers\\ConfigurationServiceProvider\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Run\u0020any\u0020logic\u0020before\u0020the\u0020Hyde\u0020Service\u0020Provider\u0020is\u0020registered.",
+            "url": "classes/Hyde-Foundation-Providers-ConfigurationServiceProvider.html#method_initialize"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Providers\\ConfigurationServiceProvider\u003A\u003Aregister\u0028\u0029",
+            "name": "register",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Providers-ConfigurationServiceProvider.html#method_register"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Providers\\ConfigurationServiceProvider\u003A\u003Aboot\u0028\u0029",
+            "name": "boot",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Providers-ConfigurationServiceProvider.html#method_boot"
+        },                {
             "fqsen": "\\Hyde\\Foundation\\RouteCollection",
             "name": "RouteCollection",
             "summary": "The\u0020RouteCollection\u0020contains\u0020all\u0020the\u0020routes,\u0020making\u0020it\u0020the\u0020Pseudo\u002DRouter\u0020for\u0020Hyde.",
@@ -4056,6 +4076,11 @@ Search.appendIndex(
             "summary": "Register\u0020module\u0020service\u0020providers.",
             "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_registerModuleServiceProviders"
         },                {
+            "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003AgetConfigurationProvider\u0028\u0029",
+            "name": "getConfigurationProvider",
+            "summary": "",
+            "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_getConfigurationProvider"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService",
             "name": "AssetService",
             "summary": "Handles\u0020the\u0020retrieval\u0020of\u0020core\u0020asset\u0020files.\u0020Commonly\u0020used\u0020through\u0020the\u0020Asset\u0020facade.",
@@ -6155,6 +6180,11 @@ Search.appendIndex(
             "name": "Facades",
             "summary": "",
             "url": "namespaces/hyde-foundation-facades.html"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Providers",
+            "name": "Providers",
+            "summary": "",
+            "url": "namespaces/hyde-foundation-providers.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions",
             "name": "Actions",
