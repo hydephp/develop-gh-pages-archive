@@ -6161,6 +6161,86 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Support-Models-ValidationResult.html#constant_FAILED"
         },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime",
+            "name": "ReadingTime",
+            "summary": "Calculate\u0020the\u0020estimated\u0020reading\u0020time\u0020for\u0020a\u0020text.",
+            "url": "classes/Hyde-Support-ReadingTime.html"
+        },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003AfromString\u0028\u0029",
+            "name": "fromString",
+            "summary": "",
+            "url": "classes/Hyde-Support-ReadingTime.html#method_fromString"
+        },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003AfromFile\u0028\u0029",
+            "name": "fromFile",
+            "summary": "",
+            "url": "classes/Hyde-Support-ReadingTime.html#method_fromFile"
+        },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Support-ReadingTime.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003AgetWordCount\u0028\u0029",
+            "name": "getWordCount",
+            "summary": "",
+            "url": "classes/Hyde-Support-ReadingTime.html#method_getWordCount"
+        },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003AgetMinutes\u0028\u0029",
+            "name": "getMinutes",
+            "summary": "",
+            "url": "classes/Hyde-Support-ReadingTime.html#method_getMinutes"
+        },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003AgetSeconds\u0028\u0029",
+            "name": "getSeconds",
+            "summary": "",
+            "url": "classes/Hyde-Support-ReadingTime.html#method_getSeconds"
+        },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003AgetMinutesAsFloat\u0028\u0029",
+            "name": "getMinutesAsFloat",
+            "summary": "",
+            "url": "classes/Hyde-Support-ReadingTime.html#method_getMinutesAsFloat"
+        },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003AgetSecondsOver\u0028\u0029",
+            "name": "getSecondsOver",
+            "summary": "",
+            "url": "classes/Hyde-Support-ReadingTime.html#method_getSecondsOver"
+        },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003AgetFormatted\u0028\u0029",
+            "name": "getFormatted",
+            "summary": "",
+            "url": "classes/Hyde-Support-ReadingTime.html#method_getFormatted"
+        },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003AformatUsingClosure\u0028\u0029",
+            "name": "formatUsingClosure",
+            "summary": "",
+            "url": "classes/Hyde-Support-ReadingTime.html#method_formatUsingClosure"
+        },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003Agenerate\u0028\u0029",
+            "name": "generate",
+            "summary": "",
+            "url": "classes/Hyde-Support-ReadingTime.html#method_generate"
+        },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003AWORDS_PER_MINUTE",
+            "name": "WORDS_PER_MINUTE",
+            "summary": "",
+            "url": "classes/Hyde-Support-ReadingTime.html#constant_WORDS_PER_MINUTE"
+        },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003A\u0024text",
+            "name": "text",
+            "summary": "",
+            "url": "classes/Hyde-Support-ReadingTime.html#property_text"
+        },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003A\u0024wordCount",
+            "name": "wordCount",
+            "summary": "",
+            "url": "classes/Hyde-Support-ReadingTime.html#property_wordCount"
+        },                {
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003A\u0024seconds",
+            "name": "seconds",
+            "summary": "",
+            "url": "classes/Hyde-Support-ReadingTime.html#property_seconds"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -6371,11 +6451,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde-support-concerns.html"
         },                {
-            "fqsen": "\\Hyde\\Support",
-            "name": "Support",
-            "summary": "",
-            "url": "namespaces/hyde-support.html"
-        },                {
             "fqsen": "\\Hyde\\Support\\Facades",
             "name": "Facades",
             "summary": "",
@@ -6390,5 +6465,10 @@ Search.appendIndex(
             "name": "Models",
             "summary": "",
             "url": "namespaces/hyde-support-models.html"
+        },                {
+            "fqsen": "\\Hyde\\Support",
+            "name": "Support",
+            "summary": "",
+            "url": "namespaces/hyde-support.html"
         }            ]
 );
