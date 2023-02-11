@@ -5406,6 +5406,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Pages-DocumentationPage.html#method_home"
         },                {
+            "fqsen": "\\Hyde\\Pages\\DocumentationPage\u003A\u003AhomeRouteName\u0028\u0029",
+            "name": "homeRouteName",
+            "summary": "",
+            "url": "classes/Hyde-Pages-DocumentationPage.html#method_homeRouteName"
+        },                {
             "fqsen": "\\Hyde\\Pages\\DocumentationPage\u003A\u003AgetOnlineSourcePath\u0028\u0029",
             "name": "getOnlineSourcePath",
             "summary": "",
