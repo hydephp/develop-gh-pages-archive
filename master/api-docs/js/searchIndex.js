@@ -4596,31 +4596,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-ValidationService.html#method_check_for_conflicts_between_blade_and_markdown_pages"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\YamlConfigurationService",
-            "name": "YamlConfigurationService",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-YamlConfigurationService.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\YamlConfigurationService\u003A\u003Aboot\u0028\u0029",
-            "name": "boot",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-YamlConfigurationService.html#method_boot"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\YamlConfigurationService\u003A\u003AhasFile\u0028\u0029",
-            "name": "hasFile",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-YamlConfigurationService.html#method_hasFile"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\YamlConfigurationService\u003A\u003AgetFile\u0028\u0029",
-            "name": "getFile",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-YamlConfigurationService.html#method_getFile"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\YamlConfigurationService\u003A\u003AgetYaml\u0028\u0029",
-            "name": "getYaml",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-YamlConfigurationService.html#method_getYaml"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Views\\Components\\LinkComponent",
             "name": "LinkComponent",
             "summary": "",
