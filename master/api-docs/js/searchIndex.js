@@ -5281,6 +5281,11 @@ Search.appendIndex(
             "summary": "Get\u0020an\u0020absolute\u0020file\u0020path\u0020to\u0020the\u0020page\u0027s\u0020source\u0020directory,\u0020or\u0020a\u0020file\u0020within\u0020it.",
             "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_path"
         },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AbaseRouteKey\u0028\u0029",
+            "name": "baseRouteKey",
+            "summary": "Get\u0020the\u0020route\u0020key\u0020base\u0020for\u0020the\u0020page\u0020model.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_baseRouteKey"
+        },                {
             "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003Acompile\u0028\u0029",
             "name": "compile",
             "summary": "Compile\u0020the\u0020page\u0020into\u0020static\u0020HTML.",
