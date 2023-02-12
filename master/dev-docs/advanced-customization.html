@@ -236,7 +236,7 @@
     </header>
     <section id="document-main-content" itemprop="articleBody">
         <h2>Introduction &amp; Warning<a id="introduction--warning" href="#introduction--warning" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<blockquote class="danger">Danger lies ahead! Read this before you proceed.</blockquote>
+<blockquote class="danger"><p>Danger lies ahead! Read this before you proceed.</p></blockquote>
 <p>This page covers advanced usage of potentially experimental and unstable features and is intended for developers
 who know what they are doing and can handle the risk of breaking things. The article will also cover things
 that you <em>can</em> do, but that you maybe should not. With great power comes great responsibility. You have been warned.</p>
@@ -252,7 +252,7 @@ are experimental features, and are not at all supported. Use at your own risk.</
 <h3>A note on file paths<a id="a-note-on-file-paths" href="#a-note-on-file-paths" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>When Hyde references files, especially when passing filenames between components, the file path is almost always relative to the root of the project. When an absolute path is required, the path is resolved through the <code>Hyde::path()</code> helper. Specifying absolute paths yourself will likely lead to unforeseen problems.</p>
 <h2>Customizing source directories 🧪<a id="customizing-source-directories-" href="#customizing-source-directories-" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<blockquote class="warning">This may cause integrations such as the realtime compiler to break. You'll also likely need to update route key names in your templates.</blockquote>
+<blockquote class="warning"><p>This may cause integrations such as the realtime compiler to break. You'll also likely need to update route key names in your templates.</p></blockquote>
 <p>The source directory paths are stored in the PageModel objects.
 You can change them by modifying the static property, for example in a service provider.</p>
 <p>Internally, the paths are registered in the HydeServiceProvider using the following method:</p>
@@ -282,10 +282,10 @@ Hyde will copy all files in this directory to <code>_site/media</code> (or whate
 Note that this change will affect both the source and output directories. For example, if you set the value to <code>assets</code>,
 all files from <code>assets</code> will be copied to <code>_site/assets</code>.</p>
 <p>If the setting starts with an underscore, that will be removed from the output directory, so files in <code>_assets</code> will be copied to <code>_site/assets</code>.</p>
-<blockquote class="info">Note that you will likely need to manually update `webpack.mix.js` so Laravel Mix can compile the assets correctly.</blockquote>
-<blockquote class="info">You will of course also need to copy over any existing files from the old directory to the new one.</blockquote>
+<blockquote class="info"><p>Note that you will likely need to manually update <code>webpack.mix.js</code> so Laravel Mix can compile the assets correctly.</p></blockquote>
+<blockquote class="info"><p>You will of course also need to copy over any existing files from the old directory to the new one.</p></blockquote>
 <h2>Customizing the output directory ⚠<a id="customizing-the-output-directory-" href="#customizing-the-output-directory-" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<blockquote class="danger">Hyde deletes all files in the output directory before compiling the site. Don't set this path to a directory that contains important files!</blockquote>
+<blockquote class="danger"><p>Hyde deletes all files in the output directory before compiling the site. Don't set this path to a directory that contains important files!</p></blockquote>
 <p>If you want to store your compiled website in a different directory than
 the default <code>_pages</code>, you can change the path using the following configuration option in config/hyde.php. The path is expected to be relative to your project root.</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>return [

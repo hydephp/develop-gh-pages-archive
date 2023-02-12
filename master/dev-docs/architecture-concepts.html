@@ -358,7 +358,7 @@ author:
 Lorem ipsum dolor sit amet, etc.
 </code></pre>
 <h3>Blade<a id="blade" href="#blade" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<blockquote class="warning">🧪 This feature is experimental, and currently does not support multidimensional arrays or multi-line directives as the BladeMatter is statically parsed.</blockquote>
+<blockquote class="warning"><p>🧪 This feature is experimental, and currently does not support multidimensional arrays or multi-line directives as the BladeMatter is statically parsed.</p></blockquote>
 <p>Hyde v0.58.0-beta brings experimental support for creating front-matter in Blade templates, called BladeMatter. The actual syntax is does not use YAML; but instead PHP. However, the parsed end result is the same.</p>
 <p>To create BladeMatter, you simply use the default Laravel Blade <code>@php</code> directive to declare a variable anywhere in the template.</p>
 <p><strong>Example:</strong></p>
@@ -366,7 +366,7 @@ Lorem ipsum dolor sit amet, etc.
 </code></pre>
 <p>It will then be available through the global <code>$page</code> variable, <code>$page-&gt;matter('title')</code>.</p>
 <h2>Automatic Routing<a id="automatic-routing" href="#automatic-routing" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<blockquote class="info">This covers an intermediate topic which is not required for basic usage, but is useful if you want to use the framework to design custom Blade templates.</blockquote>
+<blockquote class="info"><p>This covers an intermediate topic which is not required for basic usage, but is useful if you want to use the framework to design custom Blade templates.</p></blockquote>
 <h3>High-level overview<a id="high-level-overview" href="#high-level-overview" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>If you've ever worked in a MVC framework, you are probably familiar with the concept of routing. And you are probably also familiar with how boring and tedious it can be. Hyde takes the pain out of routing through the Hyde Autodiscovery process.</p>
 <p>Internally, when booting the Hyde application, Hyde will automatically discover all of the content files in the source directory and create a routing index for them. This index works as a two-way link between source files and compiled files.</p>
@@ -385,7 +385,7 @@ Route::get('posts/my-post')
 // Compiled file: _site/docs/readme.html
 Route::get('docs/readme')
 </code></pre>
-<blockquote class="info">Tip: You can also use "dot notation" instead of slashes, for example `Route::get('posts.my-post')`.</blockquote>
+<blockquote class="info"><p>Tip: You can also use &quot;dot notation&quot; instead of slashes, for example <code>Route::get('posts.my-post')</code>.</p></blockquote>
 <h3>Using the <code>x-link</code> component<a id="using-the-x-link-component" href="#using-the-x-link-component" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>When designing Blade layouts it can be useful to use the <code>x-link</code> component to automatically resolve relative links.</p>
 <p>You can of course, use it just like a normal anchor tag like so:</p>
