@@ -2891,11 +2891,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html#method_validatedStoragePath"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\LocalFeaturedImage\u003A\u003AreplaceSlashes\u0028\u0029",
-            "name": "replaceSlashes",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html#method_replaceSlashes"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\PostAuthor",
             "name": "PostAuthor",
             "summary": "The\u0020Post\u0020Author\u0020model\u0020object.",
