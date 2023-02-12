@@ -3171,16 +3171,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-DataCollections-DataCollection.html#property_sourceDirectory"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\Facades\\MarkdownCollection",
-            "name": "MarkdownCollection",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-DataCollections-Facades-MarkdownCollection.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\Facades\\MarkdownCollection\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-DataCollections-Facades-MarkdownCollection.html#method_get"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Documentation\\SemanticDocumentationArticle",
             "name": "SemanticDocumentationArticle",
             "summary": "Class\u0020to\u0020make\u0020Hyde\u0020documentation\u0020pages\u0020smarter,\nby\u0020dynamically\u0020enriching\u0020them\u0020with\u0020semantic\u0020HTML.",
@@ -6355,11 +6345,6 @@ Search.appendIndex(
             "name": "DataCollections",
             "summary": "",
             "url": "namespaces/hyde-framework-features-datacollections.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\Facades",
-            "name": "Facades",
-            "summary": "",
-            "url": "namespaces/hyde-framework-features-datacollections-facades.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Documentation",
             "name": "Documentation",
