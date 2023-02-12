@@ -3006,11 +3006,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_getDescription"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003AgetExecutionTime\u0028\u0029",
-            "name": "getExecutionTime",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_getExecutionTime"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003Awrite\u0028\u0029",
             "name": "write",
             "summary": "",
