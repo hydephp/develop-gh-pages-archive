@@ -336,6 +336,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-PackageDiscoverCommand.html#property_hidden"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\PublishConfigsCommand",
+            "name": "PublishConfigsCommand",
+            "summary": "Publish\u0020the\u0020Hyde\u0020Config\u0020Files.",
+            "url": "classes/Hyde-Console-Commands-PublishConfigsCommand.html"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\PublishConfigsCommand\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "The\u0020base\u0020handle\u0020method\u0020that\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes.",
+            "url": "classes/Hyde-Console-Commands-PublishConfigsCommand.html#method_handle"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\PublishConfigsCommand\u003A\u003A\u0024signature",
+            "name": "signature",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-PublishConfigsCommand.html#property_signature"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\PublishConfigsCommand\u003A\u003A\u0024description",
+            "name": "description",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-PublishConfigsCommand.html#property_description"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand",
             "name": "PublishHomepageCommand",
             "summary": "Publish\u0020one\u0020of\u0020the\u0020default\u0020homepages.",
@@ -550,31 +570,6 @@ Search.appendIndex(
             "name": "description",
             "summary": "",
             "url": "classes/Hyde-Console-Commands-ServeCommand.html#property_description"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\UpdateConfigsCommand",
-            "name": "UpdateConfigsCommand",
-            "summary": "Publish\u0020the\u0020Hyde\u0020Config\u0020Files.",
-            "url": "classes/Hyde-Console-Commands-UpdateConfigsCommand.html"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\UpdateConfigsCommand\u003A\u003Ahandle\u0028\u0029",
-            "name": "handle",
-            "summary": "The\u0020base\u0020handle\u0020method\u0020that\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes.",
-            "url": "classes/Hyde-Console-Commands-UpdateConfigsCommand.html#method_handle"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\UpdateConfigsCommand\u003A\u003A\u0024signature",
-            "name": "signature",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-UpdateConfigsCommand.html#property_signature"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\UpdateConfigsCommand\u003A\u003A\u0024description",
-            "name": "description",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-UpdateConfigsCommand.html#property_description"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\UpdateConfigsCommand\u003A\u003A\u0024hidden",
-            "name": "hidden",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-UpdateConfigsCommand.html#property_hidden"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ValidateCommand",
             "name": "ValidateCommand",
