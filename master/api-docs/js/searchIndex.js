@@ -701,15 +701,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Concerns-Command.html#constant_USER_EXIT"
         },                {
-            "fqsen": "\\Hyde\\Console\\HydeConsoleServiceProvider",
-            "name": "HydeConsoleServiceProvider",
+            "fqsen": "\\Hyde\\Console\\ConsoleServiceProvider",
+            "name": "ConsoleServiceProvider",
             "summary": "Register\u0020the\u0020HydeCLI\u0020console\u0020commands.",
-            "url": "classes/Hyde-Console-HydeConsoleServiceProvider.html"
+            "url": "classes/Hyde-Console-ConsoleServiceProvider.html"
         },                {
-            "fqsen": "\\Hyde\\Console\\HydeConsoleServiceProvider\u003A\u003Aregister\u0028\u0029",
+            "fqsen": "\\Hyde\\Console\\ConsoleServiceProvider\u003A\u003Aregister\u0028\u0029",
             "name": "register",
-            "summary": "Register\u0020any\u0020console\u0020services.",
-            "url": "classes/Hyde-Console-HydeConsoleServiceProvider.html#method_register"
+            "summary": "",
+            "url": "classes/Hyde-Console-ConsoleServiceProvider.html#method_register"
+        },                {
+            "fqsen": "\\Hyde\\Console\\ConsoleServiceProvider\u003A\u003Aboot\u0028\u0029",
+            "name": "boot",
+            "summary": "",
+            "url": "classes/Hyde-Console-ConsoleServiceProvider.html#method_boot"
         },                {
             "fqsen": "\\Hyde\\Facades\\Asset",
             "name": "Asset",
@@ -1116,6 +1121,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-ConsoleKernel.html"
         },                {
+            "fqsen": "\\Hyde\\Foundation\\ConsoleKernel\u003A\u003Abootstrappers\u0028\u0029",
+            "name": "bootstrappers",
+            "summary": "Get\u0020the\u0020bootstrap\u0020classes\u0020for\u0020the\u0020application.",
+            "url": "classes/Hyde-Foundation-ConsoleKernel.html#method_bootstrappers"
+        },                {
             "fqsen": "\\Hyde\\Foundation\\Facades\\FileCollection",
             "name": "FileCollection",
             "summary": "",
@@ -1441,11 +1451,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-Providers-ConfigurationServiceProvider.html"
         },                {
-            "fqsen": "\\Hyde\\Foundation\\Providers\\ConfigurationServiceProvider\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "Run\u0020any\u0020logic\u0020before\u0020the\u0020Hyde\u0020Service\u0020Provider\u0020is\u0020registered.",
-            "url": "classes/Hyde-Foundation-Providers-ConfigurationServiceProvider.html#method_initialize"
-        },                {
             "fqsen": "\\Hyde\\Foundation\\Providers\\ConfigurationServiceProvider\u003A\u003Aregister\u0028\u0029",
             "name": "register",
             "summary": "",
@@ -1458,7 +1463,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Foundation\\Providers\\ViewServiceProvider",
             "name": "ViewServiceProvider",
-            "summary": "",
+            "summary": "Register\u0020the\u0020Hyde\u0020view\u0020components.",
             "url": "classes/Hyde-Foundation-Providers-ViewServiceProvider.html"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Providers\\ViewServiceProvider\u003A\u003Aregister\u0028\u0029",
@@ -4068,33 +4073,23 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\HydeServiceProvider",
             "name": "HydeServiceProvider",
-            "summary": "Register\u0020and\u0020bootstrap\u0020Hyde\u0020application\u0020services.",
+            "summary": "Register\u0020and\u0020bootstrap\u0020core\u0020Hyde\u0020application\u0020services.",
             "url": "classes/Hyde-Framework-HydeServiceProvider.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003Aregister\u0028\u0029",
             "name": "register",
-            "summary": "Register\u0020any\u0020application\u0020services.",
+            "summary": "",
             "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_register"
         },                {
             "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003Aboot\u0028\u0029",
             "name": "boot",
-            "summary": "Bootstrap\u0020any\u0020application\u0020services.",
-            "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_boot"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003AinitializeConfiguration\u0028\u0029",
-            "name": "initializeConfiguration",
             "summary": "",
-            "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_initializeConfiguration"
+            "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_boot"
         },                {
             "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003AregisterPageModels\u0028\u0029",
             "name": "registerPageModels",
-            "summary": "Register\u0020the\u0020page\u0020model\u0020classes\u0020that\u0020Hyde\u0020should\u0020use.",
+            "summary": "",
             "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_registerPageModels"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003AregisterModuleServiceProviders\u0028\u0029",
-            "name": "registerModuleServiceProviders",
-            "summary": "Register\u0020module\u0020service\u0020providers.",
-            "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_registerModuleServiceProviders"
         },                {
             "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003A\u0024kernel",
             "name": "kernel",
@@ -6270,6 +6265,11 @@ Search.appendIndex(
             "name": "Providers",
             "summary": "",
             "url": "namespaces/hyde-foundation-providers.html"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Services",
+            "name": "Services",
+            "summary": "",
+            "url": "namespaces/hyde-foundation-services.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions",
             "name": "Actions",
