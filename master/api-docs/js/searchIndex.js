@@ -1126,35 +1126,35 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020bootstrap\u0020classes\u0020for\u0020the\u0020application.",
             "url": "classes/Hyde-Foundation-ConsoleKernel.html#method_bootstrappers"
         },                {
-            "fqsen": "\\Hyde\\Foundation\\Facades\\FileCollection",
-            "name": "FileCollection",
+            "fqsen": "\\Hyde\\Foundation\\Facades\\Files",
+            "name": "Files",
             "summary": "",
-            "url": "classes/Hyde-Foundation-Facades-FileCollection.html"
+            "url": "classes/Hyde-Foundation-Facades-Files.html"
         },                {
-            "fqsen": "\\Hyde\\Foundation\\Facades\\FileCollection\u003A\u003AgetFacadeRoot\u0028\u0029",
+            "fqsen": "\\Hyde\\Foundation\\Facades\\Files\u003A\u003AgetFacadeRoot\u0028\u0029",
             "name": "getFacadeRoot",
             "summary": "",
-            "url": "classes/Hyde-Foundation-Facades-FileCollection.html#method_getFacadeRoot"
+            "url": "classes/Hyde-Foundation-Facades-Files.html#method_getFacadeRoot"
         },                {
-            "fqsen": "\\Hyde\\Foundation\\Facades\\PageCollection",
-            "name": "PageCollection",
+            "fqsen": "\\Hyde\\Foundation\\Facades\\Pages",
+            "name": "Pages",
             "summary": "",
-            "url": "classes/Hyde-Foundation-Facades-PageCollection.html"
+            "url": "classes/Hyde-Foundation-Facades-Pages.html"
         },                {
-            "fqsen": "\\Hyde\\Foundation\\Facades\\PageCollection\u003A\u003AgetFacadeRoot\u0028\u0029",
+            "fqsen": "\\Hyde\\Foundation\\Facades\\Pages\u003A\u003AgetFacadeRoot\u0028\u0029",
             "name": "getFacadeRoot",
             "summary": "",
-            "url": "classes/Hyde-Foundation-Facades-PageCollection.html#method_getFacadeRoot"
+            "url": "classes/Hyde-Foundation-Facades-Pages.html#method_getFacadeRoot"
         },                {
-            "fqsen": "\\Hyde\\Foundation\\Facades\\Router",
-            "name": "Router",
+            "fqsen": "\\Hyde\\Foundation\\Facades\\Routes",
+            "name": "Routes",
             "summary": "",
-            "url": "classes/Hyde-Foundation-Facades-Router.html"
+            "url": "classes/Hyde-Foundation-Facades-Routes.html"
         },                {
-            "fqsen": "\\Hyde\\Foundation\\Facades\\Router\u003A\u003AgetFacadeRoot\u0028\u0029",
+            "fqsen": "\\Hyde\\Foundation\\Facades\\Routes\u003A\u003AgetFacadeRoot\u0028\u0029",
             "name": "getFacadeRoot",
             "summary": "",
-            "url": "classes/Hyde-Foundation-Facades-Router.html#method_getFacadeRoot"
+            "url": "classes/Hyde-Foundation-Facades-Routes.html#method_getFacadeRoot"
         },                {
             "fqsen": "\\Hyde\\Foundation\\HydeKernel",
             "name": "HydeKernel",
