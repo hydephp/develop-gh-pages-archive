@@ -1081,6 +1081,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_runDiscovery"
         },                {
+            "fqsen": "\\Hyde\\Foundation\\Concerns\\BaseFoundationCollection\u003A\u003ArunExtensionCallbacks\u0028\u0029",
+            "name": "runExtensionCallbacks",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_runExtensionCallbacks"
+        },                {
             "fqsen": "\\Hyde\\Foundation\\Concerns\\BaseFoundationCollection\u003A\u003Aboot\u0028\u0029",
             "name": "boot",
             "summary": "",
@@ -1170,6 +1175,16 @@ Search.appendIndex(
             "name": "getFacadeRoot",
             "summary": "",
             "url": "classes/Hyde-Foundation-Facades-Routes.html#method_getFacadeRoot"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\HydeCoreExtension",
+            "name": "HydeCoreExtension",
+            "summary": "When\u0020creating\u0020a\u0020HydePHP\u0020extension,\u0020you\u0020should\u0020create\u0020a\u0020class\u0020that\u0020extends\u0020this\u0020one.",
+            "url": "classes/Hyde-Foundation-HydeCoreExtension.html"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\HydeCoreExtension\u003A\u003AgetPageClasses\u0028\u0029",
+            "name": "getPageClasses",
+            "summary": "If\u0020your\u0020extension\u0020adds\u0020new\u0020discoverable\u0020page\u0020classes,\u0020you\u0020should\u0020register\u0020them\u0020here.",
+            "url": "classes/Hyde-Foundation-HydeCoreExtension.html#method_getPageClasses"
         },                {
             "fqsen": "\\Hyde\\Foundation\\HydeKernel",
             "name": "HydeKernel",
@@ -1261,11 +1276,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-HydeKernel.html#property_booted"
         },                {
-            "fqsen": "\\Hyde\\Foundation\\HydeKernel\u003A\u003A\u0024pageClasses",
-            "name": "pageClasses",
-            "summary": "",
-            "url": "classes/Hyde-Foundation-HydeKernel.html#property_pageClasses"
-        },                {
             "fqsen": "\\Hyde\\Foundation\\HydeKernel\u003A\u003A\u0024extensions",
             "name": "extensions",
             "summary": "",
@@ -1300,6 +1310,11 @@ Search.appendIndex(
             "name": "runDiscovery",
             "summary": "",
             "url": "classes/Hyde-Foundation-Kernel-FileCollection.html#method_runDiscovery"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Kernel\\FileCollection\u003A\u003ArunExtensionCallbacks\u0028\u0029",
+            "name": "runExtensionCallbacks",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Kernel-FileCollection.html#method_runExtensionCallbacks"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\FileCollection\u003A\u003AdiscoverFilesFor\u0028\u0029",
             "name": "discoverFilesFor",
@@ -1485,6 +1500,11 @@ Search.appendIndex(
             "name": "runDiscovery",
             "summary": "",
             "url": "classes/Hyde-Foundation-Kernel-RouteCollection.html#method_runDiscovery"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Kernel\\RouteCollection\u003A\u003ArunExtensionCallbacks\u0028\u0029",
+            "name": "runExtensionCallbacks",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Kernel-RouteCollection.html#method_runExtensionCallbacks"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Providers\\ConfigurationServiceProvider",
             "name": "ConfigurationServiceProvider",
@@ -4100,11 +4120,6 @@ Search.appendIndex(
             "name": "boot",
             "summary": "",
             "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_boot"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003AregisterPageModels\u0028\u0029",
-            "name": "registerPageModels",
-            "summary": "",
-            "url": "classes/Hyde-Framework-HydeServiceProvider.html#method_registerPageModels"
         },                {
             "fqsen": "\\Hyde\\Framework\\HydeServiceProvider\u003A\u003A\u0024kernel",
             "name": "kernel",
