@@ -346,6 +346,11 @@ Search.appendIndex(
             "summary": "The\u0020base\u0020handle\u0020method\u0020that\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes.",
             "url": "classes/Hyde-Console-Commands-PublishConfigsCommand.html#method_handle"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\PublishConfigsCommand\u003A\u003AparseTagFromSelection\u0028\u0029",
+            "name": "parseTagFromSelection",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-PublishConfigsCommand.html#method_parseTagFromSelection"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PublishConfigsCommand\u003A\u003A\u0024signature",
             "name": "signature",
             "summary": "",
@@ -706,6 +711,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-ConsoleServiceProvider.html#method_register"
         },                {
+            "fqsen": "\\Hyde\\Console\\ConsoleServiceProvider\u003A\u003Alogo\u0028\u0029",
+            "name": "logo",
+            "summary": "",
+            "url": "classes/Hyde-Console-ConsoleServiceProvider.html#method_logo"
+        },                {
             "fqsen": "\\Hyde\\Console\\ConsoleServiceProvider\u003A\u003Aboot\u0028\u0029",
             "name": "boot",
             "summary": "",
@@ -1050,6 +1060,16 @@ Search.appendIndex(
             "name": "registerBaseBindings",
             "summary": "\u007B\u0040inheritdoc\u007D",
             "url": "classes/Hyde-Foundation-Application.html#method_registerBaseBindings"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Application\u003A\u003AgetCachedPackagesPath\u0028\u0029",
+            "name": "getCachedPackagesPath",
+            "summary": "Get\u0020the\u0020path\u0020to\u0020the\u0020cached\u0020packages.php\u0020file.",
+            "url": "classes/Hyde-Foundation-Application.html#method_getCachedPackagesPath"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Application\u003A\u003A\u0024storagePath",
+            "name": "storagePath",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Application.html#property_storagePath"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Concerns\\BaseFoundationCollection",
             "name": "BaseFoundationCollection",
@@ -6255,6 +6275,11 @@ Search.appendIndex(
             "name": "Facades",
             "summary": "",
             "url": "namespaces/hyde-foundation-facades.html"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Internal",
+            "name": "Internal",
+            "summary": "",
+            "url": "namespaces/hyde-foundation-internal.html"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel",
             "name": "Kernel",
