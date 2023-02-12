@@ -268,7 +268,7 @@
         <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Hyde favours <a href="https://en.wikipedia.org/wiki/Convention_over_configuration">&quot;Convention over Configuration&quot;</a>
 and comes preconfigured with sensible defaults. However, Hyde also strives to be modular and endlessly customizable if you need it. This page guides you through the many options available!</p>
-<p>When referencing configuration options, we often use &quot;dot notation&quot; to specify the configuration file. For example, <code>config('site.name')</code> means that we are looking for the <code>name</code> option in the <code>config/site.php</code> file.</p>
+<p>When referencing configuration options, we often use &quot;dot notation&quot; to specify the configuration file. For example, <code>config('hyde.name')</code> means that we are looking for the <code>name</code> option in the <code>config/hyde.php</code> file.</p>
 <p>If you want to reference these configuration options in your Blade views, or other integrations, please take a look at the <a href="https://laravel.com/docs/9.x/configuration">Laravel Documentation</a>.</p>
 <h3>Front Matter or Configuration Files?<a id="front-matter-or-configuration-files" href="#front-matter-or-configuration-files" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>In some cases, the same options can be set in the front matter of a page or in a configuration file. Both ways are always documented, and it's up to you to choose which one you prefer. Note that in most cases, if a setting is set in both the front matter and the configuration file, the front matter setting will take precedence.</p>
@@ -286,12 +286,8 @@ and comes preconfigured with sensible defaults. However, Hyde also strives to be
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/hydephp/hyde/blob/master/config/site.php" rel="nofollow noopener">site.php</a></td>
-<td>Configuration file for the site presentation settings, like site name and base URL.</td>
-</tr>
-<tr>
 <td><a href="https://github.com/hydephp/hyde/blob/master/config/hyde.php" rel="nofollow noopener">hyde.php</a></td>
-<td>HydePHP Framework settings, like what features to enable, and navigation menus.</td>
+<td>Main HydePHP configuration file. Used for things ranging from site name and base URL to navigation menus and what features to enable.</td>
 </tr>
 <tr>
 <td><a href="https://github.com/hydephp/hyde/blob/master/config/docs.php" rel="nofollow noopener">docs.php</a></td>
@@ -303,7 +299,7 @@ and comes preconfigured with sensible defaults. However, Hyde also strives to be
 </tr>
 </tbody>
 </table>
-<blockquote class="info"><p>Tip: The values in site.php can also be set in YAML by creating a hyde.yml file in the root of your project. See <a href="#yaml-configuration">#yaml-configuration</a> for more information.</p></blockquote>
+<blockquote class="info"><p>Tip: The values in hyde.php can also be set in YAML by creating a hyde.yml file in the root of your project. See <a href="#yaml-configuration">#yaml-configuration</a> for more information.</p></blockquote>
 <h3>Laravel &amp; Package Configuration Files<a id="laravel--package-configuration-files" href="#laravel--package-configuration-files" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Since HydePHP is based on Laravel we also have a few configuration files related to them. You probably don't need to edit any of these unless you want to make changes to the application core.</p>
 <table>
@@ -315,7 +311,7 @@ and comes preconfigured with sensible defaults. However, Hyde also strives to be
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/hydephp/hyde/blob/master/config/app.php" rel="nofollow noopener">app.php</a></td>
+<td><a href="https://github.com/hydephp/hyde/blob/master/app/config.php" rel="nofollow noopener">app.php</a></td>
 <td>Configures the underlying Laravel application.</td>
 </tr>
 <tr>
@@ -336,6 +332,7 @@ and comes preconfigured with sensible defaults. However, Hyde also strives to be
 </tr>
 </tbody>
 </table>
+<p>If any of these files are missing, you can run <code>php hyde update:configs</code> to copy the default files to your project.</p>
 <h2>Configuration Options<a id="configuration-options" href="#configuration-options" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>While all options are already documented within the files, here are some further explanations of some of the options.</p>
 <h3>RSS feed generation<a id="rss-feed-generation" href="#rss-feed-generation" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
@@ -495,10 +492,10 @@ the Torchlight extension is enabled automatically when needed.</p>
 ],
 </code></pre>
 <h2>YAML Configuration<a id="yaml-configuration" href="#yaml-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>As a relatively new and experimental feature, the settings in the config/site.php can also be overridden by creating
-a hyde.yml file in the root of your project directory. Note that these cannot reference environment variables,
-and their values override any made in the PHP config.</p>
-<p>Here is an example hyde.yml file matching the default site.yml:</p>
+<p>The settings in the config/hyde.php file can also be overridden by creating a hyde.yml file in the root of your project directory.</p>
+<p>Note that these cannot reference environment variables and you cannot interact with objects and services.
+But that doesn't stop you from using both files if you want to. Just keep in mind that any values in yhe YAML file override any made in the PHP config.</p>
+<p>Here is an example hyde.yml file showing some of the available options in the normal hyde.php file.</p>
 <pre><code class="language-yaml"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>hyde.yml</small>name: HydePHP
 url: http://localhost
 pretty_urls: false
@@ -609,7 +606,7 @@ output_directory: _site
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/685" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #685</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/c30c22db2dad6d34db231ca06e75bdba0533da34"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">c30c22db2dad6d34db231ca06e75bdba0533da34</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/156db18401dfd11869e8be0759d4e60043153b46"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">156db18401dfd11869e8be0759d4e60043153b46</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/685" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
