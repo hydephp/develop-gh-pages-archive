@@ -5381,6 +5381,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Pages-Concerns-HydePage.html#method___construct"
         },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AisDiscoverable\u0028\u0029",
+            "name": "isDiscoverable",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_isDiscoverable"
+        },                {
             "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "Get\u0020a\u0020page\u0020instance\u0020from\u0020the\u0020Kernel\u0027s\u0020page\u0020index\u0020by\u0020its\u0020identifier.",
@@ -5555,11 +5560,6 @@ Search.appendIndex(
             "name": "getOutputPath",
             "summary": "Get\u0020the\u0020path\u0020where\u0020the\u0020compiled\u0020page\u0020will\u0020be\u0020saved.",
             "url": "classes/Hyde-Pages-Concerns-UsesFlattenedOutputPaths.html#method_getOutputPath"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\Contracts\\DynamicPage",
-            "name": "DynamicPage",
-            "summary": "",
-            "url": "classes/Hyde-Pages-Contracts-DynamicPage.html"
         },                {
             "fqsen": "\\Hyde\\Pages\\DocumentationPage",
             "name": "DocumentationPage",
@@ -6600,11 +6600,6 @@ Search.appendIndex(
             "name": "Concerns",
             "summary": "",
             "url": "namespaces/hyde-pages-concerns.html"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\Contracts",
-            "name": "Contracts",
-            "summary": "",
-            "url": "namespaces/hyde-pages-contracts.html"
         },                {
             "fqsen": "\\Hyde\\Support\\Concerns",
             "name": "Concerns",
