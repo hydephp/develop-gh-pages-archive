@@ -2156,6 +2156,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_getSourceDirectoryConfiguration"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations\u003A\u003AgetOutputDirectoryConfiguration\u0028\u0029",
+            "name": "getOutputDirectoryConfiguration",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_getOutputDirectoryConfiguration"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations\u003A\u003AgetPageConfiguration\u0028\u0029",
+            "name": "getPageConfiguration",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_getPageConfiguration"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\TracksExecutionTime",
             "name": "TracksExecutionTime",
             "summary": "",

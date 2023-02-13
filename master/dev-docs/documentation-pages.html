@@ -449,10 +449,14 @@ Any pages without the group front matter will get put in the &quot;Other&quot; g
 including the documentation pages. Here is a high level overview for quick reference though.</p>
 <h3>Output directory<a id="output-directory" href="#output-directory" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>If you want to store the compiled documentation pages in a different directory than the default 'docs' directory,
-for example to specify a version like the Hyde docs does, you can specify the output directory in the Docs configuration file.</p>
-<pre><code class="language-php">'output_directory' =&gt; 'docs' // default
-'output_directory' =&gt; 'docs/master' // What the Hyde docs use
+for example to specify a version like the Hyde docs does, you can specify the output directory in the Hyde configuration file.
+The path is relative to the site output, typically <code>_site</code>.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_config/hyde.php</small>'output_directories' =&gt; [
+    \Hyde\Pages\DocumentationPage::class =&gt; 'docs' // default
+    \Hyde\Pages\DocumentationPage::class =&gt; 'docs/master' // What the Hyde docs use
+]
 </code></pre>
+<p>Note that you need to take care as to not set it to something that may conflict with other parts, such as media or posts directories.</p>
 <h3>Automatic navigation menu<a id="automatic-navigation-menu" href="#automatic-navigation-menu" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>By default, a link to the documentation page is added to the navigation menu when an index.md file is found in the <code>_docs</code> directory. Please see the <a href="customization#navigation-menu--sidebar">the customization page</a> for more information.</p>
 <h3>Sidebar header name<a id="sidebar-header-name" href="#sidebar-header-name" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
