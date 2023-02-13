@@ -2146,6 +2146,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_useMediaDirectory"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Concerns\\RegistersFileLocations\u003A\u003AgetSourceDirectoryConfiguration\u0028\u0029",
+            "name": "getSourceDirectoryConfiguration",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Concerns-RegistersFileLocations.html#method_getSourceDirectoryConfiguration"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\TracksExecutionTime",
             "name": "TracksExecutionTime",
             "summary": "",
