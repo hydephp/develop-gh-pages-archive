@@ -856,6 +856,11 @@ Search.appendIndex(
             "summary": "Get\u0020an\u0020array\u0020representation\u0020of\u0020the\u0020features\u0020and\u0020their\u0020status.",
             "url": "classes/Hyde-Facades-Features.html#method_toArray"
         },                {
+            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AgetDefaultOptions\u0028\u0029",
+            "name": "getDefaultOptions",
+            "summary": "",
+            "url": "classes/Hyde-Facades-Features.html#method_getDefaultOptions"
+        },                {
             "fqsen": "\\Hyde\\Facades\\Filesystem",
             "name": "Filesystem",
             "summary": "Proxies\u0020the\u0020Laravel\u0020File\u0020facade\u0020with\u0020extra\u0020features\u0020and\u0020helpers\u0020tailored\u0020for\u0020HydePHP.",
