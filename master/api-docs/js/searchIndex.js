@@ -201,6 +201,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-DebugCommand.html#method_handle"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\DebugCommand\u003A\u003AenabledFeatures\u0028\u0029",
+            "name": "enabledFeatures",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-DebugCommand.html#method_enabledFeatures"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\DebugCommand\u003A\u003A\u0024signature",
             "name": "signature",
             "summary": "",
@@ -310,6 +315,11 @@ Search.appendIndex(
             "name": "createPostFile",
             "summary": "",
             "url": "classes/Hyde-Console-Commands-MakePostCommand.html#method_createPostFile"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\MakePostCommand\u003A\u003AaskForString\u0028\u0029",
+            "name": "askForString",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-MakePostCommand.html#method_askForString"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\MakePostCommand\u003A\u003A\u0024signature",
             "name": "signature",
@@ -2535,6 +2545,11 @@ Search.appendIndex(
             "name": "isRemote",
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#method_isRemote"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\FeaturedImageFactory\u003A\u003AgetStringMatter\u0028\u0029",
+            "name": "getStringMatter",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#method_getStringMatter"
         },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\FeaturedImageFactory\u003A\u003ASCHEMA",
             "name": "SCHEMA",
@@ -6341,10 +6356,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Support-ReadingTime.html#method_generate"
         },                {
-            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003AWORDS_PER_MINUTE",
-            "name": "WORDS_PER_MINUTE",
+            "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003A\u0024wordsPerMinute",
+            "name": "wordsPerMinute",
             "summary": "",
-            "url": "classes/Hyde-Support-ReadingTime.html#constant_WORDS_PER_MINUTE"
+            "url": "classes/Hyde-Support-ReadingTime.html#property_wordsPerMinute"
         },                {
             "fqsen": "\\Hyde\\Support\\ReadingTime\u003A\u003A\u0024text",
             "name": "text",
