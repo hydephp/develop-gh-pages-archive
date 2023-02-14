@@ -4406,36 +4406,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-BuildTaskService.html#property_output"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\ChecksumService",
-            "name": "ChecksumService",
-            "summary": "Helper\u0020methods\u0020to\u0020interact\u0020with\u0020the\u0020virtual\u0020filecache\u0020that\u0020is\u0020used\u0020to\u0020compare\npublished\u0020Blade\u0020views\u0020with\u0020the\u0020original\u0020Blade\u0020views\u0020in\u0020the\u0020Hyde\u0020Framework\nso\u0020the\u0020user\u0020can\u0020be\u0020warned\u0020before\u0020overwriting\u0020their\u0020customizations.",
-            "url": "classes/Hyde-Framework-Services-ChecksumService.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\ChecksumService\u003A\u003AgetFilecache\u0028\u0029",
-            "name": "getFilecache",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-ChecksumService.html#method_getFilecache"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\ChecksumService\u003A\u003AgetChecksums\u0028\u0029",
-            "name": "getChecksums",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-ChecksumService.html#method_getChecksums"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\ChecksumService\u003A\u003AchecksumMatchesAny\u0028\u0029",
-            "name": "checksumMatchesAny",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-ChecksumService.html#method_checksumMatchesAny"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\ChecksumService\u003A\u003Aunixsum\u0028\u0029",
-            "name": "unixsum",
-            "summary": "A\u0020EOL\u0020agnostic\u0020wrapper\u0020for\u0020calculating\u0020MD5\u0020checksums.",
-            "url": "classes/Hyde-Framework-Services-ChecksumService.html#method_unixsum"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\ChecksumService\u003A\u003AunixsumFile\u0028\u0029",
-            "name": "unixsumFile",
-            "summary": "Shorthand\u0020for\u0020\u007B\u0040see\u0020static\u003A\u003Aunixsum\u0028\u0029\u007D\u0020but\u0020loads\u0020a\u0020file.",
-            "url": "classes/Hyde-Framework-Services-ChecksumService.html#method_unixsumFile"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService",
             "name": "DiscoveryService",
             "summary": "The\u0020core\u0020service\u0020that\u0020powers\u0020all\u0020HydePHP\u0020file\u0020auto\u002Ddiscovery.",
