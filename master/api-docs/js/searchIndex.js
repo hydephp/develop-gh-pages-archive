@@ -1501,6 +1501,11 @@ Search.appendIndex(
             "summary": "The\u0020RouteCollection\u0020contains\u0020all\u0020the\u0020routes,\u0020making\u0020it\u0020the\u0020Pseudo\u002DRouter\u0020for\u0020Hyde.",
             "url": "classes/Hyde-Foundation-Kernel-RouteCollection.html"
         },                {
+            "fqsen": "\\Hyde\\Foundation\\Kernel\\RouteCollection\u003A\u003AgetRoute\u0028\u0029",
+            "name": "getRoute",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Kernel-RouteCollection.html#method_getRoute"
+        },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\RouteCollection\u003A\u003AgetRoutes\u0028\u0029",
             "name": "getRoutes",
             "summary": "",
