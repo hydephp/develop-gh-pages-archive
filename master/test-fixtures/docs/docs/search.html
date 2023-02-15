@@ -64,7 +64,7 @@
     </ul>
 </nav>
 <aside id="sidebar" x-cloak :class="sidebarOpen ? 'visible left-0' : 'invisible -left-64 md:visible md:left-0'"
-       class="bg-gray-100 dark:bg-gray-800 dark:text-gray-200 h-screen w-64 fixed z-30 md:block shadow-lg md:shadow-none transition-all duration-300">
+       class="bg-gray-100 dark:bg-gray-800 dark:text-gray-200 h-screen w-64 fixed z-30 md:flex flex-col shadow-lg md:shadow-none transition-all duration-300">
     <header id="sidebar-header" class="h-16">
         <div id="sidebar-brand" class="flex items-center justify-between h-16 py-4 px-2">
 	<strong class="px-2">
@@ -79,7 +79,7 @@
 </button>
 </div>    </header>
     <nav id="sidebar-navigation"
-        class="p-4 overflow-y-auto border-y border-gray-300 dark:border-[#1b2533] h-[calc(100vh_-_8rem)]">
+        class="p-4 overflow-y-auto border-y border-gray-300 dark:border-[#1b2533]">
         
                     <ul id="sidebar-navigation" role="list">
 		<li class="sidebar-group mb-4 mt-4 first:mt-0" role="listitem">
@@ -140,7 +140,7 @@
 	</li>					</ul>
 	</li>
 	</ul>            </nav>
-            <footer id="sidebar-footer" class="h-16 absolute p-4 w-full bottom-0 left-0 text-center leading-8">
+            <footer id="sidebar-footer" class="h-16 p-4 w-full mt-auto bottom-0 left-0 text-center leading-8">
             <p>
 	<a href="../index.html">Back to home page</a>
 </p>        </footer>
