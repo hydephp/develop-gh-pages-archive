@@ -1101,6 +1101,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_runExtensionCallbacks"
         },                {
+            "fqsen": "\\Hyde\\Foundation\\Concerns\\BaseFoundationCollection\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_init"
+        },                {
             "fqsen": "\\Hyde\\Foundation\\Concerns\\BaseFoundationCollection\u003A\u003Aboot\u0028\u0029",
             "name": "boot",
             "summary": "",
