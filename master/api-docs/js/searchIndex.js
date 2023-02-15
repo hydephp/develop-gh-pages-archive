@@ -5961,15 +5961,15 @@ Search.appendIndex(
             "summary": "Create\u0020a\u0020new\u0020redirect\u0020page\u0020file\u0020in\u0020the\u0020project\u0027s\u0020site\u0020output\u0020directory.",
             "url": "classes/Hyde-Support-Models-Redirect.html#method___construct"
         },                {
-            "fqsen": "\\Hyde\\Support\\Models\\Redirect\u003A\u003Amake\u0028\u0029",
-            "name": "make",
+            "fqsen": "\\Hyde\\Support\\Models\\Redirect\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
             "summary": "",
-            "url": "classes/Hyde-Support-Models-Redirect.html#method_make"
+            "url": "classes/Hyde-Support-Models-Redirect.html#method_create"
         },                {
-            "fqsen": "\\Hyde\\Support\\Models\\Redirect\u003A\u003Arender\u0028\u0029",
-            "name": "render",
-            "summary": "",
-            "url": "classes/Hyde-Support-Models-Redirect.html#method_render"
+            "fqsen": "\\Hyde\\Support\\Models\\Redirect\u003A\u003Acompile\u0028\u0029",
+            "name": "compile",
+            "summary": "Get\u0020the\u0020contents\u0020that\u0020will\u0020be\u0020saved\u0020to\u0020disk\u0020for\u0020this\u0020page.",
+            "url": "classes/Hyde-Support-Models-Redirect.html#method_compile"
         },                {
             "fqsen": "\\Hyde\\Support\\Models\\Redirect\u003A\u003Astore\u0028\u0029",
             "name": "store",
