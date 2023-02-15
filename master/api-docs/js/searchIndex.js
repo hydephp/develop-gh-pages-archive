@@ -5648,7 +5648,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Create\u0020a\u0020new\u0020virtual\u0020page\u0020instance.",
+            "summary": "Create\u0020a\u0020new\u0020in\u002Dmemory\/virtual\u0020page\u0020instance.",
             "url": "classes/Hyde-Pages-InMemoryPage.html#method___construct"
         },                {
             "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003AgetContents\u0028\u0029",
