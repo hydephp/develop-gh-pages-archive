@@ -4331,14 +4331,9 @@ Search.appendIndex(
             "summary": "The\u0020default\u0020HydeFront\u0020version\u0020to\u0020load.",
             "url": "classes/Hyde-Framework-Services-AssetService.html#property_version"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AconstructCdnPath\u0028\u0029",
-            "name": "constructCdnPath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-AssetService.html#method_constructCdnPath"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AcdnLink\u0028\u0029",
             "name": "cdnLink",
-            "summary": "Alias\u0020for\u0020constructCdnPath.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Services-AssetService.html#method_cdnLink"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AmediaLink\u0028\u0029",
@@ -4355,6 +4350,11 @@ Search.appendIndex(
             "name": "injectTailwindConfig",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-AssetService.html#method_injectTailwindConfig"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AconstructCdnPath\u0028\u0029",
+            "name": "constructCdnPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-AssetService.html#method_constructCdnPath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AgetCacheBustKey\u0028\u0029",
             "name": "getCacheBustKey",
