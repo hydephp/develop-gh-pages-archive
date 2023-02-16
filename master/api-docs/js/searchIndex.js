@@ -761,6 +761,41 @@ Search.appendIndex(
             "summary": "Get\u0020all\u0020the\u0020defined\u0020Post\u0020Author\u0020instances\u0020from\u0020the\u0020config.",
             "url": "classes/Hyde-Facades-Author.html#method_all"
         },                {
+            "fqsen": "\\Hyde\\Facades\\Config",
+            "name": "Config",
+            "summary": "An\u0020extension\u0020of\u0020the\u0020Laravel\u0020Config\u0020facade\u0020with\u0020extra\naccessors\u0020that\u0020ensure\u0020the\u0020types\u0020of\u0020the\u0020returned\u0020values.",
+            "url": "classes/Hyde-Facades-Config.html"
+        },                {
+            "fqsen": "\\Hyde\\Facades\\Config\u003A\u003AgetArray\u0028\u0029",
+            "name": "getArray",
+            "summary": "",
+            "url": "classes/Hyde-Facades-Config.html#method_getArray"
+        },                {
+            "fqsen": "\\Hyde\\Facades\\Config\u003A\u003AgetString\u0028\u0029",
+            "name": "getString",
+            "summary": "",
+            "url": "classes/Hyde-Facades-Config.html#method_getString"
+        },                {
+            "fqsen": "\\Hyde\\Facades\\Config\u003A\u003AgetInt\u0028\u0029",
+            "name": "getInt",
+            "summary": "",
+            "url": "classes/Hyde-Facades-Config.html#method_getInt"
+        },                {
+            "fqsen": "\\Hyde\\Facades\\Config\u003A\u003AgetBool\u0028\u0029",
+            "name": "getBool",
+            "summary": "",
+            "url": "classes/Hyde-Facades-Config.html#method_getBool"
+        },                {
+            "fqsen": "\\Hyde\\Facades\\Config\u003A\u003AgetFloat\u0028\u0029",
+            "name": "getFloat",
+            "summary": "",
+            "url": "classes/Hyde-Facades-Config.html#method_getFloat"
+        },                {
+            "fqsen": "\\Hyde\\Facades\\Config\u003A\u003Avalidated\u0028\u0029",
+            "name": "validated",
+            "summary": "",
+            "url": "classes/Hyde-Facades-Config.html#method_validated"
+        },                {
             "fqsen": "\\Hyde\\Facades\\Features",
             "name": "Features",
             "summary": "Allows\u0020features\u0020to\u0020be\u0020enabled\u0020and\u0020disabled\u0020in\u0020a\u0020simple\u0020object\u002Doriented\u0020manner.",
