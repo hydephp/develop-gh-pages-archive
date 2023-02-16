@@ -4361,6 +4361,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-AssetService.html#method_getCacheBustKey"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003A\u0024hydefrontUrl",
+            "name": "hydefrontUrl",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-AssetService.html#property_hydefrontUrl"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\BuildService",
             "name": "BuildService",
             "summary": "Moves\u0020logic\u0020from\u0020the\u0020build\u0020command\u0020to\u0020a\u0020service.",
