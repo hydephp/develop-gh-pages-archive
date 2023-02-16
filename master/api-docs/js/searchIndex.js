@@ -4321,6 +4321,11 @@ Search.appendIndex(
             "summary": "Handles\u0020the\u0020retrieval\u0020of\u0020core\u0020asset\u0020files.\u0020Commonly\u0020used\u0020through\u0020the\u0020Asset\u0020facade.",
             "url": "classes/Hyde-Framework-Services-AssetService.html"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-AssetService.html#method___construct"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003A\u0024version",
             "name": "version",
             "summary": "The\u0020default\u0020HydeFront\u0020version\u0020to\u0020load.",
