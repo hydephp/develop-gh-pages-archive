@@ -82,21 +82,37 @@
         class="p-2 overflow-y-auto border-y border-gray-300 dark:border-[#1b2533] h-full">
         
                                     <ul id="sidebar-navigation-items" role="list">
-            <li class="sidebar-group" role="listitem">
-            <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center">
-                <h4 class="sidebar-group-heading text-base font-semibold">Introduction</h4>
+	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
+            <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
+                <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Introduction</h4>
+                <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
+                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
+                    </svg>
+                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
+                    </svg>
+                </button>
             </header>
-            <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list">
+            <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
 		href="../docs/cover.html">Cover Page</a>
 	</li>                            </ul>
         </li>
-            <li class="sidebar-group" role="listitem">
-            <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center">
-                <h4 class="sidebar-group-heading text-base font-semibold">Chapters</h4>
+	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: true }">
+            <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
+                <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Chapters</h4>
+                <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
+                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
+                    </svg>
+                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
+                    </svg>
+                </button>
             </header>
-            <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list">
+            <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10"
 		href="../docs/down-the-rabbithole.html" aria-current="true">Down the Rabbit-Hole</a>
@@ -137,17 +153,25 @@
 		href="../docs/alices-evidence.html">Alice&#039;s Evidence</a>
 	</li>                            </ul>
         </li>
-            <li class="sidebar-group" role="listitem">
-            <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center">
-                <h4 class="sidebar-group-heading text-base font-semibold">Other</h4>
+	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
+            <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
+                <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Other</h4>
+                <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
+                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
+                    </svg>
+                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
+                    </svg>
+                </button>
             </header>
-            <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list">
+            <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
 		href="../docs/extra-information.html">Extra information</a>
 	</li>                            </ul>
         </li>
-    </ul>                        </nav>
+	</ul>                        </nav>
             <footer id="sidebar-footer" class="h-16 p-4 w-full bottom-0 left-0 text-center leading-8">
             <p>
 	<a href="../index.html">Back to home page</a>
