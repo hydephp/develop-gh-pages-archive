@@ -3751,6 +3751,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-DocumentationSidebar.html#method_getItemsInGroup"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DocumentationSidebar\u003A\u003AisGroupActive\u0028\u0029",
+            "name": "isGroupActive",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-DocumentationSidebar.html#method_isGroupActive"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DocumentationSidebar\u003A\u003AshouldItemBeHidden\u0028\u0029",
             "name": "shouldItemBeHidden",
             "summary": "",
