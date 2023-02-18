@@ -5466,6 +5466,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_fileExtension"
         },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AsetSourceDirectory\u0028\u0029",
+            "name": "setSourceDirectory",
+            "summary": "Set\u0020the\u0020output\u0020directory\u0020for\u0020the\u0020HydePage\u0020class.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_setSourceDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AsetOutputDirectory\u0028\u0029",
+            "name": "setOutputDirectory",
+            "summary": "Set\u0020the\u0020source\u0020directory\u0020for\u0020the\u0020HydePage\u0020class.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_setOutputDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AsetFileExtension\u0028\u0029",
+            "name": "setFileExtension",
+            "summary": "Set\u0020the\u0020file\u0020extension\u0020for\u0020the\u0020HydePage\u0020class.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_setFileExtension"
+        },                {
             "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AsourcePath\u0028\u0029",
             "name": "sourcePath",
             "summary": "Qualify\u0020a\u0020page\u0020identifier\u0020into\u0020a\u0020local\u0020file\u0020path\u0020for\u0020the\u0020page\u0020source\u0020file\u0020relative\u0020to\u0020the\u0020project\u0020root.",
