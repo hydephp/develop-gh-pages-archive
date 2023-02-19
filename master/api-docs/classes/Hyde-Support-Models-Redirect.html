@@ -306,7 +306,7 @@ That way, your redirect will be saved by the standard build command.</p>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd>Dynamically handle calls to the class.</dd>
+<dd>Dynamically handle macro calls to the class.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Support-Models-Redirect.html#method___construct">__construct()</a>
@@ -390,7 +390,7 @@ That way, your redirect will be saved by the standard build command.</p>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
+<dd>Get the contents of the page. This will be saved as-is to the output file when this strategy is used.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getIdentifier">getIdentifier()</a>
@@ -585,6 +585,13 @@ That way, your redirect will be saved by the standard build command.</p>
     <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_toCoreDataObject">toCoreDataObject()</a>
     <span>
                                 &nbsp;: <a href="classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html"><abbr title="\Hyde\Framework\Factories\Concerns\CoreDataObject">CoreDataObject</abbr></a>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Pages-InMemoryPage.html#method_callMacro">callMacro()</a>
+    <span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
@@ -1210,11 +1217,11 @@ That way, your redirect will be saved by the standard build command.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/InMemoryPage.php"><a href="files/packages-framework-src-pages-inmemorypage.html"><abbr title="packages/framework/src/Pages/InMemoryPage.php">InMemoryPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Dynamically handle calls to the class.</p>
+        <p class="phpdocumentor-summary">Dynamically handle macro calls to the class.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1748,17 +1755,17 @@ or simply extend the class and override the method yourself, either in a standar
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/InMemoryPage.php"><a href="files/packages-framework-src-pages-inmemorypage.html"><abbr title="packages/framework/src/Pages/InMemoryPage.php">InMemoryPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Get the contents of the page. This will be saved as-is to the output file when this strategy is used.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getContents</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -2109,7 +2116,7 @@ but also defines the output location.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/InMemoryPage.php"><a href="files/packages-framework-src-pages-inmemorypage.html"><abbr title="packages/framework/src/Pages/InMemoryPage.php">InMemoryPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -2119,7 +2126,10 @@ but also defines the output location.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">macro</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$macro</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>Unlike most macros you might be used to, these are not static, meaning they belong to the instance.
+If you have the need for a macro to be used for multiple pages, you should create a custom page class instead.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2872,6 +2882,58 @@ but also defines the output location.</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html"><abbr title="\Hyde\Framework\Factories\Concerns\CoreDataObject">CoreDataObject</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_callMacro">
+        callMacro()
+        <a href="classes/Hyde-Pages-InMemoryPage.html#method_callMacro" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/InMemoryPage.php"><a href="files/packages-framework-src-pages-inmemorypage.html"><abbr title="packages/framework/src/Pages/InMemoryPage.php">InMemoryPage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">136</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">callMacro</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$macro</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$macro</span>
+                : <span class="phpdocumentor-signature__argument__return-type">callable</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parameters</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
         
     

@@ -5718,12 +5718,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003AgetContents\u0028\u0029",
             "name": "getContents",
-            "summary": "",
+            "summary": "Get\u0020the\u0020contents\u0020of\u0020the\u0020page.\u0020This\u0020will\u0020be\u0020saved\u0020as\u002Dis\u0020to\u0020the\u0020output\u0020file\u0020when\u0020this\u0020strategy\u0020is\u0020used.",
             "url": "classes/Hyde-Pages-InMemoryPage.html#method_getContents"
         },                {
             "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003AgetBladeView\u0028\u0029",
             "name": "getBladeView",
-            "summary": "Get\u0020the\u0020Blade\u0020template\u0020for\u0020the\u0020page.",
+            "summary": "Get\u0020the\u0020view\u0020key\u0020or\u0020Blade\u0020file\u0020for\u0020the\u0020view\u0020to\u0020use\u0020to\u0020render\u0020the\u0020page\u0020contents\u0020when\u0020this\u0020strategy\u0020is\u0020used.",
             "url": "classes/Hyde-Pages-InMemoryPage.html#method_getBladeView"
         },                {
             "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003Acompile\u0028\u0029",
@@ -5738,8 +5738,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003A__call\u0028\u0029",
             "name": "__call",
-            "summary": "Dynamically\u0020handle\u0020calls\u0020to\u0020the\u0020class.",
+            "summary": "Dynamically\u0020handle\u0020macro\u0020calls\u0020to\u0020the\u0020class.",
             "url": "classes/Hyde-Pages-InMemoryPage.html#method___call"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003AcallMacro\u0028\u0029",
+            "name": "callMacro",
+            "summary": "",
+            "url": "classes/Hyde-Pages-InMemoryPage.html#method_callMacro"
         },                {
             "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",
