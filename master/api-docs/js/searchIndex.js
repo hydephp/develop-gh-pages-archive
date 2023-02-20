@@ -1426,11 +1426,6 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020absolute\u0020path\u0020to\u0020the\u0020compiled\u0020site\u0027s\u0020media\u0020directory,\u0020or\u0020a\u0020file\u0020within\u0020it.",
             "url": "classes/Hyde-Foundation-Kernel-Filesystem.html#method_siteMediaPath"
         },                {
-            "fqsen": "\\Hyde\\Foundation\\Kernel\\Filesystem\u003A\u003AvendorPath\u0028\u0029",
-            "name": "vendorPath",
-            "summary": "Works\u0020similarly\u0020to\u0020the\u0020path\u0028\u0029\u0020function,\u0020but\u0020returns\u0020a\u0020file\u0020in\u0020the\u0020Framework\u0020package.",
-            "url": "classes/Hyde-Foundation-Kernel-Filesystem.html#method_vendorPath"
-        },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\Filesystem\u003A\u003Acopy\u0028\u0029",
             "name": "copy",
             "summary": "Wrapper\u0020for\u0020the\u0020copy\u0020function,\u0020but\u0020using\u0020project\u0020relative\u0020paths.",
