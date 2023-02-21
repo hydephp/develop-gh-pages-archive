@@ -1906,10 +1906,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_parseTitle"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AparseSlug\u0028\u0029",
-            "name": "parseSlug",
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AfileName\u0028\u0029",
+            "name": "fileName",
             "summary": "",
-            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_parseSlug"
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_fileName"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AnormalizeSubdirectory\u0028\u0029",
             "name": "normalizeSubdirectory",
@@ -1956,25 +1956,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_failIfFileCannotBeSaved"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AprepareOutputDirectory\u0028\u0029",
-            "name": "prepareOutputDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_prepareOutputDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AcreateFile\u0028\u0029",
-            "name": "createFile",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_createFile"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003A\u0024title",
             "name": "title",
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#property_title"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003A\u0024slug",
-            "name": "slug",
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003A\u0024filename",
+            "name": "filename",
             "summary": "",
-            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#property_slug"
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#property_filename"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003A\u0024outputPath",
             "name": "outputPath",
