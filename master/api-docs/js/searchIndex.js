@@ -3781,6 +3781,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-DocumentationSidebar.html#method_shouldItemBeHidden"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DocumentationSidebar\u003A\u003AisPageIndexPage\u0028\u0029",
+            "name": "isPageIndexPage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-DocumentationSidebar.html#method_isPageIndexPage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DocumentationSidebar\u003A\u003AshouldIndexPageBeActive\u0028\u0029",
+            "name": "shouldIndexPageBeActive",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-DocumentationSidebar.html#method_shouldIndexPageBeActive"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DropdownNavItem",
             "name": "DropdownNavItem",
             "summary": "A\u0020navigation\u0020item\u0020that\u0020contains\u0020other\u0020navigation\u0020items.",
