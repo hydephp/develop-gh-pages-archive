@@ -5526,10 +5526,10 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020Blade\u0020template\u0020for\u0020the\u0020page.",
             "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_getBladeView"
         },                {
-            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AhtmlTitle\u0028\u0029",
-            "name": "htmlTitle",
-            "summary": "Get\u0020the\u0020page\u0020title\u0020to\u0020display\u0020in\u0020HTML\u0020tags\u0020like\u0020\u003Ctitle\u003E\u0020and\u0020\u003Cmeta\u003E\u0020tags.",
-            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_htmlTitle"
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024title",
+            "name": "title",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_title"
         },                {
             "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024metadata",
             "name": "metadata",
@@ -5575,11 +5575,6 @@ Search.appendIndex(
             "name": "matter",
             "summary": "",
             "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_matter"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024title",
-            "name": "title",
-            "summary": "",
-            "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_title"
         },                {
             "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024canonicalUrl",
             "name": "canonicalUrl",
