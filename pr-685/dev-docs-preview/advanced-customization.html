@@ -346,7 +346,7 @@ the default <code>_pages</code>, you can change the path using the following con
   <span style="color: gold">Generic build task...</span> Hello World! <span style="color: gray">Done in 0.26ms</span>
 </pre>
 <h3>Full example<a id="full-example" href="#full-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>You can also set the description, and an optional <code>then()</code> method to run after the main task has been executed. The then method is great if you want to display a status message.</p>
+<p>You can also set the message, and an optional <code>then()</code> method to run after the main task has been executed. The then method is great if you want to display a status message.</p>
 <pre><code class="language-php">&lt;?php
 
 namespace App\Actions;
@@ -355,7 +355,7 @@ use Hyde\Framework\Features\BuildTasks\BuildTask;
 
 class ExampleTask extends BuildTask
 {
-    public static string $description = 'Say hello';
+    public static string $message = 'Say hello';
 
     public function run(): void
     {
@@ -482,7 +482,7 @@ class ExampleTask extends BuildTask
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/685" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #685</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/9fa10517d163a8f7b9afbc14985bc979484299f6"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">9fa10517d163a8f7b9afbc14985bc979484299f6</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/8cd87119ea5a144253067334896dd3c59e24f843"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">8cd87119ea5a144253067334896dd3c59e24f843</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/685" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
