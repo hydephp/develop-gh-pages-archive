@@ -4826,6 +4826,16 @@ Search.appendIndex(
             "summary": "Remove\u0020trailing\u0020slashes\u0020from\u0020the\u0020start\u0020and\u0020end\u0020of\u0020a\u0020string.",
             "url": "namespaces/hyde.html#function_unslash"
         },                {
+            "fqsen": "\\Hyde\\unixsum\u0028\u0029",
+            "name": "unixsum",
+            "summary": "A\u0020EOL\u0020agnostic\u0020wrapper\u0020for\u0020calculating\u0020MD5\u0020checksums.",
+            "url": "namespaces/hyde.html#function_unixsum"
+        },                {
+            "fqsen": "\\Hyde\\unixsum_file\u0028\u0029",
+            "name": "unixsum_file",
+            "summary": "Shorthand\u0020for\u0020\u007B\u0040see\u0020unixsum\u0028\u0029\u007D\u0020but\u0020loads\u0020a\u0020file.",
+            "url": "namespaces/hyde.html#function_unixsum_file"
+        },                {
             "fqsen": "\\Hyde\\make_title\u0028\u0029",
             "name": "make_title",
             "summary": "",
