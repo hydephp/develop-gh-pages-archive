@@ -353,7 +353,7 @@ the default <code>_pages</code>, you can change the path using the following con
   <span style="color: gold">Generic build task...</span> Hello World! <span style="color: gray">Done in 0.26ms</span>
 </pre>
 <h3>Full example<a id="full-example" href="#full-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>You can also set the description, and an optional <code>then()</code> method to run after the main task has been executed. The then method is great if you want to display a status message.</p>
+<p>You can also set the message, and an optional <code>then()</code> method to run after the main task has been executed. The then method is great if you want to display a status message.</p>
 <pre><code class="language-php">&lt;?php
 
 namespace App\Actions;
@@ -362,7 +362,7 @@ use Hyde\Framework\Features\BuildTasks\BuildTask;
 
 class ExampleTask extends BuildTask
 {
-    public static string $description = 'Say hello';
+    public static string $message = 'Say hello';
 
     public function run(): void
     {
