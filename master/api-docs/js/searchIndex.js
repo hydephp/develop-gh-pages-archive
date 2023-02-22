@@ -2531,50 +2531,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#method_makeSource"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\FeaturedImageFactory\u003A\u003AmakeAltText\u0028\u0029",
-            "name": "makeAltText",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#method_makeAltText"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\FeaturedImageFactory\u003A\u003AmakeTitleText\u0028\u0029",
-            "name": "makeTitleText",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#method_makeTitleText"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\FeaturedImageFactory\u003A\u003AmakeAuthorName\u0028\u0029",
-            "name": "makeAuthorName",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#method_makeAuthorName"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\FeaturedImageFactory\u003A\u003AmakeAuthorUrl\u0028\u0029",
-            "name": "makeAuthorUrl",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#method_makeAuthorUrl"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\FeaturedImageFactory\u003A\u003AmakeCopyrightText\u0028\u0029",
-            "name": "makeCopyrightText",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#method_makeCopyrightText"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\FeaturedImageFactory\u003A\u003AmakeLicenseName\u0028\u0029",
-            "name": "makeLicenseName",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#method_makeLicenseName"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\FeaturedImageFactory\u003A\u003AmakeLicenseUrl\u0028\u0029",
-            "name": "makeLicenseUrl",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#method_makeLicenseUrl"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\FeaturedImageFactory\u003A\u003AnormalizeLocalImagePath\u0028\u0029",
             "name": "normalizeLocalImagePath",
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#method_normalizeLocalImagePath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\FeaturedImageFactory\u003A\u003AisRemote\u0028\u0029",
-            "name": "isRemote",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#method_isRemote"
         },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\FeaturedImageFactory\u003A\u003AgetStringMatter\u0028\u0029",
             "name": "getStringMatter",
@@ -2908,7 +2868,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage",
             "name": "FeaturedImage",
-            "summary": "",
+            "summary": "Object\u0020representation\u0020of\u0020a\u0020blog\u0020post\u0027s\u0020featured\u0020image.",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003A__construct\u0028\u0029",
@@ -2928,13 +2888,23 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003AsetSource\u0028\u0029",
             "name": "setSource",
-            "summary": "Called\u0020from\u0020constructor\u0020to\u0020allow\u0020child\u0020classes\u0020to\u0020validate\u0020and\u0020transform\u0020the\u0020value\u0020as\u0020needed\u0020before\u0020assignment.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_setSource"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003AgetContentLength\u0028\u0029",
             "name": "getContentLength",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_getContentLength"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_getType"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003AgetMetadataArray\u0028\u0029",
+            "name": "getMetadataArray",
+            "summary": "Used\u0020in\u0020resources\/views\/components\/post\/image.blade.php\u0020to\u0020add\u0020meta\u0020tags\u0020with\u0020itemprop\u0020attributes.",
+            "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_getMetadataArray"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003AgetAltText\u0028\u0029",
             "name": "getAltText",
@@ -3006,10 +2976,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_hasLicenseUrl"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003AgetMetadataArray\u0028\u0029",
-            "name": "getMetadataArray",
-            "summary": "Used\u0020in\u0020resources\/views\/components\/post\/image.blade.php\u0020to\u0020add\u0020meta\u0020tags\u0020with\u0020itemprop\u0020attributes.",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_getMetadataArray"
+            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_has"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003AgetContentLengthForLocalImage\u0028\u0029",
+            "name": "getContentLengthForLocalImage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_getContentLengthForLocalImage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003AgetContentLengthForRemoteImage\u0028\u0029",
+            "name": "getContentLengthForRemoteImage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_getContentLengthForRemoteImage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003AisRemote\u0028\u0029",
+            "name": "isRemote",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_isRemote"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003ATYPE_LOCAL",
+            "name": "TYPE_LOCAL",
+            "summary": "A\u0020featured\u0020image\u0020object,\u0020for\u0020a\u0020file\u0020stored\u0020locally.",
+            "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#constant_TYPE_LOCAL"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003ATYPE_REMOTE",
+            "name": "TYPE_REMOTE",
+            "summary": "A\u0020featured\u0020image\u0020object,\u0020for\u0020a\u0020file\u0020stored\u0020remotely.",
+            "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#constant_TYPE_REMOTE"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#property_type"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003A\u0024source",
             "name": "source",
@@ -3050,36 +3050,6 @@ Search.appendIndex(
             "name": "licenseUrl",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#property_licenseUrl"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\LocalFeaturedImage",
-            "name": "LocalFeaturedImage",
-            "summary": "A\u0020featured\u0020image\u0020object,\u0020for\u0020a\u0020file\u0020stored\u0020locally.",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\LocalFeaturedImage\u003A\u003AsetSource\u0028\u0029",
-            "name": "setSource",
-            "summary": "Called\u0020from\u0020constructor\u0020to\u0020allow\u0020child\u0020classes\u0020to\u0020validate\u0020and\u0020transform\u0020the\u0020value\u0020as\u0020needed\u0020before\u0020assignment.",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html#method_setSource"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\LocalFeaturedImage\u003A\u003AgetSource\u0028\u0029",
-            "name": "getSource",
-            "summary": "Get\u0020the\u0020source\u0020of\u0020the\u0020image,\u0020must\u0020be\u0020usable\u0020within\u0020the\u0020src\u0020attribute\u0020of\u0020an\u0020image\u0020tag,\nand\u0020is\u0020thus\u0020not\u0020necessarily\u0020the\u0020path\u0020to\u0020the\u0020source\u0020image\u0020on\u0020disk.",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html#method_getSource"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\LocalFeaturedImage\u003A\u003AgetContentLength\u0028\u0029",
-            "name": "getContentLength",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html#method_getContentLength"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\LocalFeaturedImage\u003A\u003AstoragePath\u0028\u0029",
-            "name": "storagePath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html#method_storagePath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\LocalFeaturedImage\u003A\u003AvalidatedStoragePath\u0028\u0029",
-            "name": "validatedStoragePath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-LocalFeaturedImage.html#method_validatedStoragePath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\PostAuthor",
             "name": "PostAuthor",
@@ -3140,26 +3110,6 @@ Search.appendIndex(
             "name": "website",
             "summary": "The\u0020author\u0027s\u0020website\u0020URL.",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html#property_website"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\RemoteFeaturedImage",
-            "name": "RemoteFeaturedImage",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-RemoteFeaturedImage.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\RemoteFeaturedImage\u003A\u003AsetSource\u0028\u0029",
-            "name": "setSource",
-            "summary": "Called\u0020from\u0020constructor\u0020to\u0020allow\u0020child\u0020classes\u0020to\u0020validate\u0020and\u0020transform\u0020the\u0020value\u0020as\u0020needed\u0020before\u0020assignment.",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-RemoteFeaturedImage.html#method_setSource"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\RemoteFeaturedImage\u003A\u003AgetSource\u0028\u0029",
-            "name": "getSource",
-            "summary": "Get\u0020the\u0020source\u0020of\u0020the\u0020image,\u0020must\u0020be\u0020usable\u0020within\u0020the\u0020src\u0020attribute\u0020of\u0020an\u0020image\u0020tag,\nand\u0020is\u0020thus\u0020not\u0020necessarily\u0020the\u0020path\u0020to\u0020the\u0020source\u0020image\u0020on\u0020disk.",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-RemoteFeaturedImage.html#method_getSource"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\RemoteFeaturedImage\u003A\u003AgetContentLength\u0028\u0029",
-            "name": "getContentLength",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-RemoteFeaturedImage.html#method_getContentLength"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask",
             "name": "BuildTask",

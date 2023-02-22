@@ -134,21 +134,39 @@
     
             <span class="phpdocumentor-element__implements">
             implements
-                            <abbr title="\Stringable">Stringable</abbr>                    </span>
+                            <abbr title="\Stringable">Stringable</abbr>,                             <a href="classes/Hyde-Markdown-Contracts-FrontMatter-SubSchemas-FeaturedImageSchema.html"><abbr title="\Hyde\Markdown\Contracts\FrontMatter\SubSchemas\FeaturedImageSchema">FeaturedImageSchema</abbr></a>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
-        
-    <section class="phpdocumentor-description"></section>
+            <p class="phpdocumentor-summary">Object representation of a blog post&#039;s featured image.</p>
+
+    <section class="phpdocumentor-description"><p>While the object can of course be used for any other page type,
+it is named &quot;FeaturedImage&quot; as it's only usage within Hyde
+is for the featured image of a Markdown blog post.</p>
+</section>
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Framework-Factories-FeaturedImageFactory.html"><abbr title="\Hyde\Framework\Factories\FeaturedImageFactory">FeaturedImageFactory</abbr></a></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
 
 
 
@@ -160,6 +178,8 @@
 
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Stringable">Stringable</abbr></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Markdown-Contracts-FrontMatter-SubSchemas-FeaturedImageSchema.html"><abbr title="\Hyde\Markdown\Contracts\FrontMatter\SubSchemas\FeaturedImageSchema">FeaturedImageSchema</abbr></a></dt>
         <dd></dd>
     
     
@@ -173,6 +193,20 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
+    <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#constant_TYPE_LOCAL">TYPE_LOCAL</a>
+    <span>
+        &nbsp;= &#039;local&#039;                            </span>
+</dt>
+<dd>A featured image object, for a file stored locally.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
+    <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#constant_TYPE_REMOTE">TYPE_REMOTE</a>
+    <span>
+        &nbsp;= &#039;remote&#039;                            </span>
+</dt>
+<dd>A featured image object, for a file stored remotely.</dd>
+
                     <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#property_altText">$altText</a>
     <span>
@@ -226,6 +260,13 @@
     <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#property_titleText">$titleText</a>
     <span>
                         &nbsp;: string|null            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#property_type">$type</a>
+    <span>
+                        &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
@@ -315,6 +356,13 @@ and is thus not necessarily the path to the source image on disk.</dd>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_getType">getType()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_hasAltText">hasAltText()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -363,18 +411,115 @@ and is thus not necessarily the path to the source image on disk.</dd>
 </dt>
 <dd></dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_isRemote">isRemote()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_getContentLengthForLocalImage">getContentLengthForLocalImage()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_getContentLengthForRemoteImage">getContentLengthForRemoteImage()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_has">has()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd></dd>
+
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_setSource">setSource()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Called from constructor to allow child classes to validate and transform the value as needed before assignment.</dd>
+<dd></dd>
 
         </dl>
 
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -protected ">
+    <h4 class="phpdocumentor-element__name" id="constant_TYPE_LOCAL">
+        TYPE_LOCAL
+        <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#constant_TYPE_LOCAL" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A featured image object, for a file stored locally.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+    <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">TYPE_LOCAL</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;local&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><p>The internal data structure forces the image source to reference a file in the _media directory,
+and thus that is what is required for the input. However, when outputting data, the data will
+be used for the _site/media directory, so it will provide data relative to the site root.</p>
+<p>The source information is stored in $this-&gt;source, which is a file in the _media directory.</p>
+</section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -protected ">
+    <h4 class="phpdocumentor-element__name" id="constant_TYPE_REMOTE">
+        TYPE_REMOTE
+        <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#constant_TYPE_REMOTE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A featured image object, for a file stored remotely.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+    <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">TYPE_REMOTE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;remote&#039;</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
 
         
     <section class="phpdocumentor-properties">
@@ -398,7 +543,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -407,7 +552,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$altText</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -432,7 +577,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -441,7 +586,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$authorName</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -466,7 +611,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -475,7 +620,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$authorUrl</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -500,7 +645,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -509,7 +654,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$copyrightText</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -534,7 +679,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -543,7 +688,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$licenseName</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -568,7 +713,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -577,7 +722,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$licenseUrl</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -602,7 +747,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -636,7 +781,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -645,11 +790,45 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$titleText</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                -read-only        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_type">
+        $type
+        <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#property_type" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$type</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
+    
+        <section class="phpdocumentor-description"><p>self::TYPE_*</p>
+</section>
 
     
 
@@ -674,14 +853,14 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$altText</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$titleText</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$authorName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$authorUrl</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$copyrightText</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$licenseName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$licenseUrl</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$altText</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$titleText</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$authorName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$authorUrl</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$copyrightText</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$licenseName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$licenseUrl</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -698,7 +877,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$altText</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -706,7 +885,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$titleText</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -714,7 +893,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$authorName</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -722,7 +901,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$authorUrl</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -730,7 +909,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$copyrightText</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -738,7 +917,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$licenseName</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -746,7 +925,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$licenseUrl</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -774,7 +953,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -807,7 +986,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -840,7 +1019,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -873,7 +1052,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -897,7 +1076,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
         class="phpdocumentor-element
             -method
             -public
-                        -abstract                                "
+                                                        "
 >
     <h4 class="phpdocumentor-element__name" id="method_getContentLength">
         getContentLength()
@@ -906,14 +1085,14 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__abstract">abstract</span>                <span class="phpdocumentor-signature__name">getContentLength</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                    <span class="phpdocumentor-signature__name">getContentLength</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -939,7 +1118,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 
     </aside>
 
@@ -972,7 +1151,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -1005,7 +1184,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -1038,7 +1217,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
@@ -1062,7 +1241,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
         class="phpdocumentor-element
             -method
             -public
-                        -abstract                                "
+                                                        "
 >
     <h4 class="phpdocumentor-element__name" id="method_getSource">
         getSource()
@@ -1071,7 +1250,7 @@ and is thus not necessarily the path to the source image on disk.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -1080,7 +1259,7 @@ and is thus not necessarily the path to the source image on disk.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__abstract">abstract</span>                <span class="phpdocumentor-signature__name">getSource</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getSource</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
     
@@ -1107,7 +1286,7 @@ and is thus not necessarily the path to the source image on disk.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 
@@ -1133,6 +1312,38 @@ and is thus not necessarily the path to the source image on disk.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getType">
+        getType()
+        <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_getType" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">108</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getType</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_hasAltText">
         hasAltText()
         <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_hasAltText" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1140,7 +1351,7 @@ and is thus not necessarily the path to the source image on disk.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
@@ -1173,7 +1384,7 @@ and is thus not necessarily the path to the source image on disk.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">181</span>
 
     </aside>
 
@@ -1206,7 +1417,7 @@ and is thus not necessarily the path to the source image on disk.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -1239,7 +1450,7 @@ and is thus not necessarily the path to the source image on disk.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">191</span>
 
     </aside>
 
@@ -1272,7 +1483,7 @@ and is thus not necessarily the path to the source image on disk.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">196</span>
 
     </aside>
 
@@ -1305,7 +1516,7 @@ and is thus not necessarily the path to the source image on disk.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">201</span>
 
     </aside>
 
@@ -1338,7 +1549,7 @@ and is thus not necessarily the path to the source image on disk.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
@@ -1361,6 +1572,160 @@ and is thus not necessarily the path to the source image on disk.</p>
                     <article
         class="phpdocumentor-element
             -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isRemote">
+        isRemote()
+        <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_isRemote" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">237</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">isRemote</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$source</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getContentLengthForLocalImage">
+        getContentLengthForLocalImage()
+        <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_getContentLengthForLocalImage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">211</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getContentLengthForLocalImage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getContentLengthForRemoteImage">
+        getContentLengthForRemoteImage()
+        <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_getContentLengthForRemoteImage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">222</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getContentLengthForRemoteImage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_has">
+        has()
+        <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#method_has" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">206</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">has</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$property</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
             -protected
                                                         "
 >
@@ -1371,17 +1736,17 @@ and is thus not necessarily the path to the source image on disk.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php"><a href="files/packages-framework-src-framework-features-blogging-models-featuredimage.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/FeaturedImage.php">FeaturedImage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Called from constructor to allow child classes to validate and transform the value as needed before assignment.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">setSource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$source</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-    
+        <section class="phpdocumentor-description"></section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
