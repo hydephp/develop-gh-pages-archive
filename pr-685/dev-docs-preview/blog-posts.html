@@ -432,11 +432,11 @@ author: # Array of author data
 The example just shows all the supported values. Array values here
 will override all the values in the <code>authors</code> config entry.</p>
 <h3>Image<a id="image" href="#image" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<pre><code class="language-yaml">image: image.jpg # Expanded by Hyde to `_media/image.jpg` and is resolved automatically
-image: https://cdn.example.com/image.jpg # Full URL starting with `http(s)://`)
+<pre><code class="language-yaml">image: image.jpg # Expanded by Hyde to `_media/image.jpg` and is resolved automatically to the correct URL for the built site
+image: https://cdn.example.com/image.jpg # Full URL starting with `http(s)://`) or `//` (protocol-relative)
 image:
-  path: image.jpg
-  url: https://cdn.example.com/image.jpg # Takes precedence over `path`
+  source: image.jpg # Same as above
+  source: https://cdn.example.com/image.jpg # Same as above
   description: &quot;Alt text for image&quot;
   title: &quot;Tooltip title&quot;
   copyright: &quot;Copyright (c) 2022&quot;
@@ -445,7 +445,9 @@ image:
   attributionUrl: https://photographer.example.com/
   author: &quot;John Doe&quot;
 </code></pre>
-<p>When supplying an image with a local image path, the image is expected to be stored in the <code>_media/</code> directory.</p>
+<p>When supplying an image source with a local image path, the image is expected to be stored in the <code>_media/</code> directory.
+Like all other media files, it will be copied to <code>_site/media/</code> when the site is built, so Hyde will resolve links accordingly.</p>
+<p>When supplying an image with a full URL, the image source will be used as-is, and no additional processing is done.</p>
 <p>The image will be used as the cover image, and any array data is constructed into a dynamic fluent caption,
 and injected into post and page metadata.</p>
 <blockquote class="info">
@@ -557,7 +559,7 @@ for a detailed blog post with examples and schema information!</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/685" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #685</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/d1605e55623de92e3995a4ca8ba34fe6b9d919e4"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">d1605e55623de92e3995a4ca8ba34fe6b9d919e4</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/998b2206962cb8e157239112942b40214d7f928c"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">998b2206962cb8e157239112942b40214d7f928c</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/685" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
