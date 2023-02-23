@@ -142,7 +142,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Models/FrontMatter.php"><a href="files/packages-framework-src-markdown-models-frontmatter.html"><abbr title="packages/framework/src/Markdown/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -152,8 +152,9 @@
 you probably want to call the <code class="prettyprint">get()</code> method on the Page object, as that will let you
 access dynamic computed data if it exists, or it will fall back to this class's data.</p>
 <p>For package developers:
-Use $page-&gt;get('foo') to access computed data,
-Use $page-&gt;matter('foo') to access raw data.</p>
+Use $page-&gt;data('foo') to access page data + front matter
+Use $page-&gt;matter('foo') to access front matter only
+You can also get the front matter object using $page-&gt;matter (which is an instance of this class)</p>
 </section>
 
 
@@ -309,7 +310,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Models/FrontMatter.php"><a href="files/packages-framework-src-markdown-models-frontmatter.html"><abbr title="packages/framework/src/Markdown/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -347,7 +348,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Models/FrontMatter.php"><a href="files/packages-framework-src-markdown-models-frontmatter.html"><abbr title="packages/framework/src/Markdown/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -391,7 +392,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Models/FrontMatter.php"><a href="files/packages-framework-src-markdown-models-frontmatter.html"><abbr title="packages/framework/src/Markdown/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -434,7 +435,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Models/FrontMatter.php"><a href="files/packages-framework-src-markdown-models-frontmatter.html"><abbr title="packages/framework/src/Markdown/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -467,7 +468,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Models/FrontMatter.php"><a href="files/packages-framework-src-markdown-models-frontmatter.html"><abbr title="packages/framework/src/Markdown/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -511,7 +512,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Models/FrontMatter.php"><a href="files/packages-framework-src-markdown-models-frontmatter.html"><abbr title="packages/framework/src/Markdown/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -562,7 +563,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Models/FrontMatter.php"><a href="files/packages-framework-src-markdown-models-frontmatter.html"><abbr title="packages/framework/src/Markdown/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -651,7 +652,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Models/FrontMatter.php"><a href="files/packages-framework-src-markdown-models-frontmatter.html"><abbr title="packages/framework/src/Markdown/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -703,7 +704,7 @@ Use $page-&gt;matter('foo') to access raw data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Models/FrontMatter.php"><a href="files/packages-framework-src-markdown-models-frontmatter.html"><abbr title="packages/framework/src/Markdown/Models/FrontMatter.php">FrontMatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
