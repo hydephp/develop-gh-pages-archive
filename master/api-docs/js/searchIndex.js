@@ -5061,11 +5061,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Markdown-Models-MarkdownDocument.html#method___toString"
         },                {
-            "fqsen": "\\Hyde\\Markdown\\Models\\MarkdownDocument\u003A\u003A\u0024matter",
-            "name": "matter",
-            "summary": "",
-            "url": "classes/Hyde-Markdown-Models-MarkdownDocument.html#property_matter"
-        },                {
             "fqsen": "\\Hyde\\Markdown\\Models\\MarkdownDocument\u003A\u003A\u0024markdown",
             "name": "markdown",
             "summary": "",
@@ -5075,6 +5070,11 @@ Search.appendIndex(
             "name": "parse",
             "summary": "",
             "url": "classes/Hyde-Markdown-Models-MarkdownDocument.html#method_parse"
+        },                {
+            "fqsen": "\\Hyde\\Markdown\\Models\\MarkdownDocument\u003A\u003A\u0024matter",
+            "name": "matter",
+            "summary": "",
+            "url": "classes/Hyde-Markdown-Models-MarkdownDocument.html#property_matter"
         },                {
             "fqsen": "\\Hyde\\Markdown\\Processing\\BladeDownProcessor",
             "name": "BladeDownProcessor",
