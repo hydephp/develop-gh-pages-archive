@@ -2626,6 +2626,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-HydePageDataFactory.html#method_findTitleFromMarkdownHeadings"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory\u003A\u003AfindTitleFromParentIdentifier\u0028\u0029",
+            "name": "findTitleFromParentIdentifier",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-HydePageDataFactory.html#method_findTitleFromParentIdentifier"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory\u003A\u003AgetCanonicalUrl\u0028\u0029",
             "name": "getCanonicalUrl",
             "summary": "",
