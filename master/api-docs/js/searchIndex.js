@@ -5686,6 +5686,11 @@ Search.appendIndex(
             "summary": "Register\u0020a\u0020macro\u0020for\u0020the\u0020instance.",
             "url": "classes/Hyde-Pages-InMemoryPage.html#method_macro"
         },                {
+            "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003AhasMacro\u0028\u0029",
+            "name": "hasMacro",
+            "summary": "Determine\u0020if\u0020a\u0020macro\u0020with\u0020the\u0020given\u0020name\u0020is\u0020registered\u0020for\u0020the\u0020instance.",
+            "url": "classes/Hyde-Pages-InMemoryPage.html#method_hasMacro"
+        },                {
             "fqsen": "\\Hyde\\Pages\\InMemoryPage\u003A\u003A__call\u0028\u0029",
             "name": "__call",
             "summary": "Dynamically\u0020handle\u0020macro\u0020calls\u0020to\u0020the\u0020class.",
