@@ -516,30 +516,10 @@ Search.appendIndex(
             "summary": "The\u0020base\u0020handle\u0020method\u0020that\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes.",
             "url": "classes/Hyde-Console-Commands-RouteListCommand.html#method_handle"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003AgetRoutes\u0028\u0029",
-            "name": "getRoutes",
+            "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003ArouteListClass\u0028\u0029",
+            "name": "routeListClass",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-RouteListCommand.html#method_getRoutes"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003AformatPageType\u0028\u0029",
-            "name": "formatPageType",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-RouteListCommand.html#method_formatPageType"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003AformatSourcePath\u0028\u0029",
-            "name": "formatSourcePath",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-RouteListCommand.html#method_formatSourcePath"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003AformatOutputPath\u0028\u0029",
-            "name": "formatOutputPath",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-RouteListCommand.html#method_formatOutputPath"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003AclickablePathLink\u0028\u0029",
-            "name": "clickablePathLink",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-RouteListCommand.html#method_clickablePathLink"
+            "url": "classes/Hyde-Console-Commands-RouteListCommand.html#method_routeListClass"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003A\u0024signature",
             "name": "signature",
