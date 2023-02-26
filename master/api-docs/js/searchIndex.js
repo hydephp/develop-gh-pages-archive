@@ -86,6 +86,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-BuildSiteCommand.html#method_canGenerateSearch"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\BuildSiteCommand\u003A\u003AhasWarnings\u0028\u0029",
+            "name": "hasWarnings",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-BuildSiteCommand.html#method_hasWarnings"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\BuildSiteCommand\u003A\u003AgetExitCode\u0028\u0029",
+            "name": "getExitCode",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-BuildSiteCommand.html#method_getExitCode"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\BuildSiteCommand\u003A\u003A\u0024signature",
             "name": "signature",
             "summary": "",
@@ -2230,6 +2240,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/Hyde-Framework-Exceptions-BaseUrlNotSetException.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Exceptions\\BuildWarning",
+            "name": "BuildWarning",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Exceptions-BuildWarning.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Exceptions\\FileConflictException",
             "name": "FileConflictException",
@@ -5781,6 +5796,61 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Pages-MarkdownPost.html#property_image"
         },                {
+            "fqsen": "\\Hyde\\Support\\BuildWarnings",
+            "name": "BuildWarnings",
+            "summary": "",
+            "url": "classes/Hyde-Support-BuildWarnings.html"
+        },                {
+            "fqsen": "\\Hyde\\Support\\BuildWarnings\u003A\u003AgetInstance\u0028\u0029",
+            "name": "getInstance",
+            "summary": "",
+            "url": "classes/Hyde-Support-BuildWarnings.html#method_getInstance"
+        },                {
+            "fqsen": "\\Hyde\\Support\\BuildWarnings\u003A\u003Areport\u0028\u0029",
+            "name": "report",
+            "summary": "",
+            "url": "classes/Hyde-Support-BuildWarnings.html#method_report"
+        },                {
+            "fqsen": "\\Hyde\\Support\\BuildWarnings\u003A\u003AgetWarnings\u0028\u0029",
+            "name": "getWarnings",
+            "summary": "",
+            "url": "classes/Hyde-Support-BuildWarnings.html#method_getWarnings"
+        },                {
+            "fqsen": "\\Hyde\\Support\\BuildWarnings\u003A\u003AhasWarnings\u0028\u0029",
+            "name": "hasWarnings",
+            "summary": "",
+            "url": "classes/Hyde-Support-BuildWarnings.html#method_hasWarnings"
+        },                {
+            "fqsen": "\\Hyde\\Support\\BuildWarnings\u003A\u003AreportsWarnings\u0028\u0029",
+            "name": "reportsWarnings",
+            "summary": "",
+            "url": "classes/Hyde-Support-BuildWarnings.html#method_reportsWarnings"
+        },                {
+            "fqsen": "\\Hyde\\Support\\BuildWarnings\u003A\u003AreportsWarningsAsExceptions\u0028\u0029",
+            "name": "reportsWarningsAsExceptions",
+            "summary": "",
+            "url": "classes/Hyde-Support-BuildWarnings.html#method_reportsWarningsAsExceptions"
+        },                {
+            "fqsen": "\\Hyde\\Support\\BuildWarnings\u003A\u003AwriteWarningsToOutput\u0028\u0029",
+            "name": "writeWarningsToOutput",
+            "summary": "",
+            "url": "classes/Hyde-Support-BuildWarnings.html#method_writeWarningsToOutput"
+        },                {
+            "fqsen": "\\Hyde\\Support\\BuildWarnings\u003A\u003ArenderWarnings\u0028\u0029",
+            "name": "renderWarnings",
+            "summary": "",
+            "url": "classes/Hyde-Support-BuildWarnings.html#method_renderWarnings"
+        },                {
+            "fqsen": "\\Hyde\\Support\\BuildWarnings\u003A\u003ArenderWarningsAsExceptions\u0028\u0029",
+            "name": "renderWarningsAsExceptions",
+            "summary": "",
+            "url": "classes/Hyde-Support-BuildWarnings.html#method_renderWarningsAsExceptions"
+        },                {
+            "fqsen": "\\Hyde\\Support\\BuildWarnings\u003A\u003A\u0024warnings",
+            "name": "warnings",
+            "summary": "",
+            "url": "classes/Hyde-Support-BuildWarnings.html#property_warnings"
+        },                {
             "fqsen": "\\Hyde\\Support\\Concerns\\Serializable",
             "name": "Serializable",
             "summary": "Automatically\u0020serializes\u0020an\u0020Arrayable\u0020interface\u0020when\u0020JSON\u0020is\u0020requested.",
@@ -6601,6 +6671,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde-pages-concerns.html"
         },                {
+            "fqsen": "\\Hyde\\Support",
+            "name": "Support",
+            "summary": "",
+            "url": "namespaces/hyde-support.html"
+        },                {
             "fqsen": "\\Hyde\\Support\\Concerns",
             "name": "Concerns",
             "summary": "",
@@ -6620,10 +6695,5 @@ Search.appendIndex(
             "name": "Models",
             "summary": "",
             "url": "namespaces/hyde-support-models.html"
-        },                {
-            "fqsen": "\\Hyde\\Support",
-            "name": "Support",
-            "summary": "",
-            "url": "namespaces/hyde-support.html"
         }            ]
 );
