@@ -4731,6 +4731,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-ValidationService.html#method_check_for_conflicts_between_blade_and_markdown_pages"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Views\\Components\\BreadcrumbsComponent",
+            "name": "BreadcrumbsComponent",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Views-Components-BreadcrumbsComponent.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Views\\Components\\BreadcrumbsComponent\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Views-Components-BreadcrumbsComponent.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Views\\Components\\BreadcrumbsComponent\u003A\u003Arender\u0028\u0029",
+            "name": "render",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Views-Components-BreadcrumbsComponent.html#method_render"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Views\\Components\\BreadcrumbsComponent\u003A\u003AmakeBreadcrumbs\u0028\u0029",
+            "name": "makeBreadcrumbs",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Views-Components-BreadcrumbsComponent.html#method_makeBreadcrumbs"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Views\\Components\\BreadcrumbsComponent\u003A\u003A\u0024breadcrumbs",
+            "name": "breadcrumbs",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Views-Components-BreadcrumbsComponent.html#property_breadcrumbs"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Views\\Components\\LinkComponent",
             "name": "LinkComponent",
             "summary": "",
