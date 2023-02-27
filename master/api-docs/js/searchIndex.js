@@ -133,7 +133,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand",
             "name": "ChangeSourceDirectoryCommand",
-            "summary": "",
+            "summary": "A\u0020base\u0020class\u0020for\u0020HydeCLI\u0020command\u0020that\u0020adds\u0020some\u0020extra\u0020functionality\u0020and\u0020output\nhelpers\u0020to\u0020reduce\u0020repeated\u0020code\u0020and\u0020to\u0020provide\u0020a\u0020consistent\u0020user\u0020interface.",
             "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003Ahandle\u0028\u0029",
@@ -653,7 +653,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Concerns\\Command",
             "name": "Command",
-            "summary": "",
+            "summary": "A\u0020base\u0020class\u0020for\u0020HydeCLI\u0020command\u0020that\u0020adds\u0020some\u0020extra\u0020functionality\u0020and\u0020output\nhelpers\u0020to\u0020reduce\u0020repeated\u0020code\u0020and\u0020to\u0020provide\u0020a\u0020consistent\u0020user\u0020interface.",
             "url": "classes/Hyde-Console-Concerns-Command.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003Ahandle\u0028\u0029",
@@ -671,10 +671,10 @@ Search.appendIndex(
             "summary": "Handle\u0020an\u0020exception\u0020that\u0020occurred\u0020during\u0020command\u0020execution.",
             "url": "classes/Hyde-Console-Concerns-Command.html#method_handleException"
         },                {
-            "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AcreateClickableFilepath\u0028\u0029",
-            "name": "createClickableFilepath",
+            "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AfileLink\u0028\u0029",
+            "name": "fileLink",
             "summary": "Create\u0020a\u0020filepath\u0020that\u0020can\u0020be\u0020opened\u0020in\u0020the\u0020browser\u0020from\u0020a\u0020terminal.",
-            "url": "classes/Hyde-Console-Concerns-Command.html#method_createClickableFilepath"
+            "url": "classes/Hyde-Console-Concerns-Command.html#method_fileLink"
         },                {
             "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AinfoComment\u0028\u0029",
             "name": "infoComment",
@@ -683,17 +683,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003Agray\u0028\u0029",
             "name": "gray",
-            "summary": "",
+            "summary": "Write\u0020a\u0020grey\u002Dcoloured\u0020line",
             "url": "classes/Hyde-Console-Concerns-Command.html#method_gray"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AinlineGray\u0028\u0029",
-            "name": "inlineGray",
-            "summary": "",
-            "url": "classes/Hyde-Console-Concerns-Command.html#method_inlineGray"
         },                {
             "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AindentedLine\u0028\u0029",
             "name": "indentedLine",
-            "summary": "",
+            "summary": "Write\u0020a\u0020line\u0020with\u0020the\u0020specified\u0020indentation\u0020level",
             "url": "classes/Hyde-Console-Concerns-Command.html#method_indentedLine"
         },                {
             "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AUSER_EXIT",
