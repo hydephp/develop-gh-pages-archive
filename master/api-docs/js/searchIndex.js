@@ -561,10 +561,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_getExecutablePath"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003ArunServerCommand\u0028\u0029",
-            "name": "runServerCommand",
+            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003ArunServerProcess\u0028\u0029",
+            "name": "runServerProcess",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_runServerCommand"
+            "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_runServerProcess"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003A\u0024signature",
             "name": "signature",
