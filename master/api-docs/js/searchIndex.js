@@ -556,6 +556,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_getPortSelection"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AgetHostSelection\u0028\u0029",
+            "name": "getHostSelection",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_getHostSelection"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AgetExecutablePath\u0028\u0029",
             "name": "getExecutablePath",
             "summary": "",
