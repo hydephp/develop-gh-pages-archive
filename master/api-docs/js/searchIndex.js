@@ -5576,21 +5576,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_navigation"
         },                {
-            "fqsen": "\\Hyde\\Pages\\Concerns\\UsesFlattenedOutputPaths",
-            "name": "UsesFlattenedOutputPaths",
-            "summary": "This\u0020trait\u0020is\u0020used\u0020to\u0020flatten\u0020the\u0020output\u0020path\u0020of\u0020a\u0020page.\u0020This\u0020is\u0020only\u0020used\u0020for\u0020the\u0020documentation\u0020pages,\nwhere\u0020all\u0020pages\u0020are\u0020output\u0020to\u0020the\u0020same\u0020directory,\u0020but\u0020where\u0020putting\u0020the\u0020page\u0020in\u0020a\u0020subdirectory\u0020will\ncreate\u0020a\u0020nested\u0020navigation\u0020structure\u0020in\u0020the\u0020sidebar.",
-            "url": "classes/Hyde-Pages-Concerns-UsesFlattenedOutputPaths.html"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\Concerns\\UsesFlattenedOutputPaths\u003A\u003AgetRouteKey\u0028\u0029",
-            "name": "getRouteKey",
-            "summary": "Get\u0020the\u0020route\u0020key\u0020for\u0020the\u0020page.",
-            "url": "classes/Hyde-Pages-Concerns-UsesFlattenedOutputPaths.html#method_getRouteKey"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\Concerns\\UsesFlattenedOutputPaths\u003A\u003AgetOutputPath\u0028\u0029",
-            "name": "getOutputPath",
-            "summary": "Get\u0020the\u0020path\u0020where\u0020the\u0020compiled\u0020page\u0020will\u0020be\u0020saved.",
-            "url": "classes/Hyde-Pages-Concerns-UsesFlattenedOutputPaths.html#method_getOutputPath"
-        },                {
             "fqsen": "\\Hyde\\Pages\\DocumentationPage",
             "name": "DocumentationPage",
             "summary": "Page\u0020class\u0020for\u0020documentation\u0020pages.",

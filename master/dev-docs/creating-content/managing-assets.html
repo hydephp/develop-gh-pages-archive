@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HydePHP Upcoming Documentation - File-based Collections</title>
+<title>HydePHP Upcoming Documentation - Managing and Compiling Assets</title>
 
 
 
-<link rel="canonical" href="https://hydephp.github.io/develop/master/dev-docs/dev-docs/collections.html">
-<meta name="twitter:title" content="HydePHP Upcoming Documentation - File-based Collections">
-<meta property="og:title" content="HydePHP Upcoming Documentation - File-based Collections">
+<link rel="canonical" href="https://hydephp.github.io/develop/master/dev-docs/dev-docs/creating-content/managing-assets.html">
+<meta name="twitter:title" content="HydePHP Upcoming Documentation - Managing and Compiling Assets">
+<meta property="og:title" content="HydePHP Upcoming Documentation - Managing and Compiling Assets">
 
 
 <link rel="sitemap" href="https://hydephp.github.io/develop/master/dev-docs/sitemap.xml" type="application/xml" title="Sitemap">
@@ -42,7 +42,7 @@
 <a href="#content" id="skip-to-content" class="sr-only focus:not-sr-only bg-black border-4 border-yellow-400 focus:absolute focus:mt-2 focus:mx-auto focus:p-2 focus:w-64 h-auto left-0 overflow-auto right-0 rounded-md text-center text-lg text-white top-auto z-50 ">Skip to content</a>
 <nav id="mobile-navigation" class="bg-white dark:bg-gray-800 md:hidden flex justify-between w-full h-16 z-40 fixed left-0 top-0 p-4 leading-8 shadow-lg">
     <strong class="px-2 mr-auto">
-                    <a href="../dev-docs/index.html">
+                    <a href="../../dev-docs/index.html">
                 HydePHP Docs
             </a>
             </strong>
@@ -69,7 +69,7 @@
     <header id="sidebar-header" class="h-16">
         <div id="sidebar-brand" class="flex items-center justify-between h-16 py-4 px-2">
 	<strong class="px-2">
-					<a href="../dev-docs/index.html">
+					<a href="../../dev-docs/index.html">
 				HydePHP Docs
 			</a>
 			</strong>
@@ -98,16 +98,16 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/quickstart.html">Quickstart Guide</a>
+		href="../../dev-docs/getting-started/quickstart.html">Quickstart Guide</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/console-commands.html">Console Commands</a>
+		href="../../dev-docs/getting-started/console-commands.html">Console Commands</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/architecture-concepts.html">Key HydePHP Concepts</a>
+		href="../../dev-docs/getting-started/architecture-concepts.html">Key HydePHP Concepts</a>
 	</li>                            </ul>
         </li>
-	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
+	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: true }">
             <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
                 <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Creating Content</h4>
                 <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
@@ -122,22 +122,99 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/blog-posts.html">Creating Blog Posts</a>
+		href="../../dev-docs/creating-content/blog-posts.html">Creating Blog Posts</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/static-pages.html">Markdown &amp; Blade Pages</a>
+		href="../../dev-docs/creating-content/static-pages.html">Markdown &amp; Blade Pages</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/documentation-pages.html">Documentation Pages</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		href="../../dev-docs/creating-content/documentation-pages.html">Documentation Pages</a>
+	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../../dev-docs/creating-content/managing-assets.html" aria-current="true">Managing and Compiling Assets</a>
+				<span class="sr-only">Table of contents</span>
+		<ul class="table-of-contents">
+<li>
+<a href="#introduction">Introduction</a>
+</li>
+<li>
+<a href="#some-extra-information-and-answers-to-possible-questions">Some extra information, and answers to possible questions</a>
+<ul>
+<li>
+<a href="#do-i-have-to-use-npm-to-use-hyde">Do I have to use NPM to use Hyde?</a>
+</li>
+<li>
+<a href="#when-do-i-need-to-compile-assets">When do I need to compile assets?</a>
+<ul>
+<li>
+<a href="#when-customizing">When customizing</a>
+</li>
+<li>
+<a href="#when-adding-new-classes">When adding new classes</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#how-are-assets-stored-and-managed">How are assets stored and managed?</a>
+<ul>
+<li>
+<a href="#what-is-the-difference-between-media-and-sitemedia">What is the difference between _media and _site/media?</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#how-do-i-compile-assets">How do I compile assets?</a>
+<ul>
+<li>
+<a href="#how-does-it-work">How does it work?</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#telling-hyde-where-to-find-assets">Telling Hyde where to find assets</a>
+<ul>
+<li>
+<a href="#customizing-the-blade-templates">Customizing the Blade templates</a>
+</li>
+<li>
+<a href="#you-might-not-even-need-to-do-anything">You might not even need to do anything!</a>
+<ul>
+<li>
+<a href="#loading-from-cdn">Loading from CDN</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#using-the-tailwindcss-play-cdn">Using the TailwindCSS Play CDN</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#managing-images">Managing images</a>
+<ul>
+<li>
+<a href="#referencing-images">Referencing images</a>
+<ul>
+<li>
+<a href="#making-images-accessible">Making images accessible</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#setting-a-featured-image-for-blog-posts">Setting a featured image for blog posts</a>
+</li>
+</ul>
+</li>
+</ul>
+
+			</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/managing-assets.html">Managing and Compiling Assets</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/compile-and-deploy.html">Compile &amp; Deploy</a>
+		href="../../dev-docs/creating-content/compile-and-deploy.html">Compile &amp; Deploy</a>
 	</li>                            </ul>
         </li>
-	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: true }">
+	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
             <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
                 <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Digging Deeper</h4>
                 <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
@@ -152,51 +229,25 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/customization.html">Customizing your Site</a>
+		href="../../dev-docs/digging-deeper/customization.html">Customizing your Site</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/advanced-markdown.html">Advanced Markdown</a>
+		href="../../dev-docs/digging-deeper/advanced-markdown.html">Advanced Markdown</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/extensions.html">Extensions &amp; Integrations</a>
+		href="../../dev-docs/digging-deeper/extensions.html">Extensions &amp; Integrations</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/advanced-customization.html">Advanced Customization</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/collections.html" aria-current="true">File-based Collections</a>
-				<span class="sr-only">Table of contents</span>
-		<ul class="table-of-contents">
-<li>
-<a href="#introduction-to-hyde-data-collections">Introduction to Hyde Data Collections</a>
-<ul>
-<li>
-<a href="#high-level-concept-overview">High-Level Concept Overview</a>
-</li>
-<li>
-<a href="#markdown-collections---hands-on-guide">Markdown Collections - Hands on Guide</a>
-<ul>
-<li>
-<a href="#setting-up-the-file-structure">Setting up the file structure</a>
-</li>
-<li>
-<a href="#using-the-facade-to-access-the-collections">Using the Facade to Access the Collections</a>
-</li>
-<li>
-<a href="#implementing-it-in-a-blade-view">Implementing it in a Blade view</a>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-			</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/troubleshooting.html">Troubleshooting</a>
+		href="../../dev-docs/digging-deeper/advanced-customization.html">Advanced Customization</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/updating-hyde.html">Updating Hyde</a>
+		href="../../dev-docs/digging-deeper/collections.html">File-based Collections</a>
+	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../../dev-docs/digging-deeper/troubleshooting.html">Troubleshooting</a>
+	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../../dev-docs/digging-deeper/updating-hyde.html">Updating Hyde</a>
 	</li>                            </ul>
         </li>
 	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
@@ -214,19 +265,19 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/introduction.html">Introduction</a>
+		href="../../dev-docs/advanced-features/introduction.html">Introduction</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/autodiscovery.html">Autodiscovery</a>
+		href="../../dev-docs/advanced-features/autodiscovery.html">Autodiscovery</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/automatic-routing.html">Automatic Routing</a>
+		href="../../dev-docs/advanced-features/automatic-routing.html">Automatic Routing</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/dynamic-data-discovery.html">Dynamic Data Discovery</a>
+		href="../../dev-docs/advanced-features/dynamic-data-discovery.html">Dynamic Data Discovery</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/page-models.html">Page models</a>
+		href="../../dev-docs/advanced-features/page-models.html">Page models</a>
 	</li>                            </ul>
         </li>
 	</ul>                        </nav>
@@ -243,66 +294,93 @@
     </blockquote>
 
     <header id="document-header" class="flex items-center flex-wrap prose-h1:mb-3">
-        <h1>File-based Collections</h1>
+        <h1>Managing and Compiling Assets</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        <blockquote class="info"><p>This article covers advanced usage intended for those who are writing their own Blade views, and is not required as Hyde comes pre-packaged with many templates for you to use.</p></blockquote>
-<h2>Introduction to Hyde Data Collections<a id="introduction-to-hyde-data-collections" href="#introduction-to-hyde-data-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Hyde provides <code>DataCollections</code>, a subset of <a href="https://laravel.com/docs/9.x/collections">Laravel Collections</a> giving you a similar developer experience to working with Eloquent Collections, but here, it's all entirely file-based.</p>
-<p>You get the have access to all Laravel Collection methods so you are encouraged to read the <a href="https://laravel.com/docs/9.x/collections">Laravel Collections documentation</a> for more information.</p>
-<p>Currently only a Markdown collection type is added, but more types like YAML are planned.</p>
-<h3>High-Level Concept Overview<a id="high-level-concept-overview" href="#high-level-concept-overview" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>To make collections easy to use and understand, Hyde makes a few assumptions about the structure of your collections. Follow these conventions and creating dynamic static sites will be a breeze.</p>
+        <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Managing and compiling assets is a very common task in web development. Unfortunately, it's rarely fun.</p>
+<p>With hyde, <strong>you don't have to do it</strong>, in fact, you can skip this entire page if you are happy with how it is.
+But as always with Hyde, you can customize everything if you want to.</p>
+<p>Hyde ships with a complete frontend using Blade views, TailwindCSS styles, and Alpine.js interactions. Some extra custom styles are made in the HydeFront package, which is pre-installed and bundled in the pre-configured Laravel Mix.</p>
+<p>To get you started quickly, all the styles are already compiled minified into <code>_media/app.css</code>, which will be copied to the <code>_site/media/app.css</code> directory when you run <code>php hyde build</code>.</p>
+<h2>Some extra information, and answers to possible questions<a id="some-extra-information-and-answers-to-possible-questions" href="#some-extra-information-and-answers-to-possible-questions" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h3>Do I have to use NPM to use Hyde?<a id="do-i-have-to-use-npm-to-use-hyde" href="#do-i-have-to-use-npm-to-use-hyde" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>No. NPM is optional as all the compiled styles you need are already installed. You only need NPM if you want to compile your own styles.</p>
+<h3>When do I need to compile assets?<a id="when-do-i-need-to-compile-assets" href="#when-do-i-need-to-compile-assets" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h4>When customizing<a id="when-customizing" href="#when-customizing" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>If you want to customize the Tailwind settings or add custom styles, you will need to take care of compiling the styles yourself.</p>
+<h4>When adding new classes<a id="when-adding-new-classes" href="#when-adding-new-classes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>The <code>_media/app.css</code> file that comes with Hyde contains TailwindCSS for all classes that are used in the default Blade views, as well as the HydeFront custom styles.</p>
+<p>If you customize the Blade views and add new classes, or if you add new classes in Blade-based pages, you may need to compile the assets yourself to get the new styles.</p>
+<p>If you stick to using Markdown based pages, you don't need to compile anything.</p>
+<h2>How are assets stored and managed?<a id="how-are-assets-stored-and-managed" href="#how-are-assets-stored-and-managed" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Currently, the frontend assets are separated into three places.</p>
+<p>The <code>resources/assets</code> contains <strong>source</strong> files, meaning files that will be compiled into something else. Here you will find the <code>app.css</code> file that bootstraps the TailwindCSS styles. This file is also an excellent place to add your custom styles. It is also where we import HydeFront.</p>
+<p>The <code>_media</code> folder contains <strong>compiled</strong> (and usually minified) files. When Hyde compiles your static site, all asset files here will get copied as they are into the <code>_site/media</code> folder.</p>
+<p>The <code>_site/media</code> folder contains the files that are served to the user.</p>
+<h3>What is the difference between <code>_media</code> and <code>_site/media</code>?<a id="what-is-the-difference-between-media-and-sitemedia" href="#what-is-the-difference-between-media-and-sitemedia" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>It may seem weird to have two folders for storing the compiled assets, but it is quite useful.</p>
+<p>The <code>_site</code> directory is intended to be excluded from version control while the <code>_media</code> folder is included in the version control, though you may choose to exclude the compiled files from the <code>_media</code> folder if you want to.</p>
+<p>You are of course free to modify this behavior by editing the <code>webpack.mix.js</code> file.</p>
+<h2>How do I compile assets?<a id="how-do-i-compile-assets" href="#how-do-i-compile-assets" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>First, make sure that you have installed all the NodeJS dependencies using <code>npm install</code>.
+Then run <code>npm run dev</code> to compile the assets. If you want to compile the assets for production, run <code>npm run prod</code>.
+You can also run <code>npm run watch</code> to watch for changes in the source files and recompile the assets automatically.</p>
+<h3>How does it work?<a id="how-does-it-work" href="#how-does-it-work" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Hyde uses <a href="https://laravel-mix.com/">Laravel Mix</a> (which is a wrapper for <a href="https://webpack.js.org/">webpack</a>) to compile the assets.</p>
+<p>When running the <code>npm run dev/prod</code> command, the following happens:</p>
 <ol>
-<li>Collections are stored in the new <code>resources/collections</code> directory.</li>
-<li>Each subdirectory in here can be a collection.</li>
-<li>Data collections are automatically generated from the source files when you use the Facade you will learn about below.</li>
-<li>When using one of the facades, you need to specify the collection name, this name is the name of the subdirectory.</li>
-<li>Each subdirectory should probably only have the same filetype to prevent developer confusion, but this is not enforced.</li>
-<li>Unlike Markdown pages, files starting with underscores are not ignored.</li>
-<li>You can customize the source directory for collections through a service provider.</li>
+<li>Laravel Mix will compile the <code>resources/assets/app.css</code> file into <code>_media/app.css</code> using PostCSS with TailwindCSS and AutoPrefixer.</li>
+<li>Mix then copies the <code>_media</code> folder into <code>_site/media</code>, this is so that they are automatically accessible to your site without having to rerun <code>php hyde build</code>, making blend perfectly with the realtime compiler (<code>php hyde serve</code>).</li>
 </ol>
-<h3>Markdown Collections - Hands on Guide<a id="markdown-collections---hands-on-guide" href="#markdown-collections---hands-on-guide" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<h4>Setting up the file structure<a id="setting-up-the-file-structure" href="#setting-up-the-file-structure" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>I think the best way to explain DataCollections is through examples. Let's create a Blade page with customer testimonials.</p>
-<p>We start by setting up our directory structure. We will create a <code>testimonials</code> subdirectory, which will be the collection name.</p>
-<p>In it we will place Markdown files. Each file will be a testimonial. The Markdown will be parsed into a <code>MarkdownDocument</code> object which parses any optional YAML front matter.</p>
-<p>Here is the sample Markdown we will use:</p>
-<pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>resources/collections/testimonials/1.md</small>---
-author: John Doe
----
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+<h2>Telling Hyde where to find assets<a id="telling-hyde-where-to-find-assets" href="#telling-hyde-where-to-find-assets" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h3>Customizing the Blade templates<a id="customizing-the-blade-templates" href="#customizing-the-blade-templates" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>To make it really easy to customize asset loading, the styles and scripts are loaded in dedicated Blade components.</p>
+<ul>
+<li>Styles are loaded in <code>hyde::layouts.styles</code>
+</li>
+<li>Scripts are loaded in <code>hyde::layouts.scripts</code>
+</li>
+</ul>
+<p>To customize them, run the following command:</p>
+<pre><code class="language-bash">php hyde publish:views layouts
 </code></pre>
-<p>Let's take a look at our directory structure. I just copied the same file a few times. You can name the files anything you want, I kept it simple and just numbered them.</p>
-<pre><code class="language-tree">resources/collections
-└── testimonials
-    ├── 1.md
-    ├── 2.md
-    ├── 3.md
-    ├── 4.md
-    └── 5.md
+<p>Then edit the files found in <code>resources/views/vendor/hyde/layouts</code> directory of your project.</p>
+<h3>You might not even need to do anything!<a id="you-might-not-even-need-to-do-anything" href="#you-might-not-even-need-to-do-anything" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>For the absolute majority of the cases, you don't need to mess with these files. Hyde will automatically load the app.css file when it exists in the <code>_media</code> directory.</p>
+<h4>Loading from CDN<a id="loading-from-cdn" href="#loading-from-cdn" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>If you want to load the same pre-compiled file included with Hyde but from a CDN, you can set <code>load_app_styles_from_cdn</code> to <code>true</code> in the <code>config/hyde.php</code> file. While you lose the ability to customize it, your styles will be automatically updated when needed, as the installed Framework version will automatically specify the correct version to load.</p>
+<h3>Using the TailwindCSS Play CDN<a id="using-the-tailwindcss-play-cdn" href="#using-the-tailwindcss-play-cdn" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>If you want to use the <a href="https://tailwindcss.com/docs/installation/play-cdn">TailwindCSS Play CDN</a>, you can set <code>use_play_cdn</code> to <code>true</code> in the <code>config/hyde.php</code> file.
+This will in addition to loading the standard app.css file also add a script tag to load the TailwindCSS Play CDN.
+What's even better is that Hyde will also inject the contents of the included <code>tailwind.config.js</code> file into the script tag, so the Play CDN styles match the ones created by Laravel Mix.
+This also means you can tinker around with the TailwindCSS settings without having to compile anything.</p>
+<blockquote>
+<p>warn Note that the Play CDN is not meant for production use, so enabling it will add a warning to the web console.</p>
+</blockquote>
+<h2>Managing images<a id="managing-images" href="#managing-images" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>As mentioned above, assets stored in the _media folder are automatically copied to the _site/media folder,
+making it the recommended place to store images. You can then easily reference them in your Markdown files.</p>
+<h3>Referencing images<a id="referencing-images" href="#referencing-images" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The recommended way to reference images are with relative paths as this offers the most compatibility,
+allowing you to browse the site both locally on your filesystem and on the web when serving from a subdirectory.</p>
+<blockquote class="warning"><p>Note: The path is relative to the <b>compiled</b> file in the site output</p></blockquote>
+<p>The path to use depends on the location of the page. Note the subtle difference in the path prefix.</p>
+<ul>
+<li>If you are in a <strong>Blog Post or Documentation Page</strong>, use <code>../media/image.png</code>
+</li>
+<li>If in a <strong>Markdown Page or Blade Page</strong>, use <code>media/image.png</code>
+</li>
+<li>While not recommended, you can also use absolute paths: <code>/media/image.png</code>
+</li>
+</ul>
+<h4>Making images accessible<a id="making-images-accessible" href="#making-images-accessible" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>To improve accessibility, you should always add an <code>alt</code> text. Here is a full example for an image in a blog post:</p>
+<pre><code class="language-markdown">![Image Alt](../media/image.png &quot;Image Title&quot;) # Note the relative path
 </code></pre>
-<h4>Using the Facade to Access the Collections<a id="using-the-facade-to-access-the-collections" href="#using-the-facade-to-access-the-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Now for the fun part! We will use the <code>MarkdownCollection</code> facade to access all our files into a convenient object. The class is registered with an alias, so you don't need to include any namespaces when in a Blade file.</p>
-<p>The general syntax to use the facade is as follows:</p>
-<pre><code class="language-blade">MarkdownCollection::get('subdirectory_name')
-</code></pre>
-<p>This will return a Hyde DataCollection object, containing our Markdown files as MarkdownDocument objects. Here is a quick look at the object the facade returns:</p>
-<pre class="sf-dump" id="sf-dump-703277111" data-indent-pad="  " tabindex="0" aria-label="Sample output" style="white-space: pre-wrap; padding: 5px;  color: rgb(255, 132, 0); font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Menlo, Monaco, Consolas, monospace; overflow-wrap: break-word; position: relative; z-index: 99999; word-break: break-all; overflow: initial !important;"><code><span class="sf-dump-default" style="display: inline; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; overflow-wrap: break-word; position: relative; z-index: 99999; word-break: break-all;">^</span><span class="sf-dump-default" style="display: inline; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; overflow-wrap: break-word; position: relative; z-index: 99999; word-break: break-all;"> </span><span class="sf-dump-note" style="display: inline; color: rgb(18, 153, 218);">Hyde\Framework\Features\DataCollections\DataCollection</span> {<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children" style="text-decoration: none;  border-style: initial; border-color: initial; outline: none; color: rgb(160, 160, 160);">#270 ▼</a><samp data-depth="1" class="sf-dump-expanded"> <br>&nbsp;&nbsp;+<span class="sf-dump-public" title="Public property" style="display: inline; color: rgb(255, 255, 255);">key</span>: "<span class="sf-dump-str" title="12 characters" style="display: inline; font-weight: bold; color: rgb(86, 219, 58);">testimonials</span>" <!-- <br>&nbsp;&nbsp;+<span class="sf-dump-public" title="Public property" style="display: inline; color: rgb(255, 255, 255);">parseTimeInMs</span>: <span class="sf-dump-num" style="display: inline; font-weight: bold; color: rgb(18, 153, 218);">5.02</span>  --><br>&nbsp;&nbsp;#<span class="sf-dump-protected" title="Protected property" style="display: inline; color: rgb(255, 255, 255);">items</span>: <span class="sf-dump-note" style="display: inline; color: rgb(18, 153, 218);">array:5</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children" style="text-decoration: none;  border-style: initial; border-color: initial; outline: none; color: rgb(160, 160, 160);">▼</a><samp data-depth="2" class="sf-dump-expanded"> <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sf-dump-index" style="display: inline; color: rgb(18, 153, 218);">0</span> =&gt; <span class="sf-dump-note" title="Hyde\Markdown\Models\MarkdownDocument <br>&nbsp;&nbsp;" style="display: inline; color: rgb(18, 153, 218); "><span class="sf-dump-ellipsis sf-dump-ellipsis-note" style="display: inline-block; text-overflow: ellipsis;  white-space: nowrap; overflow: hidden; vertical-align: top;">Hyde\Framework\Models</span><span class="sf-dump-ellipsis sf-dump-ellipsis-note" style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top;">\</span>MarkdownDocument</span> {<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children" style="text-decoration: none;  border-style: initial; border-color: initial; outline: none; color: rgb(160, 160, 160);">#273 ▼</a><samp data-depth="3" class="sf-dump-expanded"> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+<span class="sf-dump-public" title="Public property" style="display: inline; color: rgb(255, 255, 255);">matter</span>: <span class="sf-dump-note" style="display: inline; color: rgb(18, 153, 218);">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children" style="text-decoration: none;  border-style: initial; border-color: initial; outline: none; color: rgb(160, 160, 160);">▶</a>] <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+<span class="sf-dump-public" title="Public property" style="display: inline; color: rgb(255, 255, 255);">body</span>: "<span class="sf-dump-str" title="59 characters" style="display: inline; font-weight: bold; color: rgb(86, 219, 58);">Lorem ipsum dolor sit amet, consectetur adipiscing elit...<span class="sf-dump-default sf-dump-ns" style="display: inline; color: rgb(255, 132, 0); font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: normal; font-stretch: normal; line-height: normal; font-family: Menlo, Monaco, Consolas, monospace; overflow-wrap: break-word; position: relative; z-index: 99999; word-break: break-all; user-select: none;">\n</span></span>" <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+<span class="sf-dump-public" title="Public property" style="display: inline; color: rgb(255, 255, 255);">title</span>: "" <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+<span class="sf-dump-public" title="Public property" style="display: inline; color: rgb(255, 255, 255);">slug</span>: "" <br>&nbsp;&nbsp;&nbsp;&nbsp;</samp>} <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sf-dump-index" style="display: inline; color: rgb(18, 153, 218);">1</span> =&gt; <span class="sf-dump-note" title="Hyde\Markdown\Models\MarkdownDocument <br>&nbsp;&nbsp;" style="display: inline; color: rgb(18, 153, 218); "><span class="sf-dump-ellipsis sf-dump-ellipsis-note" style="display: inline-block; text-overflow: ellipsis;  white-space: nowrap; overflow: hidden; vertical-align: top;">Hyde\Framework\Models</span><span class="sf-dump-ellipsis sf-dump-ellipsis-note" style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top;">\</span>MarkdownDocument</span> {<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children" style="text-decoration: none;  border-style: initial; border-color: initial; outline: none; color: rgb(160, 160, 160);">#274 ▶</a>} <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sf-dump-index" style="display: inline; color: rgb(18, 153, 218);">2</span> =&gt; <span class="sf-dump-note" title="Hyde\Markdown\Models\MarkdownDocument <br>&nbsp;&nbsp;" style="display: inline; color: rgb(18, 153, 218);"><span class="sf-dump-ellipsis sf-dump-ellipsis-note" style="display: inline-block; text-overflow: ellipsis;  white-space: nowrap; overflow: hidden; vertical-align: top;">Hyde\Framework\Models</span><span class="sf-dump-ellipsis sf-dump-ellipsis-note" style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top;">\</span>MarkdownDocument</span> {<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children" style="text-decoration: none;  border-style: initial; border-color: initial; outline: none; color: rgb(160, 160, 160);">#275 ▶</a>} <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sf-dump-index" style="display: inline; color: gray;">[The rest is truncated to conserve space...]</span> <!-- <br>&nbsp;&nbsp;</samp>] <br>&nbsp;&nbsp;#<span class="sf-dump-protected" title="Protected property" style="display: inline; color: rgb(255, 255, 255);">escapeWhenCastingToString</span>: <span class="sf-dump-const" style="display: inline; font-weight: bold;">false</span> </samp> <br>}--></code></pre>
-<h4>Implementing it in a Blade view<a id="implementing-it-in-a-blade-view" href="#implementing-it-in-a-blade-view" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Let's create a Blade page to display all our testimonials.</p>
-<pre><code class="language-bash">php hyde make:page &quot;Testimonials&quot; --type=&quot;blade&quot;
-# or just touch _pages/testimonials.blade.php
-</code></pre>
-<p>And we can use the collection almost like any other Laravel one. As you can see, we are able to get the author from the front matter, and the content from the body.</p>
-<pre><code class="language-blade">@foreach(MarkdownCollection::get('testimonials') as $testimonial)
-&lt;blockquote&gt;
-	&lt;p&gt;{{ $testimonial-&gt;body }}&lt;/p&gt;
-	&lt;small&gt;{{ $testimonial-&gt;matter['author'] }}&lt;/small&gt;
-&lt;/blockquote&gt;
-@endforeach
-</code></pre>
+<h3>Setting a featured image for blog posts<a id="setting-a-featured-image-for-blog-posts" href="#setting-a-featured-image-for-blog-posts" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Hyde offers great support for creating data-rich and accessible featured images for blog posts.</p>
+<p>You can read more about this in the <a href="blog-posts#image">creating blog posts page</a>.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
