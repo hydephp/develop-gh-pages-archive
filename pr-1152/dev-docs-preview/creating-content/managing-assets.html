@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HydePHP Documentation Preview - Creating Documentation Pages</title>
+<title>HydePHP Documentation Preview - Managing and Compiling Assets</title>
 
 
 
-<link rel="canonical" href="https://hydephp.github.io/develop/pr-1152/dev-docs-preview/dev-docs-preview/documentation-pages.html">
-<meta name="twitter:title" content="HydePHP Documentation Preview - Creating Documentation Pages">
-<meta property="og:title" content="HydePHP Documentation Preview - Creating Documentation Pages">
+<link rel="canonical" href="https://hydephp.github.io/develop/pr-1152/dev-docs-preview/dev-docs-preview/creating-content/managing-assets.html">
+<meta name="twitter:title" content="HydePHP Documentation Preview - Managing and Compiling Assets">
+<meta property="og:title" content="HydePHP Documentation Preview - Managing and Compiling Assets">
 
 
 <link rel="sitemap" href="https://hydephp.github.io/develop/pr-1152/dev-docs-preview/sitemap.xml" type="application/xml" title="Sitemap">
@@ -42,7 +42,7 @@
 <a href="#content" id="skip-to-content" class="sr-only focus:not-sr-only bg-black border-4 border-yellow-400 focus:absolute focus:mt-2 focus:mx-auto focus:p-2 focus:w-64 h-auto left-0 overflow-auto right-0 rounded-md text-center text-lg text-white top-auto z-50 ">Skip to content</a>
 <nav id="mobile-navigation" class="bg-white dark:bg-gray-800 md:hidden flex justify-between w-full h-16 z-40 fixed left-0 top-0 p-4 leading-8 shadow-lg">
     <strong class="px-2 mr-auto">
-                    <a href="../dev-docs-preview/index.html">
+                    <a href="../../dev-docs-preview/index.html">
                 PR #1152 - Docs
             </a>
             </strong>
@@ -69,7 +69,7 @@
     <header id="sidebar-header" class="h-16">
         <div id="sidebar-brand" class="flex items-center justify-between h-16 py-4 px-2">
 	<strong class="px-2">
-					<a href="../dev-docs-preview/index.html">
+					<a href="../../dev-docs-preview/index.html">
 				PR #1152 - Docs
 			</a>
 			</strong>
@@ -98,13 +98,13 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/quickstart.html">Quickstart Guide</a>
+		href="../../dev-docs-preview/getting-started/quickstart.html">Quickstart Guide</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/console-commands.html">Console Commands</a>
+		href="../../dev-docs-preview/getting-started/console-commands.html">Console Commands</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/architecture-concepts.html">Key HydePHP Concepts</a>
+		href="../../dev-docs-preview/getting-started/architecture-concepts.html">Key HydePHP Concepts</a>
 	</li>                            </ul>
         </li>
 	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: true }">
@@ -122,124 +122,88 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/blog-posts.html">Creating Blog Posts</a>
+		href="../../dev-docs-preview/creating-content/blog-posts.html">Creating Blog Posts</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/static-pages.html">Markdown &amp; Blade Pages</a>
+		href="../../dev-docs-preview/creating-content/static-pages.html">Markdown &amp; Blade Pages</a>
+	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../../dev-docs-preview/creating-content/documentation-pages.html">Documentation Pages</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/documentation-pages.html" aria-current="true">Documentation Pages</a>
+		href="../../dev-docs-preview/creating-content/managing-assets.html" aria-current="true">Managing and Compiling Assets</a>
 				<span class="sr-only">Table of contents</span>
 		<ul class="table-of-contents">
-<li>
-<a href="#introduction-to-hyde-documentation-pages">Introduction to Hyde Documentation Pages</a>
-<ul>
-<li>
-<a href="#best-practices-and-hyde-expectations">Best Practices and Hyde Expectations</a>
-<ul>
-<li>
-<a href="#filenames">Filenames</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#advanced-usage-and-customization">Advanced usage and customization</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#creating-documentation-pages-1">Creating Documentation Pages</a>
-<ul>
-<li>
-<a href="#front-matter-is-optional">Front Matter is optional</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#dynamic-content-generation">Dynamic content generation</a>
-</li>
-<li>
-<a href="#sidebar">Sidebar</a>
-<ul>
-<li>
-<a href="#table-of-contents">Table of contents</a>
-</li>
-<li>
-<a href="#sidebar-ordering">Sidebar ordering</a>
-</li>
-<li>
-<a href="#sidebar-labels">Sidebar labels</a>
-</li>
-<li>
-<a href="#sidebar-grouping">Sidebar grouping</a>
-<ul>
-<li>
-<a href="#using-front-matter">Using Front Matter</a>
-</li>
-<li>
-<a href="#using-subdirectories">Using subdirectories</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#hiding-items">Hiding items</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#customization">Customization</a>
-<ul>
-<li>
-<a href="#output-directory">Output directory</a>
-</li>
-<li>
-<a href="#automatic-navigation-menu">Automatic navigation menu</a>
-</li>
-<li>
-<a href="#sidebar-header-name">Sidebar header name</a>
-</li>
-<li>
-<a href="#sidebar-page-order">Sidebar page order</a>
-</li>
-<li>
-<a href="#table-of-contents-settings">Table of contents settings</a>
-</li>
-<li>
-<a href="#search-feature">Search feature</a>
-<ul>
 <li>
 <a href="#introduction">Introduction</a>
 </li>
 <li>
-<a href="#using-the-search">Using the search</a>
-</li>
-<li>
-<a href="#hiding-pages-from-indexing">Hiding pages from indexing</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#automatic-edit-page-button">Automatic &quot;Edit Page&quot; button</a>
+<a href="#some-extra-information-and-answers-to-possible-questions">Some extra information, and answers to possible questions</a>
 <ul>
 <li>
-<a href="#introduction-1">Introduction</a>
+<a href="#do-i-have-to-use-npm-to-use-hyde">Do I have to use NPM to use Hyde?</a>
 </li>
 <li>
-<a href="#example-configuration">Example configuration</a>
+<a href="#when-do-i-need-to-compile-assets">When do I need to compile assets?</a>
+<ul>
+<li>
+<a href="#when-customizing">When customizing</a>
 </li>
 <li>
-<a href="#changing-the-button-text">Changing the button text</a>
-</li>
-<li>
-<a href="#changing-the-position">Changing the position</a>
-</li>
-<li>
-<a href="#adding-a-button-icon">Adding a button icon</a>
-</li>
-<li>
-<a href="#changing-the-blade-view">Changing the Blade view</a>
+<a href="#when-adding-new-classes">When adding new classes</a>
 </li>
 </ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#how-are-assets-stored-and-managed">How are assets stored and managed?</a>
+<ul>
+<li>
+<a href="#what-is-the-difference-between-media-and-sitemedia">What is the difference between _media and _site/media?</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#how-do-i-compile-assets">How do I compile assets?</a>
+<ul>
+<li>
+<a href="#how-does-it-work">How does it work?</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#telling-hyde-where-to-find-assets">Telling Hyde where to find assets</a>
+<ul>
+<li>
+<a href="#customizing-the-blade-templates">Customizing the Blade templates</a>
+</li>
+<li>
+<a href="#you-might-not-even-need-to-do-anything">You might not even need to do anything!</a>
+<ul>
+<li>
+<a href="#loading-from-cdn">Loading from CDN</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#using-the-tailwindcss-play-cdn">Using the TailwindCSS Play CDN</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#managing-images">Managing images</a>
+<ul>
+<li>
+<a href="#referencing-images">Referencing images</a>
+<ul>
+<li>
+<a href="#making-images-accessible">Making images accessible</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#setting-a-featured-image-for-blog-posts">Setting a featured image for blog posts</a>
 </li>
 </ul>
 </li>
@@ -247,10 +211,7 @@
 
 			</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/managing-assets.html">Managing and Compiling Assets</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/compile-and-deploy.html">Compile &amp; Deploy</a>
+		href="../../dev-docs-preview/creating-content/compile-and-deploy.html">Compile &amp; Deploy</a>
 	</li>                            </ul>
         </li>
 	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
@@ -268,25 +229,25 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/customization.html">Customizing your Site</a>
+		href="../../dev-docs-preview/digging-deeper/customization.html">Customizing your Site</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/advanced-markdown.html">Advanced Markdown</a>
+		href="../../dev-docs-preview/digging-deeper/advanced-markdown.html">Advanced Markdown</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/extensions.html">Extensions &amp; Integrations</a>
+		href="../../dev-docs-preview/digging-deeper/extensions.html">Extensions &amp; Integrations</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/advanced-customization.html">Advanced Customization</a>
+		href="../../dev-docs-preview/digging-deeper/advanced-customization.html">Advanced Customization</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/collections.html">File-based Collections</a>
+		href="../../dev-docs-preview/digging-deeper/collections.html">File-based Collections</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/troubleshooting.html">Troubleshooting</a>
+		href="../../dev-docs-preview/digging-deeper/troubleshooting.html">Troubleshooting</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/updating-hyde.html">Updating Hyde</a>
+		href="../../dev-docs-preview/digging-deeper/updating-hyde.html">Updating Hyde</a>
 	</li>                            </ul>
         </li>
 	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
@@ -304,19 +265,19 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/introduction.html">Introduction</a>
+		href="../../dev-docs-preview/advanced-features/introduction.html">Introduction</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/autodiscovery.html">Autodiscovery</a>
+		href="../../dev-docs-preview/advanced-features/autodiscovery.html">Autodiscovery</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/automatic-routing.html">Automatic Routing</a>
+		href="../../dev-docs-preview/advanced-features/automatic-routing.html">Automatic Routing</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/dynamic-data-discovery.html">Dynamic Data Discovery</a>
+		href="../../dev-docs-preview/advanced-features/dynamic-data-discovery.html">Dynamic Data Discovery</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/page-models.html">Page models</a>
+		href="../../dev-docs-preview/advanced-features/page-models.html">Page models</a>
 	</li>                            </ul>
         </li>
 	</ul>                        </nav>
@@ -326,247 +287,93 @@
     <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 prose dark:prose-invert max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)]">
     
     <header id="document-header" class="flex items-center flex-wrap prose-h1:mb-3">
-        <h1>Creating Documentation Pages</h1>
+        <h1>Managing and Compiling Assets</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        <h2>Introduction to Hyde Documentation Pages<a id="introduction-to-hyde-documentation-pages" href="#introduction-to-hyde-documentation-pages" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Hyde makes it easier than ever to create documentation sites.
-By the way, this documentation site is of course made with the Hyde Documentation module!</p>
-<p>In short, all you need to do is put standard Markdown files in the <code>_docs/</code> directory and Hyde will do the rest.</p>
-<p>What is &quot;the rest&quot;, you may ask? Well, for starters:</p>
+        <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Managing and compiling assets is a very common task in web development. Unfortunately, it's rarely fun.</p>
+<p>With hyde, <strong>you don't have to do it</strong>, in fact, you can skip this entire page if you are happy with how it is.
+But as always with Hyde, you can customize everything if you want to.</p>
+<p>Hyde ships with a complete frontend using Blade views, TailwindCSS styles, and Alpine.js interactions. Some extra custom styles are made in the HydeFront package, which is pre-installed and bundled in the pre-configured Laravel Mix.</p>
+<p>To get you started quickly, all the styles are already compiled minified into <code>_media/app.css</code>, which will be copied to the <code>_site/media/app.css</code> directory when you run <code>php hyde build</code>.</p>
+<h2>Some extra information, and answers to possible questions<a id="some-extra-information-and-answers-to-possible-questions" href="#some-extra-information-and-answers-to-possible-questions" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h3>Do I have to use NPM to use Hyde?<a id="do-i-have-to-use-npm-to-use-hyde" href="#do-i-have-to-use-npm-to-use-hyde" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>No. NPM is optional as all the compiled styles you need are already installed. You only need NPM if you want to compile your own styles.</p>
+<h3>When do I need to compile assets?<a id="when-do-i-need-to-compile-assets" href="#when-do-i-need-to-compile-assets" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h4>When customizing<a id="when-customizing" href="#when-customizing" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>If you want to customize the Tailwind settings or add custom styles, you will need to take care of compiling the styles yourself.</p>
+<h4>When adding new classes<a id="when-adding-new-classes" href="#when-adding-new-classes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>The <code>_media/app.css</code> file that comes with Hyde contains TailwindCSS for all classes that are used in the default Blade views, as well as the HydeFront custom styles.</p>
+<p>If you customize the Blade views and add new classes, or if you add new classes in Blade-based pages, you may need to compile the assets yourself to get the new styles.</p>
+<p>If you stick to using Markdown based pages, you don't need to compile anything.</p>
+<h2>How are assets stored and managed?<a id="how-are-assets-stored-and-managed" href="#how-are-assets-stored-and-managed" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Currently, the frontend assets are separated into three places.</p>
+<p>The <code>resources/assets</code> contains <strong>source</strong> files, meaning files that will be compiled into something else. Here you will find the <code>app.css</code> file that bootstraps the TailwindCSS styles. This file is also an excellent place to add your custom styles. It is also where we import HydeFront.</p>
+<p>The <code>_media</code> folder contains <strong>compiled</strong> (and usually minified) files. When Hyde compiles your static site, all asset files here will get copied as they are into the <code>_site/media</code> folder.</p>
+<p>The <code>_site/media</code> folder contains the files that are served to the user.</p>
+<h3>What is the difference between <code>_media</code> and <code>_site/media</code>?<a id="what-is-the-difference-between-media-and-sitemedia" href="#what-is-the-difference-between-media-and-sitemedia" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>It may seem weird to have two folders for storing the compiled assets, but it is quite useful.</p>
+<p>The <code>_site</code> directory is intended to be excluded from version control while the <code>_media</code> folder is included in the version control, though you may choose to exclude the compiled files from the <code>_media</code> folder if you want to.</p>
+<p>You are of course free to modify this behavior by editing the <code>webpack.mix.js</code> file.</p>
+<h2>How do I compile assets?<a id="how-do-i-compile-assets" href="#how-do-i-compile-assets" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>First, make sure that you have installed all the NodeJS dependencies using <code>npm install</code>.
+Then run <code>npm run dev</code> to compile the assets. If you want to compile the assets for production, run <code>npm run prod</code>.
+You can also run <code>npm run watch</code> to watch for changes in the source files and recompile the assets automatically.</p>
+<h3>How does it work?<a id="how-does-it-work" href="#how-does-it-work" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Hyde uses <a href="https://laravel-mix.com/">Laravel Mix</a> (which is a wrapper for <a href="https://webpack.js.org/">webpack</a>) to compile the assets.</p>
+<p>When running the <code>npm run dev/prod</code> command, the following happens:</p>
+<ol>
+<li>Laravel Mix will compile the <code>resources/assets/app.css</code> file into <code>_media/app.css</code> using PostCSS with TailwindCSS and AutoPrefixer.</li>
+<li>Mix then copies the <code>_media</code> folder into <code>_site/media</code>, this is so that they are automatically accessible to your site without having to rerun <code>php hyde build</code>, making blend perfectly with the realtime compiler (<code>php hyde serve</code>).</li>
+</ol>
+<h2>Telling Hyde where to find assets<a id="telling-hyde-where-to-find-assets" href="#telling-hyde-where-to-find-assets" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h3>Customizing the Blade templates<a id="customizing-the-blade-templates" href="#customizing-the-blade-templates" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>To make it really easy to customize asset loading, the styles and scripts are loaded in dedicated Blade components.</p>
 <ul>
-<li>Hyde compiles your Markdown content into a beautiful static HTML page based on <a href="https://github.com/caendesilva/lagrafo">the Lagrafo frontend</a>
+<li>Styles are loaded in <code>hyde::layouts.styles</code>
 </li>
-<li>A sidebar (which is responsive) is automatically created based on your Markdown files
+<li>Scripts are loaded in <code>hyde::layouts.scripts</code>
+</li>
+</ul>
+<p>To customize them, run the following command:</p>
+<pre><code class="language-bash">php hyde publish:views layouts
+</code></pre>
+<p>Then edit the files found in <code>resources/views/vendor/hyde/layouts</code> directory of your project.</p>
+<h3>You might not even need to do anything!<a id="you-might-not-even-need-to-do-anything" href="#you-might-not-even-need-to-do-anything" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>For the absolute majority of the cases, you don't need to mess with these files. Hyde will automatically load the app.css file when it exists in the <code>_media</code> directory.</p>
+<h4>Loading from CDN<a id="loading-from-cdn" href="#loading-from-cdn" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>If you want to load the same pre-compiled file included with Hyde but from a CDN, you can set <code>load_app_styles_from_cdn</code> to <code>true</code> in the <code>config/hyde.php</code> file. While you lose the ability to customize it, your styles will be automatically updated when needed, as the installed Framework version will automatically specify the correct version to load.</p>
+<h3>Using the TailwindCSS Play CDN<a id="using-the-tailwindcss-play-cdn" href="#using-the-tailwindcss-play-cdn" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>If you want to use the <a href="https://tailwindcss.com/docs/installation/play-cdn">TailwindCSS Play CDN</a>, you can set <code>use_play_cdn</code> to <code>true</code> in the <code>config/hyde.php</code> file.
+This will in addition to loading the standard app.css file also add a script tag to load the TailwindCSS Play CDN.
+What's even better is that Hyde will also inject the contents of the included <code>tailwind.config.js</code> file into the script tag, so the Play CDN styles match the ones created by Laravel Mix.
+This also means you can tinker around with the TailwindCSS settings without having to compile anything.</p>
+<blockquote>
+<p>warn Note that the Play CDN is not meant for production use, so enabling it will add a warning to the web console.</p>
+</blockquote>
+<h2>Managing images<a id="managing-images" href="#managing-images" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>As mentioned above, assets stored in the _media folder are automatically copied to the _site/media folder,
+making it the recommended place to store images. You can then easily reference them in your Markdown files.</p>
+<h3>Referencing images<a id="referencing-images" href="#referencing-images" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The recommended way to reference images are with relative paths as this offers the most compatibility,
+allowing you to browse the site both locally on your filesystem and on the web when serving from a subdirectory.</p>
+<blockquote class="warning"><p>Note: The path is relative to the <b>compiled</b> file in the site output</p></blockquote>
+<p>The path to use depends on the location of the page. Note the subtle difference in the path prefix.</p>
 <ul>
-<li>If you have an <code>index.md</code> in the <code>_docs/</code> directory, it will be used as the sidebar header</li>
-<li>You can even <a href="#sidebar-page-order">customize the order and labels</a> of sidebar items</li>
-</ul>
+<li>If you are in a <strong>Blog Post or Documentation Page</strong>, use <code>../media/image.png</code>
 </li>
-<li>If you have an <code>index.md</code> in the <code>_docs/</code> directory,
-a link to it will be added to the site navigation menu named &quot;Docs&quot;.</li>
-<li>If you have a Torchlight API token in your .env file, Hyde will even automatically enable Syntax Highlighting for you.
-See more about this in the <a href="extensions#torchlight">extensions page</a>.</li>
-</ul>
-<h3>Best Practices and Hyde Expectations<a id="best-practices-and-hyde-expectations" href="#best-practices-and-hyde-expectations" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Since Hyde does a lot of things automatically, there are some things you may need
-to keep in mind when creating blog posts so that you don't get unexpected results.</p>
-<h4>Filenames<a id="filenames" href="#filenames" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<ul>
-<li>Hyde Documentation pages are files are stored in the <code>_docs</code> directory</li>
-<li>The filename is used as the filename for the compiled HTML</li>
-<li>Filenames should use <code>kebab-case-slug</code> format, followed by the appropriate extension</li>
-<li>Files prefixed with <code>_underscores</code> are ignored by Hyde</li>
-<li>You should always have an <code>index.md</code> file in the <code>_docs/</code> directory</li>
-<li>Your page will be stored in <code>_site/docs/&lt;slug&gt;.html</code> unless you <a href="#output-directory">change it in the config</a>
+<li>If in a <strong>Markdown Page or Blade Page</strong>, use <code>media/image.png</code>
+</li>
+<li>While not recommended, you can also use absolute paths: <code>/media/image.png</code>
 </li>
 </ul>
-<h3>Advanced usage and customization<a id="advanced-usage-and-customization" href="#advanced-usage-and-customization" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Like most of HydePHP, the Hyde Documentation module is highly customizable. Much of the frontend is composed using Blade templates and components, which you can customize to your heart's content.
-Since there are so many components, it's hard to list them all here in the documentation, so I encourage you to check out the <a href="https://github.com/hydephp/framework/tree/master/resources/views/components/docs">source code</a> to see how it's all put together and find the customizations you are looking for.</p>
-<h2>Creating Documentation Pages<a id="creating-documentation-pages" href="#creating-documentation-pages" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>You can create a Documentation page by adding a file to the <code>_docs</code> directory where the filename ends in <code>.md</code>.</p>
-<p>You can also scaffold one quickly by using the <a href="console-commands">HydeCLI</a>.</p>
-<pre><code class="language-bash">php hyde make:page &quot;Page Title&quot; --type=&quot;docs&quot;
+<h4>Making images accessible<a id="making-images-accessible" href="#making-images-accessible" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>To improve accessibility, you should always add an <code>alt</code> text. Here is a full example for an image in a blog post:</p>
+<pre><code class="language-markdown">![Image Alt](../media/image.png &quot;Image Title&quot;) # Note the relative path
 </code></pre>
-<p>This will create the following file saved as <code>_docs/page-title.md</code></p>
-<pre><code class="language-markdown"># Page Title
-</code></pre>
-<h3>Front Matter is optional<a id="front-matter-is-optional" href="#front-matter-is-optional" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>You don't need to use <a href="blog-posts#supported-front-matter-properties">front matter</a> to create a documentation page.</p>
-<p>However, Hyde still supports front matter here as it allows you to quickly override the default values.</p>
-<p>Here is a quick reference, however, you should take a look at the <a href="#dynamic-content-generation">dynamic content</a> section to learn more.</p>
-<pre><code class="language-yaml">---
-title: &quot;Page Title&quot;
-navigation:
-  label: &quot;Sidebar Label&quot;
-  hidden: true
-  priority: 5
----
-</code></pre>
-<h2>Dynamic content generation<a id="dynamic-content-generation" href="#dynamic-content-generation" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Hyde makes documentation pages easy to create by automatically generating dynamic content such as the sidebar and page title.
-If you are not happy with the results you can customize them in the config or with front matter.</p>
-<p>Before we look at how to override things, here is an overview of the relevant content Hyde generates,
-and where the data is from as well as where it can be overridden.</p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-<th>Source</th>
-<th>Override in</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>title</code> (string)</td>
-<td>The title of the page used in the HTML <code>&lt;title&gt;</code> tag</td>
-<td>The first H1 heading (<code># Foo</code>)</td>
-<td>Front matter</td>
-</tr>
-<tr>
-<td><code>navigation.label</code> (string)</td>
-<td>The label for the page shown in the sidebar</td>
-<td>The page identifier/basename (slug)</td>
-<td>Front matter, config</td>
-</tr>
-<tr>
-<td><code>navigation.hidden</code> (boolean)</td>
-<td>Hides the page from the sidebar</td>
-<td><em>null</em></td>
-<td>Front matter, config</td>
-</tr>
-<tr>
-<td><code>navigation.priority</code> (integer)</td>
-<td>The priority of the page used for ordering the sidebar</td>
-<td>Defaults to 999</td>
-<td>Front matter, config</td>
-</tr>
-</tbody>
-</table>
-<h2>Sidebar<a id="sidebar" href="#sidebar" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>The sidebar is automatically generated from the files in the <code>_docs</code> directory. You will probably want to change the order
-of these items. You can do this in two ways, either in the config or with front matter using the navigation array.</p>
-<h3>Table of contents<a id="table-of-contents" href="#table-of-contents" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Hyde automatically generates a table of contents for the page and adds it to the sidebar.</p>
-<p>The behaviour of this can be changed in the configuration file.
-See <a href="customization#navigation-menu--sidebar">the customization page</a> for more details.</p>
-<h3>Sidebar ordering<a id="sidebar-ordering" href="#sidebar-ordering" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>The sidebar is sorted/ordered by the <code>priority</code> property. The higher the priority the further down in the sidebar it will be.
-The default priority is 999. You can override the priority using the following front matter:</p>
-<pre><code class="language-yaml">navigation:
-  priority: 5
-</code></pre>
-<p>You can also change the order in the Docs configuration file.
-See <a href="customization#navigation-menu--sidebar">the chapter in the customization page</a> for more details. <br>
-<em>I personally think the config route is easier as it gives an instant overview, however the first way is nice as well.</em></p>
-<h3>Sidebar labels<a id="sidebar-labels" href="#sidebar-labels" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>The sidebar items are labeled with the <code>label</code> property. The default label is the filename of the file.
-You can change it with the following front matter:</p>
-<pre><code class="language-yaml">navigation:
-  label: &quot;My Custom Sidebar Label&quot;
-</code></pre>
-<h3>Sidebar grouping<a id="sidebar-grouping" href="#sidebar-grouping" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Sidebar grouping allows you to group items in the sidebar into categories. This is useful for creating a sidebar with a lot of items.
-The Hyde docs for instance use this.</p>
-<p>The feature is enabled automatically when one or more of your documentation pages have the navigation.group property set
-in the front matter. This will then switch to a slightly more compact sidebar layout with pages sorted into categories.
-Any pages without the group front matter will get put in the &quot;Other&quot; group.</p>
-<h4>Using Front Matter<a id="using-front-matter" href="#using-front-matter" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>To enable sidebar grouping, you can add the following front matter to your documentation pages:</p>
-<pre><code class="language-yaml">navigation:
-  group: &quot;Getting Started&quot;
-</code></pre>
-<h4>Using subdirectories<a id="using-subdirectories" href="#using-subdirectories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Since <a href="https://github.com/hydephp/develop/releases/tag/v0.52.0-beta">v0.52.0-beta</a>, you can also automatically group your documentation pages by placing source files in sub-directories.</p>
-<p>For example, putting a Markdown file in <code>_docs/getting-started/</code>, is equivalent to adding the same front matter in the step above.</p>
-<blockquote>
-<p>Note that the file will still be compiled to the <code>_site/docs/</code> directory like it would be if you didn't use the sub-directories.</p>
-</blockquote>
-<h3>Hiding items<a id="hiding-items" href="#hiding-items" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>You can hide items from the sidebar by adding the <code>hidden</code> property to the front matter:</p>
-<pre><code class="language-yaml">navigation:
-  hidden: true
-</code></pre>
-<p>This can be useful to create redirects or other items that should not be shown in the sidebar.</p>
-<blockquote>
-<p>The index page is by default not shown as a sidebar item, but instead is linked in the sidebar header. <br></p>
-</blockquote>
-<h2>Customization<a id="customization" href="#customization" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Please see the <a href="customization">customization page</a> for in-depth information on how to customize Hyde,
-including the documentation pages. Here is a high level overview for quick reference though.</p>
-<h3>Output directory<a id="output-directory" href="#output-directory" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>If you want to store the compiled documentation pages in a different directory than the default 'docs' directory,
-for example to specify a version like the Hyde docs does, you can specify the output directory in the Hyde configuration file.
-The path is relative to the site output, typically <code>_site</code>.</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_config/hyde.php</small>'output_directories' =&gt; [
-    \Hyde\Pages\DocumentationPage::class =&gt; 'docs' // default
-    \Hyde\Pages\DocumentationPage::class =&gt; 'docs/master' // What the Hyde docs use
-]
-</code></pre>
-<p>Note that you need to take care as to not set it to something that may conflict with other parts, such as media or posts directories.</p>
-<h3>Automatic navigation menu<a id="automatic-navigation-menu" href="#automatic-navigation-menu" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>By default, a link to the documentation page is added to the navigation menu when an index.md file is found in the <code>_docs</code> directory. Please see the <a href="customization#navigation-menu--sidebar">the customization page</a> for more information.</p>
-<h3>Sidebar header name<a id="sidebar-header-name" href="#sidebar-header-name" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>By default, the site title shown in the sidebar header is generated from the configured site name suffixed with &quot;docs&quot;.
-You can change this in the Docs configuration file.</p>
-<pre><code class="language-php">'title' =&gt; 'API Documentation',
-</code></pre>
-<blockquote>
-<p>Tip: The header will link to the docs/index page, if it exists.</p>
-</blockquote>
-<h3>Sidebar page order<a id="sidebar-page-order" href="#sidebar-page-order" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>To quickly arrange the order of items in the sidebar, you can reorder the page slugs in the list and the links will be sorted in that order.
-Link items without an entry here will have fall back to the default priority of 999, putting them last.</p>
-<pre><code class="language-php">'sidebar_order' =&gt; [
-    'readme',
-    'installation',
-    'getting-started',
-]
-</code></pre>
-<p>See <a href="customization#navigation-menu--sidebar">the chapter in the customization page</a> for more details. <br></p>
-<h3>Table of contents settings<a id="table-of-contents-settings" href="#table-of-contents-settings" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>In the <code>config/docs.php</code> file you can configure the behavior, content,
-and the look and feel of the sidebar table of contents.
-You can also disable the feature completely.</p>
-<pre><code class="language-php">'table_of_contents' =&gt; [
-	'enabled' =&gt; true,
-	'min_heading_level' =&gt; 2,
-	'max_heading_level' =&gt; 4,
-	'smooth_page_scrolling' =&gt; true,
-],
-</code></pre>
-<h3>Search feature<a id="search-feature" href="#search-feature" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<h4>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>The HydeSearch plugin adds a search feature to documentation pages.</p>
-<p>The search feature is enabled by default.
-You can disable it by removing the <code>documentationSearch</code> from the Hyde <code>Features</code> config array.</p>
-<h4>Using the search<a id="using-the-search" href="#using-the-search" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>The search works by generating a JSON search index which the JavaScript plugin loads asynchronously.</p>
-<p>Two types of search methods are added, one is a full page search screen that will saved to <code>docs/search.html</code>.
-<small><blockquote>The full page can be disabled by setting <code>create_search_page</code> to <code>false</code> in the <code>docs</code> config.</blockquote></small></p>
-<blockquote>
-<p>Note that the fullpage search is used as a fallback for browsers that don't support the <code>&lt;dialogue&gt;</code> element, and may lead to 404 errors if disabled.</p>
-</blockquote>
-<p>The second method is a button added to the documentation pages, similar to how Algolia DocSearch works.
-Opening it will open a dialog modal with an integrated search screen.
-You can also open the dialog using the keyboard shortcut <code>/</code>.</p>
-<h4>Hiding pages from indexing<a id="hiding-pages-from-indexing" href="#hiding-pages-from-indexing" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>If you have a large page, like a changelog, on your documentation sites you may want to hide it from the search index. You can do this by adding the page slug to the <code>exclude_from_search</code> array in the <code>docs</code> config, similar to how navigation menu items are hidden.</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'exclude_from_search' =&gt; [
-  'changelog',
-]
-</code></pre>
-<p>The page will still be accessible via the URL, but will be added to the search index JSON file. Don't include the file extension.</p>
-<h3>Automatic &quot;Edit Page&quot; button<a id="automatic-edit-page-button" href="#automatic-edit-page-button" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<h4>Introduction<a id="introduction-1" href="#introduction-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Hyde can automatically add links to documentation pages that takes the user
-to a GitHub page (or similar) to edit the page. This makes it great for open-source projects
-looking to allow others to contribute to the documentation in a quick and easy manner.</p>
-<p>The feature is automatically enabled when you specify a base URL in the Docs configuration file.
-Hyde expects this to be a GitHub path, but it will probably work with other methods as well,
-if not, please send a PR and/or create an issue on the <a href="https://github.com/hydephp/framework">GitHub repository</a>!</p>
-<h4>Example configuration<a id="example-configuration" href="#example-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Let's take a practical example for how HydePHP.com uses this feature.</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'source_file_location_base' =&gt; 'https://github.com/hydephp/docs/blob/master/',
-</code></pre>
-<h4>Changing the button text<a id="changing-the-button-text" href="#changing-the-button-text" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Changing the label is easy, just change the following config setting:</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'edit_source_link_text' =&gt; 'Edit Source on GitHub',
-</code></pre>
-<h4>Changing the position<a id="changing-the-position" href="#changing-the-position" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>By default the button will be shown in both the documentation page footer.
-You can change this by setting the following config setting to <code>'header'</code>, <code>'footer'</code>, or <code>'both'</code></p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'edit_source_link_position' =&gt; 'header',
-</code></pre>
-<h4>Adding a button icon<a id="adding-a-button-icon" href="#adding-a-button-icon" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>This is not included out of the box, but is easy to add with some CSS!
-Just target the <code>.edit-page-link</code> class.</p>
-<pre><code class="language-css"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>e.g. app.css</small>.edit-page-link::before {content: &quot;✏ &quot;}
-</code></pre>
-<h4>Changing the Blade view<a id="changing-the-blade-view" href="#changing-the-blade-view" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>You can also publish the <code>edit-source-button.blade.php</code> view and change it to your liking.</p>
+<h3>Setting a featured image for blog posts<a id="setting-a-featured-image-for-blog-posts" href="#setting-a-featured-image-for-blog-posts" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Hyde offers great support for creating data-rich and accessible featured images for blog posts.</p>
+<p>You can read more about this in the <a href="blog-posts#image">creating blog posts page</a>.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
@@ -667,7 +474,7 @@ Just target the <code>.edit-page-link</code> class.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1152" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1152</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/8499a48e7b1212de5bc74f224a0e153b09bc3159"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">8499a48e7b1212de5bc74f224a0e153b09bc3159</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/a680e276c0187eeda8c851da4cb655eb601705e5"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">a680e276c0187eeda8c851da4cb655eb601705e5</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1152" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
