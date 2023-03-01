@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HydePHP Documentation Preview - Quickstart Guide</title>
+<title>HydePHP Documentation Preview - Advanced Markdown</title>
 
 
 
-<link rel="canonical" href="https://hydephp.github.io/develop/pr-685/dev-docs-preview/dev-docs-preview/quickstart.html">
-<meta name="twitter:title" content="HydePHP Documentation Preview - Quickstart Guide">
-<meta property="og:title" content="HydePHP Documentation Preview - Quickstart Guide">
+<link rel="canonical" href="https://hydephp.github.io/develop/pr-685/dev-docs-preview/dev-docs-preview/digging-deeper/advanced-markdown.html">
+<meta name="twitter:title" content="HydePHP Documentation Preview - Advanced Markdown">
+<meta property="og:title" content="HydePHP Documentation Preview - Advanced Markdown">
 
 
 <link rel="sitemap" href="https://hydephp.github.io/develop/pr-685/dev-docs-preview/sitemap.xml" type="application/xml" title="Sitemap">
@@ -42,7 +42,7 @@
 <a href="#content" id="skip-to-content" class="sr-only focus:not-sr-only bg-black border-4 border-yellow-400 focus:absolute focus:mt-2 focus:mx-auto focus:p-2 focus:w-64 h-auto left-0 overflow-auto right-0 rounded-md text-center text-lg text-white top-auto z-50 ">Skip to content</a>
 <nav id="mobile-navigation" class="bg-white dark:bg-gray-800 md:hidden flex justify-between w-full h-16 z-40 fixed left-0 top-0 p-4 leading-8 shadow-lg">
     <strong class="px-2 mr-auto">
-                    <a href="../dev-docs-preview/index.html">
+                    <a href="../../dev-docs-preview/index.html">
                 PR #685 - Docs
             </a>
             </strong>
@@ -69,7 +69,7 @@
     <header id="sidebar-header" class="h-16">
         <div id="sidebar-brand" class="flex items-center justify-between h-16 py-4 px-2">
 	<strong class="px-2">
-					<a href="../dev-docs-preview/index.html">
+					<a href="../../dev-docs-preview/index.html">
 				PR #685 - Docs
 			</a>
 			</strong>
@@ -83,7 +83,7 @@
         class="p-2 overflow-y-auto border-y border-gray-300 dark:border-[#1b2533] h-full">
         
                                     <ul id="sidebar-navigation-items" role="list">
-	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: true }">
+	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
             <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
                 <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Getting Started</h4>
                 <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
@@ -96,61 +96,15 @@
                 </button>
             </header>
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
-                                    <li class="sidebar-navigation-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/quickstart.html" aria-current="true">Quickstart Guide</a>
-				<span class="sr-only">Table of contents</span>
-		<ul class="table-of-contents">
-<li>
-<a href="#installing-hydephp-using-composer">Installing HydePHP using Composer</a>
-<ul>
-<li>
-<a href="#requirements">Requirements</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#using-the-hyde-cli">Using the Hyde CLI</a>
-</li>
-<li>
-<a href="#starting-a-development-server">Starting a development server</a>
-</li>
-<li>
-<a href="#creating-content">Creating content</a>
-<ul>
-<li>
-<a href="#directory-structure">Directory structure</a>
-</li>
-<li>
-<a href="#scaffolding-files">Scaffolding files</a>
-</li>
-<li>
-<a href="#autodiscovery">Autodiscovery</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#compiling-to-static-html">Compiling to static HTML</a>
-<ul>
-<li>
-<a href="#managing-assets">Managing assets</a>
-</li>
-<li>
-<a href="#deploying-your-site">Deploying your site</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#further-reading">Further reading</a>
-</li>
-</ul>
-
-			</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/console-commands.html">Console Commands</a>
+		href="../../dev-docs-preview/getting-started/quickstart.html">Quickstart Guide</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/architecture-concepts.html">Key HydePHP Concepts</a>
+		href="../../dev-docs-preview/getting-started/console-commands.html">Console Commands</a>
+	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../../dev-docs-preview/getting-started/architecture-concepts.html">Key HydePHP Concepts</a>
 	</li>                            </ul>
         </li>
 	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
@@ -168,22 +122,22 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/blog-posts.html">Creating Blog Posts</a>
+		href="../../dev-docs-preview/creating-content/blog-posts.html">Creating Blog Posts</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/static-pages.html">Markdown &amp; Blade Pages</a>
+		href="../../dev-docs-preview/creating-content/static-pages.html">Markdown &amp; Blade Pages</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/documentation-pages.html">Documentation Pages</a>
+		href="../../dev-docs-preview/creating-content/documentation-pages.html">Documentation Pages</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/managing-assets.html">Managing and Compiling Assets</a>
+		href="../../dev-docs-preview/creating-content/managing-assets.html">Managing and Compiling Assets</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/compile-and-deploy.html">Compile &amp; Deploy</a>
+		href="../../dev-docs-preview/creating-content/compile-and-deploy.html">Compile &amp; Deploy</a>
 	</li>                            </ul>
         </li>
-	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
+	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: true }">
             <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
                 <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Digging Deeper</h4>
                 <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
@@ -198,25 +152,84 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/customization.html">Customizing your Site</a>
+		href="../../dev-docs-preview/digging-deeper/customization.html">Customizing your Site</a>
+	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../../dev-docs-preview/digging-deeper/advanced-markdown.html" aria-current="true">Advanced Markdown</a>
+				<span class="sr-only">Table of contents</span>
+		<ul class="table-of-contents">
+<li>
+<a href="#introduction">Introduction</a>
+</li>
+<li>
+<a href="#raw-html-tags">Raw HTML Tags</a>
+</li>
+<li>
+<a href="#blade-support">Blade Support</a>
+<ul>
+<li>
+<a href="#using-blade-in-markdown">Using Blade in Markdown</a>
+<ul>
+<li>
+<a href="#standard-syntax">Standard syntax</a>
+</li>
+<li>
+<a href="#blade-includes">Blade includes</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#enabling-blade-supported-markdown">Enabling Blade-supported Markdown</a>
+<ul>
+<li>
+<a href="#limitations">Limitations</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#coloured-blockqoutes">Coloured Blockqoutes</a>
+<ul>
+<li>
+<a href="#customizations">Customizations</a>
+</li>
+<li>
+<a href="#limitations-1">Limitations</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#code-block-filepaths">Code block filepaths</a>
+<ul>
+<li>
+<a href="#alternative-syntax">Alternative syntax</a>
+</li>
+<li>
+<a href="#advanced-usage">Advanced usage</a>
+</li>
+<li>
+<a href="#limitations-2">Limitations</a>
+</li>
+</ul>
+</li>
+</ul>
+
+			</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../../dev-docs-preview/digging-deeper/extensions.html">Extensions &amp; Integrations</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/advanced-markdown.html">Advanced Markdown</a>
+		href="../../dev-docs-preview/digging-deeper/advanced-customization.html">Advanced Customization</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/extensions.html">Extensions &amp; Integrations</a>
+		href="../../dev-docs-preview/digging-deeper/collections.html">File-based Collections</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/advanced-customization.html">Advanced Customization</a>
+		href="../../dev-docs-preview/digging-deeper/troubleshooting.html">Troubleshooting</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/collections.html">File-based Collections</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/troubleshooting.html">Troubleshooting</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/updating-hyde.html">Updating Hyde</a>
+		href="../../dev-docs-preview/digging-deeper/updating-hyde.html">Updating Hyde</a>
 	</li>                            </ul>
         </li>
 	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
@@ -234,19 +247,19 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/introduction.html">Introduction</a>
+		href="../../dev-docs-preview/advanced-features/introduction.html">Introduction</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/autodiscovery.html">Autodiscovery</a>
+		href="../../dev-docs-preview/advanced-features/autodiscovery.html">Autodiscovery</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/automatic-routing.html">Automatic Routing</a>
+		href="../../dev-docs-preview/advanced-features/automatic-routing.html">Automatic Routing</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/dynamic-data-discovery.html">Dynamic Data Discovery</a>
+		href="../../dev-docs-preview/advanced-features/dynamic-data-discovery.html">Dynamic Data Discovery</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/page-models.html">Page models</a>
+		href="../../dev-docs-preview/advanced-features/page-models.html">Page models</a>
 	</li>                            </ul>
         </li>
 	</ul>                        </nav>
@@ -256,82 +269,111 @@
     <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 prose dark:prose-invert max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)]">
     
     <header id="document-header" class="flex items-center flex-wrap prose-h1:mb-3">
-        <h1>Quickstart Guide</h1>
+        <h1>Advanced Markdown</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        <h2>Installing HydePHP using Composer<a id="installing-hydephp-using-composer" href="#installing-hydephp-using-composer" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>The recommended method of installing Hyde is using Composer.</p>
-<pre><code class="language-bash">// torchlight! {&quot;lineNumbers&quot;: false}
-composer create-project hyde/hyde --stability=dev
+        <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Since HydePHP makes heavy use of Markdown there are some extra features and helpers created just for Hyde to make using Markdown even easier!</p>
+<h2>Raw HTML Tags<a id="raw-html-tags" href="#raw-html-tags" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>HydePHP uses the GitHub Flavored Markdown extension to convert Markdown. This, by default strips out some HTML tags. If you want to allow all arbitrary HTML tags, and understand the risks involved, enable all HTML tags by setting the following option to true in your <code>config/markdown.php</code> file.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/markdown.php</small>// torchlight! {&quot;lineNumbers&quot;: false}
+'allow_html' =&gt; true,
 </code></pre>
-<h3>Requirements<a id="requirements" href="#requirements" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>This, will behind the scenes add the bundled <code>DisallowedRawHtml</code> extension, and configure it so that no HTML tags are stripped out.</p>
+<h2>Blade Support<a id="blade-support" href="#blade-support" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Since Hyde v0.30.x you can use Laravel Blade in Markdown files!</p>
+<h3>Using Blade in Markdown<a id="using-blade-in-markdown" href="#using-blade-in-markdown" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>To use Blade in your Markdown files, simply use the Blade shortcode directive,
+followed by your desired Blade string.</p>
+<h4>Standard syntax<a id="standard-syntax" href="#standard-syntax" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<pre><code class="language-markdown"> [Blade]: {{ &quot;Hello World!&quot; }} // Will render: 'Hello World!'
+</code></pre>
+<h4>Blade includes<a id="blade-includes" href="#blade-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Only single-line shortcode directives are supported. If you need to use multi-line Blade code,
+use an <code>@include</code> directive to render a more complex Blade template.
+You can pass data to includes by specifying an array to the second argument.</p>
+<pre><code class="language-markdown"> [Blade]: @include(&quot;hello-world&quot;)
+ [Blade]: @include(&quot;hello&quot;, [&quot;name&quot; =&gt; &quot;World&quot;])
+</code></pre>
+<h3>Enabling Blade-supported Markdown<a id="enabling-blade-supported-markdown" href="#enabling-blade-supported-markdown" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>It's disabled by default since it allows arbitrary PHP to run, which could be a security risk,
+depending on your setup. However, if your Markdown is trusted, and you know it's safe,
+you can enable it in the <code>config/markdown.php</code> file.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+'enable_blade' =&gt; true,
+</code></pre>
+<h4>Limitations<a id="limitations" href="#limitations" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>All shortcodes must be the first word on a new line.
+For example, using a space before the <code>[Blade]:</code> will intentionally cause it to not render.</p>
+<h2>Coloured Blockqoutes<a id="coloured-blockqoutes" href="#coloured-blockqoutes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>The HydePHP Markdown converter also supports some extra directives and features. One of them being four different coloured blockquotes. Simply append the colour after the initial <code>&gt;</code> character.</p>
+<pre><code class="language-markdown">‎&gt; Normal Blockquote
+‎&gt;info Info Blockquote
+‎&gt;warning Warning Blockquote
+‎&gt;danger Danger Blockquote
+‎&gt;success Success Blockquote
+</code></pre>
 <blockquote>
-<p>These requirements are for your local development environment.</p>
+<p>Normal Blockquote</p>
 </blockquote>
-<p>Hyde is based on <a href="https://laravel.com/docs/9.x/releases">Laravel 9</a>
-which requires a minimum PHP version of 8.0.
-You should also have <a href="https://getcomposer.org/">Composer</a> installed.</p>
-<p>To use some features like <a href="managing-assets">compiling your own assets</a>
-you also need NodeJS and NPM.</p>
-<h2>Using the Hyde CLI<a id="using-the-hyde-cli" href="#using-the-hyde-cli" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>The main way to interact with Hyde is through HydeCLI.</p>
-<p>If you are familiar with Laravel Artisan you will feel right at home.</p>
-<p>Learn more about the HydeCLI in the <a href="console-commands">console commands</a> documentation.</p>
-<h2>Starting a development server<a id="starting-a-development-server" href="#starting-a-development-server" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>To make previewing your site a breeze you can use the real-time compiler
-which builds your pages on the fly. Start it using the HydeCLI:</p>
-<pre><code class="language-bash">php hyde serve
+<blockquote class="info"><p>Info Blockquote</p></blockquote>
+<blockquote class="warning"><p>Warning Blockquote</p></blockquote>
+<blockquote class="danger"><p>Danger Blockquote</p></blockquote>
+<blockquote class="success"><p>Success Blockquote</p></blockquote>
+<h4>Customizations<a id="customizations" href="#customizations" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>You can easily customize these styles too by adding and editing the following in your <code>resources/app.css</code> file, and then recompiling your site styles.
+The code examples here use the Tailwind <code>@apply</code> directives, but you could also use <code>border-color: blue;</code> just as well.</p>
+<pre><code class="language-css"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>resources/app.css</small>/* Markdown Features */
+
+.prose blockquote.info {
+	@apply border-blue-500;
+}
+
+.prose blockquote.success {
+	@apply border-green-500;
+}
+
+.prose blockquote.warning {
+	@apply border-amber-500;
+}
+
+.prose blockquote.danger {
+	@apply border-red-600;
+}
 </code></pre>
-<h2>Creating content<a id="creating-content" href="#creating-content" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<h3>Directory structure<a id="directory-structure" href="#directory-structure" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Creating content with Hyde is easy. Simply place Markdown files in one of the source directories, which are as follows:</p>
-<pre><code>// torchlight! {&quot;lineNumbers&quot;: false}
-├── _docs  // For documentation pages              
-├── _posts // For blog posts
-└── _pages // For static Markdown and Blade pages
+<h4>Limitations<a id="limitations-1" href="#limitations-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Note that these currently do not support multi-line blockquotes.</p>
+<h2>Code block filepaths<a id="code-block-filepaths" href="#code-block-filepaths" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>When browsing these documentation pages you may have noticed a label in the top right corner of code blocks specifying the file path.
+These are also created by using a custom Hyde feature that turns code comments into automatic code blocks.</p>
+<p>Simply add a code comment in the <strong>first line</strong> of a <code>fenced code block</code> like so:</p>
+<pre><code class="language-markdown"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_docs/advanced-markdown.md</small>```php
+‎// Filepath: hello-world.php 
+
+echo 'Hello World!';
+```
 </code></pre>
-<blockquote>
-<p>There are a few more directories that you should know about. Please see the
-<a href="architecture-concepts#directory-structure">directory structure</a> section.</p>
-</blockquote>
-<h3>Scaffolding files<a id="scaffolding-files" href="#scaffolding-files" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>You can scaffold blog post files using the <code>php hyde make:post</code> command with automatically creates the front matter based on your input selections.</p>
-<p>You can also scaffold pages with the <code>php hyde make:page</code> command.</p>
-<pre><code class="language-bash">php hyde make:page &quot;Page Title&quot; # Markdown is the default page type
-php hyde make:page --type=blade # Creates a file extending the default layout
-php hyde make:page --type=docs  # Quickly creates a documentation page
+<p>Which becomes:</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>hello-world.php</small>echo 'Hello World!';
 </code></pre>
-<h3>Autodiscovery<a id="autodiscovery" href="#autodiscovery" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>When building the site, Hyde will your source directories for files and
-compile them into static HTML using the appropriate layout depending
-on what kind of page it is. You don't have to worry about routing
-as Hyde takes care of that, including creating navigation menus!</p>
-<h2>Compiling to static HTML<a id="compiling-to-static-html" href="#compiling-to-static-html" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Now that you have some amazing content, you'll want to compile your site into static HTML.</p>
-<p>This is as easy as executing the <code>build</code> command:</p>
-<pre><code class="language-bash">php hyde build
+<h4>Alternative syntax<a id="alternative-syntax" href="#alternative-syntax" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>The syntax is rather forgiving by design, and supports using both <code>//</code> and <code>#</code> for comments.
+The colon is also optional, and the 'filepath' string is case-insensitive. So the following is also perfectly valid:</p>
+<pre><code class="language-markdown">```js
+‎// filepath hello.js
+console.log('Hello World!');
+```
 </code></pre>
-<p><strong>Your site is then stored in the <code>_site</code> directory.</strong></p>
-<h3>Managing assets<a id="managing-assets" href="#managing-assets" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Hyde comes bundled with a precompiled and minified <code>app.css</code> containing all the Tailwind you need for the default views meaning that you don't even need to use NPM. However, Hyde is already configured to use Laravel Mix to compile your assets if you feel like there's a need to. See more on the <a href="managing-assets">Managing Assets</a> page.</p>
-<h3>Deploying your site<a id="deploying-your-site" href="#deploying-your-site" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>You are now ready to show your site to the world!</p>
-<p>Simply copy the <code>_site</code> directory to your web server's document root, and you're ready to go.</p>
-<p>You can even use GitHub pages to host your site for free. That's what the Hyde website does,
-using a CI that automatically builds and deploys this site.</p>
-<h2>Further reading<a id="further-reading" href="#further-reading" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Here's some ideas of what to read next:</p>
-<ul>
-<li>
-<a href="architecture-concepts">Architecture Concepts &amp; Directory Structure</a>
-</li>
-<li>
-<a href="console-commands">Console Commands with the HydeCLI</a>
-</li>
-<li>
-<a href="blog-posts">Creating Blog Posts</a>
-</li>
-</ul>
+<p>If you have a newline after the filepath like in the first example, it will be removed so your code stays readable.</p>
+<h4>Advanced usage<a id="advanced-usage" href="#advanced-usage" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>If you have enabled HTML in Markdown by setting the <code>allow_html</code> option to true in your <code>config/markdown.php</code> file,
+anything within the path label will be rendered as HTML. This means you can add links, or even images to the label.</p>
+<pre><code class="language-markdown"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>&lt;a href=&quot;https://github.com/hydephp/develop/blob/master/docs/digging-deeper/advanced-markdown.md&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;View file on Github&lt;/a&gt;</small>```markdown
+‎// Filepath: &lt;a href=&quot;https://github.com&quot;&gt;View file on Github&lt;/a&gt;
+```
+</code></pre>
+<h4>Limitations<a id="limitations-2" href="#limitations-2" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>The filepaths are hidden on mobile devices using CSS to prevent them from overlapping with the code block.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
@@ -432,7 +474,7 @@ using a CI that automatically builds and deploys this site.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/685" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #685</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/439dc0d5be158be97c7f4b15f2a843bd7d22fec0"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">439dc0d5be158be97c7f4b15f2a843bd7d22fec0</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/0a66e6c9aef5672fee646e10352a85f8409ea1ab"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">0a66e6c9aef5672fee646e10352a85f8409ea1ab</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/685" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
