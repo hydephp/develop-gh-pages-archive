@@ -294,9 +294,10 @@ You can also overload the built-in tasks to customize them to your needs.</p>
 <h2>Good to know before you start<a id="good-to-know-before-you-start" href="#good-to-know-before-you-start" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <h3>Types of tasks<a id="types-of-tasks" href="#types-of-tasks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>There are two types, PreBuildTasks and PostBuildTasks. As the names suggest, PreBuildTasks are executed before the site is built, and PostBuildTasks are executed after the site is built.</p>
-<p>To choose which type of task you want to create, you either implements the <code>RunsBeforeBuild</code> or <code>RunsAfterBuild</code> interface. More on that later, however.</p>
+<p>To choose which type of task you want to create, you extend either the <code>PreBuildTask</code> or <code>PostBuildTask</code> class.
+Both of these have the exact same helpers and API available, so the only difference between them is when they are executed. The classes are otherwise identical.</p>
 <h3>About these examples<a id="about-these-examples" href="#about-these-examples" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>For most of these examples we will focus on the PostBuildTasks as they are the most common. However, the only code difference between the two is the interface you implement. The classes are otherwise identical.</p>
+<p>For most of these examples we will focus on the PostBuildTasks as they are the most common.</p>
 <p>For all these examples we assume you put the file in the <code>App/Actions</code> directory, but you can put them anywhere.</p>
 <h3>Interacting with output<a id="interacting-with-output" href="#interacting-with-output" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>In a way, build tasks are like micro-commands, as they can interact directly with the build commands I/O. Please take a look at the <a href="https://laravel.com/docs/10.x/artisan#command-io">Laravel Console Documentation</a> for the full list of available methods.</p>
@@ -304,7 +305,7 @@ You can also overload the built-in tasks to customize them to your needs.</p>
 <h2>Creating build tasks<a id="creating-build-tasks" href="#creating-build-tasks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <h3>Minimal example<a id="minimal-example" href="#minimal-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Here is a minimal example to give you an idea of what we are working with.</p>
-<pre><code class="language-php">class SimpleBuildTask extends BuildTask implements RunsAfterBuild
+<pre><code class="language-php">class SimpleBuildTask extends PostBuildTask
 {
     public function run(): void
     {
@@ -314,6 +315,7 @@ You can also overload the built-in tasks to customize them to your needs.</p>
 </code></pre>
 <p>As you can see, at their core, build tasks are simple classes containing a <code>run()</code> method,
 which as I'm sure you have guessed, is the method that is executed when the task is run by the build command.</p>
+<p>If you want the task to run before the build, you would extend the <code>PreBuildTask</code> class instead.</p>
 <h4>Automatic output<a id="automatic-output" href="#automatic-output" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>When running the build command, you will see the following output added after the build is complete.</p>
 <pre>
@@ -326,10 +328,9 @@ which as I'm sure you have guessed, is the method that is executed when the task
 
 namespace App\Actions;
 
-use Hyde\Framework\Features\BuildTasks\BuildTask;
-use Hyde\Framework\Features\BuildTasks\Contracts\RunsAfterBuild;
+use Hyde\Framework\Features\BuildTasks\PostBuildTask;
 
-class ExampleTask extends BuildTask implements RunsAfterBuild
+class ExampleTask extends PostBuildTask
 {
     public static string $message = 'Say hello';
 
@@ -481,7 +482,7 @@ To actually register your task, provide the fully qualified class name of the ta
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1152" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1152</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/b5497aa2766f26238be01a9459e6d064b917a5c0"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">b5497aa2766f26238be01a9459e6d064b917a5c0</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/1a6bcf9541d8f2bb03ebb08fe740c153a0232e42"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">1a6bcf9541d8f2bb03ebb08fe740c153a0232e42</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1152" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
