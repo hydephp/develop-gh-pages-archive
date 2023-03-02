@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HydePHP Documentation Preview - Build Tasks</title>
+<title>HydePHP Documentation Preview - Custom Build Tasks</title>
 
 
 
 <link rel="canonical" href="https://hydephp.github.io/develop/pr-1152/dev-docs-preview/dev-docs-preview/build-tasks.html">
-<meta name="twitter:title" content="HydePHP Documentation Preview - Build Tasks">
-<meta property="og:title" content="HydePHP Documentation Preview - Build Tasks">
+<meta name="twitter:title" content="HydePHP Documentation Preview - Custom Build Tasks">
+<meta property="og:title" content="HydePHP Documentation Preview - Custom Build Tasks">
 
 
 <link rel="sitemap" href="https://hydephp.github.io/develop/pr-1152/dev-docs-preview/sitemap.xml" type="application/xml" title="Sitemap">
@@ -191,20 +191,53 @@
 		href="../dev-docs-preview/advanced-features.html">Introduction</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/build-tasks.html" aria-current="true">Build Tasks</a>
+		href="../dev-docs-preview/build-tasks.html" aria-current="true">Custom Build Tasks</a>
 				<span class="sr-only">Table of contents</span>
 		<ul class="table-of-contents">
 <li>
-<a href="#adding-custom-post-build-tasks">Adding custom post-build tasks</a>
+<a href="#introduction">Introduction</a>
+</li>
+<li>
+<a href="#good-to-know-before-you-start">Good to know before you start</a>
+<ul>
+<li>
+<a href="#types-of-tasks">Types of tasks</a>
+</li>
+<li>
+<a href="#about-these-examples">About these examples</a>
+</li>
+<li>
+<a href="#interacting-with-output">Interacting with output</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#creating-build-tasks">Creating build tasks</a>
 <ul>
 <li>
 <a href="#minimal-example">Minimal example</a>
+<ul>
+<li>
+<a href="#automatic-output">Automatic output</a>
+</li>
+</ul>
 </li>
 <li>
 <a href="#full-example">Full example</a>
 </li>
+</ul>
+</li>
 <li>
 <a href="#registering-the-tasks">Registering the tasks</a>
+<ul>
+<li>
+<a href="#autodiscovery-registration">Autodiscovery registration</a>
+</li>
+<li>
+<a href="#config-file-registration">Config file registration</a>
+</li>
+<li>
+<a href="#programmatic-registration">Programmatic registration</a>
 </li>
 </ul>
 </li>
@@ -249,29 +282,46 @@
     <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 prose dark:prose-invert max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)]">
     
     <header id="document-header" class="flex items-center flex-wrap prose-h1:mb-3">
-        
+        <h1>Custom Build Tasks</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        <h2>Adding custom post-build tasks<a id="adding-custom-post-build-tasks" href="#adding-custom-post-build-tasks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>These tasks are code that is executed automatically after the site has been built using the <code>php hyde build</code> command. The built-in features in Hyde like sitemap generation and RSS feeds are created using tasks like these.</p>
-<p>Maybe you want to create your own, to for example upload the site to FTP or copy the files to a public directory? It's easy to do, here's how!</p>
+        <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>The Build Task API offers a simple way to hook into the build process.
+The build tasks are very powerful and allow for limitless customizability.</p>
+<p>The built-in Hyde features like sitemap generation and RSS feeds are created using tasks like these.
+Maybe you want to create your own, to for example upload the site to FTP or copy the files to a public directory?
+You can also overload the built-in tasks to customize them to your needs.</p>
+<h2>Good to know before you start<a id="good-to-know-before-you-start" href="#good-to-know-before-you-start" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h3>Types of tasks<a id="types-of-tasks" href="#types-of-tasks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>There are two types, PreBuildTasks and PostBuildTasks. As the names suggest, PreBuildTasks are executed before the site is built, and PostBuildTasks are executed after the site is built.</p>
+<p>To choose which type of task you want to create, you either implements the <code>RunsBeforeBuild</code> or <code>RunsAfterBuild</code> interface. More on that later, however.</p>
+<h3>About these examples<a id="about-these-examples" href="#about-these-examples" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>For most of these examples we will focus on the PostBuildTasks as they are the most common. However, the only code difference between the two is the interface you implement. The classes are otherwise identical.</p>
+<p>For all these examples we assume you put the file in the <code>App/Actions</code> directory, but you can put them anywhere.</p>
+<h3>Interacting with output<a id="interacting-with-output" href="#interacting-with-output" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>In a way, build tasks are like micro-commands, as they can interact directly with the build commands I/O. Please take a look at the <a href="https://laravel.com/docs/10.x/artisan#command-io">Laravel Console Documentation</a> for the full list of available methods.</p>
+<p>In addition, there are some extra helpers available in the base BuildTask class that allow you to fluently format output to the console, which you will see in the examples below.</p>
+<h2>Creating build tasks<a id="creating-build-tasks" href="#creating-build-tasks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <h3>Minimal example<a id="minimal-example" href="#minimal-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Here is a minimal example to get you started. For all these examples we assume you put the file in the <code>App/Actions</code> directory, but you can put them anywhere.</p>
-<pre><code class="language-php">class SimpleTask extends BuildTask
+<p>Here is a minimal example to give you an idea of what we are working with.</p>
+<pre><code class="language-php">class SimpleBuildTask extends BuildTask implements RunsAfterBuild
 {
     public function run(): void
     {
-        $this-&gt;info('Hello World!');
+        //
     }
 }
 </code></pre>
-<p>This will then output the following, where you can see that some extra output, including execution time tracking is added for us. We can of course customize this if we want, as you can see in the next example.</p>
+<p>As you can see, at their core, build tasks are simple classes containing a <code>run()</code> method,
+which as I'm sure you have guessed, is the method that is executed when the task is run by the build command.</p>
+<h4>Automatic output<a id="automatic-output" href="#automatic-output" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>When running the build command, you will see the following output added after the build is complete.</p>
 <pre>
-<small style="color: gray">$ php hyde build</small>
-  <span style="color: gold">Generic build task...</span> Hello World! <span style="color: gray">Done in 0.26ms</span>
+ <span style="color: gold">Generic build task...</span> <span style="color: gray">Done in 0.26ms</span>
 </pre>
+<p>As you can see, some extra output including execution time tracking is added for us. We can of course customize all of this if we want, as you will learn a bit further down.</p>
 <h3>Full example<a id="full-example" href="#full-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>You can also set the message, and an optional <code>then()</code> method to run after the main task has been executed. The then method is great if you want to display a status message.</p>
+<p>Here is a full example, with all the namespaces included, as well as the most common fluent output helpers.</p>
 <pre><code class="language-php">&lt;?php
 
 namespace App\Actions;
@@ -287,26 +337,49 @@ class ExampleTask extends BuildTask
         $this-&gt;info('Hello World!');
     }
 
-    public function then(): void
+    public function printFinishMessage(): void
     {
 		$this-&gt;line('Goodbye World!');
     }
 }
 </code></pre>
+<p>You can see a full API reference further below. But in short, the <code>$message</code> property is the message that runs before the task is executed, and the <code>printFinishMessage()</code> method is the message that runs after the task is executed.</p>
+<p>Running this task will produce the following output:</p>
 <pre>
 <small style="color: gray">$ php hyde build</small>
   <span style="color: gold">Say hello...</span> <span style="color: green">Hello World!</span>
   Goodbye World!
 </pre>
-<h3>Registering the tasks<a id="registering-the-tasks" href="#registering-the-tasks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>There are a few ways to register these tasks so Hyde can find them. There is a convenient place to do this, which is in the main configuration file, <code>config/hyde.php</code>.</p>
+<h2>Registering the tasks<a id="registering-the-tasks" href="#registering-the-tasks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>There are a few ways to register these tasks so Hyde can find them.</p>
+<p>They are shown here in order of presumed convenience, but you are free to choose whichever you prefer. The latter options are more suited for extension developers.</p>
+<h3>Autodiscovery registration<a id="autodiscovery-registration" href="#autodiscovery-registration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The easiest way to register build tasks, is to not do it. Just let Hyde do it for you!</p>
+<p>Any classes that end in <code>BuildTask.php</code> that are stored in <code>app/Actions</code>  will be autoloaded and registered to run automatically.</p>
+<p>For example: <code>app/Actions/ExampleBuildTask.php</code>.</p>
+<h3>Config file registration<a id="config-file-registration" href="#config-file-registration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>If you want, you can also register build tasks of any namespace in the convenient <code>build_tasks</code> array which is in the main configuration file, <code>config/hyde.php</code>.</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'build_tasks' =&gt; [
     \App\Actions\SimpleTask::class,
-    \App\Actions\ExampleTask::class,
+    \MyPackage\Tasks\MyBuildTask::class,
 ],
 </code></pre>
-<p>If you are developing an extension, I recommend you do this in the <code>boot</code> method of a service provider so that it can be loaded automatically. Do this by adding the fully qualified class name to the <code>BuildTaskService::$postBuildTasks</code> array.</p>
-<p>Hyde can also autoload them if you store the files in the <code>app/Actions</code> directory and the names end in <code>BuildTask.php</code>. For example <code>app/Actions/ExampleBuildTask.php</code>.</p>
+<h3>Programmatic registration<a id="programmatic-registration" href="#programmatic-registration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<blockquote class="info"><p>This option assumes you are familiar with Laravel's service container and service providers.</p></blockquote>
+<p>If you are developing an extension, you can either instruct users register your tasks with the config option above,
+or you can register the extensions programmatically, I recommend you do this in the <code>boot</code> method of a service provider.</p>
+<p>The build tasks are registered in an internal array of the <code>BuildService</code> class, which is bound as a singleton in the underlying Laravel service container.
+To actually register your task, provide the fully qualified class name of the task to the <code>BuildTaskService::registerTask()</code> method.</p>
+<p>Here is an example of how to do this using in a service provider. Though you could technically do it anywhere using the <code>app()</code> helper, just as long as it's done early enough in the application lifecycle so it's registered before the build command is executed.</p>
+<pre><code class="language-php">class MyServiceProvider extends ServiceProvider
+{
+    public function boot(): void
+    {
+        $this-&gt;app-&gt;make(\Hyde\Framework\Services\BuildTaskService::class)
+            -&gt;registerTask(\MyPackage\Tasks\MyBuildTask::class);
+    }
+}
+</code></pre>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
@@ -407,7 +480,7 @@ class ExampleTask extends BuildTask
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1152" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1152</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/9a135006f50e17a25294bc700edd7d5428c33bb1"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">9a135006f50e17a25294bc700edd7d5428c33bb1</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/5fcdcfdae4e7b441346600273343cf52ba29cecb"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">5fcdcfdae4e7b441346600273343cf52ba29cecb</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1152" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
