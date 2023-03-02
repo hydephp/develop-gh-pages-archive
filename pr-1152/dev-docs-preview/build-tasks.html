@@ -352,6 +352,7 @@ class ExampleTask extends PostBuildTask
   <span style="color: gold">Say hello...</span> <span style="color: green">Hello World!</span>
   Goodbye World!
 </pre>
+<p>As you can see, there is no execution time tracking here, since we overrode the <code>printFinishMessage()</code> method that normally prints this. You can of course call the <code>withExecutionTime()</code> method to add this back in. See more in the API reference below.</p>
 <h2>Registering the tasks<a id="registering-the-tasks" href="#registering-the-tasks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>There are a few ways to register these tasks so Hyde can find them.</p>
 <p>They are shown here in order of presumed convenience, but you are free to choose whichever you prefer. The latter options are more suited for extension developers.</p>
@@ -482,7 +483,7 @@ To actually register your task, provide the fully qualified class name of the ta
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1152" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1152</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/1a6bcf9541d8f2bb03ebb08fe740c153a0232e42"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">1a6bcf9541d8f2bb03ebb08fe740c153a0232e42</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/0ef6d7a3c48437807101e0d391c59b8093956f09"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">0ef6d7a3c48437807101e0d391c59b8093956f09</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1152" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
