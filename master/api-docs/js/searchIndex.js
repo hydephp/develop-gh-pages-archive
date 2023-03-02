@@ -5606,6 +5606,16 @@ Search.appendIndex(
             "summary": "Generate\u0020Table\u0020of\u0020Contents\u0020as\u0020HTML\u0020from\u0020a\u0020Markdown\u0020document\u0020body.",
             "url": "classes/Hyde-Pages-DocumentationPage.html#method_getTableOfContents"
         },                {
+            "fqsen": "\\Hyde\\Pages\\DocumentationPage\u003A\u003AgetRouteKey\u0028\u0029",
+            "name": "getRouteKey",
+            "summary": "Get\u0020the\u0020route\u0020key\u0020for\u0020the\u0020page.",
+            "url": "classes/Hyde-Pages-DocumentationPage.html#method_getRouteKey"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\DocumentationPage\u003A\u003AgetOutputPath\u0028\u0029",
+            "name": "getOutputPath",
+            "summary": "Get\u0020the\u0020path\u0020where\u0020the\u0020compiled\u0020page\u0020will\u0020be\u0020saved.",
+            "url": "classes/Hyde-Pages-DocumentationPage.html#method_getOutputPath"
+        },                {
             "fqsen": "\\Hyde\\Pages\\DocumentationPage\u003A\u003A\u0024sourceDirectory",
             "name": "sourceDirectory",
             "summary": "",
