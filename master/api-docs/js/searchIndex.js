@@ -2008,7 +2008,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest",
             "name": "GenerateBuildManifest",
-            "summary": "",
+            "summary": "The\u0020build\u0020manifest\u0020contains\u0020a\u0020list\u0020of\u0020all\u0020pages\u0020and\u0020their\u0020source\u0020and\u0020output\u0020paths.",
             "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest\u003A\u003Ahandle\u0028\u0029",
