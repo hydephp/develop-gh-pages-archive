@@ -104,7 +104,7 @@
 		href="../dev-docs-preview/console-commands.html">Console Commands</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/architecture-concepts.html">Key HydePHP Concepts</a>
+		href="../dev-docs-preview/basic-architecture-concepts.html">Key HydePHP Concepts</a>
 	</li>                            </ul>
         </li>
 	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
@@ -173,6 +173,24 @@
 		href="../dev-docs-preview/updating-hyde.html">Updating Hyde</a>
 	</li>                            </ul>
         </li>
+	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
+            <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
+                <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Advanced Features</h4>
+                <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
+                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
+                    </svg>
+                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
+                    </svg>
+                </button>
+            </header>
+            <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
+                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../dev-docs-preview/advanced-features.html">Introduction</a>
+	</li>                            </ul>
+        </li>
 	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: true }">
             <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
                 <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Architecture Concepts</h4>
@@ -188,7 +206,7 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/introduction.html">Introduction</a>
+		href="../dev-docs-preview/architecture-concepts.html">Introduction</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10"
 		href="../dev-docs-preview/autodiscovery.html" aria-current="true">Autodiscovery</a>
@@ -400,7 +418,7 @@ that underlying collection will always have been booted and be ready to use.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1165" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1165</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/9606fa624845e7c575017957805fe2019f11c820"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">9606fa624845e7c575017957805fe2019f11c820</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/01b2b98074c445548aeaba41c000b16d7626f05c"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">01b2b98074c445548aeaba41c000b16d7626f05c</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1165" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
