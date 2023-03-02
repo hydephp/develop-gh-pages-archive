@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HydePHP Documentation Preview - Search</title>
+<title>HydePHP Documentation Preview - Creating Documentation Pages</title>
 
 
 
-<link rel="canonical" href="https://hydephp.github.io/develop/pr-1152/dev-docs-preview/dev-docs-preview/search.html">
-<meta name="twitter:title" content="HydePHP Documentation Preview - Search">
-<meta property="og:title" content="HydePHP Documentation Preview - Search">
+<link rel="canonical" href="https://hydephp.github.io/develop/pr-1152/dev-docs-preview/dev-docs-preview/documentation-pages.html">
+<meta name="twitter:title" content="HydePHP Documentation Preview - Creating Documentation Pages">
+<meta property="og:title" content="HydePHP Documentation Preview - Creating Documentation Pages">
 
 
 <link rel="sitemap" href="https://hydephp.github.io/develop/pr-1152/dev-docs-preview/sitemap.xml" type="application/xml" title="Sitemap">
@@ -107,7 +107,7 @@
 		href="../dev-docs-preview/basic-architecture-concepts.html">Key HydePHP Concepts</a>
 	</li>                            </ul>
         </li>
-	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
+	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: true }">
             <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
                 <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Creating Content</h4>
                 <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
@@ -126,10 +126,129 @@
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
 		href="../dev-docs-preview/static-pages.html">Markdown &amp; Blade Pages</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/documentation-pages.html">Documentation Pages</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../dev-docs-preview/documentation-pages.html" aria-current="true">Documentation Pages</a>
+				<span class="sr-only">Table of contents</span>
+		<ul class="table-of-contents">
+<li>
+<a href="#introduction-to-hyde-documentation-pages">Introduction to Hyde Documentation Pages</a>
+<ul>
+<li>
+<a href="#best-practices-and-hyde-expectations">Best Practices and Hyde Expectations</a>
+<ul>
+<li>
+<a href="#filenames">Filenames</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#advanced-usage-and-customization">Advanced usage and customization</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#creating-documentation-pages-1">Creating Documentation Pages</a>
+<ul>
+<li>
+<a href="#front-matter-is-optional">Front Matter is optional</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#dynamic-content-generation">Dynamic content generation</a>
+</li>
+<li>
+<a href="#sidebar">Sidebar</a>
+<ul>
+<li>
+<a href="#table-of-contents">Table of contents</a>
+</li>
+<li>
+<a href="#sidebar-ordering">Sidebar ordering</a>
+</li>
+<li>
+<a href="#sidebar-labels">Sidebar labels</a>
+</li>
+<li>
+<a href="#sidebar-grouping">Sidebar grouping</a>
+<ul>
+<li>
+<a href="#using-front-matter">Using Front Matter</a>
+</li>
+<li>
+<a href="#using-subdirectories">Using subdirectories</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#hiding-items">Hiding items</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#customization">Customization</a>
+<ul>
+<li>
+<a href="#output-directory">Output directory</a>
+</li>
+<li>
+<a href="#automatic-navigation-menu">Automatic navigation menu</a>
+</li>
+<li>
+<a href="#sidebar-header-name">Sidebar header name</a>
+</li>
+<li>
+<a href="#sidebar-page-order">Sidebar page order</a>
+</li>
+<li>
+<a href="#table-of-contents-settings">Table of contents settings</a>
+</li>
+<li>
+<a href="#search-feature">Search feature</a>
+<ul>
+<li>
+<a href="#introduction">Introduction</a>
+</li>
+<li>
+<a href="#using-the-search">Using the search</a>
+</li>
+<li>
+<a href="#hiding-pages-from-indexing">Hiding pages from indexing</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#automatic-edit-page-button">Automatic &quot;Edit Page&quot; button</a>
+<ul>
+<li>
+<a href="#introduction-1">Introduction</a>
+</li>
+<li>
+<a href="#example-configuration">Example configuration</a>
+</li>
+<li>
+<a href="#changing-the-button-text">Changing the button text</a>
+</li>
+<li>
+<a href="#changing-the-position">Changing the position</a>
+</li>
+<li>
+<a href="#adding-a-button-icon">Adding a button icon</a>
+</li>
+<li>
+<a href="#changing-the-blade-view">Changing the Blade view</a>
+</li>
+<li>
+<a href="#using-flattened-output-paths">Using flattened output paths</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+			</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
 		href="../dev-docs-preview/managing-assets.html">Managing and Compiling Assets</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
@@ -226,25 +345,256 @@
 <main id="content"
       class="dark:bg-gray-900 min-h-screen bg-gray-50 md:bg-white absolute top-16 md:top-0 w-screen md:left-64 md:w-[calc(100vw_-_16rem)]">
     <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 prose dark:prose-invert max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)]">
-        <h1>Search the documentation site</h1>
-    <style>#searchMenuButton, .edit-page-link {
-            display: none !important;
-        }
-
-        #search-results {
-            max-height: unset !important;
-        }</style>
-    <div id="hyde-search">
-    <noscript>
-        The search feature requires JavaScript to be enabled in your browser.
-    </noscript>
-    <input class="w-full rounded text-base leading-normal bg-gray-100 dark:bg-gray-700 py-2 px-3 max-w-xs border-b-4 border-indigo-400" type="search" name="search" id="search-input" placeholder="Search..." autocomplete="off" autofocus>
-</div>
+    
     <header id="document-header" class="flex items-center flex-wrap prose-h1:mb-3">
-        
+        <h1>Creating Documentation Pages</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        
+        <h2>Introduction to Hyde Documentation Pages<a id="introduction-to-hyde-documentation-pages" href="#introduction-to-hyde-documentation-pages" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Hyde makes it easier than ever to create documentation sites.
+By the way, this documentation site is of course made with the Hyde Documentation module!</p>
+<p>In short, all you need to do is put standard Markdown files in the <code>_docs/</code> directory and Hyde will do the rest.</p>
+<p>What is &quot;the rest&quot;, you may ask? Well, for starters:</p>
+<ul>
+<li>Hyde compiles your Markdown content into a beautiful static HTML page based on <a href="https://github.com/caendesilva/lagrafo">the Lagrafo frontend</a>
+</li>
+<li>A sidebar (which is responsive) is automatically created based on your Markdown files
+<ul>
+<li>If you have an <code>index.md</code> in the <code>_docs/</code> directory, it will be used as the sidebar header</li>
+<li>You can even <a href="#sidebar-page-order">customize the order and labels</a> of sidebar items</li>
+</ul>
+</li>
+<li>If you have an <code>index.md</code> in the <code>_docs/</code> directory,
+a link to it will be added to the site navigation menu named &quot;Docs&quot;.</li>
+<li>If you have a Torchlight API token in your .env file, Hyde will even automatically enable Syntax Highlighting for you.
+See more about this in the <a href="extensions#torchlight">extensions page</a>.</li>
+</ul>
+<h3>Best Practices and Hyde Expectations<a id="best-practices-and-hyde-expectations" href="#best-practices-and-hyde-expectations" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Since Hyde does a lot of things automatically, there are some things you may need
+to keep in mind when creating blog posts so that you don't get unexpected results.</p>
+<h4>Filenames<a id="filenames" href="#filenames" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<ul>
+<li>Hyde Documentation pages are files are stored in the <code>_docs</code> directory</li>
+<li>The filename is used as the filename for the compiled HTML</li>
+<li>Filenames should use <code>kebab-case-slug</code> format, followed by the appropriate extension</li>
+<li>Files prefixed with <code>_underscores</code> are ignored by Hyde</li>
+<li>You should always have an <code>index.md</code> file in the <code>_docs/</code> directory</li>
+<li>Your page will be stored in <code>_site/docs/&lt;slug&gt;.html</code> unless you <a href="#output-directory">change it in the config</a>
+</li>
+</ul>
+<h3>Advanced usage and customization<a id="advanced-usage-and-customization" href="#advanced-usage-and-customization" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Like most of HydePHP, the Hyde Documentation module is highly customizable. Much of the frontend is composed using Blade templates and components, which you can customize to your heart's content.
+Since there are so many components, it's hard to list them all here in the documentation, so I encourage you to check out the <a href="https://github.com/hydephp/framework/tree/master/resources/views/components/docs">source code</a> to see how it's all put together and find the customizations you are looking for.</p>
+<h2>Creating Documentation Pages<a id="creating-documentation-pages" href="#creating-documentation-pages" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>You can create a Documentation page by adding a file to the <code>_docs</code> directory where the filename ends in <code>.md</code>.</p>
+<p>You can also scaffold one quickly by using the <a href="console-commands">HydeCLI</a>.</p>
+<pre><code class="language-bash">php hyde make:page &quot;Page Title&quot; --type=&quot;docs&quot;
+</code></pre>
+<p>This will create the following file saved as <code>_docs/page-title.md</code></p>
+<pre><code class="language-markdown"># Page Title
+</code></pre>
+<h3>Front Matter is optional<a id="front-matter-is-optional" href="#front-matter-is-optional" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>You don't need to use <a href="blog-posts#supported-front-matter-properties">front matter</a> to create a documentation page.</p>
+<p>However, Hyde still supports front matter here as it allows you to quickly override the default values.</p>
+<p>Here is a quick reference, however, you should take a look at the <a href="#dynamic-content-generation">dynamic content</a> section to learn more.</p>
+<pre><code class="language-yaml">---
+title: &quot;Page Title&quot;
+navigation:
+  label: &quot;Sidebar Label&quot;
+  hidden: true
+  priority: 5
+---
+</code></pre>
+<h2>Dynamic content generation<a id="dynamic-content-generation" href="#dynamic-content-generation" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Hyde makes documentation pages easy to create by automatically generating dynamic content such as the sidebar and page title.
+If you are not happy with the results you can customize them in the config or with front matter.</p>
+<p>Before we look at how to override things, here is an overview of the relevant content Hyde generates,
+and where the data is from as well as where it can be overridden.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Source</th>
+<th>Override in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code> (string)</td>
+<td>The title of the page used in the HTML <code>&lt;title&gt;</code> tag</td>
+<td>The first H1 heading (<code># Foo</code>)</td>
+<td>Front matter</td>
+</tr>
+<tr>
+<td><code>navigation.label</code> (string)</td>
+<td>The label for the page shown in the sidebar</td>
+<td>The page identifier/basename (slug)</td>
+<td>Front matter, config</td>
+</tr>
+<tr>
+<td><code>navigation.hidden</code> (boolean)</td>
+<td>Hides the page from the sidebar</td>
+<td><em>null</em></td>
+<td>Front matter, config</td>
+</tr>
+<tr>
+<td><code>navigation.priority</code> (integer)</td>
+<td>The priority of the page used for ordering the sidebar</td>
+<td>Defaults to 999</td>
+<td>Front matter, config</td>
+</tr>
+</tbody>
+</table>
+<h2>Sidebar<a id="sidebar" href="#sidebar" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>The sidebar is automatically generated from the files in the <code>_docs</code> directory. You will probably want to change the order
+of these items. You can do this in two ways, either in the config or with front matter using the navigation array.</p>
+<h3>Table of contents<a id="table-of-contents" href="#table-of-contents" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Hyde automatically generates a table of contents for the page and adds it to the sidebar.</p>
+<p>The behaviour of this can be changed in the configuration file.
+See <a href="customization#navigation-menu--sidebar">the customization page</a> for more details.</p>
+<h3>Sidebar ordering<a id="sidebar-ordering" href="#sidebar-ordering" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The sidebar is sorted/ordered by the <code>priority</code> property. The higher the priority the further down in the sidebar it will be.
+The default priority is 999. You can override the priority using the following front matter:</p>
+<pre><code class="language-yaml">navigation:
+  priority: 5
+</code></pre>
+<p>You can also change the order in the Docs configuration file.
+See <a href="customization#navigation-menu--sidebar">the chapter in the customization page</a> for more details. <br>
+<em>I personally think the config route is easier as it gives an instant overview, however the first way is nice as well.</em></p>
+<h3>Sidebar labels<a id="sidebar-labels" href="#sidebar-labels" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The sidebar items are labeled with the <code>label</code> property. The default label is the filename of the file.
+You can change it with the following front matter:</p>
+<pre><code class="language-yaml">navigation:
+  label: &quot;My Custom Sidebar Label&quot;
+</code></pre>
+<h3>Sidebar grouping<a id="sidebar-grouping" href="#sidebar-grouping" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Sidebar grouping allows you to group items in the sidebar into categories. This is useful for creating a sidebar with a lot of items.
+The Hyde docs for instance use this.</p>
+<p>The feature is enabled automatically when one or more of your documentation pages have the navigation.group property set
+in the front matter. This will then switch to a slightly more compact sidebar layout with pages sorted into categories.
+Any pages without the group front matter will get put in the &quot;Other&quot; group.</p>
+<h4>Using Front Matter<a id="using-front-matter" href="#using-front-matter" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>To enable sidebar grouping, you can add the following front matter to your documentation pages:</p>
+<pre><code class="language-yaml">navigation:
+  group: &quot;Getting Started&quot;
+</code></pre>
+<h4>Using subdirectories<a id="using-subdirectories" href="#using-subdirectories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Since <a href="https://github.com/hydephp/develop/releases/tag/v0.52.0-beta">v0.52.0-beta</a>, you can also automatically group your documentation pages by placing source files in sub-directories.</p>
+<p>For example, putting a Markdown file in <code>_docs/getting-started/</code>, is equivalent to adding the same front matter in the step above.</p>
+<blockquote>
+<p>Note that when the <a href="#using-flattened-output-paths">flattened output paths</a> setting is enabled, the file will still be compiled to the <code>_site/docs/</code> directory like it would be if you didn't use the sub-directories.</p>
+</blockquote>
+<h3>Hiding items<a id="hiding-items" href="#hiding-items" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>You can hide items from the sidebar by adding the <code>hidden</code> property to the front matter:</p>
+<pre><code class="language-yaml">navigation:
+  hidden: true
+</code></pre>
+<p>This can be useful to create redirects or other items that should not be shown in the sidebar.</p>
+<blockquote>
+<p>The index page is by default not shown as a sidebar item, but instead is linked in the sidebar header. <br></p>
+</blockquote>
+<h2>Customization<a id="customization" href="#customization" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Please see the <a href="customization">customization page</a> for in-depth information on how to customize Hyde,
+including the documentation pages. Here is a high level overview for quick reference though.</p>
+<h3>Output directory<a id="output-directory" href="#output-directory" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>If you want to store the compiled documentation pages in a different directory than the default 'docs' directory,
+for example to specify a version like the Hyde docs does, you can specify the output directory in the Hyde configuration file.
+The path is relative to the site output, typically <code>_site</code>.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_config/hyde.php</small>'output_directories' =&gt; [
+    \Hyde\Pages\DocumentationPage::class =&gt; 'docs' // default
+    \Hyde\Pages\DocumentationPage::class =&gt; 'docs/master' // What the Hyde docs use
+]
+</code></pre>
+<p>Note that you need to take care as to not set it to something that may conflict with other parts, such as media or posts directories.</p>
+<h3>Automatic navigation menu<a id="automatic-navigation-menu" href="#automatic-navigation-menu" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>By default, a link to the documentation page is added to the navigation menu when an index.md file is found in the <code>_docs</code> directory. Please see the <a href="customization#navigation-menu--sidebar">the customization page</a> for more information.</p>
+<h3>Sidebar header name<a id="sidebar-header-name" href="#sidebar-header-name" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>By default, the site title shown in the sidebar header is generated from the configured site name suffixed with &quot;docs&quot;.
+You can change this in the Docs configuration file.</p>
+<pre><code class="language-php">'title' =&gt; 'API Documentation',
+</code></pre>
+<blockquote>
+<p>Tip: The header will link to the docs/index page, if it exists.</p>
+</blockquote>
+<h3>Sidebar page order<a id="sidebar-page-order" href="#sidebar-page-order" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>To quickly arrange the order of items in the sidebar, you can reorder the page slugs in the list and the links will be sorted in that order.
+Link items without an entry here will have fall back to the default priority of 999, putting them last.</p>
+<pre><code class="language-php">'sidebar_order' =&gt; [
+    'readme',
+    'installation',
+    'getting-started',
+]
+</code></pre>
+<p>See <a href="customization#navigation-menu--sidebar">the chapter in the customization page</a> for more details. <br></p>
+<h3>Table of contents settings<a id="table-of-contents-settings" href="#table-of-contents-settings" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>In the <code>config/docs.php</code> file you can configure the behavior, content,
+and the look and feel of the sidebar table of contents.
+You can also disable the feature completely.</p>
+<pre><code class="language-php">'table_of_contents' =&gt; [
+	'enabled' =&gt; true,
+	'min_heading_level' =&gt; 2,
+	'max_heading_level' =&gt; 4,
+	'smooth_page_scrolling' =&gt; true,
+],
+</code></pre>
+<h3>Search feature<a id="search-feature" href="#search-feature" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h4>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>The HydeSearch plugin adds a search feature to documentation pages.</p>
+<p>The search feature is enabled by default.
+You can disable it by removing the <code>documentationSearch</code> from the Hyde <code>Features</code> config array.</p>
+<h4>Using the search<a id="using-the-search" href="#using-the-search" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>The search works by generating a JSON search index which the JavaScript plugin loads asynchronously.</p>
+<p>Two types of search methods are added, one is a full page search screen that will saved to <code>docs/search.html</code>.
+<small><blockquote>The full page can be disabled by setting <code>create_search_page</code> to <code>false</code> in the <code>docs</code> config.</blockquote></small></p>
+<blockquote>
+<p>Note that the fullpage search is used as a fallback for browsers that don't support the <code>&lt;dialogue&gt;</code> element, and may lead to 404 errors if disabled.</p>
+</blockquote>
+<p>The second method is a button added to the documentation pages, similar to how Algolia DocSearch works.
+Opening it will open a dialog modal with an integrated search screen.
+You can also open the dialog using the keyboard shortcut <code>/</code>.</p>
+<h4>Hiding pages from indexing<a id="hiding-pages-from-indexing" href="#hiding-pages-from-indexing" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>If you have a large page, like a changelog, on your documentation sites you may want to hide it from the search index. You can do this by adding the page slug to the <code>exclude_from_search</code> array in the <code>docs</code> config, similar to how navigation menu items are hidden.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'exclude_from_search' =&gt; [
+  'changelog',
+]
+</code></pre>
+<p>The page will still be accessible via the URL, but will be added to the search index JSON file. Don't include the file extension.</p>
+<h3>Automatic &quot;Edit Page&quot; button<a id="automatic-edit-page-button" href="#automatic-edit-page-button" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h4>Introduction<a id="introduction-1" href="#introduction-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Hyde can automatically add links to documentation pages that takes the user
+to a GitHub page (or similar) to edit the page. This makes it great for open-source projects
+looking to allow others to contribute to the documentation in a quick and easy manner.</p>
+<p>The feature is automatically enabled when you specify a base URL in the Docs configuration file.
+Hyde expects this to be a GitHub path, but it will probably work with other methods as well,
+if not, please send a PR and/or create an issue on the <a href="https://github.com/hydephp/framework">GitHub repository</a>!</p>
+<h4>Example configuration<a id="example-configuration" href="#example-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Let's take a practical example for how HydePHP.com uses this feature.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'source_file_location_base' =&gt; 'https://github.com/hydephp/docs/blob/master/',
+</code></pre>
+<h4>Changing the button text<a id="changing-the-button-text" href="#changing-the-button-text" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Changing the label is easy, just change the following config setting:</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'edit_source_link_text' =&gt; 'Edit Source on GitHub',
+</code></pre>
+<h4>Changing the position<a id="changing-the-position" href="#changing-the-position" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>By default the button will be shown in both the documentation page footer.
+You can change this by setting the following config setting to <code>'header'</code>, <code>'footer'</code>, or <code>'both'</code></p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'edit_source_link_position' =&gt; 'header',
+</code></pre>
+<h4>Adding a button icon<a id="adding-a-button-icon" href="#adding-a-button-icon" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>This is not included out of the box, but is easy to add with some CSS!
+Just target the <code>.edit-page-link</code> class.</p>
+<pre><code class="language-css"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>e.g. app.css</small>.edit-page-link::before {content: &quot;✏ &quot;}
+</code></pre>
+<h4>Changing the Blade view<a id="changing-the-blade-view" href="#changing-the-blade-view" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>You can also publish the <code>edit-source-button.blade.php</code> view and change it to your liking.</p>
+<h4>Using flattened output paths<a id="using-flattened-output-paths" href="#using-flattened-output-paths" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>If this setting is set to true, Hyde will output all documentation pages into the same configured documentation output directory.
+This means that you can use the automatic directory based grouping feature, but still have a &quot;flat&quot; output structure.
+Note that this means that you can't have two documentation pages with the same filename or navigation menu label as they will overwrite each other.</p>
+<p>If you set this to false, Hyde will match the directory structure of the source files (just like all other pages).</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'flattened_output_paths' =&gt; true,
+</code></pre>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
