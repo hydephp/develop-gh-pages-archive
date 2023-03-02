@@ -7,7 +7,7 @@
 
 
 
-<link rel="canonical" href="https://hydephp.github.io/develop/master/dev-docs/dev-docs/introduction.html">
+<link rel="canonical" href="https://hydephp.github.io/develop/master/dev-docs/dev-docs/advanced-features.html">
 <meta name="twitter:title" content="HydePHP Upcoming Documentation - Advanced Features in HydePHP">
 <meta property="og:title" content="HydePHP Upcoming Documentation - Advanced Features in HydePHP">
 
@@ -104,7 +104,7 @@
 		href="../dev-docs/console-commands.html">Console Commands</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/architecture-concepts.html">Key HydePHP Concepts</a>
+		href="../dev-docs/basic-architecture-concepts.html">Key HydePHP Concepts</a>
 	</li>                            </ul>
         </li>
 	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
@@ -188,7 +188,7 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs/introduction.html" aria-current="true">Introduction</a>
+		href="../dev-docs/advanced-features.html" aria-current="true">Introduction</a>
 				<span class="sr-only">Table of contents</span>
 		<ul class="table-of-contents">
 <li>
@@ -197,17 +197,27 @@
 <li>
 <a href="#introduction">Introduction</a>
 </li>
-<li>
-<a href="#behind-the-magic">Behind the magic</a>
-<ul>
-<li>
-<a href="#disclaimer">Disclaimer</a>
-</li>
-</ul>
-</li>
 </ul>
 
-			</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+			</li>                            </ul>
+        </li>
+	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
+            <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
+                <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Architecture Concepts</h4>
+                <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
+                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
+                    </svg>
+                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
+                    </svg>
+                </button>
+            </header>
+            <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
+                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../dev-docs/architecture-concepts.html">Introduction</a>
+	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
 		href="../dev-docs/autodiscovery.html">Autodiscovery</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
@@ -239,22 +249,10 @@
     </header>
     <section id="document-main-content" itemprop="articleBody">
         <h2>Preface<a id="preface" href="#preface" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>HydePHP is a simple, yet powerful, static site generator. It is designed to be easy to use and easy to extend.
-This section of the documentation will cover some of the more advanced features of the framework.</p>
+<p>HydePHP is a simple, yet powerful, static site generator. It is designed to be easy to use and easy to extend.</p>
+<p>This section of the documentation will cover some of the more advanced (but optional) features of the framework.</p>
 <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>While the goal of Hyde is to allow developers to quickly and easily create static sites with minimal effort,
-the engine behind it is actually quite powerful. In addition to being based on Laravel, HydePHP has some
-special features that you as a user of Hyde might already have been using, without even knowing it.</p>
-<p>You, of course, are free to skip this entire section, as you don't need to know these things to use Hyde.
-However, if you want to know the &quot;magic&quot; behind Hyde, or if you want to take advantage of these powerful tools,
-then by all means, please read on! This is also a great place to start if you want to contribute to the source code.</p>
-<h2>Behind the magic<a id="behind-the-magic" href="#behind-the-magic" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Want to learn more about a particular feature? Click on the links below to visit the article.</p>
-<p>[Blade]: <ul>@foreach(glob(\Hyde\Hyde::path('docs/advanced-features/*.md')) as $file) <li> <a href="{{ basename($file, '.md') }}.html"> {{ \Hyde\Hyde::makeTitle(basename($file, '.md')) }} </a> </li> @endforeach</ul></p>
-<h3>Disclaimer<a id="disclaimer" href="#disclaimer" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>These chapters are written for power users and contributors. If you're just looking to get a site up and running,
-you can safely skip this section. The documentation here will cover advanced topics under the presumption that
-the reader has a basic to intermediate understanding of programming, as well as PHP and to some extent Laravel.</p>
+<p>To fully understand the features described in these chapters, it may be beneficial to first skim through the <a href="architecture-concepts/introduction.html">Architecture Concepts</a> chapters.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
