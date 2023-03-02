@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HydePHP Documentation Preview - Page models</title>
+<title>HydePHP Documentation Preview - Creating Blog Posts</title>
 
 
 
-<link rel="canonical" href="https://hydephp.github.io/develop/pr-1165/dev-docs-preview/dev-docs-preview/architecture-concepts/page-models.html">
-<meta name="twitter:title" content="HydePHP Documentation Preview - Page models">
-<meta property="og:title" content="HydePHP Documentation Preview - Page models">
+<link rel="canonical" href="https://hydephp.github.io/develop/pr-1165/dev-docs-preview/dev-docs-preview/blog-posts.html">
+<meta name="twitter:title" content="HydePHP Documentation Preview - Creating Blog Posts">
+<meta property="og:title" content="HydePHP Documentation Preview - Creating Blog Posts">
 
 
 <link rel="sitemap" href="https://hydephp.github.io/develop/pr-1165/dev-docs-preview/sitemap.xml" type="application/xml" title="Sitemap">
@@ -42,7 +42,7 @@
 <a href="#content" id="skip-to-content" class="sr-only focus:not-sr-only bg-black border-4 border-yellow-400 focus:absolute focus:mt-2 focus:mx-auto focus:p-2 focus:w-64 h-auto left-0 overflow-auto right-0 rounded-md text-center text-lg text-white top-auto z-50 ">Skip to content</a>
 <nav id="mobile-navigation" class="bg-white dark:bg-gray-800 md:hidden flex justify-between w-full h-16 z-40 fixed left-0 top-0 p-4 leading-8 shadow-lg">
     <strong class="px-2 mr-auto">
-                    <a href="../../dev-docs-preview/index.html">
+                    <a href="../dev-docs-preview/index.html">
                 PR #1165 - Docs
             </a>
             </strong>
@@ -69,7 +69,7 @@
     <header id="sidebar-header" class="h-16">
         <div id="sidebar-brand" class="flex items-center justify-between h-16 py-4 px-2">
 	<strong class="px-2">
-					<a href="../../dev-docs-preview/index.html">
+					<a href="../dev-docs-preview/index.html">
 				PR #1165 - Docs
 			</a>
 			</strong>
@@ -98,16 +98,16 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/getting-started/quickstart.html">Quickstart Guide</a>
+		href="../dev-docs-preview/quickstart.html">Quickstart Guide</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/getting-started/console-commands.html">Console Commands</a>
+		href="../dev-docs-preview/console-commands.html">Console Commands</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/getting-started/architecture-concepts.html">Key HydePHP Concepts</a>
+		href="../dev-docs-preview/architecture-concepts.html">Key HydePHP Concepts</a>
 	</li>                            </ul>
         </li>
-	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
+	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: true }">
             <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
                 <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Creating Content</h4>
                 <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
@@ -120,21 +120,82 @@
                 </button>
             </header>
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
-                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+                                    <li class="sidebar-navigation-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../dev-docs-preview/blog-posts.html" aria-current="true">Creating Blog Posts</a>
+				<span class="sr-only">Table of contents</span>
+		<ul class="table-of-contents">
+<li>
+<a href="#introduction-to-hyde-posts">Introduction to Hyde Posts</a>
+</li>
+<li>
+<a href="#short-video-tutorial">Short Video Tutorial</a>
+</li>
+<li>
+<a href="#best-practices-and-hyde-expectations">Best Practices and Hyde Expectations</a>
+<ul>
+<li>
+<a href="#filenames">Filenames</a>
+</li>
+<li>
+<a href="#front-matter">Front Matter</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#a-first-look-at-front-matter">A first look at Front Matter</a>
+<ul>
+<li>
+<a href="#how-the-front-matter-is-used">How the Front Matter is used</a>
+</li>
+<li>
+<a href="#front-matter-syntax">Front matter syntax</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#supported-front-matter-properties">Supported Front Matter properties</a>
+<ul>
+<li>
+<a href="#post-front-matter-schema">Post Front Matter Schema</a>
+</li>
+<li>
+<a href="#title">Title</a>
+</li>
+<li>
+<a href="#description">Description</a>
+</li>
+<li>
+<a href="#category">Category</a>
+</li>
+<li>
+<a href="#date">Date</a>
+</li>
+<li>
+<a href="#author">Author</a>
+</li>
+<li>
+<a href="#image">Image</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#using-images-in-posts">Using images in posts</a>
+</li>
+</ul>
+
+			</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/creating-content/blog-posts.html">Creating Blog Posts</a>
+		href="../dev-docs-preview/static-pages.html">Markdown &amp; Blade Pages</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/creating-content/static-pages.html">Markdown &amp; Blade Pages</a>
+		href="../dev-docs-preview/documentation-pages.html">Documentation Pages</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/creating-content/documentation-pages.html">Documentation Pages</a>
+		href="../dev-docs-preview/managing-assets.html">Managing and Compiling Assets</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/creating-content/managing-assets.html">Managing and Compiling Assets</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/creating-content/compile-and-deploy.html">Compile &amp; Deploy</a>
+		href="../dev-docs-preview/compile-and-deploy.html">Compile &amp; Deploy</a>
 	</li>                            </ul>
         </li>
 	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
@@ -152,46 +213,28 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/digging-deeper/customization.html">Customizing your Site</a>
+		href="../dev-docs-preview/customization.html">Customizing your Site</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/digging-deeper/advanced-markdown.html">Advanced Markdown</a>
+		href="../dev-docs-preview/advanced-markdown.html">Advanced Markdown</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/digging-deeper/extensions.html">Extensions &amp; Integrations</a>
+		href="../dev-docs-preview/extensions.html">Extensions &amp; Integrations</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/digging-deeper/advanced-customization.html">Advanced Customization</a>
+		href="../dev-docs-preview/advanced-customization.html">Advanced Customization</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/digging-deeper/collections.html">File-based Collections</a>
+		href="../dev-docs-preview/collections.html">File-based Collections</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/digging-deeper/troubleshooting.html">Troubleshooting</a>
+		href="../dev-docs-preview/troubleshooting.html">Troubleshooting</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/digging-deeper/updating-hyde.html">Updating Hyde</a>
+		href="../dev-docs-preview/updating-hyde.html">Updating Hyde</a>
 	</li>                            </ul>
         </li>
 	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
-            <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
-                <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Advanced Features</h4>
-                <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
-                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
-                    </svg>
-                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
-                    </svg>
-                </button>
-            </header>
-            <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
-                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/advanced-features/introduction.html">Introduction</a>
-	</li>                            </ul>
-        </li>
-	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: true }">
             <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
                 <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Architecture Concepts</h4>
                 <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
@@ -206,49 +249,20 @@
             <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/architecture-concepts/autodiscovery.html">Autodiscovery</a>
+		href="../dev-docs-preview/introduction.html">Introduction</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/architecture-concepts/automatic-routing.html">Automatic Routing</a>
+		href="../dev-docs-preview/autodiscovery.html">Autodiscovery</a>
 	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/architecture-concepts/dynamic-data-discovery.html">Dynamic Data Discovery</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../../dev-docs-preview/architecture-concepts/page-models.html" aria-current="true">Page models</a>
-				<span class="sr-only">Table of contents</span>
-		<ul class="table-of-contents">
-<li>
-<a href="#introduction">Introduction</a>
-</li>
-<li>
-<a href="#the-short-version">The short version</a>
-<ul>
-<li>
-<a href="#page-models-are-classes-that-have-two-primary-concerns">Page models are classes that have two primary concerns:</a>
-</li>
-<li>
-<a href="#other-key-points">Other key points:</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#the-page-model">The Page Model</a>
-</li>
-<li>
-<a href="#page-models-as-blueprints">Page Models as Blueprints</a>
-<ul>
-<li>
-<a href="#what-each-property-does">What each property does</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#page-models-as-data-containers">Page Models as Data Containers</a>
-</li>
-</ul>
-
-			</li>                            </ul>
+		href="../dev-docs-preview/automatic-routing.html">Automatic Routing</a>
+	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../dev-docs-preview/dynamic-data-discovery.html">Dynamic Data Discovery</a>
+	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../dev-docs-preview/page-models.html">Page models</a>
+	</li>                            </ul>
         </li>
 	</ul>                        </nav>
     </aside>
@@ -257,87 +271,190 @@
     <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 prose dark:prose-invert max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)]">
     
     <header id="document-header" class="flex items-center flex-wrap prose-h1:mb-3">
-        <h1>The Hyde Page Models</h1>
+        <h1>Creating Blog Posts</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>The Hyde page models are an integral part of how HydePHP creates your static site. Each page in your site is represented
-by a page model. These are simply PHP classes that in addition to holding both the source content and computed data
-for your pages, also house instructions to Hyde on how to parse, process, and render the pages to static HTML.</p>
-<p>In this article, you'll get a high-level overview of the page models, and some code examples to give you a look inside.</p>
-<h2>The short version<a id="the-short-version" href="#the-short-version" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<h4>Page models are classes that have two primary concerns:<a id="page-models-are-classes-that-have-two-primary-concerns" href="#page-models-are-classes-that-have-two-primary-concerns" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<ol>
-<li>They act as blueprints containing <em>static</em> instructions for how to parse, process, and, render pages.</li>
-<li>Each class <em>instance</em> also holds the page source contents, as well as the computed data.</li>
-</ol>
-<h4>Other key points:<a id="other-key-points" href="#other-key-points" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+        <h2>Introduction to Hyde Posts<a id="introduction-to-hyde-posts" href="#introduction-to-hyde-posts" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Making blog posts with Hyde is easy. At the most basic level,
+all you need is to add a Markdown file to your <code>_posts</code> folder.</p>
+<p>To use the full power of the Hyde post module however,
+you'll want to add YAML Front Matter to your posts.</p>
+<p>You can scaffold posts with automatic front matter using the HydeCLI:</p>
+<pre><code class="language-bash">php hyde make:post
+</code></pre>
+<p>Learn more about scaffolding posts, and other files, in the <a href="console-commands">console commands</a> documentation.</p>
+<h2>Short Video Tutorial<a id="short-video-tutorial" href="#short-video-tutorial" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gjpE1U527h8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+<h2>Best Practices and Hyde Expectations<a id="best-practices-and-hyde-expectations" href="#best-practices-and-hyde-expectations" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Since Hyde does a lot of things automatically, there are some things you may need
+to keep in mind when creating blog posts so that you don't get unexpected results.</p>
+<h3>Filenames<a id="filenames" href="#filenames" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <ul>
-<li>HydePHP, at the time of writing, comes with five different page classes, one for each supported type.</li>
-<li>You don't construct page models yourself. HydePHP does it for you by the <a href="autodiscovery">autodiscovery process</a>.</li>
-<li>Page models are just PHP classes. You can extend them, and you can implement your own.</li>
+<li>Markdown post files are stored in the <code>_posts</code> directory</li>
+<li>The filename is used as the filename for the compiled HTML</li>
+<li>Filenames should use <code>kebab-case-slug</code> followed by the extension <code>.md</code>
+</li>
+<li>Files prefixed with <code>_underscores</code> are ignored by Hyde</li>
+<li>Your post will be stored in <code>_site/posts/&lt;slug&gt;.html</code>
+</li>
 </ul>
-<h2>The Page Model<a id="the-page-model" href="#the-page-model" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>To give you an idea of what a page model class looks like, here's a simplified version of the base <code>MarkdownPost</code> class,
-Don't worry if you don't understand everything yet, we'll talk more about these parts later.</p>
-<pre><code class="language-php">class MarkdownPost extends BaseMarkdownPage
-{
-    public static string $sourceDirectory = '_posts';
-    public static string $outputDirectory = 'posts';
-    public static string $fileExtension = '.md';
-    public static string $template = 'post';
-    
-    public string $identifier;
-    public string $routeKey;
-    public string $title;
-    
-    public FrontMatter $matter;
-    public Markdown $markdown;
-}
+<p><strong>Example:</strong></p>
+<pre><code class="language-bash">✔ _posts/hello-world.md # Valid and will be compiled to _site/posts/hello-world.html
 </code></pre>
-<p><em>Note that since Hyde pages are modular and class inheritance and traits, this example has been simplified and
-edited to show all the relevant parts inlined into one class.</em></p>
-<h2>Page Models as Blueprints<a id="page-models-as-blueprints" href="#page-models-as-blueprints" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>All page models have some static properties (that is, they belong to the class, not the instance) that are used as
-blueprints, defining information for Hyde to know how to parse a file, and what data around it should be generated.</p>
-<p>Let's again take the simplified <code>MarkdownPost</code> class as an example, this time only showing the static properties:</p>
-<pre><code class="language-php">class MarkdownPost extends BaseMarkdownPage
-{
-    public static string $sourceDirectory = '_posts';
-    public static string $outputDirectory = 'posts';
-    public static string $fileExtension = '.md';
-    public static string $template = 'post';
-}
-</code></pre>
-<h4>What each property does<a id="what-each-property-does" href="#what-each-property-does" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>The properties should be self-explanatory, but here's a quick rundown to give some context on how they are used,
-and how the paths relate to each other. So for the class above, Hyde will thanks to this blueprint, know to:</p>
+<h3>Front Matter<a id="front-matter" href="#front-matter" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Front matter is optional, but highly recommended for blog posts.</p>
+<p>You can read more about the Front Matter format in the <a href="architecture-concepts#front-matter">Front Matter documentation</a>.
+Here is a quick primer:</p>
 <ul>
-<li>Look for files in the <code>_posts</code> directory, with the <code>.md</code> extension</li>
-<li>Compile the page using the <code>post</code> Blade template</li>
-<li>Output the compiled page to the <code>_site/posts</code> directory</li>
+<li>Front matter is stored in a block of YAML that starts and ends with a <code>---</code> line.</li>
+<li>The front matter should be the very first thing in the Markdown file.</li>
+<li>Each key-pair value should be on its own line.</li>
+<li>The front matter is used to construct dynamic HTML markup for the post as well as meta tags and post feeds.
+You are encouraged to look at the compiled HTML to learn and understand how your front matter is used.</li>
 </ul>
-<h2>Page Models as Data Containers<a id="page-models-as-data-containers" href="#page-models-as-data-containers" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>As mentioned above, each page model instance also holds the page source contents, as well as the computed data.</p>
-<p>Let's again take the simplified <code>MarkdownPost</code> class as an example, this time only showing the instance properties:</p>
-<pre><code class="language-php">class MarkdownPost extends BaseMarkdownPage
-{
-    public string $identifier;
-    public string $routeKey;
-    public string $title;
-    
-    public FrontMatter $matter;
-    public Markdown $markdown;
-}
+<p><strong>Example:</strong></p>
+<pre><code class="language-markdown">---
+title: &quot;My New Post&quot;
+---
+
+## Markdown comes here
 </code></pre>
-<p>There are some more properties than shown here, for example, various metadata properties, but these are the most common
-and important ones.</p>
-<p>While the static data gives instructions to Hyde on how to process all pages of the type, the instance data tells Hyde
-how to process a specific page. For example, the identifier property is used to uniquely identify the page, and
-the routeKey property is used to generate the URL for the page.</p>
-<p>The matter and markdown properties as I'm sure you can guess, hold the page's front matter and markdown content.
-These can then also be processed by <a href="dynamic-data-discovery.md">page factories</a> to generate the computed data like the
-title property.</p>
+<p>You can use the <code>php hyde make:post</code> command to automatically generate the front matter based on your input.</p>
+<h2>A first look at Front Matter<a id="a-first-look-at-front-matter" href="#a-first-look-at-front-matter" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Before digging in deeper on all the supported front matter options,
+let's take a look at what a basic post with front matter looks like.</p>
+<p>This file was created using the <code>make:post</code> by hitting the <code>Enter</code> key to use
+all the defaults (with some extra lorem ipsum to illustrate).</p>
+<pre><code class="language-markdown">---
+title: My New Post
+description: A short description used in previews and SEO
+category: blog
+author: Mr. Hyde
+date: 2022-05-09 18:38
+---
+
+## Write your Markdown here
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Autem aliquid alias explicabo consequatur similique,
+animi distinctio earum ducimus minus, magnam.
+</code></pre>
+<h3>How the Front Matter is used<a id="how-the-front-matter-is-used" href="#how-the-front-matter-is-used" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The front matter is used to construct dynamic HTML markup for the post as well as meta tags and post feeds.</p>
+<p>You are encouraged to look at the compiled HTML to learn and understand how your front matter is used.</p>
+<h3>Front matter syntax<a id="front-matter-syntax" href="#front-matter-syntax" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Here is a quick reference of the syntax Hyde uses and expects:</p>
+<pre><code class="language-markdown">---
+key: value
+string: &quot;quoted string&quot;
+boolean: true
+integer: 100
+array:
+  key: value
+  key: value
+---
+</code></pre>
+<h2>Supported Front Matter properties<a id="supported-front-matter-properties" href="#supported-front-matter-properties" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h3>Post Front Matter Schema<a id="post-front-matter-schema" href="#post-front-matter-schema" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Here is a quick reference of the supported front matter properties.
+Keep on reading to see further explanations, details, and examples.</p>
+<table>
+<thead>
+<tr>
+<th><strong>KEY NAME</strong></th>
+<th><strong>VALUE TYPE</strong></th>
+<th><strong>EXAMPLE / FORMAT</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>string</td>
+<td>&quot;My New Post&quot;</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>string</td>
+<td>&quot;A short description&quot;</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>string</td>
+<td>&quot;my favorite recipes&quot;</td>
+</tr>
+<tr>
+<td><code>date</code></td>
+<td>string</td>
+<td>&quot;YYYY-MM-DD [HH:MM]&quot;</td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>string/array</td>
+<td><em>See <a href="#author">author</a> section</em></td>
+</tr>
+<tr>
+<td><code>image</code></td>
+<td>string/array</td>
+<td><em>See <a href="#image">image</a> section</em></td>
+</tr>
+</tbody>
+</table>
+<p>Note that YAML here is pretty forgiving. In most cases you do not need to wrap strings
+in quotes, but it can help in certain edge cases, thus they are included here.</p>
+<p>In the examples below, when there are multiple keys, they signify various ways to use the parameter.</p>
+<h3>Title<a id="title" href="#title" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<pre><code class="language-yaml">title: &quot;My New Post&quot;
+</code></pre>
+<h3>Description<a id="description" href="#description" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<pre><code class="language-yaml">description: &quot;A short description used in previews and SEO&quot;
+</code></pre>
+<h3>Category<a id="category" href="#category" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<pre><code class="language-yaml">category: blog
+category: &quot;My favorite recipes&quot;
+</code></pre>
+<h3>Date<a id="date" href="#date" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<pre><code class="language-yaml">date: &quot;2022-01-01 12:00&quot; 
+date: &quot;2022-01-01&quot; 
+</code></pre>
+<h3>Author<a id="author" href="#author" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<pre><code class="language-yaml">author: &quot;Mr. Hyde&quot; # Arbitrary name displayed &quot;as is&quot;
+author: mr_hyde # Username defined in `authors` config
+author: # Array of author data
+  name: &quot;Mr. Hyde&quot; 
+  username: mr_hyde 
+  website: https://twitter.com/HydeFramework
+</code></pre>
+<p>When specifying an array you don't need all the sub-properties.
+The example just shows all the supported values. Array values here
+will override all the values in the <code>authors</code> config entry.</p>
+<h3>Image<a id="image" href="#image" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<pre><code class="language-yaml">image: image.jpg # Expanded by Hyde to `_media/image.jpg` and is resolved automatically to the correct URL for the built site
+image: https://cdn.example.com/image.jpg # Full URL starting with `http(s)://`) or `//` (protocol-relative)
+image:
+  source: image.jpg # Same as above
+  source: https://cdn.example.com/image.jpg # Same as above
+  description: &quot;Alt text for image&quot;
+  title: &quot;Tooltip title&quot;
+  copyright: &quot;Copyright (c) 2022&quot;
+  license: &quot;CC-BY-SA-4.0&quot;
+  licenseUrl: https://example.com/license/
+  attributionUrl: https://photographer.example.com/
+  author: &quot;John Doe&quot;
+</code></pre>
+<p>When supplying an image source with a local image path, the image is expected to be stored in the <code>_media/</code> directory.
+Like all other media files, it will be copied to <code>_site/media/</code> when the site is built, so Hyde will resolve links accordingly.</p>
+<p>When supplying an image with a full URL, the image source will be used as-is, and no additional processing is done.</p>
+<p>The image will be used as the cover image, and any array data is constructed into a dynamic fluent caption,
+and injected into post and page metadata.</p>
+<blockquote class="info">
+<p>See <a href="https://hydephp.com/posts/introducing-images">posts/introducing-images</a>
+for a detailed blog post with examples and schema information!</p>
+</blockquote>
+<h2>Using images in posts<a id="using-images-in-posts" href="#using-images-in-posts" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>To use images stored in the <code>_media/</code> directory, you can use the following syntax:</p>
+<pre><code class="language-markdown">![Image Alt](../media/image.png &quot;Image Title&quot;) # Note the relative path since the blog post is compiled to `posts/example.html`
+</code></pre>
+<p>To learn more, check out the <a href="managing-assets#managing-images">chapter in managing assets</a></p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
@@ -407,7 +524,7 @@ title property.</p>
 </div>        <script src="https://cdn.jsdelivr.net/npm/hydesearch@0.2.1/dist/HydeSearch.min.js" defer></script>
 <script>
     window.addEventListener('load', function () {
-        const searchIndexLocation = '../../dev-docs-preview/search.json';
+        const searchIndexLocation = '../dev-docs-preview/search.json';
         const Search = new HydeSearch(searchIndexLocation);
 
         Search.init();
@@ -438,7 +555,7 @@ title property.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1165" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1165</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/546835b126b2b7eb86225f98d431e66c40a5dda9"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">546835b126b2b7eb86225f98d431e66c40a5dda9</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/9606fa624845e7c575017957805fe2019f11c820"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">9606fa624845e7c575017957805fe2019f11c820</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1165" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
