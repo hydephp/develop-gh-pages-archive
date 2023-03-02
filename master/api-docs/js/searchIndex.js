@@ -71,21 +71,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-BuildSiteCommand.html#method_runNodeCommand"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\BuildSiteCommand\u003A\u003AcanGenerateSitemap\u0028\u0029",
-            "name": "canGenerateSitemap",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-BuildSiteCommand.html#method_canGenerateSitemap"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\BuildSiteCommand\u003A\u003AcanGenerateFeed\u0028\u0029",
-            "name": "canGenerateFeed",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-BuildSiteCommand.html#method_canGenerateFeed"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\BuildSiteCommand\u003A\u003AcanGenerateSearch\u0028\u0029",
-            "name": "canGenerateSearch",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-BuildSiteCommand.html#method_canGenerateSearch"
-        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\BuildSiteCommand\u003A\u003AhasWarnings\u0028\u0029",
             "name": "hasWarnings",
             "summary": "",
@@ -110,6 +95,11 @@ Search.appendIndex(
             "name": "service",
             "summary": "",
             "url": "classes/Hyde-Console-Commands-BuildSiteCommand.html#property_service"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\BuildSiteCommand\u003A\u003A\u0024taskService",
+            "name": "taskService",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-BuildSiteCommand.html#property_taskService"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\BuildSitemapCommand",
             "name": "BuildSitemapCommand",
@@ -2016,6 +2006,146 @@ Search.appendIndex(
             "summary": "The\u0020extracted\u0020Markdown\u0020body.",
             "url": "classes/Hyde-Framework-Actions-MarkdownFileParser.html#property_markdown"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest",
+            "name": "GenerateBuildManifest",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html#method_handle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest\u003A\u003AhashOutputPath\u0028\u0029",
+            "name": "hashOutputPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html#method_hashOutputPath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest\u003A\u003AhashSourcePath\u0028\u0029",
+            "name": "hashSourcePath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html#method_hashSourcePath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest\u003A\u003AgetManifestPath\u0028\u0029",
+            "name": "getManifestPath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html#method_getManifestPath"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest\u003A\u003AjsonEncodeOutput\u0028\u0029",
+            "name": "jsonEncodeOutput",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html#method_jsonEncodeOutput"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest\u003A\u003AsetOutput\u0028\u0029",
+            "name": "setOutput",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html#method_setOutput"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateBuildManifest\u003A\u003A\u0024message",
+            "name": "message",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html#property_message"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateRssFeed",
+            "name": "GenerateRssFeed",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateRssFeed\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html#method_handle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateRssFeed\u003A\u003AprintFinishMessage\u0028\u0029",
+            "name": "printFinishMessage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html#method_printFinishMessage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateRssFeed\u003A\u003A\u0024message",
+            "name": "message",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html#property_message"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSearch",
+            "name": "GenerateSearch",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSearch.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSearch\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSearch.html#method_handle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSearch\u003A\u003AprintFinishMessage\u0028\u0029",
+            "name": "printFinishMessage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSearch.html#method_printFinishMessage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSearch\u003A\u003A\u0024message",
+            "name": "message",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSearch.html#property_message"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSitemap",
+            "name": "GenerateSitemap",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSitemap.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSitemap\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSitemap.html#method_handle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSitemap\u003A\u003AprintFinishMessage\u0028\u0029",
+            "name": "printFinishMessage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSitemap.html#method_printFinishMessage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSitemap\u003A\u003A\u0024message",
+            "name": "message",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSitemap.html#property_message"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PreBuildTasks\\CleanSiteDirectory",
+            "name": "CleanSiteDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PreBuildTasks\\CleanSiteDirectory\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_handle"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PreBuildTasks\\CleanSiteDirectory\u003A\u003AprintFinishMessage\u0028\u0029",
+            "name": "printFinishMessage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_printFinishMessage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PreBuildTasks\\CleanSiteDirectory\u003A\u003AisItSafeToCleanOutputDirectory\u0028\u0029",
+            "name": "isItSafeToCleanOutputDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_isItSafeToCleanOutputDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PreBuildTasks\\CleanSiteDirectory\u003A\u003AisOutputDirectoryWhitelisted\u0028\u0029",
+            "name": "isOutputDirectoryWhitelisted",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_isOutputDirectoryWhitelisted"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PreBuildTasks\\CleanSiteDirectory\u003A\u003AaskIfUnsafeDirectoryShouldBeEmptied\u0028\u0029",
+            "name": "askIfUnsafeDirectoryShouldBeEmptied",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_askIfUnsafeDirectoryShouldBeEmptied"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PreBuildTasks\\CleanSiteDirectory\u003A\u003AsafeOutputDirectories\u0028\u0029",
+            "name": "safeOutputDirectories",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_safeOutputDirectories"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PreBuildTasks\\CleanSiteDirectory\u003A\u003A\u0024message",
+            "name": "message",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#property_message"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\SourceFileParser",
             "name": "SourceFileParser",
             "summary": "Parses\u0020a\u0020source\u0020file\u0020and\u0020returns\u0020a\u0020new\u0020page\u0020model\u0020instance\u0020for\u0020it.",
@@ -3111,11 +3241,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method___construct"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
             "summary": "",
@@ -3123,18 +3248,23 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003Arun\u0028\u0029",
             "name": "run",
-            "summary": "",
+            "summary": "This\u0020method\u0020is\u0020called\u0020by\u0020the\u0020BuildTaskService.\u0020It\u0020will\u0020run\u0020the\u0020task\u0020using\u0020the\u0020handle\u0020method,\nas\u0020well\u0020as\u0020write\u0020output\u0020to\u0020the\u0020console,\u0020and\u0020handle\u0020any\u0020exceptions\u0020that\u0020may\u0020occur.",
             "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_run"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003Athen\u0028\u0029",
-            "name": "then",
+            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003AprintStartMessage\u0028\u0029",
+            "name": "printStartMessage",
             "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_then"
+            "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_printStartMessage"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003AgetDescription\u0028\u0029",
-            "name": "getDescription",
+            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003AprintFinishMessage\u0028\u0029",
+            "name": "printFinishMessage",
             "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_getDescription"
+            "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_printFinishMessage"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003AgetMessage\u0028\u0029",
+            "name": "getMessage",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_getMessage"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003Awrite\u0028\u0029",
             "name": "write",
@@ -3148,12 +3278,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003AcreatedSiteFile\u0028\u0029",
             "name": "createdSiteFile",
-            "summary": "",
+            "summary": "Write\u0020a\u0020fluent\u0020message\u0020to\u0020the\u0020output\u0020that\u0020the\u0020task\u0020created\u0020the\u0020specified\u0020file.",
             "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_createdSiteFile"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003AwithExecutionTime\u0028\u0029",
             "name": "withExecutionTime",
-            "summary": "",
+            "summary": "Write\u0020a\u0020fluent\u0020message\u0020to\u0020the\u0020output\u0020with\u0020the\u0020execution\u0020time\u0020of\u0020the\u0020task.",
             "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_withExecutionTime"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003A\u0024message",
@@ -3171,105 +3301,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#property_output"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateBuildManifest",
-            "name": "GenerateBuildManifest",
+            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTask",
+            "name": "PostBuildTask",
             "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html"
+            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTask.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateBuildManifest\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
+            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PreBuildTask",
+            "name": "PreBuildTask",
             "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateBuildManifest\u003A\u003Arun\u0028\u0029",
-            "name": "run",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_run"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateBuildManifest\u003A\u003AhashOutputPath\u0028\u0029",
-            "name": "hashOutputPath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_hashOutputPath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateBuildManifest\u003A\u003AhashSourcePath\u0028\u0029",
-            "name": "hashSourcePath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_hashSourcePath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateBuildManifest\u003A\u003AgetManifestPath\u0028\u0029",
-            "name": "getManifestPath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_getManifestPath"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateBuildManifest\u003A\u003AjsonEncodeOutput\u0028\u0029",
-            "name": "jsonEncodeOutput",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_jsonEncodeOutput"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateBuildManifest\u003A\u003A\u0024message",
-            "name": "message",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#property_message"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateRssFeed",
-            "name": "GenerateRssFeed",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateRssFeed.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateRssFeed\u003A\u003Arun\u0028\u0029",
-            "name": "run",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateRssFeed.html#method_run"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateRssFeed\u003A\u003Athen\u0028\u0029",
-            "name": "then",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateRssFeed.html#method_then"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateRssFeed\u003A\u003A\u0024message",
-            "name": "message",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateRssFeed.html#property_message"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateSearch",
-            "name": "GenerateSearch",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateSearch.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateSearch\u003A\u003Arun\u0028\u0029",
-            "name": "run",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateSearch.html#method_run"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateSearch\u003A\u003Athen\u0028\u0029",
-            "name": "then",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateSearch.html#method_then"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateSearch\u003A\u003A\u0024message",
-            "name": "message",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateSearch.html#property_message"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateSitemap",
-            "name": "GenerateSitemap",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateSitemap.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateSitemap\u003A\u003Arun\u0028\u0029",
-            "name": "run",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateSitemap.html#method_run"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateSitemap\u003A\u003Athen\u0028\u0029",
-            "name": "then",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateSitemap.html#method_then"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks\\GenerateSitemap\u003A\u003A\u0024message",
-            "name": "message",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateSitemap.html#property_message"
+            "url": "classes/Hyde-Framework-Features-BuildTasks-PreBuildTask.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollection",
             "name": "DataCollection",
@@ -4321,11 +4361,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-BuildService.html#method_compileStaticPages"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AcleanOutputDirectory\u0028\u0029",
-            "name": "cleanOutputDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_cleanOutputDirectory"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AtransferMediaAssets\u0028\u0029",
             "name": "transferMediaAssets",
             "summary": "",
@@ -4341,26 +4376,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-BuildService.html#method_getClassPluralName"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AisItSafeToCleanOutputDirectory\u0028\u0029",
-            "name": "isItSafeToCleanOutputDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_isItSafeToCleanOutputDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AisOutputDirectoryWhitelisted\u0028\u0029",
-            "name": "isOutputDirectoryWhitelisted",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_isOutputDirectoryWhitelisted"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AaskIfUnsafeDirectoryShouldBeEmptied\u0028\u0029",
-            "name": "askIfUnsafeDirectoryShouldBeEmptied",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_askIfUnsafeDirectoryShouldBeEmptied"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AsafeOutputDirectories\u0028\u0029",
-            "name": "safeOutputDirectories",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildService.html#method_safeOutputDirectories"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\BuildService\u003A\u003AgetPageTypes\u0028\u0029",
             "name": "getPageTypes",
             "summary": "",
@@ -4370,56 +4385,6 @@ Search.appendIndex(
             "name": "router",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-BuildService.html#property_router"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService",
-            "name": "BuildTaskService",
-            "summary": "This\u0020service\u0020manages\u0020the\u0020build\u0020tasks\u0020that\u0020are\u0020called\u0020after\u0020the\u0020site\u0020has\u0020been\u0020compiled\u0020using\u0020the\u0020build\u0020command.",
-            "url": "classes/Hyde-Framework-Services-BuildTaskService.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003ArunPostBuildTasks\u0028\u0029",
-            "name": "runPostBuildTasks",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_runPostBuildTasks"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AgetPostBuildTasks\u0028\u0029",
-            "name": "getPostBuildTasks",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_getPostBuildTasks"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AfindTasksInAppDirectory\u0028\u0029",
-            "name": "findTasksInAppDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_findTasksInAppDirectory"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003Arun\u0028\u0029",
-            "name": "run",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_run"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003ArunIf\u0028\u0029",
-            "name": "runIf",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_runIf"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003ArunTask\u0028\u0029",
-            "name": "runTask",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_runTask"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003A\u0024postBuildTasks",
-            "name": "postBuildTasks",
-            "summary": "Information\u0020for\u0020package\u0020developers\u003A\u0020This\u0020offers\u0020a\u0020hook\u0020for\u0020packages\u0020to\u0020add\u0020custom\u0020build\u0020tasks.",
-            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#property_postBuildTasks"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003A\u0024output",
-            "name": "output",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#property_output"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService",
             "name": "DiscoveryService",
@@ -6546,6 +6511,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde-framework-actions.html"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks",
+            "name": "PostBuildTasks",
+            "summary": "",
+            "url": "namespaces/hyde-framework-actions-postbuildtasks.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PreBuildTasks",
+            "name": "PreBuildTasks",
+            "summary": "",
+            "url": "namespaces/hyde-framework-actions-prebuildtasks.html"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Concerns",
             "name": "Concerns",
             "summary": "",
@@ -6585,11 +6560,6 @@ Search.appendIndex(
             "name": "BuildTasks",
             "summary": "",
             "url": "namespaces/hyde-framework-features-buildtasks.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTasks",
-            "name": "PostBuildTasks",
-            "summary": "",
-            "url": "namespaces/hyde-framework-features-buildtasks-postbuildtasks.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\DataCollections",
             "name": "DataCollections",

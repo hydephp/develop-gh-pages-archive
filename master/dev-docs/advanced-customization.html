@@ -197,20 +197,6 @@
 </li>
 </ul>
 </li>
-<li>
-<a href="#adding-custom-post-build-tasks">Adding custom post-build tasks</a>
-<ul>
-<li>
-<a href="#minimal-example">Minimal example</a>
-</li>
-<li>
-<a href="#full-example">Full example</a>
-</li>
-<li>
-<a href="#registering-the-tasks">Registering the tasks</a>
-</li>
-</ul>
-</li>
 </ul>
 
 			</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
@@ -240,6 +226,9 @@
                                     <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
 		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
 		href="../dev-docs/advanced-features.html">Introduction</a>
+	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
+		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
+		href="../dev-docs/build-tasks.html">Custom Build Tasks</a>
 	</li>                            </ul>
         </li>
 	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
@@ -348,61 +337,6 @@ the default <code>_pages</code>, you can change the path using the following con
 </code></pre>
 <h3>Setting an absolute path<a id="setting-an-absolute-path" href="#setting-an-absolute-path" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Since Hyde v0.64.0-beta, the site output directory will always be resolved within the project root. If you want to compile the site to an absolute path outside your project, it's instead recommended that you use a build task to copy the files to the desired location automatically after the site has been compiled.</p>
-<h2>Adding custom post-build tasks<a id="adding-custom-post-build-tasks" href="#adding-custom-post-build-tasks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>These tasks are code that is executed automatically after the site has been built using the <code>php hyde build</code> command. The built-in features in Hyde like sitemap generation and RSS feeds are created using tasks like these.</p>
-<p>Maybe you want to create your own, to for example upload the site to FTP or copy the files to a public directory? It's easy to do, here's how!</p>
-<h3>Minimal example<a id="minimal-example" href="#minimal-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Here is a minimal example to get you started. For all these examples we assume you put the file in the <code>App/Actions</code> directory, but you can put them anywhere.</p>
-<pre><code class="language-php">class SimpleTask extends BuildTask
-{
-    public function run(): void
-    {
-        $this-&gt;info('Hello World!');
-    }
-}
-</code></pre>
-<p>This will then output the following, where you can see that some extra output, including execution time tracking is added for us. We can of course customize this if we want, as you can see in the next example.</p>
-<pre>
-<small style="color: gray">$ php hyde build</small>
-  <span style="color: gold">Generic build task...</span> Hello World! <span style="color: gray">Done in 0.26ms</span>
-</pre>
-<h3>Full example<a id="full-example" href="#full-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>You can also set the message, and an optional <code>then()</code> method to run after the main task has been executed. The then method is great if you want to display a status message.</p>
-<pre><code class="language-php">&lt;?php
-
-namespace App\Actions;
-
-use Hyde\Framework\Features\BuildTasks\BuildTask;
-
-class ExampleTask extends BuildTask
-{
-    public static string $message = 'Say hello';
-
-    public function run(): void
-    {
-        $this-&gt;info('Hello World!');
-    }
-
-    public function then(): void
-    {
-		$this-&gt;line('Goodbye World!');
-    }
-}
-</code></pre>
-<pre>
-<small style="color: gray">$ php hyde build</small>
-  <span style="color: gold">Say hello...</span> <span style="color: green">Hello World!</span>
-  Goodbye World!
-</pre>
-<h3>Registering the tasks<a id="registering-the-tasks" href="#registering-the-tasks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>There are a few ways to register these tasks so Hyde can find them. There is a convenient place to do this, which is in the main configuration file, <code>config/hyde.php</code>.</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'post_build_tasks' =&gt; [
-    \App\Actions\SimpleTask::class,
-    \App\Actions\ExampleTask::class,
-],
-</code></pre>
-<p>If you are developing an extension, I recommend you do this in the <code>boot</code> method of a service provider so that it can be loaded automatically. Do this by adding the fully qualified class name to the <code>BuildTaskService::$postBuildTasks</code> array.</p>
-<p>Hyde can also autoload them if you store the files in the <code>app/Actions</code> directory and the names end in <code>BuildTask.php</code>. For example <code>app/Actions/ExampleBuildTask.php</code>.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         

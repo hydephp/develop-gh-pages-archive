@@ -115,17 +115,16 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework.html">Framework</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-features.html">Features</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-features-buildtasks.html">BuildTasks</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-features-buildtasks-postbuildtasks.html">PostBuildTasks</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-actions.html">Actions</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-actions-prebuildtasks.html">PreBuildTasks</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    GenerateBuildManifest
+    CleanSiteDirectory
 
         <span class="phpdocumentor-element__extends">
-        extends <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html"><abbr title="\Hyde\Framework\Features\BuildTasks\BuildTask">BuildTask</abbr></a>
+        extends <a href="classes/Hyde-Framework-Features-BuildTasks-PreBuildTask.html"><abbr title="\Hyde\Framework\Features\BuildTasks\PreBuildTask">PreBuildTask</abbr></a>
     </span>
     
             <div class="phpdocumentor-element__package">
@@ -139,29 +138,15 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php"><a href="files/packages-framework-src-framework-features-buildtasks-postbuildtasks-generatebuildmanifest.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php">GenerateBuildManifest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php"><a href="files/packages-framework-src-framework-actions-prebuildtasks-cleansitedirectory.html"><abbr title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php">CleanSiteDirectory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 
     </aside>
 
         
 
 
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Framework\Testing\Unit\GenerateBuildManifestTest">GenerateBuildManifestTest</abbr></span>
-                                        
-                                             
-                                    </dd>
-                        </dl>
 
 
 
@@ -174,17 +159,17 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#property_message">$message</a>
+                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#property_exitCode">$exitCode</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: int            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#property_exitCode">$exitCode</a>
+    <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#property_message">$message</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
@@ -203,53 +188,54 @@
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method___construct">__construct()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_createdSiteFile">createdSiteFile()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
-<dd></dd>
+<dd>Write a fluent message to the output that the task created the specified file.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_getDescription">getDescription()</a>
+    <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_getMessage">getMessage()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_handle">handle()</a>
+    <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_handle">handle()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_printFinishMessage">printFinishMessage()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_printStartMessage">printStartMessage()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_run">run()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_run">run()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_then">then()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
+<dd>This method is called by the BuildTaskService. It will run the task using the handle method,
+as well as write output to the console, and handle any exceptions that may occur.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_withExecutionTime">withExecutionTime()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
-<dd></dd>
+<dd>Write a fluent message to the output with the execution time of the task.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_write">write()</a>
@@ -262,6 +248,13 @@
     <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_writeln">writeln()</a>
     <span>
                                 &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_askIfUnsafeDirectoryShouldBeEmptied">askIfUnsafeDirectoryShouldBeEmptied()</a>
+    <span>
+                                &nbsp;: bool    </span>
 </dt>
 <dd></dd>
 
@@ -280,30 +273,23 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_getManifestPath">getManifestPath()</a>
+    <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_isItSafeToCleanOutputDirectory">isItSafeToCleanOutputDirectory()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: bool    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_hashOutputPath">hashOutputPath()</a>
+    <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_isOutputDirectoryWhitelisted">isOutputDirectoryWhitelisted()</a>
     <span>
-                                &nbsp;: string|null    </span>
+                                &nbsp;: bool    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_hashSourcePath">hashSourcePath()</a>
+    <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_safeOutputDirectories">safeOutputDirectories()</a>
     <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_jsonEncodeOutput">jsonEncodeOutput()</a>
-    <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd></dd>
 
@@ -331,42 +317,8 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-            -static                                            "
->
-    <h4 class="phpdocumentor-element__name" id="property_message">
-        $message
-        <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#property_message" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php"><a href="files/packages-framework-src-framework-features-buildtasks-postbuildtasks-generatebuildmanifest.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php">GenerateBuildManifest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">19</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$message</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;Generating build manifest&#039;</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
                     <article
         class="
             phpdocumentor-element
@@ -383,7 +335,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -393,6 +345,40 @@
         <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$exitCode</span>
      = <span class="phpdocumentor-signature__default-value">\Symfony\Component\Console\Command\Command::SUCCESS</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_message">
+        $message
+        <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#property_message" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php"><a href="files/packages-framework-src-framework-actions-prebuildtasks-cleansitedirectory.html"><abbr title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php">CleanSiteDirectory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">18</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$message</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;Removing all files from build directory&#039;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -417,7 +403,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -472,52 +458,8 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php"><a href="files/packages-framework-src-framework-features-buildtasks-postbuildtasks-generatebuildmanifest.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php">GenerateBuildManifest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">21</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Console\OutputStyle">OutputStyle</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$output</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$output</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Console\OutputStyle">OutputStyle</abbr>|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
                     <article
         class="phpdocumentor-element
             -method
@@ -531,17 +473,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Write a fluent message to the output that the task created the specified file.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">createdSiteFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -568,21 +510,21 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getDescription">
-        getDescription()
-        <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_getDescription" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getMessage">
+        getMessage()
+        <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_getMessage" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getDescription</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getMessage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -603,19 +545,19 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_handle">
         handle()
-        <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_handle" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_handle" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php"><a href="files/packages-framework-src-framework-actions-prebuildtasks-cleansitedirectory.html"><abbr title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php">CleanSiteDirectory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">handle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                    <span class="phpdocumentor-signature__name">handle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -623,7 +565,73 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_printFinishMessage">
+        printFinishMessage()
+        <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_printFinishMessage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php"><a href="files/packages-framework-src-framework-actions-prebuildtasks-cleansitedirectory.html"><abbr title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php">CleanSiteDirectory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">28</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">printFinishMessage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_printStartMessage">
+        printStartMessage()
+        <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_printStartMessage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">62</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">printStartMessage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -636,62 +644,43 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_run">
         run()
-        <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_run" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php"><a href="files/packages-framework-src-framework-features-buildtasks-postbuildtasks-generatebuildmanifest.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php">GenerateBuildManifest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">27</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">run</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_then">
-        then()
-        <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_then" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_run" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">This method is called by the BuildTaskService. It will run the task using the handle method,
+as well as write output to the console, and handle any exceptions that may occur.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">then</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-        <section class="phpdocumentor-description"></section>
+                    <span class="phpdocumentor-signature__name">run</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Console\OutputStyle">OutputStyle</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$output</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$output</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Console\OutputStyle">OutputStyle</abbr>|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
+    <span class="phpdocumentor-signature__response_type">int</span>
             &mdash;
-        
+            <section class="phpdocumentor-description"><p>The exit code of the task. This can be used when calling a task directly from a command.</p>
+</section>
+
     
 </article>
                     <article
@@ -707,17 +696,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Write a fluent message to the output with the execution time of the task.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">withExecutionTime</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -740,7 +729,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -784,7 +773,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php"><a href="files/packages-framework-src-framework-features-buildtasks-buildtask.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/BuildTask.php">BuildTask.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -811,6 +800,39 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_askIfUnsafeDirectoryShouldBeEmptied">
+        askIfUnsafeDirectoryShouldBeEmptied()
+        <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_askIfUnsafeDirectoryShouldBeEmptied" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php"><a href="files/packages-framework-src-framework-actions-prebuildtasks-cleansitedirectory.html"><abbr title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php">CleanSiteDirectory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">askIfUnsafeDirectoryShouldBeEmptied</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     
@@ -887,21 +909,21 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getManifestPath">
-        getManifestPath()
-        <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_getManifestPath" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_isItSafeToCleanOutputDirectory">
+        isItSafeToCleanOutputDirectory()
+        <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_isItSafeToCleanOutputDirectory" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php"><a href="files/packages-framework-src-framework-features-buildtasks-postbuildtasks-generatebuildmanifest.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php">GenerateBuildManifest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php"><a href="files/packages-framework-src-framework-actions-prebuildtasks-cleansitedirectory.html"><abbr title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php">CleanSiteDirectory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">getManifestPath</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">isItSafeToCleanOutputDirectory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -909,7 +931,7 @@
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     
@@ -920,12 +942,12 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_hashOutputPath">
-        hashOutputPath()
-        <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_hashOutputPath" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_isOutputDirectoryWhitelisted">
+        isOutputDirectoryWhitelisted()
+        <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_isOutputDirectoryWhitelisted" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php"><a href="files/packages-framework-src-framework-features-buildtasks-postbuildtasks-generatebuildmanifest.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php">GenerateBuildManifest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php"><a href="files/packages-framework-src-framework-actions-prebuildtasks-cleansitedirectory.html"><abbr title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php">CleanSiteDirectory.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">44</span>
 
@@ -934,26 +956,15 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">hashOutputPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+                    <span class="phpdocumentor-signature__name">isOutputDirectoryWhitelisted</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
         <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$page</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
+    
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     
@@ -964,84 +975,29 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_hashSourcePath">
-        hashSourcePath()
-        <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_hashSourcePath" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_safeOutputDirectories">
+        safeOutputDirectories()
+        <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#method_safeOutputDirectories" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php"><a href="files/packages-framework-src-framework-features-buildtasks-postbuildtasks-generatebuildmanifest.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php">GenerateBuildManifest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php"><a href="files/packages-framework-src-framework-actions-prebuildtasks-cleansitedirectory.html"><abbr title="packages/framework/src/Framework/Actions/PreBuildTasks/CleanSiteDirectory.php">CleanSiteDirectory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">hashSourcePath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">safeOutputDirectories</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$page</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
+    
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_jsonEncodeOutput">
-        jsonEncodeOutput()
-        <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#method_jsonEncodeOutput" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php"><a href="files/packages-framework-src-framework-features-buildtasks-postbuildtasks-generatebuildmanifest.html"><abbr title="packages/framework/src/Framework/Features/BuildTasks/PostBuildTasks/GenerateBuildManifest.php">GenerateBuildManifest.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">64</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">jsonEncodeOutput</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pages</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pages</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
         
     
@@ -1190,7 +1146,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Hyde-Framework-Features-BuildTasks-PostBuildTasks-GenerateBuildManifest.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Hyde-Framework-Actions-PreBuildTasks-CleanSiteDirectory.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
