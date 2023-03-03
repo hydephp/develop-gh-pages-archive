@@ -190,6 +190,17 @@
 </li>
 </ul>
 </li>
+<li>
+<a href="#yaml-collections">Yaml Collections</a>
+<ul>
+<li>
+<a href="#usage-1">Usage</a>
+</li>
+<li>
+<a href="#example-returns-1">Example returns</a>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -350,6 +361,34 @@ Follow these conventions and creating dynamic static sites will be a breeze.</p>
   }
 }
 </code></pre>
+<p>Assuming the Markdown document looks like this:</p>
+<pre><code class="language-markdown">---
+author: &quot;John Doe&quot;
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+</code></pre>
+<h3>Yaml Collections<a id="yaml-collections" href="#yaml-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h4>Usage<a id="usage-1" href="#usage-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<pre><code class="language-php">$collection = \Hyde\Support\DataCollection::yaml('name');
+</code></pre>
+<h4>Example returns<a id="example-returns-1" href="#example-returns-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Here is an approximation of the data types contained by the variable created above:</p>
+<pre><code class="language-php">\Hyde\Support\DataCollection {
+  &quot;authors/1.yaml&quot; =&gt; Hyde\Markdown\Models\FrontMatter {
+    +data: array:1 [
+      &quot;name&quot; =&gt; &quot;John Doe&quot;,
+      &quot;email&quot; =&gt; &quot;john@example.org&quot;
+    ]
+  }
+}
+</code></pre>
+<p>Assuming the Yaml document looks like this:</p>
+<pre><code class="language-yaml">---
+name: &quot;John Doe&quot;
+email: &quot;john@example.org&quot;
+</code></pre>
+<p>Note that the Yaml file should start with <code>---</code> to be parsed correctly.</p>
 <h2>Markdown Collections - Hands-on Guide<a id="markdown-collections---hands-on-guide" href="#markdown-collections---hands-on-guide" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>I think the best way to explain DataCollections is through examples, so let's create a Blade page with customer testimonials!</p>
 <p>This example will use Markdown Collections, but the same concepts apply to all other collection types.</p>
@@ -503,7 +542,7 @@ we are able to get the author from the front matter, and the content from the bo
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1187" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1187</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/90fe2fe1cafe458dcf1f22117a01dd4657ab23b1"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">90fe2fe1cafe458dcf1f22117a01dd4657ab23b1</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/b2c227ac0df87ed917b687241863501913f5e567"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">b2c227ac0df87ed917b687241863501913f5e567</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1187" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
