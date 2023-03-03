@@ -321,9 +321,7 @@ Follow these conventions and creating dynamic static sites will be a breeze.</p>
 </table>
 <h3>Markdown Collections<a id="markdown-collections" href="#markdown-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <h4>Usage<a id="usage" href="#usage" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<pre><code class="language-php">use \Hyde\Support\DataCollection;
-
-$collection = DataCollection::markdown('name');
+<pre><code class="language-php">$collection = \Hyde\Support\DataCollection::markdown('name');
 </code></pre>
 <h4>Example returns<a id="example-returns" href="#example-returns" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <pre style="display: block; white-space: pre-wrap; padding: 1rem 1.5rem; overflow: initial !important; background-color: rgb(24, 23, 27); color: rgb(255, 132, 0); font: 400 12px Menlo, Monaco, Consolas, monospace; overflow-wrap: break-word; position: relative; z-index: 99999; word-break: break-all; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span class="sf-dump-default" style="display: inline; background-color: rgb(24, 23, 27); color: rgb(255, 132, 0); font: 12px Menlo, Monaco, Consolas, monospace; overflow-wrap: break-word; white-space: pre-wrap; position: relative; z-index: 99999; word-break: break-all;">^</span><span class="sf-dump-default" style="display: inline; background-color: rgb(24, 23, 27); color: rgb(255, 132, 0); font: 12px Menlo, Monaco, Consolas, monospace; overflow-wrap: break-word; white-space: pre-wrap; position: relative; z-index: 99999; word-break: break-all;"> </span><span style="display: inline; color: rgb(18, 153, 218);">Hyde\Support\DataCollection</span> {<span style="text-decoration: none; border: 0px; outline: none; color: rgb(160, 160, 160);">#651 <span style="display: inline;">▼</span></span><samp>
@@ -373,10 +371,10 @@ The class is registered with an alias, so you don't need to include any namespac
 <p>And we can use the collection almost like any other Laravel one. As you can see, since each entry is a <code>MarkdownDocument</code> class,
 we are able to get the author from the front matter, and the content from the body.</p>
 <pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_pages/testimonials.blade.php</small>@foreach(DataCollection::markdown('testimonials') as $testimonial)
-&lt;blockquote&gt;
-	&lt;p&gt;{{ $testimonial-&gt;body }}&lt;/p&gt;
-	&lt;small&gt;{{ $testimonial-&gt;matter['author'] }}&lt;/small&gt;
-&lt;/blockquote&gt;
+    &lt;blockquote&gt;
+        &lt;p&gt;{{ $testimonial-&gt;body }}&lt;/p&gt;
+        &lt;small&gt;{{ $testimonial-&gt;matter['author'] }}&lt;/small&gt;
+    &lt;/blockquote&gt;
 @endforeach
 </code></pre>
     </section>
@@ -479,7 +477,7 @@ we are able to get the author from the front matter, and the content from the bo
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1187" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1187</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/5eb88616bbea9346da315c40abcc5706261c5e4c"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">5eb88616bbea9346da315c40abcc5706261c5e4c</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/4dd4aab44e39cde0bcbb005c727154ccba865e07"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">4dd4aab44e39cde0bcbb005c727154ccba865e07</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1187" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
