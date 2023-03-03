@@ -326,6 +326,7 @@ Follow these conventions and creating dynamic static sites will be a breeze.</p>
 <p>The following facade methods for creating data collections are available:</p>
 <pre><code class="language-php">\Hyde\Support\DataCollection::markdown();
 \Hyde\Support\DataCollection::yaml();
+\Hyde\Support\DataCollection::json();
 </code></pre>
 <h3>Quick Reference Table<a id="quick-reference-table" href="#quick-reference-table" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <table>
@@ -353,7 +354,7 @@ Follow these conventions and creating dynamic static sites will be a breeze.</p>
 <tr>
 <td><strong><a href="#json-collections">Json</a></strong></td>
 <td><code>::json()</code></td>
-<td><a href="https://www.php.net/manual/en/class.stdclass.php"><code>stdClass</code></a> <small>OR</small> <a href="https://www.php.net/manual/en/language.types.array.php"><code>array</code></a></td>
+<td><a href="https://www.php.net/manual/en/class.stdclass.php"><code>stdClass</code></a> <small>OR </small> <a href="https://www.php.net/manual/en/language.types.array.php"><code>array</code></a></td>
 <td><code>.json</code></td>
 </tr>
 </tbody>
@@ -572,7 +573,7 @@ we are able to get the author from the front matter, and the content from the bo
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1187" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1187</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/5d6526532e46090d3dcc9a88fc2dbdefe060333c"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">5d6526532e46090d3dcc9a88fc2dbdefe060333c</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/d643c633bcb121497b9c046d24fc95c819314876"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">d643c633bcb121497b9c046d24fc95c819314876</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1187" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
