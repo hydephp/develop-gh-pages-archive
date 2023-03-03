@@ -330,17 +330,26 @@ Follow these conventions and creating dynamic static sites will be a breeze.</p>
 <pre><code class="language-php">$collection = \Hyde\Support\DataCollection::markdown('name');
 </code></pre>
 <h4>Example returns<a id="example-returns" href="#example-returns" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<pre style="display: block; white-space: pre-wrap; padding: 1rem 1.5rem; overflow: initial !important; background-color: rgb(24, 23, 27); color: rgb(255, 132, 0); font: 400 12px Menlo, Monaco, Consolas, monospace; overflow-wrap: break-word; position: relative; z-index: 99999; word-break: break-all; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span class="sf-dump-default" style="display: inline; background-color: rgb(24, 23, 27); color: rgb(255, 132, 0); font: 12px Menlo, Monaco, Consolas, monospace; overflow-wrap: break-word; white-space: pre-wrap; position: relative; z-index: 99999; word-break: break-all;">^</span><span class="sf-dump-default" style="display: inline; background-color: rgb(24, 23, 27); color: rgb(255, 132, 0); font: 12px Menlo, Monaco, Consolas, monospace; overflow-wrap: break-word; white-space: pre-wrap; position: relative; z-index: 99999; word-break: break-all;"> </span><span style="display: inline; color: rgb(18, 153, 218);">Hyde\Support\DataCollection</span> {<span style="text-decoration: none; border: 0px; outline: none; color: rgb(160, 160, 160);">#651 <span style="display: inline;">▼</span></span><samp>
-  #<span style="display: inline; color: rgb(255, 255, 255);">items</span>: <span style="display: inline; color: rgb(18, 153, 218);">array:3</span> [<span style="text-decoration: none; border: 0px; outline: none; color: rgb(160, 160, 160);"><span style="display: inline;">▼</span></span><samp>
-    "<span style="display: inline; color: rgb(86, 219, 58);">testimonials/1.md</span>" =&gt; <span style="display: inline; color: rgb(18, 153, 218);"><span>Hyde\Markdown\Models</span><span style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top; color: rgb(18, 153, 218);">\</span>MarkdownDocument</span> {<span style="text-decoration: none; border: 0px; outline: none; color: rgb(160, 160, 160);">#653 <span style="display: inline;">▼</span></span><samp>
-      +<span style="display: inline; color: rgb(255, 255, 255);">matter</span>: <span style="display: inline; color: rgb(18, 153, 218);"><span>Hyde\Markdown\Models</span><span style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top; color: rgb(18, 153, 218);">\</span>FrontMatter</span> {<span style="text-decoration: none; border: 0px; outline: none; color: rgb(160, 160, 160);">#652 <span style="display: inline;">▶</span></span>}
-      +<span style="display: inline; color: rgb(255, 255, 255);">markdown</span>: <span style="display: inline; color: rgb(18, 153, 218);"><span>Hyde\Markdown\Models</span><span style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top; color: rgb(18, 153, 218);">\</span>Markdown</span> {<span style="text-decoration: none; border: 0px; outline: none; color: rgb(160, 160, 160);">#654 <span style="display: inline;">▶</span></span>}
-    </samp>}
-    "<span style="display: inline; color: rgb(86, 219, 58);">testimonials/2.md</span>" =&gt; <span style="display: inline; color: rgb(18, 153, 218);"><span>Hyde\Markdown\Models</span><span style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top; color: rgb(18, 153, 218);">\</span>MarkdownDocument</span> {<span style="text-decoration: none; border: 0px; outline: none; color: rgb(160, 160, 160);">#656 <span style="display: inline;">▶</span></span>}
-    "<span style="display: inline; color: rgb(86, 219, 58);">testimonials/3.md</span>" =&gt; <span style="display: inline; color: rgb(18, 153, 218);"><span>Hyde\Markdown\Models</span><span style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top; color: rgb(18, 153, 218);">\</span>MarkdownDocument</span> {<span style="text-decoration: none; border: 0px; outline: none; color: rgb(160, 160, 160);">#659 <span style="display: inline;">▶</span></span>}
-  </samp>]
-</samp>}
-</pre>
+<p>Here is an approximation of the data types contained by the variable created above:</p>
+<pre><code class="language-php">\Hyde\Support\DataCollection {
+    &quot;testimonials/1.md&quot; =&gt; Hyde\Markdown\Models\MarkdownDocument
+    &quot;testimonials/2.md&quot; =&gt; Hyde\Markdown\Models\MarkdownDocument
+    &quot;testimonials/3.md&quot; =&gt; Hyde\Markdown\Models\MarkdownDocument
+  ]
+}
+</code></pre>
+<p>The returned MarkdownObjects look approximately like this:</p>
+<pre><code class="language-php">\Hyde\Markdown\Models\MarkdownDocument {
+  +matter: Hyde\Markdown\Models\FrontMatter {
+     +data: array:1 [
+       &quot;author&quot; =&gt; &quot;John Doe&quot;
+     ]
+  }
+  +markdown: Hyde\Markdown\Models\Markdown {
+    +body: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit...&quot;
+  }
+}
+</code></pre>
 <h2>Markdown Collections - Hands-on Guide<a id="markdown-collections---hands-on-guide" href="#markdown-collections---hands-on-guide" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>I think the best way to explain DataCollections is through examples, so let's create a Blade page with customer testimonials!</p>
 <p>This example will use Markdown Collections, but the same concepts apply to all other collection types.</p>
@@ -369,7 +378,18 @@ The class is registered with an alias, so you don't need to include any namespac
 <p>The general syntax to use the facade is as follows:</p>
 <pre><code class="language-blade">DataCollection::markdown('subdirectory_name')
 </code></pre>
-<p>This will return a Hyde DataCollection object, containing our Markdown files as MarkdownDocument objects.</p>
+<p>This will return a Hyde DataCollection object, containing our Markdown files as MarkdownDocument objects. Here is a quick look at the object the facade returns:</p>
+<pre style="display: block; white-space: pre-wrap; padding: 1rem 1.5rem; overflow: initial !important; background-color: rgb(24, 23, 27); color: rgb(255, 132, 0); font: 400 12px Menlo, Monaco, Consolas, monospace; overflow-wrap: break-word; position: relative; z-index: 99999; word-break: break-all; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span class="sf-dump-default" style="display: inline; background-color: rgb(24, 23, 27); color: rgb(255, 132, 0); font: 12px Menlo, Monaco, Consolas, monospace; overflow-wrap: break-word; white-space: pre-wrap; position: relative; z-index: 99999; word-break: break-all;">^</span><span class="sf-dump-default" style="display: inline; background-color: rgb(24, 23, 27); color: rgb(255, 132, 0); font: 12px Menlo, Monaco, Consolas, monospace; overflow-wrap: break-word; white-space: pre-wrap; position: relative; z-index: 99999; word-break: break-all;"> </span><span style="display: inline; color: rgb(18, 153, 218);">Hyde\Support\DataCollection</span> {<span style="text-decoration: none; border: 0px; outline: none; color: rgb(160, 160, 160);">#651 <span style="display: inline;">▼</span></span><samp>
+  #<span style="display: inline; color: rgb(255, 255, 255);">items</span>: <span style="display: inline; color: rgb(18, 153, 218);">array:3</span> [<span style="text-decoration: none; border: 0px; outline: none; color: rgb(160, 160, 160);"><span style="display: inline;">▼</span></span><samp>
+    "<span style="display: inline; color: rgb(86, 219, 58);">testimonials/1.md</span>" =&gt; <span style="display: inline; color: rgb(18, 153, 218);"><span>Hyde\Markdown\Models</span><span style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top; color: rgb(18, 153, 218);">\</span>MarkdownDocument</span> {<span style="text-decoration: none; border: 0px; outline: none; color: rgb(160, 160, 160);">#653 <span style="display: inline;">▼</span></span><samp>
+      +<span style="display: inline; color: rgb(255, 255, 255);">matter</span>: <span style="display: inline; color: rgb(18, 153, 218);"><span>Hyde\Markdown\Models</span><span style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top; color: rgb(18, 153, 218);">\</span>FrontMatter</span> {<span style="text-decoration: none; border: 0px; outline: none; color: rgb(160, 160, 160);">#652 <span style="display: inline;">▶</span></span>}
+      +<span style="display: inline; color: rgb(255, 255, 255);">markdown</span>: <span style="display: inline; color: rgb(18, 153, 218);"><span>Hyde\Markdown\Models</span><span style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top; color: rgb(18, 153, 218);">\</span>Markdown</span> {<span style="text-decoration: none; border: 0px; outline: none; color: rgb(160, 160, 160);">#654 <span style="display: inline;">▶</span></span>}
+    </samp>}
+    "<span style="display: inline; color: rgb(86, 219, 58);">testimonials/2.md</span>" =&gt; <span style="display: inline; color: rgb(18, 153, 218);"><span>Hyde\Markdown\Models</span><span style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top; color: rgb(18, 153, 218);">\</span>MarkdownDocument</span> {<span style="text-decoration: none; border: 0px; outline: none; color: rgb(160, 160, 160);">#656 <span style="display: inline;">▶</span></span>}
+    "<span style="display: inline; color: rgb(86, 219, 58);">testimonials/3.md</span>" =&gt; <span style="display: inline; color: rgb(18, 153, 218);"><span>Hyde\Markdown\Models</span><span style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top; color: rgb(18, 153, 218);">\</span>MarkdownDocument</span> {<span style="text-decoration: none; border: 0px; outline: none; color: rgb(160, 160, 160);">#659 <span style="display: inline;">▶</span></span>}
+  </samp>]
+</samp>}
+</pre>
 <h4>Implementing it in a Blade view<a id="implementing-it-in-a-blade-view" href="#implementing-it-in-a-blade-view" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>Let's create a Blade page to display all our testimonials.</p>
 <pre><code class="language-bash">php hyde make:page &quot;Testimonials&quot; --type=&quot;blade&quot;
@@ -483,7 +503,7 @@ we are able to get the author from the front matter, and the content from the bo
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1187" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1187</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/37dd10f932b0f46b7270e0aa298e9b1e081ab288"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">37dd10f932b0f46b7270e0aa298e9b1e081ab288</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/90fe2fe1cafe458dcf1f22117a01dd4657ab23b1"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">90fe2fe1cafe458dcf1f22117a01dd4657ab23b1</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1187" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
