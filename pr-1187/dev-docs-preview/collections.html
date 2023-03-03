@@ -174,7 +174,7 @@
 <a href="#high-level-concept-overview">High-Level Concept Overview</a>
 </li>
 <li>
-<a href="#markdown-collections---hands-on-guide">Markdown Collections - Hands on Guide</a>
+<a href="#markdown-collections---hands-on-guide">Markdown Collections - Hands-on Guide</a>
 <ul>
 <li>
 <a href="#setting-up-the-file-structure">Setting up the file structure</a>
@@ -260,27 +260,31 @@
         <h1>File-based Collections</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        <blockquote class="info"><p>This article covers advanced usage intended for those who are writing their own Blade views, and is not required as Hyde comes pre-packaged with many templates for you to use.</p></blockquote>
-<h2>Introduction to Hyde Data Collections<a id="introduction-to-hyde-data-collections" href="#introduction-to-hyde-data-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Hyde provides <code>DataCollections</code>, a subset of <a href="https://laravel.com/docs/9.x/collections">Laravel Collections</a> giving you a similar developer experience to working with Eloquent Collections, but here, it's all entirely file-based.</p>
-<p>You get the have access to all Laravel Collection methods so you are encouraged to read the <a href="https://laravel.com/docs/9.x/collections">Laravel Collections documentation</a> for more information.</p>
-<p>Currently only a Markdown collection type is added, but more types like YAML are planned.</p>
+        <h2>Introduction to Hyde Data Collections<a id="introduction-to-hyde-data-collections" href="#introduction-to-hyde-data-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Hyde provides <code>DataCollections</code>, a subset of <a href="https://laravel.com/docs/9.x/collections">Laravel Collections</a> giving you
+a similar developer experience to working with Eloquent Collections,but here, it's all entirely file-based using static
+data files such as Markdown, Yaml, and JSON files. These get parsed into objects that you can easily work with.</p>
+<p>As you have access to all standard Laravel Collection methods, you are encouraged to read the
+<a href="https://laravel.com/docs/9.x/collections">Laravel Collections documentation</a> for more information.</p>
+<blockquote class="info"><p>This article covers advanced usage intended for those who are writing their own Blade views, and is not required as Hyde comes pre-packaged with many templates for you to use.</p></blockquote>
 <h3>High-Level Concept Overview<a id="high-level-concept-overview" href="#high-level-concept-overview" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>To make collections easy to use and understand, Hyde makes a few assumptions about the structure of your collections. Follow these conventions and creating dynamic static sites will be a breeze.</p>
+<p>To make collections easy to use and understand, Hyde makes a few assumptions about the structure of your collections.
+Follow these conventions and creating dynamic static sites will be a breeze.</p>
 <ol>
 <li>Collections are stored in the new <code>resources/collections</code> directory.</li>
-<li>Each subdirectory in here can be a collection.</li>
-<li>Data collections are automatically generated from the source files when you use the Facade you will learn about below.</li>
-<li>When using one of the facades, you need to specify the collection name, this name is the name of the subdirectory.</li>
+<li>Collections are accessed through the <code>MarkdownCollection</code> class, which is aliased so that you can use it in Blade files without having to include the namespace.</li>
+<li>Collections are retrieved by the subdirectory name. Each subdirectory in here can be accessed as a collection.</li>
+<li>Data will be parsed into differing objects depending on which facade method you use.</li>
 <li>Each subdirectory should probably only have the same filetype to prevent developer confusion, but this is not enforced.</li>
 <li>Unlike Markdown pages, files starting with underscores are not ignored.</li>
 <li>You can customize the source directory for collections through a service provider.</li>
 </ol>
-<h3>Markdown Collections - Hands on Guide<a id="markdown-collections---hands-on-guide" href="#markdown-collections---hands-on-guide" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Markdown Collections - Hands-on Guide<a id="markdown-collections---hands-on-guide" href="#markdown-collections---hands-on-guide" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <h4>Setting up the file structure<a id="setting-up-the-file-structure" href="#setting-up-the-file-structure" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>I think the best way to explain DataCollections is through examples. Let's create a Blade page with customer testimonials.</p>
 <p>We start by setting up our directory structure. We will create a <code>testimonials</code> subdirectory, which will be the collection name.</p>
-<p>In it we will place Markdown files. Each file will be a testimonial. The Markdown will be parsed into a <code>MarkdownDocument</code> object which parses any optional YAML front matter.</p>
+<p>In it, we will place Markdown files. Each file will be a testimonial.
+The Markdown will be parsed into a <code>MarkdownDocument</code> object which parses any optional YAML front matter.</p>
 <p>Here is the sample Markdown we will use:</p>
 <pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>resources/collections/testimonials/1.md</small>---
 author: John Doe
@@ -288,7 +292,8 @@ author: John Doe
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit...
 </code></pre>
-<p>Let's take a look at our directory structure. I just copied the same file a few times. You can name the files anything you want, I kept it simple and just numbered them.</p>
+<p>Let's take a look at our directory structure. I just copied the same file a few times.
+You can name the files anything you want, I kept it simple and just numbered them.</p>
 <pre><code class="language-tree">resources/collections
 └── testimonials
     ├── 1.md
@@ -298,19 +303,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit...
     └── 5.md
 </code></pre>
 <h4>Using the Facade to Access the Collections<a id="using-the-facade-to-access-the-collections" href="#using-the-facade-to-access-the-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Now for the fun part! We will use the <code>MarkdownCollection</code> facade to access all our files into a convenient object. The class is registered with an alias, so you don't need to include any namespaces when in a Blade file.</p>
+<p>Now for the fun part! We will use the <code>DataCollection::markdown()</code> to access all our files into a convenient object.
+The class is registered with an alias, so you don't need to include any namespaces when in a Blade file.</p>
 <p>The general syntax to use the facade is as follows:</p>
-<pre><code class="language-blade">MarkdownCollection::get('subdirectory_name')
+<pre><code class="language-blade">DataCollection::markdown('subdirectory_name')
 </code></pre>
 <p>This will return a Hyde DataCollection object, containing our Markdown files as MarkdownDocument objects. Here is a quick look at the object the facade returns:</p>
 <pre class="sf-dump" id="sf-dump-703277111" data-indent-pad="  " tabindex="0" aria-label="Sample output" style="white-space: pre-wrap; padding: 5px;  color: rgb(255, 132, 0); font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Menlo, Monaco, Consolas, monospace; overflow-wrap: break-word; position: relative; z-index: 99999; word-break: break-all; overflow: initial !important;"><code><span class="sf-dump-default" style="display: inline; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; overflow-wrap: break-word; position: relative; z-index: 99999; word-break: break-all;">^</span><span class="sf-dump-default" style="display: inline; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; overflow-wrap: break-word; position: relative; z-index: 99999; word-break: break-all;"> </span><span class="sf-dump-note" style="display: inline; color: rgb(18, 153, 218);">Hyde\Support\DataCollection</span> {<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children" style="text-decoration: none;  border-style: initial; border-color: initial; outline: none; color: rgb(160, 160, 160);">#270 ▼</a><samp data-depth="1" class="sf-dump-expanded"> <br>&nbsp;&nbsp;+<span class="sf-dump-public" title="Public property" style="display: inline; color: rgb(255, 255, 255);">key</span>: "<span class="sf-dump-str" title="12 characters" style="display: inline; font-weight: bold; color: rgb(86, 219, 58);">testimonials</span>" <!-- <br>&nbsp;&nbsp;+<span class="sf-dump-public" title="Public property" style="display: inline; color: rgb(255, 255, 255);">parseTimeInMs</span>: <span class="sf-dump-num" style="display: inline; font-weight: bold; color: rgb(18, 153, 218);">5.02</span>  --><br>&nbsp;&nbsp;#<span class="sf-dump-protected" title="Protected property" style="display: inline; color: rgb(255, 255, 255);">items</span>: <span class="sf-dump-note" style="display: inline; color: rgb(18, 153, 218);">array:5</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children" style="text-decoration: none;  border-style: initial; border-color: initial; outline: none; color: rgb(160, 160, 160);">▼</a><samp data-depth="2" class="sf-dump-expanded"> <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sf-dump-index" style="display: inline; color: rgb(18, 153, 218);">0</span> =&gt; <span class="sf-dump-note" title="Hyde\Markdown\Models\MarkdownDocument <br>&nbsp;&nbsp;" style="display: inline; color: rgb(18, 153, 218); "><span class="sf-dump-ellipsis sf-dump-ellipsis-note" style="display: inline-block; text-overflow: ellipsis;  white-space: nowrap; overflow: hidden; vertical-align: top;">Hyde\Framework\Models</span><span class="sf-dump-ellipsis sf-dump-ellipsis-note" style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top;">\</span>MarkdownDocument</span> {<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children" style="text-decoration: none;  border-style: initial; border-color: initial; outline: none; color: rgb(160, 160, 160);">#273 ▼</a><samp data-depth="3" class="sf-dump-expanded"> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+<span class="sf-dump-public" title="Public property" style="display: inline; color: rgb(255, 255, 255);">matter</span>: <span class="sf-dump-note" style="display: inline; color: rgb(18, 153, 218);">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children" style="text-decoration: none;  border-style: initial; border-color: initial; outline: none; color: rgb(160, 160, 160);">▶</a>] <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+<span class="sf-dump-public" title="Public property" style="display: inline; color: rgb(255, 255, 255);">body</span>: "<span class="sf-dump-str" title="59 characters" style="display: inline; font-weight: bold; color: rgb(86, 219, 58);">Lorem ipsum dolor sit amet, consectetur adipiscing elit...<span class="sf-dump-default sf-dump-ns" style="display: inline; color: rgb(255, 132, 0); font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: normal; font-stretch: normal; line-height: normal; font-family: Menlo, Monaco, Consolas, monospace; overflow-wrap: break-word; position: relative; z-index: 99999; word-break: break-all; user-select: none;">\n</span></span>" <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+<span class="sf-dump-public" title="Public property" style="display: inline; color: rgb(255, 255, 255);">title</span>: "" <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+<span class="sf-dump-public" title="Public property" style="display: inline; color: rgb(255, 255, 255);">slug</span>: "" <br>&nbsp;&nbsp;&nbsp;&nbsp;</samp>} <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sf-dump-index" style="display: inline; color: rgb(18, 153, 218);">1</span> =&gt; <span class="sf-dump-note" title="Hyde\Markdown\Models\MarkdownDocument <br>&nbsp;&nbsp;" style="display: inline; color: rgb(18, 153, 218); "><span class="sf-dump-ellipsis sf-dump-ellipsis-note" style="display: inline-block; text-overflow: ellipsis;  white-space: nowrap; overflow: hidden; vertical-align: top;">Hyde\Framework\Models</span><span class="sf-dump-ellipsis sf-dump-ellipsis-note" style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top;">\</span>MarkdownDocument</span> {<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children" style="text-decoration: none;  border-style: initial; border-color: initial; outline: none; color: rgb(160, 160, 160);">#274 ▶</a>} <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sf-dump-index" style="display: inline; color: rgb(18, 153, 218);">2</span> =&gt; <span class="sf-dump-note" title="Hyde\Markdown\Models\MarkdownDocument <br>&nbsp;&nbsp;" style="display: inline; color: rgb(18, 153, 218);"><span class="sf-dump-ellipsis sf-dump-ellipsis-note" style="display: inline-block; text-overflow: ellipsis;  white-space: nowrap; overflow: hidden; vertical-align: top;">Hyde\Framework\Models</span><span class="sf-dump-ellipsis sf-dump-ellipsis-note" style="display: inline-block; text-overflow: ellipsis; max-width: none; white-space: nowrap; overflow: hidden; vertical-align: top;">\</span>MarkdownDocument</span> {<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children" style="text-decoration: none;  border-style: initial; border-color: initial; outline: none; color: rgb(160, 160, 160);">#275 ▶</a>} <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sf-dump-index" style="display: inline; color: gray;">[The rest is truncated to conserve space...]</span> <!-- <br>&nbsp;&nbsp;</samp>] <br>&nbsp;&nbsp;#<span class="sf-dump-protected" title="Protected property" style="display: inline; color: rgb(255, 255, 255);">escapeWhenCastingToString</span>: <span class="sf-dump-const" style="display: inline; font-weight: bold;">false</span> </samp> <br>}--></code></pre>
 <h4>Implementing it in a Blade view<a id="implementing-it-in-a-blade-view" href="#implementing-it-in-a-blade-view" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>Let's create a Blade page to display all our testimonials.</p>
 <pre><code class="language-bash">php hyde make:page &quot;Testimonials&quot; --type=&quot;blade&quot;
-# or just touch _pages/testimonials.blade.php
 </code></pre>
-<p>And we can use the collection almost like any other Laravel one. As you can see, we are able to get the author from the front matter, and the content from the body.</p>
-<pre><code class="language-blade">@foreach(MarkdownCollection::get('testimonials') as $testimonial)
+<p>And we can use the collection almost like any other Laravel one. As you can see, since each entry is a <code>MarkdownDocument</code> class,
+we are able to get the author from the front matter, and the content from the body.</p>
+<pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_pages/testimonials.blade.php</small>@foreach(DataCollection::markdown('testimonials') as $testimonial)
 &lt;blockquote&gt;
 	&lt;p&gt;{{ $testimonial-&gt;body }}&lt;/p&gt;
 	&lt;small&gt;{{ $testimonial-&gt;matter['author'] }}&lt;/small&gt;
@@ -417,7 +423,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit...
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1187" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1187</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/613f05602fb4aba43f71f7d03b921e244d136273"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">613f05602fb4aba43f71f7d03b921e244d136273</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/a110babe1c2eea4647d1bca33b356a5a4c7a0cfe"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">a110babe1c2eea4647d1bca33b356a5a4c7a0cfe</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1187" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
