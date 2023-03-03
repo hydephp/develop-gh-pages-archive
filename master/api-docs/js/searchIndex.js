@@ -3311,41 +3311,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-BuildTasks-PreBuildTask.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollection",
-            "name": "DataCollection",
-            "summary": "Automatically\u0020generates\u0020Laravel\u0020Collections\u0020from\u0020static\u0020data\u0020files,\nsuch\u0020as\u0020Markdown\u0020components\u0020and\u0020YAML\u0020files\u0020using\u0020Hyde\u0020Autodiscovery.",
-            "url": "classes/Hyde-Framework-Features-DataCollections-DataCollection.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollection\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-DataCollections-DataCollection.html#method___construct"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollection\u003A\u003AgetCollection\u0028\u0029",
-            "name": "getCollection",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-DataCollections-DataCollection.html#method_getCollection"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollection\u003A\u003AgetMarkdownFiles\u0028\u0029",
-            "name": "getMarkdownFiles",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-DataCollections-DataCollection.html#method_getMarkdownFiles"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollection\u003A\u003Amarkdown\u0028\u0029",
-            "name": "markdown",
-            "summary": "Get\u0020a\u0020collection\u0020of\u0020Markdown\u0020documents\u0020in\u0020the\u0020resources\/collections\/\u003C\u0024key\u003E\u0020directory.",
-            "url": "classes/Hyde-Framework-Features-DataCollections-DataCollection.html#method_markdown"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollection\u003A\u003A\u0024key",
-            "name": "key",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-DataCollections-DataCollection.html#property_key"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections\\DataCollection\u003A\u003A\u0024sourceDirectory",
-            "name": "sourceDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-DataCollections-DataCollection.html#property_sourceDirectory"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Documentation\\SemanticDocumentationArticle",
             "name": "SemanticDocumentationArticle",
             "summary": "Class\u0020to\u0020make\u0020Hyde\u0020documentation\u0020pages\u0020smarter,\nby\u0020dynamically\u0020enriching\u0020them\u0020with\u0020semantic\u0020HTML.",
@@ -5866,6 +5831,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Support-Concerns-Serializable.html#method_toJson"
         },                {
+            "fqsen": "\\Hyde\\Support\\DataCollection",
+            "name": "DataCollection",
+            "summary": "Automatically\u0020generates\u0020Laravel\u0020Collections\u0020from\u0020static\u0020data\u0020files,\nsuch\u0020as\u0020Markdown\u0020components\u0020and\u0020YAML\u0020files\u0020using\u0020Hyde\u0020Autodiscovery.",
+            "url": "classes/Hyde-Support-DataCollection.html"
+        },                {
+            "fqsen": "\\Hyde\\Support\\DataCollection\u003A\u003Amarkdown\u0028\u0029",
+            "name": "markdown",
+            "summary": "Get\u0020a\u0020collection\u0020of\u0020Markdown\u0020documents\u0020in\u0020the\u0020resources\/collections\/\u003C\u0024key\u003E\u0020directory.",
+            "url": "classes/Hyde-Support-DataCollection.html#method_markdown"
+        },                {
+            "fqsen": "\\Hyde\\Support\\DataCollection\u003A\u003Ayaml\u0028\u0029",
+            "name": "yaml",
+            "summary": "Get\u0020a\u0020collection\u0020of\u0020YAML\u0020documents\u0020in\u0020the\u0020resources\/collections\/\u003C\u0024key\u003E\u0020directory.",
+            "url": "classes/Hyde-Support-DataCollection.html#method_yaml"
+        },                {
+            "fqsen": "\\Hyde\\Support\\DataCollection\u003A\u003Ajson\u0028\u0029",
+            "name": "json",
+            "summary": "Get\u0020a\u0020collection\u0020of\u0020JSON\u0020documents\u0020in\u0020the\u0020resources\/collections\/\u003C\u0024key\u003E\u0020directory.",
+            "url": "classes/Hyde-Support-DataCollection.html#method_json"
+        },                {
+            "fqsen": "\\Hyde\\Support\\DataCollection\u003A\u003AfindFiles\u0028\u0029",
+            "name": "findFiles",
+            "summary": "",
+            "url": "classes/Hyde-Support-DataCollection.html#method_findFiles"
+        },                {
+            "fqsen": "\\Hyde\\Support\\DataCollection\u003A\u003AmakeIdentifier\u0028\u0029",
+            "name": "makeIdentifier",
+            "summary": "",
+            "url": "classes/Hyde-Support-DataCollection.html#method_makeIdentifier"
+        },                {
+            "fqsen": "\\Hyde\\Support\\DataCollection\u003A\u003A\u0024sourceDirectory",
+            "name": "sourceDirectory",
+            "summary": "The\u0020base\u0020directory\u0020for\u0020all\u0020data\u0020collections.\u0020Can\u0020be\u0020modified\u0020using\u0020a\u0020service\u0020provider.",
+            "url": "classes/Hyde-Support-DataCollection.html#property_sourceDirectory"
+        },                {
             "fqsen": "\\Hyde\\Support\\Facades\\Render",
             "name": "Render",
             "summary": "Manages\u0020data\u0020for\u0020the\u0020current\u0020page\u0020being\u0020rendered\/compiled.",
@@ -6570,11 +6570,6 @@ Search.appendIndex(
             "name": "BuildTasks",
             "summary": "",
             "url": "namespaces/hyde-framework-features-buildtasks.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\DataCollections",
-            "name": "DataCollections",
-            "summary": "",
-            "url": "namespaces/hyde-framework-features-datacollections.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Documentation",
             "name": "Documentation",
