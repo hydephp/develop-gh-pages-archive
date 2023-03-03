@@ -1521,11 +1521,6 @@ Search.appendIndex(
             "summary": "This\u0020method\u0020adds\u0020the\u0020specified\u0020route\u0020to\u0020the\u0020route\u0020index.",
             "url": "classes/Hyde-Foundation-Kernel-RouteCollection.html#method_addRoute"
         },                {
-            "fqsen": "\\Hyde\\Foundation\\Kernel\\RouteCollection\u003A\u003Adiscover\u0028\u0029",
-            "name": "discover",
-            "summary": "",
-            "url": "classes/Hyde-Foundation-Kernel-RouteCollection.html#method_discover"
-        },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\RouteCollection\u003A\u003ArunDiscovery\u0028\u0029",
             "name": "runDiscovery",
             "summary": "",
@@ -1535,6 +1530,11 @@ Search.appendIndex(
             "name": "runExtensionCallbacks",
             "summary": "",
             "url": "classes/Hyde-Foundation-Kernel-RouteCollection.html#method_runExtensionCallbacks"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Kernel\\RouteCollection\u003A\u003Adiscover\u0028\u0029",
+            "name": "discover",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Kernel-RouteCollection.html#method_discover"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Providers\\ConfigurationServiceProvider",
             "name": "ConfigurationServiceProvider",
@@ -6195,31 +6195,6 @@ Search.appendIndex(
             "name": "toArray",
             "summary": "",
             "url": "classes/Hyde-Support-Models-Route.html#method_toArray"
-        },                {
-            "fqsen": "\\Hyde\\Support\\Models\\Route\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "",
-            "url": "classes/Hyde-Support-Models-Route.html#method_get"
-        },                {
-            "fqsen": "\\Hyde\\Support\\Models\\Route\u003A\u003AgetOrFail\u0028\u0029",
-            "name": "getOrFail",
-            "summary": "",
-            "url": "classes/Hyde-Support-Models-Route.html#method_getOrFail"
-        },                {
-            "fqsen": "\\Hyde\\Support\\Models\\Route\u003A\u003Aall\u0028\u0029",
-            "name": "all",
-            "summary": "",
-            "url": "classes/Hyde-Support-Models-Route.html#method_all"
-        },                {
-            "fqsen": "\\Hyde\\Support\\Models\\Route\u003A\u003Acurrent\u0028\u0029",
-            "name": "current",
-            "summary": "",
-            "url": "classes/Hyde-Support-Models-Route.html#method_current"
-        },                {
-            "fqsen": "\\Hyde\\Support\\Models\\Route\u003A\u003Aexists\u0028\u0029",
-            "name": "exists",
-            "summary": "",
-            "url": "classes/Hyde-Support-Models-Route.html#method_exists"
         },                {
             "fqsen": "\\Hyde\\Support\\Models\\Route\u003A\u003A\u0024page",
             "name": "page",

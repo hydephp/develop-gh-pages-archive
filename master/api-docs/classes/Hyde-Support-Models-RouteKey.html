@@ -139,15 +139,17 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/RouteKey.php"><a href="files/packages-framework-src-support-models-routekey.html"><abbr title="packages/framework/src/Support/Models/RouteKey.php">RouteKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">Route keys are the core of Hyde&#039;s routing system.</p>
 
-    <section class="phpdocumentor-description"><p>In short, the route key is the URL path relative to the site root.</p>
+    <section class="phpdocumentor-description"><p>In short, the route key is the URL path relative to the site webroot, without the file extension.</p>
 <p>For example, <code class="prettyprint">_pages/index.blade.php</code> would be compiled to <code class="prettyprint">_site/index.html</code> and thus has the route key of <code class="prettyprint">index</code>.
 As another example, <code class="prettyprint">_posts/welcome.md</code> would be compiled to <code class="prettyprint">_site/posts/welcome.html</code> and thus has the route key of <code class="prettyprint">posts/welcome</code>.</p>
+<p>Note that if the source page's output directory is changed, the route key will change accordingly.
+This can potentially cause links to break when changing the output directory for a page class.</p>
 </section>
 
 
@@ -245,7 +247,7 @@ As another example, <code class="prettyprint">_posts/welcome.md</code> would be 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/RouteKey.php"><a href="files/packages-framework-src-support-models-routekey.html"><abbr title="packages/framework/src/Support/Models/RouteKey.php">RouteKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -283,7 +285,7 @@ As another example, <code class="prettyprint">_posts/welcome.md</code> would be 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/RouteKey.php"><a href="files/packages-framework-src-support-models-routekey.html"><abbr title="packages/framework/src/Support/Models/RouteKey.php">RouteKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -327,7 +329,7 @@ As another example, <code class="prettyprint">_posts/welcome.md</code> would be 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/RouteKey.php"><a href="files/packages-framework-src-support-models-routekey.html"><abbr title="packages/framework/src/Support/Models/RouteKey.php">RouteKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -360,26 +362,24 @@ As another example, <code class="prettyprint">_posts/welcome.md</code> would be 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/RouteKey.php"><a href="files/packages-framework-src-support-models-routekey.html"><abbr title="packages/framework/src/Support/Models/RouteKey.php">RouteKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromPage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromPage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pageClass</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$identifier</span>
@@ -412,7 +412,7 @@ As another example, <code class="prettyprint">_posts/welcome.md</code> would be 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/RouteKey.php"><a href="files/packages-framework-src-support-models-routekey.html"><abbr title="packages/framework/src/Support/Models/RouteKey.php">RouteKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -445,7 +445,7 @@ As another example, <code class="prettyprint">_posts/welcome.md</code> would be 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/RouteKey.php"><a href="files/packages-framework-src-support-models-routekey.html"><abbr title="packages/framework/src/Support/Models/RouteKey.php">RouteKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 

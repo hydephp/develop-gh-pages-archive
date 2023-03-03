@@ -139,7 +139,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/RouteCollection.php"><a href="files/packages-framework-src-foundation-kernel-routecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -173,7 +173,8 @@ canonical source of truth for the vital HydePHP autodiscovery process.</p>
 <p>The routes defined can then also be used to power the RealtimeCompiler without
 having to reverse-engineer the source file mapping.</p>
 <p>Routes are not intended to be added manually, instead the route index is created using
-the exact same rules as the current autodiscovery process and compiled file output.</p>
+the exact same rules as the current autodiscovery process and compiled file output.
+However, extensions can add routes using the discovery handler callbacks.</p>
 <p>The route index serves as a multidimensional mapping allowing you to
 determine where a source file will be compiled to, and where a compiled
 file was generated from. This bridges the gaps between the source and
@@ -260,7 +261,7 @@ the compiled web accessible URI routes the static site generator creates.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Foundation-Kernel-RouteCollection.html#method_discover">discover()</a>
     <span>
-                                &nbsp;: self    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
@@ -388,7 +389,7 @@ You would commonly access it via one of the facades:</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/RouteCollection.php"><a href="files/packages-framework-src-foundation-kernel-routecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -509,7 +510,7 @@ as all pages there are automatically also added as routes here as well.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/RouteCollection.php"><a href="files/packages-framework-src-foundation-kernel-routecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -553,7 +554,7 @@ as all pages there are automatically also added as routes here as well.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/RouteCollection.php"><a href="files/packages-framework-src-foundation-kernel-routecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -685,14 +686,14 @@ as all pages there are automatically also added as routes here as well.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/RouteCollection.php"><a href="files/packages-framework-src-foundation-kernel-routecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">discover</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">discover</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -711,7 +712,7 @@ as all pages there are automatically also added as routes here as well.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -729,7 +730,7 @@ as all pages there are automatically also added as routes here as well.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/RouteCollection.php"><a href="files/packages-framework-src-foundation-kernel-routecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -762,7 +763,7 @@ as all pages there are automatically also added as routes here as well.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/RouteCollection.php"><a href="files/packages-framework-src-foundation-kernel-routecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
