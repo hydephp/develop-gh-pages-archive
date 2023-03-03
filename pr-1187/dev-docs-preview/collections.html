@@ -169,7 +169,7 @@
 		<ul class="table-of-contents">
 <li>
 <a href="#introduction-to-hyde-data-collections">Introduction to Hyde Data Collections</a>
-<ul>
+</li>
 <li>
 <a href="#high-level-concept-overview">High-Level Concept Overview</a>
 </li>
@@ -184,8 +184,6 @@
 </li>
 <li>
 <a href="#implementing-it-in-a-blade-view">Implementing it in a Blade view</a>
-</li>
-</ul>
 </li>
 </ul>
 </li>
@@ -268,7 +266,7 @@ parsed into objects that you can easily work with.</p>
 <p>As you have access to all standard Laravel Collection methods, you are encouraged to read the
 <a href="https://laravel.com/docs/9.x/collections">Laravel Collections documentation</a> for more information.</p>
 <p>This article covers advanced usage intended for those who are writing their own Blade views, and is not required as Hyde comes pre-packaged with many templates for you to use.</p>
-<h3>High-Level Concept Overview<a id="high-level-concept-overview" href="#high-level-concept-overview" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h2>High-Level Concept Overview<a id="high-level-concept-overview" href="#high-level-concept-overview" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>To make collections easy to use and understand, Hyde makes a few assumptions about the structure of your collections.
 Follow these conventions and creating dynamic static sites will be a breeze.</p>
 <ol>
@@ -282,7 +280,7 @@ Follow these conventions and creating dynamic static sites will be a breeze.</p>
 <li>You can customize the source directory for collections through a service provider.</li>
 <li>If the base source directory does not exist, it will be created for you.</li>
 </ol>
-<h3>Markdown Collections - Hands-on Guide<a id="markdown-collections---hands-on-guide" href="#markdown-collections---hands-on-guide" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h2>Markdown Collections - Hands-on Guide<a id="markdown-collections---hands-on-guide" href="#markdown-collections---hands-on-guide" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>I think the best way to explain DataCollections is through examples, so let's create a Blade page with customer testimonials!</p>
 <p>This example will use Markdown Collections, but the same concepts apply to all other collection types.</p>
 <h4>Setting up the file structure<a id="setting-up-the-file-structure" href="#setting-up-the-file-structure" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
@@ -302,9 +300,7 @@ You can name the files anything you want, I kept it simple and just numbered the
 └── testimonials
     ├── 1.md
     ├── 2.md
-    ├── 3.md
-    ├── 4.md
-    └── 5.md
+    └── 3.md
 </code></pre>
 <h4>Using the Facade to Access the Collections<a id="using-the-facade-to-access-the-collections" href="#using-the-facade-to-access-the-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>Now for the fun part! We will use the <code>DataCollection::markdown()</code> to access all our files into a convenient object.
@@ -427,7 +423,7 @@ we are able to get the author from the front matter, and the content from the bo
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1187" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1187</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/ab81e4fc7c641524be1ccafd84d5257838f93db2"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">ab81e4fc7c641524be1ccafd84d5257838f93db2</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/302caa4ddc28278670a3476cecef1d27c9ca0b67"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">302caa4ddc28278670a3476cecef1d27c9ca0b67</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1187" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
