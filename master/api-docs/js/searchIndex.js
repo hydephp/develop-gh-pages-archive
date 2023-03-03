@@ -4308,7 +4308,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003A\u0024version",
             "name": "version",
-            "summary": "The\u0020default\u0020HydeFront\u0020version\u0020to\u0020load.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Services-AssetService.html#property_version"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AcdnLink\u0028\u0029",
@@ -4341,10 +4341,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Services-AssetService.html#method_getCacheBustKey"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003A\u0024hydefrontUrl",
-            "name": "hydefrontUrl",
+            "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AHYDEFRONT_VERSION",
+            "name": "HYDEFRONT_VERSION",
             "summary": "",
-            "url": "classes/Hyde-Framework-Services-AssetService.html#property_hydefrontUrl"
+            "url": "classes/Hyde-Framework-Services-AssetService.html#constant_HYDEFRONT_VERSION"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003AHYDEFRONT_CDN_URL",
+            "name": "HYDEFRONT_CDN_URL",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-AssetService.html#constant_HYDEFRONT_CDN_URL"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\AssetService\u003A\u003A\u0024cdnUrl",
+            "name": "cdnUrl",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-AssetService.html#property_cdnUrl"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\BuildService",
             "name": "BuildService",

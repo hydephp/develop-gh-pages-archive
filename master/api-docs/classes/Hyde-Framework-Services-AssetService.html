@@ -136,13 +136,15 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/AssetService.php"><a href="files/packages-framework-src-framework-services-assetservice.html"><abbr title="packages/framework/src/Framework/Services/AssetService.php">AssetService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">Handles the retrieval of core asset files. Commonly used through the Asset facade.</p>
 
     <section class="phpdocumentor-description"><p>This class is loaded into the service container, making it easy to access and modify.</p>
+<p>The class also provides helper methods for interacting with versioned files,
+as well as the HydeFront CDN service and the media directories.</p>
 </section>
 
 
@@ -172,17 +174,31 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Framework-Services-AssetService.html#property_version">$version</a>
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Hyde-Framework-Services-AssetService.html#constant_HYDEFRONT_CDN_URL">HYDEFRONT_CDN_URL</a>
+    <span>
+        &nbsp;= &#039;https://cdn.jsdelivr.net/npm/hydefront@{{ $version }}/dist/{{ $file }}&#039;                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Hyde-Framework-Services-AssetService.html#constant_HYDEFRONT_VERSION">HYDEFRONT_VERSION</a>
+    <span>
+        &nbsp;= &#039;v2.0&#039;                            </span>
+</dt>
+<dd></dd>
+
+                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Hyde-Framework-Services-AssetService.html#property_cdnUrl">$cdnUrl</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd>The default HydeFront version to load.</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Framework-Services-AssetService.html#property_hydefrontUrl">$hydefrontUrl</a>
+    <a href="classes/Hyde-Framework-Services-AssetService.html#property_version">$version</a>
     <span>
-                        &nbsp;: string|null            </span>
+                        &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
@@ -247,6 +263,70 @@
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Hyde-Framework-Services-AssetService.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_HYDEFRONT_CDN_URL">
+        HYDEFRONT_CDN_URL
+        <a href="classes/Hyde-Framework-Services-AssetService.html#constant_HYDEFRONT_CDN_URL" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/AssetService.php"><a href="files/packages-framework-src-framework-services-assetservice.html"><abbr title="packages/framework/src/Framework/Services/AssetService.php">AssetService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">28</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">HYDEFRONT_CDN_URL</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;https://cdn.jsdelivr.net/npm/hydefront@{{ $version }}/dist/{{ $file }}&#039;</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"><p>The default HydeFront CDN path pattern. The Blade-style placeholders are replaced with the proper values.</p>
+</section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_HYDEFRONT_VERSION">
+        HYDEFRONT_VERSION
+        <a href="classes/Hyde-Framework-Services-AssetService.html#constant_HYDEFRONT_VERSION" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/AssetService.php"><a href="files/packages-framework-src-framework-services-assetservice.html"><abbr title="packages/framework/src/Framework/Services/AssetService.php">AssetService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">25</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">HYDEFRONT_VERSION</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;v2.0&#039;</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"><p>The default HydeFront SemVer tag to load. This constant is set to match the styles used for the installed framework version.</p>
+</section>
+
+    
+
+</article>
+            </section>
 
         
     <section class="phpdocumentor-properties">
@@ -258,33 +338,32 @@
         class="
             phpdocumentor-element
             -property
-            -public
+            -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_version">
-        $version
-        <a href="classes/Hyde-Framework-Services-AssetService.html#property_version" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_cdnUrl">
+        $cdnUrl
+        <a href="classes/Hyde-Framework-Services-AssetService.html#property_cdnUrl" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/AssetService.php"><a href="files/packages-framework-src-framework-services-assetservice.html"><abbr title="packages/framework/src/Framework/Services/AssetService.php">AssetService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">The default HydeFront version to load.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$version</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;v2.0&#039;</span></code>
-
     
-        <section class="phpdocumentor-description"><p>HydeFront SemVer Tag</p>
-</section>
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$cdnUrl</span>
+     = <span class="phpdocumentor-signature__default-value">self::HYDEFRONT_CDN_URL</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
 
     
 
@@ -296,25 +375,25 @@
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_hydefrontUrl">
-        $hydefrontUrl
-        <a href="classes/Hyde-Framework-Services-AssetService.html#property_hydefrontUrl" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_version">
+        $version
+        <a href="classes/Hyde-Framework-Services-AssetService.html#property_version" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/AssetService.php"><a href="files/packages-framework-src-framework-services-assetservice.html"><abbr title="packages/framework/src/Framework/Services/AssetService.php">AssetService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$hydefrontUrl</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$version</span>
+     = <span class="phpdocumentor-signature__default-value">self::HYDEFRONT_VERSION</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -343,7 +422,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/AssetService.php"><a href="files/packages-framework-src-framework-services-assetservice.html"><abbr title="packages/framework/src/Framework/Services/AssetService.php">AssetService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -376,7 +455,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/AssetService.php"><a href="files/packages-framework-src-framework-services-assetservice.html"><abbr title="packages/framework/src/Framework/Services/AssetService.php">AssetService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -420,7 +499,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/AssetService.php"><a href="files/packages-framework-src-framework-services-assetservice.html"><abbr title="packages/framework/src/Framework/Services/AssetService.php">AssetService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -464,7 +543,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/AssetService.php"><a href="files/packages-framework-src-framework-services-assetservice.html"><abbr title="packages/framework/src/Framework/Services/AssetService.php">AssetService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -497,7 +576,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/AssetService.php"><a href="files/packages-framework-src-framework-services-assetservice.html"><abbr title="packages/framework/src/Framework/Services/AssetService.php">AssetService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -541,7 +620,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/AssetService.php"><a href="files/packages-framework-src-framework-services-assetservice.html"><abbr title="packages/framework/src/Framework/Services/AssetService.php">AssetService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -618,7 +697,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/AssetService.php"><a href="files/packages-framework-src-framework-services-assetservice.html"><abbr title="packages/framework/src/Framework/Services/AssetService.php">AssetService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
