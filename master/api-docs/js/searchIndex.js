@@ -4378,13 +4378,8 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService",
             "name": "DiscoveryService",
-            "summary": "General\u0020Discovery\u0020Helpers\u0020for\u0020HydePHP\u0020Auto\u002DDiscovery.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Services-DiscoveryService.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003ApathToIdentifier\u0028\u0029",
-            "name": "pathToIdentifier",
-            "summary": "Format\u0020a\u0020filename\u0020to\u0020an\u0020identifier\u0020for\u0020a\u0020given\u0020model.\u0020Unlike\u0020the\u0020basename\u0020function,\u0020any\u0020nested\u0020paths\nwithin\u0020the\u0020source\u0020directory\u0020are\u0020retained\u0020in\u0020order\u0020to\u0020satisfy\u0020the\u0020page\u0020identifier\u0020definition.",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_pathToIdentifier"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService",
             "name": "MarkdownService",
@@ -5365,6 +5360,11 @@ Search.appendIndex(
             "name": "path",
             "summary": "Get\u0020an\u0020absolute\u0020file\u0020path\u0020to\u0020the\u0020page\u0027s\u0020source\u0020directory,\u0020or\u0020a\u0020file\u0020within\u0020it.",
             "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_path"
+        },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003ApathToIdentifier\u0028\u0029",
+            "name": "pathToIdentifier",
+            "summary": "Format\u0020a\u0020filename\u0020to\u0020an\u0020identifier\u0020for\u0020a\u0020given\u0020model.\u0020Unlike\u0020the\u0020basename\u0020function,\u0020any\u0020nested\u0020paths\nwithin\u0020the\u0020source\u0020directory\u0020are\u0020retained\u0020in\u0020order\u0020to\u0020satisfy\u0020the\u0020page\u0020identifier\u0020definition.",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_pathToIdentifier"
         },                {
             "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AbaseRouteKey\u0028\u0029",
             "name": "baseRouteKey",
