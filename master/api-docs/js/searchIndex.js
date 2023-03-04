@@ -1016,30 +1016,30 @@ Search.appendIndex(
             "summary": "Provides\u0020an\u0020easy\u0020way\u0020to\u0020access\u0020the\u0020Hyde\u0020pseudo\u002Drouter.",
             "url": "classes/Hyde-Facades-Route.html"
         },                {
+            "fqsen": "\\Hyde\\Facades\\Route\u003A\u003Aexists\u0028\u0029",
+            "name": "exists",
+            "summary": "",
+            "url": "classes/Hyde-Facades-Route.html#method_exists"
+        },                {
             "fqsen": "\\Hyde\\Facades\\Route\u003A\u003Aget\u0028\u0029",
             "name": "get",
-            "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020route\u0020index\u0020for\u0020the\u0020specified\u0020route\u0020key.",
+            "summary": "",
             "url": "classes/Hyde-Facades-Route.html#method_get"
         },                {
             "fqsen": "\\Hyde\\Facades\\Route\u003A\u003AgetOrFail\u0028\u0029",
             "name": "getOrFail",
-            "summary": "Get\u0020a\u0020route\u0020from\u0020the\u0020route\u0020index\u0020for\u0020the\u0020specified\u0020route\u0020key\u0020or\u0020throw\u0020an\u0020exception.",
+            "summary": "",
             "url": "classes/Hyde-Facades-Route.html#method_getOrFail"
         },                {
             "fqsen": "\\Hyde\\Facades\\Route\u003A\u003Aall\u0028\u0029",
             "name": "all",
-            "summary": "Get\u0020all\u0020routes\u0020from\u0020the\u0020route\u0020index.",
+            "summary": "",
             "url": "classes/Hyde-Facades-Route.html#method_all"
         },                {
             "fqsen": "\\Hyde\\Facades\\Route\u003A\u003Acurrent\u0028\u0029",
             "name": "current",
             "summary": "Get\u0020the\u0020current\u0020route\u0020for\u0020the\u0020page\u0020being\u0020rendered.",
             "url": "classes/Hyde-Facades-Route.html#method_current"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Route\u003A\u003Aexists\u0028\u0029",
-            "name": "exists",
-            "summary": "Determine\u0020if\u0020the\u0020supplied\u0020route\u0020key\u0020exists\u0020in\u0020the\u0020route\u0020index.",
-            "url": "classes/Hyde-Facades-Route.html#method_exists"
         },                {
             "fqsen": "\\Hyde\\Facades\\Site",
             "name": "Site",
