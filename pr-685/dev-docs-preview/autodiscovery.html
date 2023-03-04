@@ -231,6 +231,11 @@
 <ul>
 <li>
 <a href="#the-kernel-lifecycle">The kernel lifecycle</a>
+<ul>
+<li>
+<a href="#deep-dive-into-lazy-booting">Deep dive into lazy-booting</a>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -289,9 +294,9 @@ The kernel is also where the discovered data is stored in memory, so it's import
 <h3>The kernel lifecycle<a id="the-kernel-lifecycle" href="#the-kernel-lifecycle" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Now that we know the role of the HydeKernel, let's take a look at its lifecycle. The kernel is &quot;lazy-booted&quot;, meaning
 that the all the heavy lifting only happens when you actually need it. Once booted, the kernel data will stay in memory
-until the application is terminated.</p>
+until the console application is terminated.</p>
 <p>The kernel data is primarily stored in three collections that get generated during the kernel's boot process.
-Let's take a look at the kernel's boot method to see how this works.</p>
+Let's take a look at a simplified version of the kernel's boot method to see how this works.</p>
 <pre><code class="language-php">public function boot(): void
 {
     $this-&gt;booted = true;
@@ -301,8 +306,10 @@ Let's take a look at the kernel's boot method to see how this works.</p>
     $this-&gt;routes = RouteCollection::boot($this);
 }
 </code></pre>
-<p>Here you'll see that we boot the three collections. This is where all the autodiscovery magic happens!
-We'll take a closer look at each of these in a second, but first, here's how the &quot;lazy-booting&quot; works.</p>
+<p>Here you'll see that we boot the three collections. This is where all the autodiscovery magic happens!</p>
+<h4>Deep dive into lazy-booting<a id="deep-dive-into-lazy-booting" href="#deep-dive-into-lazy-booting" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>If you're curious about how the kernel is lazy-booted, here's how it works!
+Feel free to skip this section if this doesn't interest you.</p>
 <pre><code class="language-php">// This will boot the kernel if it hasn't been booted yet
 protected function needsToBeBooted(): void
 {
@@ -421,7 +428,7 @@ that underlying collection will always have been booted and be ready to use.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/685" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #685</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/0562d839256d2d02a248ee44bd147fb07cace569"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">0562d839256d2d02a248ee44bd147fb07cace569</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/f322b6f2a202a502a3f2db05391ce2a1a81c0cb4"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">f322b6f2a202a502a3f2db05391ce2a1a81c0cb4</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/685" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
