@@ -2396,10 +2396,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Exceptions-BaseUrlNotSetException.html"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Exceptions\\BaseUrlNotSetException\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
+            "fqsen": "\\Hyde\\Framework\\Exceptions\\BaseUrlNotSetException\u003A\u003A\u0024message",
+            "name": "message",
             "summary": "",
-            "url": "classes/Hyde-Framework-Exceptions-BaseUrlNotSetException.html#method___construct"
+            "url": "classes/Hyde-Framework-Exceptions-BaseUrlNotSetException.html#property_message"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Exceptions\\BaseUrlNotSetException\u003A\u003A\u0024code",
+            "name": "code",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Exceptions-BaseUrlNotSetException.html#property_code"
         },                {
             "fqsen": "\\Hyde\\Framework\\Exceptions\\BuildWarning",
             "name": "BuildWarning",
