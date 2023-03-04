@@ -120,7 +120,7 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    RouteCollection
+    PageCollection
 
         <span class="phpdocumentor-element__extends">
         extends <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html"><abbr title="\Hyde\Foundation\Concerns\BaseFoundationCollection">BaseFoundationCollection</abbr></a>
@@ -137,13 +137,13 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/RouteCollection.php"><a href="files/packages-framework-src-foundation-kernel-routecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/PageCollection.php"><a href="files/packages-framework-src-foundation-kernel-pagecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/PageCollection.php">PageCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">The RouteCollection contains all the routes, making it the Pseudo-Router for Hyde.</p>
+            <p class="phpdocumentor-summary">The PageCollection contains all the instantiated pages.</p>
 
 
 
@@ -157,7 +157,7 @@
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>T of \Hyde\Support\Models\Route</p>
+                                                 <section class="phpdocumentor-description"><p>T of \Hyde\Pages\Concerns\HydePage</p>
 </section>
 
                                     </dd>
@@ -174,7 +174,7 @@
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Foundation\Facades\Router">Router</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Foundation\Facades\PageCollection">PageCollection</abbr></span>
                                         
                                              
                                     </dd>
@@ -182,23 +182,9 @@
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Hyde::routes()">Hyde::routes()</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Hyde::pages()">Hyde::pages()</abbr></span>
                                         
-                                                 <section class="phpdocumentor-description"><p>This is not a router in the traditional sense that it decides where to go.
-Instead, it creates a pre-generated object encapsulating the Hyde autodiscovery.</p>
-<p>This not only let us emulate Laravel route helpers, but also serve as the
-canonical source of truth for the vital HydePHP autodiscovery process.</p>
-<p>The routes defined can then also be used to power the RealtimeCompiler without
-having to reverse-engineer the source file mapping.</p>
-<p>Routes are not intended to be added manually, instead the route index is created using
-the exact same rules as the current autodiscovery process and compiled file output.
-However, extensions can add routes using the discovery handler callbacks.</p>
-<p>The route index serves as a multidimensional mapping allowing you to
-determine where a source file will be compiled to, and where a compiled
-file was generated from. This bridges the gaps between the source and
-the compiled web accessible URI routes the static site generator creates.</p>
-</section>
-
+                                             
                                     </dd>
                         </dl>
 
@@ -214,9 +200,9 @@ the compiled web accessible URI routes the static site generator creates.</p>
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Foundation-Kernel-RouteCollection.html#property_items">$items</a>
+    <a href="classes/Hyde-Foundation-Kernel-PageCollection.html#property_items">$items</a>
     <span>
-                        &nbsp;: array&lt;string, <a href="classes/Hyde-Support-Models-Route.html"><abbr title="\Hyde\Support\Models\Route">Route</abbr></a>&gt;            </span>
+                        &nbsp;: array&lt;string, <a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a>&gt;            </span>
 </dt>
 <dd></dd>
 
@@ -228,11 +214,11 @@ the compiled web accessible URI routes the static site generator creates.</p>
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Foundation-Kernel-RouteCollection.html#method_addRoute">addRoute()</a>
+    <a href="classes/Hyde-Foundation-Kernel-PageCollection.html#method_addPage">addPage()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>This method adds the specified route to the route index.</dd>
+<dd>This method adds the specified page to the page collection.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_boot">boot()</a>
@@ -256,14 +242,14 @@ the compiled web accessible URI routes the static site generator creates.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Foundation-Kernel-RouteCollection.html#method_runDiscovery">runDiscovery()</a>
+    <a href="classes/Hyde-Foundation-Kernel-PageCollection.html#method_runDiscovery">runDiscovery()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Foundation-Kernel-RouteCollection.html#method_runExtensionCallbacks">runExtensionCallbacks()</a>
+    <a href="classes/Hyde-Foundation-Kernel-PageCollection.html#method_runExtensionCallbacks">runExtensionCallbacks()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -286,7 +272,7 @@ the compiled web accessible URI routes the static site generator creates.</p>
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Hyde-Foundation-Kernel-RouteCollection.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Foundation-Kernel-PageCollection.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -297,12 +283,12 @@ the compiled web accessible URI routes the static site generator creates.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property_items">
         $items
-        <a href="classes/Hyde-Foundation-Kernel-RouteCollection.html#property_items" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Foundation-Kernel-PageCollection.html#property_items" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/RouteCollection.php"><a href="files/packages-framework-src-foundation-kernel-routecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/PageCollection.php"><a href="files/packages-framework-src-foundation-kernel-pagecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/PageCollection.php">PageCollection.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
 
@@ -311,11 +297,11 @@ the compiled web accessible URI routes the static site generator creates.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string, <a href="classes/Hyde-Support-Models-Route.html"><abbr title="\Hyde\Support\Models\Route">Route</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, <a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$items</span>
     </code>
 
-        <section class="phpdocumentor-description"><p>The routes in the collection.</p>
+        <section class="phpdocumentor-description"><p>The pages in the collection.</p>
 <p>This class is stored as a singleton in the HydeKernel.
 You would commonly access it via one of the facades:</p>
 </section>
@@ -364,7 +350,7 @@ You would commonly access it via one of the facades:</p>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Hyde-Foundation-Kernel-RouteCollection.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Foundation-Kernel-PageCollection.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -372,36 +358,36 @@ You would commonly access it via one of the facades:</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_addRoute">
-        addRoute()
-        <a href="classes/Hyde-Foundation-Kernel-RouteCollection.html#method_addRoute" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_addPage">
+        addPage()
+        <a href="classes/Hyde-Foundation-Kernel-PageCollection.html#method_addPage" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/RouteCollection.php"><a href="files/packages-framework-src-foundation-kernel-routecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/PageCollection.php"><a href="files/packages-framework-src-foundation-kernel-pagecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/PageCollection.php">PageCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">This method adds the specified route to the route index.</p>
+        <p class="phpdocumentor-summary">This method adds the specified page to the page collection.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addRoute</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Support-Models-Route.html"><abbr title="\Hyde\Support\Models\Route">Route</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$route</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">addPage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>It can be used by package developers to hook into the routing system.</p>
-<p>Note that this method when used outside of this class is only intended to be used for adding on-off routes;
-If you are registering multiple routes, you may instead want to register an entire custom page class,
+        <section class="phpdocumentor-description"><p>It can be used by package developers to add a page that will be compiled.</p>
+<p>Note that this method when used outside of this class is only intended to be used for adding on-off pages;
+If you are registering multiple pages, you may instead want to register an entire custom page class,
 as that will allow you to utilize the full power of the HydePHP autodiscovery.</p>
-<p>In addition, you might actually rather want to use the PageCollection's addPage method
-instead as all pages there are automatically also added as routes here as well.</p>
+<p>In order for your page to be routable and compilable you must call this method during the boot process,
+either using a Kernel bootingCallback, or by using a HydeExtension's discovery handler callback.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$route</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Support-Models-Route.html"><abbr title="\Hyde\Support\Models\Route">Route</abbr></a></span>
+                <span class="phpdocumentor-signature__argument__name">$page</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
@@ -546,12 +532,12 @@ instead as all pages there are automatically also added as routes here as well.<
 >
     <h4 class="phpdocumentor-element__name" id="method_runDiscovery">
         runDiscovery()
-        <a href="classes/Hyde-Foundation-Kernel-RouteCollection.html#method_runDiscovery" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Foundation-Kernel-PageCollection.html#method_runDiscovery" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/RouteCollection.php"><a href="files/packages-framework-src-foundation-kernel-routecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/PageCollection.php"><a href="files/packages-framework-src-foundation-kernel-pagecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/PageCollection.php">PageCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -579,12 +565,12 @@ instead as all pages there are automatically also added as routes here as well.<
 >
     <h4 class="phpdocumentor-element__name" id="method_runExtensionCallbacks">
         runExtensionCallbacks()
-        <a href="classes/Hyde-Foundation-Kernel-RouteCollection.html#method_runExtensionCallbacks" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Foundation-Kernel-PageCollection.html#method_runExtensionCallbacks" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/RouteCollection.php"><a href="files/packages-framework-src-foundation-kernel-routecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/RouteCollection.php">RouteCollection.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/PageCollection.php"><a href="files/packages-framework-src-foundation-kernel-pagecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/PageCollection.php">PageCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -725,7 +711,7 @@ instead as all pages there are automatically also added as routes here as well.<
 </section>
             </div>
         </div>
-        <a href="classes/Hyde-Foundation-Kernel-RouteCollection.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Hyde-Foundation-Kernel-PageCollection.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

@@ -139,7 +139,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/FileCollection.php"><a href="files/packages-framework-src-foundation-kernel-filecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/FileCollection.php">FileCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -154,6 +154,24 @@ and thus has an integral role in the Hyde Auto Discovery process.</p>
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">template</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>T of \Hyde\Support\Filesystem\ProjectFile</p>
+</section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">template-extends</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>\Hyde\Foundation\Concerns\BaseFoundationCollection&lt;string, T&gt;</p>
+</section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
@@ -197,44 +215,16 @@ and thus has an integral role in the Hyde Auto Discovery process.</p>
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Foundation-Kernel-FileCollection.html#method_addFile">addFile()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>This method adds the specified file to the file collection.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_boot">boot()</a>
     <span>
                                 &nbsp;: static    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Foundation-Kernel-FileCollection.html#method_getAllSourceFiles">getAllSourceFiles()</a>
-    <span>
-                                &nbsp;: <a href="classes/Hyde-Foundation-Kernel-FileCollection.html"><abbr title="\Hyde\Foundation\Kernel\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_getInstance">getInstance()</a>
-    <span>
-                                &nbsp;: $this    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Foundation-Kernel-FileCollection.html#method_getMediaFiles">getMediaFiles()</a>
-    <span>
-                                &nbsp;: <a href="classes/Hyde-Foundation-Kernel-FileCollection.html"><abbr title="\Hyde\Foundation\Kernel\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-MediaFile.html"><abbr title="\Hyde\Support\Filesystem\MediaFile">MediaFile</abbr></a>&gt;    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Foundation-Kernel-FileCollection.html#method_getSourceFiles">getSourceFiles()</a>
-    <span>
-                                &nbsp;: <a href="classes/Hyde-Foundation-Kernel-FileCollection.html"><abbr title="\Hyde\Foundation\Kernel\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Foundation-Kernel-FileCollection.html#method_getSourceFilesFor">getSourceFilesFor()</a>
-    <span>
-                                &nbsp;: <a href="classes/Hyde-Foundation-Kernel-FileCollection.html"><abbr title="\Hyde\Foundation\Kernel\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;    </span>
 </dt>
 <dd></dd>
 
@@ -269,14 +259,14 @@ and thus has an integral role in the Hyde Auto Discovery process.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Foundation-Kernel-FileCollection.html#method_runDiscovery">runDiscovery()</a>
     <span>
-                                &nbsp;: self    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Foundation-Kernel-FileCollection.html#method_runExtensionCallbacks">runExtensionCallbacks()</a>
     <span>
-                                &nbsp;: self    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
@@ -352,7 +342,7 @@ You would commonly access it via one of the facades:</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php"><a href="files/packages-framework-src-foundation-concerns-basefoundationcollection.html"><abbr title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php">BaseFoundationCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -383,6 +373,54 @@ You would commonly access it via one of the facades:</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_addFile">
+        addFile()
+        <a href="classes/Hyde-Foundation-Kernel-FileCollection.html#method_addFile" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/FileCollection.php"><a href="files/packages-framework-src-foundation-kernel-filecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/FileCollection.php">FileCollection.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">38</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">This method adds the specified file to the file collection.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">addFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Support-Filesystem-ProjectFile.html"><abbr title="\Hyde\Support\Filesystem\ProjectFile">ProjectFile</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"><p>It can be used by package developers to add a file that can be discovered.</p>
+<p>In order for your file to be further processed you must call this method during the boot process,
+either using a Kernel bootingCallback, or by using a HydeExtension's discovery handler callback.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$file</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Support-Filesystem-ProjectFile.html"><abbr title="\Hyde\Support\Filesystem\ProjectFile">ProjectFile</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                -final        "
+>
     <h4 class="phpdocumentor-element__name" id="method_boot">
         boot()
         <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_boot" class="headerlink"><i class="fas fa-link"></i></a>
@@ -390,14 +428,14 @@ You would commonly access it via one of the facades:</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php"><a href="files/packages-framework-src-foundation-concerns-basefoundationcollection.html"><abbr title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php">BaseFoundationCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">boot</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+        <span class="phpdocumentor-signature__final">final</span>            <span class="phpdocumentor-signature__name">boot</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -406,186 +444,6 @@ You would commonly access it via one of the facades:</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">static</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getAllSourceFiles">
-        getAllSourceFiles()
-        <a href="classes/Hyde-Foundation-Kernel-FileCollection.html#method_getAllSourceFiles" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/FileCollection.php"><a href="files/packages-framework-src-foundation-kernel-filecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/FileCollection.php">FileCollection.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">47</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getAllSourceFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-Kernel-FileCollection.html"><abbr title="\Hyde\Foundation\Kernel\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-Kernel-FileCollection.html"><abbr title="\Hyde\Foundation\Kernel\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getInstance">
-        getInstance()
-        <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_getInstance" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php"><a href="files/packages-framework-src-foundation-concerns-basefoundationcollection.html"><abbr title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php">BaseFoundationCollection.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">51</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getInstance</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">$this</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getMediaFiles">
-        getMediaFiles()
-        <a href="classes/Hyde-Foundation-Kernel-FileCollection.html#method_getMediaFiles" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/FileCollection.php"><a href="files/packages-framework-src-foundation-kernel-filecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/FileCollection.php">FileCollection.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">53</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getMediaFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-Kernel-FileCollection.html"><abbr title="\Hyde\Foundation\Kernel\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-MediaFile.html"><abbr title="\Hyde\Support\Filesystem\MediaFile">MediaFile</abbr></a>&gt;</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-Kernel-FileCollection.html"><abbr title="\Hyde\Foundation\Kernel\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-MediaFile.html"><abbr title="\Hyde\Support\Filesystem\MediaFile">MediaFile</abbr></a>&gt;</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getSourceFiles">
-        getSourceFiles()
-        <a href="classes/Hyde-Foundation-Kernel-FileCollection.html#method_getSourceFiles" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/FileCollection.php"><a href="files/packages-framework-src-foundation-kernel-filecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/FileCollection.php">FileCollection.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">32</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getSourceFiles</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-Kernel-FileCollection.html"><abbr title="\Hyde\Foundation\Kernel\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pageClass</span>
-                : <span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage>|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-Kernel-FileCollection.html"><abbr title="\Hyde\Foundation\Kernel\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getSourceFilesFor">
-        getSourceFilesFor()
-        <a href="classes/Hyde-Foundation-Kernel-FileCollection.html#method_getSourceFilesFor" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/FileCollection.php"><a href="files/packages-framework-src-foundation-kernel-filecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/FileCollection.php">FileCollection.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">41</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getSourceFilesFor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-Kernel-FileCollection.html"><abbr title="\Hyde\Foundation\Kernel\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pageClass</span>
-                : <span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-Kernel-FileCollection.html"><abbr title="\Hyde\Foundation\Kernel\FileCollection">FileCollection</abbr></a>&lt;string|int, <a href="classes/Hyde-Support-Filesystem-SourceFile.html"><abbr title="\Hyde\Support\Filesystem\SourceFile">SourceFile</abbr></a>&gt;</span>
             &mdash;
         
     
@@ -603,7 +461,7 @@ You would commonly access it via one of the facades:</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php"><a href="files/packages-framework-src-foundation-concerns-basefoundationcollection.html"><abbr title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php">BaseFoundationCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -638,7 +496,7 @@ You would commonly access it via one of the facades:</p>
         class="phpdocumentor-element
             -method
             -protected
-                                                        "
+                                                -final        "
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
@@ -647,14 +505,14 @@ You would commonly access it via one of the facades:</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php"><a href="files/packages-framework-src-foundation-concerns-basefoundationcollection.html"><abbr title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php">BaseFoundationCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|<abbr title="\Illuminate\Contracts\Support\Arrayable">Arrayable</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$items</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+        <span class="phpdocumentor-signature__final">final</span>            <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|<abbr title="\Illuminate\Contracts\Support\Arrayable">Arrayable</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$items</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -691,7 +549,7 @@ You would commonly access it via one of the facades:</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/FileCollection.php"><a href="files/packages-framework-src-foundation-kernel-filecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/FileCollection.php">FileCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -733,7 +591,7 @@ You would commonly access it via one of the facades:</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/FileCollection.php"><a href="files/packages-framework-src-foundation-kernel-filecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/FileCollection.php">FileCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -766,14 +624,14 @@ You would commonly access it via one of the facades:</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/FileCollection.php"><a href="files/packages-framework-src-foundation-kernel-filecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/FileCollection.php">FileCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">runDiscovery</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">runDiscovery</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -781,7 +639,7 @@ You would commonly access it via one of the facades:</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -799,14 +657,14 @@ You would commonly access it via one of the facades:</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/FileCollection.php"><a href="files/packages-framework-src-foundation-kernel-filecollection.html"><abbr title="packages/framework/src/Foundation/Kernel/FileCollection.php">FileCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">runExtensionCallbacks</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">runExtensionCallbacks</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -814,7 +672,7 @@ You would commonly access it via one of the facades:</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -832,7 +690,7 @@ You would commonly access it via one of the facades:</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php"><a href="files/packages-framework-src-foundation-concerns-basefoundationcollection.html"><abbr title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php">BaseFoundationCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
