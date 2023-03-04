@@ -136,15 +136,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/DiscoveryService.php"><a href="files/packages-framework-src-framework-services-discoveryservice.html"><abbr title="packages/framework/src/Framework/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">The core service that powers all HydePHP file auto-discovery.</p>
+            <p class="phpdocumentor-summary">General Discovery Helpers for HydePHP Auto-Discovery.</p>
 
-    <section class="phpdocumentor-description"><p>Contains service methods to return helpful collections of arrays and lists,
-and provides helper methods for source file auto-discovery used in the site
-building process to determine where files are located and how to parse them.</p>
+    <section class="phpdocumentor-description"><p>Offloads FoundationCollection logic and provides helpers for common code.</p>
 </section>
 
 
@@ -182,60 +180,11 @@ building process to determine where files are located and how to parse them.</p>
 <dd></dd>
 
                         <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getBladePageFiles">getBladePageFiles()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getDocumentationPageFiles">getDocumentationPageFiles()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPageFiles">getMarkdownPageFiles()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPostFiles">getMarkdownPostFiles()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getMediaAssetFiles">getMediaAssetFiles()</a>
     <span>
                                 &nbsp;: array&lt;string|int, string&gt;    </span>
 </dt>
 <dd>Get all the Media asset file paths.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getModelFileExtension">getModelFileExtension()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getModelSourceDirectory">getModelSourceDirectory()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getSourceFileListForModel">getSourceFileListForModel()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, string&gt;    </span>
-</dt>
-<dd>Supply a model::class constant and get a list of all the existing source file base names.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_pathToIdentifier">pathToIdentifier()</a>
@@ -247,20 +196,6 @@ within the source directory are retained in order to satisfy the page identifier
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getMediaGlobPattern">getMediaGlobPattern()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_parseConfiguredMediaExtensions">parseConfiguredMediaExtensions()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_removeSpaces">removeSpaces()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -285,7 +220,7 @@ within the source directory are retained in order to satisfy the page identifier
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/DiscoveryService.php"><a href="files/packages-framework-src-framework-services-discoveryservice.html"><abbr title="packages/framework/src/Framework/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -320,138 +255,6 @@ within the source directory are retained in order to satisfy the page identifier
             -public
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getBladePageFiles">
-        getBladePageFiles()
-        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getBladePageFiles" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/DiscoveryService.php"><a href="files/packages-framework-src-framework-services-discoveryservice.html"><abbr title="packages/framework/src/Framework/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">40</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getBladePageFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_getDocumentationPageFiles">
-        getDocumentationPageFiles()
-        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getDocumentationPageFiles" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/DiscoveryService.php"><a href="files/packages-framework-src-framework-services-discoveryservice.html"><abbr title="packages/framework/src/Framework/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">55</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getDocumentationPageFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_getMarkdownPageFiles">
-        getMarkdownPageFiles()
-        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPageFiles" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/DiscoveryService.php"><a href="files/packages-framework-src-framework-services-discoveryservice.html"><abbr title="packages/framework/src/Framework/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">45</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getMarkdownPageFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_getMarkdownPostFiles">
-        getMarkdownPostFiles()
-        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPostFiles" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/DiscoveryService.php"><a href="files/packages-framework-src-framework-services-discoveryservice.html"><abbr title="packages/framework/src/Framework/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">50</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getMarkdownPostFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
     <h4 class="phpdocumentor-element__name" id="method_getMediaAssetFiles">
         getMediaAssetFiles()
         <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getMediaAssetFiles" class="headerlink"><i class="fas fa-link"></i></a>
@@ -459,7 +262,7 @@ within the source directory are retained in order to satisfy the page identifier
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/DiscoveryService.php"><a href="files/packages-framework-src-framework-services-discoveryservice.html"><abbr title="packages/framework/src/Framework/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -489,165 +292,6 @@ within the source directory are retained in order to satisfy the page identifier
             -public
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getModelFileExtension">
-        getModelFileExtension()
-        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getModelFileExtension" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/DiscoveryService.php"><a href="files/packages-framework-src-framework-services-discoveryservice.html"><abbr title="packages/framework/src/Framework/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">83</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getModelFileExtension</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$model</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$model</span>
-                : <span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_getModelSourceDirectory">
-        getModelSourceDirectory()
-        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getModelSourceDirectory" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/DiscoveryService.php"><a href="files/packages-framework-src-framework-services-discoveryservice.html"><abbr title="packages/framework/src/Framework/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">89</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getModelSourceDirectory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$model</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$model</span>
-                : <span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_getSourceFileListForModel">
-        getSourceFileListForModel()
-        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_getSourceFileListForModel" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/DiscoveryService.php"><a href="files/packages-framework-src-framework-services-discoveryservice.html"><abbr title="packages/framework/src/Framework/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">71</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Supply a model::class constant and get a list of all the existing source file base names.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getSourceFileListForModel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$model</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$model</span>
-                : <span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Framework-Exceptions-UnsupportedPageTypeException.html"><abbr title="\Hyde\Framework\Exceptions\UnsupportedPageTypeException">UnsupportedPageTypeException</abbr></a></span>
-                                                            
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">example</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Usage: DiscoveryService::getSourceFileListForModel(BladePage::class)</p>
-</section>
-
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">example</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Returns: ['index', 'about', 'contact']</p>
-</section>
-
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
     <h4 class="phpdocumentor-element__name" id="method_pathToIdentifier">
         pathToIdentifier()
         <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_pathToIdentifier" class="headerlink"><i class="fas fa-link"></i></a>
@@ -655,7 +299,7 @@ within the source directory are retained in order to satisfy the page identifier
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/DiscoveryService.php"><a href="files/packages-framework-src-framework-services-discoveryservice.html"><abbr title="packages/framework/src/Framework/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -664,13 +308,13 @@ within the source directory are retained in order to satisfy the page identifier
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">pathToIdentifier</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$model</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filepath</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">pathToIdentifier</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filepath</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$model</span>
+                <span class="phpdocumentor-signature__argument__name">$pageClass</span>
                 : <span class="phpdocumentor-signature__argument__return-type">class-string<\Hyde\Pages\Concerns\HydePage></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -710,7 +354,7 @@ within the source directory are retained in order to satisfy the page identifier
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/DiscoveryService.php"><a href="files/packages-framework-src-framework-services-discoveryservice.html"><abbr title="packages/framework/src/Framework/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -722,94 +366,6 @@ within the source directory are retained in order to satisfy the page identifier
         <section class="phpdocumentor-description"></section>
 
     
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_parseConfiguredMediaExtensions">
-        parseConfiguredMediaExtensions()
-        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_parseConfiguredMediaExtensions" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/DiscoveryService.php"><a href="files/packages-framework-src-framework-services-discoveryservice.html"><abbr title="packages/framework/src/Framework/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">128</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseConfiguredMediaExtensions</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$extensions</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$extensions</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;|null</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_removeSpaces">
-        removeSpaces()
-        <a href="classes/Hyde-Framework-Services-DiscoveryService.html#method_removeSpaces" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/DiscoveryService.php"><a href="files/packages-framework-src-framework-services-discoveryservice.html"><abbr title="packages/framework/src/Framework/Services/DiscoveryService.php">DiscoveryService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">135</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">removeSpaces</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$string</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>

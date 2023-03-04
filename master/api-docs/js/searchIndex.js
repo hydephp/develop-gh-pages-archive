@@ -4398,43 +4398,8 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService",
             "name": "DiscoveryService",
-            "summary": "The\u0020core\u0020service\u0020that\u0020powers\u0020all\u0020HydePHP\u0020file\u0020auto\u002Ddiscovery.",
+            "summary": "General\u0020Discovery\u0020Helpers\u0020for\u0020HydePHP\u0020Auto\u002DDiscovery.",
             "url": "classes/Hyde-Framework-Services-DiscoveryService.html"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetBladePageFiles\u0028\u0029",
-            "name": "getBladePageFiles",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getBladePageFiles"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMarkdownPageFiles\u0028\u0029",
-            "name": "getMarkdownPageFiles",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPageFiles"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMarkdownPostFiles\u0028\u0029",
-            "name": "getMarkdownPostFiles",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMarkdownPostFiles"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetDocumentationPageFiles\u0028\u0029",
-            "name": "getDocumentationPageFiles",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getDocumentationPageFiles"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetSourceFileListForModel\u0028\u0029",
-            "name": "getSourceFileListForModel",
-            "summary": "Supply\u0020a\u0020model\u003A\u003Aclass\u0020constant\u0020and\u0020get\u0020a\u0020list\u0020of\u0020all\u0020the\u0020existing\u0020source\u0020file\u0020base\u0020names.",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getSourceFileListForModel"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetModelFileExtension\u0028\u0029",
-            "name": "getModelFileExtension",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getModelFileExtension"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetModelSourceDirectory\u0028\u0029",
-            "name": "getModelSourceDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getModelSourceDirectory"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003ApathToIdentifier\u0028\u0029",
             "name": "pathToIdentifier",
@@ -4450,16 +4415,6 @@ Search.appendIndex(
             "name": "getMediaGlobPattern",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMediaGlobPattern"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AparseConfiguredMediaExtensions\u0028\u0029",
-            "name": "parseConfiguredMediaExtensions",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_parseConfiguredMediaExtensions"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AremoveSpaces\u0028\u0029",
-            "name": "removeSpaces",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_removeSpaces"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003ADEFAULT_MEDIA_EXTENSIONS",
             "name": "DEFAULT_MEDIA_EXTENSIONS",
