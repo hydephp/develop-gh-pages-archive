@@ -231,6 +231,11 @@
 <ul>
 <li>
 <a href="#the-kernel-lifecycle">The kernel lifecycle</a>
+<ul>
+<li>
+<a href="#deep-dive-into-lazy-booting">Deep dive into lazy-booting</a>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -296,9 +301,9 @@ The kernel is also where the discovered data is stored in memory, so it's import
 <h3>The kernel lifecycle<a id="the-kernel-lifecycle" href="#the-kernel-lifecycle" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Now that we know the role of the HydeKernel, let's take a look at its lifecycle. The kernel is &quot;lazy-booted&quot;, meaning
 that the all the heavy lifting only happens when you actually need it. Once booted, the kernel data will stay in memory
-until the application is terminated.</p>
+until the console application is terminated.</p>
 <p>The kernel data is primarily stored in three collections that get generated during the kernel's boot process.
-Let's take a look at the kernel's boot method to see how this works.</p>
+Let's take a look at a simplified version of the kernel's boot method to see how this works.</p>
 <pre><code class="language-php">public function boot(): void
 {
     $this-&gt;booted = true;
@@ -308,8 +313,10 @@ Let's take a look at the kernel's boot method to see how this works.</p>
     $this-&gt;routes = RouteCollection::boot($this);
 }
 </code></pre>
-<p>Here you'll see that we boot the three collections. This is where all the autodiscovery magic happens!
-We'll take a closer look at each of these in a second, but first, here's how the &quot;lazy-booting&quot; works.</p>
+<p>Here you'll see that we boot the three collections. This is where all the autodiscovery magic happens!</p>
+<h4>Deep dive into lazy-booting<a id="deep-dive-into-lazy-booting" href="#deep-dive-into-lazy-booting" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>If you're curious about how the kernel is lazy-booted, here's how it works!
+Feel free to skip this section if this doesn't interest you.</p>
 <pre><code class="language-php">// This will boot the kernel if it hasn't been booted yet
 protected function needsToBeBooted(): void
 {
