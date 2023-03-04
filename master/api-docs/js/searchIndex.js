@@ -1181,26 +1181,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-Facades-Files.html"
         },                {
-            "fqsen": "\\Hyde\\Foundation\\Facades\\Files\u003A\u003AgetFile\u0028\u0029",
-            "name": "getFile",
-            "summary": "",
-            "url": "classes/Hyde-Foundation-Facades-Files.html#method_getFile"
-        },                {
-            "fqsen": "\\Hyde\\Foundation\\Facades\\Files\u003A\u003AgetSourceFiles\u0028\u0029",
-            "name": "getSourceFiles",
-            "summary": "",
-            "url": "classes/Hyde-Foundation-Facades-Files.html#method_getSourceFiles"
-        },                {
-            "fqsen": "\\Hyde\\Foundation\\Facades\\Files\u003A\u003AgetSourceFilesFor\u0028\u0029",
-            "name": "getSourceFilesFor",
-            "summary": "",
-            "url": "classes/Hyde-Foundation-Facades-Files.html#method_getSourceFilesFor"
-        },                {
-            "fqsen": "\\Hyde\\Foundation\\Facades\\Files\u003A\u003AgetAllSourceFiles\u0028\u0029",
-            "name": "getAllSourceFiles",
-            "summary": "",
-            "url": "classes/Hyde-Foundation-Facades-Files.html#method_getAllSourceFiles"
-        },                {
             "fqsen": "\\Hyde\\Foundation\\Facades\\Files\u003A\u003AgetFacadeRoot\u0028\u0029",
             "name": "getFacadeRoot",
             "summary": "",
@@ -1211,16 +1191,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-Facades-Pages.html"
         },                {
-            "fqsen": "\\Hyde\\Foundation\\Facades\\Pages\u003A\u003AgetPage\u0028\u0029",
-            "name": "getPage",
-            "summary": "",
-            "url": "classes/Hyde-Foundation-Facades-Pages.html#method_getPage"
-        },                {
-            "fqsen": "\\Hyde\\Foundation\\Facades\\Pages\u003A\u003AgetPages\u0028\u0029",
-            "name": "getPages",
-            "summary": "",
-            "url": "classes/Hyde-Foundation-Facades-Pages.html#method_getPages"
-        },                {
             "fqsen": "\\Hyde\\Foundation\\Facades\\Pages\u003A\u003AgetFacadeRoot\u0028\u0029",
             "name": "getFacadeRoot",
             "summary": "",
@@ -1230,16 +1200,6 @@ Search.appendIndex(
             "name": "Routes",
             "summary": "",
             "url": "classes/Hyde-Foundation-Facades-Routes.html"
-        },                {
-            "fqsen": "\\Hyde\\Foundation\\Facades\\Routes\u003A\u003AgetRoute\u0028\u0029",
-            "name": "getRoute",
-            "summary": "",
-            "url": "classes/Hyde-Foundation-Facades-Routes.html#method_getRoute"
-        },                {
-            "fqsen": "\\Hyde\\Foundation\\Facades\\Routes\u003A\u003AgetRoutes\u0028\u0029",
-            "name": "getRoutes",
-            "summary": "",
-            "url": "classes/Hyde-Foundation-Facades-Routes.html#method_getRoutes"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Facades\\Routes\u003A\u003AgetFacadeRoot\u0028\u0029",
             "name": "getFacadeRoot",
@@ -1353,12 +1313,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\FileCollection",
             "name": "FileCollection",
-            "summary": "The\u0020FileCollection\u0020contains\u0020all\u0020the\u0020discovered\u0020source\u0020and\u0020media\u0020files,\nand\u0020thus\u0020has\u0020an\u0020integral\u0020role\u0020in\u0020the\u0020Hyde\u0020Auto\u0020Discovery\u0020process.",
+            "summary": "The\u0020FileCollection\u0020contains\u0020all\u0020the\u0020discovered\u0020source\u0020files.",
             "url": "classes/Hyde-Foundation-Kernel-FileCollection.html"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\FileCollection\u003A\u003AaddFile\u0028\u0029",
             "name": "addFile",
-            "summary": "This\u0020method\u0020adds\u0020the\u0020specified\u0020file\u0020to\u0020the\u0020file\u0020collection.",
+            "summary": "",
             "url": "classes/Hyde-Foundation-Kernel-FileCollection.html#method_addFile"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\FileCollection\u003A\u003ArunDiscovery\u0028\u0029",
@@ -1375,6 +1335,16 @@ Search.appendIndex(
             "name": "discoverFilesFor",
             "summary": "",
             "url": "classes/Hyde-Foundation-Kernel-FileCollection.html#method_discoverFilesFor"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Kernel\\FileCollection\u003A\u003AgetFile\u0028\u0029",
+            "name": "getFile",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Kernel-FileCollection.html#method_getFile"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Kernel\\FileCollection\u003A\u003AgetFiles\u0028\u0029",
+            "name": "getFiles",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Kernel-FileCollection.html#method_getFiles"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\Filesystem",
             "name": "Filesystem",
@@ -1523,7 +1493,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\PageCollection\u003A\u003AaddPage\u0028\u0029",
             "name": "addPage",
-            "summary": "This\u0020method\u0020adds\u0020the\u0020specified\u0020page\u0020to\u0020the\u0020page\u0020collection.",
+            "summary": "",
             "url": "classes/Hyde-Foundation-Kernel-PageCollection.html#method_addPage"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\PageCollection\u003A\u003ArunDiscovery\u0028\u0029",
@@ -1536,6 +1506,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-Kernel-PageCollection.html#method_runExtensionCallbacks"
         },                {
+            "fqsen": "\\Hyde\\Foundation\\Kernel\\PageCollection\u003A\u003AgetPage\u0028\u0029",
+            "name": "getPage",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Kernel-PageCollection.html#method_getPage"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Kernel\\PageCollection\u003A\u003AgetPages\u0028\u0029",
+            "name": "getPages",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Kernel-PageCollection.html#method_getPages"
+        },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\RouteCollection",
             "name": "RouteCollection",
             "summary": "The\u0020RouteCollection\u0020contains\u0020all\u0020the\u0020routes,\u0020making\u0020it\u0020the\u0020Pseudo\u002DRouter\u0020for\u0020Hyde.",
@@ -1543,7 +1523,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\RouteCollection\u003A\u003AaddRoute\u0028\u0029",
             "name": "addRoute",
-            "summary": "This\u0020method\u0020adds\u0020the\u0020specified\u0020route\u0020to\u0020the\u0020route\u0020index.",
+            "summary": "",
             "url": "classes/Hyde-Foundation-Kernel-RouteCollection.html#method_addRoute"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\RouteCollection\u003A\u003ArunDiscovery\u0028\u0029",
@@ -1555,6 +1535,16 @@ Search.appendIndex(
             "name": "runExtensionCallbacks",
             "summary": "",
             "url": "classes/Hyde-Foundation-Kernel-RouteCollection.html#method_runExtensionCallbacks"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Kernel\\RouteCollection\u003A\u003AgetRoute\u0028\u0029",
+            "name": "getRoute",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Kernel-RouteCollection.html#method_getRoute"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Kernel\\RouteCollection\u003A\u003AgetRoutes\u0028\u0029",
+            "name": "getRoutes",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Kernel-RouteCollection.html#method_getRoutes"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Providers\\ConfigurationServiceProvider",
             "name": "ConfigurationServiceProvider",
