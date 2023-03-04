@@ -1201,11 +1201,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Foundation-Facades-Files.html#method_getAllSourceFiles"
         },                {
-            "fqsen": "\\Hyde\\Foundation\\Facades\\Files\u003A\u003AgetMediaFiles\u0028\u0029",
-            "name": "getMediaFiles",
-            "summary": "",
-            "url": "classes/Hyde-Foundation-Facades-Files.html#method_getMediaFiles"
-        },                {
             "fqsen": "\\Hyde\\Foundation\\Facades\\Files\u003A\u003AgetFacadeRoot\u0028\u0029",
             "name": "getFacadeRoot",
             "summary": "",
@@ -1380,11 +1375,6 @@ Search.appendIndex(
             "name": "discoverFilesFor",
             "summary": "",
             "url": "classes/Hyde-Foundation-Kernel-FileCollection.html#method_discoverFilesFor"
-        },                {
-            "fqsen": "\\Hyde\\Foundation\\Kernel\\FileCollection\u003A\u003AdiscoverMediaAssetFiles\u0028\u0029",
-            "name": "discoverMediaAssetFiles",
-            "summary": "",
-            "url": "classes/Hyde-Foundation-Kernel-FileCollection.html#method_discoverMediaAssetFiles"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\Filesystem",
             "name": "Filesystem",
@@ -4406,21 +4396,6 @@ Search.appendIndex(
             "summary": "Format\u0020a\u0020filename\u0020to\u0020an\u0020identifier\u0020for\u0020a\u0020given\u0020model.\u0020Unlike\u0020the\u0020basename\u0020function,\u0020any\u0020nested\u0020paths\nwithin\u0020the\u0020source\u0020directory\u0020are\u0020retained\u0020in\u0020order\u0020to\u0020satisfy\u0020the\u0020page\u0020identifier\u0020definition.",
             "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_pathToIdentifier"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMediaAssetFiles\u0028\u0029",
-            "name": "getMediaAssetFiles",
-            "summary": "Get\u0020all\u0020the\u0020Media\u0020asset\u0020file\u0020paths.",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMediaAssetFiles"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003AgetMediaGlobPattern\u0028\u0029",
-            "name": "getMediaGlobPattern",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#method_getMediaGlobPattern"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Services\\DiscoveryService\u003A\u003ADEFAULT_MEDIA_EXTENSIONS",
-            "name": "DEFAULT_MEDIA_EXTENSIONS",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Services-DiscoveryService.html#constant_DEFAULT_MEDIA_EXTENSIONS"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService",
             "name": "MarkdownService",
             "summary": "Dynamically\u0020creates\u0020a\u0020Markdown\u0020converter\u0020tailored\u0020for\u0020the\u0020target\u0020model\u0020and\u0020setup,\nthen\u0020converts\u0020the\u0020Markdown\u0020to\u0020HTML\u0020using\u0020both\u0020pre\u002D\u0020and\u0020post\u002Dprocessors.",
@@ -5871,6 +5846,21 @@ Search.appendIndex(
             "summary": "File\u0020abstraction\u0020for\u0020a\u0020project\u0020media\u0020file.",
             "url": "classes/Hyde-Support-Filesystem-MediaFile.html"
         },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\MediaFile\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-MediaFile.html#method_all"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\MediaFile\u003A\u003Afiles\u0028\u0029",
+            "name": "files",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-MediaFile.html#method_files"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\MediaFile\u003A\u003AgetIdentifier\u0028\u0029",
+            "name": "getIdentifier",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-MediaFile.html#method_getIdentifier"
+        },                {
             "fqsen": "\\Hyde\\Support\\Filesystem\\MediaFile\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
             "summary": "",
@@ -5885,6 +5875,26 @@ Search.appendIndex(
             "name": "getMimeType",
             "summary": "",
             "url": "classes/Hyde-Support-Filesystem-MediaFile.html#method_getMimeType"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\MediaFile\u003A\u003AdiscoverMediaAssetFiles\u0028\u0029",
+            "name": "discoverMediaAssetFiles",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-MediaFile.html#method_discoverMediaAssetFiles"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\MediaFile\u003A\u003AgetMediaAssetFiles\u0028\u0029",
+            "name": "getMediaAssetFiles",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-MediaFile.html#method_getMediaAssetFiles"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\MediaFile\u003A\u003AgetMediaGlobPattern\u0028\u0029",
+            "name": "getMediaGlobPattern",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-MediaFile.html#method_getMediaGlobPattern"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Filesystem\\MediaFile\u003A\u003AEXTENSIONS",
+            "name": "EXTENSIONS",
+            "summary": "",
+            "url": "classes/Hyde-Support-Filesystem-MediaFile.html#constant_EXTENSIONS"
         },                {
             "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile",
             "name": "ProjectFile",

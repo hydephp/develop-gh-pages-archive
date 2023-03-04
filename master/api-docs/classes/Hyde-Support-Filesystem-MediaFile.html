@@ -139,7 +139,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Filesystem/MediaFile.php"><a href="files/packages-framework-src-support-filesystem-mediafile.html"><abbr title="packages/framework/src/Support/Filesystem/MediaFile.php">MediaFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -159,6 +159,13 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Hyde-Support-Filesystem-MediaFile.html#constant_EXTENSIONS">EXTENSIONS</a>
+    <span>
+        &nbsp;= [&#039;png&#039;, &#039;svg&#039;, &#039;jpg&#039;, &#039;jpeg&#039;, &#039;gif&#039;, &#039;ico&#039;, &#039;css&#039;, &#039;js&#039;]                            </span>
+</dt>
+<dd></dd>
+
                     <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Support-Filesystem-ProjectFile.html#property_path">$path</a>
     <span>
@@ -170,6 +177,20 @@
     <a href="classes/Hyde-Support-Filesystem-ProjectFile.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Support-Filesystem-MediaFile.html#method_all">all()</a>
+    <span>
+                                &nbsp;: array&lt;string, <a href="classes/Hyde-Support-Filesystem-MediaFile.html"><abbr title="\Hyde\Support\Filesystem\MediaFile">MediaFile</abbr></a>&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Support-Filesystem-MediaFile.html#method_files">files()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, string&gt;    </span>
 </dt>
 <dd></dd>
 
@@ -196,6 +217,13 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Support-Filesystem-ProjectFile.html#method_getExtension">getExtension()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Support-Filesystem-MediaFile.html#method_getIdentifier">getIdentifier()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -250,11 +278,67 @@
 </dt>
 <dd></dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Support-Filesystem-MediaFile.html#method_discoverMediaAssetFiles">discoverMediaAssetFiles()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Support-Filesystem-MediaFile.html#method_getMediaAssetFiles">getMediaAssetFiles()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Support-Filesystem-MediaFile.html#method_getMediaGlobPattern">getMediaGlobPattern()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
         </dl>
 
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Hyde-Support-Filesystem-MediaFile.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EXTENSIONS">
+        EXTENSIONS
+        <a href="classes/Hyde-Support-Filesystem-MediaFile.html#constant_EXTENSIONS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Filesystem/MediaFile.php"><a href="files/packages-framework-src-support-filesystem-mediafile.html"><abbr title="packages/framework/src/Support/Filesystem/MediaFile.php">MediaFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">29</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
+    <span class="phpdocumentor-signature__name">EXTENSIONS</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;png&#039;, &#039;svg&#039;, &#039;jpg&#039;, &#039;jpeg&#039;, &#039;gif&#039;, &#039;ico&#039;, &#039;css&#039;, &#039;js&#039;]</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"><p>The default extensions for media types</p>
+</section>
+
+    
+
+</article>
+            </section>
 
         
     <section class="phpdocumentor-properties">
@@ -375,6 +459,74 @@
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_all">
+        all()
+        <a href="classes/Hyde-Support-Filesystem-MediaFile.html#method_all" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Filesystem/MediaFile.php"><a href="files/packages-framework-src-support-filesystem-mediafile.html"><abbr title="packages/framework/src/Support/Filesystem/MediaFile.php">MediaFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">32</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">all</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, <a href="classes/Hyde-Support-Filesystem-MediaFile.html"><abbr title="\Hyde\Support\Filesystem\MediaFile">MediaFile</abbr></a>&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string, <a href="classes/Hyde-Support-Filesystem-MediaFile.html"><abbr title="\Hyde\Support\Filesystem\MediaFile">MediaFile</abbr></a>&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The array keys are the filenames relative to the _media/ directory</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_files">
+        files()
+        <a href="classes/Hyde-Support-Filesystem-MediaFile.html#method_files" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Filesystem/MediaFile.php"><a href="files/packages-framework-src-support-filesystem-mediafile.html"><abbr title="packages/framework/src/Support/Filesystem/MediaFile.php">MediaFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">38</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">files</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Array of filenames relative to the _media/ directory</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_getAbsolutePath">
@@ -417,7 +569,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Filesystem/MediaFile.php"><a href="files/packages-framework-src-support-filesystem-mediafile.html"><abbr title="packages/framework/src/Support/Filesystem/MediaFile.php">MediaFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -509,6 +661,39 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getIdentifier">
+        getIdentifier()
+        <a href="classes/Hyde-Support-Filesystem-MediaFile.html#method_getIdentifier" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Filesystem/MediaFile.php"><a href="files/packages-framework-src-support-filesystem-mediafile.html"><abbr title="packages/framework/src/Support/Filesystem/MediaFile.php">MediaFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getIdentifier</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getMimeType">
         getMimeType()
         <a href="classes/Hyde-Support-Filesystem-MediaFile.html#method_getMimeType" class="headerlink"><i class="fas fa-link"></i></a>
@@ -516,7 +701,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Filesystem/MediaFile.php"><a href="files/packages-framework-src-support-filesystem-mediafile.html"><abbr title="packages/framework/src/Support/Filesystem/MediaFile.php">MediaFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -704,7 +889,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Filesystem/MediaFile.php"><a href="files/packages-framework-src-support-filesystem-mediafile.html"><abbr title="packages/framework/src/Support/Filesystem/MediaFile.php">MediaFile.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -757,6 +942,105 @@
             </dd>
             </dl>
 
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_discoverMediaAssetFiles">
+        discoverMediaAssetFiles()
+        <a href="classes/Hyde-Support-Filesystem-MediaFile.html#method_discoverMediaAssetFiles" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Filesystem/MediaFile.php"><a href="files/packages-framework-src-support-filesystem-mediafile.html"><abbr title="packages/framework/src/Support/Filesystem/MediaFile.php">MediaFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">97</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">discoverMediaAssetFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMediaAssetFiles">
+        getMediaAssetFiles()
+        <a href="classes/Hyde-Support-Filesystem-MediaFile.html#method_getMediaAssetFiles" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Filesystem/MediaFile.php"><a href="files/packages-framework-src-support-filesystem-mediafile.html"><abbr title="packages/framework/src/Support/Filesystem/MediaFile.php">MediaFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">106</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getMediaAssetFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMediaGlobPattern">
+        getMediaGlobPattern()
+        <a href="classes/Hyde-Support-Filesystem-MediaFile.html#method_getMediaGlobPattern" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Filesystem/MediaFile.php"><a href="files/packages-framework-src-support-filesystem-mediafile.html"><abbr title="packages/framework/src/Support/Filesystem/MediaFile.php">MediaFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">111</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getMediaGlobPattern</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
