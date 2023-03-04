@@ -6193,7 +6193,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Support\\Models\\RouteKey",
             "name": "RouteKey",
-            "summary": "Route\u0020keys\u0020are\u0020the\u0020core\u0020of\u0020Hyde\u0027s\u0020routing\u0020system.",
+            "summary": "Route\u0020keys\u0020provide\u0020the\u0020core\u0020bindings\u0020of\u0020the\u0020HydePHP\u0020routing\u0020system\u0020as\u0020they\u0020are\u0020what\u0020canonically\u0020identifies\u0020a\u0020page.",
             "url": "classes/Hyde-Support-Models-RouteKey.html"
         },                {
             "fqsen": "\\Hyde\\Support\\Models\\RouteKey\u003A\u003Amake\u0028\u0029",
@@ -6215,6 +6215,11 @@ Search.appendIndex(
             "name": "get",
             "summary": "",
             "url": "classes/Hyde-Support-Models-RouteKey.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\RouteKey\u003A\u003Anormalize\u0028\u0029",
+            "name": "normalize",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-RouteKey.html#method_normalize"
         },                {
             "fqsen": "\\Hyde\\Support\\Models\\RouteKey\u003A\u003AfromPage\u0028\u0029",
             "name": "fromPage",

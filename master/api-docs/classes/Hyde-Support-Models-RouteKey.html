@@ -139,13 +139,14 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/RouteKey.php"><a href="files/packages-framework-src-support-models-routekey.html"><abbr title="packages/framework/src/Support/Models/RouteKey.php">RouteKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Route keys are the core of Hyde&#039;s routing system.</p>
+            <p class="phpdocumentor-summary">Route keys provide the core bindings of the HydePHP routing system as they are what canonically identifies a page.</p>
 
-    <section class="phpdocumentor-description"><p>In short, the route key is the URL path relative to the site webroot, without the file extension.</p>
+    <section class="phpdocumentor-description"><p>This class both provides a data object for normalized type-hintable values, and general related helper methods.</p>
+<p>In short, the route key is the URL path relative to the site webroot, without the file extension.</p>
 <p>For example, <code class="prettyprint">_pages/index.blade.php</code> would be compiled to <code class="prettyprint">_site/index.html</code> and thus has the route key of <code class="prettyprint">index</code>.
 As another example, <code class="prettyprint">_posts/welcome.md</code> would be compiled to <code class="prettyprint">_site/posts/welcome.html</code> and thus has the route key of <code class="prettyprint">posts/welcome</code>.</p>
 <p>Note that if the source page's output directory is changed, the route key will change accordingly.
@@ -219,6 +220,13 @@ This can potentially cause links to break when changing the output directory for
 </dt>
 <dd></dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Support-Models-RouteKey.html#method_normalize">normalize()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
         </dl>
 
 
@@ -247,7 +255,7 @@ This can potentially cause links to break when changing the output directory for
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/RouteKey.php"><a href="files/packages-framework-src-support-models-routekey.html"><abbr title="packages/framework/src/Support/Models/RouteKey.php">RouteKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -285,7 +293,7 @@ This can potentially cause links to break when changing the output directory for
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/RouteKey.php"><a href="files/packages-framework-src-support-models-routekey.html"><abbr title="packages/framework/src/Support/Models/RouteKey.php">RouteKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -329,7 +337,7 @@ This can potentially cause links to break when changing the output directory for
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/RouteKey.php"><a href="files/packages-framework-src-support-models-routekey.html"><abbr title="packages/framework/src/Support/Models/RouteKey.php">RouteKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -362,7 +370,7 @@ This can potentially cause links to break when changing the output directory for
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/RouteKey.php"><a href="files/packages-framework-src-support-models-routekey.html"><abbr title="packages/framework/src/Support/Models/RouteKey.php">RouteKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -412,7 +420,7 @@ This can potentially cause links to break when changing the output directory for
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/RouteKey.php"><a href="files/packages-framework-src-support-models-routekey.html"><abbr title="packages/framework/src/Support/Models/RouteKey.php">RouteKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -445,7 +453,7 @@ This can potentially cause links to break when changing the output directory for
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/RouteKey.php"><a href="files/packages-framework-src-support-models-routekey.html"><abbr title="packages/framework/src/Support/Models/RouteKey.php">RouteKey.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -472,6 +480,50 @@ This can potentially cause links to break when changing the output directory for
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">self</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_normalize">
+        normalize()
+        <a href="classes/Hyde-Support-Models-RouteKey.html#method_normalize" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Models/RouteKey.php"><a href="files/packages-framework-src-support-models-routekey.html"><abbr title="packages/framework/src/Support/Models/RouteKey.php">RouteKey.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">47</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     
