@@ -476,35 +476,35 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-PublishViewsCommand.html#property_options"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticPageCommand",
-            "name": "RebuildStaticPageCommand",
+            "fqsen": "\\Hyde\\Console\\Commands\\RebuildPageCommand",
+            "name": "RebuildPageCommand",
             "summary": "Hyde\u0020Command\u0020to\u0020build\u0020a\u0020single\u0020static\u0020site\u0020file.",
-            "url": "classes/Hyde-Console-Commands-RebuildStaticPageCommand.html"
+            "url": "classes/Hyde-Console-Commands-RebuildPageCommand.html"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticPageCommand\u003A\u003Ahandle\u0028\u0029",
+            "fqsen": "\\Hyde\\Console\\Commands\\RebuildPageCommand\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
             "summary": "The\u0020base\u0020handle\u0020method\u0020that\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes.",
-            "url": "classes/Hyde-Console-Commands-RebuildStaticPageCommand.html#method_handle"
+            "url": "classes/Hyde-Console-Commands-RebuildPageCommand.html#method_handle"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticPageCommand\u003A\u003AgetNormalizedPathString\u0028\u0029",
+            "fqsen": "\\Hyde\\Console\\Commands\\RebuildPageCommand\u003A\u003AgetNormalizedPathString\u0028\u0029",
             "name": "getNormalizedPathString",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-RebuildStaticPageCommand.html#method_getNormalizedPathString"
+            "url": "classes/Hyde-Console-Commands-RebuildPageCommand.html#method_getNormalizedPathString"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticPageCommand\u003A\u003AmakeBuildTask\u0028\u0029",
+            "fqsen": "\\Hyde\\Console\\Commands\\RebuildPageCommand\u003A\u003AmakeBuildTask\u0028\u0029",
             "name": "makeBuildTask",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-RebuildStaticPageCommand.html#method_makeBuildTask"
+            "url": "classes/Hyde-Console-Commands-RebuildPageCommand.html#method_makeBuildTask"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticPageCommand\u003A\u003A\u0024signature",
+            "fqsen": "\\Hyde\\Console\\Commands\\RebuildPageCommand\u003A\u003A\u0024signature",
             "name": "signature",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-RebuildStaticPageCommand.html#property_signature"
+            "url": "classes/Hyde-Console-Commands-RebuildPageCommand.html#property_signature"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RebuildStaticPageCommand\u003A\u003A\u0024description",
+            "fqsen": "\\Hyde\\Console\\Commands\\RebuildPageCommand\u003A\u003A\u0024description",
             "name": "description",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-RebuildStaticPageCommand.html#property_description"
+            "url": "classes/Hyde-Console-Commands-RebuildPageCommand.html#property_description"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand",
             "name": "RouteListCommand",
