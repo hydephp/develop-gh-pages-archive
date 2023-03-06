@@ -148,13 +148,6 @@
 
 <dl class="phpdocumentor-table-of-contents">
                         <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_constructFactoryData">constructFactoryData()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_toCoreDataObject">toCoreDataObject()</a>
     <span>
                                 &nbsp;: <a href="classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html"><abbr title="\Hyde\Framework\Factories\Concerns\CoreDataObject">CoreDataObject</abbr></a>    </span>
@@ -162,7 +155,14 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_constructPageSchemas">constructPageSchemas()</a>
+    <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_assignFactoryData">assignFactoryData()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_constructFactoryData">constructFactoryData()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -185,9 +185,9 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_constructFactoryData">
-        constructFactoryData()
-        <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_constructFactoryData" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_toCoreDataObject">
+        toCoreDataObject()
+        <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_toCoreDataObject" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/Concerns/HasFactory.php"><a href="files/packages-framework-src-framework-factories-concerns-hasfactory.html"><abbr title="packages/framework/src/Framework/Factories/Concerns/HasFactory.php">HasFactory.php</abbr></a></abbr>
@@ -199,7 +199,40 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">constructFactoryData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Factories-Concerns-PageDataFactory.html"><abbr title="\Hyde\Framework\Factories\Concerns\PageDataFactory">PageDataFactory</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$factory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">toCoreDataObject</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html"><abbr title="\Hyde\Framework\Factories\Concerns\CoreDataObject">CoreDataObject</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html"><abbr title="\Hyde\Framework\Factories\Concerns\CoreDataObject">CoreDataObject</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_assignFactoryData">
+        assignFactoryData()
+        <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_assignFactoryData" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/Concerns/HasFactory.php"><a href="files/packages-framework-src-framework-factories-concerns-hasfactory.html"><abbr title="packages/framework/src/Framework/Factories/Concerns/HasFactory.php">HasFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">35</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">assignFactoryData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Factories-Concerns-PageDataFactory.html"><abbr title="\Hyde\Framework\Factories\Concerns\PageDataFactory">PageDataFactory</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$factory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -226,57 +259,24 @@
                     <article
         class="phpdocumentor-element
             -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_toCoreDataObject">
-        toCoreDataObject()
-        <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_toCoreDataObject" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/Concerns/HasFactory.php"><a href="files/packages-framework-src-framework-factories-concerns-hasfactory.html"><abbr title="packages/framework/src/Framework/Factories/Concerns/HasFactory.php">HasFactory.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">29</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">toCoreDataObject</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html"><abbr title="\Hyde\Framework\Factories\Concerns\CoreDataObject">CoreDataObject</abbr></a></span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html"><abbr title="\Hyde\Framework\Factories\Concerns\CoreDataObject">CoreDataObject</abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_constructPageSchemas">
-        constructPageSchemas()
-        <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_constructPageSchemas" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_constructFactoryData">
+        constructFactoryData()
+        <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_constructFactoryData" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/Concerns/HasFactory.php"><a href="files/packages-framework-src-framework-factories-concerns-hasfactory.html"><abbr title="packages/framework/src/Framework/Factories/Concerns/HasFactory.php">HasFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">constructPageSchemas</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">constructFactoryData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
