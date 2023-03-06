@@ -1011,36 +1011,6 @@ Search.appendIndex(
             "summary": "Render\u0020the\u0020global\u0020metadata\u0020bag.",
             "url": "classes/Hyde-Facades-Meta.html#method_render"
         },                {
-            "fqsen": "\\Hyde\\Facades\\Route",
-            "name": "Route",
-            "summary": "Provides\u0020an\u0020easy\u0020way\u0020to\u0020access\u0020the\u0020Hyde\u0020pseudo\u002Drouter.",
-            "url": "classes/Hyde-Facades-Route.html"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Route\u003A\u003Aexists\u0028\u0029",
-            "name": "exists",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Route.html#method_exists"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Route\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Route.html#method_get"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Route\u003A\u003AgetOrFail\u0028\u0029",
-            "name": "getOrFail",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Route.html#method_getOrFail"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Route\u003A\u003Aall\u0028\u0029",
-            "name": "all",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Route.html#method_all"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Route\u003A\u003Acurrent\u0028\u0029",
-            "name": "current",
-            "summary": "Get\u0020the\u0020current\u0020route\u0020for\u0020the\u0020page\u0020being\u0020rendered.",
-            "url": "classes/Hyde-Facades-Route.html#method_current"
-        },                {
             "fqsen": "\\Hyde\\Facades\\Site",
             "name": "Site",
             "summary": "Object\u0020representation\u0020for\u0020the\u0020HydePHP\u0020site\u0020and\u0020its\u0020configuration.",
@@ -1198,13 +1168,38 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Foundation\\Facades\\Routes",
             "name": "Routes",
-            "summary": "",
+            "summary": "Provides\u0020an\u0020easy\u0020way\u0020to\u0020access\u0020the\u0020Hyde\u0020pseudo\u002Drouter.",
             "url": "classes/Hyde-Foundation-Facades-Routes.html"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Facades\\Routes\u003A\u003AgetFacadeRoot\u0028\u0029",
             "name": "getFacadeRoot",
             "summary": "",
             "url": "classes/Hyde-Foundation-Facades-Routes.html#method_getFacadeRoot"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Facades\\Routes\u003A\u003Aexists\u0028\u0029",
+            "name": "exists",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Facades-Routes.html#method_exists"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Facades\\Routes\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Facades-Routes.html#method_get"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Facades\\Routes\u003A\u003AgetOrFail\u0028\u0029",
+            "name": "getOrFail",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Facades-Routes.html#method_getOrFail"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Facades\\Routes\u003A\u003Aall\u0028\u0029",
+            "name": "all",
+            "summary": "",
+            "url": "classes/Hyde-Foundation-Facades-Routes.html#method_all"
+        },                {
+            "fqsen": "\\Hyde\\Foundation\\Facades\\Routes\u003A\u003Acurrent\u0028\u0029",
+            "name": "current",
+            "summary": "Get\u0020the\u0020current\u0020route\u0020for\u0020the\u0020page\u0020being\u0020rendered.",
+            "url": "classes/Hyde-Foundation-Facades-Routes.html#method_current"
         },                {
             "fqsen": "\\Hyde\\Foundation\\HydeCoreExtension",
             "name": "HydeCoreExtension",
