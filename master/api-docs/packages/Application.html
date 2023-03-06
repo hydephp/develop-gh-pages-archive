@@ -128,8 +128,6 @@
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Features-Metadata-MetadataElementContract.html"><abbr title="\Hyde\Framework\Features\Metadata\MetadataElementContract">MetadataElementContract</abbr></a></dt>
         <dd>The methods the object representations for Metadata element classes must implement.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Features-XmlGenerators-XmlGeneratorContract.html"><abbr title="\Hyde\Framework\Features\XmlGenerators\XmlGeneratorContract">XmlGeneratorContract</abbr></a></dt>
-        <dd>Defines the public API for XML generators.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html"><abbr title="\Hyde\Markdown\Contracts\FrontMatter\BlogPostSchema">BlogPostSchema</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Markdown-Contracts-FrontMatter-PageSchema.html"><abbr title="\Hyde\Markdown\Contracts\FrontMatter\PageSchema">PageSchema</abbr></a></dt>
@@ -203,7 +201,7 @@ accessors that ensure the types of the returned values.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Facades-Meta.html"><abbr title="\Hyde\Facades\Meta">Meta</abbr></a></dt>
         <dd>Helpers to fluently declare HTML meta elements using their object representations.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Facades-Site.html"><abbr title="\Hyde\Facades\Site">Site</abbr></a></dt>
-        <dd>Object representation for the HydePHP site and its configuration.</dd>
+        <dd>Facade to quickly get data for the HydePHP site and its configuration.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Foundation-Application.html"><abbr title="\Hyde\Foundation\Application">Application</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html"><abbr title="\Hyde\Foundation\Concerns\BaseFoundationCollection">BaseFoundationCollection</abbr></a></dt>
@@ -249,8 +247,8 @@ it without having to register the directory with the view finder.</dd>
         <dd>Offloads logic for the make:post command.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html"><abbr title="\Hyde\Framework\Actions\CreatesNewPageSourceFile">CreatesNewPageSourceFile</abbr></a></dt>
         <dd>Scaffold a new Markdown, Blade, or documentation page.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Actions-GeneratesSidebarTableOfContents.html"><abbr title="\Hyde\Framework\Actions\GeneratesSidebarTableOfContents">GeneratesSidebarTableOfContents</abbr></a></dt>
-        <dd>Generates a table of contents for the Markdown document.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Actions-GeneratesTableOfContents.html"><abbr title="\Hyde\Framework\Actions\GeneratesTableOfContents">GeneratesTableOfContents</abbr></a></dt>
+        <dd>Generates a table of contents for the Markdown document, most commonly used for the sidebar.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Actions-MarkdownFileParser.html"><abbr title="\Hyde\Framework\Actions\MarkdownFileParser">MarkdownFileParser</abbr></a></dt>
         <dd>Prepares a Markdown file for further usage by extracting the Front Matter and creating MarkdownDocument object.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Actions-PostBuildTasks-GenerateBuildManifest.html"><abbr title="\Hyde\Framework\Actions\PostBuildTasks\GenerateBuildManifest">GenerateBuildManifest</abbr></a></dt>
@@ -327,27 +325,21 @@ by dynamically enriching them with semantic HTML.</dd>
 that its data can be accessed using dot notation in the page&#039;s front matter data.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Features-Navigation-NavigationMenu.html"><abbr title="\Hyde\Framework\Features\Navigation\NavigationMenu">NavigationMenu</abbr></a></dt>
         <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Features-Paginator.html"><abbr title="\Hyde\Framework\Features\Paginator">Paginator</abbr></a></dt>
-        <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html"><abbr title="\Hyde\Framework\Features\XmlGenerators\BaseXmlGenerator">BaseXmlGenerator</abbr></a></dt>
-        <dd></dd>
+        <dd>Defines the public API for XML generators and provides a shared codebase for common helpers.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html"><abbr title="\Hyde\Framework\Features\XmlGenerators\RssFeedGenerator">RssFeedGenerator</abbr></a></dt>
-        <dd></dd>
+        <dd>Defines the public API for XML generators and provides a shared codebase for common helpers.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Features-XmlGenerators-SitemapGenerator.html"><abbr title="\Hyde\Framework\Features\XmlGenerators\SitemapGenerator">SitemapGenerator</abbr></a></dt>
-        <dd></dd>
+        <dd>Defines the public API for XML generators and provides a shared codebase for common helpers.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-HydeServiceProvider.html"><abbr title="\Hyde\Framework\HydeServiceProvider">HydeServiceProvider</abbr></a></dt>
         <dd>Register and bootstrap core Hyde application services.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-AssetService.html"><abbr title="\Hyde\Framework\Services\AssetService">AssetService</abbr></a></dt>
         <dd>Handles the retrieval of core asset files. Commonly used through the Asset facade.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-BuildService.html"><abbr title="\Hyde\Framework\Services\BuildService">BuildService</abbr></a></dt>
         <dd>Moves logic from the build command to a service.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-DiscoveryService.html"><abbr title="\Hyde\Framework\Services\DiscoveryService">DiscoveryService</abbr></a></dt>
-        <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-MarkdownService.html"><abbr title="\Hyde\Framework\Services\MarkdownService">MarkdownService</abbr></a></dt>
         <dd>Dynamically creates a Markdown converter tailored for the target model and setup,
 then converts the Markdown to HTML using both pre- and post-processors.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-RebuildService.html"><abbr title="\Hyde\Framework\Services\RebuildService">RebuildService</abbr></a></dt>
-        <dd>Build static pages, but intelligently.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Services-ValidationService.html"><abbr title="\Hyde\Framework\Services\ValidationService">ValidationService</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Framework-Views-Components-BreadcrumbsComponent.html"><abbr title="\Hyde\Framework\Views\Components\BreadcrumbsComponent">BreadcrumbsComponent</abbr></a></dt>
@@ -368,8 +360,6 @@ then converts the Markdown to HTML using both pre- and post-processors.</dd>
         <dd>Markdown Processor to render Laravel Blade within Markdown files.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Markdown-Processing-CodeblockFilepathProcessor.html"><abbr title="\Hyde\Markdown\Processing\CodeblockFilepathProcessor">CodeblockFilepathProcessor</abbr></a></dt>
         <dd>Resolves file path comments found in Markdown code blocks into a neat badge shown in the top right corner.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html"><abbr title="\Hyde\Markdown\Processing\ColoredBlockquotes">ColoredBlockquotes</abbr></a></dt>
-        <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Markdown-Processing-ShortcodeProcessor.html"><abbr title="\Hyde\Markdown\Processing\ShortcodeProcessor">ShortcodeProcessor</abbr></a></dt>
         <dd>Handle all shortcode processing for a Markdown conversion.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Pages-BladePage.html"><abbr title="\Hyde\Pages\BladePage">BladePage</abbr></a></dt>
@@ -390,7 +380,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</dd>
         <dd>Page class for Markdown posts.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Support-BuildWarnings.html"><abbr title="\Hyde\Support\BuildWarnings">BuildWarnings</abbr></a></dt>
         <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Support-DataCollection.html"><abbr title="\Hyde\Support\DataCollection">DataCollection</abbr></a></dt>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Support-DataCollections.html"><abbr title="\Hyde\Support\DataCollections">DataCollections</abbr></a></dt>
         <dd>Automatically generates Laravel Collections from static data files,
 such as Markdown components and YAML files using Hyde Autodiscovery.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Support-Facades-Render.html"><abbr title="\Hyde\Support\Facades\Render">Render</abbr></a></dt>
@@ -415,6 +405,8 @@ various paths associated with a page, both source and compiled file paths as wel
         <dd>Route keys provide the core bindings of the HydePHP routing system as they are what canonically identifies a page.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Support-Models-ValidationResult.html"><abbr title="\Hyde\Support\Models\ValidationResult">ValidationResult</abbr></a></dt>
         <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Support-Paginator.html"><abbr title="\Hyde\Support\Paginator">Paginator</abbr></a></dt>
+        <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Hyde-Support-ReadingTime.html"><abbr title="\Hyde\Support\ReadingTime">ReadingTime</abbr></a></dt>
         <dd>Calculate the estimated reading time for a text.</dd>
     
@@ -436,7 +428,7 @@ while turning all paths arguments into absolute project paths.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html"><abbr title="\Hyde\Framework\Factories\Concerns\HasFactory">HasFactory</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Hyde-Support-Concerns-Serializable.html"><abbr title="\Hyde\Support\Concerns\Serializable">Serializable</abbr></a></dt>
-        <dd>Automatically serializes an Arrayable interface when JSON is requested.</dd>
+        <dd>Automatically serializes an Arrayable implementation when JSON is requested.</dd>
     
     </dl>
 
@@ -636,7 +628,7 @@ while turning all paths arguments into absolute project paths.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -664,7 +656,7 @@ while turning all paths arguments into absolute project paths.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -703,7 +695,7 @@ while turning all paths arguments into absolute project paths.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -744,7 +736,7 @@ while turning all paths arguments into absolute project paths.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -783,7 +775,7 @@ while turning all paths arguments into absolute project paths.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -822,7 +814,7 @@ while turning all paths arguments into absolute project paths.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -861,7 +853,7 @@ while turning all paths arguments into absolute project paths.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -900,7 +892,7 @@ while turning all paths arguments into absolute project paths.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -939,7 +931,7 @@ while turning all paths arguments into absolute project paths.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -978,7 +970,7 @@ while turning all paths arguments into absolute project paths.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
@@ -1041,7 +1033,7 @@ while turning all paths arguments into absolute project paths.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -1088,7 +1080,7 @@ while turning all paths arguments into absolute project paths.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -1135,7 +1127,7 @@ while turning all paths arguments into absolute project paths.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 

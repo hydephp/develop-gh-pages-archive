@@ -114,13 +114,13 @@
             <div class="phpdocumentor-column -eight phpdocumentor-content">
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-markdown.html">Markdown</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-markdown-processing.html">Processing</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework.html">Framework</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-actions.html">Actions</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    ColoredBlockquotes
+    GeneratesTableOfContents
 
     
             <div class="phpdocumentor-element__package">
@@ -130,20 +130,18 @@
                             </ul>
         </div>
     
-            <span class="phpdocumentor-element__implements">
-            implements
-                            <a href="classes/Hyde-Markdown-Contracts-MarkdownShortcodeContract.html"><abbr title="\Hyde\Markdown\Contracts\MarkdownShortcodeContract">MarkdownShortcodeContract</abbr></a>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Processing/ColoredBlockquotes.php"><a href="files/packages-framework-src-markdown-processing-coloredblockquotes.html"><abbr title="packages/framework/src/Markdown/Processing/ColoredBlockquotes.php">ColoredBlockquotes.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/GeneratesTableOfContents.php"><a href="files/packages-framework-src-framework-actions-generatestableofcontents.html"><abbr title="packages/framework/src/Framework/Actions/GeneratesTableOfContents.php">GeneratesTableOfContents.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">Generates a table of contents for the Markdown document, most commonly used for the sidebar.</p>
+
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -155,7 +153,7 @@
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Framework\Testing\Feature\ColoredBlockquoteShortcodesTest">ColoredBlockquoteShortcodesTest</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Framework\Testing\Feature\Actions\GeneratesSidebarTableOfContentsTest">GeneratesSidebarTableOfContentsTest</abbr></span>
                                         
                                              
                                     </dd>
@@ -164,18 +162,6 @@
 
 
 
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Markdown-Contracts-MarkdownShortcodeContract.html"><abbr title="\Hyde\Markdown\Contracts\MarkdownShortcodeContract">MarkdownShortcodeContract</abbr></a></dt>
-        <dd></dd>
-    
-    
-    
-    </dl>
 
 
 <h3 id="toc">
@@ -185,42 +171,21 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html#property_signature">$signature</a>
+    <a href="classes/Hyde-Framework-Actions-GeneratesTableOfContents.html#property_markdown">$markdown</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html#method_get">get()</a>
+    <a href="classes/Hyde-Framework-Actions-GeneratesTableOfContents.html#method___construct">__construct()</a>
     <span>
-                                &nbsp;: array&lt;string|int, <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html"><abbr title="\Hyde\Markdown\Processing\ColoredBlockquotes">ColoredBlockquotes</abbr></a>&gt;    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html#method_resolve">resolve()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html#method_signature">signature()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html#method_expand">expand()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html#method_getClassNameFromSignature">getClassNameFromSignature()</a>
+    <a href="classes/Hyde-Framework-Actions-GeneratesTableOfContents.html#method_execute">execute()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -236,34 +201,34 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Actions-GeneratesTableOfContents.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
             phpdocumentor-element
             -property
             -protected
-            -static                                            "
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="property_signature">
-        $signature
-        <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html#property_signature" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_markdown">
+        $markdown
+        <a href="classes/Hyde-Framework-Actions-GeneratesTableOfContents.html#property_markdown" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Processing/ColoredBlockquotes.php"><a href="files/packages-framework-src-markdown-processing-coloredblockquotes.html"><abbr title="packages/framework/src/Markdown/Processing/ColoredBlockquotes.php">ColoredBlockquotes.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/GeneratesTableOfContents.php"><a href="files/packages-framework-src-framework-actions-generatestableofcontents.html"><abbr title="packages/framework/src/Framework/Actions/GeneratesTableOfContents.php">GeneratesTableOfContents.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$signature</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&gt;color&#039;</span></code>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$markdown</span>
+    </code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -277,36 +242,48 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Hyde-Framework-Actions-GeneratesTableOfContents.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
             -method
             -public
-                                    -static                    "
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="method_get">
-        get()
-        <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Hyde-Framework-Actions-GeneratesTableOfContents.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Processing/ColoredBlockquotes.php"><a href="files/packages-framework-src-markdown-processing-coloredblockquotes.html"><abbr title="packages/framework/src/Markdown/Processing/ColoredBlockquotes.php">ColoredBlockquotes.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/GeneratesTableOfContents.php"><a href="files/packages-framework-src-framework-actions-generatestableofcontents.html"><abbr title="packages/framework/src/Framework/Actions/GeneratesTableOfContents.php">GeneratesTableOfContents.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">get</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html"><abbr title="\Hyde\Markdown\Processing\ColoredBlockquotes">ColoredBlockquotes</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
-    
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$markdown</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a>|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html"><abbr title="\Hyde\Markdown\Processing\ColoredBlockquotes">ColoredBlockquotes</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
         
     
@@ -315,159 +292,27 @@
         class="phpdocumentor-element
             -method
             -public
-                                    -static                    "
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="method_resolve">
-        resolve()
-        <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html#method_resolve" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_execute">
+        execute()
+        <a href="classes/Hyde-Framework-Actions-GeneratesTableOfContents.html#method_execute" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Processing/ColoredBlockquotes.php"><a href="files/packages-framework-src-markdown-processing-coloredblockquotes.html"><abbr title="packages/framework/src/Markdown/Processing/ColoredBlockquotes.php">ColoredBlockquotes.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/GeneratesTableOfContents.php"><a href="files/packages-framework-src-framework-actions-generatestableofcontents.html"><abbr title="packages/framework/src/Framework/Actions/GeneratesTableOfContents.php">GeneratesTableOfContents.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">resolve</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$input</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_signature">
-        signature()
-        <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html#method_signature" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Processing/ColoredBlockquotes.php"><a href="files/packages-framework-src-markdown-processing-coloredblockquotes.html"><abbr title="packages/framework/src/Markdown/Processing/ColoredBlockquotes.php">ColoredBlockquotes.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">17</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">signature</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">execute</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
     
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_expand">
-        expand()
-        <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html#method_expand" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Processing/ColoredBlockquotes.php"><a href="files/packages-framework-src-markdown-processing-coloredblockquotes.html"><abbr title="packages/framework/src/Markdown/Processing/ColoredBlockquotes.php">ColoredBlockquotes.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">29</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">expand</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$input</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$input</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_getClassNameFromSignature">
-        getClassNameFromSignature()
-        <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html#method_getClassNameFromSignature" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Processing/ColoredBlockquotes.php"><a href="files/packages-framework-src-markdown-processing-coloredblockquotes.html"><abbr title="packages/framework/src/Markdown/Processing/ColoredBlockquotes.php">ColoredBlockquotes.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">38</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getClassNameFromSignature</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$signature</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$signature</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -554,7 +399,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Hyde-Markdown-Processing-ColoredBlockquotes.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Hyde-Framework-Actions-GeneratesTableOfContents.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

@@ -136,7 +136,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/Hyperlinks.php"><a href="files/packages-framework-src-foundation-kernel-hyperlinks.html"><abbr title="packages/framework/src/Foundation/Kernel/Hyperlinks.php">Hyperlinks.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -187,6 +187,13 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Foundation-Kernel-Hyperlinks.html#method_asset">asset()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Gets a relative web link to the given image stored in the _site/media folder.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Foundation-Kernel-Hyperlinks.html#method_formatLink">formatLink()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -199,13 +206,6 @@
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Check if a site base URL has been set in config (or .env).</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Foundation-Kernel-Hyperlinks.html#method_image">image()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>Gets a relative web link to the given image stored in the _site/media folder.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Foundation-Kernel-Hyperlinks.html#method_mediaLink">mediaLink()</a>
@@ -256,7 +256,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/Hyperlinks.php"><a href="files/packages-framework-src-foundation-kernel-hyperlinks.html"><abbr title="packages/framework/src/Foundation/Kernel/Hyperlinks.php">Hyperlinks.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -294,7 +294,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/Hyperlinks.php"><a href="files/packages-framework-src-foundation-kernel-hyperlinks.html"><abbr title="packages/framework/src/Foundation/Kernel/Hyperlinks.php">Hyperlinks.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -331,6 +331,62 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_asset">
+        asset()
+        <a href="classes/Hyde-Foundation-Kernel-Hyperlinks.html#method_asset" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/Hyperlinks.php"><a href="files/packages-framework-src-foundation-kernel-hyperlinks.html"><abbr title="packages/framework/src/Foundation/Kernel/Hyperlinks.php">Hyperlinks.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">106</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Gets a relative web link to the given image stored in the _site/media folder.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">asset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$preferQualifiedUrl</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"><p>If the image is remote (starts with http) it will be returned as is.</p>
+<p>If true is passed as the second argument, and a base URL is set,
+the image will be returned with a qualified absolute URL.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$preferQualifiedUrl</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_formatLink">
         formatLink()
         <a href="classes/Hyde-Foundation-Kernel-Hyperlinks.html#method_formatLink" class="headerlink"><i class="fas fa-link"></i></a>
@@ -338,7 +394,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/Hyperlinks.php"><a href="files/packages-framework-src-foundation-kernel-hyperlinks.html"><abbr title="packages/framework/src/Foundation/Kernel/Hyperlinks.php">Hyperlinks.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -396,7 +452,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/Hyperlinks.php"><a href="files/packages-framework-src-foundation-kernel-hyperlinks.html"><abbr title="packages/framework/src/Foundation/Kernel/Hyperlinks.php">Hyperlinks.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -422,77 +478,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_image">
-        image()
-        <a href="classes/Hyde-Foundation-Kernel-Hyperlinks.html#method_image" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/Hyperlinks.php"><a href="files/packages-framework-src-foundation-kernel-hyperlinks.html"><abbr title="packages/framework/src/Foundation/Kernel/Hyperlinks.php">Hyperlinks.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">99</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Gets a relative web link to the given image stored in the _site/media folder.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">image</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$preferQualifiedUrl</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"><p>If the image is remote (starts with http) it will be returned as is.</p>
-<p>If true is passed as the second argument, and a base URL is set,
-the image will be returned with a qualified absolute URL.</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$preferQualifiedUrl</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">todo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>Rename to asset? Or just merge with mediaLink?</p>
-</section>
-
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_mediaLink">
         mediaLink()
         <a href="classes/Hyde-Foundation-Kernel-Hyperlinks.html#method_mediaLink" class="headerlink"><i class="fas fa-link"></i></a>
@@ -500,7 +485,7 @@ the image will be returned with a qualified absolute URL.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/Hyperlinks.php"><a href="files/packages-framework-src-foundation-kernel-hyperlinks.html"><abbr title="packages/framework/src/Foundation/Kernel/Hyperlinks.php">Hyperlinks.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -555,7 +540,7 @@ and the second argument is set to true.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/Hyperlinks.php"><a href="files/packages-framework-src-foundation-kernel-hyperlinks.html"><abbr title="packages/framework/src/Foundation/Kernel/Hyperlinks.php">Hyperlinks.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -614,7 +599,7 @@ and the second argument is set to true.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Kernel/Hyperlinks.php"><a href="files/packages-framework-src-foundation-kernel-hyperlinks.html"><abbr title="packages/framework/src/Foundation/Kernel/Hyperlinks.php">Hyperlinks.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 

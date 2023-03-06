@@ -131,39 +131,46 @@
                             </ul>
         </div>
     
-            <span class="phpdocumentor-element__implements">
-            implements
-                            <a href="classes/Hyde-Framework-Features-XmlGenerators-XmlGeneratorContract.html"><abbr title="\Hyde\Framework\Features\XmlGenerators\XmlGeneratorContract">XmlGeneratorContract</abbr></a>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
-        
-    <section class="phpdocumentor-description"></section>
+            <p class="phpdocumentor-summary">Defines the public API for XML generators and provides a shared codebase for common helpers.</p>
+
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html"><abbr title="\Hyde\Framework\Features\XmlGenerators\RssFeedGenerator">RssFeedGenerator</abbr></a></span>
+                                        
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/Hyde-Framework-Features-XmlGenerators-SitemapGenerator.html"><abbr title="\Hyde\Framework\Features\XmlGenerators\SitemapGenerator">SitemapGenerator</abbr></a></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
 
 
 
 
-
-
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Framework-Features-XmlGenerators-XmlGeneratorContract.html"><abbr title="\Hyde\Framework\Features\XmlGenerators\XmlGeneratorContract">XmlGeneratorContract</abbr></a></dt>
-        <dd>Defines the public API for XML generators.</dd>
-    
-    
-    
-    </dl>
 
 
 <h3 id="toc">
@@ -187,6 +194,13 @@
 <dd>Create a new XML generator instance.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method_generate">generate()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
+<dd>Generate the XML document.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method_getXml">getXml()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -198,7 +212,7 @@
     <span>
                                 &nbsp;: <abbr title="\SimpleXMLElement">SimpleXMLElement</abbr>    </span>
 </dt>
-<dd></dd>
+<dd>Get the XML document as a SimpleXMLElement object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method_make">make()</a>
@@ -256,7 +270,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -294,7 +308,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -318,6 +332,39 @@
         class="phpdocumentor-element
             -method
             -public
+                        -abstract                                "
+>
+    <h4 class="phpdocumentor-element__name" id="method_generate">
+        generate()
+        <a href="classes/Hyde-Framework-Features-XmlGenerators-BaseXmlGenerator.html#method_generate" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Generate the XML document.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__abstract">abstract</span>                <span class="phpdocumentor-signature__name">generate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">$this</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_getXml">
@@ -327,7 +374,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -360,17 +407,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Get the XML document as a SimpleXMLElement object.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getXmlElement</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\SimpleXMLElement">SimpleXMLElement</abbr></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -393,7 +440,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -426,7 +473,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -486,7 +533,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -519,7 +566,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php"><a href="files/packages-framework-src-framework-features-xmlgenerators-basexmlgenerator.html"><abbr title="packages/framework/src/Framework/Features/XmlGenerators/BaseXmlGenerator.php">BaseXmlGenerator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
