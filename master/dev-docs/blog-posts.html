@@ -450,16 +450,16 @@ in quotes, but it can help in certain edge cases, thus they are included here.</
 category: &quot;My favorite recipes&quot;
 </code></pre>
 <h3>Date<a id="date" href="#date" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<pre><code class="language-yaml">date: &quot;2022-01-01 12:00&quot; 
+<pre><code class="language-yaml">date: &quot;2022-01-01 12:00&quot;
 date: &quot;2022-01-01&quot; 
 </code></pre>
 <h3>Author<a id="author" href="#author" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <pre><code class="language-yaml">author: &quot;Mr. Hyde&quot; # Arbitrary name displayed &quot;as is&quot;
 author: mr_hyde # Username defined in `authors` config
 author: # Array of author data
-  name: &quot;Mr. Hyde&quot; 
-  username: mr_hyde 
-  website: https://twitter.com/HydeFramework
+    name: &quot;Mr. Hyde&quot;
+    username: mr_hyde
+    website: https://twitter.com/HydeFramework
 </code></pre>
 <p>When specifying an array you don't need all the sub-properties.
 The example just shows all the supported values. Array values here
@@ -468,15 +468,15 @@ will override all the values in the <code>authors</code> config entry.</p>
 <pre><code class="language-yaml">image: image.jpg # Expanded by Hyde to `_media/image.jpg` and is resolved automatically to the correct URL for the built site
 image: https://cdn.example.com/image.jpg # Full URL starting with `http(s)://`) or `//` (protocol-relative)
 image:
-  source: image.jpg # Same as above
-  source: https://cdn.example.com/image.jpg # Same as above
-  altText: &quot;Alt text for image&quot;
-  title: &quot;Tooltip title&quot;
-  copyright: &quot;Copyright (c) 2022&quot;
-  licenseName: &quot;CC-BY-SA-4.0&quot;
-  licenseUrl: https://example.com/license/
-  authorUrl: https://photographer.example.com/
-  authorName: &quot;John Doe&quot;
+    source: image.jpg # Same as above
+    source: https://cdn.example.com/image.jpg # Same as above
+    altText: &quot;Alt text for image&quot;
+    title: &quot;Tooltip title&quot;
+    copyright: &quot;Copyright (c) 2022&quot;
+    licenseName: &quot;CC-BY-SA-4.0&quot;
+    licenseUrl: https://example.com/license/
+    authorUrl: https://photographer.example.com/
+    authorName: &quot;John Doe&quot;
 </code></pre>
 <p>When supplying an image source with a local image path, the image is expected to be stored in the <code>_media/</code> directory.
 Like all other media files, it will be copied to <code>_site/media/</code> when the site is built, so Hyde will resolve links accordingly.</p>

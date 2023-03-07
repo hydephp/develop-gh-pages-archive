@@ -419,9 +419,9 @@ Since there are so many components, it's hard to list them all here in the docum
 <pre><code class="language-yaml">---
 title: &quot;Page Title&quot;
 navigation:
-  label: &quot;Sidebar Label&quot;
-  hidden: true
-  priority: 5
+    label: &quot;Sidebar Label&quot;
+    hidden: true
+    priority: 5
 ---
 </code></pre>
 <h2>Dynamic content generation<a id="dynamic-content-generation" href="#dynamic-content-generation" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
@@ -476,7 +476,7 @@ See <a href="customization#navigation-menu--sidebar">the customization page</a> 
 <p>The sidebar is sorted/ordered by the <code>priority</code> property. The higher the priority the further down in the sidebar it will be.
 The default priority is 999. You can override the priority using the following front matter:</p>
 <pre><code class="language-yaml">navigation:
-  priority: 5
+    priority: 5
 </code></pre>
 <p>You can also change the order in the Docs configuration file.
 See <a href="customization#navigation-menu--sidebar">the chapter in the customization page</a> for more details. <br>
@@ -485,7 +485,7 @@ See <a href="customization#navigation-menu--sidebar">the chapter in the customiz
 <p>The sidebar items are labeled with the <code>label</code> property. The default label is the filename of the file.
 You can change it with the following front matter:</p>
 <pre><code class="language-yaml">navigation:
-  label: &quot;My Custom Sidebar Label&quot;
+    label: &quot;My Custom Sidebar Label&quot;
 </code></pre>
 <h3>Sidebar grouping<a id="sidebar-grouping" href="#sidebar-grouping" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Sidebar grouping allows you to group items in the sidebar into categories. This is useful for creating a sidebar with a lot of items.
@@ -496,7 +496,7 @@ Any pages without the group front matter will get put in the &quot;Other&quot; g
 <h4>Using Front Matter<a id="using-front-matter" href="#using-front-matter" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>To enable sidebar grouping, you can add the following front matter to your documentation pages:</p>
 <pre><code class="language-yaml">navigation:
-  group: &quot;Getting Started&quot;
+    group: &quot;Getting Started&quot;
 </code></pre>
 <h4>Using subdirectories<a id="using-subdirectories" href="#using-subdirectories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>Since <a href="https://github.com/hydephp/develop/releases/tag/v0.52.0-beta">v0.52.0-beta</a>, you can also automatically group your documentation pages by placing source files in sub-directories.</p>
@@ -507,7 +507,7 @@ Any pages without the group front matter will get put in the &quot;Other&quot; g
 <h3>Hiding items<a id="hiding-items" href="#hiding-items" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>You can hide items from the sidebar by adding the <code>hidden</code> property to the front matter:</p>
 <pre><code class="language-yaml">navigation:
-  hidden: true
+    hidden: true
 </code></pre>
 <p>This can be useful to create redirects or other items that should not be shown in the sidebar.</p>
 <blockquote>
