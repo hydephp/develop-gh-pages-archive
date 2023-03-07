@@ -781,116 +781,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Facades-Config.html#method_validated"
         },                {
-            "fqsen": "\\Hyde\\Facades\\Features",
-            "name": "Features",
-            "summary": "Allows\u0020features\u0020to\u0020be\u0020enabled\u0020and\u0020disabled\u0020in\u0020a\u0020simple\u0020object\u002Doriented\u0020manner.",
-            "url": "classes/Hyde-Facades-Features.html"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003Aenabled\u0028\u0029",
-            "name": "enabled",
-            "summary": "Determine\u0020if\u0020the\u0020given\u0020specified\u0020is\u0020enabled.",
-            "url": "classes/Hyde-Facades-Features.html#method_enabled"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AhasHtmlPages\u0028\u0029",
-            "name": "hasHtmlPages",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_hasHtmlPages"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AhasBladePages\u0028\u0029",
-            "name": "hasBladePages",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_hasBladePages"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AhasMarkdownPages\u0028\u0029",
-            "name": "hasMarkdownPages",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_hasMarkdownPages"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AhasMarkdownPosts\u0028\u0029",
-            "name": "hasMarkdownPosts",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_hasMarkdownPosts"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AhasDocumentationPages\u0028\u0029",
-            "name": "hasDocumentationPages",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_hasDocumentationPages"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AhasDocumentationSearch\u0028\u0029",
-            "name": "hasDocumentationSearch",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_hasDocumentationSearch"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AhasDarkmode\u0028\u0029",
-            "name": "hasDarkmode",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_hasDarkmode"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AhasTorchlight\u0028\u0029",
-            "name": "hasTorchlight",
-            "summary": "Torchlight\u0020is\u0020by\u0020default\u0020enabled\u0020automatically\u0020when\u0020an\u0020API\u0020token\nis\u0020set\u0020in\u0020the\u0020.env\u0020file\u0020but\u0020is\u0020disabled\u0020when\u0020running\u0020tests.",
-            "url": "classes/Hyde-Facades-Features.html#method_hasTorchlight"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AhtmlPages\u0028\u0029",
-            "name": "htmlPages",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_htmlPages"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AbladePages\u0028\u0029",
-            "name": "bladePages",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_bladePages"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AmarkdownPages\u0028\u0029",
-            "name": "markdownPages",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_markdownPages"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AmarkdownPosts\u0028\u0029",
-            "name": "markdownPosts",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_markdownPosts"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AdocumentationPages\u0028\u0029",
-            "name": "documentationPages",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_documentationPages"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AdocumentationSearch\u0028\u0029",
-            "name": "documentationSearch",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_documentationSearch"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003Adarkmode\u0028\u0029",
-            "name": "darkmode",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_darkmode"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003Atorchlight\u0028\u0029",
-            "name": "torchlight",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_torchlight"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003Asitemap\u0028\u0029",
-            "name": "sitemap",
-            "summary": "Can\u0020a\u0020sitemap\u0020be\u0020generated\u003F",
-            "url": "classes/Hyde-Facades-Features.html#method_sitemap"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003Arss\u0028\u0029",
-            "name": "rss",
-            "summary": "Can\u0020an\u0020RSS\u0020feed\u0020be\u0020generated\u003F",
-            "url": "classes/Hyde-Facades-Features.html#method_rss"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
-            "summary": "Get\u0020an\u0020array\u0020representation\u0020of\u0020the\u0020features\u0020and\u0020their\u0020status.",
-            "url": "classes/Hyde-Facades-Features.html#method_toArray"
-        },                {
-            "fqsen": "\\Hyde\\Facades\\Features\u003A\u003AgetDefaultOptions\u0028\u0029",
-            "name": "getDefaultOptions",
-            "summary": "",
-            "url": "classes/Hyde-Facades-Features.html#method_getDefaultOptions"
-        },                {
             "fqsen": "\\Hyde\\Facades\\Filesystem",
             "name": "Filesystem",
             "summary": "Proxies\u0020the\u0020Laravel\u0020File\u0020facade\u0020with\u0020extra\u0020features\u0020and\u0020helpers\u0020tailored\u0020for\u0020HydePHP.",
@@ -3101,11 +2991,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#property_authorUrl"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003A\u0024copyrightText",
-            "name": "copyrightText",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#property_copyrightText"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003A\u0024licenseName",
             "name": "licenseName",
             "summary": "",
@@ -3115,6 +3000,11 @@ Search.appendIndex(
             "name": "licenseUrl",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#property_licenseUrl"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\FeaturedImage\u003A\u003A\u0024copyrightText",
+            "name": "copyrightText",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html#property_copyrightText"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\PostAuthor",
             "name": "PostAuthor",
@@ -4398,22 +4288,22 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\BlogPostSchema",
             "name": "BlogPostSchema",
-            "summary": "",
+            "summary": "Front\u0020matter\u0020schema\u0020interfaces\u0020are\u0020used\u0020by\u0020various\u0020Hyde\u0020components\u0020to\nspecify\u0020what\u0020data\u0020they\u0020provide\u0020or\u0020contain.\u0020They\u0020also\u0020serve\u0020as\u0020a\nconvenient\u0020way\u0020to\u0020see\u0020the\u0020supported\u0020front\u0020matter\u0020properties.",
             "url": "classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html"
         },                {
-            "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\BlogPostSchema\u003A\u003AMARKDOWN_POST_SCHEMA",
-            "name": "MARKDOWN_POST_SCHEMA",
+            "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\BlogPostSchema\u003A\u003ABLOG_POST_SCHEMA",
+            "name": "BLOG_POST_SCHEMA",
             "summary": "",
-            "url": "classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html#constant_MARKDOWN_POST_SCHEMA"
+            "url": "classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html#constant_BLOG_POST_SCHEMA"
         },                {
-            "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\BlogPostSchema\u003A\u003AAUTHOR_SCHEMA",
-            "name": "AUTHOR_SCHEMA",
-            "summary": "",
-            "url": "classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html#constant_AUTHOR_SCHEMA"
+            "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\FrontMatterSchema",
+            "name": "FrontMatterSchema",
+            "summary": "Front\u0020matter\u0020schema\u0020interfaces\u0020are\u0020used\u0020by\u0020various\u0020Hyde\u0020components\u0020to\nspecify\u0020what\u0020data\u0020they\u0020provide\u0020or\u0020contain.\u0020They\u0020also\u0020serve\u0020as\u0020a\nconvenient\u0020way\u0020to\u0020see\u0020the\u0020supported\u0020front\u0020matter\u0020properties.",
+            "url": "classes/Hyde-Markdown-Contracts-FrontMatter-FrontMatterSchema.html"
         },                {
             "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\PageSchema",
             "name": "PageSchema",
-            "summary": "",
+            "summary": "Front\u0020matter\u0020schema\u0020interfaces\u0020are\u0020used\u0020by\u0020various\u0020Hyde\u0020components\u0020to\nspecify\u0020what\u0020data\u0020they\u0020provide\u0020or\u0020contain.\u0020They\u0020also\u0020serve\u0020as\u0020a\nconvenient\u0020way\u0020to\u0020see\u0020the\u0020supported\u0020front\u0020matter\u0020properties.",
             "url": "classes/Hyde-Markdown-Contracts-FrontMatter-PageSchema.html"
         },                {
             "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\PageSchema\u003A\u003APAGE_SCHEMA",
@@ -4421,9 +4311,19 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Markdown-Contracts-FrontMatter-PageSchema.html#constant_PAGE_SCHEMA"
         },                {
+            "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\SubSchemas\\AuthorSchema",
+            "name": "AuthorSchema",
+            "summary": "Front\u0020matter\u0020schema\u0020interfaces\u0020are\u0020used\u0020by\u0020various\u0020Hyde\u0020components\u0020to\nspecify\u0020what\u0020data\u0020they\u0020provide\u0020or\u0020contain.\u0020They\u0020also\u0020serve\u0020as\u0020a\nconvenient\u0020way\u0020to\u0020see\u0020the\u0020supported\u0020front\u0020matter\u0020properties.",
+            "url": "classes/Hyde-Markdown-Contracts-FrontMatter-SubSchemas-AuthorSchema.html"
+        },                {
+            "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\SubSchemas\\AuthorSchema\u003A\u003AAUTHOR_SCHEMA",
+            "name": "AUTHOR_SCHEMA",
+            "summary": "",
+            "url": "classes/Hyde-Markdown-Contracts-FrontMatter-SubSchemas-AuthorSchema.html#constant_AUTHOR_SCHEMA"
+        },                {
             "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\SubSchemas\\FeaturedImageSchema",
             "name": "FeaturedImageSchema",
-            "summary": "",
+            "summary": "Front\u0020matter\u0020schema\u0020interfaces\u0020are\u0020used\u0020by\u0020various\u0020Hyde\u0020components\u0020to\nspecify\u0020what\u0020data\u0020they\u0020provide\u0020or\u0020contain.\u0020They\u0020also\u0020serve\u0020as\u0020a\nconvenient\u0020way\u0020to\u0020see\u0020the\u0020supported\u0020front\u0020matter\u0020properties.",
             "url": "classes/Hyde-Markdown-Contracts-FrontMatter-SubSchemas-FeaturedImageSchema.html"
         },                {
             "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\SubSchemas\\FeaturedImageSchema\u003A\u003AFEATURED_IMAGE_SCHEMA",
@@ -4433,7 +4333,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\SubSchemas\\NavigationSchema",
             "name": "NavigationSchema",
-            "summary": "",
+            "summary": "Front\u0020matter\u0020schema\u0020interfaces\u0020are\u0020used\u0020by\u0020various\u0020Hyde\u0020components\u0020to\nspecify\u0020what\u0020data\u0020they\u0020provide\u0020or\u0020contain.\u0020They\u0020also\u0020serve\u0020as\u0020a\nconvenient\u0020way\u0020to\u0020see\u0020the\u0020supported\u0020front\u0020matter\u0020properties.",
             "url": "classes/Hyde-Markdown-Contracts-FrontMatter-SubSchemas-NavigationSchema.html"
         },                {
             "fqsen": "\\Hyde\\Markdown\\Contracts\\FrontMatter\\SubSchemas\\NavigationSchema\u003A\u003ANAVIGATION_SCHEMA",

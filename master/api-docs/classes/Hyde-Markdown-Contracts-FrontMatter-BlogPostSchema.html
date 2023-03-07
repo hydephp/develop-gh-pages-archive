@@ -124,7 +124,7 @@
     BlogPostSchema
             <span class="phpdocumentor-element__extends">
             extends
-                            <a href="classes/Hyde-Markdown-Contracts-FrontMatter-SubSchemas-FeaturedImageSchema.html"><abbr title="\Hyde\Markdown\Contracts\FrontMatter\SubSchemas\FeaturedImageSchema">FeaturedImageSchema</abbr></a>                    </span>
+                            <a href="classes/Hyde-Markdown-Contracts-FrontMatter-PageSchema.html"><abbr title="\Hyde\Markdown\Contracts\FrontMatter\PageSchema">PageSchema</abbr></a>                    </span>
                 <div class="phpdocumentor-element__package">
             in
             <ul class="phpdocumentor-breadcrumbs">
@@ -136,11 +136,14 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Contracts/FrontMatter/BlogPostSchema.php"><a href="files/packages-framework-src-markdown-contracts-frontmatter-blogpostschema.html"><abbr title="packages/framework/src/Markdown/Contracts/FrontMatter/BlogPostSchema.php">BlogPostSchema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">Front matter schema interfaces are used by various Hyde components to
+specify what data they provide or contain. They also serve as a
+convenient way to see the supported front matter properties.</p>
+
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -170,33 +173,16 @@
 
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html#constant_AUTHOR_SCHEMA">AUTHOR_SCHEMA</a>
+    <a href="classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html#constant_BLOG_POST_SCHEMA">BLOG_POST_SCHEMA</a>
     <span>
-        &nbsp;= [&#039;name&#039; =&gt; &#039;string&#039;, &#039;username&#039; =&gt; &#039;string&#039;, &#039;website&#039; =&gt; &#039;string(url)&#039;]                            </span>
+        &nbsp;= [&#039;title&#039; =&gt; &#039;string&#039;, &#039;description&#039; =&gt; &#039;string&#039;, &#039;category&#039; =&gt; &#039;string&#039;, &#039;date&#039; =&gt; &#039;string&#039;, &#039;author&#039; =&gt; [&#039;string&#039;, \Hyde\Markdown\Contracts\FrontMatter\SubSchemas\AuthorSchema::AUTHOR_SCHEMA], &#039;image&#039; =&gt; [&#039;string&#039;, \Hyde\Markdown\Contracts\FrontMatter\SubSchemas\FeaturedImageSchema::FEATURED_IMAGE_SCHEMA]]                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/Hyde-Markdown-Contracts-FrontMatter-SubSchemas-FeaturedImageSchema.html#constant_FEATURED_IMAGE_SCHEMA">FEATURED_IMAGE_SCHEMA</a>
+    <a href="classes/Hyde-Markdown-Contracts-FrontMatter-PageSchema.html#constant_PAGE_SCHEMA">PAGE_SCHEMA</a>
     <span>
-        &nbsp;= [
-    &#039;source&#039; =&gt; &#039;string&#039;,
-    // Filename in _media/ or a remote URL
-    &#039;description&#039; =&gt; &#039;string&#039;,
-    &#039;title&#039; =&gt; &#039;string&#039;,
-    &#039;copyright&#039; =&gt; &#039;string&#039;,
-    &#039;license&#039; =&gt; &#039;string&#039;,
-    &#039;licenseUrl&#039; =&gt; &#039;string&#039;,
-    &#039;author&#039; =&gt; &#039;string&#039;,
-    &#039;attributionUrl&#039; =&gt; &#039;string&#039;,
-]                            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html#constant_MARKDOWN_POST_SCHEMA">MARKDOWN_POST_SCHEMA</a>
-    <span>
-        &nbsp;= [&#039;title&#039; =&gt; &#039;string&#039;, &#039;description&#039; =&gt; &#039;string&#039;, &#039;category&#039; =&gt; &#039;string&#039;, &#039;date&#039; =&gt; &#039;string&#039;, &#039;author&#039; =&gt; &#039;string|array&lt;blog_post.author&gt;&#039;, &#039;image&#039; =&gt; &#039;string|array&lt;featured_image&gt;&#039;]                            </span>
+        &nbsp;= [&#039;title&#039; =&gt; &#039;string&#039;, &#039;canonicalUrl&#039; =&gt; &#039;string&#039;, &#039;navigation&#039; =&gt; \Hyde\Markdown\Contracts\FrontMatter\SubSchemas\NavigationSchema::NAVIGATION_SCHEMA]                            </span>
 </dt>
 <dd></dd>
 
@@ -211,15 +197,15 @@
             <a href="classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_AUTHOR_SCHEMA">
-        AUTHOR_SCHEMA
-        <a href="classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html#constant_AUTHOR_SCHEMA" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="constant_BLOG_POST_SCHEMA">
+        BLOG_POST_SCHEMA
+        <a href="classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html#constant_BLOG_POST_SCHEMA" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Contracts/FrontMatter/BlogPostSchema.php"><a href="files/packages-framework-src-markdown-contracts-frontmatter-blogpostschema.html"><abbr title="packages/framework/src/Markdown/Contracts/FrontMatter/BlogPostSchema.php">BlogPostSchema.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
@@ -227,8 +213,8 @@
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">AUTHOR_SCHEMA</span>
-    = <span class="phpdocumentor-signature__default-value">[&#039;name&#039; =&gt; &#039;string&#039;, &#039;username&#039; =&gt; &#039;string&#039;, &#039;website&#039; =&gt; &#039;string(url)&#039;]</span>
+    <span class="phpdocumentor-signature__name">BLOG_POST_SCHEMA</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;title&#039; =&gt; &#039;string&#039;, &#039;description&#039; =&gt; &#039;string&#039;, &#039;category&#039; =&gt; &#039;string&#039;, &#039;date&#039; =&gt; &#039;string&#039;, &#039;author&#039; =&gt; [&#039;string&#039;, \Hyde\Markdown\Contracts\FrontMatter\SubSchemas\AuthorSchema::AUTHOR_SCHEMA], &#039;image&#039; =&gt; [&#039;string&#039;, \Hyde\Markdown\Contracts\FrontMatter\SubSchemas\FeaturedImageSchema::FEATURED_IMAGE_SCHEMA]]</span>
 </code>
 
 
@@ -240,52 +226,13 @@
 
 </article>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_FEATURED_IMAGE_SCHEMA">
-        FEATURED_IMAGE_SCHEMA
-        <a href="classes/Hyde-Markdown-Contracts-FrontMatter-SubSchemas-FeaturedImageSchema.html#constant_FEATURED_IMAGE_SCHEMA" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="constant_PAGE_SCHEMA">
+        PAGE_SCHEMA
+        <a href="classes/Hyde-Markdown-Contracts-FrontMatter-PageSchema.html#constant_PAGE_SCHEMA" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Contracts/FrontMatter/SubSchemas/FeaturedImageSchema.php"><a href="files/packages-framework-src-markdown-contracts-frontmatter-subschemas-featuredimageschema.html"><abbr title="packages/framework/src/Markdown/Contracts/FrontMatter/SubSchemas/FeaturedImageSchema.php">FeaturedImageSchema.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">13</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">FEATURED_IMAGE_SCHEMA</span>
-    = <span class="phpdocumentor-signature__default-value">[
-    &#039;source&#039; =&gt; &#039;string&#039;,
-    // Filename in _media/ or a remote URL
-    &#039;description&#039; =&gt; &#039;string&#039;,
-    &#039;title&#039; =&gt; &#039;string&#039;,
-    &#039;copyright&#039; =&gt; &#039;string&#039;,
-    &#039;license&#039; =&gt; &#039;string&#039;,
-    &#039;licenseUrl&#039; =&gt; &#039;string&#039;,
-    &#039;author&#039; =&gt; &#039;string&#039;,
-    &#039;attributionUrl&#039; =&gt; &#039;string&#039;,
-]</span>
-</code>
-
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_MARKDOWN_POST_SCHEMA">
-        MARKDOWN_POST_SCHEMA
-        <a href="classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html#constant_MARKDOWN_POST_SCHEMA" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Contracts/FrontMatter/BlogPostSchema.php"><a href="files/packages-framework-src-markdown-contracts-frontmatter-blogpostschema.html"><abbr title="packages/framework/src/Markdown/Contracts/FrontMatter/BlogPostSchema.php">BlogPostSchema.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Markdown/Contracts/FrontMatter/PageSchema.php"><a href="files/packages-framework-src-markdown-contracts-frontmatter-pageschema.html"><abbr title="packages/framework/src/Markdown/Contracts/FrontMatter/PageSchema.php">PageSchema.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">14</span>
 
@@ -295,8 +242,8 @@
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">MARKDOWN_POST_SCHEMA</span>
-    = <span class="phpdocumentor-signature__default-value">[&#039;title&#039; =&gt; &#039;string&#039;, &#039;description&#039; =&gt; &#039;string&#039;, &#039;category&#039; =&gt; &#039;string&#039;, &#039;date&#039; =&gt; &#039;string&#039;, &#039;author&#039; =&gt; &#039;string|array&lt;blog_post.author&gt;&#039;, &#039;image&#039; =&gt; &#039;string|array&lt;featured_image&gt;&#039;]</span>
+    <span class="phpdocumentor-signature__name">PAGE_SCHEMA</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;title&#039; =&gt; &#039;string&#039;, &#039;canonicalUrl&#039; =&gt; &#039;string&#039;, &#039;navigation&#039; =&gt; \Hyde\Markdown\Contracts\FrontMatter\SubSchemas\NavigationSchema::NAVIGATION_SCHEMA]</span>
 </code>
 
 
