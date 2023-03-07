@@ -173,26 +173,12 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Hyde-Framework-Actions-StaticPageBuilder.html#property_page">$page</a>
-    <span>
-                        &nbsp;: <a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a>            </span>
-</dt>
-<dd></dd>
-
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Actions-StaticPageBuilder.html#method___construct">__construct()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>Construct a new static page builder instance.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Actions-StaticPageBuilder.html#method___invoke">__invoke()</a>
+                        <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Framework-Actions-StaticPageBuilder.html#method_handle">handle()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Invoke the static page builder.</dd>
+<dd>Invoke the static page builder for the given page.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectories">needsDirectories()</a>
@@ -222,46 +208,6 @@
         
 
         
-    <section class="phpdocumentor-properties">
-        <h3 class="phpdocumentor-elements__header" id="properties">
-            Properties
-            <a href="classes/Hyde-Framework-Actions-StaticPageBuilder.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_page">
-        $page
-        <a href="classes/Hyde-Framework-Actions-StaticPageBuilder.html#property_page" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/StaticPageBuilder.php"><a href="files/packages-framework-src-framework-actions-staticpagebuilder.html"><abbr title="packages/framework/src/Framework/Actions/StaticPageBuilder.php">StaticPageBuilder.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">21</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$page</span>
-    </code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
@@ -272,24 +218,24 @@
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/Hyde-Framework-Actions-StaticPageBuilder.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_handle">
+        handle()
+        <a href="classes/Hyde-Framework-Actions-StaticPageBuilder.html#method_handle" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/StaticPageBuilder.php"><a href="files/packages-framework-src-framework-actions-staticpagebuilder.html"><abbr title="packages/framework/src/Framework/Actions/StaticPageBuilder.php">StaticPageBuilder.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Construct a new static page builder instance.</p>
+        <p class="phpdocumentor-summary">Invoke the static page builder for the given page.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$selfInvoke</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">handle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$page</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -299,54 +245,11 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Pages-Concerns-HydePage.html"><abbr title="\Hyde\Pages\Concerns\HydePage">HydePage</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>the Page to compile into HTML</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$selfInvoke</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>if set to true the class will invoke when constructed</p>
-</section>
+                    <section class="phpdocumentor-description"></section>
 
             </dd>
             </dl>
 
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___invoke">
-        __invoke()
-        <a href="classes/Hyde-Framework-Actions-StaticPageBuilder.html#method___invoke" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/StaticPageBuilder.php"><a href="files/packages-framework-src-framework-actions-staticpagebuilder.html"><abbr title="packages/framework/src/Framework/Actions/StaticPageBuilder.php">StaticPageBuilder.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">41</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Invoke the static page builder.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__invoke</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-    
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>

@@ -34,11 +34,9 @@
     <script>if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.classList.add('dark'); document.getElementById('meta-color-scheme').setAttribute('content', 'dark');} else { document.documentElement.classList.remove('dark') } </script>
 </head>
 <body id="hyde-docs" class="bg-white dark:bg-gray-900 dark:text-white min-h-screen w-screen relative overflow-x-hidden overflow-y-auto"
-      x-data="{ sidebarOpen: false, searchWindowOpen: false }"
-      x-on:keydown.escape="searchWindowOpen = false; sidebarOpen = false" x-on:keydown.slash="searchWindowOpen = true">
+      x-data="{ sidebarOpen: false, searchWindowOpen: false }" x-on:keydown.escape="searchWindowOpen = false; sidebarOpen = false" x-on:keydown.slash="searchWindowOpen = true">
 
-    <a href="#content" id="skip-to-content" class="sr-only focus:not-sr-only bg-black border-4 border-yellow-400 focus:absolute focus:mt-2 focus:mx-auto focus:p-2 focus:w-64 h-auto left-0 overflow-auto right-0 rounded-md text-center text-lg text-white top-auto z-50 ">Skip to content</a>
-    <nav id="mobile-navigation" class="bg-white dark:bg-gray-800 md:hidden flex justify-between w-full h-16 z-40 fixed left-0 top-0 p-4 leading-8 shadow-lg">
+    <a href="#content" id="skip-to-content" class="sr-only focus:not-sr-only bg-black border-4 border-yellow-400 focus:absolute focus:mt-2 focus:mx-auto focus:p-2 focus:w-64 h-auto left-0 overflow-auto right-0 rounded-md text-center text-lg text-white top-auto z-50 ">Skip to content</a>    <nav id="mobile-navigation" class="bg-white dark:bg-gray-800 md:hidden flex justify-between w-full h-16 z-40 fixed left-0 top-0 p-4 leading-8 shadow-lg">
     <strong class="px-2 mr-auto">
                     <a href="../dev-docs/index.html">
                 HydePHP Docs
@@ -457,7 +455,7 @@ and the rest of the data will be pulled from a matching entry.</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'footer' =&gt; 'Site proudly built with [HydePHP](https://github.com/hydephp/hyde) 🎩',
 </code></pre>
 <p>If you don't want to write Markdown in the configuration file, you can create a Markdown file in your includes directory. When this file is found, it will be used instead of the configuration setting.</p>
-<pre><code class="language-markdown"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>resources/_includes/footer.md</small>Site proudly built with [HydePHP](https://github.com/hydephp/hyde) 🎩
+<pre><code class="language-markdown"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>resources/includes/footer.md</small>Site proudly built with [HydePHP](https://github.com/hydephp/hyde) 🎩
 </code></pre>
 <p>In both cases the parsed Markdown will be rendered in the footer Blade component.</p>
 <h4>Customizing the Blade component<a id="customizing-the-blade-component" href="#customizing-the-blade-component" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>

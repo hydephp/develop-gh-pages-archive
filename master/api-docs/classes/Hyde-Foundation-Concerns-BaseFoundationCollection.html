@@ -189,7 +189,7 @@ methods respectively, or through the corresponding facade helper classes.</p>
                                                  <section class="phpdocumentor-description"><p>Creates route objects from the page objects.</p>
 <p>The collections are constructed and booted in the kernel through the <code class="prettyprint">BootsHydeKernel</code> trait.
 Between the construction and booting is a time-frame where the extensions can hook into
-the discovery process and add their data through the <code class="prettyprint">runExtensionCallbacks</code> API.</p>
+the discovery process and add their data through the <code class="prettyprint">runExtensionHandlers</code> API.</p>
 </section>
 
                                     </dd>
@@ -242,7 +242,7 @@ the discovery process and add their data through the <code class="prettyprint">r
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_runExtensionCallbacks">runExtensionCallbacks()</a>
+    <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_runExtensionHandlers">runExtensionHandlers()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -468,9 +468,9 @@ the discovery process and add their data through the <code class="prettyprint">r
             -protected
                         -abstract                                "
 >
-    <h4 class="phpdocumentor-element__name" id="method_runExtensionCallbacks">
-        runExtensionCallbacks()
-        <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_runExtensionCallbacks" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_runExtensionHandlers">
+        runExtensionHandlers()
+        <a href="classes/Hyde-Foundation-Concerns-BaseFoundationCollection.html#method_runExtensionHandlers" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php"><a href="files/packages-framework-src-foundation-concerns-basefoundationcollection.html"><abbr title="packages/framework/src/Foundation/Concerns/BaseFoundationCollection.php">BaseFoundationCollection.php</abbr></a></abbr>
@@ -482,7 +482,7 @@ the discovery process and add their data through the <code class="prettyprint">r
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-    <span class="phpdocumentor-signature__abstract">abstract</span>                <span class="phpdocumentor-signature__name">runExtensionCallbacks</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+    <span class="phpdocumentor-signature__abstract">abstract</span>                <span class="phpdocumentor-signature__name">runExtensionHandlers</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 

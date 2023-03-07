@@ -158,7 +158,7 @@
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Framework\Testing\Feature\PostAuthorTest">PostAuthorTest</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Hyde\Framework\Testing\Unit\PostAuthorTest">PostAuthorTest</abbr></span>
                                         
                                              
                                     </dd>
@@ -225,7 +225,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html#method_all">all()</a>
     <span>
-                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
+                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html"><abbr title="\Hyde\Framework\Features\Blogging\Models\PostAuthor">PostAuthor</abbr></a>&gt;    </span>
 </dt>
 <dd></dd>
 
@@ -244,7 +244,7 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html#method_make">make()</a>
+    <a href="classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html#method_getOrCreate">getOrCreate()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
@@ -406,7 +406,7 @@ Should be a fully qualified link, meaning it starts with http:// or https://.</p
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$username</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$website</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p>If your input is in the form of an array, you may rather want to use the <code class="prettyprint">make</code> method.</p>
+        <section class="phpdocumentor-description"><p>If your input is in the form of an array, you may rather want to use the <code class="prettyprint">getOrCreate</code> method.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -455,7 +455,7 @@ Should be a fully qualified link, meaning it starts with http:// or https://.</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/PostAuthor.php"><a href="files/packages-framework-src-framework-features-blogging-models-postauthor.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/PostAuthor.php">PostAuthor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -488,22 +488,21 @@ Should be a fully qualified link, meaning it starts with http:// or https://.</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/PostAuthor.php"><a href="files/packages-framework-src-framework-features-blogging-models-postauthor.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/PostAuthor.php">PostAuthor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">all</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">all</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html"><abbr title="\Hyde\Framework\Features\Blogging\Models\PostAuthor">PostAuthor</abbr></a>&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, <a href="classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html"><abbr title="\Hyde\Framework\Features\Blogging\Models\PostAuthor">PostAuthor</abbr></a>&gt;</span>
             &mdash;
         
     
@@ -565,7 +564,7 @@ Should be a fully qualified link, meaning it starts with http:// or https://.</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/PostAuthor.php"><a href="files/packages-framework-src-framework-features-blogging-models-postauthor.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/PostAuthor.php">PostAuthor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -591,9 +590,9 @@ Should be a fully qualified link, meaning it starts with http:// or https://.</p
             -public
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_make">
-        make()
-        <a href="classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html#method_make" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getOrCreate">
+        getOrCreate()
+        <a href="classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html#method_getOrCreate" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/PostAuthor.php"><a href="files/packages-framework-src-framework-features-blogging-models-postauthor.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/PostAuthor.php">PostAuthor.php</abbr></a></abbr>
@@ -606,7 +605,7 @@ Should be a fully qualified link, meaning it starts with http:// or https://.</p
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">make</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getOrCreate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -642,7 +641,7 @@ Should be a fully qualified link, meaning it starts with http:// or https://.</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Features/Blogging/Models/PostAuthor.php"><a href="files/packages-framework-src-framework-features-blogging-models-postauthor.html"><abbr title="packages/framework/src/Framework/Features/Blogging/Models/PostAuthor.php">PostAuthor.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
