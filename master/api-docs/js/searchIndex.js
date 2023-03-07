@@ -1573,7 +1573,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser",
             "name": "BladeMatterParser",
-            "summary": "Parse\u0020the\u0020front\u0020matter\u0020in\u0020a\u0020Blade\u0020file.",
+            "summary": "",
             "url": "classes/Hyde-Framework-Actions-BladeMatterParser.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\BladeMatterParser\u003A\u003AparseFile\u0028\u0029",
