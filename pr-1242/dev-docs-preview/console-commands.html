@@ -108,6 +108,88 @@
 <li>
 <a href="#available-commands">Available Commands</a>
 </li>
+<li>
+<a href="#build-the-static-site">Build the static site</a>
+<ul>
+<li>
+<a href="#options">Options</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#run-the-static-site-builder-for-a-single-file">Run the static site builder for a single file</a>
+<ul>
+<li>
+<a href="#arguments">Arguments</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#start-the-realtime-compiler-server">Start the realtime compiler server.</a>
+<ul>
+<li>
+<a href="#options-1">Options</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#run-a-series-of-tests-to-validate-your-setup-and-help-you-optimize-your-site">Run a series of tests to validate your setup and help you optimize your site.</a>
+</li>
+<li>
+<a href="#generate-the-rss-feed">Generate the RSS feed</a>
+</li>
+<li>
+<a href="#generate-the-docssearchjson">Generate the docs/search.json</a>
+</li>
+<li>
+<a href="#generate-the-sitemapxml">Generate the sitemap.xml</a>
+</li>
+<li>
+<a href="#scaffold-a-new-markdown-blade-or-documentation-page-file">Scaffold a new Markdown, Blade, or documentation page file</a>
+<ul>
+<li>
+<a href="#arguments--options">Arguments &amp; Options</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#scaffold-a-new-markdown-blog-post-file">Scaffold a new Markdown blog post file</a>
+<ul>
+<li>
+<a href="#arguments--options-1">Arguments &amp; Options</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#publish-the-default-configuration-files">Publish the default configuration files</a>
+</li>
+<li>
+<a href="#publish-one-of-the-default-homepages-to-indexbladephp">Publish one of the default homepages to index.blade.php.</a>
+<ul>
+<li>
+<a href="#arguments--options-2">Arguments &amp; Options</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#publish-the-hyde-components-for-customization-note-that-existing-files-will-be-overwritten">Publish the hyde components for customization. Note that existing files will be overwritten.</a>
+<ul>
+<li>
+<a href="#arguments-1">Arguments</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#display-all-registered-routes">Display all registered routes.</a>
+</li>
+<li>
+<a href="#publish-any-publishable-assets-from-vendor-packages">Publish any publishable assets from vendor packages</a>
+<ul>
+<li>
+<a href="#options-2">Options</a>
+</li>
+</ul>
+</li>
 </ul>
 
             </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
@@ -344,134 +426,256 @@ If an argument or option value has a space in it, it needs to be wrapped in quot
 </tr>
 </tbody>
 </table>
-<hr />
 <h2>Build the static site<a id="build-the-static-site" href="#build-the-static-site" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p><a name="build" style="display: inline-block; position: absolute; margin-top: -5rem;"></a></p>
+<pre><code class="language-bash">php hyde build [--run-dev] [--run-prod] [--run-prettier] [--pretty-urls] [--no-api]
+</code></pre>
 <p>Build the static site</p>
-<pre><code class="language-bash">// torchlight! {&quot;lineNumbers&quot;: false}
-php hyde build [--run-dev] [--run-prod] [--run-prettier] [--pretty-urls] [--no-api]
-</code></pre>
-<p><strong>Supports the following options:</strong></p>
-<pre><code>--run-dev       Run the NPM dev script after build
---run-prod      Run the NPM prod script after build
---run-prettier  Format the output using NPM Prettier
---pretty-urls   Should links in output use pretty URLs?
---no-api        Disable API calls, for example, Torchlight
-</code></pre>
-
+<h3>Options<a id="options" href="#options" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--run-dev</code></td>
+<td>Run the NPM dev script after build</td>
+</tr>
+<tr>
+<td><code>--run-prod</code></td>
+<td>Run the NPM prod script after build</td>
+</tr>
+<tr>
+<td><code>--run-prettier</code></td>
+<td>Format the output using NPM Prettier</td>
+</tr>
+<tr>
+<td><code>--pretty-urls</code></td>
+<td>Should links in output use pretty URLs?</td>
+</tr>
+<tr>
+<td><code>--no-api</code></td>
+<td>Disable API calls, for example, Torchlight</td>
+</tr>
+</tbody>
+</table>
 <h2>Run the static site builder for a single file<a id="run-the-static-site-builder-for-a-single-file" href="#run-the-static-site-builder-for-a-single-file" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p><a name="rebuild" style="display: inline-block; position: absolute; margin-top: -5rem;"></a></p>
+<pre><code class="language-bash">php hyde rebuild &lt;path&gt;
+</code></pre>
 <p>Run the static site builder for a single file</p>
-<pre><code class="language-bash">// torchlight! {&quot;lineNumbers&quot;: false}
-php hyde rebuild &lt;path&gt;
-</code></pre>
-
-<h2>Start the realtime compiler server<a id="start-the-realtime-compiler-server" href="#start-the-realtime-compiler-server" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h3>Arguments<a id="arguments" href="#arguments" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>path</code></td>
+<td>The relative file path (example: _posts/hello-world.md) \n - Is required: yes</td>
+</tr>
+</tbody>
+</table>
+<h2>Start the realtime compiler server.<a id="start-the-realtime-compiler-server" href="#start-the-realtime-compiler-server" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p><a name="serve" style="display: inline-block; position: absolute; margin-top: -5rem;"></a></p>
+<pre><code class="language-bash">php hyde serve [--host [HOST]] [--port [PORT]]
+</code></pre>
 <p>Start the realtime compiler server.</p>
-<pre><code class="language-bash">// torchlight! {&quot;lineNumbers&quot;: false}
-php hyde serve [--host [HOST]] [--port [PORT]]
-</code></pre>
-<p><strong>Supports the following options:</strong></p>
-<pre><code>--host  [default: &quot;localhost&quot;]
---port  [default: 8080]
-</code></pre>
-
-<h2>Run a series of tests to validate your setup and help you optimize your site<a id="run-a-series-of-tests-to-validate-your-setup-and-help-you-optimize-your-site" href="#run-a-series-of-tests-to-validate-your-setup-and-help-you-optimize-your-site" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h3>Options<a id="options-1" href="#options-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--host=</code></td>
+<td>[default: &quot;localhost&quot;]</td>
+</tr>
+<tr>
+<td><code>--port=</code></td>
+<td>[default: 8080]</td>
+</tr>
+</tbody>
+</table>
+<h2>Run a series of tests to validate your setup and help you optimize your site.<a id="run-a-series-of-tests-to-validate-your-setup-and-help-you-optimize-your-site" href="#run-a-series-of-tests-to-validate-your-setup-and-help-you-optimize-your-site" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p><a name="validate" style="display: inline-block; position: absolute; margin-top: -5rem;"></a></p>
-<p>Run a series of tests to validate your setup and help you optimize your site.</p>
-<pre><code class="language-bash">// torchlight! {&quot;lineNumbers&quot;: false}
-php hyde validate
+<pre><code class="language-bash">php hyde validate
 </code></pre>
-
+<p>Run a series of tests to validate your setup and help you optimize your site.</p>
 <h2>Generate the RSS feed<a id="generate-the-rss-feed" href="#generate-the-rss-feed" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p><a name="build-rss" style="display: inline-block; position: absolute; margin-top: -5rem;"></a></p>
+<pre><code class="language-bash">php hyde build:rss
+</code></pre>
 <p>Generate the RSS feed</p>
-<pre><code class="language-bash">// torchlight! {&quot;lineNumbers&quot;: false}
-php hyde build:rss
-</code></pre>
-
-<h2>Generate the docs/search<a id="generate-the-docssearch" href="#generate-the-docssearch" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Generate the docs/search.json<a id="generate-the-docssearchjson" href="#generate-the-docssearchjson" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p><a name="build-search" style="display: inline-block; position: absolute; margin-top: -5rem;"></a></p>
+<pre><code class="language-bash">php hyde build:search
+</code></pre>
 <p>Generate the docs/search.json</p>
-<pre><code class="language-bash">// torchlight! {&quot;lineNumbers&quot;: false}
-php hyde build:search
-</code></pre>
-
-<h2>Generate the sitemap<a id="generate-the-sitemap" href="#generate-the-sitemap" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Generate the sitemap.xml<a id="generate-the-sitemapxml" href="#generate-the-sitemapxml" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p><a name="build-sitemap" style="display: inline-block; position: absolute; margin-top: -5rem;"></a></p>
-<p>Generate the sitemap.xml</p>
-<pre><code class="language-bash">// torchlight! {&quot;lineNumbers&quot;: false}
-php hyde build:sitemap
+<pre><code class="language-bash">php hyde build:sitemap
 </code></pre>
-
+<p>Generate the sitemap.xml</p>
 <h2>Scaffold a new Markdown, Blade, or documentation page file<a id="scaffold-a-new-markdown-blade-or-documentation-page-file" href="#scaffold-a-new-markdown-blade-or-documentation-page-file" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p><a name="make-page" style="display: inline-block; position: absolute; margin-top: -5rem;"></a></p>
+<pre><code class="language-bash">php hyde make:page [--type [TYPE]] [--blade] [--docs] [--force] [--] [&lt;title&gt;]
+</code></pre>
 <p>Scaffold a new Markdown, Blade, or documentation page file</p>
-<pre><code class="language-bash">// torchlight! {&quot;lineNumbers&quot;: false}
-php hyde make:page [--type [TYPE]] [--blade] [--docs] [--force] [--] [&lt;title&gt;]
-</code></pre>
-<p><strong>Supports the following options:</strong></p>
-<pre><code>--type   The type of page to create (markdown, blade, or docs)
---blade  Create a Blade page
---docs   Create a Documentation page
---force  Overwrite any existing files
-</code></pre>
-
+<h3>Arguments &amp; Options<a id="arguments--options" href="#arguments--options" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>The name of the page file to create. Will be used to generate the slug</td>
+</tr>
+<tr>
+<td><code>--type=markdown</code></td>
+<td>The type of page to create (markdown, blade, or docs)</td>
+</tr>
+<tr>
+<td><code>--blade</code></td>
+<td>Create a Blade page</td>
+</tr>
+<tr>
+<td><code>--docs</code></td>
+<td>Create a Documentation page</td>
+</tr>
+<tr>
+<td><code>--force</code></td>
+<td>Overwrite any existing files</td>
+</tr>
+</tbody>
+</table>
 <h2>Scaffold a new Markdown blog post file<a id="scaffold-a-new-markdown-blog-post-file" href="#scaffold-a-new-markdown-blog-post-file" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p><a name="make-post" style="display: inline-block; position: absolute; margin-top: -5rem;"></a></p>
+<pre><code class="language-bash">php hyde make:post [--force] [--] [&lt;title&gt;]
+</code></pre>
 <p>Scaffold a new Markdown blog post file</p>
-<pre><code class="language-bash">// torchlight! {&quot;lineNumbers&quot;: false}
-php hyde make:post [--force] [--] [&lt;title&gt;]
-</code></pre>
-<p><strong>Supports the following options:</strong></p>
-<pre><code>--force  Should the generated file overwrite existing posts with the same filename?
-</code></pre>
-
+<h3>Arguments &amp; Options<a id="arguments--options-1" href="#arguments--options-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>The title for the Post. Will also be used to generate the filename</td>
+</tr>
+<tr>
+<td><code>--force</code></td>
+<td>Should the generated file overwrite existing posts with the same filename?</td>
+</tr>
+</tbody>
+</table>
 <h2>Publish the default configuration files<a id="publish-the-default-configuration-files" href="#publish-the-default-configuration-files" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p><a name="publish-configs" style="display: inline-block; position: absolute; margin-top: -5rem;"></a></p>
+<pre><code class="language-bash">php hyde publish:configs
+</code></pre>
 <p>Publish the default configuration files</p>
-<pre><code class="language-bash">// torchlight! {&quot;lineNumbers&quot;: false}
-php hyde publish:configs
-</code></pre>
-
-<h2>Publish one of the default homepages to index<a id="publish-one-of-the-default-homepages-to-index" href="#publish-one-of-the-default-homepages-to-index" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Publish one of the default homepages to index.blade.php.<a id="publish-one-of-the-default-homepages-to-indexbladephp" href="#publish-one-of-the-default-homepages-to-indexbladephp" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p><a name="publish-homepage" style="display: inline-block; position: absolute; margin-top: -5rem;"></a></p>
+<pre><code class="language-bash">php hyde publish:homepage [--force] [--] [&lt;homepage&gt;]
+</code></pre>
 <p>Publish one of the default homepages to index.blade.php.</p>
-<pre><code class="language-bash">// torchlight! {&quot;lineNumbers&quot;: false}
-php hyde publish:homepage [--force] [--] [&lt;homepage&gt;]
-</code></pre>
-<p><strong>Supports the following options:</strong></p>
-<pre><code>--force   Overwrite any existing files
-</code></pre>
-
-<h2>Publish the hyde components for customization<a id="publish-the-hyde-components-for-customization" href="#publish-the-hyde-components-for-customization" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h3>Arguments &amp; Options<a id="arguments--options-2" href="#arguments--options-2" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>homepage</code></td>
+<td>The name of the page to publish</td>
+</tr>
+<tr>
+<td><code>--force</code></td>
+<td>Overwrite any existing files</td>
+</tr>
+</tbody>
+</table>
+<h2>Publish the hyde components for customization. Note that existing files will be overwritten.<a id="publish-the-hyde-components-for-customization-note-that-existing-files-will-be-overwritten" href="#publish-the-hyde-components-for-customization-note-that-existing-files-will-be-overwritten" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p><a name="publish-views" style="display: inline-block; position: absolute; margin-top: -5rem;"></a></p>
+<pre><code class="language-bash">php hyde publish:views [&lt;category&gt;]
+</code></pre>
 <p>Publish the hyde components for customization. Note that existing files will be overwritten.</p>
-<pre><code class="language-bash">// torchlight! {&quot;lineNumbers&quot;: false}
-php hyde publish:views [&lt;category&gt;]
-</code></pre>
-
-<h2>Display all registered routes<a id="display-all-registered-routes" href="#display-all-registered-routes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h3>Arguments<a id="arguments-1" href="#arguments-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>category</code></td>
+<td>The category to publish</td>
+</tr>
+</tbody>
+</table>
+<h2>Display all registered routes.<a id="display-all-registered-routes" href="#display-all-registered-routes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p><a name="route-list" style="display: inline-block; position: absolute; margin-top: -5rem;"></a></p>
-<p>Display all registered routes.</p>
-<pre><code class="language-bash">// torchlight! {&quot;lineNumbers&quot;: false}
-php hyde route:list
+<pre><code class="language-bash">php hyde route:list
 </code></pre>
-
+<p>Display all registered routes.</p>
 <h2>Publish any publishable assets from vendor packages<a id="publish-any-publishable-assets-from-vendor-packages" href="#publish-any-publishable-assets-from-vendor-packages" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p><a name="vendor-publish" style="display: inline-block; position: absolute; margin-top: -5rem;"></a></p>
+<pre><code class="language-bash">php hyde vendor:publish [--existing] [--force] [--all] [--provider [PROVIDER]] [--tag [TAG]]
+</code></pre>
 <p>Publish any publishable assets from vendor packages</p>
-<pre><code class="language-bash">// torchlight! {&quot;lineNumbers&quot;: false}
-php hyde vendor:publish [--existing] [--force] [--all] [--provider [PROVIDER]] [--tag [TAG]]
-</code></pre>
-<p><strong>Supports the following options:</strong></p>
-<pre><code>--existing  Publish and overwrite only the files that have already been published
---force     Overwrite any existing files
---all       Publish assets for all service providers without prompt
---provider  The service provider that has assets you want to publish
---tag       One or many tags that have assets you want to publish
-</code></pre>
+<h3>Options<a id="options-2" href="#options-2" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--existing</code></td>
+<td>Publish and overwrite only the files that have already been published</td>
+</tr>
+<tr>
+<td><code>--force</code></td>
+<td>Overwrite any existing files</td>
+</tr>
+<tr>
+<td><code>--all</code></td>
+<td>Publish assets for all service providers without prompt</td>
+</tr>
+<tr>
+<td><code>--provider=</code></td>
+<td>The service provider that has assets you want to publish</td>
+</tr>
+<tr>
+<td><code>--tag=</code></td>
+<td>One or many tags that have assets you want to publish \n- Is multiple: yes</td>
+</tr>
+</tbody>
+</table>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
@@ -570,7 +774,7 @@ php hyde vendor:publish [--existing] [--force] [--all] [--provider [PROVIDER]] [
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/80a06aecacc7f48c42125dbf1498f83c4dcb2553"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">80a06aecacc7f48c42125dbf1498f83c4dcb2553</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/b3b0f9a2c4104507b4fd1407cc0641d25b103eb0"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">b3b0f9a2c4104507b4fd1407cc0641d25b103eb0</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
