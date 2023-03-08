@@ -270,7 +270,7 @@ then by all means, please read on! This is also a great place to start if you wa
 <blockquote class="info"><p>For a high-level overview of these concepts, see the <a href="basic-architecture-concepts.html">Basic Architecture Concepts</a> page.</p></blockquote>
 <h2>Behind the magic<a id="behind-the-magic" href="#behind-the-magic" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Want to learn more about a particular feature? Click on the links below to visit the article.</p>
-<p>[Blade]: <ul>@foreach(glob(\Hyde\Hyde::path('docs/architecture-concepts/*.md')) as $file) <li> <a href="{{ basename($file, '.md') }}.html"> {{ \Hyde\Hyde::makeTitle(basename($file, '.md')) }} </a> </li> @endforeach</ul></p>
+<p>[Blade]: <ul>@foreach(glob(\Hyde\Hyde::path('docs/architecture-concepts/*.md')) as $file) <li> <a href="{{ basename($file, '.md') }}.html"> {{ Hyde::makeTitle(basename($file, '.md')) }} </a> </li> @endforeach</ul></p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
