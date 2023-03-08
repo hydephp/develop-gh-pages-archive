@@ -116,9 +116,6 @@
 <li>
 <a href="#scaffolding-files">Scaffolding files</a>
 </li>
-<li>
-<a href="#autodiscovery">Autodiscovery</a>
-</li>
 </ul>
 </li>
 <li>
@@ -142,7 +139,7 @@
             Console Commands
         </a>
     </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs-preview/basic-architecture-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            <a href="../dev-docs-preview/architecture-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Key HydePHP Concepts
         </a>
     </li>                                    </ul>
@@ -258,7 +255,7 @@
 </button>                                    </header>
                 <ul class="sidebar-group-items ml-4 px-2 mb-2" role="list"  x-show="groupOpen" >
                                             <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs-preview/architecture-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            <a href="../dev-docs-preview/advanced-architecture-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Introduction
         </a>
     </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
@@ -295,53 +292,39 @@
 composer create-project hyde/hyde --stability=dev
 </code></pre>
 <h3>Requirements<a id="requirements" href="#requirements" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<blockquote>
-<p>These requirements are for your local development environment.</p>
-</blockquote>
-<p>Hyde is based on <a href="https://laravel.com/docs/9.x/releases">Laravel 9</a>
-which requires a minimum PHP version of 8.0.
+<p>Hyde is based on <a href="https://laravel.com/docs/10.x/releases">Laravel 10</a>
+which requires a minimum PHP version of 8.1.
 You should also have <a href="https://getcomposer.org/">Composer</a> installed.</p>
 <p>To use some features like <a href="managing-assets">compiling your own assets</a>
 you also need NodeJS and NPM.</p>
 <h2>Using the Hyde CLI<a id="using-the-hyde-cli" href="#using-the-hyde-cli" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>The main way to interact with Hyde is through HydeCLI.</p>
-<p>If you are familiar with Laravel Artisan you will feel right at home.</p>
+<p>The main way to interact with Hyde is through the <a href="console-commands">HydeCLI</a>.</p>
+<p>If you are familiar with Laravel Artisan you will feel right at home, as that is what powers the HydeCLI.</p>
 <p>Learn more about the HydeCLI in the <a href="console-commands">console commands</a> documentation.</p>
 <h2>Starting a development server<a id="starting-a-development-server" href="#starting-a-development-server" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>To make previewing your site a breeze you can use the real-time compiler
-which builds your pages on the fly. Start it using the HydeCLI:</p>
+<p>To make previewing your site a breeze you can use the realtime compiler which builds your pages on the fly.</p>
 <pre><code class="language-bash">php hyde serve
 </code></pre>
+<p>Simply run the serve command, and you will be able to preview your site at <a href="http://localhost:8000">http://localhost:8000</a>.</p>
 <h2>Creating content<a id="creating-content" href="#creating-content" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <h3>Directory structure<a id="directory-structure" href="#directory-structure" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Creating content with Hyde is easy. Simply place Markdown files in one of the source directories, which are as follows:</p>
-<pre><code>// torchlight! {&quot;lineNumbers&quot;: false}
-├── _docs  // For documentation pages              
-├── _posts // For blog posts
-└── _pages // For static Markdown and Blade pages
-</code></pre>
-<blockquote>
-<p>There are a few more directories that you should know about. Please see the
-<a href="architecture-concepts#directory-structure">directory structure</a> section.</p>
-</blockquote>
+<p>Creating content with Hyde is easy! Simply place source files in one of the source directories,
+and Hyde will automatically discover, parse, and compile them to static HTML.
+The directory and file extension of a source file will determine how HydePHP parses and compiles it.
+Please see the <a href="architecture-concepts#directory-structure">directory structure</a> section for more information.</p>
 <h3>Scaffolding files<a id="scaffolding-files" href="#scaffolding-files" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>You can scaffold blog post files using the <code>php hyde make:post</code> command with automatically creates the front matter based on your input selections.</p>
 <p>You can also scaffold pages with the <code>php hyde make:page</code> command.</p>
-<pre><code class="language-bash">php hyde make:page &quot;Page Title&quot; # Markdown is the default page type
-php hyde make:page --type=blade # Creates a file extending the default layout
-php hyde make:page --type=docs  # Quickly creates a documentation page
+<pre><code class="language-bash">php hyde make:post
+php hyde make:page
 </code></pre>
-<h3>Autodiscovery<a id="autodiscovery" href="#autodiscovery" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>When building the site, Hyde will your source directories for files and
-compile them into static HTML using the appropriate layout depending
-on what kind of page it is. You don't have to worry about routing
-as Hyde takes care of that, including creating navigation menus!</p>
 <h2>Compiling to static HTML<a id="compiling-to-static-html" href="#compiling-to-static-html" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Now that you have some amazing content, you'll want to compile your site into static HTML.</p>
-<p>This is as easy as executing the <code>build</code> command:</p>
+<p>This is as easy as executing the <code>build</code> command, after which your site is stored in the <code>_site</code> directory.</p>
 <pre><code class="language-bash">php hyde build
 </code></pre>
-<p><strong>Your site is then stored in the <code>_site</code> directory.</strong></p>
+<p>When building the site, Hyde will scan your source directories for files and compile them into static HTML using the appropriate layout depending
+on what kind of page it is. You don't have to worry about routing as Hyde takes care of everything, including creating navigation menus!</p>
 <h3>Managing assets<a id="managing-assets" href="#managing-assets" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Hyde comes bundled with a precompiled and minified <code>app.css</code> containing all the Tailwind you need for the default views meaning that you don't even need to use NPM. However, Hyde is already configured to use Laravel Mix to compile your assets if you feel like there's a need to. See more on the <a href="managing-assets">Managing Assets</a> page.</p>
 <h3>Deploying your site<a id="deploying-your-site" href="#deploying-your-site" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
@@ -460,7 +443,7 @@ using a CI that automatically builds and deploys this site.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/29b0755f236faf6f6bd004c6e8f90002418b6c22"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">29b0755f236faf6f6bd004c6e8f90002418b6c22</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/c2db9a841ba575e528e62541e42b6a45e233113d"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">c2db9a841ba575e528e62541e42b6a45e233113d</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>

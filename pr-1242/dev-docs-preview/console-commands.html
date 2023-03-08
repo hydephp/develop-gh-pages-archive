@@ -98,14 +98,16 @@
                     <span class="sr-only">Table of contents</span>
             <ul class="table-of-contents">
 <li>
-<a href="#hyde-commands">Hyde Commands</a>
+<a href="#introduction">Introduction</a>
 <ul>
-<li>
-<a href="#documentation-syntax">Documentation syntax</a>
-</li>
 <li>
 <a href="#got-stuck-the-cli-can-help">Got stuck? The CLI can help.</a>
 </li>
+</ul>
+</li>
+<li>
+<a href="#available-commands">Available Commands</a>
+<ul>
 <li>
 <a href="#initialize-a-new-hyde-project">Initialize a new Hyde project</a>
 </li>
@@ -149,7 +151,7 @@
 </ul>
 
             </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs-preview/basic-architecture-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            <a href="../dev-docs-preview/architecture-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Key HydePHP Concepts
         </a>
     </li>                                    </ul>
@@ -265,7 +267,7 @@
 </button>                                    </header>
                 <ul class="sidebar-group-items ml-4 px-2 mb-2" role="list"  x-show="groupOpen" >
                                             <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs-preview/architecture-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            <a href="../dev-docs-preview/advanced-architecture-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Introduction
         </a>
     </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
@@ -298,18 +300,9 @@
     <section id="document-main-content" itemprop="articleBody">
         <p>The primary way of interacting with Hyde is through the command line using the HydeCLI.</p>
 <p>If you have ever used the Artisan Console in Laravel you will feel right at home,
-the Hyde CLI is based on Artisan after all!</p>
-<h2>Hyde Commands<a id="hyde-commands" href="#hyde-commands" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+the HydeCLI is based on Artisan after all!</p>
+<h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>To use the HydeCLI, run <code>php hyde</code> from your project directory followed by a command.</p>
-<h3>Documentation syntax<a id="documentation-syntax" href="#documentation-syntax" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Wondering what the different formatting in examples means? Here's a quick guide:</p>
-<pre><code class="language-bash">&lt;argument&gt; # Comes after the command name.
-[&lt;argument&gt;] # Optional argument. 
-
---option # Sometimes referred to as a flag.
---option=&lt;value&gt; # Option which takes an value.
-[--option] # Optional option.
-</code></pre>
 <p>All HydeCLI commands start with <code>php hyde</code>. Anything in <code>[brackets]</code> is optional.
 If an argument or option value has a space in it, it needs to be wrapped in quotes.</p>
 <h3>Got stuck? The CLI can help.<a id="got-stuck-the-cli-can-help" href="#got-stuck-the-cli-can-help" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
@@ -319,6 +312,78 @@ If an argument or option value has a space in it, it needs to be wrapped in quot
 <p>You can also always add <code>--help</code> to a command to show detailed usage information.</p>
 <pre><code class="language-bash">php hyde &lt;command&gt; --help
 </code></pre>
+<h2>Available Commands<a id="available-commands" href="#available-commands" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Here is a quick reference of all the available commands. You can also run <code>php hyde list</code> to see this list.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#build"><code>build</code></a></td>
+<td>Build the static site</td>
+</tr>
+<tr>
+<td><a href="#serve"><code>serve</code></a></td>
+<td>Start the realtime compiler server.</td>
+</tr>
+<tr>
+<td><a href="#rebuild"><code>rebuild</code></a></td>
+<td>Run the static site builder for a single file</td>
+</tr>
+<tr>
+<td><a href="#build-rss"><code>build:rss</code></a></td>
+<td>Generate the RSS feed</td>
+</tr>
+<tr>
+<td><a href="#build-search"><code>build:search</code></a></td>
+<td>Generate the docs/search.json</td>
+</tr>
+<tr>
+<td><a href="#build-sitemap"><code>build:sitemap</code></a></td>
+<td>Generate the sitemap.xml</td>
+</tr>
+<tr>
+<td><a href="#make-page"><code>make:page</code></a></td>
+<td>Scaffold a new Markdown, Blade, or documentation page file</td>
+</tr>
+<tr>
+<td><a href="#make-post"><code>make:post</code></a></td>
+<td>Scaffold a new Markdown blog post file</td>
+</tr>
+<tr>
+<td><a href="#publish-configs"><code>publish:configs</code></a></td>
+<td>Publish the default configuration files</td>
+</tr>
+<tr>
+<td><a href="#publish-homepage"><code>publish:homepage</code></a></td>
+<td>Publish one of the default homepages to index.blade.php.</td>
+</tr>
+<tr>
+<td><a href="#publish-views"><code>publish:views</code></a></td>
+<td>Publish the hyde components for customization. Note that existing files will be overwritten.</td>
+</tr>
+<tr>
+<td><a href="#vendor-publish"><code>vendor:publish</code></a></td>
+<td>Publish any publishable assets from vendor packages</td>
+</tr>
+<tr>
+<td><a href="#route-list"><code>route:list</code></a></td>
+<td>Display all registered routes.</td>
+</tr>
+<tr>
+<td><a href="#validate"><code>validate</code></a></td>
+<td>Run a series of tests to validate your setup and help you optimize your site.</td>
+</tr>
+<tr>
+<td><a href="#list"><code>list</code></a></td>
+<td>List all available commands.</td>
+</tr>
+</tbody>
+</table>
 <h3>Initialize a new Hyde project<a id="initialize-a-new-hyde-project" href="#initialize-a-new-hyde-project" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <pre><code class="language-bash">php hyde install         
 </code></pre>
@@ -568,7 +633,7 @@ You should be sure to have backups, or version control such as Git, before runni
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/29b0755f236faf6f6bd004c6e8f90002418b6c22"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">29b0755f236faf6f6bd004c6e8f90002418b6c22</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/c2db9a841ba575e528e62541e42b6a45e233113d"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">c2db9a841ba575e528e62541e42b6a45e233113d</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
