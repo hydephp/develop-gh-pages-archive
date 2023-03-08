@@ -315,14 +315,16 @@
     </header>
     <section id="document-main-content" itemprop="articleBody">
         <h2>Introduction to Hyde<a id="introduction-to-hyde" href="#introduction-to-hyde" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>HydePHP contains a few &quot;magic&quot; features so that you can focus on your content. It's encouraged that you read this page to get a high-level overview of what's going on behind the scenes.</p>
+<p>HydePHP contains a few &quot;magic&quot; features so that you can focus on your content.
+It's encouraged that you read this page to get a high-level overview of what's going on behind the scenes.</p>
 <h2>The HydeCLI<a id="the-hydecli" href="#the-hydecli" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>When you are not writing Markdown and Blade, most of your interactions with Hyde will be through the
-Hyde Command Line Interface (CLI).
-Since the CLI is based on the Laravel Artisan Console, so you may actually already be familiar with it.</p>
-<p>You should take a look at <a href="console-commands">the Console Commands page</a>
-to learn more and see the available commands and their usage.</p>
-<pre><code class="language-bash">php hyde &lt;command&gt; [--help]
+<p>When you are not writing Markdown and Blade, most of your interactions with Hyde will be through the command line
+using the <strong>HydeCLI</strong>, which is based on the Laravel Artisan Console that you may already be familiar with.</p>
+<p>If you want to learn about the available commands and how to use them, you can visit the <a href="console-commands">Console Commands</a> page,
+or you can run any of the built-in help commands to get a list of available commands and their descriptions.</p>
+<pre><code class="language-bash">php hyde list
+php hyde help &lt;command&gt;
+php hyde &lt;command&gt; [--help]
 </code></pre>
 <h2>Directory structure<a id="directory-structure" href="#directory-structure" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>To take full advantage of the framework, it may first be good to familiarize ourselves with the directory structure.</p>
@@ -568,7 +570,7 @@ Routes::get('docs/readme')
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/f1b7c134c72b759b9cf711aca84e10a18276d14e"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">f1b7c134c72b759b9cf711aca84e10a18276d14e</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/3a9d6e9cce22ff3646efad54a70ab05724bacb00"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">3a9d6e9cce22ff3646efad54a70ab05724bacb00</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
