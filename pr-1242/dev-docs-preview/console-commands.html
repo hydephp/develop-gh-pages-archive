@@ -347,9 +347,14 @@ the HydeCLI is based on Artisan after all!</p>
 <p>To use the HydeCLI, run <code>php hyde</code> from your project directory followed by a command.</p>
 <p>All HydeCLI commands start with <code>php hyde</code>. Anything in <code>[brackets]</code> is optional.
 If an argument or option value has a space in it, it needs to be wrapped in quotes.</p>
+<p>The HydeCLI exists at the root of your application as the <code>hyde</code> script and provides a number of helpful commands that can
+assist you while you build your site. To view a list of all available Hyde commands, you may use the list command:</p>
+<pre><code class="language-bash">php hyde list
+</code></pre>
 <h3>Got stuck? The CLI can help.<a id="got-stuck-the-cli-can-help" href="#got-stuck-the-cli-can-help" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>You can always run the base command <code>php hyde</code>, or <code>php hyde list</code>, to show the list of commands.</p>
-<pre><code class="language-bash">php hyde # or `php hyde list`
+<p>Every command also includes a &quot;help&quot; screen which displays and describes the command's available arguments and options.
+To view a help screen, precede the name of the command with <code>help</code>:</p>
+<pre><code class="language-bash">php hyde help &lt;command&gt;
 </code></pre>
 <p>You can also always add <code>--help</code> to a command to show detailed usage information.</p>
 <pre><code class="language-bash">php hyde &lt;command&gt; --help
@@ -421,7 +426,7 @@ If an argument or option value has a space in it, it needs to be wrapped in quot
 <td>Run a series of tests to validate your setup and help you optimize your site.</td>
 </tr>
 <tr>
-<td><a href="#list"><code>list</code></a></td>
+<td><a href="#available-commands"><code>list</code></a></td>
 <td>List all available commands.</td>
 </tr>
 </tbody>
@@ -774,7 +779,7 @@ If an argument or option value has a space in it, it needs to be wrapped in quot
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/f31f7dc165a16bad46dfbdbd044abcd3921220cd"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">f31f7dc165a16bad46dfbdbd044abcd3921220cd</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/23b39906f0c8b2c10e71bed6588a5c2398dd8f65"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">23b39906f0c8b2c10e71bed6588a5c2398dd8f65</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
