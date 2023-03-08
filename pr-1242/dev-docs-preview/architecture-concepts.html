@@ -327,7 +327,7 @@ to learn more and see the available commands and their usage.</p>
 <h2>Directory structure<a id="directory-structure" href="#directory-structure" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>To take full advantage of the framework, it may first be good to familiarize ourselves with the directory structure.</p>
 <pre><code>// torchlight! {&quot;lineNumbers&quot;: false}
-├── _docs  // For documentation pages              
+├── _docs  // For documentation pages
 ├── _posts // For blog posts
 ├── _pages // For static Markdown and Blade pages
 ├── _media // Store static assets to be copied to the build directory
@@ -336,10 +336,6 @@ to learn more and see the available commands and their usage.</p>
 ├── resources/assets // Location for Laravel Mix source files (optional)
 └── resources/views/components // Location for Blade components (optional)
 </code></pre>
-<blockquote>
-<p>Note that the <code>_site</code> directory is emptied every time you run the <code>hyde build</code> command.
-It's intended that you keep the directory out of your VCS, for example by adding it to your .gitignore file.</p>
-</blockquote>
 <h2>File Autodiscovery<a id="file-autodiscovery" href="#file-autodiscovery" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Content files, meaning source Markdown and Blade files, are automatically
 discovered by Hyde and compiled to HTML when building the site.
@@ -434,7 +430,7 @@ Lorem ipsum dolor sit amet, etc.
 <p>Each route in your site is represented by a Route object. It's very easy to get a Route object instance from the Router's index. There are a few ways to do this, but most commonly you'll use the Routes facade's <code>get()</code> method where you provide a route key, and it will return the Route object. The route key is generally <code>&lt;output-directory/slug&gt;</code>. Here are some examples:</p>
 <pre><code class="language-php">// Source file: _pages/index.md/index.blade.php
 // Compiled file: _site/index.html
-Routes::get('index') 
+Routes::get('index')
 
 // Source file: _posts/my-post.md
 // Compiled file: _site/posts/my-post.html
@@ -572,7 +568,7 @@ Routes::get('docs/readme')
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e433f247caf8421934f75a93e1fb2dc2a09f6dec"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e433f247caf8421934f75a93e1fb2dc2a09f6dec</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/6f4e7538465cf85a20184f8e9b308d8a80115868"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">6f4e7538465cf85a20184f8e9b308d8a80115868</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>

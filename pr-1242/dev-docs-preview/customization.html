@@ -473,7 +473,7 @@ and the rest of the data will be pulled from a matching entry.</p>
     'readme', // This is the first entry, so it gets the priority 0
     'installation', // This gets priority 1
     'getting-started', // And this gets priority 2
-    // Any other pages not listed will get priority 999 
+    // Any other pages not listed will get priority 999
 ]
 </code></pre>
 <h4>Reordering Navigation Menu Items<a id="reordering-navigation-menu-items" href="#reordering-navigation-menu-items" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
@@ -545,16 +545,16 @@ navigation:
 the Torchlight extension is enabled automatically when needed.</p>
 <p>You can add extra CommonMark extensions, or change the default ones, in the <code>config/markdown.php</code> file.</p>
 <pre><code class="language-php">'extensions' =&gt; [
-	\League\CommonMark\Extension\GithubFlavoredMarkdownExtension::class,
-	\League\CommonMark\Extension\Attributes\AttributesExtension::class,
-	\League\CommonMark\Extension\DisallowedRawHtml\DisallowedRawHtmlExtension::class,
+    \League\CommonMark\Extension\GithubFlavoredMarkdownExtension::class,
+    \League\CommonMark\Extension\Attributes\AttributesExtension::class,
+    \League\CommonMark\Extension\DisallowedRawHtml\DisallowedRawHtmlExtension::class,
 ],
 </code></pre>
 <p>In the same file you can also change the config to be passed to the CommonMark environment.</p>
 <pre><code class="language-php">'config' =&gt; [
-	'disallowed_raw_html' =&gt; [
-		'disallowed_tags' =&gt; [],
-	],
+    'disallowed_raw_html' =&gt; [
+        'disallowed_tags' =&gt; [],
+    ],
 ],
 </code></pre>
 <h2>YAML Configuration<a id="yaml-configuration" href="#yaml-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
@@ -569,6 +569,7 @@ generate_sitemap: true
 generate_rss_feed: true
 rss_filename: feed.xml
 # rss_description:
+
 language: en
 output_directory: _site
 </code></pre>
@@ -670,7 +671,7 @@ output_directory: _site
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e433f247caf8421934f75a93e1fb2dc2a09f6dec"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e433f247caf8421934f75a93e1fb2dc2a09f6dec</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/6f4e7538465cf85a20184f8e9b308d8a80115868"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">6f4e7538465cf85a20184f8e9b308d8a80115868</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
