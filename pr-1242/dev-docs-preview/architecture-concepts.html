@@ -111,7 +111,18 @@
 <a href="#directory-structure">Directory structure</a>
 </li>
 <li>
+<a href="#page-types">Page Types</a>
+<ul>
+<li>
+<a href="#overview-of-a-page-class">Overview of a page class</a>
+</li>
+</ul>
+</li>
+<li>
 <a href="#file-autodiscovery">File Autodiscovery</a>
+</li>
+<li>
+<a href="#importance-of-paths">Importance of paths</a>
 </li>
 <li>
 <a href="#convention-over-configuration">Convention over Configuration</a>
@@ -129,17 +140,6 @@
 </li>
 <li>
 <a href="#automatic-routing">Automatic Routing</a>
-<ul>
-<li>
-<a href="#high-level-overview">High-level overview</a>
-</li>
-<li>
-<a href="#accessing-routes">Accessing routes</a>
-</li>
-<li>
-<a href="#using-the-x-link-component">Using the x-link component</a>
-</li>
-</ul>
 </li>
 <li>
 <a href="#nested-directories">Nested directories</a>
@@ -228,7 +228,7 @@
 <a href="#autodiscovery">Autodiscovery</a>
 </li>
 <li>
-<a href="#page-types">Page Types</a>
+<a href="#page-types-1">Page Types</a>
 </li>
 <li>
 <a href="#page-identifiers">Page Identifiers</a>
@@ -445,6 +445,26 @@ php hyde &lt;command&gt; [--help]
 </tr>
 </tbody>
 </table>
+<h2>Page Types<a id="page-types" href="#page-types" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>All pages in HydePHP are internally represented by a page object. The object instance contains all the data HydePHP has parsed and discovered.</p>
+<p>The page classes are very important, as they act as a blueprints, defining information for the framework to parse a file and generate relevant data.
+HydePHP ships with a few different page types. Each page type is defined as its own page class; all of which extend the base HydePage class.</p>
+<h3>Overview of a page class<a id="overview-of-a-page-class" href="#overview-of-a-page-class" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>As an example of what they look like, here is a simplified version of the MarkdownPost class.</p>
+<p>The static properties define the blueprint for the entire page type, and the instance properties are the actual data HydePHP has parsed or generated from the source file.</p>
+<pre><code class="language-php">class MarkdownPost extends BaseMarkdownPage
+{
+    public static string $sourceDirectory = '_posts'; // The directory where HydePHP will look for source files
+    public static string $outputDirectory = 'posts'; // The directory where HydePHP will output compiled files
+    public static string $fileExtension = '.md'; // The file extension HydePHP will look for
+
+    public FrontMatter $matter; // The parsed front matter data
+    public Markdown $markdown; // The parsed Markdown content
+
+    public readonly string $identifier; // The unique identifier for the page
+    public readonly string $routeKey; // The key used to access the page in the routing system
+}
+</code></pre>
 <h2>File Autodiscovery<a id="file-autodiscovery" href="#file-autodiscovery" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Content files, meaning source Markdown and Blade files, are automatically discovered by Hyde and compiled to HTML when
 building the site. This means that you don't need to worry about routing and controllers!</p>
@@ -486,6 +506,44 @@ building the site. This means that you don't need to worry about routing and con
 </tr>
 </tbody>
 </table>
+<h2>Importance of paths<a id="importance-of-paths" href="#importance-of-paths" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Since HydePHP automatically discovers and compiles content files, it is important to understand how HydePHP handles paths,
+as the file names and directories they are in will directly influence how the page will be compiled.</p>
+<p><strong>There are a few terms that are important to define before we explore their correlations.</strong></p>
+<ul>
+<li>
+<strong>Path:</strong> The full path to a file, including the file name, directory, and extension.</li>
+<li>
+<strong>Identifier:</strong> The unique identifier for a page. Unique only within the same page type.</li>
+<li>
+<strong>Route key:</strong> The key used to access the page in the routing system. Unique across all site pages.</li>
+</ul>
+<p><strong>Now that we have defined the terms, let's explore how they are related.</strong></p>
+<p>If you remember our <code>MarkdownPost</code> class from above, you'll recall that we have a few important properties:</p>
+<pre><code class="language-php">static $sourceDirectory = '_posts';
+static $outputDirectory = 'posts';
+static $fileExtension = '.md';
+$identifier; // For example: &quot;my-new-post&quot;
+$routeKey;  // For example: &quot;posts/my-new-post&quot;
+</code></pre>
+<p>You may also have noticed that we have no source path property here, this is because all other properties are enough
+to determine all needed data, without needing to store extra information.</p>
+<p>Now, we can finally look at some examples of how the data is related, by providing examples of how the properties are generated.</p>
+<pre><code class="language-php">// The source path relative to the project root:
+$path = '_posts/my-new-post.md';
+
+// Identifier from path:
+$identifier = String::between($path, $sourceDirectory, $fileExtension) = 'my-new-post';
+
+// Route key from identifier:
+$routeKey = $outputDirectory.'/'.$identifier = 'posts/my-new-post';
+
+// Output path from route key:
+$outputPath = $routeKey.'.html' = 'posts/my-new-post.html';
+
+// Source path from identifier:
+$sourcePath = $sourceDirectory.'/'.$identifier.$fileExtension = '_posts/my-new-post.md';
+</code></pre>
 <h2>Convention over Configuration<a id="convention-over-configuration" href="#convention-over-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Hyde favours the &quot;Convention over Configuration&quot; paradigm and thus comes preconfigured with sensible defaults.
 However, Hyde also strives to be modular and endlessly customizable hackable if you need it.
@@ -523,45 +581,17 @@ BladeMatter currently does not support multidimensional arrays or multi-line dir
 </code></pre>
 <p>It will then be available through the global <code>$page</code> variable, <code>$page-&gt;matter('title')</code>.</p>
 <h2>Automatic Routing<a id="automatic-routing" href="#automatic-routing" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<blockquote class="info"><p>This covers an intermediate topic which is not required for basic usage, but is useful if you want to use the framework to design custom Blade templates.</p></blockquote>
-<h3>High-level overview<a id="high-level-overview" href="#high-level-overview" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>If you've ever worked in an MVC framework, you are probably familiar with the concept of routing.
-And you are probably also familiar with how boring and tedious it can be. Thankfully, Hyde takes the pain out of routing
-through the Hyde Autodiscovery process.</p>
-<p>Internally, when booting the HydeCLI application, Hyde will automatically discover all the content files in the source
-directories, and create a route index for all of them. This index works as a two-way link between source files and compiled files.</p>
+And you are probably also familiar with how boring and tedious it can be. Thankfully, Hyde takes the pain out of routing by doing it for you!</p>
+<p>During the Autodiscovery process. Hyde will automatically discover all the content files in the source directories,
+and create routes for all of them, and store them in an index which works as a two-way link between source files and compiled files.</p>
 <p>You can see all the routes and their corresponding source files by running the <code>hyde route:list</code> command.</p>
 <pre><code class="language-bash">php hyde route:list
 </code></pre>
-<p>Don't worry if this sounds complex, as the key takeaway is that the index is created and maintained automatically.
-Nevertheless, the routing system provides several helpers that you can optionally use in your Blade views to
-automatically resolve relative links and other useful features.</p>
-<h3>Accessing routes<a id="accessing-routes" href="#accessing-routes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Each route in your site is represented by a Route object. It's very easy to get a Route object instance from the Router's index.
-There are a few ways to do this, but most commonly you'll use the Routes facade's <code>get()</code> method where you provide a route key, and it will return the Route object. The route key is generally <code>&lt;output-directory/slug&gt;</code>. Here are some examples:</p>
-<pre><code class="language-php">// Source file: _pages/index.md/index.blade.php
-// Compiled file: _site/index.html
-Routes::get('index')
-
-// Source file: _posts/my-post.md
-// Compiled file: _site/posts/my-post.html
-Routes::get('posts/my-post')
-
-// Source file: _docs/readme.md
-// Compiled file: _site/docs/readme.html
-Routes::get('docs/readme')
+<p>To access routes in your code, simply use the Routes facade and specify the route key for the desired page.</p>
+<pre><code class="language-php">Routes::get('posts/my-post')
 </code></pre>
-<h3>Using the <code>x-link</code> component<a id="using-the-x-link-component" href="#using-the-x-link-component" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>When designing Blade layouts it can be useful to use the <code>x-link</code> component to automatically resolve relative links.</p>
-<p>You can of course, use it just like a normal anchor tag like so:</p>
-<pre><code class="language-blade">&lt;x-link href=&quot;index.html&quot;&gt;Home&lt;/x-link&gt;
-</code></pre>
-<p>But where it really shines is when you supply a route. This will then resolve the proper relative link, and format it to use pretty URLs if your site is configured to use them.</p>
-<pre><code class="language-blade">&lt;x-link :href=&quot;Routes::get('index')&quot;&gt;Home&lt;/x-link&gt;
-</code></pre>
-<p>You can of course, also supply extra attributes like classes:</p>
-<pre><code class="language-blade">&lt;x-link :href=&quot;Routes::get('index')&quot; class=&quot;btn btn-primary&quot;&gt;Home&lt;/x-link&gt;
-</code></pre>
+<p>To learn more about the routing system, please visit the <a href="automatic-routing">routing documentation</a>.</p>
 <h2>Nested directories<a id="nested-directories" href="#nested-directories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <h3>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Starting with Hyde v0.52.x-beta, there is limited support for nested directories, please be mindful that the behaviour of this may change until the next few versions. Please report any issues you encounter on <a href="https://github.com/hydephp/develop/issues">GitHub</a>.</p>
@@ -709,7 +739,7 @@ Git repositories can be hosted on GitHub, GitLab, BitBucket, or any other Git ho
 During autodiscovery, Hyde also generates dynamic data to enrich your content based on the page type.</p>
 <p>In short the autodiscovery is split into three steps:
 <code>File discovery -&gt; Page parsing -&gt; Route generation</code></p>
-<h3>Page Types<a id="page-types" href="#page-types" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Page Types<a id="page-types-1" href="#page-types-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>All pages in HydePHP are internally represented by a page object that extends the HydePage class. Each page type has its
 own page class which acts as a blueprint defining information for the framework to parse a file and generate relevant data.</p>
 <h3>Page Identifiers<a id="page-identifiers" href="#page-identifiers" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
@@ -821,7 +851,7 @@ identifier binding Page objects to Route objects, and is used to generate the fi
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/2a2a9ee94800d73bb74a76a40eebd7380b0f13c6"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">2a2a9ee94800d73bb74a76a40eebd7380b0f13c6</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/fae5989f7d35dffe36fd5c81732c77697398edaf"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">fae5989f7d35dffe36fd5c81732c77697398edaf</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
