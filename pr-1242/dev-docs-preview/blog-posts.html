@@ -98,6 +98,10 @@
             <a href="../dev-docs-preview/core-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Core Concepts
         </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/front-matter.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Front Matter
+        </a>
     </li>                                    </ul>
             </li>
                     <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: true }" >
@@ -134,16 +138,8 @@
 <li>
 <a href="#front-matter">Front Matter</a>
 </li>
-</ul>
-</li>
 <li>
-<a href="#a-first-look-at-front-matter">A first look at Front Matter</a>
-<ul>
-<li>
-<a href="#how-the-front-matter-is-used">How the Front Matter is used</a>
-</li>
-<li>
-<a href="#front-matter-syntax">Front matter syntax</a>
+<a href="#blog-post-example">Blog Post Example</a>
 </li>
 </ul>
 </li>
@@ -325,38 +321,20 @@ to keep in mind when creating blog posts so that you don't get unexpected result
 <li>Filenames should use <code>kebab-case-slug</code> followed by the extension <code>.md</code>
 </li>
 <li>Files prefixed with <code>_underscores</code> are ignored by Hyde</li>
-<li>Your post will be stored in <code>_site/posts/&lt;slug&gt;.html</code>
+<li>Your post will be stored in <code>_site/posts/&lt;identifier&gt;.html</code>
 </li>
 </ul>
 <p><strong>Example:</strong></p>
 <pre><code class="language-bash">✔ _posts/hello-world.md # Valid and will be compiled to _site/posts/hello-world.html
 </code></pre>
 <h3>Front Matter<a id="front-matter" href="#front-matter" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Front matter is optional, but highly recommended for blog posts.</p>
-<p>You can read more about the Front Matter format in the <a href="architecture-concepts#front-matter">Front Matter documentation</a>.
-Here is a quick primer:</p>
-<ul>
-<li>Front matter is stored in a block of YAML that starts and ends with a <code>---</code> line.</li>
-<li>The front matter should be the very first thing in the Markdown file.</li>
-<li>Each key-pair value should be on its own line.</li>
-<li>The front matter is used to construct dynamic HTML markup for the post as well as meta tags and post feeds.
-You are encouraged to look at the compiled HTML to learn and understand how your front matter is used.</li>
-</ul>
-<p><strong>Example:</strong></p>
-<pre><code class="language-markdown">---
-title: &quot;My New Post&quot;
----
-
-## Markdown comes here
-
-</code></pre>
-<p>You can use the <code>php hyde make:post</code> command to automatically generate the front matter based on your input.</p>
-<h2>A first look at Front Matter<a id="a-first-look-at-front-matter" href="#a-first-look-at-front-matter" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Before digging in deeper on all the supported front matter options,
-let's take a look at what a basic post with front matter looks like.</p>
-<p>This file was created using the <code>make:post</code> by hitting the <code>Enter</code> key to use
-all the defaults (with some extra lorem ipsum to illustrate).</p>
-<pre><code class="language-markdown">---
+<p>Front matter is optional, but highly recommended for blog posts as the front matter is used to construct dynamic HTML
+markup for the post as well as meta tags and post feeds.</p>
+<p>You are encouraged to look at the compiled HTML to learn
+and understand how your front matter is used. You can read more about the Front Matter format in the <a href="front-matter">Front Matter</a> documentation.</p>
+<h3>Blog Post Example<a id="blog-post-example" href="#blog-post-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Before digging in deeper on all the supported options, let's take a look at what a basic post with front matter looks like.</p>
+<pre><code class="language-markdown"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_posts/my-new-post.md</small>---
 title: My New Post
 description: A short description used in previews and SEO
 category: blog
@@ -369,21 +347,6 @@ date: 2022-05-09 18:38
 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 Autem aliquid alias explicabo consequatur similique,
 animi distinctio earum ducimus minus, magnam.
-</code></pre>
-<h3>How the Front Matter is used<a id="how-the-front-matter-is-used" href="#how-the-front-matter-is-used" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>The front matter is used to construct dynamic HTML markup for the post as well as meta tags and post feeds.</p>
-<p>You are encouraged to look at the compiled HTML to learn and understand how your front matter is used.</p>
-<h3>Front matter syntax<a id="front-matter-syntax" href="#front-matter-syntax" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Here is a quick reference of the syntax Hyde uses and expects:</p>
-<pre><code class="language-markdown">---
-key: value
-string: &quot;quoted string&quot;
-boolean: true
-integer: 100
-array:
-  key: value
-  key: value
----
 </code></pre>
 <h2>Supported Front Matter properties<a id="supported-front-matter-properties" href="#supported-front-matter-properties" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <h3>Post Front Matter Schema<a id="post-front-matter-schema" href="#post-front-matter-schema" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
@@ -584,7 +547,7 @@ for a detailed blog post with examples and schema information!</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/77ed1bb6be1015ab85f0da4b4f9e3c9be0f53417"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">77ed1bb6be1015ab85f0da4b4f9e3c9be0f53417</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/b5e378efeb98396619c867861f7f5efddb618b94"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">b5e378efeb98396619c867861f7f5efddb618b94</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>

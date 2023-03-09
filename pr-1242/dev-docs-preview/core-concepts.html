@@ -117,7 +117,7 @@
 <a href="#file-autodiscovery">File Autodiscovery</a>
 </li>
 <li>
-<a href="#importance-of-paths">Importance of paths</a>
+<a href="#paths-identifiers-and-route-keys">Paths, Identifiers, and Route Keys</a>
 </li>
 <li>
 <a href="#convention-over-configuration">Convention over Configuration</a>
@@ -214,7 +214,11 @@
 </li>
 </ul>
 
-            </li>                                    </ul>
+            </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/front-matter.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Front Matter
+        </a>
+    </li>                                    </ul>
             </li>
                     <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: false }" >
                 <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center  group hover:bg-black/10 "  @click="groupOpen = ! groupOpen" >
@@ -471,10 +475,10 @@ building the site. This means that you don't need to worry about routing and con
 </tr>
 </tbody>
 </table>
-<h2>Importance of paths<a id="importance-of-paths" href="#importance-of-paths" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Paths, Identifiers, and Route Keys<a id="paths-identifiers-and-route-keys" href="#paths-identifiers-and-route-keys" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Since HydePHP automatically discovers and compiles content files, it is important to understand how HydePHP handles paths,
 as the file names and directories they are in will directly influence how the page will be compiled.</p>
-<p><strong>There are a few terms that are important to define before we explore their correlations.</strong></p>
+<p>As such, it will be helpful for you to know about the following terms:</p>
 <ul>
 <li>
 <strong>Path:</strong> The full path to a file, including the file name, directory, and extension.</li>
@@ -483,32 +487,15 @@ as the file names and directories they are in will directly influence how the pa
 <li>
 <strong>Route key:</strong> The key used to access the page in the routing system. Unique across all site pages.</li>
 </ul>
-<p><strong>Now that we have defined the terms, let's explore how they are related.</strong></p>
-<p>If you remember our <code>MarkdownPost</code> class from above, you'll recall that we have a few important properties:</p>
-<pre><code class="language-php">static $sourceDirectory = '_posts';
-static $outputDirectory = 'posts';
-static $fileExtension = '.md';
-$identifier; // For example: &quot;my-new-post&quot;
-$routeKey;  // For example: &quot;posts/my-new-post&quot;
-</code></pre>
-<p>You may also have noticed that we have no source path property here, this is because all other properties are enough
-to determine all needed data, without needing to store extra information.</p>
-<p>Now, we can finally look at some examples of how the data is related, by providing examples of how the properties are generated.</p>
-<pre><code class="language-php">// The source path relative to the project root:
-$path = '_posts/my-new-post.md';
-
-// Identifier from path:
-$identifier = String::between($path, $sourceDirectory, $fileExtension) = 'my-new-post';
-
-// Route key from identifier:
-$routeKey = $outputDirectory.'/'.$identifier = 'posts/my-new-post';
-
-// Output path from route key:
-$outputPath = $routeKey.'.html' = 'posts/my-new-post.html';
-
-// Source path from identifier:
-$sourcePath = $sourceDirectory.'/'.$identifier.$fileExtension = '_posts/my-new-post.md';
-</code></pre>
+<p>Both the identifier and route key are derived from the path of the page. The identifier is the path without the file
+extension, and relative to the page type source directory. The route key is the output directory plus the identifier.</p>
+<p>The identifier generation can be visualized as follows, where the identifier is underlined:</p>
+<pre><code class="torchlight" style="background-color: #292D3E; --theme-selection-background: #00000080;">  <span style="opacity: 0.75">_pages/</span><u>about/contact</u><span style="opacity: 0.75">.md</span></code></pre>
+<p>For a Markdown page, like the example above, the route key would be the same as the identifier, since Markdown pages are
+output to the site root. If it was a Markdown post however, the route key would be: <code>posts/about/contact</code>.</p>
+<p>This can be visualized as follows, assuming a blog post is stored as <code>_posts/hello-world.md</code>:</p>
+<pre><code class="torchlight" style="background-color: #292D3E; --theme-selection-background: #00000080;">  <span style="opacity: 0.75">_site/</span><u>posts/hello-world</u><span style="opacity: 0.75">.html</span></code></pre>
+<p>As you can see, the route key is simply put the relative page URL, without the .html extension.</p>
 <h2>Convention over Configuration<a id="convention-over-configuration" href="#convention-over-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Hyde favours the &quot;Convention over Configuration&quot; paradigm and thus comes preconfigured with sensible defaults.
 However, Hyde also strives to be modular and endlessly customizable hackable if you need it.
@@ -517,20 +504,13 @@ Take a look at the <a href="customization">customization and configuration guide
 <blockquote class="info"><p><strong>In a nutshell:</strong> Front Matter is a block of YAML containing metadata, stored at the top of a Markdown file.</p></blockquote>
 <p>Front matter is heavily used in HydePHP to store metadata about pages. Hyde uses the front matter data to generate rich and dynamic content. For example, a blog post category, author website, or featured image.</p>
 <p>Using front matter is optional, as Hyde will dynamically generate data based on the content itself. (Though any matter you provide will take precedence over the automatically generated data.)</p>
+<p>To learn more, you can visit the <a href="front-matter">Front Matter</a> page.</p>
 <h3>Front Matter in Markdown<a id="front-matter-in-markdown" href="#front-matter-in-markdown" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>All Markdown content files support Front Matter. Blog posts for example make heavy use of it.</p>
-<p>The specific usage and schemas used for pages are documented in their respective documentation, however, here is a primer on the fundamentals.</p>
-<ul>
-<li>Front matter is stored in a block of YAML that starts and ends with a <code>---</code> line.</li>
-<li>The front matter should be the very first thing in the Markdown file.</li>
-<li>Each key-pair value should be on its own line.</li>
-</ul>
-<p><strong>To use Front Matter, add Yaml to the top of your Markdown file:</strong></p>
+<p>All Markdown content files support Front Matter, and blog posts make heavy use of it. Here's what it may look like:</p>
 <pre><code class="language-markdown">---
 title: &quot;My New Post&quot;
-author:
-  name: &quot;John Doe&quot;
-  website: https://example.com
+author: &quot;Mr Hyde&quot;
+date: &quot;2023-03-14&quot;
 ---
 
 ## Markdown comes here
@@ -538,13 +518,10 @@ author:
 Lorem ipsum dolor sit amet, etc.
 </code></pre>
 <h3>Front Matter in Blade<a id="front-matter-in-blade" href="#front-matter-in-blade" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>HydePHP has experimental support for creating front-matter in Blade templates, called BladeMatter.</p>
-<p>The actual syntax does not use YAML; but instead PHP. However, the parsed end result is the same. Please note that
-BladeMatter currently does not support multidimensional arrays or multi-line directives as the data is statically parsed.</p>
-<p>To create BladeMatter, you simply use the default Laravel Blade <code>@php</code> directive to declare a variable in the template.</p>
-<pre><code class="language-blade">@php($title = 'BladeMatter Demo')
+<p>HydePHP has experimental support for creating front-matter in Blade templates, called <a href="front-matter#front-matter-in-blade">BladeMatter</a>,
+where code in <code>@php</code> directives are statically parsed into page object's front matter data where it can be accessed in your templates.</p>
+<pre><code class="language-blade">@php($title = 'BladeMatter Demo') // Equivalent to `title: 'BladeMatter Demo'` in Yaml
 </code></pre>
-<p>It will then be available through the global <code>$page</code> variable, <code>$page-&gt;matter('title')</code>.</p>
 <h2>Automatic Routing<a id="automatic-routing" href="#automatic-routing" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <blockquote class="info"><p><strong>In a nutshell:</strong> Hyde will automatically create routes for your source files.</p></blockquote>
 <p>If you've ever worked in an MVC framework, you are probably familiar with the concept of routing.
@@ -798,7 +775,7 @@ identifier binding Page objects to Route objects, and is used to generate the fi
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/77ed1bb6be1015ab85f0da4b4f9e3c9be0f53417"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">77ed1bb6be1015ab85f0da4b4f9e3c9be0f53417</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/b5e378efeb98396619c867861f7f5efddb618b94"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">b5e378efeb98396619c867861f7f5efddb618b94</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
