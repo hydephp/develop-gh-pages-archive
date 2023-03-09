@@ -118,14 +118,6 @@
 </li>
 <li>
 <a href="#importance-of-paths">Importance of paths</a>
-<ul>
-<li>
-<a href="#notes-on-duplicate-and-changing-identifiers">Notes on duplicate and changing identifiers:</a>
-</li>
-<li>
-<a href="#notes-on-nested-directories">Notes on nested directories:</a>
-</li>
-</ul>
 </li>
 <li>
 <a href="#convention-over-configuration">Convention over Configuration</a>
@@ -419,8 +411,12 @@ php hyde &lt;command&gt; [--help]
 <td>Location for Laravel Mix source files (optional)</td>
 </tr>
 <tr>
-<td><code>resources/views/components</code></td>
+<td><code>resources/views</code></td>
 <td>Location for Blade components (optional)</td>
+</tr>
+<tr>
+<td><code>app</code></td>
+<td>Location for custom PHP classes (optional)</td>
 </tr>
 </tbody>
 </table>
@@ -513,18 +509,6 @@ $outputPath = $routeKey.'.html' = 'posts/my-new-post.html';
 // Source path from identifier:
 $sourcePath = $sourceDirectory.'/'.$identifier.$fileExtension = '_posts/my-new-post.md';
 </code></pre>
-<h4>Notes on duplicate and changing identifiers:<a id="notes-on-duplicate-and-changing-identifiers" href="#notes-on-duplicate-and-changing-identifiers" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Since identifiers are unique to the page type, it is possible to have duplicate identifiers across different page types.
-For example, it's perfectly valid to have a blog post with the identifier <code>about</code> and a static page with the identifier <code>about</code>,
-as the route key will differ due to the different output directories. However, if you customize the output directories,
-you need to keep this in mind. It also means that route keys will change when you change the output directory which can break links.</p>
-<h4>Notes on nested directories:<a id="notes-on-nested-directories" href="#notes-on-nested-directories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Since identifiers contain everything between the source directory and the file extension, it is possible to have nested directories.
-These will be retained in the route key. So if you have a page with the path <code>_pages/about/contact.md</code>, the identifier will be <code>about/contact</code>,
-and the route key (and thus the output path) will be <code>about/contact</code>, and a blog post stored as <code>_posts/2023/my-post.md</code>
-will have the identifier <code>2023/my-post</code> and the route key <code>posts/2023/my-post</code>.</p>
-<p>In some cases you can configure Hyde to handle nested directories differently, for example, documentation pages can
-utilize the subdirectory name to automatically create a sidebar group, and Markdown/Blade pages can be placed in dropdowns.</p>
 <h2>Convention over Configuration<a id="convention-over-configuration" href="#convention-over-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Hyde favours the &quot;Convention over Configuration&quot; paradigm and thus comes preconfigured with sensible defaults.
 However, Hyde also strives to be modular and endlessly customizable hackable if you need it.
@@ -814,7 +798,7 @@ identifier binding Page objects to Route objects, and is used to generate the fi
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/44d8b8c245fd39ba23dcf3707104cf37501e3a10"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">44d8b8c245fd39ba23dcf3707104cf37501e3a10</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/6034044c576d84940e0630925083278d47318e46"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">6034044c576d84940e0630925083278d47318e46</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
