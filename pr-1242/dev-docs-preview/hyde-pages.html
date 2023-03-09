@@ -245,6 +245,9 @@
 <li>
 <a href="#parse">parse()</a>
 </li>
+<li>
+<a href="#files">files()</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -449,6 +452,11 @@ abstract class HydePage
 <ul>
 <li>@throws \Hyde\Framework\Exceptions\FileNotFoundException If the file does not exist.</li>
 </ul>
+<h4><code>files()</code><a id="files" href="#files" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get an array of all the source file identifiers for the model.</p>
+<p>Note that the values do not include the source directory or file extension.</p>
+<pre><code class="language-php">HydePage::files(string $identifier): array&lt;string&gt;
+</code></pre>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
@@ -547,7 +555,7 @@ abstract class HydePage
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/21de22cfed4219e7ddb66981ab8caf03ae500f5b"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">21de22cfed4219e7ddb66981ab8caf03ae500f5b</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/fdaaa5eedde812bd08e39a13dca0a071294cafe8"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">fdaaa5eedde812bd08e39a13dca0a071294cafe8</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
