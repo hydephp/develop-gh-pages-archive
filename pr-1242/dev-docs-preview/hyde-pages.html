@@ -211,7 +211,41 @@
 <a href="#abstract">Abstract</a>
 <ul>
 <li>
+<a href="#about-the-reference">About the reference</a>
+</li>
+<li>
 <a href="#table-of-contents">Table of Contents</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#hydepage">HydePage</a>
+<ul>
+<li>
+<a href="#quick-reference">Quick Reference</a>
+</li>
+<li>
+<a href="#base-structure">Base Structure</a>
+</li>
+<li>
+<a href="#methods">Methods</a>
+<ul>
+<li>
+<a href="#make">make()</a>
+</li>
+<li>
+<a href="#construct">__construct()</a>
+</li>
+<li>
+<a href="#isdiscoverable">isDiscoverable()</a>
+</li>
+<li>
+<a href="#get">get()</a>
+</li>
+<li>
+<a href="#parse">parse()</a>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -268,6 +302,10 @@
 <p>This page contains the full API references for the built-in HydePage classes. Most users will not need to know about
 the inner workings of classes, but if you're interested in extending HydePHP, or just curious, this page is for you.
 It is especially useful if you're looking to implement your own page classes, or if you are creating advanced Blade templates.</p>
+<h3>About the reference<a id="about-the-reference" href="#about-the-reference" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>This document is heavily based around the actual source code, as I believe the best way to understand the code is to read it.
+However, large parts of the code are simplified for brevity and illustration. The code is not meant to be copy-pasted, but
+rather used as a reference so that you know what to look for in the actual source code, if you want to dig deeper.</p>
 <h3>Table of Contents<a id="table-of-contents" href="#table-of-contents" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <table>
 <thead>
@@ -311,6 +349,106 @@ It is especially useful if you're looking to implement your own page classes, or
 </tr>
 </tbody>
 </table>
+<h2>HydePage<a id="hydepage" href="#hydepage" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>The base class for all Hyde pages, all other page classes extend this class.</p>
+<h3>Quick Reference<a id="quick-reference" href="#quick-reference" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Class Name</th>
+<th>Namespace</th>
+<th>Source Code</th>
+<th>API Docs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>HydePage</code></td>
+<td><code>Hyde\Pages\Concerns</code></td>
+<td><a href="https://github.com/hydephp/framework/blob/master//src/Pages/Concerns/HydePage.php">Open in GitHub</a></td>
+<td><a href="https://hydephp.github.io/develop/master/api-docs/classes/Hyde-Pages-Concerns-HydePage.html">Live API Docs</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Base Structure<a id="base-structure" href="#base-structure" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<pre><code class="language-php">/**
+ * The base class for all Hyde pages. Here simplified for the sake of brevity.
+ */
+abstract class HydePage
+{
+    /**
+     * The directory in which source files are stored. Relative to the project root.
+     */
+    public static string $sourceDirectory;
+
+    /**
+     * The output subdirectory to store compiled HTML. Relative to the _site output directory.
+     */
+    public static string $outputDirectory;
+
+    /**
+     * The file extension of the source files.
+     */
+    public static string $fileExtension;
+
+    /**
+     * The default template to use for rendering the page.
+     */
+    public static string $template;
+
+    /**
+     * The page instance identifier.
+     */
+    public readonly string $identifier;
+
+    /**
+     * The page instance route key.
+     */
+    public readonly string $routeKey;
+
+    /**
+     * The parsed front matter.
+     */
+    public FrontMatter $matter;
+
+    /**
+     * The generated page metadata.
+     */
+    public PageMetadataBag $metadata;
+    
+    /**
+     * The generated page navigation data.
+     */
+    public NavigationData $navigation;
+}
+</code></pre>
+<h3>Methods<a id="methods" href="#methods" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h4><code>make()</code><a id="make" href="#make" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Static constructor alias for the HydePage class.</p>
+<pre><code class="language-php">HydePage::make(string $identifier = '', FrontMatter|array $matter = []): HydePage
+</code></pre>
+<h4><code>__construct()</code><a id="construct" href="#construct" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>The constructor for the HydePage class.</p>
+<pre><code class="language-php">$page = new HydePage(string $identifier = '', FrontMatter|array $matter = [])
+</code></pre>
+<h4><code>isDiscoverable()</code><a id="isdiscoverable" href="#isdiscoverable" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Returns whether the page is discoverable.</p>
+<pre><code class="language-php">HydePage::isDiscoverable(): bool
+</code></pre>
+<h4><code>get()</code><a id="get" href="#get" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get a page instance from the Kernel's page index by its identifier.</p>
+<pre><code class="language-php">HydePage::get(string $identifier): HydePage
+</code></pre>
+<ul>
+<li>@throws \Hyde\Framework\Exceptions\FileNotFoundException If the page does not exist.</li>
+</ul>
+<h4><code>parse()</code><a id="parse" href="#parse" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Parse a source file into a page model instance.</p>
+<pre><code class="language-php">HydePage::parse(string $identifier): HydePage
+</code></pre>
+<ul>
+<li>@throws \Hyde\Framework\Exceptions\FileNotFoundException If the file does not exist.</li>
+</ul>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
@@ -409,7 +547,7 @@ It is especially useful if you're looking to implement your own page classes, or
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/ca494d83acbb9145082ef66a0b1c0107dec7cdc3"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">ca494d83acbb9145082ef66a0b1c0107dec7cdc3</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/21de22cfed4219e7ddb66981ab8caf03ae500f5b"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">21de22cfed4219e7ddb66981ab8caf03ae500f5b</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
