@@ -120,7 +120,10 @@
 <a href="#front-matter">Front Matter</a>
 <ul>
 <li>
-<a href="#blade">Blade</a>
+<a href="#front-matter-in-markdown">Front Matter in Markdown</a>
+</li>
+<li>
+<a href="#front-matter-in-blade">Front Matter in Blade</a>
 </li>
 </ul>
 </li>
@@ -412,8 +415,10 @@ building the site. This means that you don't need to worry about routing and con
 However, Hyde also strives to be modular and endlessly customizable hackable if you need it.
 Take a look at the <a href="customization">customization and configuration guide</a> to see the endless options available!</p>
 <h2>Front Matter<a id="front-matter" href="#front-matter" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<blockquote class="info"><p><strong>In a nutshell:</strong> Front Matter is a block of YAML containing metadata, stored at the top of a Markdown file.</p></blockquote>
 <p>Front matter is heavily used in HydePHP to store metadata about pages. Hyde uses the front matter data to generate rich and dynamic content. For example, a blog post category, author website, or featured image.</p>
 <p>Using front matter is optional, as Hyde will dynamically generate data based on the content itself. (Though any matter you provide will take precedence over the automatically generated data.)</p>
+<h3>Front Matter in Markdown<a id="front-matter-in-markdown" href="#front-matter-in-markdown" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>All Markdown content files support Front Matter. Blog posts for example make heavy use of it.</p>
 <p>The specific usage and schemas used for pages are documented in their respective documentation, however, here is a primer on the fundamentals.</p>
 <ul>
@@ -433,7 +438,7 @@ author:
 
 Lorem ipsum dolor sit amet, etc.
 </code></pre>
-<h3>Blade<a id="blade" href="#blade" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Front Matter in Blade<a id="front-matter-in-blade" href="#front-matter-in-blade" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <blockquote class="warning"><p>🧪 This feature is experimental, and currently does not support multidimensional arrays or multi-line directives as the BladeMatter is statically parsed.</p></blockquote>
 <p>Hyde v0.58.0-beta brings experimental support for creating front-matter in Blade templates, called BladeMatter. The actual syntax is does not use YAML; but instead PHP. However, the parsed end result is the same.</p>
 <p>To create BladeMatter, you simply use the default Laravel Blade <code>@php</code> directive to declare a variable anywhere in the template.</p>
@@ -589,7 +594,7 @@ Routes::get('docs/readme')
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/0f5c7023115da68ed085a2ae934b3d6163165589"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">0f5c7023115da68ed085a2ae934b3d6163165589</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/5131e6345b3f8d5d0ad150b7532607a75c62e602"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">5131e6345b3f8d5d0ad150b7532607a75c62e602</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
