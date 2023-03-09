@@ -120,12 +120,6 @@
 <a href="#front-matter">Front Matter</a>
 <ul>
 <li>
-<a href="#about">About</a>
-</li>
-<li>
-<a href="#markdown">Markdown</a>
-</li>
-<li>
 <a href="#blade">Blade</a>
 </li>
 </ul>
@@ -330,23 +324,53 @@ php hyde &lt;command&gt; [--help]
 </code></pre>
 <h2>Directory structure<a id="directory-structure" href="#directory-structure" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>To take full advantage of the framework, it may first be good to familiarize ourselves with the directory structure.</p>
-<pre><code>// torchlight! {&quot;lineNumbers&quot;: false}
-├── _docs  // For documentation pages
-├── _posts // For blog posts
-├── _pages // For static Markdown and Blade pages
-├── _media // Store static assets to be copied to the build directory
-├── _site  // The build directory where your compiled site will be stored
-├── config // Configuration files for Hyde and integrations
-├── resources/assets // Location for Laravel Mix source files (optional)
-└── resources/views/components // Location for Blade components (optional)
-</code></pre>
+<table>
+<thead>
+<tr>
+<th>Directory</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_docs</code></td>
+<td>For documentation pages</td>
+</tr>
+<tr>
+<td><code>_posts</code></td>
+<td>For blog posts</td>
+</tr>
+<tr>
+<td><code>_pages</code></td>
+<td>For static Markdown and Blade pages</td>
+</tr>
+<tr>
+<td><code>_media</code></td>
+<td>Store static assets to be copied to the build directory</td>
+</tr>
+<tr>
+<td><code>_site</code></td>
+<td>The build directory where your compiled site will be stored</td>
+</tr>
+<tr>
+<td><code>config</code></td>
+<td>Configuration files for Hyde and integrations</td>
+</tr>
+<tr>
+<td><code>resources/assets</code></td>
+<td>Location for Laravel Mix source files (optional)</td>
+</tr>
+<tr>
+<td><code>resources/views/components</code></td>
+<td>Location for Blade components (optional)</td>
+</tr>
+</tbody>
+</table>
 <h2>File Autodiscovery<a id="file-autodiscovery" href="#file-autodiscovery" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Content files, meaning source Markdown and Blade files, are automatically
-discovered by Hyde and compiled to HTML when building the site.
-This means that you don't need to worry about routing and controllers!</p>
+<p>Content files, meaning source Markdown and Blade files, are automatically discovered by Hyde and compiled to HTML when
+building the site. This means that you don't need to worry about routing and controllers!</p>
 <p>The directory a source file is in will determine the Blade template that is used to render it.</p>
-<p>Here is an overview of the content source directories, the output directory of the compiled files,
-and the file extensions supported by each. Files starting with an <code>_underscore</code> are ignored.</p>
+<p>All source and output directories are configurable, but the defaults are as follows:</p>
 <table>
 <thead>
 <tr>
@@ -379,24 +403,17 @@ and the file extensions supported by each. Files starting with an <code>_undersc
 <td>Media Assets</td>
 <td><code>_media/</code></td>
 <td><code>_site/media/</code></td>
-<td>See full list below</td>
+<td>Common asset types</td>
 </tr>
 </tbody>
 </table>
-<small>
-<blockquote>
-Default media file types supported: `.png`, `.svg`, `.jpg`, `.jpeg`, `.gif`, `.ico`, `.css`, `.js`. Can be changed using the `hyde.media_extensions` config setting.
-</blockquote>
-</small>
 <h2>Convention over Configuration<a id="convention-over-configuration" href="#convention-over-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Hyde favours the &quot;Convention over Configuration&quot; paradigm and thus comes preconfigured with sensible defaults.
 However, Hyde also strives to be modular and endlessly customizable hackable if you need it.
 Take a look at the <a href="customization">customization and configuration guide</a> to see the endless options available!</p>
 <h2>Front Matter<a id="front-matter" href="#front-matter" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<h3>About<a id="about" href="#about" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Front matter is heavily used in HydePHP to store metadata about about pages. Hyde uses the front matter data to generate rich and dynamic content. For example, a blog post category, author website, or featured image.</p>
+<p>Front matter is heavily used in HydePHP to store metadata about pages. Hyde uses the front matter data to generate rich and dynamic content. For example, a blog post category, author website, or featured image.</p>
 <p>Using front matter is optional, as Hyde will dynamically generate data based on the content itself. (Though any matter you provide will take precedence over the automatically generated data.)</p>
-<h3>Markdown<a id="markdown" href="#markdown" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>All Markdown content files support Front Matter. Blog posts for example make heavy use of it.</p>
 <p>The specific usage and schemas used for pages are documented in their respective documentation, however, here is a primer on the fundamentals.</p>
 <ul>
@@ -427,8 +444,8 @@ Lorem ipsum dolor sit amet, etc.
 <h2>Automatic Routing<a id="automatic-routing" href="#automatic-routing" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <blockquote class="info"><p>This covers an intermediate topic which is not required for basic usage, but is useful if you want to use the framework to design custom Blade templates.</p></blockquote>
 <h3>High-level overview<a id="high-level-overview" href="#high-level-overview" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>If you've ever worked in a MVC framework, you are probably familiar with the concept of routing. And you are probably also familiar with how boring and tedious it can be. Hyde takes the pain out of routing through the Hyde Autodiscovery process.</p>
-<p>Internally, when booting the Hyde application, Hyde will automatically discover all of the content files in the source directory and create a routing index for them. This index works as a two-way link between source files and compiled files.</p>
+<p>If you've ever worked in an MVC framework, you are probably familiar with the concept of routing. And you are probably also familiar with how boring and tedious it can be. Hyde takes the pain out of routing through the Hyde Autodiscovery process.</p>
+<p>Internally, when booting the Hyde application, Hyde will automatically discover all the content files in the source directory and create a routing index for them. This index works as a two-way link between source files and compiled files.</p>
 <p>Don't worry if this sounds complex, as the key takeaway is that the index is created and maintained automatically. There is currently no way to manually add or remove files from the index. Making it function more like a source map than a proper router. Nevertheless, the routing system provides several helpers that you can optionally use in your Blade views to automatically resolve relative links and other useful features.</p>
 <h3>Accessing routes<a id="accessing-routes" href="#accessing-routes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Each route in your site is represented by a Route object. It's very easy to get a Route object instance from the Router's index. There are a few ways to do this, but most commonly you'll use the Routes facade's <code>get()</code> method where you provide a route key, and it will return the Route object. The route key is generally <code>&lt;output-directory/slug&gt;</code>. Here are some examples:</p>
@@ -572,7 +589,7 @@ Routes::get('docs/readme')
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/a0a5c1cc5b896cbfe8e24b08380793b3c617ddd0"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">a0a5c1cc5b896cbfe8e24b08380793b3c617ddd0</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/599017111ca64dcf7dae313030124d864d46f03c"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">599017111ca64dcf7dae313030124d864d46f03c</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
