@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HydePHP Documentation Preview - Directory Structure</title>
+<title>HydePHP Documentation Preview - HydePage API Reference</title>
 
 
 
-<link rel="canonical" href="https://hydephp.github.io/develop/pr-1242/dev-docs-preview/dev-docs-preview/directory-structure.html">
-<meta name="twitter:title" content="HydePHP Documentation Preview - Directory Structure">
-<meta property="og:title" content="HydePHP Documentation Preview - Directory Structure">
+<link rel="canonical" href="https://hydephp.github.io/develop/pr-1242/dev-docs-preview/dev-docs-preview/hyde-pages.html">
+<meta name="twitter:title" content="HydePHP Documentation Preview - HydePage API Reference">
+<meta property="og:title" content="HydePHP Documentation Preview - HydePage API Reference">
 
 
 <link rel="sitemap" href="https://hydephp.github.io/develop/pr-1242/dev-docs-preview/sitemap.xml" type="application/xml" title="Sitemap">
@@ -180,7 +180,7 @@
         </a>
     </li>                                    </ul>
             </li>
-                    <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: false }" >
+                    <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: true }" >
                 <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center  group hover:bg-black/10 "  @click="groupOpen = ! groupOpen" >
                     <h4 class="sidebar-group-heading text-base font-semibold  cursor-pointer dark:group-hover:text-white ">Advanced Features</h4>
                                             <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
@@ -200,11 +200,24 @@
             <a href="../dev-docs-preview/build-tasks.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Custom Build Tasks
         </a>
-    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs-preview/hyde-pages.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+    </li>                                            <li class="sidebar-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
+            <a href="../dev-docs-preview/hyde-pages.html" aria-current="true" class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10">
             HydePage API
         </a>
-    </li>                                    </ul>
+
+                    <span class="sr-only">Table of contents</span>
+            <ul class="table-of-contents">
+<li>
+<a href="#abstract">Abstract</a>
+<ul>
+<li>
+<a href="#table-of-contents">Table of Contents</a>
+</li>
+</ul>
+</li>
+</ul>
+
+            </li>                                    </ul>
             </li>
                     <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: false }" >
                 <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center  group hover:bg-black/10 "  @click="groupOpen = ! groupOpen" >
@@ -247,12 +260,57 @@
         <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 prose dark:prose-invert max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)]">
     
     <header id="document-header" class="flex items-center flex-wrap prose-h1:mb-3">
-        
+        <h1>HydePage API Reference</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        <meta http-equiv="refresh" content="0;url=architecture-concepts#directory-structure" />
-<p>Redirecting you to <a href="architecture-concepts#directory-structure">architecture-concepts#directory-structure</a></p>
-<!-- Note to self, if we need a lot of these in the future it may make more sense to put them in a CI that loads redirects from a config -->
+        <blockquote class="warning"><p>This article covers advanced information, and you are expected to already be familiar with the <a href="page-models">Page Models</a>.</p></blockquote>
+<h2>Abstract<a id="abstract" href="#abstract" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>This page contains the full API references for the built-in HydePage classes. Most users will not need to know about
+the inner workings of classes, but if you're interested in extending HydePHP, or just curious, this page is for you.
+It is especially useful if you're looking to implement your own page classes, or if you are creating advanced Blade templates.</p>
+<h3>Table of Contents<a id="table-of-contents" href="#table-of-contents" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#hydepage">HydePage</a></td>
+<td>The base class for all Hyde pages.</td>
+</tr>
+<tr>
+<td><a href="#basemarkdownpage">BaseMarkdownPage</a></td>
+<td>The base class for all Markdown pages.</td>
+</tr>
+<tr>
+<td><a href="#inmemorypage">InMemoryPage</a></td>
+<td>Extendable class for in-memory pages.</td>
+</tr>
+<tr>
+<td><a href="#markdownpage">BladePage</a></td>
+<td>Class for Blade pages.</td>
+</tr>
+<tr>
+<td><a href="#markdownpage">MarkdownPage</a></td>
+<td>Class for Markdown pages.</td>
+</tr>
+<tr>
+<td><a href="#markdownpost">MarkdownPost</a></td>
+<td>Class for Markdown posts.</td>
+</tr>
+<tr>
+<td><a href="#documentationpage">DocumentationPage</a></td>
+<td>Class for documentation pages.</td>
+</tr>
+<tr>
+<td><a href="#htmlpage">HtmlPage</a></td>
+<td>Class for HTML pages.</td>
+</tr>
+</tbody>
+</table>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
