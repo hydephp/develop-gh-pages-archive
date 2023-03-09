@@ -111,12 +111,7 @@
 <a href="#directory-structure">Directory structure</a>
 </li>
 <li>
-<a href="#page-types">Page Types</a>
-<ul>
-<li>
-<a href="#overview-of-a-page-class">Overview of a page class</a>
-</li>
-</ul>
+<a href="#page-models">Page Models</a>
 </li>
 <li>
 <a href="#file-autodiscovery">File Autodiscovery</a>
@@ -212,7 +207,7 @@
 <a href="#autodiscovery">Autodiscovery</a>
 </li>
 <li>
-<a href="#page-types-1">Page Types</a>
+<a href="#page-types">Page Types</a>
 </li>
 <li>
 <a href="#page-identifiers">Page Identifiers</a>
@@ -429,30 +424,16 @@ php hyde &lt;command&gt; [--help]
 </tr>
 </tbody>
 </table>
-<h2>Page Types<a id="page-types" href="#page-types" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>All pages in HydePHP are internally represented by a page object. The object instance contains all the data HydePHP has parsed and discovered.</p>
-<p>HydePHP ships with a few different page types. Each page type is defined as its own page class; all of which extend the base HydePage class.</p>
+<h2>Page Models<a id="page-models" href="#page-models" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>The Hyde page models are an integral part of how HydePHP creates your static site. Each page in your site is represented
+by a page model. These are simply PHP classes that in addition to holding both the source content and computed data
+for your pages, also house instructions to Hyde on how to parse, process, and render the pages to static HTML.</p>
 <p>The page classes are very important and fill two roles:</p>
 <ol>
-<li>The classes themselves, act as blueprints, defining information for Hyde to use when parsing and compiling the page.</li>
-<li>The instances of the classes, contain the actual data HydePHP has parsed and discovered.</li>
+<li>They act as blueprints containing <em>static</em> instructions for how to parse, process, and, render pages.</li>
+<li>Each class <em>instance</em> also holds the page source contents, as well as the computed data.</li>
 </ol>
-<h3>Overview of a page class<a id="overview-of-a-page-class" href="#overview-of-a-page-class" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>As an example of what they look like, here is a simplified version of the MarkdownPost class.</p>
-<p>The static properties define the blueprint for the entire page type, and the instance properties are the actual data HydePHP has parsed or generated from the source file.</p>
-<pre><code class="language-php">class MarkdownPost extends BaseMarkdownPage
-{
-    public static string $sourceDirectory = '_posts'; // The directory where HydePHP will look for source files
-    public static string $outputDirectory = 'posts'; // The directory where HydePHP will output compiled files
-    public static string $fileExtension = '.md'; // The file extension HydePHP will look for
-
-    public FrontMatter $matter; // The parsed front matter data
-    public Markdown $markdown; // The parsed Markdown content
-
-    public readonly string $identifier; // The unique identifier for the page
-    public readonly string $routeKey; // The key used to access the page in the routing system
-}
-</code></pre>
+<p>To learn more, you can visit the <a href="page-models">Page Models</a> page.</p>
 <h2>File Autodiscovery<a id="file-autodiscovery" href="#file-autodiscovery" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Content files, meaning source Markdown and Blade files, are automatically discovered by Hyde and compiled to HTML when
 building the site. This means that you don't need to worry about routing and controllers!</p>
@@ -721,7 +702,7 @@ Git repositories can be hosted on GitHub, GitLab, BitBucket, or any other Git ho
 During autodiscovery, Hyde also generates dynamic data to enrich your content based on the page type.</p>
 <p>In short the autodiscovery is split into three steps:
 <code>File discovery -&gt; Page parsing -&gt; Route generation</code></p>
-<h3>Page Types<a id="page-types-1" href="#page-types-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Page Types<a id="page-types" href="#page-types" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>All pages in HydePHP are internally represented by a page object that extends the HydePage class. Each page type has its
 own page class which acts as a blueprint defining information for the framework to parse a file and generate relevant data.</p>
 <h3>Page Identifiers<a id="page-identifiers" href="#page-identifiers" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
@@ -833,7 +814,7 @@ identifier binding Page objects to Route objects, and is used to generate the fi
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/ac6ad8b2ac14fffedd9abddfc55327ae4ea9eee6"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">ac6ad8b2ac14fffedd9abddfc55327ae4ea9eee6</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/252164d78bdbded97cdf33d27d0f2d0bcbe1c473"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">252164d78bdbded97cdf33d27d0f2d0bcbe1c473</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
