@@ -431,8 +431,12 @@ php hyde &lt;command&gt; [--help]
 </table>
 <h2>Page Types<a id="page-types" href="#page-types" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>All pages in HydePHP are internally represented by a page object. The object instance contains all the data HydePHP has parsed and discovered.</p>
-<p>The page classes are very important, as they act as a blueprints, defining information for the framework to parse a file and generate relevant data.
-HydePHP ships with a few different page types. Each page type is defined as its own page class; all of which extend the base HydePage class.</p>
+<p>HydePHP ships with a few different page types. Each page type is defined as its own page class; all of which extend the base HydePage class.</p>
+<p>The page classes are very important and fill two roles:</p>
+<ol>
+<li>The classes themselves, act as blueprints, defining information for Hyde to use when parsing and compiling the page.</li>
+<li>The instances of the classes, contain the actual data HydePHP has parsed and discovered.</li>
+</ol>
 <h3>Overview of a page class<a id="overview-of-a-page-class" href="#overview-of-a-page-class" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>As an example of what they look like, here is a simplified version of the MarkdownPost class.</p>
 <p>The static properties define the blueprint for the entire page type, and the instance properties are the actual data HydePHP has parsed or generated from the source file.</p>
@@ -556,12 +560,12 @@ Take a look at the <a href="customization">customization and configuration guide
 <li>The front matter should be the very first thing in the Markdown file.</li>
 <li>Each key-pair value should be on its own line.</li>
 </ul>
-<p><strong>Example:</strong></p>
+<p><strong>To use Front Matter, add Yaml to the top of your Markdown file:</strong></p>
 <pre><code class="language-markdown">---
 title: &quot;My New Post&quot;
 author:
   name: &quot;John Doe&quot;
-  website: https://mrhyde.example.com
+  website: https://example.com
 ---
 
 ## Markdown comes here
@@ -829,7 +833,7 @@ identifier binding Page objects to Route objects, and is used to generate the fi
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/ff6a44ecfa3bd0d6a46450f180add5fb2e249c0e"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">ff6a44ecfa3bd0d6a46450f180add5fb2e249c0e</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/057e85cad0ee6b5477fcf46787703c46577034ee"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">057e85cad0ee6b5477fcf46787703c46577034ee</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
