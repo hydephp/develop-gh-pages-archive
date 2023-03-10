@@ -251,9 +251,21 @@
 </li>
 </ul>
 </li>
+<li>
+<a href="#inmemorypage">InMemoryPage</a>
+<ul>
+<li>
+<a href="#quick-reference-2">Quick Reference</a>
+</li>
+</ul>
+</li>
 </ul>
 
-            </li>                                    </ul>
+            </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/in-memory-pages.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            InMemoryPages
+        </a>
+    </li>                                    </ul>
             </li>
                     <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: false }" >
                 <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center  group hover:bg-black/10 "  @click="groupOpen = ! groupOpen" >
@@ -356,6 +368,11 @@ under the <code>HydePage</code> class documentation which is conveniently locate
 </table>
 <h2>HydePage<a id="hydepage" href="#hydepage" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The base class for all Hyde pages, all other page classes extend this class.</p>
+<p>Unlike other frameworks, in general you don't instantiate pages yourself in Hyde, instead, the page models acts as
+blueprints defining information for Hyde to know how to parse a file, and what data around it should be generated.</p>
+<p>To create a parsed file instance, you'd typically just create a source file, and you can then access the parsed file
+from the HydeKernel's page index.</p>
+<p>In Blade views, you can always access the current page instance being rendered using the <code>$page</code> variable.</p>
 <h3>Quick Reference<a id="quick-reference" href="#quick-reference" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <table>
 <thead>
@@ -701,6 +718,31 @@ $page-&gt;save(): $this
 </code></pre>
 <!-- End generated docs for Hyde\Pages\Concerns\BaseMarkdownPage -->
 </section>
+
+<h2>InMemoryPage<a id="inmemorypage" href="#inmemorypage" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Before we take a look at the common page classes, you'll usually use, let's first take a look at one that's quite interesting.</p>
+<p>This class is especially useful for one-off custom pages. But if your usage grows, or if you want to utilize Hyde
+autodiscovery, you may benefit from creating a custom page class instead, as that will give you full control.</p>
+<p>You can learn more about the InMemoryPage class in the <a href="in-memory-pages">InMemoryPage documentation</a>.</p>
+<h3>Quick Reference<a id="quick-reference-2" href="#quick-reference-2" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Class Name</th>
+<th>Namespace</th>
+<th>Source Code</th>
+<th>API Docs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>InMemoryPage</code></td>
+<td><code>Hyde\Pages</code></td>
+<td><a href="https://github.com/hydephp/framework/blob/master/src/Pages/InMemoryPage.php">Open in GitHub</a></td>
+<td><a href="https://hydephp.github.io/develop/master/api-docs/classes/Hyde-Pages-InMemoryPage.html">Live API Docs</a></td>
+</tr>
+</tbody>
+</table>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
@@ -799,7 +841,7 @@ $page-&gt;save(): $this
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/2e8cf78a248fb5f1ede60d4dedf1582039a68e61"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">2e8cf78a248fb5f1ede60d4dedf1582039a68e61</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/1e824f39210b9b3a8d8f004a1a2052d7b6804444"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">1e824f39210b9b3a8d8f004a1a2052d7b6804444</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
