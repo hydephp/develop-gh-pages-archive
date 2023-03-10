@@ -229,6 +229,107 @@
 </li>
 <li>
 <a href="#methods">Methods</a>
+<ul>
+<li>
+<a href="#make">make()</a>
+</li>
+<li>
+<a href="#isdiscoverable">isDiscoverable()</a>
+</li>
+<li>
+<a href="#get">get()</a>
+</li>
+<li>
+<a href="#parse">parse()</a>
+</li>
+<li>
+<a href="#files">files()</a>
+</li>
+<li>
+<a href="#all">all()</a>
+</li>
+<li>
+<a href="#sourcedirectory">sourceDirectory()</a>
+</li>
+<li>
+<a href="#outputdirectory">outputDirectory()</a>
+</li>
+<li>
+<a href="#fileextension">fileExtension()</a>
+</li>
+<li>
+<a href="#setsourcedirectory">setSourceDirectory()</a>
+</li>
+<li>
+<a href="#setoutputdirectory">setOutputDirectory()</a>
+</li>
+<li>
+<a href="#setfileextension">setFileExtension()</a>
+</li>
+<li>
+<a href="#sourcepath">sourcePath()</a>
+</li>
+<li>
+<a href="#outputpath">outputPath()</a>
+</li>
+<li>
+<a href="#path">path()</a>
+</li>
+<li>
+<a href="#pathtoidentifier">pathToIdentifier()</a>
+</li>
+<li>
+<a href="#baseroutekey">baseRouteKey()</a>
+</li>
+<li>
+<a href="#construct">__construct()</a>
+</li>
+<li>
+<a href="#compile">compile()</a>
+</li>
+<li>
+<a href="#toarray">toArray()</a>
+</li>
+<li>
+<a href="#getsourcepath">getSourcePath()</a>
+</li>
+<li>
+<a href="#getoutputpath">getOutputPath()</a>
+</li>
+<li>
+<a href="#getroutekey">getRouteKey()</a>
+</li>
+<li>
+<a href="#getroute">getRoute()</a>
+</li>
+<li>
+<a href="#getlink">getLink()</a>
+</li>
+<li>
+<a href="#getidentifier">getIdentifier()</a>
+</li>
+<li>
+<a href="#getbladeview">getBladeView()</a>
+</li>
+<li>
+<a href="#title">title()</a>
+</li>
+<li>
+<a href="#metadata">metadata()</a>
+</li>
+<li>
+<a href="#showinnavigation">showInNavigation()</a>
+</li>
+<li>
+<a href="#navigationmenupriority">navigationMenuPriority()</a>
+</li>
+<li>
+<a href="#navigationmenulabel">navigationMenuLabel()</a>
+</li>
+<li>
+<a href="#navigationmenugroup">navigationMenuGroup()</a>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -406,6 +507,184 @@ abstract class HydePage
 }
 </code></pre>
 <h3>Methods<a id="methods" href="#methods" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h4><code>make()</code><a id="make" href="#make" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>No description provided.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::make(string $identifier, Hyde\Markdown\Models\FrontMatter|array $matter): static
+</code></pre>
+<h4><code>isDiscoverable()</code><a id="isdiscoverable" href="#isdiscoverable" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>No description provided.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::isDiscoverable(): bool
+</code></pre>
+<h4><code>get()</code><a id="get" href="#get" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get a page instance from the Kernel's page index by its identifier.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::get(string $identifier): Hyde\Pages\Concerns\HydePage
+</code></pre>
+<ul>
+<li>
+<strong>Throws:</strong> \Hyde\Framework\Exceptions\FileNotFoundException If the page does not exist.</li>
+</ul>
+<h4><code>parse()</code><a id="parse" href="#parse" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Parse a source file into a page model instance.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::parse(string parse.): static New page model instance for the parsed source file.
+</code></pre>
+<ul>
+<li>
+<strong>Throws:</strong> \Hyde\Framework\Exceptions\FileNotFoundException If the file does not exist.</li>
+</ul>
+<h4><code>files()</code><a id="files" href="#files" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get an array of all the source file identifiers for the model.</p>
+<p>Note that the values do not include the source directory or file extension.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::files(): array&lt;string&gt;
+</code></pre>
+<h4><code>all()</code><a id="all" href="#all" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get a collection of all pages, parsed into page models.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::all(): \Hyde\Foundation\Kernel\PageCollection&lt;static&gt;
+</code></pre>
+<h4><code>sourceDirectory()</code><a id="sourcedirectory" href="#sourcedirectory" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get the directory in where source files are stored.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::sourceDirectory(): string
+</code></pre>
+<h4><code>outputDirectory()</code><a id="outputdirectory" href="#outputdirectory" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get the output subdirectory to store compiled HTML.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::outputDirectory(): string
+</code></pre>
+<h4><code>fileExtension()</code><a id="fileextension" href="#fileextension" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get the file extension of the source files.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::fileExtension(): string
+</code></pre>
+<h4><code>setSourceDirectory()</code><a id="setsourcedirectory" href="#setsourcedirectory" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Set the output directory for the HydePage class.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::setSourceDirectory(string $sourceDirectory): void
+</code></pre>
+<h4><code>setOutputDirectory()</code><a id="setoutputdirectory" href="#setoutputdirectory" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Set the source directory for the HydePage class.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::setOutputDirectory(string $outputDirectory): void
+</code></pre>
+<h4><code>setFileExtension()</code><a id="setfileextension" href="#setfileextension" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Set the file extension for the HydePage class.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::setFileExtension(string $fileExtension): void
+</code></pre>
+<h4><code>sourcePath()</code><a id="sourcepath" href="#sourcepath" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Qualify a page identifier into a local file path for the page source file relative to the project root.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::sourcePath(string $identifier): string
+</code></pre>
+<h4><code>outputPath()</code><a id="outputpath" href="#outputpath" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Qualify a page identifier into a target output file path relative to the _site output directory.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::outputPath(string $identifier): string
+</code></pre>
+<h4><code>path()</code><a id="path" href="#path" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get an absolute file path to the page's source directory, or a file within it.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::path(string $path): string
+</code></pre>
+<h4><code>pathToIdentifier()</code><a id="pathtoidentifier" href="#pathtoidentifier" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Format a filename to an identifier for a given model. Unlike the basename function, any nested paths within the source directory are retained in order to satisfy the page identifier definition.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::pathToIdentifier(string index.blade.php): string Example: index
+</code></pre>
+<h4><code>baseRouteKey()</code><a id="baseroutekey" href="#baseroutekey" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get the route key base for the page model.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+HydePage::baseRouteKey(): string
+</code></pre>
+<h4><code>__construct()</code><a id="construct" href="#construct" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>No description provided.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page = new HydePage(string $identifier, Hyde\Markdown\Models\FrontMatter|array $matter): void
+</code></pre>
+<h4><code>compile()</code><a id="compile" href="#compile" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Compile the page into static HTML.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page-&gt;compile(): string The compiled HTML for the page.
+</code></pre>
+<h4><code>toArray()</code><a id="toarray" href="#toarray" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get the instance as an array.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page-&gt;toArray(): array
+</code></pre>
+<h4><code>getSourcePath()</code><a id="getsourcepath" href="#getsourcepath" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get the path to the instance source file, relative to the project root.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page-&gt;getSourcePath(): string
+</code></pre>
+<h4><code>getOutputPath()</code><a id="getoutputpath" href="#getoutputpath" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get the path where the compiled page will be saved.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page-&gt;getOutputPath(): string Path relative to the site output directory.
+</code></pre>
+<h4><code>getRouteKey()</code><a id="getroutekey" href="#getroutekey" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get the route key for the page.</p>
+<p>The route key is the URL path relative to the site root.</p>
+<p>For example, if the compiled page will be saved to _site/docs/index.html, then this method will return 'docs/index'. Route keys are used to identify pages, similar to how named routes work in Laravel, only that here the name is not just arbitrary, but also defines the output location.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page-&gt;getRouteKey(): string The page's route key.
+</code></pre>
+<h4><code>getRoute()</code><a id="getroute" href="#getroute" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get the route for the page.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page-&gt;getRoute(): \Hyde\Support\Models\Route The page's route.
+</code></pre>
+<h4><code>getLink()</code><a id="getlink" href="#getlink" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Format the page instance to a URL path (relative to site root) with support for pretty URLs if enabled.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page-&gt;getLink(): string
+</code></pre>
+<h4><code>getIdentifier()</code><a id="getidentifier" href="#getidentifier" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get the page model's identifier property.</p>
+<p>The identifier is the part between the source directory and the file extension. It may also be known as a 'slug', or previously 'basename'.</p>
+<p>For example, the identifier of a source file stored as '_pages/about/contact.md' would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page-&gt;getIdentifier(): string The page's identifier.
+</code></pre>
+<h4><code>getBladeView()</code><a id="getbladeview" href="#getbladeview" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get the Blade template for the page.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page-&gt;getBladeView(): string Blade template/view key.
+</code></pre>
+<h4><code>title()</code><a id="title" href="#title" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Get the page title to display in HTML tags like <title> and <meta> tags.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page-&gt;title(): string
+</code></pre>
+<h4><code>metadata()</code><a id="metadata" href="#metadata" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>No description provided.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page-&gt;metadata(): Hyde\Framework\Features\Metadata\PageMetadataBag
+</code></pre>
+<h4><code>showInNavigation()</code><a id="showinnavigation" href="#showinnavigation" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>No description provided.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page-&gt;showInNavigation(): bool
+</code></pre>
+<h4><code>navigationMenuPriority()</code><a id="navigationmenupriority" href="#navigationmenupriority" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>No description provided.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page-&gt;navigationMenuPriority(): int
+</code></pre>
+<h4><code>navigationMenuLabel()</code><a id="navigationmenulabel" href="#navigationmenulabel" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>No description provided.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page-&gt;navigationMenuLabel(): string
+</code></pre>
+<h4><code>navigationMenuGroup()</code><a id="navigationmenugroup" href="#navigationmenugroup" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>No description provided.</p>
+<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
+$page-&gt;navigationMenuGroup(): string
+</code></pre>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
@@ -504,7 +783,7 @@ abstract class HydePage
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/cd5e84f310ead451ea81e1d031f555f0c87401e0"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">cd5e84f310ead451ea81e1d031f555f0c87401e0</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/74d3e4b998c9c163236961b583a124a1a8bacad3"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">74d3e4b998c9c163236961b583a124a1a8bacad3</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
