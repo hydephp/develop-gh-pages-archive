@@ -507,6 +507,7 @@ abstract class HydePage
 }
 </code></pre>
 <h3>Methods<a id="methods" href="#methods" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<blockquote class="warning"><p class="p-2" style="padding-right: 1rem"><strong>Heads up!</strong> The following methods are defined in the <code>HydePage</code> class, and are thus available to all page classes. Since the HydePage class is abstract, you cannot instantiate it directly, and many of the static methods are also only callable from the child classes.</p></blockquote>
 <h4><code>make()</code><a id="make" href="#make" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>No description provided.</p>
 <pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
@@ -656,7 +657,7 @@ $page-&gt;getIdentifier(): string The page's identifier.
 $page-&gt;getBladeView(): string Blade template/view key.
 </code></pre>
 <h4><code>title()</code><a id="title" href="#title" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Get the page title to display in HTML tags like <title> and <meta> tags.</p>
+<p>Get the page title to display in HTML tags like &lt;title&gt; and &lt;meta&gt; tags.</p>
 <pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
 $page-&gt;title(): string
 </code></pre>
@@ -783,7 +784,7 @@ $page-&gt;navigationMenuGroup(): string
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/74d3e4b998c9c163236961b583a124a1a8bacad3"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">74d3e4b998c9c163236961b583a124a1a8bacad3</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/10496e7578d2e91cc6dc44a18b1cba3d342361d3"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">10496e7578d2e91cc6dc44a18b1cba3d342361d3</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
