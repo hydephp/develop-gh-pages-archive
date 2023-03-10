@@ -5621,10 +5621,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Support-Models-RenderData.html#method_getCurrentRoute"
         },                {
+            "fqsen": "\\Hyde\\Support\\Models\\RenderData\u003A\u003AgetRoute\u0028\u0029",
+            "name": "getRoute",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-RenderData.html#method_getRoute"
+        },                {
             "fqsen": "\\Hyde\\Support\\Models\\RenderData\u003A\u003AgetCurrentPage\u0028\u0029",
             "name": "getCurrentPage",
             "summary": "",
             "url": "classes/Hyde-Support-Models-RenderData.html#method_getCurrentPage"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Models\\RenderData\u003A\u003AgetRouteKey\u0028\u0029",
+            "name": "getRouteKey",
+            "summary": "",
+            "url": "classes/Hyde-Support-Models-RenderData.html#method_getRouteKey"
         },                {
             "fqsen": "\\Hyde\\Support\\Models\\RenderData\u003A\u003AshareToView\u0028\u0029",
             "name": "shareToView",
@@ -5651,15 +5661,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Support-Models-RenderData.html#property_page"
         },                {
-            "fqsen": "\\Hyde\\Support\\Models\\RenderData\u003A\u003A\u0024currentRoute",
-            "name": "currentRoute",
+            "fqsen": "\\Hyde\\Support\\Models\\RenderData\u003A\u003A\u0024route",
+            "name": "route",
             "summary": "",
-            "url": "classes/Hyde-Support-Models-RenderData.html#property_currentRoute"
+            "url": "classes/Hyde-Support-Models-RenderData.html#property_route"
         },                {
-            "fqsen": "\\Hyde\\Support\\Models\\RenderData\u003A\u003A\u0024currentPage",
-            "name": "currentPage",
+            "fqsen": "\\Hyde\\Support\\Models\\RenderData\u003A\u003A\u0024routeKey",
+            "name": "routeKey",
             "summary": "",
-            "url": "classes/Hyde-Support-Models-RenderData.html#property_currentPage"
+            "url": "classes/Hyde-Support-Models-RenderData.html#property_routeKey"
         },                {
             "fqsen": "\\Hyde\\Support\\Models\\Route",
             "name": "Route",
