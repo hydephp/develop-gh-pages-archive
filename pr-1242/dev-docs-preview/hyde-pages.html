@@ -279,6 +279,20 @@
 </li>
 </ul>
 </li>
+<li>
+<a href="#markdownpage">MarkdownPage</a>
+<ul>
+<li>
+<a href="#quick-reference-4">Quick Reference</a>
+</li>
+<li>
+<a href="#base-structure-4">Base Structure</a>
+</li>
+<li>
+<a href="#methods-4">Methods</a>
+</li>
+</ul>
+</li>
 </ul>
 
             </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
@@ -893,6 +907,40 @@ $page-&gt;compile(): string // The compiled HTML for the page.
 </code></pre>
 <!-- End generated docs for Hyde\Pages\BladePage -->
 </section>
+
+<h2>MarkdownPage<a id="markdownpage" href="#markdownpage" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Page class for Markdown pages.</p>
+<p>Markdown pages are stored in the _<code>pages</code> directory and using the <code>.md</code> extension.
+The Markdown will be compiled to HTML using a minimalistic layout to the <code>_site/</code> directory.</p>
+<h3>Quick Reference<a id="quick-reference-4" href="#quick-reference-4" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Class Name</th>
+<th>Namespace</th>
+<th>Source Code</th>
+<th>API Docs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MarkdownPage</code></td>
+<td><code>Hyde\Pages</code></td>
+<td><a href="https://github.com/hydephp/framework/blob/master/src/Pages/MarkdownPage.php">Open in GitHub</a></td>
+<td><a href="https://hydephp.github.io/develop/master/api-docs/classes/Hyde-Pages-MarkdownPage.html">Live API Docs</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Base Structure<a id="base-structure-4" href="#base-structure-4" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<pre><code class="language-php">class MarkdownPage extends BaseMarkdownPage
+{
+    public static string $sourceDirectory = '_pages';
+    public static string $outputDirectory = '';
+    public static string $template = 'hyde::layouts/page';
+}
+</code></pre>
+<h3>Methods<a id="methods-4" href="#methods-4" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>This class does not define any additional methods.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
@@ -991,7 +1039,7 @@ $page-&gt;compile(): string // The compiled HTML for the page.
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/da02312a49177ab4aa35fe9d2ade0fc53ea8aeea"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">da02312a49177ab4aa35fe9d2ade0fc53ea8aeea</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/3ed927ab4eade0201e8be1fcc5eda84f6f85a7de"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">3ed927ab4eade0201e8be1fcc5eda84f6f85a7de</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
