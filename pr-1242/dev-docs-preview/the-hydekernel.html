@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HydePHP Documentation Preview - Search</title>
+<title>HydePHP Documentation Preview - The HydeKernel</title>
 
 
 
-<link rel="canonical" href="https://hydephp.github.io/develop/pr-1242/dev-docs-preview/dev-docs-preview/search.html">
-<meta name="twitter:title" content="HydePHP Documentation Preview - Search">
-<meta property="og:title" content="HydePHP Documentation Preview - Search">
+<link rel="canonical" href="https://hydephp.github.io/develop/pr-1242/dev-docs-preview/dev-docs-preview/the-hydekernel.html">
+<meta name="twitter:title" content="HydePHP Documentation Preview - The HydeKernel">
+<meta property="og:title" content="HydePHP Documentation Preview - The HydeKernel">
 
 
 <link rel="sitemap" href="https://hydephp.github.io/develop/pr-1242/dev-docs-preview/sitemap.xml" type="application/xml" title="Sitemap">
@@ -210,7 +210,7 @@
         </a>
     </li>                                    </ul>
             </li>
-                    <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: false }" >
+                    <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: true }" >
                 <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center  group hover:bg-black/10 "  @click="groupOpen = ! groupOpen" >
                     <h4 class="sidebar-group-heading text-base font-semibold  cursor-pointer dark:group-hover:text-white ">Architecture Concepts</h4>
                                             <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
@@ -242,36 +242,61 @@
             <a href="../dev-docs-preview/page-models.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Page models
         </a>
-    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs-preview/the-hydekernel.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+    </li>                                            <li class="sidebar-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
+            <a href="../dev-docs-preview/the-hydekernel.html" aria-current="true" class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10">
             The HydeKernel
         </a>
-    </li>                                    </ul>
+
+                    <span class="sr-only">Table of contents</span>
+            <ul class="table-of-contents">
+<li>
+<a href="#introduction">Introduction</a>
+</li>
+<li>
+<a href="#accessing-the-kernel">Accessing the kernel</a>
+</li>
+</ul>
+
+            </li>                                    </ul>
             </li>
             </ul>
     </nav>
     </aside>
     <main id="content" class="dark:bg-gray-900 min-h-screen bg-gray-50 md:bg-white absolute top-16 md:top-0 w-screen md:left-64 md:w-[calc(100vw_-_16rem)]">
         <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 prose dark:prose-invert max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)]">
-        <h1>Search the documentation site</h1>
-    <style>#searchMenuButton, .edit-page-link {
-            display: none !important;
-        }
-
-        #search-results {
-            max-height: unset !important;
-        }</style>
-    <div id="hyde-search">
-    <noscript>
-        The search feature requires JavaScript to be enabled in your browser.
-    </noscript>
-    <input class="w-full rounded text-base leading-normal bg-gray-100 dark:bg-gray-700 py-2 px-3 max-w-xs border-b-4 border-indigo-400" type="search" name="search" id="search-input" placeholder="Search..." autocomplete="off" autofocus>
-</div>
+    
     <header id="document-header" class="flex items-center flex-wrap prose-h1:mb-3">
-        
+        <h1>The HydeKernel</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        
+        <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>In the centre, or should I say <em>core</em>, of HydePHP is the HydeKernel. The kernel encapsulates a HydePHP project and
+provides helpful methods for interacting with it. You can think of it as the heart of HydePHP, if you're a romantic.</p>
+<p>The HydeKernel is so important that you have probably used it already. The main entry point for the HydePHP
+API is the Hyde facade, which calls methods on the kernel.</p>
+<pre><code class="language-php">use Hyde\Hyde;
+use Hyde\Foundation\HydeKernel;
+
+Hyde::version() === app(HydeKernel::class)-&gt;version();
+</code></pre>
+<p>The kernel is created very early on in the application lifecycle, in the bootstrap.php file, where it is also bound
+as a singleton into the application service container.</p>
+<h2>Accessing the kernel<a id="accessing-the-kernel" href="#accessing-the-kernel" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>The HydeKernel It is stored as a singleton in this class, and is bound into the
+Laravel Application Service Container, and can be accessed in a few ways.</p>
+<p>Commonly, you'll use the <code>Hyde</code> facade, but you can also use Dependency Injection
+by type-hinting the <code>HydeKernel::class</code>, or use the <code>hyde()</code> function to get the Kernel.</p>
+<p>The Kernel instance is constructed in bootstrap.php, and is available globally as $hyde.</p>
+<p>Here are some examples of how you can call methods on the Kernel. All methods call the same method on the same instance, so it's just a matter of preference.</p>
+<pre><code class="language-php">use Hyde\Hyde;
+use Hyde\Foundation\HydeKernel;
+
+Hyde::version();
+Hyde::kernel()-&gt;version();
+HydeKernel::getInstance()-&gt;version();
+app(HydeKernel::class)-&gt;version();
+hyde()-&gt;version();
+</code></pre>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
