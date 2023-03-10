@@ -212,6 +212,11 @@
 <ul>
 <li>
 <a href="#about-the-reference">About the reference</a>
+<ul>
+<li>
+<a href="#inheritance">Inheritance</a>
+</li>
+</ul>
 </li>
 <li>
 <a href="#table-of-contents">Table of Contents</a>
@@ -229,107 +234,6 @@
 </li>
 <li>
 <a href="#methods">Methods</a>
-<ul>
-<li>
-<a href="#make">make()</a>
-</li>
-<li>
-<a href="#isdiscoverable">isDiscoverable()</a>
-</li>
-<li>
-<a href="#get">get()</a>
-</li>
-<li>
-<a href="#parse">parse()</a>
-</li>
-<li>
-<a href="#files">files()</a>
-</li>
-<li>
-<a href="#all">all()</a>
-</li>
-<li>
-<a href="#sourcedirectory">sourceDirectory()</a>
-</li>
-<li>
-<a href="#outputdirectory">outputDirectory()</a>
-</li>
-<li>
-<a href="#fileextension">fileExtension()</a>
-</li>
-<li>
-<a href="#setsourcedirectory">setSourceDirectory()</a>
-</li>
-<li>
-<a href="#setoutputdirectory">setOutputDirectory()</a>
-</li>
-<li>
-<a href="#setfileextension">setFileExtension()</a>
-</li>
-<li>
-<a href="#sourcepath">sourcePath()</a>
-</li>
-<li>
-<a href="#outputpath">outputPath()</a>
-</li>
-<li>
-<a href="#path">path()</a>
-</li>
-<li>
-<a href="#pathtoidentifier">pathToIdentifier()</a>
-</li>
-<li>
-<a href="#baseroutekey">baseRouteKey()</a>
-</li>
-<li>
-<a href="#construct">__construct()</a>
-</li>
-<li>
-<a href="#compile">compile()</a>
-</li>
-<li>
-<a href="#toarray">toArray()</a>
-</li>
-<li>
-<a href="#getsourcepath">getSourcePath()</a>
-</li>
-<li>
-<a href="#getoutputpath">getOutputPath()</a>
-</li>
-<li>
-<a href="#getroutekey">getRouteKey()</a>
-</li>
-<li>
-<a href="#getroute">getRoute()</a>
-</li>
-<li>
-<a href="#getlink">getLink()</a>
-</li>
-<li>
-<a href="#getidentifier">getIdentifier()</a>
-</li>
-<li>
-<a href="#getbladeview">getBladeView()</a>
-</li>
-<li>
-<a href="#title">title()</a>
-</li>
-<li>
-<a href="#metadata">metadata()</a>
-</li>
-<li>
-<a href="#showinnavigation">showInNavigation()</a>
-</li>
-<li>
-<a href="#navigationmenupriority">navigationMenuPriority()</a>
-</li>
-<li>
-<a href="#navigationmenulabel">navigationMenuLabel()</a>
-</li>
-<li>
-<a href="#navigationmenugroup">navigationMenuGroup()</a>
-</li>
-</ul>
 </li>
 </ul>
 </li>
@@ -390,6 +294,9 @@ It is especially useful if you're looking to implement your own page classes, or
 <p>This document is heavily based around the actual source code, as I believe the best way to understand the code is to read it.
 However, large parts of the code are simplified for brevity and illustration. The code is not meant to be copy-pasted, but
 rather used as a reference so that you know what to look for in the actual source code, if you want to dig deeper.</p>
+<h4>Inheritance<a id="inheritance" href="#inheritance" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Since all HydePages extend the base <code>HydePage</code> class, those shared methods are only listed once,
+under the <code>HydePage</code> class documentation which is conveniently located just below this section.</p>
 <h3>Table of Contents<a id="table-of-contents" href="#table-of-contents" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <table>
 <thead>
@@ -793,7 +700,7 @@ $page-&gt;navigationMenuGroup(): string
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/53fb9ff885a88dac72edc60ab12a6ee55c49c421"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">53fb9ff885a88dac72edc60ab12a6ee55c49c421</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/d41683f5ac0ffaca4532a99b35ca8028a33932b1"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">d41683f5ac0ffaca4532a99b35ca8028a33932b1</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
