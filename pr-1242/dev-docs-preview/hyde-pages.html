@@ -237,6 +237,17 @@
 </li>
 </ul>
 </li>
+<li>
+<a href="#basemarkdownpage">BaseMarkdownPage</a>
+<ul>
+<li>
+<a href="#quick-reference-1">Quick Reference</a>
+</li>
+<li>
+<a href="#base-structure-1">Base Structure</a>
+</li>
+</ul>
+</li>
 </ul>
 
             </li>                                    </ul>
@@ -406,7 +417,7 @@ abstract class HydePage
      * The generated page metadata.
      */
     public PageMetadataBag $metadata;
-    
+
     /**
      * The generated page navigation data.
      */
@@ -602,6 +613,39 @@ $page-&gt;navigationMenuGroup(): string
 </code></pre>
 <!-- End generated docs for Hyde\Pages\Concerns\HydePage -->
 </section>
+
+<h2>BaseMarkdownPage<a id="basemarkdownpage" href="#basemarkdownpage" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>The base class for all Markdown-based page models, with additional helpers tailored for Markdown pages.</p>
+<h3>Quick Reference<a id="quick-reference-1" href="#quick-reference-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Class Name</th>
+<th>Namespace</th>
+<th>Source Code</th>
+<th>API Docs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BaseMarkdownPage</code></td>
+<td><code>Hyde\Pages\Concerns</code></td>
+<td><a href="https://github.com/hydephp/framework/blob/master/src/Pages/Concerns/BaseMarkdownPage.php">Open in GitHub</a></td>
+<td><a href="https://hydephp.github.io/develop/master/api-docs/classes/Hyde-Pages-Concerns-BaseMarkdownPage.html">Live API Docs</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Base Structure<a id="base-structure-1" href="#base-structure-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<pre><code class="language-php">/**
+ * The base class for all Markdown-based page models. Here simplified for the sake of brevity.
+ */
+abstract class BaseMarkdownPage extends HydePage
+{
+    public Markdown $markdown;
+
+    public static string $fileExtension = '.md';
+}
+</code></pre>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
@@ -700,7 +744,7 @@ $page-&gt;navigationMenuGroup(): string
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/5bc9f5b61e3218a1d1fb6ffcce3242a3ede8202c"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">5bc9f5b61e3218a1d1fb6ffcce3242a3ede8202c</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/60e78516be2cee728a5883915d5e6e7777f147b1"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">60e78516be2cee728a5883915d5e6e7777f147b1</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
