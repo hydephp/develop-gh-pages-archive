@@ -335,11 +335,9 @@
     </header>
     <section id="document-main-content" itemprop="articleBody">
         <h2>Introduction to Hyde Posts<a id="introduction-to-hyde-posts" href="#introduction-to-hyde-posts" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Making blog posts with Hyde is easy. At the most basic level,
-all you need is to add a Markdown file to your <code>_posts</code> folder.</p>
-<p>To use the full power of the Hyde post module however,
-you'll want to add YAML Front Matter to your posts.</p>
-<p>You can scaffold posts with automatic front matter using the HydeCLI:</p>
+<p>Making blog posts with Hyde is easy. At the most basic level, all you need is to add a Markdown file to your <code>_posts</code> folder.</p>
+<p>To use the full power of the Hyde post module however, you'll want to add YAML <a href="front-matter">Front Matter</a> to your posts.</p>
+<p><strong>You can interactively scaffold posts with automatic front matter using the HydeCLI:</strong></p>
 <pre><code class="language-bash">php hyde make:post
 </code></pre>
 <p>Learn more about scaffolding posts, and other files, in the <a href="console-commands">console commands</a> documentation.</p>
@@ -427,8 +425,8 @@ Keep on reading to see further explanations, details, and examples.</p>
 </tr>
 </tbody>
 </table>
-<p>Note that YAML here is pretty forgiving. In most cases you do not need to wrap strings
-in quotes, but it can help in certain edge cases, thus they are included here.</p>
+<p>Note that YAML here is pretty forgiving. In most cases you do not need to wrap strings in quotes,
+but it can help in certain edge cases, for example if the text contains special Yaml characters, thus they are included here.</p>
 <p>In the examples below, when there are multiple examples, they signify various ways to use the same property.</p>
 <p>When specifying an array you don't need all the sub-properties. The examples generally show all the supported values.</p>
 <h3>Title<a id="title" href="#title" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
@@ -495,8 +493,9 @@ for a detailed blog post with examples and schema information!</p>
 </blockquote>
 <h2>Using images in posts<a id="using-images-in-posts" href="#using-images-in-posts" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>To use images stored in the <code>_media/</code> directory, you can use the following syntax:</p>
-<pre><code class="language-markdown">![Image Alt](../media/image.png &quot;Image Title&quot;) # Note the relative path since the blog post is compiled to `posts/example.html`
+<pre><code class="language-markdown">![Image Alt](../media/image.png &quot;Image Title&quot;)
 </code></pre>
+<p><em>Note the relative path since the blog post is compiled to <code>posts/example.html</code></em></p>
 <p>To learn more, check out the <a href="managing-assets#managing-images">chapter in managing assets</a></p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
@@ -596,7 +595,7 @@ for a detailed blog post with examples and schema information!</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/ffec24a486eb84a0e535357dd27c757e07b164f7"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">ffec24a486eb84a0e535357dd27c757e07b164f7</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/eb772de2575c845e173c298b11d8c7221ed71a3e"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">eb772de2575c845e173c298b11d8c7221ed71a3e</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
