@@ -157,6 +157,11 @@
 </li>
 <li>
 <a href="#dynamic-content-generation">Dynamic content generation</a>
+<ul>
+<li>
+<a href="#front-matter-reference">Front Matter reference</a>
+</li>
+</ul>
 </li>
 <li>
 <a href="#sidebar">Sidebar</a>
@@ -432,6 +437,7 @@ navigation:
 <h2>Dynamic content generation<a id="dynamic-content-generation" href="#dynamic-content-generation" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Hyde makes documentation pages easy to create by automatically generating dynamic content such as the sidebar and page title.
 If you are not happy with the results you can customize them in the config or with front matter.</p>
+<h3>Front Matter reference<a id="front-matter-reference" href="#front-matter-reference" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Before we look at how to override things, here is an overview of the relevant content Hyde generates,
 and where the data is from as well as where it can be overridden.</p>
 <table>
@@ -540,9 +546,7 @@ The path is relative to the site output, typically <code>_site</code>.</p>
 You can change this in the Docs configuration file.</p>
 <pre><code class="language-php">'title' =&gt; 'API Documentation',
 </code></pre>
-<blockquote>
-<p>Tip: The header will link to the docs/index page, if it exists.</p>
-</blockquote>
+<blockquote class="info"><p>Tip: The header will link to the docs/index page, if it exists.</p></blockquote>
 <h3>Sidebar page order<a id="sidebar-page-order" href="#sidebar-page-order" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>To quickly arrange the order of items in the sidebar, you can reorder the page slugs in the list and the links will be sorted in that order.
 Link items without an entry here will have fall back to the default priority of 999, putting them last.</p>
@@ -725,7 +729,7 @@ Just target the <code>.edit-page-link</code> class.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/4bf6753d637bcd89dc8a6240db89878b263f2730"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">4bf6753d637bcd89dc8a6240db89878b263f2730</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/a097d004ae5376880657cde5c3c36e66e29f402a"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">a097d004ae5376880657cde5c3c36e66e29f402a</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
