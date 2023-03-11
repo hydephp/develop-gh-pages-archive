@@ -398,7 +398,7 @@ to keep in mind when creating blog posts so that you don't get unexpected result
 <li>Filenames should use <code>kebab-case-slug</code> format, followed by the appropriate extension</li>
 <li>Files prefixed with <code>_underscores</code> are ignored by Hyde</li>
 <li>You should always have an <code>index.md</code> file in the <code>_docs/</code> directory</li>
-<li>Your page will be stored in <code>_site/docs/&lt;slug&gt;.html</code> unless you <a href="#output-directory">change it in the config</a>
+<li>Your page will be stored in <code>_site/docs/&lt;identifier&gt;.html</code> unless you <a href="#output-directory">change it in the config</a>
 </li>
 </ul>
 <h3>Advanced usage and customization<a id="advanced-usage-and-customization" href="#advanced-usage-and-customization" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
@@ -522,7 +522,7 @@ for example to specify a version like the Hyde docs does, you can specify the ou
 The path is relative to the site output, typically <code>_site</code>.</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_config/hyde.php</small>'output_directories' =&gt; [
     \Hyde\Pages\DocumentationPage::class =&gt; 'docs' // default
-    \Hyde\Pages\DocumentationPage::class =&gt; 'docs/master' // What the Hyde docs use
+    \Hyde\Pages\DocumentationPage::class =&gt; 'docs/1.x' // What the Hyde docs use
 ]
 </code></pre>
 <p>Note that you need to take care as to not set it to something that may conflict with other parts, such as media or posts directories.</p>
@@ -712,7 +712,7 @@ Note that this means that you can't have two documentation pages with the same f
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/b4caead6d9f1303853b49140bb2cc2a10e063217"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">b4caead6d9f1303853b49140bb2cc2a10e063217</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/cc2919f15ce54320a5995345cfe4ca153eb22f15"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">cc2919f15ce54320a5995345cfe4ca153eb22f15</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
