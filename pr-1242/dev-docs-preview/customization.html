@@ -181,7 +181,7 @@
 <a href="#hydephp-configuration-files">HydePHP Configuration Files</a>
 </li>
 <li>
-<a href="#laravel--package-configuration-files">Laravel &amp; Package Configuration Files</a>
+<a href="#publishable-laravel--package-configuration-files">Publishable Laravel &amp; Package Configuration Files</a>
 </li>
 </ul>
 </li>
@@ -387,32 +387,8 @@ For example, <code>config('hyde.name')</code> means that we are looking for the 
 <p>There are a few configuration files available in the <code>config</code> directory. All options are documented, so feel free to look through the files and get familiar with the options available to you.</p>
 <p>Below are two tables over the different configuration files. Click on a file name to see the default file on GitHub.</p>
 <h3>HydePHP Configuration Files<a id="hydephp-configuration-files" href="#hydephp-configuration-files" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>These are the main configuration files for HydePHP and lets you customize the look and feel of your site, as well as the behaviour of HydePHP.</p>
-<table class="align-top">
-<thead>
-<tr>
-<th>Config File</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/hydephp/hyde/blob/master/config/hyde.php" rel="nofollow noopener">hyde.php</a></td>
-<td>Main HydePHP configuration file. Used for things ranging from site name and base URL to navigation menus and what features to enable.</td>
-</tr>
-<tr>
-<td><a href="https://github.com/hydephp/hyde/blob/master/config/docs.php" rel="nofollow noopener">docs.php</a></td>
-<td>Options for the HydePHP documentation site generator module.</td>
-</tr>
-<tr>
-<td><a href="https://github.com/hydephp/hyde/blob/master/config/markdown.php" rel="nofollow noopener">markdown.php</a></td>
-<td>Configure Markdown related services, as well as change the CommonMark extensions.</td>
-</tr>
-</tbody>
-</table>
-<blockquote class="info"><p>Tip: The values in hyde.php can also be set in YAML by creating a hyde.yml file in the root of your project. See <a href="#yaml-configuration">#yaml-configuration</a> for more information.</p></blockquote>
-<h3>Laravel &amp; Package Configuration Files<a id="laravel--package-configuration-files" href="#laravel--package-configuration-files" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Since HydePHP is based on Laravel we also have a few configuration files related to them. You probably don't need to edit any of these unless you want to make changes to the application core.</p>
+<p>These are the main configuration files for HydePHP and lets you customize the look and feel of your site, as well as the behaviour of HydePHP itself.
+The main configuration file, <code>hyde.php</code>, is used for things ranging from site name and base URL to navigation menus and what features to enable.</p>
 <table>
 <thead>
 <tr>
@@ -422,20 +398,47 @@ For example, <code>config('hyde.name')</code> means that we are looking for the 
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/hydephp/hyde/blob/master/app/config.php" rel="nofollow noopener">app.php</a></td>
-<td>Configures the underlying Laravel application.</td>
+<td><a href="https://github.com/hydephp/hyde/blob/master/config/hyde.php" rel="nofollow noopener">hyde.php</a></td>
+<td>Main HydePHP configuration file for customizing the overall project.</td>
 </tr>
 <tr>
-<td><a href="https://github.com/hydephp/hyde/blob/master/config/commands.php" rel="nofollow noopener">commands.php</a></td>
-<td>Configures the Laravel Zero commands for the HydeCLI.</td>
+<td><a href="https://github.com/hydephp/hyde/blob/master/config/docs.php" rel="nofollow noopener">docs.php</a></td>
+<td>Options for the HydePHP documentation site generator module.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hydephp/hyde/blob/master/config/markdown.php" rel="nofollow noopener">markdown.php</a></td>
+<td>Configure Markdown related services, as well as change the CommonMark extensions.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hydephp/hyde/blob/master/app/config.php" rel="nofollow noopener">app/config.php</a></td>
+<td>Configures the underlying Laravel application. (Commonly found as config/app.php in standard Laravel applications)</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="info"><p>Tip: The values in hyde.php can also be set in YAML by creating a hyde.yml file in the root of your project. See <a href="#yaml-configuration">#yaml-configuration</a> for more information.</p></blockquote>
+<h3>Publishable Laravel &amp; Package Configuration Files<a id="publishable-laravel--package-configuration-files" href="#publishable-laravel--package-configuration-files" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Since HydePHP is based on Laravel we also have a few configuration files related to them. As you most often don't need
+to edit any of these, unless you want to make changes to the underlying application, they are not present in the
+base HydePHP installation. However, you can publish them to your project by running <code>php hyde publish:configs</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Config File</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/hydephp/hyde/blob/master/config/view.php" rel="nofollow noopener">view.php</a></td>
+<td>Configures the paths for the Blade View compiler.</td>
 </tr>
 <tr>
 <td><a href="https://github.com/hydephp/hyde/blob/master/config/cache.php" rel="nofollow noopener">cache.php</a></td>
 <td>Configures the cache driver and cache path locations.</td>
 </tr>
 <tr>
-<td><a href="https://github.com/hydephp/hyde/blob/master/config/view.php" rel="nofollow noopener">view.php</a></td>
-<td>Configures the paths for the Blade View compiler.</td>
+<td><a href="https://github.com/hydephp/hyde/blob/master/config/commands.php" rel="nofollow noopener">commands.php</a></td>
+<td>Configures the Laravel Zero commands for the HydeCLI.</td>
 </tr>
 <tr>
 <td><a href="https://github.com/hydephp/hyde/blob/master/config/torchlight.php" rel="nofollow noopener">torchlight.php</a></td>
@@ -715,7 +718,7 @@ output_directory: _site
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/6802df074e8f7312a505546ec8c98b8215c160db"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">6802df074e8f7312a505546ec8c98b8215c160db</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/a9c7b60b6dc25796a4a3994c3c0df3ff6922503d"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">a9c7b60b6dc25796a4a3994c3c0df3ff6922503d</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
