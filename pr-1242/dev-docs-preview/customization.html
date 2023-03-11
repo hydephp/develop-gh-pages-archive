@@ -364,14 +364,13 @@ if you need it. This page guides you through the many options available!</p>
 Each option is documented, so feel free to look through the files and get familiar with the options available to you.</p>
 <h2>Accessing Configuration Values<a id="accessing-configuration-values" href="#accessing-configuration-values" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <h3>Configuration API Recap<a id="configuration-api-recap" href="#configuration-api-recap" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>HydePHP uses the same configuration system as Laravel. Here's a quick recap: from the <a href="https://laravel.com/docs/10.x/configuration">Laravel Documentation</a>.</p>
-<p>You may easily access your configuration values using the global <code>config</code> function from anywhere in your application.
-The configuration values may be accessed using &quot;dot notation&quot; syntax, which includes the name of the file and option you wish to access.
-A default value may also be specified and will be returned if the configuration option does not exist:</p>
+<p>HydePHP uses the same configuration system as Laravel. Here's a quick recap from the <a href="https://laravel.com/docs/10.x/configuration">Laravel Documentation</a>:</p>
+<p>You may easily access your configuration values using the global <code>config</code> function from anywhere in your project code.
+The configuration values may be accessed using &quot;dot notation&quot; syntax, which includes the name of the file and option you wish to access.</p>
 <pre><code class="language-php">$value = config('hyde.name');
-
-// Retrieve a default value if the configuration value does not exist...
-$value = config('hyde.name', 'HydePHP');
+</code></pre>
+<p>A default value may also be specified and will be returned if the configuration option does not exist:</p>
+<pre><code class="language-php">$value = config('hyde.name', 'HydePHP');
 </code></pre>
 <p>HydePHP also provides a strongly typed <code>Config</code> facade which extends the Laravel <code>Config</code> facade, but allows strict types:</p>
 <pre><code class="language-php">use Hyde\Facades\Config;
@@ -716,7 +715,7 @@ output_directory: _site
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/dff22afea0f9912484c1cf247bb097c78cd728ea"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">dff22afea0f9912484c1cf247bb097c78cd728ea</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/6802df074e8f7312a505546ec8c98b8215c160db"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">6802df074e8f7312a505546ec8c98b8215c160db</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
