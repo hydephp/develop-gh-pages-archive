@@ -148,6 +148,11 @@
 </li>
 <li>
 <a href="#front-matter-is-optional">Front Matter is optional</a>
+<ul>
+<li>
+<a href="#navigation-front-matter">Navigation Front Matter</a>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -346,17 +351,36 @@ title: Page Title
 </code></pre>
 <p>You can of course also create the file yourself with your text editor.</p>
 <h3>Front Matter is optional<a id="front-matter-is-optional" href="#front-matter-is-optional" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>The only front matter supported is the title, which is used as the HTML <code>&lt;title&gt;</code>.</p>
+<p>The most common front matter used for Markdown pages is the title, which is used as the HTML <code>&lt;title&gt;</code>.</p>
 <p>If you don't supply a front matter title, Hyde will attempt to find a title in the Markdown body by searching
 for the first level one heading (<code># Page Title</code>), and if that fails, it will generate one from the filename.</p>
-<p>In the future, more front matter options such as page descriptions and meta tags will be supported.</p>
+<p>You can also set the <code>canonicalUrl</code> metadata in the front matter to set the canonical URL for the page.</p>
+<h4>Navigation Front Matter<a id="navigation-front-matter" href="#navigation-front-matter" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Furthermore, you can customize how the page appears in the navigation menu using the following front matter options.
+You can set just one or all of them, as Hyde will fill in the gaps for the rest.</p>
+<pre><code class="language-yaml">navigation:
+    label: 'string',
+    priority: 'int',
+    hidden: 'bool',
+    group: 'string',
+</code></pre>
+<ul>
+<li>
+<code>label</code> is the text that will be displayed in the navigation menu</li>
+<li>
+<code>priority</code> is the order in which the page will appear in the navigation menu (<code>order</code> is also supported)</li>
+<li>
+<code>hidden</code> will hide the page from the navigation menu (<code>visible</code>) is also supported, but obviously invert the value)</li>
+<li>
+<code>group</code> will put the page in a dropdown menu with the specified group name (<code>category</code>) is also supported)</li>
+</ul>
 <h2>Creating Blade Pages<a id="creating-blade-pages" href="#creating-blade-pages" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Since Hyde is based on Laravel and uses the Blade templating engine,
-you can use Blade pages to create more complex pages.</p>
+<p>Since Hyde is based on Laravel and uses the powerful Blade templating engine, you can use Blade pages to create more
+complex pages with both standard HTML, PHP code, and the templating opportunities provided by Blade directives.</p>
 <p>If you are not familiar with Blade, you may want to read <a href="https://laravel.com/docs/9.x/blade">the Laravel Blade docs</a> first.</p>
 <h3>Scaffolding Blade Pages<a id="scaffolding-blade-pages" href="#scaffolding-blade-pages" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>We can scaffold Blade pages using the same CLI command as Markdown pages, however,
-this time we need to specify that we want to use the <code>blade</code> page type.</p>
+<p>We can scaffold Blade pages using the same CLI command as Markdown pages, however, this time we need to specify that
+we want to use the <code>blade</code> page type, by using the <code>--type</code> option.</p>
 <pre><code class="language-bash">php hyde make:page &quot;Page Title&quot; --type=&quot;blade&quot;
 </code></pre>
 <p>This will create a file saved as <code>_pages/page-title.blade.php</code></p>
@@ -524,7 +548,7 @@ however you still need to use the <code>blade.php</code> extension so Hyde can r
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/939b962674cbb30c87367dba2679b407b49c2867"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">939b962674cbb30c87367dba2679b407b49c2867</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/aaefac13729318b5c61dc90ff5e162e39f29396b"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">aaefac13729318b5c61dc90ff5e162e39f29396b</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
