@@ -177,6 +177,17 @@
 </li>
 <li>
 <a href="#image">Image</a>
+<ul>
+<li>
+<a href="#local-image-path">Local image path</a>
+</li>
+<li>
+<a href="#full-url">Full URL</a>
+</li>
+<li>
+<a href="#data-rich-image">Data-rich image</a>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -454,24 +465,49 @@ or by an array of author data. See the <a href="#post-authors">Post Author</a> s
 <p>When specifying an array you don't need all the sub-properties. The example just shows all the supported values.
 Array values here will override all the values in the <code>authors</code> config entry.</p>
 <h3>Image<a id="image" href="#image" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<pre><code class="language-yaml">image: image.jpg # Expanded by Hyde to `_media/image.jpg` and is resolved automatically to the correct URL for the built site
-image: https://cdn.example.com/image.jpg # Full URL starting with `http(s)://`) or `//` (protocol-relative)
-image:
-    source: image.jpg # Same as above
-    source: https://cdn.example.com/image.jpg # Same as above
+<p>Specify a cover image for the post, either by a local image path for a file in the <code>_media/</code> directory, or by a full URL.
+Any array data is constructed into a dynamic fluent caption, and injected into post and page metadata.</p>
+<h4>Local image path<a id="local-image-path" href="#local-image-path" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>When supplying an image source with a local image path, the image is expected to be stored in the <code>_media/</code> directory.
+Like all other media files, it will be copied to <code>_site/media/</code> when the site is built, so Hyde will resolve links accordingly.</p>
+<pre><code class="language-yaml">image: image.jpg
+</code></pre>
+<h4>Full URL<a id="full-url" href="#full-url" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Full URL starting with <code>http(s)://</code>) or <code>//</code> (protocol-relative).
+The image source will be used as-is, and no additional processing is done.</p>
+<pre><code class="language-yaml">image: https://cdn.example.com/image.jpg
+</code></pre>
+<h4>Data-rich image<a id="data-rich-image" href="#data-rich-image" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>You can also supply an array of data to construct a rich image with a fluent caption.</p>
+<pre><code class="language-yaml">image:
+    source: Local image path or full URL
     altText: &quot;Alt text for image&quot;
-    title: &quot;Tooltip title&quot;
+    titleText: &quot;Tooltip title&quot;
     copyright: &quot;Copyright (c) 2022&quot;
     licenseName: &quot;CC-BY-SA-4.0&quot;
     licenseUrl: https://example.com/license/
     authorUrl: https://photographer.example.com/
     authorName: &quot;John Doe&quot;
 </code></pre>
-<p>When supplying an image source with a local image path, the image is expected to be stored in the <code>_media/</code> directory.
-Like all other media files, it will be copied to <code>_site/media/</code> when the site is built, so Hyde will resolve links accordingly.</p>
-<p>When supplying an image with a full URL, the image source will be used as-is, and no additional processing is done.</p>
-<p>The image will be used as the cover image, and any array data is constructed into a dynamic fluent caption,
-and injected into post and page metadata.</p>
+<p><strong>The following properties are supported:</strong></p>
+<ul>
+<li>
+<strong>source:</strong>       Name of a file in _media/ or a remote URL (required)</li>
+<li>
+<strong>altText:</strong>      The alt text (important for accessibility)</li>
+<li>
+<strong>titleText:</strong>    The title text (hover tooltip &amp; metadata)</li>
+<li>
+<strong>licenseName:</strong>  The name of the license (e.g. &quot;CC BY 4.0&quot;)</li>
+<li>
+<strong>licenseUrl:</strong>   The URL of the license (e.g. &quot;https://creativecommons.org/licenses/by/4.0/&quot;)</li>
+<li>
+<strong>authorName:</strong>   The name of the author/photographer of the image (e.g. &quot;John Doe&quot;, Wikimedia Commons)</li>
+<li>
+<strong>authorUrl:</strong>    The URL of the author/photographer of the image (e.g. &quot;https://commons.wikimedia.org/wiki/User:John_Doe&quot;, Wikimedia Commons)</li>
+<li>
+<strong>copyright:</strong>    The copyright text (e.g. &quot;© 2023 John Doe&quot;)</li>
+</ul>
 <blockquote class="info">
 <p>See <a href="https://hydephp.com/posts/introducing-images">posts/introducing-images</a>
 for a detailed blog post with examples and schema information!</p>
@@ -579,7 +615,7 @@ for a detailed blog post with examples and schema information!</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/ea238a76ebe48c57e7c6958104ea5fba2d030465"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">ea238a76ebe48c57e7c6958104ea5fba2d030465</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/af1898f658674ab61a705924c4514c38428d24cb"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">af1898f658674ab61a705924c4514c38428d24cb</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
