@@ -576,15 +576,17 @@ As you can see, the <code>404</code> page has already been filled in for you.</p
     ]
 ]
 </code></pre>
-<p>You can also specify that a page should be excluded by setting the page front matter. Note that since Blade pages do not support front matter, this will only work for Markdown pages.</p>
+<p>You can also specify that a page should be excluded by setting the page front matter.</p>
 <pre><code class="language-markdown">---
 navigation:
     hidden: true
 ---
 </code></pre>
 <h4>Changing the menu item labels<a id="changing-the-menu-item-labels" href="#changing-the-menu-item-labels" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Hyde makes a few attempts to find a suitable label for the navigation menu items to automatically create helpful titles. You can override the label using the <code>navigation.label</code> front matter property.</p>
-<p>From the Hyde config you can also override the label of navigation links using the by mapping the route key (identifier/slug relative to the site root) to the desired title. Note that the front matter property will take precedence over the config property.</p>
+<p>Hyde makes a few attempts to find a suitable label for the navigation menu items to automatically create helpful titles.
+You can override the label using the <code>navigation.label</code> front matter property.</p>
+<p>From the Hyde config you can also override the label of navigation links using the by mapping the route key
+to the desired title. Note that the front matter property will take precedence over the config property.</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'navigation' =&gt; [
     'labels' =&gt; [
         'index' =&gt; 'Start',
@@ -593,9 +595,9 @@ navigation:
 ]
 </code></pre>
 <h2>Blade Views<a id="blade-views" href="#blade-views" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Hyde uses the Laravel templating system called Blade. Most parts have been extracted into components to be customized easily.</p>
+<p>Hyde uses the Laravel templating system called Blade. Most parts of the included HydePHP templates have been extracted into components to be customized easily.</p>
 <blockquote>
-<p>Before editing Blade views you should familiarize yourself with how they work in the official documentation <a href="https://laravel.com/docs/9.x/blade">https://laravel.com/docs/9.x/blade</a>.</p>
+<p>Before editing Blade views you should familiarize yourself with how they work in the official documentation <a href="https://laravel.com/docs/10.x/blade">https://laravel.com/docs/10.x/blade</a>.</p>
 </blockquote>
 <p>To edit the default component you need to publish them first using the <code>hyde publish:views</code> command.</p>
 <p>The files will then be available in the <code>resources/views/vendor/hyde</code> directory.</p>
@@ -732,7 +734,7 @@ output_directory: _site
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/1f233f2c9e2b2a79e1ca692308b0caee1101127a"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">1f233f2c9e2b2a79e1ca692308b0caee1101127a</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/9c0ebc8ce9b648031bbbdf3e14f71f91baa2e1c5"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">9c0ebc8ce9b648031bbbdf3e14f71f91baa2e1c5</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
