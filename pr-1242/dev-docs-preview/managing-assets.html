@@ -390,13 +390,13 @@ You can also run <code>npm run watch</code> to watch for changes in the source f
 <h4>Loading from CDN<a id="loading-from-cdn" href="#loading-from-cdn" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>If you want to load the same pre-compiled file included with Hyde but from a CDN, you can set <code>load_app_styles_from_cdn</code> to <code>true</code> in the <code>config/hyde.php</code> file. While you lose the ability to customize it, your styles will be automatically updated when needed, as the installed Framework version will automatically specify the correct version to load.</p>
 <h3>Using the TailwindCSS Play CDN<a id="using-the-tailwindcss-play-cdn" href="#using-the-tailwindcss-play-cdn" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>If you want to use the <a href="https://tailwindcss.com/docs/installation/play-cdn">TailwindCSS Play CDN</a>, you can set <code>use_play_cdn</code> to <code>true</code> in the <code>config/hyde.php</code> file.
-This will in addition to loading the standard app.css file also add a script tag to load the TailwindCSS Play CDN.
-What's even better is that Hyde will also inject the contents of the included <code>tailwind.config.js</code> file into the script tag, so the Play CDN styles match the ones created by Laravel Mix.
-This also means you can tinker around with the TailwindCSS settings without having to compile anything.</p>
-<blockquote>
-<p>warn Note that the Play CDN is not meant for production use, so enabling it will add a warning to the web console.</p>
-</blockquote>
+<blockquote class="warning"><p>Note that the Play CDN is not meant for production use, so enabling it will add a warning to the web console.</p></blockquote>
+<p>If you want to use the <a href="https://tailwindcss.com/docs/installation/play-cdn">TailwindCSS Play CDN</a>, all you need to do is
+set <code>use_play_cdn</code> to <code>true</code> in the <code>config/hyde.php</code> file. This will in addition to loading the standard <code>app.css</code> file,
+also add a script tag which loads the TailwindCSS Play CDN.</p>
+<p>What's even better is that Hyde will also inject the contents of the included <code>tailwind.config.js</code> file into the script tag,
+so the Play CDN styles match the ones created by Laravel Mix.</p>
+<p>All in all, this allows you to tinker around with Tailwind without having to compile anything.</p>
 <h2>Managing images<a id="managing-images" href="#managing-images" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>As mentioned above, assets stored in the _media folder are automatically copied to the _site/media folder,
 making it the recommended place to store images. You can then easily reference them in your Markdown files.</p>
@@ -412,6 +412,7 @@ allowing you to browse the site both locally on your filesystem and on the web w
 </li>
 <li>While not recommended, you can also use absolute paths: <code>/media/image.png</code>
 </li>
+<li>You can of course also use full URLs, for example when using a CDN.</li>
 </ul>
 <h4>Making images accessible<a id="making-images-accessible" href="#making-images-accessible" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>To improve accessibility, you should always add an <code>alt</code> text. Here is a full example for an image in a blog post:</p>
@@ -518,7 +519,7 @@ allowing you to browse the site both locally on your filesystem and on the web w
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/fba0257041f217d33ddd5d5478b5f4fc8b889051"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">fba0257041f217d33ddd5d5478b5f4fc8b889051</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/6926cf058c9c70ee26951be49896ae33e404fa97"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">6926cf058c9c70ee26951be49896ae33e404fa97</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
