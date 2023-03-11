@@ -531,7 +531,10 @@ The front matter value will always take precedence.</p>
 ]
 </code></pre>
 <h4>Reordering Navigation Menu Items<a id="reordering-navigation-menu-items" href="#reordering-navigation-menu-items" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Hyde makes an effort to organize the menu items in a sensible way. Putting your most important pages first. This of course may not always be how you want, so it's easy to reorder the menu items. Simply override the <code>navigation.order</code> array in the Hyde config. The priorities set will determine the order of the menu items. Lower values are higher in the menu. Any pages not listed will get priority 999.</p>
+<p>As Hyde makes an effort to organize the menu items in a sensible way, your project comes preconfigured to put what it thinks are your most
+important pages first. This may of course not always match what you want, so thankfully it's easy to reorder the menu items!</p>
+<p>Simply update the <code>navigation.order</code> array in the Hyde config! The priorities set will determine the order of the menu items.
+Lower values are higher in the menu, and any pages not listed will get priority 999, which puts them last.</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'navigation' =&gt; [
     'order' =&gt; [
         'index' =&gt; 0, // _pages/index.md (or .blade.php)
@@ -540,13 +543,14 @@ The front matter value will always take precedence.</p>
     ]
 ]
 </code></pre>
-<p>You can also set the priority of a page directly in the front matter. This will override any dynamically infered or config defined priority. While this is useful for one-offs, it can make it harder to reorder items later on. It's up to you which method you prefer to use.</p>
+<p>You can also set the priority of a page directly in the front matter. This will override any dynamically inferred or
+config defined priority. While this is useful for one-offs, it can make it harder to reorder items later on.
+It's up to you which method you prefer to use. This setting can be used both for the navigation menu and the sidebar.</p>
 <pre><code class="language-markdown">---
 navigation:
     priority: 10
 ---
 </code></pre>
-<p>Note that since Blade pages do not support front matter, this will only work for Markdown pages.</p>
 <h4>Adding Custom Navigation Menu Links<a id="adding-custom-navigation-menu-links" href="#adding-custom-navigation-menu-links" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>You can easily add custom navigation menu links similar how we add Authors. Simply add a <code>NavItem</code> model to the <code>navigation.custom</code> array.</p>
 <p>When linking to an external site, you should use the <code>NavItem::forLink()</code> method facade. The first two arguments are the destination and label, both required. Third argument is the priority, which is optional.</p>
@@ -724,7 +728,7 @@ output_directory: _site
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/416881faa0b0bc39d74c9efef5ddf9f64998ec8c"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">416881faa0b0bc39d74c9efef5ddf9f64998ec8c</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e227e0922952f61e26bf986030b1a286e4c2d126"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e227e0922952f61e26bf986030b1a286e4c2d126</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
