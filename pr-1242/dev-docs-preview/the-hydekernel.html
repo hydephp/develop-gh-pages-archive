@@ -283,7 +283,7 @@ API is the Hyde facade, which calls methods on the kernel.</p>
 <pre><code class="language-php">use Hyde\Hyde;
 use Hyde\Foundation\HydeKernel;
 
-Hyde::version() === app(HydeKernel::class)-&gt;version();
+Hyde::version(); // calls $HydeKernel-&gt;version()
 </code></pre>
 <p>The kernel is created very early on in the application lifecycle, in the bootstrap.php file, where it is also bound
 as a singleton into the application service container.</p>
@@ -292,7 +292,7 @@ as a singleton into the application service container.</p>
 Laravel Application Service Container, and can be accessed in a few ways.</p>
 <p>Commonly, you'll use the <code>Hyde</code> facade, but you can also use Dependency Injection
 by type-hinting the <code>HydeKernel::class</code>, or use the <code>hyde()</code> function to get the Kernel.</p>
-<p>The Kernel instance is constructed in bootstrap.php, and is available globally as $hyde.</p>
+<p>The Kernel instance is constructed in bootstrap.php, and is available globally as <code>$hyde</code>.</p>
 <p>Here are some examples of how you can call methods on the Kernel. All methods call the same method on the same instance, so it's just a matter of preference.</p>
 <pre><code class="language-php">use Hyde\Hyde;
 use Hyde\Foundation\HydeKernel;
@@ -408,7 +408,7 @@ hyde()-&gt;version();
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/0e21e9f129141a72636611660646772a32cac499"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">0e21e9f129141a72636611660646772a32cac499</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/5a5c2cdb3099db4a4418ab46107662fae004a1f6"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">5a5c2cdb3099db4a4418ab46107662fae004a1f6</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
