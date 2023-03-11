@@ -177,7 +177,7 @@
 <a href="#using-front-matter">Using Front Matter</a>
 </li>
 <li>
-<a href="#using-subdirectories">Using subdirectories</a>
+<a href="#automatic-subdirectory-based-grouping">Automatic subdirectory-based grouping</a>
 </li>
 </ul>
 </li>
@@ -504,21 +504,17 @@ Any pages without the group front matter will get put in the &quot;Other&quot; g
 <pre><code class="language-yaml">navigation:
     group: &quot;Getting Started&quot;
 </code></pre>
-<h4>Using subdirectories<a id="using-subdirectories" href="#using-subdirectories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4>Automatic subdirectory-based grouping<a id="automatic-subdirectory-based-grouping" href="#automatic-subdirectory-based-grouping" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>You can also automatically group your documentation pages by placing source files in sub-directories.</p>
-<p>For example, putting a Markdown file in <code>_docs/getting-started/</code>, is equivalent to adding the same front matter in the step above.</p>
-<blockquote>
-<p>Note that when the <a href="#using-flattened-output-paths">flattened output paths</a> setting is enabled (which it is by default), the file will still be compiled to the <code>_site/docs/</code> directory like it would be if you didn't use the subdirectories.</p>
-</blockquote>
+<p>For example, putting a Markdown file in <code>_docs/getting-started/</code>, is equivalent to adding the same front matter seen above.</p>
+<blockquote class="info"><p>Note that when the <a href="#using-flattened-output-paths">flattened output paths</a> setting is enabled (which it is by default), the file will still be compiled to the <code>_site/docs/</code> directory like it would be if you didn't use the subdirectories.</p></blockquote>
 <h3>Hiding items<a id="hiding-items" href="#hiding-items" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>You can hide items from the sidebar by adding the <code>hidden</code> property to the front matter:</p>
 <pre><code class="language-yaml">navigation:
     hidden: true
 </code></pre>
 <p>This can be useful to create redirects or other items that should not be shown in the sidebar.</p>
-<blockquote>
-<p>The index page is by default not shown as a sidebar item, but instead is linked in the sidebar header. <br></p>
-</blockquote>
+<blockquote class="info"><p>The index page is by default not shown as a sidebar item, but instead is linked in the sidebar header. <br></p></blockquote>
 <h2>Customization<a id="customization" href="#customization" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Please see the <a href="customization">customization page</a> for in-depth information on how to customize Hyde,
 including the documentation pages. Here is a high level overview for quick reference though.</p>
@@ -718,7 +714,7 @@ Note that this means that you can't have two documentation pages with the same f
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/86e08aff645ed0021de17d6288951041bb543d55"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">86e08aff645ed0021de17d6288951041bb543d55</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/d0819b2dcba876eb61621d5d53c7245fcbcb38bf"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">d0819b2dcba876eb61621d5d53c7245fcbcb38bf</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
