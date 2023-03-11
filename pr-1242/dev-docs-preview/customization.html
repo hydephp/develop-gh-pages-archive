@@ -510,17 +510,22 @@ and the rest of the data will be pulled from a matching entry.</p>
 <p>One of my (the author's) favourite features with Hyde is its automatic navigation menu and documentation sidebar generator.</p>
 <h4>How it works:<a id="how-it-works" href="#how-it-works" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>The sidebar works by creating a list of all the documentation pages.</p>
-<p>The navigation menu is a bit more sophisticated, it adds all the top-level Blade and Markdown pages. It also adds an automatic link to the docs if there is an <code>index.md</code> in the <code>_docs</code> directory.</p>
+<p>The navigation menu is a bit more sophisticated, it adds all the top-level Blade and Markdown pages.
+It also adds an automatic link to the docs if there is an <code>index.md</code> in the <code>_docs</code> directory.</p>
 <h4>Reordering Sidebar Items<a id="reordering-sidebar-items" href="#reordering-sidebar-items" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Sadly, Hyde is not intelligent enough to determine what order items should be in (blame Dr Jekyll for this), so you will probably want to set a custom order.</p>
-<p>Reordering items in the documentation sidebar is as easy as can be. In the hyde config, there is an array just for this. When the sidebar is generated it looks through this config array. If a slug is found here it will get priority according to its position in the list. If a page does not exist in the list they get priority 999, which puts them last.</p>
+<p>Sadly, Hyde is not intelligent enough to determine what order items should be in (blame Dr Jekyll for this),
+so you will probably want to set a custom order.</p>
+<p>Reordering items in the documentation sidebar is as easy as can be. In the docs config, there is an array just for this.
+When the sidebar is generated it looks through this config array. If a page identifier is found here it will get priority
+calculated according to its position in the list, plus an offset of 500. This offset allows you to pages earlier in the list
+using front matter.</p>
+<p>If a page does not exist in the list they get priority 999, which puts them last.</p>
 <p>Let's see an example:</p>
-<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
-// This is the default values in the config. It puts the readme.md first in order.
-'documentationPageOrder' =&gt; [
-    'readme', // This is the first entry, so it gets the priority 0
-    'installation', // This gets priority 1
-    'getting-started', // And this gets priority 2
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>// These are the default values in the config. It puts the readme.md first in order.
+'sidebar_order' =&gt; [
+    'readme', // This is the first entry, so it gets the priority 500 + 0
+    'installation', // This gets priority 500 + 1
+    'getting-started', // And this gets priority 500 + 2
     // Any other pages not listed will get priority 999
 ]
 </code></pre>
@@ -718,7 +723,7 @@ output_directory: _site
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/dfdeb104259dc7f8c39ba968abf96984cfcfd79d"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">dfdeb104259dc7f8c39ba968abf96984cfcfd79d</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/51712f833ac99709fb40d71fa80e5e5f6f184a78"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">51712f833ac99709fb40d71fa80e5e5f6f184a78</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
