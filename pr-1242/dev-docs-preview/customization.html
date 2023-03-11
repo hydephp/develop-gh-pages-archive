@@ -159,7 +159,16 @@
             <ul class="table-of-contents">
 <li>
 <a href="#introduction">Introduction</a>
+</li>
+<li>
+<a href="#accessing-configuration-values">Accessing Configuration Values</a>
 <ul>
+<li>
+<a href="#configuration-api-recap">Configuration API Recap</a>
+</li>
+<li>
+<a href="#dot-notation">Dot Notation</a>
+</li>
 <li>
 <a href="#front-matter-or-configuration-files">Front Matter or Configuration Files?</a>
 </li>
@@ -349,9 +358,30 @@
     <section id="document-main-content" itemprop="articleBody">
         <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Hyde favours <a href="https://en.wikipedia.org/wiki/Convention_over_configuration">&quot;Convention over Configuration&quot;</a>
-and comes preconfigured with sensible defaults. However, Hyde also strives to be modular and endlessly customizable if you need it. This page guides you through the many options available!</p>
-<p>When referencing configuration options, we often use &quot;dot notation&quot; to specify the configuration file. For example, <code>config('hyde.name')</code> means that we are looking for the <code>name</code> option in the <code>config/hyde.php</code> file.</p>
-<p>If you want to reference these configuration options in your Blade views, or other integrations, please take a look at the <a href="https://laravel.com/docs/9.x/configuration">Laravel Documentation</a>.</p>
+and comes preconfigured with sensible defaults. However, Hyde also strives to be modular and endlessly customizable
+if you need it. This page guides you through the many options available!</p>
+<p>All the configuration files are stored in the config directory, and allow you to customize almost all aspects of your site.
+Each option is documented, so feel free to look through the files and get familiar with the options available to you.</p>
+<h2>Accessing Configuration Values<a id="accessing-configuration-values" href="#accessing-configuration-values" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h3>Configuration API Recap<a id="configuration-api-recap" href="#configuration-api-recap" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>HydePHP uses the same configuration system as Laravel. Here's a quick recap: from the <a href="https://laravel.com/docs/10.x/configuration">Laravel Documentation</a>.</p>
+<p>You may easily access your configuration values using the global <code>config</code> function from anywhere in your application.
+The configuration values may be accessed using &quot;dot notation&quot; syntax, which includes the name of the file and option you wish to access.
+A default value may also be specified and will be returned if the configuration option does not exist:</p>
+<pre><code class="language-php">$value = config('hyde.name');
+
+// Retrieve a default value if the configuration value does not exist...
+$value = config('hyde.name', 'HydePHP');
+</code></pre>
+<p>HydePHP also provides a strongly typed <code>Config</code> facade which extends the Laravel <code>Config</code> facade, but allows strict types:</p>
+<pre><code class="language-php">use Hyde\Facades\Config;
+
+// Will always return a string, or it throws a TypeError
+$name = Config::getString('hyde.name', 'HydePHP'): string;
+</code></pre>
+<h3>Dot Notation<a id="dot-notation" href="#dot-notation" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>As seen in the example above, when referencing configuration options, we often use &quot;dot notation&quot; to specify the configuration file.
+For example, <code>config('hyde.name')</code> means that we are looking for the <code>name</code> option in the <code>config/hyde.php</code> file.</p>
 <h3>Front Matter or Configuration Files?<a id="front-matter-or-configuration-files" href="#front-matter-or-configuration-files" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>In some cases, the same options can be set in the front matter of a page or in a configuration file. Both ways are always documented, and it's up to you to choose which one you prefer. Note that in most cases, if a setting is set in both the front matter and the configuration file, the front matter setting will take precedence.</p>
 <h2>Configuration Files Overview<a id="configuration-files-overview" href="#configuration-files-overview" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
@@ -686,7 +716,7 @@ output_directory: _site
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/a97ffe5f3ce6a52a9bb70b564fe4c8ce0cab5bf1"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">a97ffe5f3ce6a52a9bb70b564fe4c8ce0cab5bf1</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/78c642f011964813f5d5bb6c7f221461fa3d759c"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">78c642f011964813f5d5bb6c7f221461fa3d759c</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
