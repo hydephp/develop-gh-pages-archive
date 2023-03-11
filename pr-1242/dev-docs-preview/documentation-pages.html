@@ -505,10 +505,10 @@ Any pages without the group front matter will get put in the &quot;Other&quot; g
     group: &quot;Getting Started&quot;
 </code></pre>
 <h4>Using subdirectories<a id="using-subdirectories" href="#using-subdirectories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Since <a href="https://github.com/hydephp/develop/releases/tag/v0.52.0-beta">v0.52.0-beta</a>, you can also automatically group your documentation pages by placing source files in sub-directories.</p>
+<p>You can also automatically group your documentation pages by placing source files in sub-directories.</p>
 <p>For example, putting a Markdown file in <code>_docs/getting-started/</code>, is equivalent to adding the same front matter in the step above.</p>
 <blockquote>
-<p>Note that when the <a href="#using-flattened-output-paths">flattened output paths</a> setting is enabled, the file will still be compiled to the <code>_site/docs/</code> directory like it would be if you didn't use the sub-directories.</p>
+<p>Note that when the <a href="#using-flattened-output-paths">flattened output paths</a> setting is enabled (which it is by default), the file will still be compiled to the <code>_site/docs/</code> directory like it would be if you didn't use the subdirectories.</p>
 </blockquote>
 <h3>Hiding items<a id="hiding-items" href="#hiding-items" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>You can hide items from the sidebar by adding the <code>hidden</code> property to the front matter:</p>
@@ -533,7 +533,7 @@ The path is relative to the site output, typically <code>_site</code>.</p>
 </code></pre>
 <p>Note that you need to take care as to not set it to something that may conflict with other parts, such as media or posts directories.</p>
 <h3>Automatic navigation menu<a id="automatic-navigation-menu" href="#automatic-navigation-menu" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>By default, a link to the documentation page is added to the navigation menu when an index.md file is found in the <code>_docs</code> directory. Please see the <a href="customization#navigation-menu--sidebar">the customization page</a> for more information.</p>
+<p>By default, a link to the documentation page is added to the navigation menu when an index.md file is found in the <code>_docs</code> directory. Please see <a href="customization#navigation-menu--sidebar">the customization page</a> for more information.</p>
 <h3>Sidebar header name<a id="sidebar-header-name" href="#sidebar-header-name" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>By default, the site title shown in the sidebar header is generated from the configured site name suffixed with &quot;docs&quot;.
 You can change this in the Docs configuration file.</p>
@@ -570,10 +570,10 @@ You can also disable the feature completely.</p>
 You can disable it by removing the <code>documentationSearch</code> from the Hyde <code>Features</code> config array.</p>
 <h4>Using the search<a id="using-the-search" href="#using-the-search" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>The search works by generating a JSON search index which the JavaScript plugin loads asynchronously.</p>
-<p>Two types of search methods are added, one is a full page search screen that will saved to <code>docs/search.html</code>.
+<p>Two types of search methods are added, one is a full page search screen that will be saved to <code>docs/search.html</code>.
 <small><blockquote>The full page can be disabled by setting <code>create_search_page</code> to <code>false</code> in the <code>docs</code> config.</blockquote></small></p>
 <blockquote>
-<p>Note that the fullpage search is used as a fallback for browsers that don't support the <code>&lt;dialogue&gt;</code> element, and may lead to 404 errors if disabled.</p>
+<p>Note that the full-page search is used as a fallback for browsers that don't support the <code>&lt;dialogue&gt;</code> element, and may lead to 404 errors if disabled.</p>
 </blockquote>
 <p>The second method is a button added to the documentation pages, similar to how Algolia DocSearch works.
 Opening it will open a dialog modal with an integrated search screen.
@@ -602,7 +602,7 @@ if not, please send a PR and/or create an issue on the <a href="https://github.c
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'edit_source_link_text' =&gt; 'Edit Source on GitHub',
 </code></pre>
 <h4>Changing the position<a id="changing-the-position" href="#changing-the-position" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>By default the button will be shown in both the documentation page footer.
+<p>By default, the button will be shown in both the documentation page footer.
 You can change this by setting the following config setting to <code>'header'</code>, <code>'footer'</code>, or <code>'both'</code></p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'edit_source_link_position' =&gt; 'header',
 </code></pre>
@@ -718,7 +718,7 @@ Note that this means that you can't have two documentation pages with the same f
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/63e762034616dcea4c0fd4ddd49e456136a24450"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">63e762034616dcea4c0fd4ddd49e456136a24450</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/86e08aff645ed0021de17d6288951041bb543d55"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">86e08aff645ed0021de17d6288951041bb543d55</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
