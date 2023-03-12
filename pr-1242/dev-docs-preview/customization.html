@@ -658,16 +658,16 @@ arbitrary PHP code specified in Markdown to be executed. It's easy to enable how
 <p>See the <a href="advanced-markdown#blade-support">Blade in Markdown</a> documentation for more information on how to use this feature.</p>
 <h2>YAML Configuration<a id="yaml-configuration" href="#yaml-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The settings in the <code>config/hyde.php</code> file can also be overridden by creating a <code>hyde.yml</code> file in the root of your project directory.</p>
-<p>Note that these cannot reference environment variables, and you cannot interact with objects and services.
-But that doesn't stop you from using both files if you want to. Just keep in mind that any values in the YAML file override any made in the PHP config.</p>
-<p>Here is an example hyde.yml file showing some of the available options in the normal hyde.php file.</p>
+<p>Note that YAML settings cannot call any PHP functions, so you can't access helpers like <code>env()</code> for environment variables,
+nor declare authors or navigation links, as you cannot use facades and objects. But that doesn't stop you from using both
+files if you want to. Just keep in mind that any duplicate settings in the YAML file override any made in the PHP file.</p>
+<p>Here is an example showing some of the <code>config/hyde.php</code> file settings, and how they would be set in the YAML file.</p>
 <pre><code class="language-yaml"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>hyde.yml</small>name: HydePHP
 url: http://localhost
 pretty_urls: false
 generate_sitemap: true
 generate_rss_feed: true
 rss_filename: feed.xml
-# rss_description:
 language: en
 output_directory: _site
 </code></pre>
@@ -769,7 +769,7 @@ output_directory: _site
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/13fa1bd38022093a148ee401847c5b07e1a0c4e9"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">13fa1bd38022093a148ee401847c5b07e1a0c4e9</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/852948ba852f6e8bc2abbe7949a8a6ddf7f60ea0"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">852948ba852f6e8bc2abbe7949a8a6ddf7f60ea0</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
