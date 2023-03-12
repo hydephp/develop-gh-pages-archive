@@ -628,13 +628,16 @@ the CommonMark converter environment when being set up by Hyde.</p>
 </code></pre>
 <p>Remember that you may need to install any third party extensions through Composer before you can use them.</p>
 <h3>CommonMark Configuration<a id="commonmark-configuration" href="#commonmark-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>In the same file you can also change the configuration values to be passed to the CommonMark environment.</p>
+<p>In the same file you can also change the configuration values to be passed to the CommonMark converter environment.
+Hyde handles many of the options automatically, but you may want to override some of them and/or add your own.</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/markdown.php</small>'config' =&gt; [
-    'disallowed_raw_html' =&gt; [
-        'disallowed_tags' =&gt; [],
-    ],
+    'disallowed_raw_html' =&gt; [ // [TL! ++]
+        'disallowed_tags' =&gt; [], // [TL! ++]
+    ], // [TL! ++]
 ],
 </code></pre>
+<p>See the <a href="https://commonmark.thephpleague.com/2.3/configuration/">CommonMark Configuration Docs</a> for the available options.
+Any custom options will be merged with the defaults.</p>
 <h2>YAML Configuration<a id="yaml-configuration" href="#yaml-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The settings in the config/hyde.php file can also be overridden by creating a hyde.yml file in the root of your project directory.</p>
 <p>Note that these cannot reference environment variables and you cannot interact with objects and services.
@@ -748,7 +751,7 @@ output_directory: _site
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/a0ab1f0662bf34412cf9715ac8d55bca95478013"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">a0ab1f0662bf34412cf9715ac8d55bca95478013</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/3c261cafd2884d5718b4e03ce63cccc872818480"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">3c261cafd2884d5718b4e03ce63cccc872818480</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
