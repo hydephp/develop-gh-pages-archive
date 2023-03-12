@@ -5616,20 +5616,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Support-Models-RenderData.html#method_getPage"
         },                {
-            "fqsen": "\\Hyde\\Support\\Models\\RenderData\u003A\u003AgetCurrentRoute\u0028\u0029",
-            "name": "getCurrentRoute",
-            "summary": "",
-            "url": "classes/Hyde-Support-Models-RenderData.html#method_getCurrentRoute"
-        },                {
             "fqsen": "\\Hyde\\Support\\Models\\RenderData\u003A\u003AgetRoute\u0028\u0029",
             "name": "getRoute",
             "summary": "",
             "url": "classes/Hyde-Support-Models-RenderData.html#method_getRoute"
-        },                {
-            "fqsen": "\\Hyde\\Support\\Models\\RenderData\u003A\u003AgetCurrentPage\u0028\u0029",
-            "name": "getCurrentPage",
-            "summary": "",
-            "url": "classes/Hyde-Support-Models-RenderData.html#method_getCurrentPage"
         },                {
             "fqsen": "\\Hyde\\Support\\Models\\RenderData\u003A\u003AgetRouteKey\u0028\u0029",
             "name": "getRouteKey",
