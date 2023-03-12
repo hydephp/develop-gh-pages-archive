@@ -5761,11 +5761,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Support-Models-RouteKey.html#method_get"
         },                {
-            "fqsen": "\\Hyde\\Support\\Models\\RouteKey\u003A\u003Anormalize\u0028\u0029",
-            "name": "normalize",
-            "summary": "",
-            "url": "classes/Hyde-Support-Models-RouteKey.html#method_normalize"
-        },                {
             "fqsen": "\\Hyde\\Support\\Models\\RouteKey\u003A\u003AfromPage\u0028\u0029",
             "name": "fromPage",
             "summary": "",
