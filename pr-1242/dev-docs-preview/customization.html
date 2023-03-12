@@ -150,7 +150,31 @@
     </svg>
 </button>                                    </header>
                 <ul class="sidebar-group-items ml-4 px-2 mb-2" role="list"  x-show="groupOpen" >
-                                            <li class="sidebar-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
+                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/advanced-markdown.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Advanced Markdown
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/extensions.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Extensions &amp; Integrations
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/advanced-customization.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Advanced Customization
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/collections.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            File-based Collections
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/troubleshooting.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Troubleshooting
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/updating-hyde.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Updating Hyde
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
             <a href="../dev-docs-preview/customization.html" aria-current="true" class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10">
             Customizing your Site
         </a>
@@ -266,31 +290,7 @@
 </li>
 </ul>
 
-            </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs-preview/advanced-markdown.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
-            Advanced Markdown
-        </a>
-    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs-preview/extensions.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
-            Extensions &amp; Integrations
-        </a>
-    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs-preview/advanced-customization.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
-            Advanced Customization
-        </a>
-    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs-preview/collections.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
-            File-based Collections
-        </a>
-    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs-preview/troubleshooting.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
-            Troubleshooting
-        </a>
-    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs-preview/updating-hyde.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
-            Updating Hyde
-        </a>
-    </li>                                    </ul>
+            </li>                                    </ul>
             </li>
                     <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: false }" >
                 <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center  group hover:bg-black/10 "  @click="groupOpen = ! groupOpen" >
@@ -466,15 +466,15 @@ base HydePHP installation. However, you can publish them to your project by runn
 <h3>RSS feed generation<a id="rss-feed-generation" href="#rss-feed-generation" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>When enabled, an RSS feed with your Markdown blog posts will be generated when you compile your static site.
 Note that this requires that a site_url is set!</p>
-<pre><code class="language-php">'generate_rss_feed' =&gt; true, // Default is true
+<pre><code class="language-php">'rss.enabled' =&gt; true, // Default is true
 </code></pre>
 <p>You can customize the output filename using the following:</p>
-<pre><code class="language-php">'rss_filename' =&gt; 'feed.rss', // Default is feed.xml
+<pre><code class="language-php">'rss.filename' =&gt; 'feed.rss', // Default is feed.xml
 </code></pre>
 <p>You can set the RSS channel description using the following:</p>
-<pre><code class="language-php">'rss_description' =&gt; 'A collection of articles and tutorials from my blog', // Example
+<pre><code class="language-php">'rss.description' =&gt; 'A collection of articles and tutorials from my blog', // Example
 </code></pre>
-<p>If an <code>rss_description</code> is not set one is created by appending &quot;RSS Feed&quot; to your site name.</p>
+<p>If an <code>rss.description </code>is not set one is created by appending &quot;RSS Feed&quot; to your site name.</p>
 <h3>Authors<a id="authors" href="#authors" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Hyde has support for adding authors in front matter, for example to
 automatically add a link to your website or social media profiles.
@@ -666,8 +666,9 @@ files if you want to. Just keep in mind that any duplicate settings in the YAML 
 url: http://localhost
 pretty_urls: false
 generate_sitemap: true
-generate_rss_feed: true
-rss_filename: feed.xml
+rss: 
+  enabled: true
+  filename: feed.xml
 language: en
 output_directory: _site
 </code></pre>
@@ -769,7 +770,7 @@ output_directory: _site
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/0bd6c82fbdfae5c4bb3b311cde3113b6603d07a3"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">0bd6c82fbdfae5c4bb3b311cde3113b6603d07a3</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/45767afe0fa77bcfe14d48c24b4a41e39cbbe72d"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">45767afe0fa77bcfe14d48c24b4a41e39cbbe72d</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
