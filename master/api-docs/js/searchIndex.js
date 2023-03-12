@@ -1706,11 +1706,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_save"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AgetOutputPath\u0028\u0029",
-            "name": "getOutputPath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_getOutputPath"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AparseTitle\u0028\u0029",
             "name": "parseTitle",
             "summary": "",
