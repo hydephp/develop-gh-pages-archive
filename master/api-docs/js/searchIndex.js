@@ -2561,11 +2561,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-HydePageDataFactory.html#method_makeTitle"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory\u003A\u003AmakeCanonicalUrl\u0028\u0029",
-            "name": "makeCanonicalUrl",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-HydePageDataFactory.html#method_makeCanonicalUrl"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory\u003A\u003AmakeNavigation\u0028\u0029",
             "name": "makeNavigation",
             "summary": "",
@@ -2586,11 +2581,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-HydePageDataFactory.html#method_findTitleFromParentIdentifier"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory\u003A\u003AgetCanonicalUrl\u0028\u0029",
-            "name": "getCanonicalUrl",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-HydePageDataFactory.html#method_getCanonicalUrl"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory\u003A\u003ASCHEMA",
             "name": "SCHEMA",
             "summary": "The\u0020front\u0020matter\u0020properties\u0020supported\u0020by\u0020this\u0020factory.",
@@ -2600,11 +2590,6 @@ Search.appendIndex(
             "name": "title",
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-HydePageDataFactory.html#property_title"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory\u003A\u003A\u0024canonicalUrl",
-            "name": "canonicalUrl",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-HydePageDataFactory.html#property_canonicalUrl"
         },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory\u003A\u003A\u0024navigation",
             "name": "navigation",
@@ -4926,6 +4911,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_navigationMenuGroup"
         },                {
+            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AgetCanonicalUrl\u0028\u0029",
+            "name": "getCanonicalUrl",
+            "summary": "",
+            "url": "classes/Hyde-Pages-Concerns-HydePage.html#method_getCanonicalUrl"
+        },                {
             "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003AconstructMetadata\u0028\u0029",
             "name": "constructMetadata",
             "summary": "",
@@ -4955,11 +4945,6 @@ Search.appendIndex(
             "name": "navigation",
             "summary": "",
             "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_navigation"
-        },                {
-            "fqsen": "\\Hyde\\Pages\\Concerns\\HydePage\u003A\u003A\u0024canonicalUrl",
-            "name": "canonicalUrl",
-            "summary": "",
-            "url": "classes/Hyde-Pages-Concerns-HydePage.html#property_canonicalUrl"
         },                {
             "fqsen": "\\Hyde\\Pages\\DocumentationPage",
             "name": "DocumentationPage",
