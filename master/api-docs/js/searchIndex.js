@@ -5441,11 +5441,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Support-Filesystem-SourceFile.html#method_toArray"
         },                {
-            "fqsen": "\\Hyde\\Support\\Filesystem\\SourceFile\u003A\u003AwithoutDirectoryPrefix\u0028\u0029",
-            "name": "withoutDirectoryPrefix",
-            "summary": "",
-            "url": "classes/Hyde-Support-Filesystem-SourceFile.html#method_withoutDirectoryPrefix"
-        },                {
             "fqsen": "\\Hyde\\Support\\Filesystem\\SourceFile\u003A\u003A\u0024pageClass",
             "name": "pageClass",
             "summary": "The\u0020associated\u0020page\u0020class\u0020string.",
