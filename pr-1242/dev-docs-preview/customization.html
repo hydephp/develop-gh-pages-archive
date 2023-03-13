@@ -172,6 +172,9 @@
 <li>
 <a href="#front-matter-or-configuration-files">Front Matter or Configuration Files?</a>
 </li>
+<li>
+<a href="#a-note-on-file-paths">A note on file paths</a>
+</li>
 </ul>
 </li>
 <li>
@@ -397,6 +400,9 @@ $name = Config::getString('hyde.name', 'HydePHP'): string;
 For example, <code>config('hyde.name')</code> means that we are looking for the <code>name</code> option in the <code>config/hyde.php</code> file.</p>
 <h3>Front Matter or Configuration Files?<a id="front-matter-or-configuration-files" href="#front-matter-or-configuration-files" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>In some cases, the same options can be set in the front matter of a page or in a configuration file. Both ways are always documented, and it's up to you to choose which one you prefer. Note that in most cases, if a setting is set in both the front matter and the configuration file, the front matter setting will take precedence.</p>
+<h3>A note on file paths<a id="a-note-on-file-paths" href="#a-note-on-file-paths" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>When Hyde references files, especially when passing filenames between components, the file path is almost always
+relative to the root of the project. Specifying absolute paths yourself will likely lead to unforeseen problems.</p>
 <h2>Configuration Files Overview<a id="configuration-files-overview" href="#configuration-files-overview" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>There are a few configuration files available in the <code>config</code> directory. All options are documented, so feel free to look through the files and get familiar with the options available to you.</p>
 <p>Below are two tables over the different configuration files. Click on a file name to see the default file on GitHub.</p>
@@ -774,7 +780,7 @@ output_directory: _site
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/59fea6bd2fdd3092004bef956994c2870f28b3d0"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">59fea6bd2fdd3092004bef956994c2870f28b3d0</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/97d3afd856d0d7519dfbe3af0c8679ffbb14cb0e"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">97d3afd856d0d7519dfbe3af0c8679ffbb14cb0e</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
