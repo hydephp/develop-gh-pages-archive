@@ -342,7 +342,7 @@ However, if your Markdown is trusted, and you know it's safe, you can enable it 
 <p>All shortcodes must be the first word on a new line, and only single-line shortcodes are supported.</p>
 <h2>Coloured Blockquotes<a id="coloured-blockquotes" href="#coloured-blockquotes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The HydePHP Markdown converter also supports some extra directives and features. One of them being four different
-coloured blockquotes. Simply append the colour after the initial <code>&gt;</code> character.</p>
+coloured blockquotes. Simply append the desired colour after the initial <code>&gt;</code> character.</p>
 <pre><code class="language-markdown">‎&gt; Normal Blockquote
 ‎&gt;info Info Blockquote
 ‎&gt;warning Warning Blockquote
@@ -356,9 +356,9 @@ coloured blockquotes. Simply append the colour after the initial <code>&gt;</cod
 <blockquote class="warning"><p>Warning Blockquote</p></blockquote>
 <blockquote class="danger"><p>Danger Blockquote</p></blockquote>
 <blockquote class="success"><p>Success Blockquote</p></blockquote>
-<h4>Customizations<a id="customizations" href="#customizations" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h3>Customizations<a id="customizations" href="#customizations" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>You can easily customize these styles too by adding and editing the following in your <code>resources/app.css</code> file, and then recompiling your site styles.
-The code examples here use the Tailwind <code>@apply</code> directives, but you could also use <code>border-color: blue;</code> just as well.</p>
+The code examples here use the Tailwind <code>@apply</code> directives, but you could also use <code>border-color: something;</code> just as well.</p>
 <pre><code class="language-css"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>resources/app.css</small>/* Markdown Features */
 
 .prose blockquote.info {
@@ -377,12 +377,12 @@ The code examples here use the Tailwind <code>@apply</code> directives, but you 
     @apply border-red-600;
 }
 </code></pre>
-<h4>Limitations<a id="limitations-1" href="#limitations-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h3>Limitations<a id="limitations-1" href="#limitations-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Note that these currently do not support multi-line blockquotes.</p>
 <h2>Code block filepaths<a id="code-block-filepaths" href="#code-block-filepaths" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>When browsing these documentation pages you may have noticed a label in the top right corner of code blocks specifying the file path.
 These are also created by using a custom Hyde feature that turns code comments into automatic code blocks.</p>
-<p>Simply add a code comment in the <strong>first line</strong> of a <code>fenced code block</code> like so:</p>
+<p>Simply add a code comment in the <strong>first line</strong> of a fenced code block like so:</p>
 <pre><code class="language-markdown"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_docs/advanced-markdown.md</small>```php
 ‎// Filepath: hello-world.php
 
@@ -519,7 +519,7 @@ the <code>allow_html</code> option to <code>true</code> in your <code>config/mar
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e9b8c452913568a8bdb6efc9bc11b475d6497b32"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e9b8c452913568a8bdb6efc9bc11b475d6497b32</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/af744005176a397fe987e5f9c951bafdc3a32681"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">af744005176a397fe987e5f9c951bafdc3a32681</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
