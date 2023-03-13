@@ -321,7 +321,9 @@
         <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Since HydePHP makes heavy use of Markdown there are some extra features and helpers created just for Hyde to make using Markdown even easier, and more powerful!</p>
 <h2>Raw HTML Tags<a id="raw-html-tags" href="#raw-html-tags" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>HydePHP uses the GitHub Flavored Markdown extension to convert Markdown. This, by default strips out some HTML tags. If you want to allow all arbitrary HTML tags, and understand the risks involved, enable all HTML tags by setting the following option to true in your <code>config/markdown.php</code> file.</p>
+<p>HydePHP uses the GitHub Flavored Markdown extension to convert Markdown. This, by default strips out some HTML tags.
+If you want to allow all arbitrary HTML tags, and understand the risks involved, enable all HTML tags by setting the
+following option to true in your <code>config/markdown.php</code> file.</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/markdown.php</small>// torchlight! {&quot;lineNumbers&quot;: false}
 'allow_html' =&gt; true,
 </code></pre>
@@ -329,15 +331,13 @@
 <h2>Blade Support<a id="blade-support" href="#blade-support" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Since Hyde v0.30.x you can use Laravel Blade in Markdown files!</p>
 <h3>Using Blade in Markdown<a id="using-blade-in-markdown" href="#using-blade-in-markdown" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>To use Blade in your Markdown files, simply use the Blade shortcode directive,
-followed by your desired Blade string.</p>
+<p>To use Blade in your Markdown files, simply use the Blade shortcode directive, followed by your desired Blade string.</p>
 <h4>Standard syntax<a id="standard-syntax" href="#standard-syntax" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <pre><code class="language-markdown"> [Blade]: {{ &quot;Hello World!&quot; }} // Will render: 'Hello World!'
 </code></pre>
 <h4>Blade includes<a id="blade-includes" href="#blade-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Only single-line shortcode directives are supported. If you need to use multi-line Blade code,
-use an <code>@include</code> directive to render a more complex Blade template.
-You can pass data to includes by specifying an array to the second argument.</p>
+<p>Only single-line shortcode directives are supported. If you need to use multi-line Blade code, use an <code>@include</code>
+directive to render a more complex Blade template. You can pass data to includes by specifying an array to the second argument.</p>
 <pre><code class="language-markdown"> [Blade]: @include(&quot;hello-world&quot;)
  [Blade]: @include(&quot;hello&quot;, [&quot;name&quot; =&gt; &quot;World&quot;])
 </code></pre>
@@ -349,10 +349,10 @@ you can enable it in the <code>config/markdown.php</code> file.</p>
 'enable_blade' =&gt; true,
 </code></pre>
 <h4>Limitations<a id="limitations" href="#limitations" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>All shortcodes must be the first word on a new line.
-For example, using a space before the <code>[Blade]:</code> will intentionally cause it to not render.</p>
+<p>All shortcodes must be the first word on a new line, and only single-line shortcodes are supported.</p>
 <h2>Coloured Blockquotes<a id="coloured-blockquotes" href="#coloured-blockquotes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>The HydePHP Markdown converter also supports some extra directives and features. One of them being four different coloured blockquotes. Simply append the colour after the initial <code>&gt;</code> character.</p>
+<p>The HydePHP Markdown converter also supports some extra directives and features. One of them being four different
+coloured blockquotes. Simply append the colour after the initial <code>&gt;</code> character.</p>
 <pre><code class="language-markdown">‎&gt; Normal Blockquote
 ‎&gt;info Info Blockquote
 ‎&gt;warning Warning Blockquote
@@ -518,7 +518,7 @@ anything within the path label will be rendered as HTML. This means you can add 
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/9d83be21fd9c99e82efba0a449ef5365d4b80591"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">9d83be21fd9c99e82efba0a449ef5365d4b80591</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/ece619b5c6c9ac0f1861d12377f9c69e96441a20"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">ece619b5c6c9ac0f1861d12377f9c69e96441a20</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
