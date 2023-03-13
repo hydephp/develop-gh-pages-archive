@@ -180,9 +180,6 @@
 <a href="#torchlight">Torchlight</a>
 <ul>
 <li>
-<a href="#about-torchlight">About Torchlight</a>
-</li>
-<li>
 <a href="#getting-started">Getting started</a>
 </li>
 <li>
@@ -310,27 +307,28 @@ installations and is what powers the <code>php hyde serve</code> command.</p>
 </ul>
 <h2>Integrations with third-party tools<a id="integrations-with-third-party-tools" href="#integrations-with-third-party-tools" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <h3>Torchlight<a id="torchlight" href="#torchlight" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<h4>About Torchlight<a id="about-torchlight" href="#about-torchlight" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Torchlight is an amazing API for syntax highlighting and is what this site uses.
-I cannot recommend it highly enough, especially for documentation sites and code-heavy blogs!</p>
+<p>Torchlight is an amazing API for syntax highlighting, and is used by this site. I cannot recommend it highly enough,
+especially for documentation sites and code-heavy blogs! As such, HydePHP has built-in support for Torchlight,
+which is automatically enabled once you add an API token to your <code>.env</code> file. Nothing else needs to be done!</p>
 <h4>Getting started<a id="getting-started" href="#getting-started" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>To get started you need an API token which you can get through the <a href="https://torchlight.dev/">torchlight.dev website</a>.
-It is entirely <a href="https://torchlight.dev/#pricing">free for personal and open source projects</a>.</p>
+<p>To get started you need an API token which you can get at <a href="https://torchlight.dev/">Torchlight.dev</a>.
+It is entirely free for personal and open source projects, as seen on their <a href="https://torchlight.dev/#pricing">pricing page</a>.</p>
 <p>When you have an API token, set it in the <code>.env</code> file in the root directory of your project.
 Once a token is set, Hyde will automatically enable the CommonMark extension.</p>
 <pre><code class="language-env">TORCHLIGHT_TOKEN=torch_&lt;your-api-token&gt;
 </code></pre>
 <h4>Attribution and configuration<a id="attribution-and-configuration" href="#attribution-and-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Note that you need to provide an attribution link, thankfully Hyde injects a customizable link automatically to all pages
-that use Torchlight. You can of course disable this in the <code>config/torchlight.php</code> file.</p>
+<p>Note that for the free plan you need to provide an attribution link. Thankfully Hyde injects a customizable link
+automatically to all pages that use Torchlight. You can of course disable and customize this in the <code>config/torchlight.php</code> file.</p>
 <pre><code class="language-php">'attribution' =&gt; [
     'enabled' =&gt; true,
     'markdown' =&gt; 'Syntax highlighting by &lt;a href=&quot;https://torchlight.dev/&quot; rel=&quot;noopener nofollow&quot;&gt;Torchlight.dev&lt;/a&gt;',
 ],
 </code></pre>
+<p>Don't have this file? Run <code>php hyde vendor:publish</code> to publish it.</p>
 <h2>Contribute<a id="contribute" href="#contribute" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Have an idea for an extension or integration? Let me know! I'd love to hear from you.</p>
-<p>Get in touch on <a href="https://github.com/hydephp/Hyde">GitHub</a> or send me a DM on <a href="https://twitter.com/CodeWithCaen">Twitter</a>.</p>
+<p>Get in touch on <a href="https://github.com/hydephp/hyde">GitHub</a> or send me a DM on <a href="https://twitter.com/CodeWithCaen">Twitter</a>.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
@@ -429,7 +427,7 @@ that use Torchlight. You can of course disable this in the <code>config/torchlig
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/a6ac9ee61e178c945507c58e0eb2d6e5a589123d"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">a6ac9ee61e178c945507c58e0eb2d6e5a589123d</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/59fea6bd2fdd3092004bef956994c2870f28b3d0"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">59fea6bd2fdd3092004bef956994c2870f28b3d0</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
