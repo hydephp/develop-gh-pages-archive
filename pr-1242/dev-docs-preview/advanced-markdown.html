@@ -199,6 +199,9 @@
 <a href="#code-block-filepaths">Code block filepaths</a>
 <ul>
 <li>
+<a href="#usage">Usage</a>
+</li>
+<li>
 <a href="#alternative-syntax">Alternative syntax</a>
 </li>
 <li>
@@ -389,7 +392,8 @@ The code examples here use the Tailwind <code>@apply</code> directives, but you 
 <h2>Code block filepaths<a id="code-block-filepaths" href="#code-block-filepaths" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>When browsing these documentation pages you may have noticed a label in the top right corner of code blocks specifying the file path.
 These are also created by using a custom Hyde feature that turns code comments into automatic code blocks.</p>
-<p>Simply add a code comment in the <strong>first line</strong> of a fenced code block like so:</p>
+<h3>Usage<a id="usage" href="#usage" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Simply add a code comment with the path in the <strong>first line</strong> of a fenced code block like so:</p>
 <pre><code class="language-markdown"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_docs/advanced-markdown.md</small>```php
 ‎// Filepath: hello-world.php
 
@@ -399,23 +403,23 @@ echo 'Hello World!';
 <p>Which becomes:</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>hello-world.php</small>echo 'Hello World!';
 </code></pre>
-<h4>Alternative syntax<a id="alternative-syntax" href="#alternative-syntax" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>The syntax is rather forgiving by design, and supports using both <code>//</code> and <code>#</code> for comments.
+<h3>Alternative syntax<a id="alternative-syntax" href="#alternative-syntax" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The syntax is rather forgiving, by design, and supports using both <code>//</code> and <code>#</code> for comments.
 The colon is also optional, and the 'filepath' string is case-insensitive. So the following is also perfectly valid:</p>
 <pre><code class="language-markdown">```js
 ‎// filepath hello.js
 console.log('Hello World!');
 ```
 </code></pre>
-<p>If you have a newline after the filepath like in the first example, it will be removed so your code stays readable.</p>
-<h4>Advanced usage<a id="advanced-usage" href="#advanced-usage" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>If you have a newline after the filepath, like in the first example, it will be removed so your code stays readable.</p>
+<h3>Advanced usage<a id="advanced-usage" href="#advanced-usage" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>If you have enabled HTML in Markdown by setting the <code>allow_html</code> option to true in your <code>config/markdown.php</code> file,
 anything within the path label will be rendered as HTML. This means you can add links, or even images to the label.</p>
 <pre><code class="language-markdown"><small class="filepath not-prose"><span class="sr-only">Filepath: </span><a href="https://github.com/hydephp/develop/blob/master/docs/digging-deeper/advanced-markdown.md" rel="nofollow noopener" target="_blank">View file on Github</a></small>```markdown
 ‎// Filepath: &lt;a href=&quot;https://github.com&quot;&gt;View file on Github&lt;/a&gt;
 ```
 </code></pre>
-<h4>Limitations<a id="limitations-2" href="#limitations-2" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h3>Limitations<a id="limitations-2" href="#limitations-2" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>The filepaths are hidden on mobile devices using CSS to prevent them from overlapping with the code block.</p>
 <h2>Configuration<a id="configuration" href="#configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <h3>Full configuration reference<a id="full-configuration-reference" href="#full-configuration-reference" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
@@ -526,7 +530,7 @@ the <code>allow_html</code> option to <code>true</code> in your <code>config/mar
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/0814d85475203509dbf92dc22e5c5cdcbe4fcb7c"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">0814d85475203509dbf92dc22e5c5cdcbe4fcb7c</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/a6ac9ee61e178c945507c58e0eb2d6e5a589123d"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">a6ac9ee61e178c945507c58e0eb2d6e5a589123d</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
