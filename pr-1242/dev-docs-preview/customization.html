@@ -464,17 +464,17 @@ base HydePHP installation. However, you can publish them to your project by runn
 <h2>Configuration Options<a id="configuration-options" href="#configuration-options" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>While all options are already documented within the files, here are some further explanations of some of the options.</p>
 <h3>RSS feed generation<a id="rss-feed-generation" href="#rss-feed-generation" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>When enabled, an RSS feed with your Markdown blog posts will be generated when you compile your static site.
-Note that this requires that a site_url is set!</p>
-<pre><code class="language-php">'rss.enabled' =&gt; true, // Default is true
+<p>When enabled, an RSS feed containing all your Markdown blog posts will be generated when you compile your static site.
+Note that this feature requires that a <code>site_url</code> is set!</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'rss.enabled' =&gt; true, // Default is true
 </code></pre>
 <p>You can customize the output filename using the following:</p>
-<pre><code class="language-php">'rss.filename' =&gt; 'feed.rss', // Default is feed.xml
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'rss.filename' =&gt; 'feed.rss', // Default is feed.xml
 </code></pre>
 <p>You can set the RSS channel description using the following:</p>
-<pre><code class="language-php">'rss.description' =&gt; 'A collection of articles and tutorials from my blog', // Example
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'rss.description' =&gt; 'A collection of articles and tutorials from my blog', // Example
 </code></pre>
-<p>If an <code>rss.description </code>is not set one is created by appending &quot;RSS Feed&quot; to your site name.</p>
+<p>If an <code>rss.description </code>is not set, one is created by appending &quot;RSS Feed&quot; to your site name.</p>
 <h3>Authors<a id="authors" href="#authors" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Hyde has support for adding authors in front matter, for example to
 automatically add a link to your website or social media profiles.
@@ -663,7 +663,7 @@ nor declare authors or navigation links, as you cannot use facades and objects. 
 files if you want to. Just keep in mind that any duplicate settings in the YAML file override any made in the PHP file.</p>
 <p>Here is an example showing some of the <code>config/hyde.php</code> file settings, and how they would be set in the YAML file.</p>
 <pre><code class="language-yaml"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>hyde.yml</small>name: HydePHP
-url: http://localhost
+url: &quot;http://localhost&quot;
 pretty_urls: false
 generate_sitemap: true
 rss:
@@ -771,7 +771,7 @@ output_directory: _site
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/273b3acf0ec201916ed0b3a24cd2d6e7abaae3af"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">273b3acf0ec201916ed0b3a24cd2d6e7abaae3af</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/da69b013e09c2073bf03c0ee983b82d106286a5f"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">da69b013e09c2073bf03c0ee983b82d106286a5f</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
