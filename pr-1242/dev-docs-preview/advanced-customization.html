@@ -192,7 +192,7 @@
 </ul>
 </li>
 <li>
-<a href="#custom-source-root-directory">Custom source root directory</a>
+<a href="#custom-source-root">Custom source root</a>
 <ul>
 <li>
 <a href="#automatic-change">Automatic change</a>
@@ -369,7 +369,7 @@ public function register(): void
     ]);
 }
 </code></pre>
-<h2>Custom source root directory<a id="custom-source-root-directory" href="#custom-source-root-directory" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Custom source root<a id="custom-source-root" href="#custom-source-root" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>HydePHP will by default look for the source directories shown above in the root of your project.
 If you're not happy with this, it's easy to change! For example, you might want everything in a <code>'src'</code> subdirectory.
 That's easy enough, just set the value of the <code>source_root</code> setting in <code>config/hyde.php</code> to <code>'src'</code>, or whatever you prefer!</p>
@@ -401,9 +401,7 @@ from the output directory, so files in <code>_assets</code> will be copied to <c
 <blockquote class="danger"><p><strong>Warning: Hyde deletes all files in the output directory before compiling the site.</strong></p> <p>Don't set this path to a directory that contains important files!</p></blockquote>
 <p>If you want to store your compiled website in a different directory than the default <code>_site</code>, you can change the path
 using the following configuration option in <code>config/hyde.php</code>. The path is expected to be relative to your project root.</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>return [
-    'output_directory' =&gt; 'docs',
-];
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'output_directory' =&gt; '_site',
 </code></pre>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
@@ -503,7 +501,7 @@ using the following configuration option in <code>config/hyde.php</code>. The pa
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/68799e77dcd33f6dff8f7d28edac430b55a31b99"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">68799e77dcd33f6dff8f7d28edac430b55a31b99</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/83a6b7f6b08c858be0a51ed48f4eac8b3d4dfcd4"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">83a6b7f6b08c858be0a51ed48f4eac8b3d4dfcd4</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
