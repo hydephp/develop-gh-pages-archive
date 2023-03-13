@@ -175,11 +175,9 @@
 </li>
 <li>
 <a href="#enabling-blade-supported-markdown">Enabling Blade-supported Markdown</a>
-<ul>
+</li>
 <li>
 <a href="#limitations">Limitations</a>
-</li>
-</ul>
 </li>
 </ul>
 </li>
@@ -336,13 +334,11 @@ directive to render a more complex Blade template. You can pass data to includes
  [Blade]: @include(&quot;hello&quot;, [&quot;name&quot; =&gt; &quot;World&quot;])
 </code></pre>
 <h3>Enabling Blade-supported Markdown<a id="enabling-blade-supported-markdown" href="#enabling-blade-supported-markdown" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>It's disabled by default since it allows arbitrary PHP to run, which could be a security risk,
-depending on your setup. However, if your Markdown is trusted, and you know it's safe,
-you can enable it in the <code>config/markdown.php</code> file.</p>
-<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
-'enable_blade' =&gt; true,
+<p>The feature is disabled by default since it allows arbitrary PHP to run, which could be a security risk, depending on your setup.
+However, if your Markdown is trusted, and you know it's safe, you can enable it in the <code>config/markdown.php</code> file.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/markdown.php</small>'enable_blade' =&gt; true,
 </code></pre>
-<h4>Limitations<a id="limitations" href="#limitations" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h3>Limitations<a id="limitations" href="#limitations" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>All shortcodes must be the first word on a new line, and only single-line shortcodes are supported.</p>
 <h2>Coloured Blockquotes<a id="coloured-blockquotes" href="#coloured-blockquotes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The HydePHP Markdown converter also supports some extra directives and features. One of them being four different
@@ -422,8 +418,7 @@ You can find the full reference on the <a href="customization#markdown-configura
 <p>To convert Markdown, HydePHP uses the GitHub Flavored Markdown extension, which strips out potentially unsafe HTML.
 If you want to allow all arbitrary HTML tags, and understand the risks involved, you can enable all HTML tags by setting
 the <code>allow_html</code> option to <code>true</code> in your <code>config/markdown.php</code> file.</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/markdown.php</small>// torchlight! {&quot;lineNumbers&quot;: false}
-'allow_html' =&gt; true,
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/markdown.php</small>'allow_html' =&gt; true,
 </code></pre>
 <p>This will add and configure the <code>DisallowedRawHtml</code> CommonMark extension so that no HTML tags are stripped out.</p>
     </section>
@@ -524,7 +519,7 @@ the <code>allow_html</code> option to <code>true</code> in your <code>config/mar
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/1e47f624898632dd8b80e4c0fc9baf46a323db61"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">1e47f624898632dd8b80e4c0fc9baf46a323db61</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e9b8c452913568a8bdb6efc9bc11b475d6497b32"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e9b8c452913568a8bdb6efc9bc11b475d6497b32</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
