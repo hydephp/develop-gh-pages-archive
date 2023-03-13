@@ -165,9 +165,6 @@
 <a href="#introduction">Introduction</a>
 </li>
 <li>
-<a href="#raw-html-tags">Raw HTML Tags</a>
-</li>
-<li>
 <a href="#blade-support">Blade Support</a>
 <ul>
 <li>
@@ -213,6 +210,17 @@
 </li>
 <li>
 <a href="#limitations-2">Limitations</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#configuration">Configuration</a>
+<ul>
+<li>
+<a href="#full-configuration-reference">Full configuration reference</a>
+</li>
+<li>
+<a href="#raw-html-tags">Raw HTML Tags</a>
 </li>
 </ul>
 </li>
@@ -319,15 +327,7 @@
     </header>
     <section id="document-main-content" itemprop="articleBody">
         <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Since HydePHP makes heavy use of Markdown there are some extra features and helpers created just for Hyde to make using Markdown even easier, and more powerful!</p>
-<h2>Raw HTML Tags<a id="raw-html-tags" href="#raw-html-tags" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>HydePHP uses the GitHub Flavored Markdown extension to convert Markdown. This, by default strips out some HTML tags.
-If you want to allow all arbitrary HTML tags, and understand the risks involved, enable all HTML tags by setting the
-following option to true in your <code>config/markdown.php</code> file.</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/markdown.php</small>// torchlight! {&quot;lineNumbers&quot;: false}
-'allow_html' =&gt; true,
-</code></pre>
-<p>This, will behind the scenes add the bundled <code>DisallowedRawHtml</code> extension, and configure it so that no HTML tags are stripped out.</p>
+<p>Since HydePHP makes heavy use of Markdown, there are some extra features and helpers created just for Hyde to make using Markdown even easier and more powerful!</p>
 <h2>Blade Support<a id="blade-support" href="#blade-support" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Another special feature in Hyde, is that you can use Laravel Blade in Markdown files!</p>
 <h3>Using Blade in Markdown<a id="using-blade-in-markdown" href="#using-blade-in-markdown" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
@@ -420,6 +420,18 @@ anything within the path label will be rendered as HTML. This means you can add 
 </code></pre>
 <h4>Limitations<a id="limitations-2" href="#limitations-2" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>The filepaths are hidden on mobile devices using CSS to prevent them from overlapping with the code block.</p>
+<h2>Configuration<a id="configuration" href="#configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h3>Full configuration reference<a id="full-configuration-reference" href="#full-configuration-reference" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>All Markdown-related configuration options are in the <code>config/markdown.php</code> file.
+You can find the full reference on the <a href="customization#markdown-configuration">Customization</a> page.</p>
+<h3>Raw HTML Tags<a id="raw-html-tags" href="#raw-html-tags" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>To convert Markdown, HydePHP uses the GitHub Flavored Markdown extension, which strips out potentially unsafe HTML.
+If you want to allow all arbitrary HTML tags, and understand the risks involved, you can enable all HTML tags by setting
+the <code>allow_html</code> option to <code>true</code> in your <code>config/markdown.php</code> file.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/markdown.php</small>// torchlight! {&quot;lineNumbers&quot;: false}
+'allow_html' =&gt; true,
+</code></pre>
+<p>This will add and configure the <code>DisallowedRawHtml</code> CommonMark extension so that no HTML tags are stripped out.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
@@ -518,7 +530,7 @@ anything within the path label will be rendered as HTML. This means you can add 
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/2d650b10620bfba87fda0cd444cc4dfe8519ec79"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">2d650b10620bfba87fda0cd444cc4dfe8519ec79</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/459fa5e3cd14c2f83de9cda649d2efdd1b130f92"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">459fa5e3cd14c2f83de9cda649d2efdd1b130f92</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
