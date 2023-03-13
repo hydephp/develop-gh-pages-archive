@@ -195,7 +195,7 @@
 <a href="#custom-source-root-directory">Custom source root directory</a>
 <ul>
 <li>
-<a href="#automatic-change-">Automatic change 🧪</a>
+<a href="#automatic-change">Automatic change</a>
 </li>
 </ul>
 </li>
@@ -363,9 +363,12 @@ That's easy enough, just set the value of the <code>source_root</code> setting i
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'source_root' =&gt; '', // [TL! --]
 'source_root' =&gt; 'src', // [TL! ++]
 </code></pre>
-<h3>Automatic change 🧪<a id="automatic-change-" href="#automatic-change-" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Automatic change<a id="automatic-change" href="#automatic-change" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>You can even make this change automatically with the <code>php hyde change:sourceDirectory</code> command!</p>
-<p>When run, Hyde will update the source directory setting in the config file, then create the directory if it doesn't exist, then move all source directories into it.</p>
+<pre><code class="language-bash">php hyde change:sourceDirectory &lt;name&gt;
+</code></pre>
+<p>When run, Hyde will update the source directory setting in the config file, then create the directory if it doesn't exist,
+and move all source directories and their content into it.</p>
 <h2>Custom media directory 🧪<a id="custom-media-directory-" href="#custom-media-directory-" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The media directory houses assets like images and stylesheets. The default directory is <code>_media</code>, and upon building the site,
 Hyde will copy all files in this directory to <code>_site/media</code> (or whatever your configured output and media directories are).</p>
@@ -481,7 +484,7 @@ the default <code>_pages</code>, you can change the path using the following con
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/615fd193931aaf5311f4be55866440a9c07b42c0"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">615fd193931aaf5311f4be55866440a9c07b42c0</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e6606de5a8d94b1dc47eb962c5b10e981ec68aec"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e6606de5a8d94b1dc47eb962c5b10e981ec68aec</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
