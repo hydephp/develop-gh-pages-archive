@@ -405,7 +405,7 @@ to keep in mind when creating blog posts so that you don't get unexpected result
 <ul>
 <li>Hyde Documentation pages are files are stored in the <code>_docs</code> directory</li>
 <li>The filename is used as the filename for the compiled HTML</li>
-<li>Filenames should use <code>kebab-case-slug</code> format, followed by the appropriate extension</li>
+<li>Filenames should use <code>kebab-case-name</code> format, followed by the appropriate extension</li>
 <li>Files prefixed with <code>_underscores</code> are ignored by Hyde</li>
 <li>You should always have an <code>index.md</code> file in the <code>_docs/</code> directory</li>
 <li>Your page will be stored in <code>_site/docs/&lt;identifier&gt;.html</code> unless you <a href="#output-directory">change it in the config</a>
@@ -459,7 +459,7 @@ and where the data is from as well as where it can be overridden.</p>
 <tr>
 <td><code>navigation.label</code> (string)</td>
 <td>The label for the page shown in the sidebar</td>
-<td>The page identifier/basename (slug)</td>
+<td>The page basename</td>
 <td>Front matter, config</td>
 </tr>
 <tr>
@@ -548,7 +548,7 @@ You can change this in the Docs configuration file.</p>
 </code></pre>
 <blockquote class="info"><p>Tip: The header will link to the docs/index page, if it exists.</p></blockquote>
 <h3>Sidebar page order<a id="sidebar-page-order" href="#sidebar-page-order" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>To quickly arrange the order of items in the sidebar, you can reorder the page slugs in the list and the links will be sorted in that order.
+<p>To quickly arrange the order of items in the sidebar, you can reorder the page identifiers in the list and the links will be sorted in that order.
 Link items without an entry here will have fall back to the default priority of 999, putting them last.</p>
 <pre><code class="language-php">'sidebar_order' =&gt; [
     'readme',
@@ -729,7 +729,7 @@ Just target the <code>.edit-page-link</code> class.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e137822253f3f08c8d60b50595c0b8eb50ef1389"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e137822253f3f08c8d60b50595c0b8eb50ef1389</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/42824591eb7c8f513712fdaa3ac3b755c86fe74f"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">42824591eb7c8f513712fdaa3ac3b755c86fe74f</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
