@@ -333,6 +333,11 @@ trait to use the same registration logic as the <code>HydeServiceProvider</code>
 </li>
 </ol>
 <h2>Customizing source directories<a id="customizing-source-directories" href="#customizing-source-directories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>The directories you place your content in are important. The directory will be used to determine the proper page type and the templates used.
+If you are not happy with defaults, you can change them. Note that these are relative to the <code>source_root</code> setting,
+which is the root of your project by default.</p>
+<p>Note that you need to take care of conflicts when changing the source directories. For example, if you store Markdown
+posts in the same directory as documentation pages, Hyde will not know which page type to use.</p>
 <h3>In the config file<a id="in-the-config-file" href="#in-the-config-file" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'source_directories' =&gt; [
     HtmlPage::class =&gt; '_pages',
@@ -484,7 +489,7 @@ the default <code>_pages</code>, you can change the path using the following con
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e6606de5a8d94b1dc47eb962c5b10e981ec68aec"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e6606de5a8d94b1dc47eb962c5b10e981ec68aec</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/0d87aae5bbb682204c04ffedd85d430dbfc005d4"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">0d87aae5bbb682204c04ffedd85d430dbfc005d4</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
