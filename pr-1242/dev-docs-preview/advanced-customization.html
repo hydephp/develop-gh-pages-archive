@@ -178,6 +178,9 @@
 </ul>
 </li>
 <li>
+<a href="#prerequisites-for-customizing-directories">Prerequisites for Customizing directories</a>
+</li>
+<li>
 <a href="#customizing-source-directories-">Customizing source directories 🧪</a>
 </li>
 <li>
@@ -302,6 +305,25 @@ are experimental features, and are not at all supported. Use at your own risk.</
 <li>⚠ = Exercise caution when using this feature.</li>
 <li>💔 = This could seriously break things</li>
 </ul>
+<h2>Prerequisites for Customizing directories<a id="prerequisites-for-customizing-directories" href="#prerequisites-for-customizing-directories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<blockquote class="info"><p>Before customizing source and output directories it may be helpful to know how these settings are stored internally.</p></blockquote>
+<p><strong>The following is a summary from the <a href="page-models">Page Models</a> documentation:</strong></p>
+<p>Each page type is represented by a page model class. Each of those classes have static properties that store the source and output directories.
+These properties are set when the <a href="https://github.com/hydephp/framework/blob/master/src/Framework/HydeServiceProvider.php"><code>HydeServiceProvider</code></a>
+is registered, at which point the provider will search for any overrides in the config file.</p>
+<p><strong>This means that there are two options to change the source and output directories:</strong></p>
+<ol>
+<li>
+<strong>Recommended:</strong> You can change the values in the config file, to let the <code>HydeServiceProvider</code> handle it for you.</li>
+<li>
+<strong>Advanced/Overkill:</strong> You can also set the static properties directly in the page model classes if you prefer.
+<ul>
+<li>You'd probably want to do this in a service provider as it must be done before the Kernel is booted.</li>
+<li>You can use the <a href="https://github.com/hydephp/framework/blob/master/src/Framework/Concerns/RegistersFileLocations.php"><code>RegistersFileLocations</code></a>
+trait to use the same registration logic as the <code>HydeServiceProvider</code>.</li>
+</ul>
+</li>
+</ol>
 <h2>Customizing source directories 🧪<a id="customizing-source-directories-" href="#customizing-source-directories-" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The source directory paths are stored in the PageModel objects.
 You can change them by modifying the static property, for example in a service provider.</p>
@@ -440,7 +462,7 @@ the default <code>_pages</code>, you can change the path using the following con
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1242</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/97d3afd856d0d7519dfbe3af0c8679ffbb14cb0e"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">97d3afd856d0d7519dfbe3af0c8679ffbb14cb0e</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/22fbd2d6cd66384654fa25ffe5820125daa58721"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">22fbd2d6cd66384654fa25ffe5820125daa58721</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1242" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
