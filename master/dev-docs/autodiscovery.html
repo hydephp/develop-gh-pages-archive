@@ -95,8 +95,12 @@
             Console Commands
         </a>
     </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs/basic-architecture-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
-            Key HydePHP Concepts
+            <a href="../dev-docs/core-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Core Concepts
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs/front-matter.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Front Matter
         </a>
     </li>                                    </ul>
             </li>
@@ -172,7 +176,7 @@
         </a>
     </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
             <a href="../dev-docs/updating-hyde.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
-            Updating Hyde
+            Updating Hyde Projects
         </a>
     </li>                                    </ul>
             </li>
@@ -195,6 +199,14 @@
     </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
             <a href="../dev-docs/build-tasks.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Custom Build Tasks
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs/hyde-pages.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            HydePage API
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs/in-memory-pages.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            InMemoryPages
         </a>
     </li>                                    </ul>
             </li>
@@ -233,6 +245,17 @@
 </ul>
 </li>
 <li>
+<a href="#booting-pipeline">Booting pipeline</a>
+<ul>
+<li>
+<a href="#the-steps-are-as-follows">The steps are as follows:</a>
+</li>
+<li>
+<a href="#interacting-with-the-collections">Interacting with the collections</a>
+</li>
+</ul>
+</li>
+<li>
 <a href="#the-hydekernel">The HydeKernel</a>
 <ul>
 <li>
@@ -258,6 +281,10 @@
     </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
             <a href="../dev-docs/page-models.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Page models
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs/the-hydekernel.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            The HydeKernel
         </a>
     </li>                                    </ul>
             </li>
@@ -299,7 +326,7 @@
         <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>HydePHP aims to reduce the amount of configuration you need to do to get a site up and running.
 To that end, Hyde uses a process called autodiscovery to automatically find and register your pages.</p>
-<p>This article will go into detail about how autodiscovery works as well as the lifecycle of a site build.</p>
+<p>This article will go into detail about how autodiscovery works as well as the lifecycle of the HydeKernel.</p>
 <h3>The short version<a id="the-short-version" href="#the-short-version" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Hyde will use the information in the page model classes to scan the source directories for matching files which are
 parsed using instructions from the model's class, resulting in data used to construct objects that get stored in the HydeKernel.</p>
@@ -309,18 +336,34 @@ parsed using instructions from the model's class, resulting in data used to cons
 <li>
 <a href="page-models">Page Models</a>
 </li>
+<li>
+<a href="the-hydekernel">The HydeKernel</a>
+</li>
+</ul>
+<h2>Booting pipeline<a id="booting-pipeline" href="#booting-pipeline" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>The autodiscovery is run when the HydeKernel boots. It does so in three distinct steps, which run in sequence as each
+step depends on the previous one. Each discovery step runs in a <code>FoundationCollection</code> which both runs the actual
+discovery process and stores the discovered data in memory.</p>
+<h4>The steps are as follows:<a id="the-steps-are-as-follows" href="#the-steps-are-as-follows" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<ol>
+<li>
+<strong>Step one:</strong> The file collection discovers all the source files and stores them in memory</li>
+<li>
+<strong>Step two:</strong> The page collection parses all the source files into page model objects</li>
+<li>
+<strong>Step three:</strong> The route collection generates route objects for all the pages</li>
+</ol>
+<h4>Interacting with the collections<a id="interacting-with-the-collections" href="#interacting-with-the-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Usually, you will interact with the collection data through intermediaries.</p>
+<ul>
+<li>For example, if you call <code>MarkdownPost::get('my-post')</code>, Hyde will retrieve that page from the page collection.</li>
+<li>If you call <code>Routes::get('index')</code>, Hyde will retrieve that route from the route collection.</li>
 </ul>
 <h2>The HydeKernel<a id="the-hydekernel" href="#the-hydekernel" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>In the centre, or should I say <em>core</em>, of HydePHP is the HydeKernel. The kernel encapsulates a HydePHP project and
-provides helpful methods for interacting with it. You can think of it as the heart of HydePHP, if you're a romantic.</p>
-<p>The HydeKernel is so important that you have probably used it already. The main entry point for the HydePHP
-API is the Hyde facade, which calls methods on the kernel.</p>
-<pre><code class="language-php">use Hyde\Hyde;
-use Hyde\Foundation\HydeKernel;
-
-Hyde::version() === app(HydeKernel::class)-&gt;version();
-</code></pre>
-<p>The kernel is created very early on in the application lifecycle, in the bootstrap.php file, where it is also bound
+<p>If you have not yet read the <a href="the-hydekernel">HydeKernel Documentation</a>, here's a quick recap:</p>
+<p>The HydeKernel encapsulates a HydePHP project, providing helpful methods for interacting with it.
+It is also responsible for booting the application, which includes the autodiscovery process.</p>
+<p>The kernel is created very early on in the application lifecycle, in the <code>bootstrap.php</code> file, where it is also bound
 as a singleton into the application service container.</p>
 <p>At this point you might be wondering why we're talking about the kernel when this article is about autodiscovery.
 Well, as you'll see in just a moment, the kernel is responsible for initiating the autodiscovery process.
@@ -333,11 +376,12 @@ until the console application is terminated.</p>
 Let's take a look at a simplified version of the kernel's boot method to see how this works.</p>
 <pre><code class="language-php">public function boot(): void
 {
-    $this-&gt;booted = true;
-
     $this-&gt;files = FileCollection::boot($this);
     $this-&gt;pages = PageCollection::boot($this);
     $this-&gt;routes = RouteCollection::boot($this);
+
+    // Scroll down to see what this is used for
+    $this-&gt;booted = true;
 }
 </code></pre>
 <p>Here you'll see that we boot the three collections. This is where all the autodiscovery magic happens!</p>
@@ -345,19 +389,19 @@ Let's take a look at a simplified version of the kernel's boot method to see how
 <p>If you're curious about how the kernel is lazy-booted, here's how it works!
 Feel free to skip this section if this doesn't interest you.</p>
 <pre><code class="language-php">// This will boot the kernel if it hasn't been booted yet
-protected function needsToBeBooted(): void
-{
-    if (! $this-&gt;booted) {
-        $this-&gt;boot();
-    }
-}
-
-// And here's an example of how it's used
 public function pages(): PageCollection
 {
     $this-&gt;needsToBeBooted();
 
     return $this-&gt;pages;
+}
+
+// This is the method that triggers the boot process
+protected function needsToBeBooted(): void
+{
+    if (! $this-&gt;booted) {
+        $this-&gt;boot();
+    }
 }
 </code></pre>
 <p>Yeah, it's really unglamorous I know. But it works! Having it like this will ensure that any time you call <code>Hyde::pages()</code>,

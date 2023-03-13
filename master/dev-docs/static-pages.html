@@ -95,8 +95,12 @@
             Console Commands
         </a>
     </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs/basic-architecture-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
-            Key HydePHP Concepts
+            <a href="../dev-docs/core-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Core Concepts
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs/front-matter.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Front Matter
         </a>
     </li>                                    </ul>
             </li>
@@ -144,6 +148,11 @@
 </li>
 <li>
 <a href="#front-matter-is-optional">Front Matter is optional</a>
+<ul>
+<li>
+<a href="#navigation-front-matter">Navigation Front Matter</a>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -223,7 +232,7 @@
         </a>
     </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
             <a href="../dev-docs/updating-hyde.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
-            Updating Hyde
+            Updating Hyde Projects
         </a>
     </li>                                    </ul>
             </li>
@@ -246,6 +255,14 @@
     </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
             <a href="../dev-docs/build-tasks.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Custom Build Tasks
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs/hyde-pages.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            HydePage API
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs/in-memory-pages.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            InMemoryPages
         </a>
     </li>                                    </ul>
             </li>
@@ -280,6 +297,10 @@
     </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
             <a href="../dev-docs/page-models.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Page models
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs/the-hydekernel.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            The HydeKernel
         </a>
     </li>                                    </ul>
             </li>
@@ -331,17 +352,15 @@ to keep in mind when creating blog posts so that you don't get unexpected result
 <ul>
 <li>Hyde Pages are files are stored in the <code>_pages</code> directory</li>
 <li>The filename is used as the filename for the compiled HTML</li>
-<li>Filenames should use <code>kebab-case-slug</code> format, followed by the appropriate extension</li>
+<li>Filenames should use <code>kebab-case-identifier</code> format, followed by the appropriate extension</li>
 <li>Files prefixed with <code>_underscores</code> are ignored by Hyde</li>
-<li>Your page will be stored in <code>_site/&lt;slug&gt;.html</code>
+<li>Your page will be stored in <code>_site/&lt;identifier&gt;.html</code>
 </li>
 <li>Blade pages will override any Markdown pages with the same filename when compiled</li>
 </ul>
 <h2>Creating Markdown Pages<a id="creating-markdown-pages" href="#creating-markdown-pages" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Markdown pages are the easiest way to create static pages, and are similar to <a href="blog-posts">blog posts</a>.
-You may want to read that page first as it explains <a href="blog-posts#supported-front-matter-properties">how front matter works</a>
-and how to use it.</p>
-<p>You can create a Markdown page by adding a file to the <code>_pages</code> directory where the filename ends in <code>.md</code>.</p>
+<p>Markdown pages are the easiest way to create static pages. You can create a Markdown page by adding a file to the
+<code>_pages</code> directory where the filename ends in <code>.md</code>. You can also use <a href="front-matter">Front Matter</a> to add page metadata.</p>
 <h3>Scaffolding Markdown Pages<a id="scaffolding-markdown-pages" href="#scaffolding-markdown-pages" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Scaffolding a Markdown page is as easy as using the <a href="console-commands">HydeCLI</a>.</p>
 <pre><code class="language-bash">php hyde make:page &quot;Page Title&quot;
@@ -357,17 +376,35 @@ title: Page Title
 </code></pre>
 <p>You can of course also create the file yourself with your text editor.</p>
 <h3>Front Matter is optional<a id="front-matter-is-optional" href="#front-matter-is-optional" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>The only front matter supported is the title, which is used as the HTML <code>&lt;title&gt;</code>.</p>
+<p>The most common front matter used for Markdown pages is the title, which is used as the HTML <code>&lt;title&gt;</code>.</p>
 <p>If you don't supply a front matter title, Hyde will attempt to find a title in the Markdown body by searching
 for the first level one heading (<code># Page Title</code>), and if that fails, it will generate one from the filename.</p>
-<p>In the future, more front matter options such as page descriptions and meta tags will be supported.</p>
+<h4>Navigation Front Matter<a id="navigation-front-matter" href="#navigation-front-matter" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Furthermore, you can customize how the page appears in the navigation menu using the following front matter options.
+You can set just one or all of them, as Hyde will fill in the gaps for the rest.</p>
+<pre><code class="language-yaml">navigation:
+    label: 'string',
+    priority: 'int',
+    hidden: 'bool',
+    group: 'string',
+</code></pre>
+<ul>
+<li>
+<code>label</code> is the text that will be displayed in the navigation menu</li>
+<li>
+<code>priority</code> is the order in which the page will appear in the navigation menu (<code>order</code> is also supported)</li>
+<li>
+<code>hidden</code> will hide the page from the navigation menu (<code>visible</code>) is also supported, but obviously invert the value)</li>
+<li>
+<code>group</code> will put the page in a dropdown menu with the specified group name (<code>category</code>) is also supported)</li>
+</ul>
 <h2>Creating Blade Pages<a id="creating-blade-pages" href="#creating-blade-pages" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Since Hyde is based on Laravel and uses the Blade templating engine,
-you can use Blade pages to create more complex pages.</p>
-<p>If you are not familiar with Blade, you may want to read <a href="https://laravel.com/docs/9.x/blade">the Laravel Blade docs</a> first.</p>
+<p>Since Hyde is based on Laravel and uses the powerful Blade templating engine, you can use Blade pages to create more
+complex pages with both standard HTML, PHP code, and the templating opportunities provided by Blade directives.</p>
+<p>If you are not familiar with Blade, you may want to read <a href="https://laravel.com/docs/10.x/blade">the Laravel Blade docs</a> first.</p>
 <h3>Scaffolding Blade Pages<a id="scaffolding-blade-pages" href="#scaffolding-blade-pages" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>We can scaffold Blade pages using the same CLI command as Markdown pages, however,
-this time we need to specify that we want to use the <code>blade</code> page type.</p>
+<p>We can scaffold Blade pages using the same CLI command as Markdown pages, however, this time we need to specify that
+we want to use the <code>blade</code> page type, by using the <code>--type</code> option.</p>
 <pre><code class="language-bash">php hyde make:page &quot;Page Title&quot; --type=&quot;blade&quot;
 </code></pre>
 <p>This will create a file saved as <code>_pages/page-title.blade.php</code></p>
@@ -381,7 +418,7 @@ if you don't want to use the scaffolding command.</p>
 @php($title = &quot;Page Title&quot;)
 
 &lt;main class=&quot;mx-auto max-w-7xl py-16 px-8&quot;&gt;
-	&lt;h1 class=&quot;text-center text-3xl font-bold&quot;&gt;Page Title&lt;/h1&gt;
+    &lt;h1 class=&quot;text-center text-3xl font-bold&quot;&gt;Page Title&lt;/h1&gt;
 &lt;/main&gt;
 
 @endsection
@@ -436,7 +473,9 @@ however you still need to use the <code>blade.php</code> extension so Hyde can r
 <p>The Hyde website (<a href="https://hydephp.com/">hydephp.com</a>) uses both Markdown and Blade pages. The homepage for example, is a Blade page and uses a bunch of custom HTML.</p>
 <p>A great example of a Markdown page can be found at <a href="https://hydephp.github.io/portfolio-demo">hydephp.github.io/portfolio-demo</a>, you can see the <a href="https://github.com/hydephp/portfolio-demo/blob/master/_pages/index.md">page source here on GitHub</a>.</p>
 <h2>Bonus: Creating HTML Pages<a id="bonus-creating-html-pages" href="#bonus-creating-html-pages" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>If you have an already created HTML page, simply drop it into the <code>_pages</code> directory and Hyde will copy it over as it is into the <code>_site</code> directory. Like all other Hyde pages, the page will show up in the navigation menu using a title parsed from the filename.</p>
+<p>If you have an already created <code>HTML</code> page, simply drop it into the <code>_pages</code> directory and Hyde will copy it over as it is
+into the <code>_site</code> directory. Like all other Hyde pages, the page will show up in the navigation menu using a title parsed from the filename.
+You won't be able to change any settings with front matter, however.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         

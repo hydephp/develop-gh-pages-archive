@@ -95,8 +95,12 @@
             Console Commands
         </a>
     </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs/basic-architecture-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
-            Key HydePHP Concepts
+            <a href="../dev-docs/core-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Core Concepts
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs/front-matter.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Front Matter
         </a>
     </li>                                    </ul>
             </li>
@@ -176,9 +180,6 @@
 <a href="#torchlight">Torchlight</a>
 <ul>
 <li>
-<a href="#about-torchlight">About Torchlight</a>
-</li>
-<li>
 <a href="#getting-started">Getting started</a>
 </li>
 <li>
@@ -207,7 +208,7 @@
         </a>
     </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
             <a href="../dev-docs/updating-hyde.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
-            Updating Hyde
+            Updating Hyde Projects
         </a>
     </li>                                    </ul>
             </li>
@@ -230,6 +231,14 @@
     </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
             <a href="../dev-docs/build-tasks.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Custom Build Tasks
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs/hyde-pages.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            HydePage API
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs/in-memory-pages.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            InMemoryPages
         </a>
     </li>                                    </ul>
             </li>
@@ -264,6 +273,10 @@
     </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
             <a href="../dev-docs/page-models.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Page models
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs/the-hydekernel.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            The HydeKernel
         </a>
     </li>                                    </ul>
             </li>
@@ -319,27 +332,28 @@ installations and is what powers the <code>php hyde serve</code> command.</p>
 </ul>
 <h2>Integrations with third-party tools<a id="integrations-with-third-party-tools" href="#integrations-with-third-party-tools" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <h3>Torchlight<a id="torchlight" href="#torchlight" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<h4>About Torchlight<a id="about-torchlight" href="#about-torchlight" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Torchlight is an amazing API for syntax highlighting and is what this site uses.
-I cannot recommend it highly enough, especially for documentation sites and code-heavy blogs!</p>
+<p>Torchlight is an amazing API for syntax highlighting, and is used by this site. I cannot recommend it highly enough,
+especially for documentation sites and code-heavy blogs! As such, HydePHP has built-in support for Torchlight,
+which is automatically enabled once you add an API token to your <code>.env</code> file. Nothing else needs to be done!</p>
 <h4>Getting started<a id="getting-started" href="#getting-started" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>To get started you need an API token which you can get through the <a href="https://torchlight.dev/">torchlight.dev website</a>.
-It is entirely <a href="https://torchlight.dev/#pricing">free for personal and open source projects</a>.</p>
+<p>To get started you need an API token which you can get at <a href="https://torchlight.dev/">Torchlight.dev</a>.
+It is entirely free for personal and open source projects, as seen on their <a href="https://torchlight.dev/#pricing">pricing page</a>.</p>
 <p>When you have an API token, set it in the <code>.env</code> file in the root directory of your project.
 Once a token is set, Hyde will automatically enable the CommonMark extension.</p>
 <pre><code class="language-env">TORCHLIGHT_TOKEN=torch_&lt;your-api-token&gt;
 </code></pre>
 <h4>Attribution and configuration<a id="attribution-and-configuration" href="#attribution-and-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Note that you need to provide an attribution link, thankfully Hyde injects a customizable link automatically to all pages
-that use Torchlight. You can of course disable this in the <code>config/torchlight.php</code> file.</p>
+<p>Note that for the free plan you need to provide an attribution link. Thankfully Hyde injects a customizable link
+automatically to all pages that use Torchlight. You can of course disable and customize this in the <code>config/torchlight.php</code> file.</p>
 <pre><code class="language-php">'attribution' =&gt; [
-	'enabled' =&gt; true,
-	'markdown' =&gt; 'Syntax highlighting by &lt;a href=&quot;https://torchlight.dev/&quot; rel=&quot;noopener nofollow&quot;&gt;Torchlight.dev&lt;/a&gt;',
+    'enabled' =&gt; true,
+    'markdown' =&gt; 'Syntax highlighting by &lt;a href=&quot;https://torchlight.dev/&quot; rel=&quot;noopener nofollow&quot;&gt;Torchlight.dev&lt;/a&gt;',
 ],
 </code></pre>
+<p>Don't have this file? Run <code>php hyde vendor:publish</code> to publish it.</p>
 <h2>Contribute<a id="contribute" href="#contribute" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Have an idea for an extension or integration? Let me know! I'd love to hear from you.</p>
-<p>Get in touch on <a href="https://github.com/hydephp/Hyde">GitHub</a> or send me a DM on <a href="https://twitter.com/CodeWithCaen">Twitter</a>.</p>
+<p>Get in touch on <a href="https://github.com/hydephp/hyde">GitHub</a> or send me a DM on <a href="https://twitter.com/CodeWithCaen">Twitter</a>.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
