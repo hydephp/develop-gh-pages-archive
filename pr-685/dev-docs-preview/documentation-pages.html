@@ -13,34 +13,30 @@
 
 
 <link rel="sitemap" href="https://hydephp.github.io/develop/pr-685/dev-docs-preview/sitemap.xml" type="application/xml" title="Sitemap">
-<meta name="generator" content="HydePHP 1.0.0-dev">
+<meta name="generator" content="HydePHP 1.0.0">
 <meta name="robots" content="noindex">
 <meta property="og:site_name" content="HydePHP Documentation Preview">
 
 
- 
 
 
 <style>[x-cloak] {display: none!important}</style>
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hydephp/develop@master/_media/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hydephp/develop@master/_media/app.css">
 
 
 
 
 
-
-<meta id="meta-color-scheme" name="color-scheme" content="light">
-<script>if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.classList.add('dark'); document.getElementById('meta-color-scheme').setAttribute('content', 'dark');} else { document.documentElement.classList.remove('dark') } </script>
+    
+    <meta id="meta-color-scheme" name="color-scheme" content="light">
+    <script>if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.classList.add('dark'); document.getElementById('meta-color-scheme').setAttribute('content', 'dark');} else { document.documentElement.classList.remove('dark') } </script>
 </head>
-<body id="hyde-docs"
-      class="bg-white dark:bg-gray-900 dark:text-white min-h-screen w-screen relative overflow-x-hidden overflow-y-auto"
-      x-data="{ sidebarOpen: false, searchWindowOpen: false }"
-      x-on:keydown.escape="searchWindowOpen = false; sidebarOpen = false" x-on:keydown.slash="searchWindowOpen = true">
+<body id="hyde-docs" class="bg-white dark:bg-gray-900 dark:text-white min-h-screen w-screen relative overflow-x-hidden overflow-y-auto"
+      x-data="{ sidebarOpen: false, searchWindowOpen: false }" x-on:keydown.escape="searchWindowOpen = false; sidebarOpen = false" x-on:keydown.slash="searchWindowOpen = true">
 
-<a href="#content" id="skip-to-content" class="sr-only focus:not-sr-only bg-black border-4 border-yellow-400 focus:absolute focus:mt-2 focus:mx-auto focus:p-2 focus:w-64 h-auto left-0 overflow-auto right-0 rounded-md text-center text-lg text-white top-auto z-50 ">Skip to content</a>
-<nav id="mobile-navigation" class="bg-white dark:bg-gray-800 md:hidden flex justify-between w-full h-16 z-40 fixed left-0 top-0 p-4 leading-8 shadow-lg">
+    <a href="#content" id="skip-to-content" class="sr-only focus:not-sr-only bg-black border-4 border-yellow-400 focus:absolute focus:mt-2 focus:mx-auto focus:p-2 focus:w-64 h-auto left-0 overflow-auto right-0 rounded-md text-center text-lg text-white top-auto z-50 ">Skip to content</a>    <nav id="mobile-navigation" class="bg-white dark:bg-gray-800 md:hidden flex justify-between w-full h-16 z-40 fixed left-0 top-0 p-4 leading-8 shadow-lg">
     <strong class="px-2 mr-auto">
                     <a href="../dev-docs-preview/index.html">
                 PR #685 - Docs
@@ -49,88 +45,92 @@
     <ul class="flex items-center">
         <li class="h-8 flex mr-1">
             <button @click="toggleTheme" class="theme-toggle-button flex items-center px-2 py-1 hover:text-gray-700 dark:text-gray-200 opacity-75 hover:opacity-100" title="Toggle theme">
-	<span class="sr-only">Toggle dark theme</span>
-	<svg width="1.25rem" height="1.25rem" class="w-5 h-5 hidden dark:block" fill="#FFFFFF" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-	<svg width="1.25rem" height="1.25rem" class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-</button>
+        <span class="sr-only">Toggle dark theme</span>
+        <svg width="1.25rem" height="1.25rem" class="w-5 h-5 hidden dark:block" fill="#FFFFFF" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+        <svg width="1.25rem" height="1.25rem" class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+    </button>
         </li>
         <li class="h-8 flex">
-            <button id="sidebar-toggle" title="Toggle sidebar" aria-label="Toggle sidebar navigation menu"
-        @click="sidebarOpen = ! sidebarOpen" :class="{'active' : sidebarOpen}">
+            <button id="sidebar-toggle" title="Toggle sidebar" aria-label="Toggle sidebar navigation menu" @click="sidebarOpen = ! sidebarOpen" :class="{'active' : sidebarOpen}">
     <span class="icon-bar dark:bg-white h-0" role="presentation"></span>
     <span class="icon-bar dark:bg-white h-0" role="presentation"></span>
     <span class="icon-bar dark:bg-white h-0" role="presentation"></span>
     <span class="icon-bar dark:bg-white h-0" role="presentation"></span>
 </button>        </li>
     </ul>
-</nav>
-<aside id="sidebar" x-cloak :class="sidebarOpen ? 'visible left-0' : 'invisible -left-64 md:visible md:left-0'"
-       class="bg-gray-100 dark:bg-gray-800 dark:text-gray-200 h-screen w-64 fixed z-30 md:flex flex-col shadow-lg md:shadow-none transition-all duration-300">
+</nav>    <aside id="sidebar" x-cloak :class="sidebarOpen ? 'visible left-0' : 'invisible -left-64 md:visible md:left-0'" class="bg-gray-100 dark:bg-gray-800 dark:text-gray-200 h-screen w-64 fixed z-30 md:flex flex-col shadow-lg md:shadow-none transition-all duration-300">
     <header id="sidebar-header" class="h-16">
         <div id="sidebar-brand" class="flex items-center justify-between h-16 py-4 px-2">
-	<strong class="px-2">
-					<a href="../dev-docs-preview/index.html">
-				PR #685 - Docs
-			</a>
-			</strong>
-	<button @click="toggleTheme" class="theme-toggle-button flex items-center px-2 py-1 hover:text-gray-700 dark:text-gray-200 opacity-75 hover:opacity-100" title="Toggle theme">
-	<span class="sr-only">Toggle dark theme</span>
-	<svg width="1.25rem" height="1.25rem" class="w-5 h-5 hidden dark:block" fill="#FFFFFF" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-	<svg width="1.25rem" height="1.25rem" class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-</button>
+    <strong class="px-2">
+                    <a href="../dev-docs-preview/index.html">
+                PR #685 - Docs
+            </a>
+            </strong>
+    <button @click="toggleTheme" class="theme-toggle-button flex items-center px-2 py-1 hover:text-gray-700 dark:text-gray-200 opacity-75 hover:opacity-100" title="Toggle theme">
+        <span class="sr-only">Toggle dark theme</span>
+        <svg width="1.25rem" height="1.25rem" class="w-5 h-5 hidden dark:block" fill="#FFFFFF" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+        <svg width="1.25rem" height="1.25rem" class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+    </button>
 </div>    </header>
-    <nav id="sidebar-navigation"
-        class="p-2 overflow-y-auto border-y border-gray-300 dark:border-[#1b2533] h-full">
-        
-                                    <ul id="sidebar-navigation-items" role="list">
-	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
-            <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
-                <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Getting Started</h4>
-                <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
-                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
-                    </svg>
-                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
-                    </svg>
-                </button>
-            </header>
-            <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
-                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/quickstart.html">Quickstart Guide</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/console-commands.html">Console Commands</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/basic-architecture-concepts.html">Key HydePHP Concepts</a>
-	</li>                            </ul>
-        </li>
-	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: true }">
-            <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
-                <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Creating Content</h4>
-                <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
-                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
-                    </svg>
-                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
-                    </svg>
-                </button>
-            </header>
-            <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
-                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/blog-posts.html">Creating Blog Posts</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/static-pages.html">Markdown &amp; Blade Pages</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/documentation-pages.html" aria-current="true">Documentation Pages</a>
-				<span class="sr-only">Table of contents</span>
-		<ul class="table-of-contents">
+    <nav id="sidebar-navigation" class="p-2 overflow-y-auto border-y border-gray-300 dark:border-[#1b2533] h-full">
+        <ul id="sidebar-items" role="list">
+                            <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: false }" >
+                <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center  group hover:bg-black/10 "  @click="groupOpen = ! groupOpen" >
+                    <h4 class="sidebar-group-heading text-base font-semibold  cursor-pointer dark:group-hover:text-white ">Getting Started</h4>
+                                            <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
+    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
+    </svg>
+    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
+    </svg>
+</button>                                    </header>
+                <ul class="sidebar-group-items ml-4 px-2 mb-2" role="list"  x-show="groupOpen" >
+                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/quickstart.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Quickstart Guide
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/console-commands.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Console Commands
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/core-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Core Concepts
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/front-matter.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Front Matter
+        </a>
+    </li>                                    </ul>
+            </li>
+                    <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: true }" >
+                <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center  group hover:bg-black/10 "  @click="groupOpen = ! groupOpen" >
+                    <h4 class="sidebar-group-heading text-base font-semibold  cursor-pointer dark:group-hover:text-white ">Creating Content</h4>
+                                            <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
+    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
+    </svg>
+    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
+    </svg>
+</button>                                    </header>
+                <ul class="sidebar-group-items ml-4 px-2 mb-2" role="list"  x-show="groupOpen" >
+                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/blog-posts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Creating Blog Posts
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/static-pages.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Markdown &amp; Blade Pages
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
+            <a href="../dev-docs-preview/documentation-pages.html" aria-current="true" class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Documentation Pages
+        </a>
+
+                    <span class="sr-only">Table of contents</span>
+            <ul class="table-of-contents">
 <li>
 <a href="#introduction-to-hyde-documentation-pages">Introduction to Hyde Documentation Pages</a>
 <ul>
@@ -157,6 +157,11 @@
 </li>
 <li>
 <a href="#dynamic-content-generation">Dynamic content generation</a>
+<ul>
+<li>
+<a href="#front-matter-reference">Front Matter reference</a>
+</li>
+</ul>
 </li>
 <li>
 <a href="#sidebar">Sidebar</a>
@@ -177,7 +182,7 @@
 <a href="#using-front-matter">Using Front Matter</a>
 </li>
 <li>
-<a href="#using-subdirectories">Using subdirectories</a>
+<a href="#automatic-subdirectory-based-grouping">Automatic subdirectory-based grouping</a>
 </li>
 </ul>
 </li>
@@ -205,6 +210,11 @@
 <a href="#table-of-contents-settings">Table of contents settings</a>
 </li>
 <li>
+<a href="#using-flattened-output-paths">Using flattened output paths</a>
+</li>
+</ul>
+</li>
+<li>
 <a href="#search-feature">Search feature</a>
 <ul>
 <li>
@@ -216,6 +226,9 @@
 <li>
 <a href="#hiding-pages-from-indexing">Hiding pages from indexing</a>
 </li>
+<li>
+<a href="#search-with-realtime-compiler">Search with realtime compiler</a>
+</li>
 </ul>
 </li>
 <li>
@@ -225,8 +238,8 @@
 <a href="#introduction-1">Introduction</a>
 </li>
 <li>
-<a href="#example-configuration">Example configuration</a>
-</li>
+<a href="#configuration">Configuration</a>
+<ul>
 <li>
 <a href="#changing-the-button-text">Changing the button text</a>
 </li>
@@ -239,139 +252,152 @@
 <li>
 <a href="#changing-the-blade-view">Changing the Blade view</a>
 </li>
-<li>
-<a href="#using-flattened-output-paths">Using flattened output paths</a>
-</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 
-			</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/managing-assets.html">Managing and Compiling Assets</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/compile-and-deploy.html">Compile &amp; Deploy</a>
-	</li>                            </ul>
-        </li>
-	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
-            <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
-                <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Digging Deeper</h4>
-                <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
-                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
-                    </svg>
-                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
-                    </svg>
-                </button>
-            </header>
-            <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
-                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/customization.html">Customizing your Site</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/advanced-markdown.html">Advanced Markdown</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/extensions.html">Extensions &amp; Integrations</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/advanced-customization.html">Advanced Customization</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/collections.html">File-based Collections</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/troubleshooting.html">Troubleshooting</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/updating-hyde.html">Updating Hyde</a>
-	</li>                            </ul>
-        </li>
-	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
-            <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
-                <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Advanced Features</h4>
-                <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
-                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
-                    </svg>
-                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
-                    </svg>
-                </button>
-            </header>
-            <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
-                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/advanced-features.html">Introduction</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/build-tasks.html">Custom Build Tasks</a>
-	</li>                            </ul>
-        </li>
-	        <li class="sidebar-group" role="listitem" x-data="{ groupOpen: false }">
-            <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center group hover:bg-black/10" @click="groupOpen = ! groupOpen">
-                <h4 class="sidebar-group-heading text-base font-semibold cursor-pointer dark:group-hover:text-white">Architecture Concepts</h4>
-                <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
-                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
-                    </svg>
-                    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
-                    </svg>
-                </button>
-            </header>
-            <ul class="sidebar-group-list ml-4 px-2 mb-2" role="list" x-show="groupOpen">
-                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/architecture-concepts.html">Introduction</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/autodiscovery.html">Autodiscovery</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/automatic-routing.html">Automatic Routing</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/dynamic-data-discovery.html">Dynamic Data Discovery</a>
-	</li>                                    <li class="sidebar-navigation-item -ml-4 pl-4" role="listitem">
-		<a class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10"
-		href="../dev-docs-preview/page-models.html">Page models</a>
-	</li>                            </ul>
-        </li>
-	</ul>                        </nav>
+            </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/managing-assets.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Managing and Compiling Assets
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/compile-and-deploy.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Compile &amp; Deploy
+        </a>
+    </li>                                    </ul>
+            </li>
+                    <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: false }" >
+                <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center  group hover:bg-black/10 "  @click="groupOpen = ! groupOpen" >
+                    <h4 class="sidebar-group-heading text-base font-semibold  cursor-pointer dark:group-hover:text-white ">Digging Deeper</h4>
+                                            <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
+    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
+    </svg>
+    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
+    </svg>
+</button>                                    </header>
+                <ul class="sidebar-group-items ml-4 px-2 mb-2" role="list"  x-show="groupOpen" >
+                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/customization.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Customizing your Site
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/advanced-markdown.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Advanced Markdown
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/extensions.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Extensions &amp; Integrations
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/advanced-customization.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Advanced Customization
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/collections.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            File-based Collections
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/troubleshooting.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Troubleshooting
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/updating-hyde.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Updating Hyde Projects
+        </a>
+    </li>                                    </ul>
+            </li>
+                    <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: false }" >
+                <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center  group hover:bg-black/10 "  @click="groupOpen = ! groupOpen" >
+                    <h4 class="sidebar-group-heading text-base font-semibold  cursor-pointer dark:group-hover:text-white ">Advanced Features</h4>
+                                            <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
+    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
+    </svg>
+    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
+    </svg>
+</button>                                    </header>
+                <ul class="sidebar-group-items ml-4 px-2 mb-2" role="list"  x-show="groupOpen" >
+                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/advanced-features.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Introduction
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/build-tasks.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Custom Build Tasks
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/hyde-pages.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            HydePage API
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/in-memory-pages.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            InMemoryPages
+        </a>
+    </li>                                    </ul>
+            </li>
+                    <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: false }" >
+                <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center  group hover:bg-black/10 "  @click="groupOpen = ! groupOpen" >
+                    <h4 class="sidebar-group-heading text-base font-semibold  cursor-pointer dark:group-hover:text-white ">Architecture Concepts</h4>
+                                            <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
+    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-open" x-show="groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 12L12 8L4 8L8 12Z" fill="currentColor" />
+    </svg>
+    <svg class="sidebar-group-toggle-icon sidebar-group-toggle-icon-closed" x-show="! groupOpen" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 8L8 12L8 4L12 8Z" fill="currentColor" />
+    </svg>
+</button>                                    </header>
+                <ul class="sidebar-group-items ml-4 px-2 mb-2" role="list"  x-show="groupOpen" >
+                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/architecture-concepts.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Introduction
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/autodiscovery.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Autodiscovery
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/automatic-routing.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Automatic Routing
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/dynamic-data-discovery.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Dynamic Data Discovery
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/page-models.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            Page models
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs-preview/the-hydekernel.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+            The HydeKernel
+        </a>
+    </li>                                    </ul>
+            </li>
+            </ul>
+    </nav>
     </aside>
-<main id="content"
-      class="dark:bg-gray-900 min-h-screen bg-gray-50 md:bg-white absolute top-16 md:top-0 w-screen md:left-64 md:w-[calc(100vw_-_16rem)]">
-    <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 prose dark:prose-invert max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)]">
+    <main id="content" class="dark:bg-gray-900 min-h-screen bg-gray-50 md:bg-white absolute top-16 md:top-0 w-screen md:left-64 md:w-[calc(100vw_-_16rem)]">
+        <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 prose dark:prose-invert max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)]">
     
-    <header id="document-header" class="flex items-center flex-wrap prose-h1:mb-3">
+    <header id="document-header" class="flex items-center flex-wrap justify-between prose-h1:mb-3">
         <h1>Creating Documentation Pages</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
         <h2>Introduction to Hyde Documentation Pages<a id="introduction-to-hyde-documentation-pages" href="#introduction-to-hyde-documentation-pages" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Hyde makes it easier than ever to create documentation sites.
-By the way, this documentation site is of course made with the Hyde Documentation module!</p>
-<p>In short, all you need to do is put standard Markdown files in the <code>_docs/</code> directory and Hyde will do the rest.</p>
-<p>What is &quot;the rest&quot;, you may ask? Well, for starters:</p>
-<ul>
-<li>Hyde compiles your Markdown content into a beautiful static HTML page based on <a href="https://github.com/caendesilva/lagrafo">the Lagrafo frontend</a>
-</li>
-<li>A sidebar (which is responsive) is automatically created based on your Markdown files
-<ul>
-<li>If you have an <code>index.md</code> in the <code>_docs/</code> directory, it will be used as the sidebar header</li>
-<li>You can even <a href="#sidebar-page-order">customize the order and labels</a> of sidebar items</li>
-</ul>
-</li>
-<li>If you have an <code>index.md</code> in the <code>_docs/</code> directory,
-a link to it will be added to the site navigation menu named &quot;Docs&quot;.</li>
-<li>If you have a Torchlight API token in your .env file, Hyde will even automatically enable Syntax Highlighting for you.
-See more about this in the <a href="extensions#torchlight">extensions page</a>.</li>
-</ul>
+<p>Welcome to the Hyde Documentation Pages, where creating professional-looking documentation sites has never been easier.
+Using the Hyde Documentation module, all you need to do is place standard Markdown files in the _docs/ directory, and Hyde takes care of the rest.</p>
+<p>Hyde compiles your Markdown content into beautiful static HTML pages using a TailwindCSS frontend, complete with a
+responsive sidebar that is automatically generated based on your Markdown files. You can even customize the order,
+labels, and even groups, of the sidebar items to suit your needs.</p>
+<p>Additionally, if you have a <code>_docs/index.md</code> file, the sidebar header will link to it, and an automatically generated
+&quot;Docs&quot; link will be added to your site's main navigation menu, pointing to your documentation page.</p>
+<p>If you have a Torchlight API token in your .env file, Hyde will even enable syntax highlighting automatically,
+saving you time and effort. For more information about this feature, see the <a href="extensions#torchlight">extensions page</a>.</p>
 <h3>Best Practices and Hyde Expectations<a id="best-practices-and-hyde-expectations" href="#best-practices-and-hyde-expectations" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Since Hyde does a lot of things automatically, there are some things you may need
 to keep in mind when creating blog posts so that you don't get unexpected results.</p>
@@ -379,10 +405,10 @@ to keep in mind when creating blog posts so that you don't get unexpected result
 <ul>
 <li>Hyde Documentation pages are files are stored in the <code>_docs</code> directory</li>
 <li>The filename is used as the filename for the compiled HTML</li>
-<li>Filenames should use <code>kebab-case-slug</code> format, followed by the appropriate extension</li>
+<li>Filenames should use <code>kebab-case-name</code> format, followed by the appropriate extension</li>
 <li>Files prefixed with <code>_underscores</code> are ignored by Hyde</li>
 <li>You should always have an <code>index.md</code> file in the <code>_docs/</code> directory</li>
-<li>Your page will be stored in <code>_site/docs/&lt;slug&gt;.html</code> unless you <a href="#output-directory">change it in the config</a>
+<li>Your page will be stored in <code>_site/docs/&lt;identifier&gt;.html</code> unless you <a href="#output-directory">change it in the config</a>
 </li>
 </ul>
 <h3>Advanced usage and customization<a id="advanced-usage-and-customization" href="#advanced-usage-and-customization" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
@@ -403,14 +429,15 @@ Since there are so many components, it's hard to list them all here in the docum
 <pre><code class="language-yaml">---
 title: &quot;Page Title&quot;
 navigation:
-  label: &quot;Sidebar Label&quot;
-  hidden: true
-  priority: 5
+    label: &quot;Sidebar Label&quot;
+    hidden: true
+    priority: 5
 ---
 </code></pre>
 <h2>Dynamic content generation<a id="dynamic-content-generation" href="#dynamic-content-generation" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Hyde makes documentation pages easy to create by automatically generating dynamic content such as the sidebar and page title.
 If you are not happy with the results you can customize them in the config or with front matter.</p>
+<h3>Front Matter reference<a id="front-matter-reference" href="#front-matter-reference" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Before we look at how to override things, here is an overview of the relevant content Hyde generates,
 and where the data is from as well as where it can be overridden.</p>
 <table>
@@ -418,7 +445,7 @@ and where the data is from as well as where it can be overridden.</p>
 <tr>
 <th>Property</th>
 <th>Description</th>
-<th>Source</th>
+<th>Dynamic Data Source</th>
 <th>Override in</th>
 </tr>
 </thead>
@@ -432,13 +459,7 @@ and where the data is from as well as where it can be overridden.</p>
 <tr>
 <td><code>navigation.label</code> (string)</td>
 <td>The label for the page shown in the sidebar</td>
-<td>The page identifier/basename (slug)</td>
-<td>Front matter, config</td>
-</tr>
-<tr>
-<td><code>navigation.hidden</code> (boolean)</td>
-<td>Hides the page from the sidebar</td>
-<td><em>null</em></td>
+<td>The page basename</td>
 <td>Front matter, config</td>
 </tr>
 <tr>
@@ -447,11 +468,23 @@ and where the data is from as well as where it can be overridden.</p>
 <td>Defaults to 999</td>
 <td>Front matter, config</td>
 </tr>
+<tr>
+<td><code>navigation.hidden</code> (boolean)</td>
+<td>Hides the page from the sidebar</td>
+<td><em>none</em></td>
+<td>Front matter, config</td>
+</tr>
+<tr>
+<td><code>navigation.group</code> (string)</td>
+<td>The group the page belongs to in the sidebar</td>
+<td>Subdirectory, if nested</td>
+<td>Front matter</td>
+</tr>
 </tbody>
 </table>
 <h2>Sidebar<a id="sidebar" href="#sidebar" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The sidebar is automatically generated from the files in the <code>_docs</code> directory. You will probably want to change the order
-of these items. You can do this in two ways, either in the config or with front matter using the navigation array.</p>
+of these items. You can do this in two ways, either in the config or with front matter using the navigation array settings.</p>
 <h3>Table of contents<a id="table-of-contents" href="#table-of-contents" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Hyde automatically generates a table of contents for the page and adds it to the sidebar.</p>
 <p>The behaviour of this can be changed in the configuration file.
@@ -460,7 +493,7 @@ See <a href="customization#navigation-menu--sidebar">the customization page</a> 
 <p>The sidebar is sorted/ordered by the <code>priority</code> property. The higher the priority the further down in the sidebar it will be.
 The default priority is 999. You can override the priority using the following front matter:</p>
 <pre><code class="language-yaml">navigation:
-  priority: 5
+    priority: 5
 </code></pre>
 <p>You can also change the order in the Docs configuration file.
 See <a href="customization#navigation-menu--sidebar">the chapter in the customization page</a> for more details. <br>
@@ -469,34 +502,30 @@ See <a href="customization#navigation-menu--sidebar">the chapter in the customiz
 <p>The sidebar items are labeled with the <code>label</code> property. The default label is the filename of the file.
 You can change it with the following front matter:</p>
 <pre><code class="language-yaml">navigation:
-  label: &quot;My Custom Sidebar Label&quot;
+    label: &quot;My Custom Sidebar Label&quot;
 </code></pre>
 <h3>Sidebar grouping<a id="sidebar-grouping" href="#sidebar-grouping" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Sidebar grouping allows you to group items in the sidebar into categories. This is useful for creating a sidebar with a lot of items.
 The Hyde docs for instance use this.</p>
-<p>The feature is enabled automatically when one or more of your documentation pages have the navigation.group property set
+<p>The feature is enabled automatically when one or more of your documentation pages have the <code>navigation.group</code> property set
 in the front matter. This will then switch to a slightly more compact sidebar layout with pages sorted into categories.
 Any pages without the group front matter will get put in the &quot;Other&quot; group.</p>
 <h4>Using Front Matter<a id="using-front-matter" href="#using-front-matter" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>To enable sidebar grouping, you can add the following front matter to your documentation pages:</p>
 <pre><code class="language-yaml">navigation:
-  group: &quot;Getting Started&quot;
+    group: &quot;Getting Started&quot;
 </code></pre>
-<h4>Using subdirectories<a id="using-subdirectories" href="#using-subdirectories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Since <a href="https://github.com/hydephp/develop/releases/tag/v0.52.0-beta">v0.52.0-beta</a>, you can also automatically group your documentation pages by placing source files in sub-directories.</p>
-<p>For example, putting a Markdown file in <code>_docs/getting-started/</code>, is equivalent to adding the same front matter in the step above.</p>
-<blockquote>
-<p>Note that when the <a href="#using-flattened-output-paths">flattened output paths</a> setting is enabled, the file will still be compiled to the <code>_site/docs/</code> directory like it would be if you didn't use the sub-directories.</p>
-</blockquote>
+<h4>Automatic subdirectory-based grouping<a id="automatic-subdirectory-based-grouping" href="#automatic-subdirectory-based-grouping" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>You can also automatically group your documentation pages by placing source files in sub-directories.</p>
+<p>For example, putting a Markdown file in <code>_docs/getting-started/</code>, is equivalent to adding the same front matter seen above.</p>
+<blockquote class="info"><p>Note that when the <a href="#using-flattened-output-paths">flattened output paths</a> setting is enabled (which it is by default), the file will still be compiled to the <code>_site/docs/</code> directory like it would be if you didn't use the subdirectories.</p></blockquote>
 <h3>Hiding items<a id="hiding-items" href="#hiding-items" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>You can hide items from the sidebar by adding the <code>hidden</code> property to the front matter:</p>
 <pre><code class="language-yaml">navigation:
-  hidden: true
+    hidden: true
 </code></pre>
 <p>This can be useful to create redirects or other items that should not be shown in the sidebar.</p>
-<blockquote>
-<p>The index page is by default not shown as a sidebar item, but instead is linked in the sidebar header. <br></p>
-</blockquote>
+<blockquote class="info"><p>The index page is by default not shown as a sidebar item, but instead is linked in the sidebar header. <br></p></blockquote>
 <h2>Customization<a id="customization" href="#customization" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Please see the <a href="customization">customization page</a> for in-depth information on how to customize Hyde,
 including the documentation pages. Here is a high level overview for quick reference though.</p>
@@ -504,24 +533,22 @@ including the documentation pages. Here is a high level overview for quick refer
 <p>If you want to store the compiled documentation pages in a different directory than the default 'docs' directory,
 for example to specify a version like the Hyde docs does, you can specify the output directory in the Hyde configuration file.
 The path is relative to the site output, typically <code>_site</code>.</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_config/hyde.php</small>'output_directories' =&gt; [
-    \Hyde\Pages\DocumentationPage::class =&gt; 'docs' // default
-    \Hyde\Pages\DocumentationPage::class =&gt; 'docs/master' // What the Hyde docs use
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'output_directories' =&gt; [
+    \Hyde\Pages\DocumentationPage::class =&gt; 'docs' // default [tl! --]
+    \Hyde\Pages\DocumentationPage::class =&gt; 'docs/1.x' // What the Hyde docs use [tl! ++]
 ]
 </code></pre>
 <p>Note that you need to take care as to not set it to something that may conflict with other parts, such as media or posts directories.</p>
 <h3>Automatic navigation menu<a id="automatic-navigation-menu" href="#automatic-navigation-menu" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>By default, a link to the documentation page is added to the navigation menu when an index.md file is found in the <code>_docs</code> directory. Please see the <a href="customization#navigation-menu--sidebar">the customization page</a> for more information.</p>
+<p>By default, a link to the documentation page is added to the navigation menu when an index.md file is found in the <code>_docs</code> directory. Please see <a href="customization#navigation-menu--sidebar">the customization page</a> for more information.</p>
 <h3>Sidebar header name<a id="sidebar-header-name" href="#sidebar-header-name" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>By default, the site title shown in the sidebar header is generated from the configured site name suffixed with &quot;docs&quot;.
 You can change this in the Docs configuration file.</p>
 <pre><code class="language-php">'title' =&gt; 'API Documentation',
 </code></pre>
-<blockquote>
-<p>Tip: The header will link to the docs/index page, if it exists.</p>
-</blockquote>
+<blockquote class="info"><p>Tip: The header will link to the docs/index page, if it exists.</p></blockquote>
 <h3>Sidebar page order<a id="sidebar-page-order" href="#sidebar-page-order" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>To quickly arrange the order of items in the sidebar, you can reorder the page slugs in the list and the links will be sorted in that order.
+<p>To quickly arrange the order of items in the sidebar, you can reorder the page identifiers in the list and the links will be sorted in that order.
 Link items without an entry here will have fall back to the default priority of 999, putting them last.</p>
 <pre><code class="language-php">'sidebar_order' =&gt; [
     'readme',
@@ -531,48 +558,61 @@ Link items without an entry here will have fall back to the default priority of 
 </code></pre>
 <p>See <a href="customization#navigation-menu--sidebar">the chapter in the customization page</a> for more details. <br></p>
 <h3>Table of contents settings<a id="table-of-contents-settings" href="#table-of-contents-settings" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>In the <code>config/docs.php</code> file you can configure the behavior, content,
-and the look and feel of the sidebar table of contents.
+<p>In the <code>config/docs.php</code> file you can configure the behavior, content, and the look and feel of the sidebar table of contents.
 You can also disable the feature completely.</p>
 <pre><code class="language-php">'table_of_contents' =&gt; [
-	'enabled' =&gt; true,
-	'min_heading_level' =&gt; 2,
-	'max_heading_level' =&gt; 4,
-	'smooth_page_scrolling' =&gt; true,
+    'enabled' =&gt; true,
+    'min_heading_level' =&gt; 2,
+    'max_heading_level' =&gt; 4,
+    'smooth_page_scrolling' =&gt; true,
 ],
 </code></pre>
-<h3>Search feature<a id="search-feature" href="#search-feature" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<h4>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>The HydeSearch plugin adds a search feature to documentation pages.</p>
-<p>The search feature is enabled by default.
-You can disable it by removing the <code>documentationSearch</code> from the Hyde <code>Features</code> config array.</p>
-<h4>Using the search<a id="using-the-search" href="#using-the-search" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h3>Using flattened output paths<a id="using-flattened-output-paths" href="#using-flattened-output-paths" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>If this setting is set to true, Hyde will output all documentation pages into the same configured documentation output directory.
+This means that you can use the automatic directory based grouping feature, but still have a &quot;flat&quot; output structure.
+Note that this means that you can't have two documentation pages with the same filename or navigation menu label as they will overwrite each other.</p>
+<p>If you set this to false, Hyde will match the directory structure of the source files (just like all other pages).</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'flattened_output_paths' =&gt; true,
+</code></pre>
+<h2>Search feature<a id="search-feature" href="#search-feature" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h3>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The HydeSearch plugin adds a search feature to documentation pages. It consists of two parts, a search index generator
+that runs during the build command, and a frontend JavaScript plugin that adds the actual search widget.</p>
+<blockquote class="info"><p>Tip: The HydeSearch plugin is what powers the search feature on this site! Why not <a href="search">try it out</a>!</p></blockquote>
+<p>The search feature is enabled by default. You can disable it by removing the <code>documentationSearch</code> from the Hyde <code>Features</code> config array.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'features' =&gt; [
+    Features::documentationSearch(), // [tl! --]
+],
+</code></pre>
+<h3>Using the search<a id="using-the-search" href="#using-the-search" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>The search works by generating a JSON search index which the JavaScript plugin loads asynchronously.</p>
-<p>Two types of search methods are added, one is a full page search screen that will saved to <code>docs/search.html</code>.
-<small><blockquote>The full page can be disabled by setting <code>create_search_page</code> to <code>false</code> in the <code>docs</code> config.</blockquote></small></p>
-<blockquote>
-<p>Note that the fullpage search is used as a fallback for browsers that don't support the <code>&lt;dialogue&gt;</code> element, and may lead to 404 errors if disabled.</p>
-</blockquote>
+<p>Two ways to access the search are added, one is a full page search screen that will be saved to <code>docs/search.html</code>.</p>
 <p>The second method is a button added to the documentation pages, similar to how Algolia DocSearch works.
-Opening it will open a dialog modal with an integrated search screen.
-You can also open the dialog using the keyboard shortcut <code>/</code>.</p>
-<h4>Hiding pages from indexing<a id="hiding-pages-from-indexing" href="#hiding-pages-from-indexing" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>If you have a large page, like a changelog, on your documentation sites you may want to hide it from the search index. You can do this by adding the page slug to the <code>exclude_from_search</code> array in the <code>docs</code> config, similar to how navigation menu items are hidden.</p>
+Opening it will open a modal with an integrated search screen. You can also open the dialog using the keyboard shortcut <code>/</code>.</p>
+<blockquote class="info"><p>The full page can be disabled by setting <code>create_search_page</code> to <code>false</code> in the <code>docs</code> config.</p></blockquote>
+<h3>Hiding pages from indexing<a id="hiding-pages-from-indexing" href="#hiding-pages-from-indexing" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>If you have a large page on your documentation site, like a changelog, you may want to hide it from the search index.
+You can do this by adding the page identifier to the <code>exclude_from_search</code> array in the <code>docs</code> config, similar to how
+navigation menu items are hidden. The page will still be accessible as normal but will be added to the search index JSON file.</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'exclude_from_search' =&gt; [
   'changelog',
 ]
 </code></pre>
-<p>The page will still be accessible via the URL, but will be added to the search index JSON file. Don't include the file extension.</p>
-<h3>Automatic &quot;Edit Page&quot; button<a id="automatic-edit-page-button" href="#automatic-edit-page-button" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<h4>Introduction<a id="introduction-1" href="#introduction-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h3>Search with realtime compiler<a id="search-with-realtime-compiler" href="#search-with-realtime-compiler" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>While the Realtime Compiler (what powers the <code>php hyde serve</code> command) serves the search index, however, it does not
+compile the index automatically. So if you're missing the search when previewing your site, run either <code>php hyde build</code>
+or <code>php hyde build:search</code> to compile the search index.</p>
+<h2>Automatic &quot;Edit Page&quot; button<a id="automatic-edit-page-button" href="#automatic-edit-page-button" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h3>Introduction<a id="introduction-1" href="#introduction-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Hyde can automatically add links to documentation pages that takes the user
 to a GitHub page (or similar) to edit the page. This makes it great for open-source projects
 looking to allow others to contribute to the documentation in a quick and easy manner.</p>
 <p>The feature is automatically enabled when you specify a base URL in the Docs configuration file.
 Hyde expects this to be a GitHub path, but it will probably work with other methods as well,
 if not, please send a PR and/or create an issue on the <a href="https://github.com/hydephp/framework">GitHub repository</a>!</p>
-<h4>Example configuration<a id="example-configuration" href="#example-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Let's take a practical example for how HydePHP.com uses this feature.</p>
+<blockquote class="info"><p>Tip: This documentation site uses this feature, scroll down to the bottom of this page and try it out!</p></blockquote>
+<h3>Configuration<a id="configuration" href="#configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>As an example configuration, let's take a practical example for how HydePHP.com uses this feature.</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'source_file_location_base' =&gt; 'https://github.com/hydephp/docs/blob/master/',
 </code></pre>
 <h4>Changing the button text<a id="changing-the-button-text" href="#changing-the-button-text" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
@@ -580,7 +620,7 @@ if not, please send a PR and/or create an issue on the <a href="https://github.c
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'edit_source_link_text' =&gt; 'Edit Source on GitHub',
 </code></pre>
 <h4>Changing the position<a id="changing-the-position" href="#changing-the-position" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>By default the button will be shown in both the documentation page footer.
+<p>By default, the button will be shown in both the documentation page footer.
 You can change this by setting the following config setting to <code>'header'</code>, <code>'footer'</code>, or <code>'both'</code></p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'edit_source_link_position' =&gt; 'header',
 </code></pre>
@@ -591,24 +631,15 @@ Just target the <code>.edit-page-link</code> class.</p>
 </code></pre>
 <h4>Changing the Blade view<a id="changing-the-blade-view" href="#changing-the-blade-view" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>You can also publish the <code>edit-source-button.blade.php</code> view and change it to your liking.</p>
-<h4>Using flattened output paths<a id="using-flattened-output-paths" href="#using-flattened-output-paths" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>If this setting is set to true, Hyde will output all documentation pages into the same configured documentation output directory.
-This means that you can use the automatic directory based grouping feature, but still have a &quot;flat&quot; output structure.
-Note that this means that you can't have two documentation pages with the same filename or navigation menu label as they will overwrite each other.</p>
-<p>If you set this to false, Hyde will match the directory structure of the source files (just like all other pages).</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'flattened_output_paths' =&gt; true,
-</code></pre>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
     </footer>
-</article></main>
+</article>    </main>
 
-<div id="support">
-    <div id="sidebar-backdrop" x-cloak="" x-show="sidebarOpen" x-transition @click="sidebarOpen = false"
-             title="Click to close sidebar" class="w-screen h-screen fixed top-0 left-0 cursor-pointer z-10 bg-black/50">
-</div>
-            <button id="searchMenuButton" x-on:click="searchWindowOpen = ! searchWindowOpen"
+    <div id="support">
+        <div id="sidebar-backdrop" x-cloak="" x-show="sidebarOpen" x-transition @click="sidebarOpen = false" title="Click to close sidebar" class="w-screen h-screen fixed top-0 left-0 cursor-pointer z-10 bg-black/50"></div>
+                    <button id="searchMenuButton" x-on:click="searchWindowOpen = ! searchWindowOpen"
         :title="searchWindowOpen ? 'Close search window' : 'Open search window'; $nextTick(() => { setTimeout(() => { document.getElementById('search-input').focus(); }); });"
         class="absolute right-4 top-4 mr-4 z-10 opacity-75 hover:opacity-100 hidden md:block"
         aria-label="Toggle search window">
@@ -643,7 +674,7 @@ Note that this means that you can't have two documentation pages with the same f
             <button @click="searchWindowOpen = false" title="Close search window" class="opacity-75 hover:opacity-100"
                     aria-label="Close search window">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-					<path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                 </svg>
             </button>
         </header>
@@ -664,7 +695,7 @@ Note that this means that you can't have two documentation pages with the same f
 
     <div id="search-window-backdrop" title="Click to close search window"
          class="w-screen h-screen cursor-pointer z-40 bg-black/50 absolute top-0"></div>
-</div>        <script src="https://cdn.jsdelivr.net/npm/hydesearch@0.2.1/dist/HydeSearch.min.js" defer></script>
+</div>            <script src="https://cdn.jsdelivr.net/npm/hydesearch@0.2.1/dist/HydeSearch.min.js" defer></script>
 <script>
     window.addEventListener('load', function () {
         const searchIndexLocation = '../dev-docs-preview/search.json';
@@ -672,22 +703,22 @@ Note that this means that you can't have two documentation pages with the same f
 
         Search.init();
     });
-</script>    </div>
+</script>            </div>
 
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.10.3/dist/cdn.min.js" integrity="sha256-gOkV4d9/FmMNEkjOzVlyM2eNAWSUXisT+1RbMTTIgXI=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.10.3/dist/cdn.min.js" integrity="sha256-gOkV4d9/FmMNEkjOzVlyM2eNAWSUXisT+1RbMTTIgXI=" crossorigin="anonymous"></script>
 
 <script>
-	function toggleTheme() {
-		if (localStorage.getItem('color-theme') === 'dark' || !('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-			document.documentElement.classList.remove("dark");
-			localStorage.setItem('color-theme', 'light');
-			document.getElementById('meta-color-scheme').setAttribute('content', 'light');
-		} else {
-			document.documentElement.classList.add("dark");
-			localStorage.setItem('color-theme', 'dark');
-			document.getElementById('meta-color-scheme').setAttribute('content', 'dark');
-		}
-	}
+    function toggleTheme() {
+        if (localStorage.getItem('color-theme') === 'dark' || !('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem('color-theme', 'light');
+            document.getElementById('meta-color-scheme').setAttribute('content', 'light');
+        } else {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem('color-theme', 'dark');
+            document.getElementById('meta-color-scheme').setAttribute('content', 'dark');
+        }
+    }
 </script>
 
 
@@ -698,7 +729,7 @@ Note that this means that you can't have two documentation pages with the same f
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/685" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #685</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/f322b6f2a202a502a3f2db05391ce2a1a81c0cb4"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">f322b6f2a202a502a3f2db05391ce2a1a81c0cb4</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e2efcf98f869bf87fb21253b6a9e8ea50385c688"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e2efcf98f869bf87fb21253b6a9e8ea50385c688</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/685" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>

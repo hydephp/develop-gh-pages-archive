@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HydePHP Documentation Preview - Elegant and Powerful Static Site Generator</title>
+<title>HydePHP Documentation Preview - Hyde Documentation</title>
 
 
 
-<link rel="canonical" href="https://hydephp.github.io/develop/pr-685/dev-docs-preview/dev-docs-preview/index.html">
-<meta name="twitter:title" content="HydePHP Documentation Preview - Elegant and Powerful Static Site Generator">
-<meta property="og:title" content="HydePHP Documentation Preview - Elegant and Powerful Static Site Generator">
+<link rel="canonical" href="https://hydephp.github.io/develop/pr-685/dev-docs-preview/dev-docs-preview/README.html">
+<meta name="twitter:title" content="HydePHP Documentation Preview - Hyde Documentation">
+<meta property="og:title" content="HydePHP Documentation Preview - Hyde Documentation">
 
 
 <link rel="sitemap" href="https://hydephp.github.io/develop/pr-685/dev-docs-preview/sitemap.xml" type="application/xml" title="Sitemap">
@@ -74,7 +74,7 @@
 </div>    </header>
     <nav id="sidebar-navigation" class="p-2 overflow-y-auto border-y border-gray-300 dark:border-[#1b2533] h-full">
         <ul id="sidebar-items" role="list">
-                            <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: true }" >
+                            <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: false }" >
                 <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center  group hover:bg-black/10 "  @click="groupOpen = ! groupOpen" >
                     <h4 class="sidebar-group-heading text-base font-semibold  cursor-pointer dark:group-hover:text-white ">Getting Started</h4>
                                             <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
@@ -255,50 +255,11 @@
         <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 prose dark:prose-invert max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)]">
     
     <header id="document-header" class="flex items-center flex-wrap justify-between prose-h1:mb-3">
-        <h1>Elegant and Powerful Static Site Generator</h1>
+        <h1>Hyde Documentation</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        <style>.images-inline img { display: inline; margin: 4px 2px;}</style>
-<p class="images-inline not-prose"><a href="https://packagist.org/packages/hyde/framework"><img src="https://img.shields.io/packagist/v/hyde/framework?include_prereleases" alt="Latest Version on Packagist" /></a>
-<a href="https://packagist.org/packages/hyde/framework"><img src="https://img.shields.io/packagist/dt/hyde/framework" alt="Total Downloads on Packagist" /></a>
-<a href="https://codecov.io/gh/hydephp/develop"><img src="https://codecov.io/gh/hydephp/develop/branch/master/graph/badge.svg?token=G6N2161TOT" alt="Test Coverage" /></a>
-<a href="https://scrutinizer-ci.com/g/hydephp/develop/?branch=master"><img src="https://scrutinizer-ci.com/g/hydephp/develop/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality" /></a>
-<a href="https://shepherd.dev/github/hydephp/develop"><img src="https://shepherd.dev/github/hydephp/develop/coverage.svg" alt="Psalm Type Coverage" /></a>
-<img src="https://img.shields.io/github/license/hydephp/hyde" alt="License MIT" /></p>
-<h2>About HydePHP<a id="about-hydephp" href="#about-hydephp" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>HydePHP is a new Static Site Builder focused on writing content, not markup. With Hyde, it is easy to create static
-websites, blogs, and documentation pages using Markdown and (optionally) Laravel's Blade.</p>
-<p>Operated entirely through the command-line, HydePHP provides developers with a fast and efficient way to create high-quality websites with ease.
-Unlike traditional web development frameworks, sites compiled with HydePHP don't require any server to run,
-making it an ideal choice for building lightweight and fast-loading websites.</p>
-<p>Compared with other static site builders, Hyde is blazingly fast and seriously simple to get started with, yet it has the
-full power of Laravel waiting for you when you need it, as Hyde is powered by Laravel Zero, a stripped-down version of
-the robust and popular Laravel Framework, optimized for console applications.</p>
-<p>Hyde makes creating websites easy and fun by taking care of the boring stuff, like routing, writing boilerplate, and
-endless configuration. Instead, when you create a new Hyde project, everything you need to get started is already there
--- including precompiled TailwindCSS, well-crafted Blade templates, and easy-to-use asset management.</p>
-<p>Hyde was inspired by JekyllRB and is designed for developers who are comfortable writing posts in Markdown, and it requires
-virtually no configuration out of the box as it favours convention over configuration and is preconfigured with sensible defaults.</p>
-<h2>Installation<a id="installation" href="#installation" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>HydePHP is a command-line interface (CLI) application that is installed on a per-project basis.</p>
-<p>To use HydePHP, your system must have PHP version 8.1 or later installed, along with Composer, and access to a terminal.</p>
-<p>The recommended method of installation is using Composer.</p>
-<pre><code class="language-bash">composer create-project hyde/hyde
-</code></pre>
-<p>Once installed, you can access the HydeCLI from the project root using the <code>hyde</code> command.</p>
-<pre><code class="language-bash">php hyde info
-</code></pre>
-<h2>Usage<a id="usage" href="#usage" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Creating static websites with HydePHP is incredibly easy. First you need some content. You can just drop Markdown files
-in any of the source directories, or let Hyde scaffold the files for you using one of the many commands.</p>
-<pre><code class="language-bash">php hyde make:post &quot;My First Post&quot;
-php hyde make:page &quot;About Me&quot;
-</code></pre>
-<p>Once you have some content, you can run the build command to compile the content into beautiful static HTML.</p>
-<pre><code class="language-bash">php hyde build
-</code></pre>
-<p>And that's it, your amazing website is ready to be shared with the world!</p>
-<h3>To learn more, head over to the <a href="quickstart">quickstart page</a>.<a id="to-learn-more-head-over-to-the-quickstart-page" href="#to-learn-more-head-over-to-the-quickstart-page" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+        <p>This is the source for the HydePHP Documentation. Updates here are automatically propagated to the <a href="https://github.com/hydephp/hydephp.com">HydePHP.com</a> website.</p>
+<p>This document is not propagated to the website. It is only for the GitHub development repository.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
