@@ -137,15 +137,12 @@
             implements
                             <a href="classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html"><abbr title="\Hyde\Markdown\Contracts\FrontMatter\BlogPostSchema">BlogPostSchema</abbr></a>                    </span>
     
-            <span class="phpdocumentor-element__extends">
-            Uses
-                            <a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html"><abbr title="\Hyde\Framework\Concerns\InteractsWithFrontMatter">InteractsWithFrontMatter</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -247,32 +244,18 @@ convenient way to see the supported front matter properties.</dd>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_data">data()</a>
-    <span>
-                                &nbsp;: <a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|mixed    </span>
-</dt>
-<dd>Get a value from the computed page data, or fallback to the page&#039;s front matter, then to the default value.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_has">has()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-<dd>See if a value exists in the computed page data or the front matter.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_matter">matter()</a>
-    <span>
-                                &nbsp;: <a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|mixed    </span>
-</dt>
-<dd>Get the front matter object, or a value from within.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_toArray">toArray()</a>
     <span>
                                 &nbsp;: array&lt;string, mixed&gt;    </span>
 </dt>
 <dd>Get the generated data as an associative array.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_getMatter">getMatter()</a>
+    <span>
+                                &nbsp;: string|null|array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeAuthor">makeAuthor()</a>
@@ -335,7 +318,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -380,7 +363,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -414,7 +397,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -448,7 +431,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -482,7 +465,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -516,7 +499,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -550,7 +533,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -584,7 +567,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -622,7 +605,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -659,154 +642,6 @@ convenient way to see the supported front matter properties.</dd>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_data">
-        data()
-        <a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_data" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/InteractsWithFrontMatter.php"><a href="files/packages-framework-src-framework-concerns-interactswithfrontmatter.html"><abbr title="packages/framework/src/Framework/Concerns/InteractsWithFrontMatter.php">InteractsWithFrontMatter.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">23</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get a value from the computed page data, or fallback to the page&#039;s front matter, then to the default value.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">data</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|mixed</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$key</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$default</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_has">
-        has()
-        <a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_has" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/InteractsWithFrontMatter.php"><a href="files/packages-framework-src-framework-concerns-interactswithfrontmatter.html"><abbr title="packages/framework/src/Framework/Concerns/InteractsWithFrontMatter.php">InteractsWithFrontMatter.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">48</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">See if a value exists in the computed page data or the front matter.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">has</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$key</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_matter">
-        matter()
-        <a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_matter" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/InteractsWithFrontMatter.php"><a href="files/packages-framework-src-framework-concerns-interactswithfrontmatter.html"><abbr title="packages/framework/src/Framework/Concerns/InteractsWithFrontMatter.php">InteractsWithFrontMatter.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">36</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Get the front matter object, or a value from within.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">matter</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|mixed</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$key</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$default</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_toArray">
         toArray()
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_toArray" class="headerlink"><i class="fas fa-link"></i></a>
@@ -814,7 +649,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -840,6 +675,50 @@ convenient way to see the supported front matter properties.</dd>
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getMatter">
+        getMatter()
+        <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_getMatter" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">116</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getMatter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null|array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string|null|array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_makeAuthor">
         makeAuthor()
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeAuthor" class="headerlink"><i class="fas fa-link"></i></a>
@@ -847,7 +726,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -880,7 +759,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -913,7 +792,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -946,7 +825,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -979,7 +858,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -1012,7 +891,7 @@ convenient way to see the supported front matter properties.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 

@@ -2331,6 +2331,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_getTruncatedMarkdown"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\BlogPostDataFactory\u003A\u003AgetMatter\u0028\u0029",
+            "name": "getMatter",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_getMatter"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\BlogPostDataFactory\u003A\u003ASCHEMA",
             "name": "SCHEMA",
             "summary": "The\u0020front\u0020matter\u0020properties\u0020supported\u0020by\u0020this\u0020factory.",
@@ -2581,6 +2586,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-HydePageDataFactory.html#method_findTitleFromParentIdentifier"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory\u003A\u003AgetMatter\u0028\u0029",
+            "name": "getMatter",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-HydePageDataFactory.html#method_getMatter"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory\u003A\u003ASCHEMA",
             "name": "SCHEMA",
             "summary": "The\u0020front\u0020matter\u0020properties\u0020supported\u0020by\u0020this\u0020factory.",
@@ -2745,6 +2755,11 @@ Search.appendIndex(
             "name": "offset",
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_offset"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AgetMatter\u0028\u0029",
+            "name": "getMatter",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getMatter"
         },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003ASCHEMA",
             "name": "SCHEMA",
