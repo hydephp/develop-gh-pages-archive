@@ -3018,7 +3018,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\PostAuthor\u003A\u003AgetOrCreate\u0028\u0029",
             "name": "getOrCreate",
-            "summary": "Dynamically\u0020get\u0020or\u0020create\u0020an\u0020author\u0020based\u0020on\u0020a\u0020username\u0020string\u0020or\u0020front\u0020matter\u0020array",
+            "summary": "Dynamically\u0020get\u0020or\u0020create\u0020an\u0020author\u0020based\u0020on\u0020a\u0020username\u0020string\u0020or\u0020front\u0020matter\u0020array.",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html#method_getOrCreate"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\PostAuthor\u003A\u003Aget\u0028\u0029",
@@ -3771,6 +3771,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_getDescription"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\XmlGenerators\\RssFeedGenerator\u003A\u003AgetChannel\u0028\u0029",
+            "name": "getChannel",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-XmlGenerators-RssFeedGenerator.html#method_getChannel"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\XmlGenerators\\SitemapGenerator",
             "name": "SitemapGenerator",
             "summary": "Defines\u0020the\u0020public\u0020API\u0020for\u0020XML\u0020generators\u0020and\u0020provides\u0020a\u0020shared\u0020codebase\u0020for\u0020common\u0020helpers.",
@@ -4043,7 +4048,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003AfindLineContentPositions\u0028\u0029",
             "name": "findLineContentPositions",
-            "summary": "",
+            "summary": "Find\u0020the\u0020indentation\u0020level\u0020and\u0020position\u0020of\u0020the\u0020first\u0020line\u0020that\u0020has\u0020content.",
             "url": "classes/Hyde-Framework-Services-MarkdownService.html#method_findLineContentPositions"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService\u003A\u003A\u0024markdown",
