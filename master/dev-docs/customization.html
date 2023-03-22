@@ -266,6 +266,11 @@
 </li>
 <li>
 <a href="#yaml-configuration">YAML Configuration</a>
+<ul>
+<li>
+<a href="#namespaced-yaml-configuration">Namespaced YAML Configuration</a>
+</li>
+</ul>
 </li>
 </ul>
 
@@ -689,6 +694,20 @@ rss:
 language: en
 output_directory: _site
 </code></pre>
+<h3>Namespaced YAML Configuration<a id="namespaced-yaml-configuration" href="#namespaced-yaml-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>If you are running <code>v1.2</code> or higher, you can also use namespaced configuration options in the YAML file.</p>
+<p>This allows you to set the settings of <strong>any</strong> configuration file normally found in the <code>config</code> directory.</p>
+<p>This feature is automatically enabled when you have a <code>hyde:</code> entry <strong>first</strong> in your <code>hyde.yml</code> file</p>
+<pre><code class="language-yaml"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>hyde.yml</small>hyde:
+  name: HydePHP
+
+docs:
+  sidebar:
+    header: &quot;My Docs&quot;
+</code></pre>
+<p>This would set the <code>name</code> setting in the <code>config/hyde.php</code> file, and the <code>sidebar.header</code> setting in the <code>config/docs.php</code> file.</p>
+<p>Each top level key in the YAML file is treated as a namespace, and the settings are set in the corresponding configuration file.
+You can of course use arrays like normal even in namespaced configuration.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
