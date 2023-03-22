@@ -1806,6 +1806,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-GeneratesTableOfContents.html#method_execute"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesTableOfContents\u003A\u003AextractTableOfContents\u0028\u0029",
+            "name": "extractTableOfContents",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-GeneratesTableOfContents.html#method_extractTableOfContents"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesTableOfContents\u003A\u003A\u0024markdown",
             "name": "markdown",
             "summary": "",
