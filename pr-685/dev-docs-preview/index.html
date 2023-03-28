@@ -13,7 +13,7 @@
 
 
 <link rel="sitemap" href="https://hydephp.github.io/develop/pr-685/dev-docs-preview/sitemap.xml" type="application/xml" title="Sitemap">
-<meta name="generator" content="HydePHP 1.0.0">
+<meta name="generator" content="HydePHP 1.1.0">
 <meta name="robots" content="noindex">
 <meta property="og:site_name" content="HydePHP Documentation Preview">
 
@@ -252,7 +252,7 @@
     </nav>
     </aside>
     <main id="content" class="dark:bg-gray-900 min-h-screen bg-gray-50 md:bg-white absolute top-16 md:top-0 w-screen md:left-64 md:w-[calc(100vw_-_16rem)]">
-        <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 prose dark:prose-invert max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)]">
+        <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)] prose dark:prose-invert">
     
     <header id="document-header" class="flex items-center flex-wrap justify-between prose-h1:mb-3">
         <h1>Elegant and Powerful Static Site Generator</h1>
@@ -311,17 +311,17 @@ php hyde make:page &quot;About Me&quot;
         :title="searchWindowOpen ? 'Close search window' : 'Open search window'; $nextTick(() => { setTimeout(() => { document.getElementById('search-input').focus(); }); });"
         class="absolute right-4 top-4 mr-4 z-10 opacity-75 hover:opacity-100 hidden md:block"
         aria-label="Toggle search window">
-	<span x-show="! searchWindowOpen">
-		Search <svg class="float-left mr-1 dark:fill-white" xmlns="http://www.w3.org/2000/svg" height="24"
+    <span x-show="! searchWindowOpen">
+        Search <svg class="float-left mr-1 dark:fill-white" xmlns="http://www.w3.org/2000/svg" height="24"
                     viewBox="0 0 24 24" width="24" role="presentation">
-			<path d="M0 0h24v24H0z" fill="none"/>
-			<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-	</span>
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    </span>
     <span x-show="searchWindowOpen">
-		<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-			<path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-		</svg>
-	</span>
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+    </span>
 </button>
 <button id="searchMenuButtonMobile" x-on:click="searchWindowOpen = ! searchWindowOpen"
         :title="searchWindowOpen ? 'Close search window' : 'Open search window'; $nextTick(() => { setTimeout(() => { document.getElementById('search-input').focus(); }); });"
@@ -397,7 +397,7 @@ php hyde make:page &quot;About Me&quot;
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/685" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #685</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/3ae930d0e079e7aa4ee1278d893170e69400c310"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">3ae930d0e079e7aa4ee1278d893170e69400c310</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/931330c01a4baac576ab8a4e7bcf1aa01f2059e7"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">931330c01a4baac576ab8a4e7bcf1aa01f2059e7</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/685" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
