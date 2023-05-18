@@ -201,10 +201,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-DebugCommand.html#method_handle"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\DebugCommand\u003A\u003AenabledFeatures\u0028\u0029",
-            "name": "enabledFeatures",
+            "fqsen": "\\Hyde\\Console\\Commands\\DebugCommand\u003A\u003AprintVerbosePathInformation\u0028\u0029",
+            "name": "printVerbosePathInformation",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-DebugCommand.html#method_enabledFeatures"
+            "url": "classes/Hyde-Console-Commands-DebugCommand.html#method_printVerbosePathInformation"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\DebugCommand\u003A\u003AprintEnabledFeatures\u0028\u0029",
+            "name": "printEnabledFeatures",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-DebugCommand.html#method_printEnabledFeatures"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\DebugCommand\u003A\u003A\u0024signature",
             "name": "signature",
