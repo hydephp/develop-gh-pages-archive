@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -111,8 +112,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework.html">Framework</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-actions.html">Actions</a></li>
@@ -133,6 +135,11 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/ConvertsMarkdownToPlainText.php"><a href="files/packages-framework-src-framework-actions-convertsmarkdowntoplaintext.html"><abbr title="packages/framework/src/Framework/Actions/ConvertsMarkdownToPlainText.php">ConvertsMarkdownToPlainText.php</abbr></a></abbr>
     :
@@ -147,35 +154,41 @@
 
 
 
-
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_ATX_HEADERS">ATX_HEADERS</a>
     <span>
         &nbsp;= [&#039;/^(\\n)?\\s{0,}#{1,6}\\s+| {0,}(\\n)?\\s{0,}#{0,} {0,}(\\n)?\\s{0,}$/m&#039; =&gt; &#039;$1$2$3&#039;]                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_BLOCKQUOTES">BLOCKQUOTES</a>
     <span>
         &nbsp;= [&#039;/^\\s{0,3}&gt;\\s?/&#039; =&gt; &#039;&#039;]                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_CODE_BLOCKS">CODE_BLOCKS</a>
     <span>
         &nbsp;= [&#039;/(`{3,})(.*?)\\1/m&#039; =&gt; &#039;$2&#039;]                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_DOUBLE_EMPHASIS">DOUBLE_EMPHASIS</a>
@@ -189,63 +202,54 @@
     <span>
         &nbsp;= [&#039;/([\\*_]{1,3})(\\S.*?\\S{0,1})\\1/&#039; =&gt; &#039;$2&#039;]                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_FENCED_CODEBLOCKS">FENCED_CODEBLOCKS</a>
     <span>
         &nbsp;= [&#039;/`{3}.*\\n/&#039; =&gt; &#039;&#039;, &#039;/`{3}/&#039; =&gt; &#039;&#039;]                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_FOOTNOTES">FOOTNOTES</a>
     <span>
         &nbsp;= [&#039;/\\[\\^.+?\\](\\: .*?$)?/&#039; =&gt; &#039;&#039;]                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_HORIZONTAL_RULES">HORIZONTAL_RULES</a>
     <span>
         &nbsp;= [&#039;/^(-\\s*?|\\*\\s*?|_\\s*?){3,}\\s*/m&#039; =&gt; &#039;&#039;]                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_HTML_TAGS">HTML_TAGS</a>
     <span>
         &nbsp;= [&#039;/&lt;[^&gt;]*&gt;/&#039; =&gt; &#039;&#039;]                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_IMAGES">IMAGES</a>
     <span>
         &nbsp;= [&#039;/\\!\\[(.*?)\\][\\[\\(].*?[\\]\\)]/&#039; =&gt; &#039;$1&#039;]                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_INLINE_CODE">INLINE_CODE</a>
     <span>
         &nbsp;= [&#039;/`(.+?)`/&#039; =&gt; &#039;$1&#039;]                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_INLINE_LINKS">INLINE_LINKS</a>
     <span>
         &nbsp;= [&#039;/\\[(.*?)\\][\\[\\(].*?[\\]\\)]/&#039; =&gt; &#039;$1&#039;]                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_REFERENCE_LINKS">REFERENCE_LINKS</a>
     <span>
         &nbsp;= [&#039;/^\\s{1,2}\\[(.*?)\\]: (\\S+)( &quot;.*?&quot;)?\\s*$/&#039; =&gt; &#039;&#039;]                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_REPEATED_NEWLINES">REPEATED_NEWLINES</a>
@@ -259,35 +263,47 @@
     <span>
         &nbsp;= [&#039;/\\n={2,}/&#039; =&gt; &quot;\n&quot;]                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_STRIKETHROUGH">STRIKETHROUGH</a>
     <span>
         &nbsp;= [&#039;/~~/&#039; =&gt; &#039;&#039;]                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_TILDE_FENCED_CODEBLOCKS">TILDE_FENCED_CODEBLOCKS</a>
     <span>
         &nbsp;= [&#039;/~{3}.*\\n/&#039; =&gt; &#039;&#039;, &#039;/~{3}/&#039; =&gt; &#039;&#039;]                            </span>
 </dt>
-<dd></dd>
 
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#property_markdown">$markdown</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_execute">execute()</a>
@@ -301,30 +317,27 @@
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_applyStringTransformations">applyStringTransformations()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_removeBlockquotes">removeBlockquotes()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_removeTables">removeTables()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -333,11 +346,13 @@
         <h3 class="phpdocumentor-elements__header" id="constants">
             Constants
             <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article class="phpdocumentor-element -constant -protected ">
     <h4 class="phpdocumentor-element__name" id="constant_ATX_HEADERS">
         ATX_HEADERS
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_ATX_HEADERS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -356,10 +371,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -367,6 +380,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_BLOCKQUOTES">
         BLOCKQUOTES
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_BLOCKQUOTES" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -385,10 +399,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -396,6 +408,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_CODE_BLOCKS">
         CODE_BLOCKS
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_CODE_BLOCKS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -414,10 +427,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -425,6 +436,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_DOUBLE_EMPHASIS">
         DOUBLE_EMPHASIS
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_DOUBLE_EMPHASIS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -445,8 +457,7 @@
 
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -454,6 +465,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_EMPHASIS">
         EMPHASIS
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_EMPHASIS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -472,10 +484,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -483,6 +493,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_FENCED_CODEBLOCKS">
         FENCED_CODEBLOCKS
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_FENCED_CODEBLOCKS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -501,10 +512,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -512,6 +521,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_FOOTNOTES">
         FOOTNOTES
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_FOOTNOTES" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -530,10 +540,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -541,6 +549,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_HORIZONTAL_RULES">
         HORIZONTAL_RULES
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_HORIZONTAL_RULES" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -559,10 +568,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -570,6 +577,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_HTML_TAGS">
         HTML_TAGS
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_HTML_TAGS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -588,10 +596,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -599,6 +605,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_IMAGES">
         IMAGES
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_IMAGES" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -617,10 +624,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -628,6 +633,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_INLINE_CODE">
         INLINE_CODE
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_INLINE_CODE" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -646,10 +652,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -657,6 +661,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_INLINE_LINKS">
         INLINE_LINKS
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_INLINE_LINKS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -675,10 +680,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -686,6 +689,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_REFERENCE_LINKS">
         REFERENCE_LINKS
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_REFERENCE_LINKS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -704,10 +708,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -715,6 +717,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_REPEATED_NEWLINES">
         REPEATED_NEWLINES
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_REPEATED_NEWLINES" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -735,8 +738,7 @@
 
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -744,6 +746,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_SETEXT_HEADERS">
         SETEXT_HEADERS
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_SETEXT_HEADERS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -762,10 +765,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -773,6 +774,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_STRIKETHROUGH">
         STRIKETHROUGH
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_STRIKETHROUGH" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -791,10 +793,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -802,6 +802,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_TILDE_FENCED_CODEBLOCKS">
         TILDE_FENCED_CODEBLOCKS
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_TILDE_FENCED_CODEBLOCKS" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -820,10 +821,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -834,6 +833,7 @@
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -845,6 +845,7 @@
     <h4 class="phpdocumentor-element__name" id="property_markdown">
         $markdown
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#property_markdown" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -862,10 +863,8 @@
     <span class="phpdocumentor-signature__name">$markdown</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -875,6 +874,7 @@
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -885,6 +885,7 @@
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/ConvertsMarkdownToPlainText.php"><a href="files/packages-framework-src-framework-actions-convertsmarkdowntoplaintext.html"><abbr title="packages/framework/src/Framework/Actions/ConvertsMarkdownToPlainText.php">ConvertsMarkdownToPlainText.php</abbr></a></abbr>
@@ -898,8 +899,9 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -907,17 +909,12 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -929,6 +926,7 @@
     <h4 class="phpdocumentor-element__name" id="method_execute">
         execute()
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_execute" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/ConvertsMarkdownToPlainText.php"><a href="files/packages-framework-src-framework-actions-convertsmarkdowntoplaintext.html"><abbr title="packages/framework/src/Framework/Actions/ConvertsMarkdownToPlainText.php">ConvertsMarkdownToPlainText.php</abbr></a></abbr>
@@ -943,15 +941,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">execute</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -962,6 +962,7 @@
     <h4 class="phpdocumentor-element__name" id="method_applyRegexTransformations">
         applyRegexTransformations()
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_applyRegexTransformations" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/ConvertsMarkdownToPlainText.php"><a href="files/packages-framework-src-framework-actions-convertsmarkdowntoplaintext.html"><abbr title="packages/framework/src/Framework/Actions/ConvertsMarkdownToPlainText.php">ConvertsMarkdownToPlainText.php</abbr></a></abbr>
@@ -975,8 +976,9 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">applyRegexTransformations</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -984,18 +986,17 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1006,6 +1007,7 @@
     <h4 class="phpdocumentor-element__name" id="method_applyStringTransformations">
         applyStringTransformations()
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_applyStringTransformations" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/ConvertsMarkdownToPlainText.php"><a href="files/packages-framework-src-framework-actions-convertsmarkdowntoplaintext.html"><abbr title="packages/framework/src/Framework/Actions/ConvertsMarkdownToPlainText.php">ConvertsMarkdownToPlainText.php</abbr></a></abbr>
@@ -1019,8 +1021,9 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">applyStringTransformations</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1028,18 +1031,17 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1050,6 +1052,7 @@
     <h4 class="phpdocumentor-element__name" id="method_removeBlockquotes">
         removeBlockquotes()
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_removeBlockquotes" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/ConvertsMarkdownToPlainText.php"><a href="files/packages-framework-src-framework-actions-convertsmarkdowntoplaintext.html"><abbr title="packages/framework/src/Framework/Actions/ConvertsMarkdownToPlainText.php">ConvertsMarkdownToPlainText.php</abbr></a></abbr>
@@ -1063,8 +1066,9 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">removeBlockquotes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contents</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1072,18 +1076,17 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1094,6 +1097,7 @@
     <h4 class="phpdocumentor-element__name" id="method_removeTables">
         removeTables()
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_removeTables" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/ConvertsMarkdownToPlainText.php"><a href="files/packages-framework-src-framework-actions-convertsmarkdowntoplaintext.html"><abbr title="packages/framework/src/Framework/Actions/ConvertsMarkdownToPlainText.php">ConvertsMarkdownToPlainText.php</abbr></a></abbr>
@@ -1107,8 +1111,9 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">removeTables</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contents</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1116,85 +1121,175 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/packages/framework/src/Framework/Actions/ConvertsMarkdownToPlainText.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_ATX_HEADERS">ATX_HEADERS</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_BLOCKQUOTES">BLOCKQUOTES</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_CODE_BLOCKS">CODE_BLOCKS</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_DOUBLE_EMPHASIS">DOUBLE_EMPHASIS</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_EMPHASIS">EMPHASIS</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_FENCED_CODEBLOCKS">FENCED_CODEBLOCKS</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_FOOTNOTES">FOOTNOTES</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_HORIZONTAL_RULES">HORIZONTAL_RULES</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_HTML_TAGS">HTML_TAGS</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_IMAGES">IMAGES</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_INLINE_CODE">INLINE_CODE</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_INLINE_LINKS">INLINE_LINKS</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_REFERENCE_LINKS">REFERENCE_LINKS</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_REPEATED_NEWLINES">REPEATED_NEWLINES</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_SETEXT_HEADERS">SETEXT_HEADERS</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_STRIKETHROUGH">STRIKETHROUGH</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_TILDE_FENCED_CODEBLOCKS">TILDE_FENCED_CODEBLOCKS</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#property_markdown">$markdown<a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_execute">execute()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_applyRegexTransformations">applyRegexTransformations()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_applyStringTransformations">applyStringTransformations()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_removeBlockquotes">removeBlockquotes()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_removeTables">removeTables()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -1205,7 +1300,6 @@
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

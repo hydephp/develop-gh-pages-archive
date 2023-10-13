@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -111,8 +112,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-pages.html">Pages</a></li>
     </ul>
@@ -135,6 +137,11 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/InMemoryPage.php"><a href="files/packages-framework-src-pages-inmemorypage.html"><abbr title="packages/framework/src/Pages/InMemoryPage.php">InMemoryPage.php</abbr></a></abbr>
     :
@@ -155,107 +162,113 @@ Hyde autodiscovery, you may benefit from creating a custom page class instead, a
 
 
 
-
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Hyde-Pages-InMemoryPage.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Hyde-Pages-InMemoryPage.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Pages-InMemoryPage.html#property_fileExtension">$fileExtension</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_identifier">$identifier</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_matter">$matter</a>
     <span>
                         &nbsp;: <a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_metadata">$metadata</a>
     <span>
                         &nbsp;: <a href="classes/Hyde-Framework-Features-Metadata-PageMetadataBag.html"><abbr title="\Hyde\Framework\Features\Metadata\PageMetadataBag">PageMetadataBag</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_navigation">$navigation</a>
     <span>
                         &nbsp;: <a href="classes/Hyde-Framework-Features-Navigation-NavigationData.html"><abbr title="\Hyde\Framework\Features\Navigation\NavigationData">NavigationData</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Pages-InMemoryPage.html#property_outputDirectory">$outputDirectory</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_routeKey">$routeKey</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Pages-InMemoryPage.html#property_sourceDirectory">$sourceDirectory</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_template">$template</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_title">$title</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Pages-InMemoryPage.html#property_contents">$contents</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Pages-InMemoryPage.html#property_macros">$macros</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string, callable&gt;            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Pages-InMemoryPage.html#property_view">$view</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Hyde-Pages-InMemoryPage.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Pages-InMemoryPage.html#method___call">__call()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -337,7 +350,6 @@ Hyde autodiscovery, you may benefit from creating a custom page class instead, a
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Pages-InMemoryPage.html#method_getContents">getContents()</a>
@@ -414,7 +426,6 @@ Hyde autodiscovery, you may benefit from creating a custom page class instead, a
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Pages-InMemoryPage.html#method_macro">macro()</a>
@@ -555,51 +566,45 @@ within the source directory are retained in order to satisfy the page identifier
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_toCoreDataObject">toCoreDataObject()</a>
     <span>
                                 &nbsp;: <a href="classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html"><abbr title="\Hyde\Framework\Factories\Concerns\CoreDataObject">CoreDataObject</abbr></a>    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Support-Concerns-Serializable.html#method_toJson">toJson()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_assignFactoryData">assignFactoryData()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Pages-InMemoryPage.html#method_callMacro">callMacro()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_constructFactoryData">constructFactoryData()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_constructMetadata">constructMetadata()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -610,6 +615,7 @@ within the source directory are retained in order to satisfy the page identifier
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/Hyde-Pages-InMemoryPage.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -621,6 +627,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="property_fileExtension">
         $fileExtension
         <a href="classes/Hyde-Pages-InMemoryPage.html#property_fileExtension" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -638,10 +645,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__name">$fileExtension</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -655,6 +660,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="property_identifier">
         $identifier
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_identifier" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -672,10 +678,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__name">$identifier</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -689,6 +693,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="property_matter">
         $matter
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_matter" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -706,10 +711,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__name">$matter</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -723,6 +726,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="property_metadata">
         $metadata
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_metadata" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -740,10 +744,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__name">$metadata</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -757,6 +759,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="property_navigation">
         $navigation
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_navigation" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -774,10 +777,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__name">$navigation</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -791,6 +792,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="property_outputDirectory">
         $outputDirectory
         <a href="classes/Hyde-Pages-InMemoryPage.html#property_outputDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -808,10 +810,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__name">$outputDirectory</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -825,6 +825,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="property_routeKey">
         $routeKey
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_routeKey" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -842,10 +843,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__name">$routeKey</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -859,6 +858,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="property_sourceDirectory">
         $sourceDirectory
         <a href="classes/Hyde-Pages-InMemoryPage.html#property_sourceDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -876,10 +876,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__name">$sourceDirectory</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -893,6 +891,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="property_template">
         $template
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_template" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -910,10 +909,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__name">$template</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -927,6 +924,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="property_title">
         $title
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_title" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -944,10 +942,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__name">$title</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -961,6 +957,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="property_contents">
         $contents
         <a href="classes/Hyde-Pages-InMemoryPage.html#property_contents" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -978,10 +975,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__name">$contents</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -995,6 +990,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="property_macros">
         $macros
         <a href="classes/Hyde-Pages-InMemoryPage.html#property_macros" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -1008,7 +1004,7 @@ within the source directory are retained in order to satisfy the page identifier
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, callable&gt;</span>
     <span class="phpdocumentor-signature__name">$macros</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -1027,6 +1023,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="property_view">
         $view
         <a href="classes/Hyde-Pages-InMemoryPage.html#property_view" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -1044,10 +1041,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__name">$view</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -1057,6 +1052,7 @@ within the source directory are retained in order to satisfy the page identifier
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Hyde-Pages-InMemoryPage.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -1067,6 +1063,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method___call">
         __call()
         <a href="classes/Hyde-Pages-InMemoryPage.html#method___call" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/InMemoryPage.php"><a href="files/packages-framework-src-pages-inmemorypage.html"><abbr title="packages/framework/src/Pages/InMemoryPage.php">InMemoryPage.php</abbr></a></abbr>
@@ -1081,6 +1078,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__call</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1089,25 +1088,19 @@ within the source directory are retained in order to satisfy the page identifier
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$parameters</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1119,6 +1112,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/Hyde-Pages-InMemoryPage.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/InMemoryPage.php"><a href="files/packages-framework-src-pages-inmemorypage.html"><abbr title="packages/framework/src/Pages/InMemoryPage.php">InMemoryPage.php</abbr></a></abbr>
@@ -1133,6 +1127,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contents</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$view</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>The in-memory page class offers two content options. You can either pass a string to the $contents parameter,
 Hyde will then save that literally as the page's contents. Alternatively, you can pass a view name to the $view parameter,
 and Hyde will use that view to render the page contents with the supplied front matter during the static site build process.</p>
@@ -1186,10 +1182,6 @@ all this data will be passed to the view rendering engine.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1201,6 +1193,7 @@ all this data will be passed to the view rendering engine.</p>
     <h4 class="phpdocumentor-element__name" id="method_all">
         all()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_all" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -1215,15 +1208,17 @@ all this data will be passed to the view rendering engine.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">all</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-Kernel-PageCollection.html"><abbr title="\Hyde\Foundation\Kernel\PageCollection">PageCollection</abbr></a>&lt;string|int, static&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-Kernel-PageCollection.html"><abbr title="\Hyde\Foundation\Kernel\PageCollection">PageCollection</abbr></a>&lt;string|int, static&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Foundation-Kernel-PageCollection.html"><abbr title="\Hyde\Foundation\Kernel\PageCollection">PageCollection</abbr></a>&lt;string|int, static&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1234,6 +1229,7 @@ all this data will be passed to the view rendering engine.</p>
     <h4 class="phpdocumentor-element__name" id="method_arraySerialize">
         arraySerialize()
         <a href="classes/Hyde-Support-Concerns-Serializable.html#method_arraySerialize" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Concerns/Serializable.php"><a href="files/packages-framework-src-support-concerns-serializable.html"><abbr title="packages/framework/src/Support/Concerns/Serializable.php">Serializable.php</abbr></a></abbr>
@@ -1248,15 +1244,17 @@ all this data will be passed to the view rendering engine.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">arraySerialize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1267,6 +1265,7 @@ all this data will be passed to the view rendering engine.</p>
     <h4 class="phpdocumentor-element__name" id="method_baseRouteKey">
         baseRouteKey()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_baseRouteKey" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -1281,17 +1280,19 @@ all this data will be passed to the view rendering engine.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">baseRouteKey</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>This is the same value as the output directory.</p>
 </section>
 
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1302,6 +1303,7 @@ all this data will be passed to the view rendering engine.</p>
     <h4 class="phpdocumentor-element__name" id="method_compile">
         compile()
         <a href="classes/Hyde-Pages-InMemoryPage.html#method_compile" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/InMemoryPage.php"><a href="files/packages-framework-src-pages-inmemorypage.html"><abbr title="packages/framework/src/Pages/InMemoryPage.php">InMemoryPage.php</abbr></a></abbr>
@@ -1316,6 +1318,8 @@ all this data will be passed to the view rendering engine.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">compile</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>In order to make your virtual page easy to use we provide a few options for how the page can be compiled.
 If you want even more control, you can register a macro with the name 'compile' to overload the method,
 or simply extend the class and override the method yourself, either in a standard or anonymous class.</p>
@@ -1324,13 +1328,15 @@ or simply extend the class and override the method yourself, either in a standar
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The compiled HTML for the page.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The compiled HTML for the page.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1341,6 +1347,7 @@ or simply extend the class and override the method yourself, either in a standar
     <h4 class="phpdocumentor-element__name" id="method_data">
         data()
         <a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_data" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/InteractsWithFrontMatter.php"><a href="files/packages-framework-src-framework-concerns-interactswithfrontmatter.html"><abbr title="packages/framework/src/Framework/Concerns/InteractsWithFrontMatter.php">InteractsWithFrontMatter.php</abbr></a></abbr>
@@ -1355,6 +1362,8 @@ or simply extend the class and override the method yourself, either in a standar
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">data</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1363,26 +1372,24 @@ or simply extend the class and override the method yourself, either in a standar
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$default</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|mixed</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|mixed</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1393,6 +1400,7 @@ or simply extend the class and override the method yourself, either in a standar
     <h4 class="phpdocumentor-element__name" id="method_fileExtension">
         fileExtension()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_fileExtension" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -1407,15 +1415,17 @@ or simply extend the class and override the method yourself, either in a standar
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fileExtension</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1426,6 +1436,7 @@ or simply extend the class and override the method yourself, either in a standar
     <h4 class="phpdocumentor-element__name" id="method_files">
         files()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_files" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -1440,17 +1451,19 @@ or simply extend the class and override the method yourself, either in a standar
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">files</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>Note that the values do not include the source directory or file extension.</p>
 </section>
 
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1461,6 +1474,7 @@ or simply extend the class and override the method yourself, either in a standar
     <h4 class="phpdocumentor-element__name" id="method_get">
         get()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -1475,6 +1489,8 @@ or simply extend the class and override the method yourself, either in a standar
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1483,15 +1499,15 @@ or simply extend the class and override the method yourself, either in a standar
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_get#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1504,13 +1520,13 @@ or simply extend the class and override the method yourself, either in a standar
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">static</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1521,6 +1537,7 @@ or simply extend the class and override the method yourself, either in a standar
     <h4 class="phpdocumentor-element__name" id="method_getBladeView">
         getBladeView()
         <a href="classes/Hyde-Pages-InMemoryPage.html#method_getBladeView" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/InMemoryPage.php"><a href="files/packages-framework-src-pages-inmemorypage.html"><abbr title="packages/framework/src/Pages/InMemoryPage.php">InMemoryPage.php</abbr></a></abbr>
@@ -1535,15 +1552,17 @@ or simply extend the class and override the method yourself, either in a standar
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getBladeView</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1554,6 +1573,7 @@ or simply extend the class and override the method yourself, either in a standar
     <h4 class="phpdocumentor-element__name" id="method_getCanonicalUrl">
         getCanonicalUrl()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getCanonicalUrl" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -1567,16 +1587,17 @@ or simply extend the class and override the method yourself, either in a standar
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getCanonicalUrl</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1587,6 +1608,7 @@ or simply extend the class and override the method yourself, either in a standar
     <h4 class="phpdocumentor-element__name" id="method_getContents">
         getContents()
         <a href="classes/Hyde-Pages-InMemoryPage.html#method_getContents" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/InMemoryPage.php"><a href="files/packages-framework-src-pages-inmemorypage.html"><abbr title="packages/framework/src/Pages/InMemoryPage.php">InMemoryPage.php</abbr></a></abbr>
@@ -1601,15 +1623,17 @@ or simply extend the class and override the method yourself, either in a standar
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getContents</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1620,6 +1644,7 @@ or simply extend the class and override the method yourself, either in a standar
     <h4 class="phpdocumentor-element__name" id="method_getIdentifier">
         getIdentifier()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getIdentifier" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -1634,6 +1659,8 @@ or simply extend the class and override the method yourself, either in a standar
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getIdentifier</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>The identifier is the part between the source directory and the file extension.
 It may also be known as a 'slug', or previously 'basename', but it retains
 the nested path structure if the page is stored in a subdirectory.</p>
@@ -1644,11 +1671,11 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1659,6 +1686,7 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     <h4 class="phpdocumentor-element__name" id="method_getLink">
         getLink()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getLink" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -1673,17 +1701,19 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getLink</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>Note that the link is always relative to site root, and does not contain <code class="prettyprint">../</code> segments.</p>
 </section>
 
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1694,6 +1724,7 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     <h4 class="phpdocumentor-element__name" id="method_getOutputPath">
         getOutputPath()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getOutputPath" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -1708,17 +1739,21 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getOutputPath</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Path relative to the site output directory.</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Path relative to the site output directory.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1729,6 +1764,7 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     <h4 class="phpdocumentor-element__name" id="method_getRoute">
         getRoute()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getRoute" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -1743,15 +1779,17 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getRoute</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Support-Models-Route.html"><abbr title="\Hyde\Support\Models\Route">Route</abbr></a></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Support-Models-Route.html"><abbr title="\Hyde\Support\Models\Route">Route</abbr></a></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Support-Models-Route.html"><abbr title="\Hyde\Support\Models\Route">Route</abbr></a></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1762,6 +1800,7 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     <h4 class="phpdocumentor-element__name" id="method_getRouteKey">
         getRouteKey()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getRouteKey" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -1776,6 +1815,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getRouteKey</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>The route key is the page URL path, relative to the site root, but without any file extensions.
 For example, if the page will be saved to <code class="prettyprint">_site/docs/index.html</code>, the key is <code class="prettyprint">docs/index</code>.</p>
 <p>Route keys are used to identify page routes, similar to how named routes work in Laravel,
@@ -1786,11 +1827,11 @@ as the route key is used to determine the output path which is <code class="pret
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1801,6 +1842,7 @@ as the route key is used to determine the output path which is <code class="pret
     <h4 class="phpdocumentor-element__name" id="method_getSourcePath">
         getSourcePath()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getSourcePath" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -1815,15 +1857,17 @@ as the route key is used to determine the output path which is <code class="pret
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getSourcePath</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1834,6 +1878,7 @@ as the route key is used to determine the output path which is <code class="pret
     <h4 class="phpdocumentor-element__name" id="method_has">
         has()
         <a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_has" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/InteractsWithFrontMatter.php"><a href="files/packages-framework-src-framework-concerns-interactswithfrontmatter.html"><abbr title="packages/framework/src/Framework/Concerns/InteractsWithFrontMatter.php">InteractsWithFrontMatter.php</abbr></a></abbr>
@@ -1848,6 +1893,8 @@ as the route key is used to determine the output path which is <code class="pret
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">has</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1856,18 +1903,17 @@ as the route key is used to determine the output path which is <code class="pret
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1878,6 +1924,7 @@ as the route key is used to determine the output path which is <code class="pret
     <h4 class="phpdocumentor-element__name" id="method_hasMacro">
         hasMacro()
         <a href="classes/Hyde-Pages-InMemoryPage.html#method_hasMacro" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/InMemoryPage.php"><a href="files/packages-framework-src-pages-inmemorypage.html"><abbr title="packages/framework/src/Pages/InMemoryPage.php">InMemoryPage.php</abbr></a></abbr>
@@ -1892,6 +1939,8 @@ as the route key is used to determine the output path which is <code class="pret
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">hasMacro</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1900,18 +1949,17 @@ as the route key is used to determine the output path which is <code class="pret
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1922,6 +1970,7 @@ as the route key is used to determine the output path which is <code class="pret
     <h4 class="phpdocumentor-element__name" id="method_isDiscoverable">
         isDiscoverable()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_isDiscoverable" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -1936,15 +1985,17 @@ as the route key is used to determine the output path which is <code class="pret
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">isDiscoverable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1955,6 +2006,7 @@ as the route key is used to determine the output path which is <code class="pret
     <h4 class="phpdocumentor-element__name" id="method_jsonSerialize">
         jsonSerialize()
         <a href="classes/Hyde-Support-Concerns-Serializable.html#method_jsonSerialize" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Concerns/Serializable.php"><a href="files/packages-framework-src-support-concerns-serializable.html"><abbr title="packages/framework/src/Support/Concerns/Serializable.php">Serializable.php</abbr></a></abbr>
@@ -1968,12 +2020,15 @@ as the route key is used to determine the output path which is <code class="pret
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">jsonSerialize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Support-Concerns-Serializable.html#method_jsonSerialize#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1983,13 +2038,13 @@ as the route key is used to determine the output path which is <code class="pret
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2000,6 +2055,7 @@ as the route key is used to determine the output path which is <code class="pret
     <h4 class="phpdocumentor-element__name" id="method_macro">
         macro()
         <a href="classes/Hyde-Pages-InMemoryPage.html#method_macro" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/InMemoryPage.php"><a href="files/packages-framework-src-pages-inmemorypage.html"><abbr title="packages/framework/src/Pages/InMemoryPage.php">InMemoryPage.php</abbr></a></abbr>
@@ -2014,6 +2070,8 @@ as the route key is used to determine the output path which is <code class="pret
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">macro</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$macro</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>Unlike most macros you might be used to, these are not static, meaning they belong to the instance.
 If you have the need for a macro to be used for multiple pages, you should create a custom page class instead.</p>
 </section>
@@ -2025,25 +2083,19 @@ If you have the need for a macro to be used for multiple pages, you should creat
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$macro</span>
                 : <span class="phpdocumentor-signature__argument__return-type">callable</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2055,6 +2107,7 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <h4 class="phpdocumentor-element__name" id="method_make">
         make()
         <a href="classes/Hyde-Pages-InMemoryPage.html#method_make" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/InMemoryPage.php"><a href="files/packages-framework-src-pages-inmemorypage.html"><abbr title="packages/framework/src/Pages/InMemoryPage.php">InMemoryPage.php</abbr></a></abbr>
@@ -2069,6 +2122,8 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">make</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contents</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$view</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2077,42 +2132,38 @@ If you have the need for a macro to be used for multiple pages, you should creat
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$matter</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$contents</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$view</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">static</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2123,6 +2174,7 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <h4 class="phpdocumentor-element__name" id="method_matter">
         matter()
         <a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_matter" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/InteractsWithFrontMatter.php"><a href="files/packages-framework-src-framework-concerns-interactswithfrontmatter.html"><abbr title="packages/framework/src/Framework/Concerns/InteractsWithFrontMatter.php">InteractsWithFrontMatter.php</abbr></a></abbr>
@@ -2137,6 +2189,8 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">matter</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2145,26 +2199,24 @@ If you have the need for a macro to be used for multiple pages, you should creat
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$default</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|mixed</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|mixed</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2175,6 +2227,7 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <h4 class="phpdocumentor-element__name" id="method_metadata">
         metadata()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_metadata" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2189,15 +2242,17 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">metadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Features-Metadata-PageMetadataBag.html"><abbr title="\Hyde\Framework\Features\Metadata\PageMetadataBag">PageMetadataBag</abbr></a></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Features-Metadata-PageMetadataBag.html"><abbr title="\Hyde\Framework\Features\Metadata\PageMetadataBag">PageMetadataBag</abbr></a></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Features-Metadata-PageMetadataBag.html"><abbr title="\Hyde\Framework\Features\Metadata\PageMetadataBag">PageMetadataBag</abbr></a></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2208,6 +2263,7 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <h4 class="phpdocumentor-element__name" id="method_navigationMenuGroup">
         navigationMenuGroup()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_navigationMenuGroup" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2222,15 +2278,17 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">navigationMenuGroup</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2241,6 +2299,7 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <h4 class="phpdocumentor-element__name" id="method_navigationMenuLabel">
         navigationMenuLabel()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_navigationMenuLabel" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2255,15 +2314,17 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">navigationMenuLabel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2274,6 +2335,7 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <h4 class="phpdocumentor-element__name" id="method_navigationMenuPriority">
         navigationMenuPriority()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_navigationMenuPriority" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2288,15 +2350,17 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">navigationMenuPriority</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2307,6 +2371,7 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <h4 class="phpdocumentor-element__name" id="method_outputDirectory">
         outputDirectory()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_outputDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2321,15 +2386,17 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">outputDirectory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2340,6 +2407,7 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <h4 class="phpdocumentor-element__name" id="method_outputPath">
         outputPath()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_outputPath" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2354,6 +2422,8 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">outputPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2362,18 +2432,17 @@ If you have the need for a macro to be used for multiple pages, you should creat
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2384,6 +2453,7 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <h4 class="phpdocumentor-element__name" id="method_parse">
         parse()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_parse" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2398,6 +2468,8 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parse</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2415,7 +2487,8 @@ If you have the need for a macro to be used for multiple pages, you should creat
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_parse#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2428,15 +2501,17 @@ If you have the need for a macro to be used for multiple pages, you should creat
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">static</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>New page model instance for the parsed source file.</p>
+        <span class="phpdocumentor-signature__response_type">static</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>New page model instance for the parsed source file.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2447,6 +2522,7 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <h4 class="phpdocumentor-element__name" id="method_path">
         path()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_path" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2461,6 +2537,8 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">path</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2469,18 +2547,17 @@ If you have the need for a macro to be used for multiple pages, you should creat
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2491,6 +2568,7 @@ If you have the need for a macro to be used for multiple pages, you should creat
     <h4 class="phpdocumentor-element__name" id="method_pathToIdentifier">
         pathToIdentifier()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_pathToIdentifier" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2506,6 +2584,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">pathToIdentifier</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2522,13 +2602,15 @@ within the source directory are retained in order to satisfy the page identifier
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Example: index</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Example: index</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2539,6 +2621,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method_setFileExtension">
         setFileExtension()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_setFileExtension" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2553,6 +2636,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">setFileExtension</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fileExtension</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2561,17 +2646,12 @@ within the source directory are retained in order to satisfy the page identifier
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2583,6 +2663,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method_setOutputDirectory">
         setOutputDirectory()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_setOutputDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2597,6 +2678,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">setOutputDirectory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$outputDirectory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2605,17 +2688,12 @@ within the source directory are retained in order to satisfy the page identifier
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2627,6 +2705,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method_setSourceDirectory">
         setSourceDirectory()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_setSourceDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2641,6 +2720,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">setSourceDirectory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sourceDirectory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2649,17 +2730,12 @@ within the source directory are retained in order to satisfy the page identifier
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2671,6 +2747,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method_showInNavigation">
         showInNavigation()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_showInNavigation" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2685,15 +2762,17 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">showInNavigation</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2704,6 +2783,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method_sourceDirectory">
         sourceDirectory()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_sourceDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2718,15 +2798,17 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">sourceDirectory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2737,6 +2819,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method_sourcePath">
         sourcePath()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_sourcePath" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2751,6 +2834,8 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">sourcePath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2759,18 +2844,17 @@ within the source directory are retained in order to satisfy the page identifier
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2781,6 +2865,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method_title">
         title()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_title" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -2795,15 +2880,17 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">title</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2814,6 +2901,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method_toArray">
         toArray()
         <a href="classes/Hyde-Support-Concerns-Serializable.html#method_toArray" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Concerns/Serializable.php"><a href="files/packages-framework-src-support-concerns-serializable.html"><abbr title="packages/framework/src/Support/Concerns/Serializable.php">Serializable.php</abbr></a></abbr>
@@ -2827,12 +2915,15 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>                <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Support-Concerns-Serializable.html#method_toArray#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2842,13 +2933,13 @@ within the source directory are retained in order to satisfy the page identifier
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2859,6 +2950,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method_toCoreDataObject">
         toCoreDataObject()
         <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_toCoreDataObject" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/Concerns/HasFactory.php"><a href="files/packages-framework-src-framework-factories-concerns-hasfactory.html"><abbr title="packages/framework/src/Framework/Factories/Concerns/HasFactory.php">HasFactory.php</abbr></a></abbr>
@@ -2872,16 +2964,17 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">toCoreDataObject</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html"><abbr title="\Hyde\Framework\Factories\Concerns\CoreDataObject">CoreDataObject</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html"><abbr title="\Hyde\Framework\Factories\Concerns\CoreDataObject">CoreDataObject</abbr></a></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html"><abbr title="\Hyde\Framework\Factories\Concerns\CoreDataObject">CoreDataObject</abbr></a></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2892,6 +2985,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method_toJson">
         toJson()
         <a href="classes/Hyde-Support-Concerns-Serializable.html#method_toJson" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Concerns/Serializable.php"><a href="files/packages-framework-src-support-concerns-serializable.html"><abbr title="packages/framework/src/Support/Concerns/Serializable.php">Serializable.php</abbr></a></abbr>
@@ -2903,15 +2997,17 @@ within the source directory are retained in order to satisfy the page identifier
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">toJson</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">toJson</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2919,11 +3015,11 @@ within the source directory are retained in order to satisfy the page identifier
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2934,6 +3030,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method_assignFactoryData">
         assignFactoryData()
         <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_assignFactoryData" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/Concerns/HasFactory.php"><a href="files/packages-framework-src-framework-factories-concerns-hasfactory.html"><abbr title="packages/framework/src/Framework/Factories/Concerns/HasFactory.php">HasFactory.php</abbr></a></abbr>
@@ -2947,8 +3044,9 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">assignFactoryData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Factories-Concerns-PageDataFactory.html"><abbr title="\Hyde\Framework\Factories\Concerns\PageDataFactory">PageDataFactory</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$factory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2956,17 +3054,12 @@ within the source directory are retained in order to satisfy the page identifier
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Factories-Concerns-PageDataFactory.html"><abbr title="\Hyde\Framework\Factories\Concerns\PageDataFactory">PageDataFactory</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2978,6 +3071,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method_callMacro">
         callMacro()
         <a href="classes/Hyde-Pages-InMemoryPage.html#method_callMacro" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/InMemoryPage.php"><a href="files/packages-framework-src-pages-inmemorypage.html"><abbr title="packages/framework/src/Pages/InMemoryPage.php">InMemoryPage.php</abbr></a></abbr>
@@ -2991,8 +3085,9 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">callMacro</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$macro</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -3000,25 +3095,19 @@ within the source directory are retained in order to satisfy the page identifier
                 : <span class="phpdocumentor-signature__argument__return-type">callable</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$parameters</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -3030,6 +3119,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method_constructFactoryData">
         constructFactoryData()
         <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_constructFactoryData" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/Concerns/HasFactory.php"><a href="files/packages-framework-src-framework-factories-concerns-hasfactory.html"><abbr title="packages/framework/src/Framework/Factories/Concerns/HasFactory.php">HasFactory.php</abbr></a></abbr>
@@ -3043,15 +3133,12 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">constructFactoryData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -3063,6 +3150,7 @@ within the source directory are retained in order to satisfy the page identifier
     <h4 class="phpdocumentor-element__name" id="method_constructMetadata">
         constructMetadata()
         <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_constructMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
@@ -3076,83 +3164,203 @@ within the source directory are retained in order to satisfy the page identifier
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">constructMetadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/packages/framework/src/Pages/InMemoryPage.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/Hyde-Pages-InMemoryPage.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Hyde-Pages-InMemoryPage.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Hyde-Pages-InMemoryPage.html#property_fileExtension">$fileExtension<a href="classes/Hyde-Pages-InMemoryPage.html"></li>
+                                                    <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#property_identifier">$identifier<a href="classes/Hyde-Pages-InMemoryPage.html"></li>
+                                                    <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#property_matter">$matter<a href="classes/Hyde-Pages-InMemoryPage.html"></li>
+                                                    <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#property_metadata">$metadata<a href="classes/Hyde-Pages-InMemoryPage.html"></li>
+                                                    <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#property_navigation">$navigation<a href="classes/Hyde-Pages-InMemoryPage.html"></li>
+                                                    <li><a href="classes/Hyde-Pages-InMemoryPage.html#property_outputDirectory">$outputDirectory<a href="classes/Hyde-Pages-InMemoryPage.html"></li>
+                                                    <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#property_routeKey">$routeKey<a href="classes/Hyde-Pages-InMemoryPage.html"></li>
+                                                    <li><a href="classes/Hyde-Pages-InMemoryPage.html#property_sourceDirectory">$sourceDirectory<a href="classes/Hyde-Pages-InMemoryPage.html"></li>
+                                                    <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#property_template">$template<a href="classes/Hyde-Pages-InMemoryPage.html"></li>
+                                                    <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#property_title">$title<a href="classes/Hyde-Pages-InMemoryPage.html"></li>
+                                                    <li><a href="classes/Hyde-Pages-InMemoryPage.html#property_contents">$contents<a href="classes/Hyde-Pages-InMemoryPage.html"></li>
+                                                    <li><a href="classes/Hyde-Pages-InMemoryPage.html#property_macros">$macros<a href="classes/Hyde-Pages-InMemoryPage.html"></li>
+                                                    <li><a href="classes/Hyde-Pages-InMemoryPage.html#property_view">$view<a href="classes/Hyde-Pages-InMemoryPage.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/Hyde-Pages-InMemoryPage.html#method___call">__call()</a></li>
+                                            <li><a href="classes/Hyde-Pages-InMemoryPage.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_all">all()</a></li>
+                                            <li><a href="classes/Hyde-Support-Concerns-Serializable.html#method_arraySerialize">arraySerialize()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_baseRouteKey">baseRouteKey()</a></li>
+                                            <li><a href="classes/Hyde-Pages-InMemoryPage.html#method_compile">compile()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_data">data()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_fileExtension">fileExtension()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_files">files()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_get">get()</a></li>
+                                            <li><a href="classes/Hyde-Pages-InMemoryPage.html#method_getBladeView">getBladeView()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getCanonicalUrl">getCanonicalUrl()</a></li>
+                                            <li><a href="classes/Hyde-Pages-InMemoryPage.html#method_getContents">getContents()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getIdentifier">getIdentifier()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getLink">getLink()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getOutputPath">getOutputPath()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getRoute">getRoute()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getRouteKey">getRouteKey()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_getSourcePath">getSourcePath()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_has">has()</a></li>
+                                            <li><a href="classes/Hyde-Pages-InMemoryPage.html#method_hasMacro">hasMacro()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_isDiscoverable">isDiscoverable()</a></li>
+                                            <li><a href="classes/Hyde-Support-Concerns-Serializable.html#method_jsonSerialize">jsonSerialize()</a></li>
+                                            <li><a href="classes/Hyde-Pages-InMemoryPage.html#method_macro">macro()</a></li>
+                                            <li><a href="classes/Hyde-Pages-InMemoryPage.html#method_make">make()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_matter">matter()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_metadata">metadata()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_navigationMenuGroup">navigationMenuGroup()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_navigationMenuLabel">navigationMenuLabel()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_navigationMenuPriority">navigationMenuPriority()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_outputDirectory">outputDirectory()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_outputPath">outputPath()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_parse">parse()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_path">path()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_pathToIdentifier">pathToIdentifier()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_setFileExtension">setFileExtension()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_setOutputDirectory">setOutputDirectory()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_setSourceDirectory">setSourceDirectory()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_showInNavigation">showInNavigation()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_sourceDirectory">sourceDirectory()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_sourcePath">sourcePath()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_title">title()</a></li>
+                                            <li><a href="classes/Hyde-Support-Concerns-Serializable.html#method_toArray">toArray()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_toCoreDataObject">toCoreDataObject()</a></li>
+                                            <li><a href="classes/Hyde-Support-Concerns-Serializable.html#method_toJson">toJson()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_assignFactoryData">assignFactoryData()</a></li>
+                                            <li><a href="classes/Hyde-Pages-InMemoryPage.html#method_callMacro">callMacro()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_constructFactoryData">constructFactoryData()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_constructMetadata">constructMetadata()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -3163,7 +3371,6 @@ within the source directory are retained in order to satisfy the page identifier
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/Hyde-Pages-InMemoryPage.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

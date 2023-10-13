@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -111,8 +112,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-console.html">Console</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-console-commands.html">Commands</a></li>
@@ -136,6 +138,11 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/BuildSiteCommand.php"><a href="files/packages-framework-src-console-commands-buildsitecommand.html"><abbr title="packages/framework/src/Console/Commands/BuildSiteCommand.php">BuildSiteCommand.php</abbr></a></abbr>
     :
@@ -150,51 +157,72 @@
 
 
 
-
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Hyde-Console-Concerns-Command.html#constant_USER_EXIT">USER_EXIT</a>
     <span>
         &nbsp;= 130                            </span>
 </dt>
-<dd></dd>
 
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#property_description">$description</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#property_service">$service</a>
     <span>
                         &nbsp;: <a href="classes/Hyde-Framework-Services-BuildService.html"><abbr title="\Hyde\Framework\Services\BuildService">BuildService</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#property_signature">$signature</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#property_taskService">$taskService</a>
     <span>
                         &nbsp;: <abbr title="\Hyde\Framework\Services\BuildTaskService">BuildTaskService</abbr>            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Console-Concerns-Command.html#method_fileLink">fileLink()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -241,42 +269,36 @@
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_getExitCode">getExitCode()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_hasWarnings">hasWarnings()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_printFinishMessage">printFinishMessage()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_runNodeCommand">runNodeCommand()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_runPreBuildActions">runPreBuildActions()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Console-Concerns-Command.html#method_safeHandle">safeHandle()</a>
@@ -285,7 +307,8 @@
 </dt>
 <dd>This method can be overridden by child classes to provide automatic exception handling.</dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -294,11 +317,13 @@
         <h3 class="phpdocumentor-elements__header" id="constants">
             Constants
             <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_USER_EXIT">
         USER_EXIT
         <a href="classes/Hyde-Console-Concerns-Command.html#constant_USER_EXIT" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -317,10 +342,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -331,6 +354,7 @@
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -342,6 +366,7 @@
     <h4 class="phpdocumentor-element__name" id="property_description">
         $description
         <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#property_description" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -374,6 +399,7 @@
     <h4 class="phpdocumentor-element__name" id="property_service">
         $service
         <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#property_service" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -391,10 +417,8 @@
     <span class="phpdocumentor-signature__name">$service</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -408,6 +432,7 @@
     <h4 class="phpdocumentor-element__name" id="property_signature">
         $signature
         <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#property_signature" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -445,6 +470,7 @@
     <h4 class="phpdocumentor-element__name" id="property_taskService">
         $taskService
         <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#property_taskService" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -462,10 +488,8 @@
     <span class="phpdocumentor-signature__name">$taskService</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -475,6 +499,7 @@
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -485,6 +510,7 @@
     <h4 class="phpdocumentor-element__name" id="method_fileLink">
         fileLink()
         <a href="classes/Hyde-Console-Concerns-Command.html#method_fileLink" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Concerns/Command.php"><a href="files/packages-framework-src-console-concerns-command.html"><abbr title="packages/framework/src/Console/Concerns/Command.php">Command.php</abbr></a></abbr>
@@ -499,6 +525,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fileLink</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$label</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -507,8 +535,7 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$label</span>
@@ -525,11 +552,11 @@ the label being shown, and the path being lost to the void.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -540,6 +567,7 @@ the label being shown, and the path being lost to the void.</p>
     <h4 class="phpdocumentor-element__name" id="method_gray">
         gray()
         <a href="classes/Hyde-Console-Concerns-Command.html#method_gray" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Concerns/Command.php"><a href="files/packages-framework-src-console-concerns-command.html"><abbr title="packages/framework/src/Console/Concerns/Command.php">Command.php</abbr></a></abbr>
@@ -554,6 +582,8 @@ the label being shown, and the path being lost to the void.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">gray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -562,17 +592,12 @@ the label being shown, and the path being lost to the void.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -584,6 +609,7 @@ the label being shown, and the path being lost to the void.</p>
     <h4 class="phpdocumentor-element__name" id="method_handle">
         handle()
         <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_handle" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/BuildSiteCommand.php"><a href="files/packages-framework-src-console-commands-buildsitecommand.html"><abbr title="packages/framework/src/Console/Commands/BuildSiteCommand.php">BuildSiteCommand.php</abbr></a></abbr>
@@ -598,6 +624,8 @@ the label being shown, and the path being lost to the void.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">handle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>Alternatively, implement the safeHandle method in your child class
 to utilize the automatic exception handling provided by this method.</p>
 </section>
@@ -605,13 +633,15 @@ to utilize the automatic exception handling provided by this method.</p>
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The exit code.</p>
+        <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The exit code.</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -622,6 +652,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <h4 class="phpdocumentor-element__name" id="method_handleException">
         handleException()
         <a href="classes/Hyde-Console-Concerns-Command.html#method_handleException" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Concerns/Command.php"><a href="files/packages-framework-src-console-concerns-command.html"><abbr title="packages/framework/src/Console/Concerns/Command.php">Command.php</abbr></a></abbr>
@@ -636,6 +667,8 @@ to utilize the automatic exception handling provided by this method.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">handleException</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Exception">Exception</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exception</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -644,20 +677,21 @@ to utilize the automatic exception handling provided by this method.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Exception">Exception</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The exit code</p>
+        <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The exit code</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -668,6 +702,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <h4 class="phpdocumentor-element__name" id="method_indentedLine">
         indentedLine()
         <a href="classes/Hyde-Console-Concerns-Command.html#method_indentedLine" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Concerns/Command.php"><a href="files/packages-framework-src-console-concerns-command.html"><abbr title="packages/framework/src/Console/Concerns/Command.php">Command.php</abbr></a></abbr>
@@ -682,6 +717,8 @@ to utilize the automatic exception handling provided by this method.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">indentedLine</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spaces</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -690,25 +727,19 @@ to utilize the automatic exception handling provided by this method.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$string</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -720,6 +751,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <h4 class="phpdocumentor-element__name" id="method_infoComment">
         infoComment()
         <a href="classes/Hyde-Console-Concerns-Command.html#method_infoComment" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Concerns/Command.php"><a href="files/packages-framework-src-console-concerns-command.html"><abbr title="packages/framework/src/Console/Concerns/Command.php">Command.php</abbr></a></abbr>
@@ -734,6 +766,8 @@ to utilize the automatic exception handling provided by this method.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">infoComment</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>Text in [brackets] will automatically be wrapped in <comment> tags.</p>
 </section>
 
@@ -744,17 +778,12 @@ to utilize the automatic exception handling provided by this method.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -766,6 +795,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <h4 class="phpdocumentor-element__name" id="method_runPostBuildActions">
         runPostBuildActions()
         <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_runPostBuildActions" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/BuildSiteCommand.php"><a href="files/packages-framework-src-console-commands-buildsitecommand.html"><abbr title="packages/framework/src/Console/Commands/BuildSiteCommand.php">BuildSiteCommand.php</abbr></a></abbr>
@@ -779,15 +809,12 @@ to utilize the automatic exception handling provided by this method.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">runPostBuildActions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -799,6 +826,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <h4 class="phpdocumentor-element__name" id="method_getExitCode">
         getExitCode()
         <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_getExitCode" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/BuildSiteCommand.php"><a href="files/packages-framework-src-console-commands-buildsitecommand.html"><abbr title="packages/framework/src/Console/Commands/BuildSiteCommand.php">BuildSiteCommand.php</abbr></a></abbr>
@@ -812,16 +840,17 @@ to utilize the automatic exception handling provided by this method.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">getExitCode</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -832,6 +861,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <h4 class="phpdocumentor-element__name" id="method_hasWarnings">
         hasWarnings()
         <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_hasWarnings" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/BuildSiteCommand.php"><a href="files/packages-framework-src-console-commands-buildsitecommand.html"><abbr title="packages/framework/src/Console/Commands/BuildSiteCommand.php">BuildSiteCommand.php</abbr></a></abbr>
@@ -845,16 +875,17 @@ to utilize the automatic exception handling provided by this method.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">hasWarnings</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -865,6 +896,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <h4 class="phpdocumentor-element__name" id="method_printFinishMessage">
         printFinishMessage()
         <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_printFinishMessage" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/BuildSiteCommand.php"><a href="files/packages-framework-src-console-commands-buildsitecommand.html"><abbr title="packages/framework/src/Console/Commands/BuildSiteCommand.php">BuildSiteCommand.php</abbr></a></abbr>
@@ -878,8 +910,9 @@ to utilize the automatic exception handling provided by this method.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">printFinishMessage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timeStart</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -887,17 +920,12 @@ to utilize the automatic exception handling provided by this method.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">float</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -909,6 +937,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <h4 class="phpdocumentor-element__name" id="method_runNodeCommand">
         runNodeCommand()
         <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_runNodeCommand" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/BuildSiteCommand.php"><a href="files/packages-framework-src-console-commands-buildsitecommand.html"><abbr title="packages/framework/src/Console/Commands/BuildSiteCommand.php">BuildSiteCommand.php</abbr></a></abbr>
@@ -922,8 +951,9 @@ to utilize the automatic exception handling provided by this method.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">runNodeCommand</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$command</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$actionMessage</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -931,33 +961,26 @@ to utilize the automatic exception handling provided by this method.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$message</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$actionMessage</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -969,6 +992,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <h4 class="phpdocumentor-element__name" id="method_runPreBuildActions">
         runPreBuildActions()
         <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_runPreBuildActions" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/BuildSiteCommand.php"><a href="files/packages-framework-src-console-commands-buildsitecommand.html"><abbr title="packages/framework/src/Console/Commands/BuildSiteCommand.php">BuildSiteCommand.php</abbr></a></abbr>
@@ -982,15 +1006,12 @@ to utilize the automatic exception handling provided by this method.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">runPreBuildActions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1002,6 +1023,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <h4 class="phpdocumentor-element__name" id="method_safeHandle">
         safeHandle()
         <a href="classes/Hyde-Console-Concerns-Command.html#method_safeHandle" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Concerns/Command.php"><a href="files/packages-framework-src-console-concerns-command.html"><abbr title="packages/framework/src/Console/Concerns/Command.php">Command.php</abbr></a></abbr>
@@ -1016,86 +1038,175 @@ to utilize the automatic exception handling provided by this method.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">safeHandle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>Existing code can be converted simply by renaming the handle() method to safeHandle().</p>
 </section>
 
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The exit code.</p>
+        <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The exit code.</p>
 </section>
 
-    
+            </section>
+
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/packages/framework/src/Console/Commands/BuildSiteCommand.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Hyde-Console-Concerns-Command.html#constant_USER_EXIT">USER_EXIT</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#property_description">$description<a href="classes/Hyde-Console-Commands-BuildSiteCommand.html"></li>
+                                                    <li><a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#property_service">$service<a href="classes/Hyde-Console-Commands-BuildSiteCommand.html"></li>
+                                                    <li><a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#property_signature">$signature<a href="classes/Hyde-Console-Commands-BuildSiteCommand.html"></li>
+                                                    <li><a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#property_taskService">$taskService<a href="classes/Hyde-Console-Commands-BuildSiteCommand.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/Hyde-Console-Concerns-Command.html#method_fileLink">fileLink()</a></li>
+                                            <li><a href="classes/Hyde-Console-Concerns-Command.html#method_gray">gray()</a></li>
+                                            <li><a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_handle">handle()</a></li>
+                                            <li><a href="classes/Hyde-Console-Concerns-Command.html#method_handleException">handleException()</a></li>
+                                            <li><a href="classes/Hyde-Console-Concerns-Command.html#method_indentedLine">indentedLine()</a></li>
+                                            <li><a href="classes/Hyde-Console-Concerns-Command.html#method_infoComment">infoComment()</a></li>
+                                            <li><a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_runPostBuildActions">runPostBuildActions()</a></li>
+                                            <li><a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_getExitCode">getExitCode()</a></li>
+                                            <li><a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_hasWarnings">hasWarnings()</a></li>
+                                            <li><a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_printFinishMessage">printFinishMessage()</a></li>
+                                            <li><a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_runNodeCommand">runNodeCommand()</a></li>
+                                            <li><a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#method_runPreBuildActions">runPreBuildActions()</a></li>
+                                            <li><a href="classes/Hyde-Console-Concerns-Command.html#method_safeHandle">safeHandle()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -1106,7 +1217,6 @@ to utilize the automatic exception handling provided by this method.</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/Hyde-Console-Commands-BuildSiteCommand.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

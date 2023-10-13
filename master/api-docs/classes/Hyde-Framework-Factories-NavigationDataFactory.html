@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -111,8 +112,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework.html">Framework</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-factories.html">Factories</a></li>
@@ -139,6 +141,11 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
     :
@@ -153,28 +160,32 @@
 
 
 
-
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Markdown-Contracts-FrontMatter-SubSchemas-NavigationSchema.html"><abbr title="\Hyde\Markdown\Contracts\FrontMatter\SubSchemas\NavigationSchema">NavigationSchema</abbr></a></dt>
-        <dd>Front matter schema interfaces are used by various Hyde components to
-specify what data they provide or contain. They also serve as a
-convenient way to see the supported front matter properties.</dd>
-    
-    
-    
-    </dl>
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Markdown-Contracts-FrontMatter-SubSchemas-NavigationSchema.html"><abbr title="\Hyde\Markdown\Contracts\FrontMatter\SubSchemas\NavigationSchema">NavigationSchema</abbr></a></dt><dd>Front matter schema interfaces are used by various Hyde components to
+specify what data they provide or contain. They also serve as a
+convenient way to see the supported front matter properties.</dd>    </dl>
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#constant_SCHEMA">SCHEMA</a>
@@ -188,89 +199,94 @@ convenient way to see the supported front matter properties.</dd>
     <span>
         &nbsp;= 500                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#constant_FALLBACK_PRIORITY">FALLBACK_PRIORITY</a>
     <span>
         &nbsp;= 999                            </span>
 </dt>
-<dd></dd>
 
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_group">$group</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_hidden">$hidden</a>
     <span>
                         &nbsp;: bool|null            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_label">$label</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_priority">$priority</a>
     <span>
                         &nbsp;: int|null            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_identifier">$identifier</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_matter">$matter</a>
     <span>
                         &nbsp;: <a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_pageClass">$pageClass</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_routeKey">$routeKey</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_title">$title</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_toArray">toArray()</a>
     <span>
-                                &nbsp;: array&lt;string, mixed&gt;    </span>
+                                &nbsp;: array{label: string|null, group: string|null, hidden: bool|null, priority: int|null}    </span>
 </dt>
 <dd>Get the generated data as an associative array.</dd>
 
@@ -279,149 +295,129 @@ convenient way to see the supported front matter properties.</dd>
     <span>
                                 &nbsp;: string|null|int|bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getSubdirectoryConfiguration">getSubdirectoryConfiguration()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_invert">invert()</a>
     <span>
                                 &nbsp;: bool|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_isInstanceOf">isInstanceOf()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_makeGroup">makeGroup()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_makeHidden">makeHidden()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_makeLabel">makeLabel()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_makePriority">makePriority()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_offset">offset()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_canUseSubdirectoryForGroups">canUseSubdirectoryForGroups()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_defaultGroup">defaultGroup()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getSubdirectoryName">getSubdirectoryName()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_pageIsInSubdirectory">pageIsInSubdirectory()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForGroupInFrontMatter">searchForGroupInFrontMatter()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForHiddenInFrontMatter">searchForHiddenInFrontMatter()</a>
     <span>
                                 &nbsp;: bool|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForLabelInConfig">searchForLabelInConfig()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForLabelInFrontMatter">searchForLabelInFrontMatter()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInConfigs">searchForPriorityInConfigs()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInFrontMatter">searchForPriorityInFrontMatter()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInNavigationConfig">searchForPriorityInNavigationConfig()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInSidebarConfig">searchForPriorityInSidebarConfig()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
-<dd></dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -430,11 +426,13 @@ convenient way to see the supported front matter properties.</dd>
         <h3 class="phpdocumentor-elements__header" id="constants">
             Constants
             <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_SCHEMA">
         SCHEMA
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#constant_SCHEMA" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -448,7 +446,7 @@ convenient way to see the supported front matter properties.</dd>
 
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__type">array&lt;string, string|array&gt;</span>
+    <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__type">array&lt;string, string|array&lt;string|int, mixed&gt;&gt;</span>
     <span class="phpdocumentor-signature__name">SCHEMA</span>
     = <span class="phpdocumentor-signature__default-value">\Hyde\Markdown\Contracts\FrontMatter\SubSchemas\NavigationSchema::NAVIGATION_SCHEMA</span>
 </code>
@@ -465,6 +463,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_CONFIG_OFFSET">
         CONFIG_OFFSET
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#constant_CONFIG_OFFSET" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -483,10 +482,8 @@ convenient way to see the supported front matter properties.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -494,6 +491,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="constant_FALLBACK_PRIORITY">
         FALLBACK_PRIORITY
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#constant_FALLBACK_PRIORITY" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -512,10 +510,8 @@ convenient way to see the supported front matter properties.</dd>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -526,6 +522,7 @@ convenient way to see the supported front matter properties.</dd>
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -537,6 +534,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_group">
         $group
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_group" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -554,10 +552,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$group</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -571,6 +567,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_hidden">
         $hidden
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_hidden" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -588,10 +585,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$hidden</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -605,6 +600,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_label">
         $label
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_label" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -622,10 +618,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$label</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -639,6 +633,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_priority">
         $priority
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_priority" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -656,10 +651,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$priority</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -673,6 +666,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_identifier">
         $identifier
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_identifier" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -690,10 +684,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$identifier</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -707,6 +699,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_matter">
         $matter
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_matter" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -724,10 +717,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$matter</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -741,6 +732,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_pageClass">
         $pageClass
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_pageClass" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -758,10 +750,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$pageClass</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -775,6 +765,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_routeKey">
         $routeKey
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_routeKey" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -792,10 +783,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$routeKey</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -809,6 +798,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_title">
         $title
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_title" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -826,10 +816,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$title</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -839,6 +827,7 @@ convenient way to see the supported front matter properties.</dd>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -849,6 +838,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -862,8 +852,9 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html"><abbr title="\Hyde\Framework\Factories\Concerns\CoreDataObject">CoreDataObject</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageData</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -871,25 +862,19 @@ convenient way to see the supported front matter properties.</dd>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html"><abbr title="\Hyde\Framework\Factories\Concerns\CoreDataObject">CoreDataObject</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$title</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -901,6 +886,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_toArray">
         toArray()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_toArray" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -913,17 +899,19 @@ convenient way to see the supported front matter properties.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{label: string|null, group: string|null, hidden: bool|null, priority: int|null}</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array{label: string|null, group: string|null, hidden: bool|null, priority: int|null}</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -934,6 +922,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_getMatter">
         getMatter()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getMatter" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -947,8 +936,9 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">getMatter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null|int|bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -956,18 +946,17 @@ convenient way to see the supported front matter properties.</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null|int|bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string|null|int|bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -978,6 +967,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_getSubdirectoryConfiguration">
         getSubdirectoryConfiguration()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getSubdirectoryConfiguration" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -991,16 +981,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">getSubdirectoryConfiguration</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1011,6 +1002,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_invert">
         invert()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_invert" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1024,8 +1016,9 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">invert</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1033,18 +1026,17 @@ convenient way to see the supported front matter properties.</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">bool|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1055,6 +1047,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_isInstanceOf">
         isInstanceOf()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_isInstanceOf" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1068,8 +1061,9 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">isInstanceOf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1077,18 +1071,17 @@ convenient way to see the supported front matter properties.</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1099,6 +1092,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_makeGroup">
         makeGroup()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_makeGroup" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1112,16 +1106,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">makeGroup</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1132,6 +1127,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_makeHidden">
         makeHidden()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_makeHidden" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1145,16 +1141,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">makeHidden</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1165,6 +1162,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_makeLabel">
         makeLabel()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_makeLabel" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1178,16 +1176,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">makeLabel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1198,6 +1197,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_makePriority">
         makePriority()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_makePriority" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1211,16 +1211,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">makePriority</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1231,6 +1232,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_offset">
         offset()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_offset" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1244,8 +1246,9 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">offset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1253,26 +1256,24 @@ convenient way to see the supported front matter properties.</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$offset</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1283,6 +1284,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_canUseSubdirectoryForGroups">
         canUseSubdirectoryForGroups()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_canUseSubdirectoryForGroups" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1296,16 +1298,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">canUseSubdirectoryForGroups</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1316,6 +1319,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_defaultGroup">
         defaultGroup()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_defaultGroup" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1329,16 +1333,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">defaultGroup</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1349,6 +1354,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_getSubdirectoryName">
         getSubdirectoryName()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getSubdirectoryName" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1362,16 +1368,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">getSubdirectoryName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1382,6 +1389,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_pageIsInSubdirectory">
         pageIsInSubdirectory()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_pageIsInSubdirectory" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1395,16 +1403,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">pageIsInSubdirectory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1415,6 +1424,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_searchForGroupInFrontMatter">
         searchForGroupInFrontMatter()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForGroupInFrontMatter" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1428,16 +1438,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">searchForGroupInFrontMatter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1448,6 +1459,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_searchForHiddenInFrontMatter">
         searchForHiddenInFrontMatter()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForHiddenInFrontMatter" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1461,16 +1473,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">searchForHiddenInFrontMatter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1481,6 +1494,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_searchForLabelInConfig">
         searchForLabelInConfig()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForLabelInConfig" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1494,16 +1508,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">searchForLabelInConfig</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1514,6 +1529,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_searchForLabelInFrontMatter">
         searchForLabelInFrontMatter()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForLabelInFrontMatter" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1527,16 +1543,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">searchForLabelInFrontMatter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1547,6 +1564,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_searchForPriorityInConfigs">
         searchForPriorityInConfigs()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInConfigs" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1560,16 +1578,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">searchForPriorityInConfigs</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1580,6 +1599,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_searchForPriorityInFrontMatter">
         searchForPriorityInFrontMatter()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInFrontMatter" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1593,16 +1613,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">searchForPriorityInFrontMatter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1613,6 +1634,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_searchForPriorityInNavigationConfig">
         searchForPriorityInNavigationConfig()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInNavigationConfig" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1626,16 +1648,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">searchForPriorityInNavigationConfig</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1646,6 +1669,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_searchForPriorityInSidebarConfig">
         searchForPriorityInSidebarConfig()
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInSidebarConfig" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/NavigationDataFactory.php"><a href="files/packages-framework-src-framework-factories-navigationdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/NavigationDataFactory.php">NavigationDataFactory.php</abbr></a></abbr>
@@ -1659,83 +1683,186 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">searchForPriorityInSidebarConfig</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int|null</span>
+            </section>
+
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/packages/framework/src/Framework/Factories/NavigationDataFactory.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#constant_SCHEMA">SCHEMA</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#constant_CONFIG_OFFSET">CONFIG_OFFSET</a></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#constant_FALLBACK_PRIORITY">FALLBACK_PRIORITY</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_group">$group<a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_hidden">$hidden<a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_label">$label<a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_priority">$priority<a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_identifier">$identifier<a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_matter">$matter<a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_pageClass">$pageClass<a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_routeKey">$routeKey<a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#property_title">$title<a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_toArray">toArray()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getMatter">getMatter()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getSubdirectoryConfiguration">getSubdirectoryConfiguration()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_invert">invert()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_isInstanceOf">isInstanceOf()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_makeGroup">makeGroup()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_makeHidden">makeHidden()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_makeLabel">makeLabel()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_makePriority">makePriority()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_offset">offset()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_canUseSubdirectoryForGroups">canUseSubdirectoryForGroups()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_defaultGroup">defaultGroup()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_getSubdirectoryName">getSubdirectoryName()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_pageIsInSubdirectory">pageIsInSubdirectory()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForGroupInFrontMatter">searchForGroupInFrontMatter()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForHiddenInFrontMatter">searchForHiddenInFrontMatter()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForLabelInConfig">searchForLabelInConfig()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForLabelInFrontMatter">searchForLabelInFrontMatter()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInConfigs">searchForPriorityInConfigs()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInFrontMatter">searchForPriorityInFrontMatter()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInNavigationConfig">searchForPriorityInNavigationConfig()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInSidebarConfig">searchForPriorityInSidebarConfig()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -1746,7 +1873,6 @@ convenient way to see the supported front matter properties.</dd>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/Hyde-Framework-Factories-NavigationDataFactory.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

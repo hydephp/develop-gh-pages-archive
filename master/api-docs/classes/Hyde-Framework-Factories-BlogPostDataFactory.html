@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -111,8 +112,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework.html">Framework</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-factories.html">Factories</a></li>
@@ -139,6 +141,11 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
     :
@@ -157,28 +164,32 @@ this class will attempt to generate and discover the values based on the page an
 
 
 
-
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html"><abbr title="\Hyde\Markdown\Contracts\FrontMatter\BlogPostSchema">BlogPostSchema</abbr></a></dt>
-        <dd>Front matter schema interfaces are used by various Hyde components to
-specify what data they provide or contain. They also serve as a
-convenient way to see the supported front matter properties.</dd>
-    
-    
-    
-    </dl>
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Hyde-Markdown-Contracts-FrontMatter-BlogPostSchema.html"><abbr title="\Hyde\Markdown\Contracts\FrontMatter\BlogPostSchema">BlogPostSchema</abbr></a></dt><dd>Front matter schema interfaces are used by various Hyde components to
+specify what data they provide or contain. They also serve as a
+convenient way to see the supported front matter properties.</dd>    </dl>
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#constant_SCHEMA">SCHEMA</a>
@@ -187,66 +198,75 @@ convenient way to see the supported front matter properties.</dd>
 </dt>
 <dd>The front matter properties supported by this factory.</dd>
 
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_author">$author</a>
     <span>
                         &nbsp;: <a href="classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html"><abbr title="\Hyde\Framework\Features\Blogging\Models\PostAuthor">PostAuthor</abbr></a>|null            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_category">$category</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_date">$date</a>
     <span>
                         &nbsp;: <a href="classes/Hyde-Support-Models-DateString.html"><abbr title="\Hyde\Support\Models\DateString">DateString</abbr></a>|null            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_description">$description</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_image">$image</a>
     <span>
                         &nbsp;: <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html"><abbr title="\Hyde\Framework\Features\Blogging\Models\FeaturedImage">FeaturedImage</abbr></a>|null            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_markdown">$markdown</a>
     <span>
                         &nbsp;: <a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_matter">$matter</a>
     <span>
                         &nbsp;: <a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_toArray">toArray()</a>
     <span>
-                                &nbsp;: array&lt;string, mixed&gt;    </span>
+                                &nbsp;: <abbr title="array{description: string|null, category: string|null, date: \Hyde\Support\Models\DateString|null, author: \Hyde\Framework\Features\Blogging\Models\PostAuthor|null, image: \Hyde\Framework\Features\Blogging\Models\FeaturedImage|null}">FeaturedImage|null}</abbr>    </span>
 </dt>
 <dd>Get the generated data as an associative array.</dd>
 
@@ -255,51 +275,45 @@ convenient way to see the supported front matter properties.</dd>
     <span>
                                 &nbsp;: string|null|array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeAuthor">makeAuthor()</a>
     <span>
                                 &nbsp;: <a href="classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html"><abbr title="\Hyde\Framework\Features\Blogging\Models\PostAuthor">PostAuthor</abbr></a>|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeCategory">makeCategory()</a>
     <span>
                                 &nbsp;: string|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeDate">makeDate()</a>
     <span>
                                 &nbsp;: <a href="classes/Hyde-Support-Models-DateString.html"><abbr title="\Hyde\Support\Models\DateString">DateString</abbr></a>|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeDescription">makeDescription()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeImage">makeImage()</a>
     <span>
                                 &nbsp;: <a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html"><abbr title="\Hyde\Framework\Features\Blogging\Models\FeaturedImage">FeaturedImage</abbr></a>|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_getTruncatedMarkdown">getTruncatedMarkdown()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -308,11 +322,13 @@ convenient way to see the supported front matter properties.</dd>
         <h3 class="phpdocumentor-elements__header" id="constants">
             Constants
             <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_SCHEMA">
         SCHEMA
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#constant_SCHEMA" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -326,7 +342,7 @@ convenient way to see the supported front matter properties.</dd>
 
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__type">array&lt;string, string|array&gt;</span>
+    <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__type">array&lt;string, string|array&lt;string|int, mixed&gt;&gt;</span>
     <span class="phpdocumentor-signature__name">SCHEMA</span>
     = <span class="phpdocumentor-signature__default-value">\Hyde\Markdown\Contracts\FrontMatter\BlogPostSchema::BLOG_POST_SCHEMA</span>
 </code>
@@ -346,6 +362,7 @@ convenient way to see the supported front matter properties.</dd>
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -357,6 +374,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_author">
         $author
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_author" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -374,10 +392,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$author</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -391,6 +407,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_category">
         $category
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_category" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -408,10 +425,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$category</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -425,6 +440,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_date">
         $date
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_date" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -442,10 +458,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$date</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -459,6 +473,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_description">
         $description
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_description" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -476,10 +491,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$description</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -493,6 +506,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_image">
         $image
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_image" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -510,10 +524,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$image</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -527,6 +539,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_markdown">
         $markdown
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_markdown" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -544,10 +557,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$markdown</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -561,6 +572,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="property_matter">
         $matter
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_matter" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
@@ -578,10 +590,8 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__name">$matter</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -591,6 +601,7 @@ convenient way to see the supported front matter properties.</dd>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -601,6 +612,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
@@ -614,8 +626,9 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html"><abbr title="\Hyde\Framework\Factories\Concerns\CoreDataObject">CoreDataObject</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageData</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -623,17 +636,12 @@ convenient way to see the supported front matter properties.</dd>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html"><abbr title="\Hyde\Framework\Factories\Concerns\CoreDataObject">CoreDataObject</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -645,6 +653,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_toArray">
         toArray()
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_toArray" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
@@ -657,17 +666,19 @@ convenient way to see the supported front matter properties.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="array{description: string|null, category: string|null, date: \Hyde\Support\Models\DateString|null, author: \Hyde\Framework\Features\Blogging\Models\PostAuthor|null, image: \Hyde\Framework\Features\Blogging\Models\FeaturedImage|null}">FeaturedImage|null}</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="array{description: string|null, category: string|null, date: \Hyde\Support\Models\DateString|null, author: \Hyde\Framework\Features\Blogging\Models\PostAuthor|null, image: \Hyde\Framework\Features\Blogging\Models\FeaturedImage|null}">FeaturedImage|null}</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -678,6 +689,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_getMatter">
         getMatter()
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_getMatter" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
@@ -691,8 +703,9 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">getMatter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null|array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -700,18 +713,17 @@ convenient way to see the supported front matter properties.</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null|array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string|null|array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -722,6 +734,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_makeAuthor">
         makeAuthor()
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeAuthor" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
@@ -735,16 +748,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">makeAuthor</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html"><abbr title="\Hyde\Framework\Features\Blogging\Models\PostAuthor">PostAuthor</abbr></a>|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html"><abbr title="\Hyde\Framework\Features\Blogging\Models\PostAuthor">PostAuthor</abbr></a>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html"><abbr title="\Hyde\Framework\Features\Blogging\Models\PostAuthor">PostAuthor</abbr></a>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -755,6 +769,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_makeCategory">
         makeCategory()
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeCategory" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
@@ -768,16 +783,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">makeCategory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -788,6 +804,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_makeDate">
         makeDate()
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeDate" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
@@ -801,16 +818,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">makeDate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Support-Models-DateString.html"><abbr title="\Hyde\Support\Models\DateString">DateString</abbr></a>|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Support-Models-DateString.html"><abbr title="\Hyde\Support\Models\DateString">DateString</abbr></a>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Support-Models-DateString.html"><abbr title="\Hyde\Support\Models\DateString">DateString</abbr></a>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -821,6 +839,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_makeDescription">
         makeDescription()
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeDescription" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
@@ -834,16 +853,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">makeDescription</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -854,6 +874,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_makeImage">
         makeImage()
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeImage" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
@@ -867,16 +888,17 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">makeImage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html"><abbr title="\Hyde\Framework\Features\Blogging\Models\FeaturedImage">FeaturedImage</abbr></a>|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html"><abbr title="\Hyde\Framework\Features\Blogging\Models\FeaturedImage">FeaturedImage</abbr></a>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Framework-Features-Blogging-Models-FeaturedImage.html"><abbr title="\Hyde\Framework\Features\Blogging\Models\FeaturedImage">FeaturedImage</abbr></a>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -887,6 +909,7 @@ convenient way to see the supported front matter properties.</dd>
     <h4 class="phpdocumentor-element__name" id="method_getTruncatedMarkdown">
         getTruncatedMarkdown()
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_getTruncatedMarkdown" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php"><a href="files/packages-framework-src-framework-factories-blogpostdatafactory.html"><abbr title="packages/framework/src/Framework/Factories/BlogPostDataFactory.php">BlogPostDataFactory.php</abbr></a></abbr>
@@ -900,8 +923,9 @@ convenient way to see the supported front matter properties.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">getTruncatedMarkdown</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -909,85 +933,168 @@ convenient way to see the supported front matter properties.</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/packages/framework/src/Framework/Factories/BlogPostDataFactory.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#constant_SCHEMA">SCHEMA</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_author">$author<a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_category">$category<a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_date">$date<a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_description">$description<a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_image">$image<a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_markdown">$markdown<a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_matter">$matter<a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_toArray">toArray()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_getMatter">getMatter()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeAuthor">makeAuthor()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeCategory">makeCategory()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeDate">makeDate()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeDescription">makeDescription()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeImage">makeImage()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_getTruncatedMarkdown">getTruncatedMarkdown()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -998,7 +1105,6 @@ convenient way to see the supported front matter properties.</dd>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/Hyde-Framework-Factories-BlogPostDataFactory.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

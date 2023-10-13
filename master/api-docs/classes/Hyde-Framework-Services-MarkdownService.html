@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -111,8 +112,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde.html">Hyde</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework.html">Framework</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/hyde-framework-services.html">Services</a></li>
@@ -136,6 +138,11 @@
                             <abbr title="\Hyde\Framework\Concerns\Internal\SetsUpMarkdownConverter">SetsUpMarkdownConverter</abbr>                    </span>
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
     :
@@ -151,133 +158,135 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
 
 
 
-
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Hyde-Framework-Services-MarkdownService.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Hyde-Framework-Services-MarkdownService.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_config">$config</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_converter">$converter</a>
     <span>
                         &nbsp;: <a href="classes/Hyde-Markdown-MarkdownConverter.html"><abbr title="\Hyde\Markdown\MarkdownConverter">MarkdownConverter</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_extensions">$extensions</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string|int, <abbr title="class-string<\League\CommonMark\Extension\ExtensionInterface>">ExtensionInterface></abbr>&gt;            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_features">$features</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_html">$html</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_markdown">$markdown</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_pageClass">$pageClass</a>
     <span>
                         &nbsp;: string|null            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_postprocessors">$postprocessors</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string|int, <abbr title="class-string<\Hyde\Markdown\Contracts\MarkdownPostProcessorContract>">MarkdownPostProcessorContract></abbr>&gt;            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_preprocessors">$preprocessors</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string|int, <abbr title="class-string<\Hyde\Markdown\Contracts\MarkdownPreProcessorContract>">MarkdownPreProcessorContract></abbr>&gt;            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Hyde-Framework-Services-MarkdownService.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_addExtension">addExtension()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_addFeature">addFeature()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_canEnablePermalinks">canEnablePermalinks()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_canEnableTorchlight">canEnableTorchlight()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_getExtensions">getExtensions()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_hasFeature">hasFeature()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_isDocumentationPage">isDocumentationPage()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_normalizeIndentationLevel">normalizeIndentationLevel()</a>
@@ -291,49 +300,42 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_removeFeature">removeFeature()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_withPermalinks">withPermalinks()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_withTableOfContents">withTableOfContents()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_configurePermalinksExtension">configurePermalinksExtension()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_determineIfTorchlightAttributionShouldBeInjected">determineIfTorchlightAttributionShouldBeInjected()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_enableAllHtmlElements">enableAllHtmlElements()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_findLineContentPositions">findLineContentPositions()</a>
@@ -347,37 +349,33 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span>
                                 &nbsp;: array&lt;int, string&gt;    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_injectTorchlightAttribution">injectTorchlightAttribution()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_runPostProcessing">runPostProcessing()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_runPreProcessing">runPreProcessing()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_setupConverter">setupConverter()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -388,6 +386,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/Hyde-Framework-Services-MarkdownService.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -399,6 +398,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="property_config">
         $config
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_config" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -416,10 +416,8 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__name">$config</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -433,6 +431,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="property_converter">
         $converter
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_converter" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -450,10 +449,8 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__name">$converter</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -467,6 +464,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="property_extensions">
         $extensions
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_extensions" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -480,7 +478,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, <abbr title="class-string<\League\CommonMark\Extension\ExtensionInterface>">ExtensionInterface></abbr>&gt;</span>
     <span class="phpdocumentor-signature__name">$extensions</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -499,6 +497,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="property_features">
         $features
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_features" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -516,10 +515,8 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__name">$features</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -533,6 +530,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="property_html">
         $html
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_html" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -550,10 +548,8 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__name">$html</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -567,6 +563,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="property_markdown">
         $markdown
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_markdown" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -584,10 +581,8 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__name">$markdown</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -601,6 +596,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="property_pageClass">
         $pageClass
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_pageClass" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -618,10 +614,8 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__name">$pageClass</span>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -635,6 +629,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="property_postprocessors">
         $postprocessors
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_postprocessors" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -648,7 +643,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, <abbr title="class-string<\Hyde\Markdown\Contracts\MarkdownPostProcessorContract>">MarkdownPostProcessorContract></abbr>&gt;</span>
     <span class="phpdocumentor-signature__name">$postprocessors</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -667,6 +662,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="property_preprocessors">
         $preprocessors
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#property_preprocessors" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -680,7 +676,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, <abbr title="class-string<\Hyde\Markdown\Contracts\MarkdownPreProcessorContract>">MarkdownPreProcessorContract></abbr>&gt;</span>
     <span class="phpdocumentor-signature__name">$preprocessors</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -695,6 +691,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Hyde-Framework-Services-MarkdownService.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -705,6 +702,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -718,8 +716,9 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageClass</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -727,25 +726,19 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pageClass</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -757,6 +750,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_addExtension">
         addExtension()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_addExtension" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -770,8 +764,9 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">addExtension</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$extensionClassName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -779,17 +774,12 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -801,6 +791,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_addFeature">
         addFeature()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_addFeature" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -814,8 +805,9 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">addFeature</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$feature</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -823,18 +815,17 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">static</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -845,6 +836,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_canEnablePermalinks">
         canEnablePermalinks()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_canEnablePermalinks" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -858,16 +850,17 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">canEnablePermalinks</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -878,6 +871,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_canEnableTorchlight">
         canEnableTorchlight()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_canEnableTorchlight" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -891,16 +885,17 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">canEnableTorchlight</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -911,6 +906,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_getExtensions">
         getExtensions()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_getExtensions" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -924,16 +920,17 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getExtensions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -944,6 +941,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_hasFeature">
         hasFeature()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_hasFeature" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -957,8 +955,9 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">hasFeature</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$feature</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -966,18 +965,17 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -988,6 +986,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_isDocumentationPage">
         isDocumentationPage()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_isDocumentationPage" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -1001,16 +1000,17 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isDocumentationPage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1021,6 +1021,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_normalizeIndentationLevel">
         normalizeIndentationLevel()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_normalizeIndentationLevel" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -1035,6 +1036,8 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">normalizeIndentationLevel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1043,18 +1046,17 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1065,6 +1067,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_parse">
         parse()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_parse" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -1078,16 +1081,17 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">parse</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1098,6 +1102,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_removeFeature">
         removeFeature()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_removeFeature" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -1111,8 +1116,9 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">removeFeature</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$feature</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1120,18 +1126,17 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">static</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1142,6 +1147,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_withPermalinks">
         withPermalinks()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_withPermalinks" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -1155,16 +1161,17 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">withPermalinks</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">static</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1175,6 +1182,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_withTableOfContents">
         withTableOfContents()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_withTableOfContents" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -1188,16 +1196,17 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">withTableOfContents</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">static</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1208,6 +1217,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_configurePermalinksExtension">
         configurePermalinksExtension()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_configurePermalinksExtension" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -1221,15 +1231,12 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">configurePermalinksExtension</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1241,6 +1248,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_determineIfTorchlightAttributionShouldBeInjected">
         determineIfTorchlightAttributionShouldBeInjected()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_determineIfTorchlightAttributionShouldBeInjected" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -1254,16 +1262,17 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">determineIfTorchlightAttributionShouldBeInjected</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1274,6 +1283,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_enableAllHtmlElements">
         enableAllHtmlElements()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_enableAllHtmlElements" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -1287,15 +1297,12 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">enableAllHtmlElements</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1307,6 +1314,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_findLineContentPositions">
         findLineContentPositions()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_findLineContentPositions" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -1321,6 +1329,8 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">findLineContentPositions</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lines</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, int&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1335,11 +1345,11 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;int, int&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;int, int&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1350,6 +1360,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_getNormalizedLines">
         getNormalizedLines()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_getNormalizedLines" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -1363,6 +1374,8 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getNormalizedLines</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1371,18 +1384,17 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1393,6 +1405,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_injectTorchlightAttribution">
         injectTorchlightAttribution()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_injectTorchlightAttribution" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -1406,16 +1419,17 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">injectTorchlightAttribution</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1426,6 +1440,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_runPostProcessing">
         runPostProcessing()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_runPostProcessing" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -1439,15 +1454,12 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">runPostProcessing</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1459,6 +1471,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_runPreProcessing">
         runPreProcessing()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_runPreProcessing" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -1472,15 +1485,12 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">runPreProcessing</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1492,6 +1502,7 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <h4 class="phpdocumentor-element__name" id="method_setupConverter">
         setupConverter()
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#method_setupConverter" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Services/MarkdownService.php"><a href="files/packages-framework-src-framework-services-markdownservice.html"><abbr title="packages/framework/src/Framework/Services/MarkdownService.php">MarkdownService.php</abbr></a></abbr>
@@ -1505,83 +1516,172 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">setupConverter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/packages/framework/src/Framework/Services/MarkdownService.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#property_config">$config<a href="classes/Hyde-Framework-Services-MarkdownService.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#property_converter">$converter<a href="classes/Hyde-Framework-Services-MarkdownService.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#property_extensions">$extensions<a href="classes/Hyde-Framework-Services-MarkdownService.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#property_features">$features<a href="classes/Hyde-Framework-Services-MarkdownService.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#property_html">$html<a href="classes/Hyde-Framework-Services-MarkdownService.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#property_markdown">$markdown<a href="classes/Hyde-Framework-Services-MarkdownService.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#property_pageClass">$pageClass<a href="classes/Hyde-Framework-Services-MarkdownService.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#property_postprocessors">$postprocessors<a href="classes/Hyde-Framework-Services-MarkdownService.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#property_preprocessors">$preprocessors<a href="classes/Hyde-Framework-Services-MarkdownService.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_addExtension">addExtension()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_addFeature">addFeature()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_canEnablePermalinks">canEnablePermalinks()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_canEnableTorchlight">canEnableTorchlight()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_getExtensions">getExtensions()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_hasFeature">hasFeature()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_isDocumentationPage">isDocumentationPage()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_normalizeIndentationLevel">normalizeIndentationLevel()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_parse">parse()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_removeFeature">removeFeature()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_withPermalinks">withPermalinks()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_withTableOfContents">withTableOfContents()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_configurePermalinksExtension">configurePermalinksExtension()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_determineIfTorchlightAttributionShouldBeInjected">determineIfTorchlightAttributionShouldBeInjected()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_enableAllHtmlElements">enableAllHtmlElements()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_findLineContentPositions">findLineContentPositions()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_getNormalizedLines">getNormalizedLines()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_injectTorchlightAttribution">injectTorchlightAttribution()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_runPostProcessing">runPostProcessing()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_runPreProcessing">runPreProcessing()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Services-MarkdownService.html#method_setupConverter">setupConverter()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -1592,7 +1692,6 @@ then converts the Markdown to HTML using both pre- and post-processors.</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/Hyde-Framework-Services-MarkdownService.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
