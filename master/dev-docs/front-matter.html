@@ -326,7 +326,9 @@ BladeMatter currently does not support multidimensional arrays or multi-line dir
 <p>To create BladeMatter, you simply use the default Laravel Blade <code>@php</code> directive to declare a variable in the template.</p>
 <pre><code class="language-blade">@php($title = 'BladeMatter Demo')
 </code></pre>
-<p>It will then be available through the global <code>$page</code> variable, <code>$page-&gt;matter('title')</code>.</p>
+<p>It will then be available through the global <code>$page</code> variable, <code>$page-&gt;matter('title')</code>.
+Hyde will of course also use the data for contextual autoconfiguration in the same way it would with Markdown and use the value as the page title.</p>
+<p>Another idea is to use <code>@php($navigation = ['hidden' =&gt; true])</code> if you want to hide a page from the navigation. The opportunities are limitless!</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
