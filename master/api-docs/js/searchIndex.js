@@ -636,6 +636,11 @@ Search.appendIndex(
             "summary": "Our\u0020child\u0020method\u0020filters\u0020the\u0020options\u0020available\u0020to\u0020the\u0020parent\u0020method.",
             "url": "classes/Hyde-Console-Commands-VendorPublishCommand.html#method_handle"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\VendorPublishCommand\u003A\u003ApromptForProviderOrTag\u0028\u0029",
+            "name": "promptForProviderOrTag",
+            "summary": "Our\u0020child\u0020method\u0020only\u0020uses\u0020the\u0020select\u0020function,\u0020instead\u0020of\u0020the\u0020search\u0020one.",
+            "url": "classes/Hyde-Console-Commands-VendorPublishCommand.html#method_promptForProviderOrTag"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\VendorPublishCommand\u003A\u003Astatus\u0028\u0029",
             "name": "status",
             "summary": "Write\u0020a\u0020status\u0020message\u0020to\u0020the\u0020console.",
