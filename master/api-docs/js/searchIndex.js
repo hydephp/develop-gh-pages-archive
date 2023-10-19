@@ -3591,6 +3591,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-DropdownNavItem.html#method_getItems"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DropdownNavItem\u003A\u003AsearchForDropdownPriorityInNavigationConfig\u0028\u0029",
+            "name": "searchForDropdownPriorityInNavigationConfig",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-DropdownNavItem.html#method_searchForDropdownPriorityInNavigationConfig"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DropdownNavItem\u003A\u003A\u0024items",
             "name": "items",
             "summary": "",
