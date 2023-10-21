@@ -1706,6 +1706,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewMarkdownPostFile.html#property_identifier"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewMarkdownPostFile\u003A\u003A\u0024customContent",
+            "name": "customContent",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewMarkdownPostFile.html#property_customContent"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile",
             "name": "CreatesNewPageSourceFile",
             "summary": "Scaffold\u0020a\u0020new\u0020Markdown,\u0020Blade,\u0020or\u0020documentation\u0020page.",
@@ -1771,6 +1776,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_failIfFileCannotBeSaved"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AgetBladePageContent\u0028\u0029",
+            "name": "getBladePageContent",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_getBladePageContent"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003AgetMarkdownPageContent\u0028\u0029",
+            "name": "getMarkdownPageContent",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#method_getMarkdownPageContent"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003A\u0024pageClass",
             "name": "pageClass",
             "summary": "",
@@ -1800,6 +1815,11 @@ Search.appendIndex(
             "name": "force",
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#property_force"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\CreatesNewPageSourceFile\u003A\u003A\u0024customContent",
+            "name": "customContent",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-CreatesNewPageSourceFile.html#property_customContent"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\GeneratesTableOfContents",
             "name": "GeneratesTableOfContents",
