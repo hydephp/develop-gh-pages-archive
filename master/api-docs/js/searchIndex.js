@@ -2726,6 +2726,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForHiddenInFrontMatter"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AisPageHiddenInNavigationConfiguration\u0028\u0029",
+            "name": "isPageHiddenInNavigationConfiguration",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_isPageHiddenInNavigationConfiguration"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AisNonDocumentationPageInHiddenSubdirectory\u0028\u0029",
+            "name": "isNonDocumentationPageInHiddenSubdirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_isNonDocumentationPageInHiddenSubdirectory"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AsearchForPriorityInFrontMatter\u0028\u0029",
             "name": "searchForPriorityInFrontMatter",
             "summary": "",
