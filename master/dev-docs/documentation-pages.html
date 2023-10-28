@@ -227,7 +227,7 @@
 <a href="#hiding-pages-from-indexing">Hiding pages from indexing</a>
 </li>
 <li>
-<a href="#search-with-realtime-compiler">Search with realtime compiler</a>
+<a href="#live-search-with-the-realtime-compiler">Live search with the realtime compiler</a>
 </li>
 </ul>
 </li>
@@ -605,10 +605,8 @@ navigation menu items are hidden. The page will still be accessible as normal bu
   'changelog',
 ]
 </code></pre>
-<h3>Search with realtime compiler<a id="search-with-realtime-compiler" href="#search-with-realtime-compiler" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>While the Realtime Compiler (what powers the <code>php hyde serve</code> command) serves the search index, however, it does not
-compile the index automatically. So if you're missing the search when previewing your site, run either <code>php hyde build</code>
-or <code>php hyde build:search</code> to compile the search index.</p>
+<h3>Live search with the realtime compiler<a id="live-search-with-the-realtime-compiler" href="#live-search-with-the-realtime-compiler" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The Realtime Compiler that powers the <code>php hyde serve</code> command will automatically generate a fresh search index each time the browser requests it.</p>
 <h2>Automatic &quot;Edit Page&quot; button<a id="automatic-edit-page-button" href="#automatic-edit-page-button" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <h3>Introduction<a id="introduction-1" href="#introduction-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Hyde can automatically add links to documentation pages that takes the user
