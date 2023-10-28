@@ -2411,6 +2411,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_image"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\BlogPostDataFactory\u003A\u003A\u0024filePath",
+            "name": "filePath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-BlogPostDataFactory.html#property_filePath"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\Concerns\\CoreDataObject",
             "name": "CoreDataObject",
             "summary": "Data\u0020class\u0020to\u0020contain\u0020the\u0020core\u0020data\u0020for\u0020a\u0020page\u0020being\u0020constructed.",
@@ -2580,6 +2585,11 @@ Search.appendIndex(
             "name": "matter",
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#property_matter"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\FeaturedImageFactory\u003A\u003A\u0024filePath",
+            "name": "filePath",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-FeaturedImageFactory.html#property_filePath"
         },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory",
             "name": "HydePageDataFactory",
