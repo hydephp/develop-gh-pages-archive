@@ -202,7 +202,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#property_options">$options</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string, array{name: string, description: string, group: string}&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
@@ -282,7 +282,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Console-Commands-PublishHomepageCommand.html#method_getTemplateOptions">getTemplateOptions()</a>
     <span>
-                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
+                                &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, array{name: string, description: string, group: string}&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
@@ -415,14 +415,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, array{name: string, description: string, group: string}&gt;</span>
     <span class="phpdocumentor-signature__name">$options</span>
      = <span class="phpdocumentor-signature__default-value">[&#039;welcome&#039; =&gt; [&#039;name&#039; =&gt; &#039;Welcome&#039;, &#039;description&#039; =&gt; &#039;The default welcome page.&#039;, &#039;group&#039; =&gt; &#039;hyde-welcome-page&#039;], &#039;posts&#039; =&gt; [&#039;name&#039; =&gt; &#039;Posts Feed&#039;, &#039;description&#039; =&gt; &#039;A feed of your latest posts. Perfect for a blog site!&#039;, &#039;group&#039; =&gt; &#039;hyde-posts-page&#039;], &#039;blank&#039; =&gt; [&#039;name&#039; =&gt; &#039;Blank Starter&#039;, &#039;description&#039; =&gt; &#039;A blank Blade template with just the base layout.&#039;, &#039;group&#039; =&gt; &#039;hyde-blank-page&#039;]]</span></code>
 
@@ -586,7 +586,7 @@ the label being shown, and the path being lost to the void.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -803,7 +803,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
@@ -838,7 +838,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -873,14 +873,14 @@ to utilize the automatic exception handling provided by this method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">getTemplateOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">getTemplateOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, array{name: string, description: string, group: string}&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -890,7 +890,7 @@ to utilize the automatic exception handling provided by this method.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Illuminate\Support\Collection">Collection</abbr>&lt;string|int, array{name: string, description: string, group: string}&gt;</span>
             </section>
 
 </article>
@@ -908,7 +908,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -943,7 +943,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -988,7 +988,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -1023,7 +1023,7 @@ to utilize the automatic exception handling provided by this method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/PublishHomepageCommand.php"><a href="files/packages-framework-src-console-commands-publishhomepagecommand.html"><abbr title="packages/framework/src/Console/Commands/PublishHomepageCommand.php">PublishHomepageCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
