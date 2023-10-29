@@ -233,7 +233,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003Ahandle\u0028\u0029",
             "name": "handle",
-            "summary": "",
+            "summary": "The\u0020base\u0020handle\u0020method\u0020that\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes.",
             "url": "classes/Hyde-Console-Commands-MakePageCommand.html#method_handle"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003AvalidateOptions\u0028\u0029",
@@ -265,11 +265,6 @@ Search.appendIndex(
             "name": "getTypeOption",
             "summary": "",
             "url": "classes/Hyde-Console-Commands-MakePageCommand.html#method_getTypeOption"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003AaskForString\u0028\u0029",
-            "name": "askForString",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-MakePageCommand.html#method_askForString"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003A\u0024signature",
             "name": "signature",
@@ -330,11 +325,6 @@ Search.appendIndex(
             "name": "createPostFile",
             "summary": "",
             "url": "classes/Hyde-Console-Commands-MakePostCommand.html#method_createPostFile"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\MakePostCommand\u003A\u003AaskForString\u0028\u0029",
-            "name": "askForString",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-MakePostCommand.html#method_askForString"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\MakePostCommand\u003A\u003A\u0024signature",
             "name": "signature",
@@ -710,6 +700,11 @@ Search.appendIndex(
             "name": "indentedLine",
             "summary": "Write\u0020a\u0020line\u0020with\u0020the\u0020specified\u0020indentation\u0020level",
             "url": "classes/Hyde-Console-Concerns-Command.html#method_indentedLine"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AaskForString\u0028\u0029",
+            "name": "askForString",
+            "summary": "",
+            "url": "classes/Hyde-Console-Concerns-Command.html#method_askForString"
         },                {
             "fqsen": "\\Hyde\\Console\\Concerns\\Command\u003A\u003AUSER_EXIT",
             "name": "USER_EXIT",
