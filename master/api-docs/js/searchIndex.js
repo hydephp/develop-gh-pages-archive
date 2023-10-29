@@ -51,6 +51,11 @@ Search.appendIndex(
             "summary": "The\u0020base\u0020handle\u0020method\u0020that\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes.",
             "url": "classes/Hyde-Console-Commands-BuildSiteCommand.html#method_handle"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\BuildSiteCommand\u003A\u003AconfigureBuildTaskService\u0028\u0029",
+            "name": "configureBuildTaskService",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-BuildSiteCommand.html#method_configureBuildTaskService"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\BuildSiteCommand\u003A\u003ArunPreBuildActions\u0028\u0029",
             "name": "runPreBuildActions",
             "summary": "",
@@ -260,6 +265,11 @@ Search.appendIndex(
             "name": "getTypeOption",
             "summary": "",
             "url": "classes/Hyde-Console-Commands-MakePageCommand.html#method_getTypeOption"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003AaskForString\u0028\u0029",
+            "name": "askForString",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-MakePageCommand.html#method_askForString"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003A\u0024signature",
             "name": "signature",
