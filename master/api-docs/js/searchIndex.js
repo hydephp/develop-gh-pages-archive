@@ -2776,6 +2776,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_searchForPriorityInNavigationConfig"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AparseNavigationPriorityConfig\u0028\u0029",
+            "name": "parseNavigationPriorityConfig",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-NavigationDataFactory.html#method_parseNavigationPriorityConfig"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\NavigationDataFactory\u003A\u003AcanUseSubdirectoryForGroups\u0028\u0029",
             "name": "canUseSubdirectoryForGroups",
             "summary": "",
