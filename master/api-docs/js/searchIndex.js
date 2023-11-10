@@ -566,6 +566,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_runServerProcess"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AgetEnvironmentVariables\u0028\u0029",
+            "name": "getEnvironmentVariables",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_getEnvironmentVariables"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AprintStartMessage\u0028\u0029",
+            "name": "printStartMessage",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_printStartMessage"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AgetOutputHandler\u0028\u0029",
+            "name": "getOutputHandler",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_getOutputHandler"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AuseBasicOutput\u0028\u0029",
+            "name": "useBasicOutput",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_useBasicOutput"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003A\u0024signature",
             "name": "signature",
             "summary": "",
