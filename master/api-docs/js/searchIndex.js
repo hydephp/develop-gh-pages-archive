@@ -571,6 +571,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_getEnvironmentVariables"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AconfigureOutput\u0028\u0029",
+            "name": "configureOutput",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_configureOutput"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AprintStartMessage\u0028\u0029",
             "name": "printStartMessage",
             "summary": "",
@@ -595,6 +600,11 @@ Search.appendIndex(
             "name": "description",
             "summary": "",
             "url": "classes/Hyde-Console-Commands-ServeCommand.html#property_description"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003A\u0024console",
+            "name": "console",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ServeCommand.html#property_console"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ValidateCommand",
             "name": "ValidateCommand",
