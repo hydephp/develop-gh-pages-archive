@@ -543,7 +543,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AsafeHandle\u0028\u0029",
             "name": "safeHandle",
-            "summary": "",
+            "summary": "This\u0020method\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes\u0020to\u0020provide\u0020automatic\u0020exception\u0020handling.",
             "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_safeHandle"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AgetHostSelection\u0028\u0029",

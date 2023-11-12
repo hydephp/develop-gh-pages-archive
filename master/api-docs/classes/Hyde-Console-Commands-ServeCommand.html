@@ -125,7 +125,7 @@
     ServeCommand
 
         <span class="phpdocumentor-element__extends">
-        extends <abbr title="\Hyde\Publications\Commands\ValidatingCommand">ValidatingCommand</abbr>
+        extends <a href="classes/Hyde-Console-Concerns-Command.html"><abbr title="\Hyde\Console\Concerns\Command">Command</abbr></a>
     </span>
     
             <div class="phpdocumentor-element__package">
@@ -146,7 +146,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -184,6 +184,19 @@
 
 
 
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Hyde-Console-Commands-ServeCommand.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Hyde-Console-Concerns-Command.html#constant_USER_EXIT">USER_EXIT</a>
+    <span>
+        &nbsp;= 130                            </span>
+</dt>
+
+    </dl>
 
 
 <h4 id="toc-properties">
@@ -219,10 +232,59 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Console-Concerns-Command.html#method_askForString">askForString()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Console-Concerns-Command.html#method_fileLink">fileLink()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Create a filepath that can be opened in the browser from a terminal.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Console-Concerns-Command.html#method_gray">gray()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Write a grey-coloured line</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Console-Concerns-Command.html#method_handle">handle()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>The base handle method that can be overridden by child classes.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Console-Concerns-Command.html#method_handleException">handleException()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>Handle an exception that occurred during command execution.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Console-Concerns-Command.html#method_indentedLine">indentedLine()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Write a line with the specified indentation level</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Hyde-Console-Concerns-Command.html#method_infoComment">infoComment()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Write a nicely formatted and consistent message to the console. Using InfoComment for a lack of a better term.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Console-Commands-ServeCommand.html#method_safeHandle">safeHandle()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
+<dd>This method can be overridden by child classes to provide automatic exception handling.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Console-Commands-ServeCommand.html#method_checkArgvForOption">checkArgvForOption()</a>
@@ -297,6 +359,41 @@
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Hyde-Console-Commands-ServeCommand.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_USER_EXIT">
+        USER_EXIT
+        <a href="classes/Hyde-Console-Concerns-Command.html#constant_USER_EXIT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Concerns/Command.php"><a href="files/packages-framework-src-console-concerns-command.html"><abbr title="packages/framework/src/Console/Concerns/Command.php">Command.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">26</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">USER_EXIT</span>
+    = <span class="phpdocumentor-signature__default-value">130</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+            </section>
 
         
     <section class="phpdocumentor-properties">
@@ -322,7 +419,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -355,7 +452,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -388,7 +485,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -425,6 +522,343 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_askForString">
+        askForString()
+        <a href="classes/Hyde-Console-Concerns-Command.html#method_askForString" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Concerns/Command.php"><a href="files/packages-framework-src-console-concerns-command.html"><abbr title="packages/framework/src/Console/Concerns/Command.php">Command.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">133</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">askForString</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$question</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$question</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$default</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fileLink">
+        fileLink()
+        <a href="classes/Hyde-Console-Concerns-Command.html#method_fileLink" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Concerns/Command.php"><a href="files/packages-framework-src-console-concerns-command.html"><abbr title="packages/framework/src/Console/Concerns/Command.php">Command.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">85</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create a filepath that can be opened in the browser from a terminal.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fileLink</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$label</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$path</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$label</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>If provided, the link will be wrapped in a Symfony Console <code class="prettyprint">href</code> tag.
+Note that not all terminals support this, and it may lead to only
+the label being shown, and the path being lost to the void.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_gray">
+        gray()
+        <a href="classes/Hyde-Console-Concerns-Command.html#method_gray" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Concerns/Command.php"><a href="files/packages-framework-src-console-concerns-command.html"><abbr title="packages/framework/src/Console/Concerns/Command.php">Command.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">110</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Write a grey-coloured line</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">gray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_handle">
+        handle()
+        <a href="classes/Hyde-Console-Concerns-Command.html#method_handle" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Concerns/Command.php"><a href="files/packages-framework-src-console-concerns-command.html"><abbr title="packages/framework/src/Console/Concerns/Command.php">Command.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The base handle method that can be overridden by child classes.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">handle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+        <section class="phpdocumentor-description"><p>Alternatively, implement the safeHandle method in your child class
+to utilize the automatic exception handling provided by this method.</p>
+</section>
+
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The exit code.</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_handleException">
+        handleException()
+        <a href="classes/Hyde-Console-Concerns-Command.html#method_handleException" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Concerns/Command.php"><a href="files/packages-framework-src-console-concerns-command.html"><abbr title="packages/framework/src/Console/Concerns/Command.php">Command.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">62</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Handle an exception that occurred during command execution.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">handleException</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Exception">Exception</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$exception</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$exception</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Exception">Exception</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The exit code</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_indentedLine">
+        indentedLine()
+        <a href="classes/Hyde-Console-Concerns-Command.html#method_indentedLine" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Concerns/Command.php"><a href="files/packages-framework-src-console-concerns-command.html"><abbr title="packages/framework/src/Console/Concerns/Command.php">Command.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">128</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Write a line with the specified indentation level</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">indentedLine</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spaces</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$spaces</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_infoComment">
+        infoComment()
+        <a href="classes/Hyde-Console-Concerns-Command.html#method_infoComment" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Concerns/Command.php"><a href="files/packages-framework-src-console-concerns-command.html"><abbr title="packages/framework/src/Console/Concerns/Command.php">Command.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">97</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Write a nicely formatted and consistent message to the console. Using InfoComment for a lack of a better term.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">infoComment</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+        <section class="phpdocumentor-description"><p>Text in [brackets] will automatically be wrapped in <comment> tags.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_safeHandle">
         safeHandle()
         <a href="classes/Hyde-Console-Commands-ServeCommand.html#method_safeHandle" class="headerlink"><i class="fas fa-link"></i></a>
@@ -433,24 +867,31 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">This method can be overridden by child classes to provide automatic exception handling.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">safeHandle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
-    
+        <section class="phpdocumentor-description"><p>Existing code can be converted simply by renaming the handle() method to safeHandle().</p>
+</section>
+
     
     
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The exit code.</p>
+</section>
+
             </section>
 
 </article>
@@ -468,7 +909,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -514,7 +955,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -545,7 +986,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -580,7 +1021,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -615,7 +1056,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -650,7 +1091,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -685,7 +1126,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -720,7 +1161,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -765,7 +1206,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -796,7 +1237,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -837,7 +1278,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Console/Commands/ServeCommand.php"><a href="files/packages-framework-src-console-commands-servecommand.html"><abbr title="packages/framework/src/Console/Commands/ServeCommand.php">ServeCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -963,10 +1404,17 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Hyde-Console-Commands-ServeCommand.html#toc-constants">Constants</a></li>
                                                             <li><a href="classes/Hyde-Console-Commands-ServeCommand.html#toc-properties">Properties</a></li>
                                                             <li><a href="classes/Hyde-Console-Commands-ServeCommand.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Hyde-Console-Concerns-Command.html#constant_USER_EXIT">USER_EXIT</a></li>
+                                            </ul>
+                </li>
             
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
@@ -980,6 +1428,13 @@
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/Hyde-Console-Concerns-Command.html#method_askForString">askForString()</a></li>
+                                            <li><a href="classes/Hyde-Console-Concerns-Command.html#method_fileLink">fileLink()</a></li>
+                                            <li><a href="classes/Hyde-Console-Concerns-Command.html#method_gray">gray()</a></li>
+                                            <li><a href="classes/Hyde-Console-Concerns-Command.html#method_handle">handle()</a></li>
+                                            <li><a href="classes/Hyde-Console-Concerns-Command.html#method_handleException">handleException()</a></li>
+                                            <li><a href="classes/Hyde-Console-Concerns-Command.html#method_indentedLine">indentedLine()</a></li>
+                                            <li><a href="classes/Hyde-Console-Concerns-Command.html#method_infoComment">infoComment()</a></li>
                                             <li><a href="classes/Hyde-Console-Commands-ServeCommand.html#method_safeHandle">safeHandle()</a></li>
                                             <li><a href="classes/Hyde-Console-Commands-ServeCommand.html#method_checkArgvForOption">checkArgvForOption()</a></li>
                                             <li><a href="classes/Hyde-Console-Commands-ServeCommand.html#method_configureOutput">configureOutput()</a></li>
