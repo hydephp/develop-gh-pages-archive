@@ -553,10 +553,9 @@ Hyde is designed to automatically configure these menus for you based on the con
 <ul>
 <li>To customize the sidebar, use the setting <code>sidebar_order</code> in the <code>docs.php</code> config.</li>
 <li>When customizing the sidebar, can use the route key, or just the <a href="core-concepts#page-identifiers">page identifier</a> of the page.</li>
-<li></li>
 </ul>
 <p>Learn more in the <a href="documentation-pages">Documentation Pages</a> documentation.</p>
-<blockquote class="info"><p>Tip: If you are using automatic subdirectory dropdowns, you can also set their priority in the config. Just use the directory name instead of the page identifier.</p></blockquote>
+<blockquote class="info"><p>Tip: When using subdirectory-based dropdowns, you can set their priority using the directory name as the array key.</p></blockquote>
 <h3>Primer on priorities<a id="primer-on-priorities" href="#primer-on-priorities" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>All navigation menu items have an internal priority value that determines its order in the navigation.
 Lower values means that the item will be higher up in the menu. The default for pages is <code>999</code> which puts them last.
@@ -819,7 +818,7 @@ You can of course use arrays like normal even in namespaced configuration.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1451" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1451</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/762924b0b0363c2ad73d20e13ec78d6fa56d26b8"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">762924b0b0363c2ad73d20e13ec78d6fa56d26b8</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/1dfbb072b7359ba74fdacb7ea32c8608832eab2d"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">1dfbb072b7359ba74fdacb7ea32c8608832eab2d</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1451" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
