@@ -541,20 +541,20 @@ Search.appendIndex(
             "summary": "Start\u0020the\u0020realtime\u0020compiler\u0020server.",
             "url": "classes/Hyde-Console-Commands-ServeCommand.html"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003Ahandle\u0028\u0029",
-            "name": "handle",
+            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AsafeHandle\u0028\u0029",
+            "name": "safeHandle",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_handle"
-        },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AgetPortSelection\u0028\u0029",
-            "name": "getPortSelection",
-            "summary": "",
-            "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_getPortSelection"
+            "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_safeHandle"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AgetHostSelection\u0028\u0029",
             "name": "getHostSelection",
             "summary": "",
             "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_getHostSelection"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AgetPortSelection\u0028\u0029",
+            "name": "getPortSelection",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_getPortSelection"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AgetExecutablePath\u0028\u0029",
             "name": "getExecutablePath",
@@ -590,6 +590,16 @@ Search.appendIndex(
             "name": "useBasicOutput",
             "summary": "",
             "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_useBasicOutput"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AparseEnvironmentOption\u0028\u0029",
+            "name": "parseEnvironmentOption",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_parseEnvironmentOption"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AcheckArgvForOption\u0028\u0029",
+            "name": "checkArgvForOption",
+            "summary": "Fallback\u0020check\u0020so\u0020that\u0020an\u0020environment\u0020option\u0020without\u0020a\u0020value\u0020is\u0020acknowledged\u0020as\u0020true.",
+            "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_checkArgvForOption"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003A\u0024signature",
             "name": "signature",
