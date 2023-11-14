@@ -175,6 +175,31 @@
 <a href="#configuration">Configuration</a>
 </li>
 <li>
+<a href="#live-dashboard">Live dashboard</a>
+<ul>
+<li>
+<a href="#usage-1">Usage</a>
+</li>
+<li>
+<a href="#configuration-1">Configuration</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#live-edit">Live edit</a>
+<ul>
+<li>
+<a href="#usage-2">Usage</a>
+</li>
+<li>
+<a href="#shortcuts">Shortcuts</a>
+</li>
+<li>
+<a href="#configuration-2">Configuration</a>
+</li>
+</ul>
+</li>
+<li>
 <a href="#source-code">Source code</a>
 </li>
 </ul>
@@ -307,6 +332,7 @@ allowing you to preview your static site on a local development server without h
 <pre><code class="language-bash">php hyde serve
 </code></pre>
 <p>This will start a local development server at <code>http://localhost:8080</code></p>
+<blockquote class="warning"><p>Please note that the server is designed for local development, and should not be used on a public network.</p></blockquote>
 <h3>Configuration<a id="configuration" href="#configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>The server can be configured in the <code>config/hyde.php</code> file to change the port, host, and to customize its features.</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'server' =&gt; [
@@ -315,6 +341,45 @@ allowing you to preview your static site on a local development server without h
     'save_preview' =&gt; true,
 ],
 </code></pre>
+<h3>Live dashboard<a id="live-dashboard" href="#live-dashboard" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h4>Usage<a id="usage-1" href="#usage-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>The realtime compiler comes with a live dashboard that you can access at <code>http://localhost:8080/dashboard</code>.</p>
+<p>From here, you can visually interact with your site content, including creating new pages and posts.</p>
+<p>The live dashboard is not saved to your static site, and is only available through the development server.</p>
+<h4>Configuration<a id="configuration-1" href="#configuration-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>The dashboard can be customized, and disabled, in the <code>config/hyde.php</code> file.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'server' =&gt; [
+    'dashboard' =&gt; [
+        'enabled' =&gt; env('SERVER_DASHBOARD', true),
+        'interactive' =&gt; true,
+        'tips' =&gt; true,
+    ],
+],
+</code></pre>
+<p><em>The dashboard was added in Realtime Compiler v3.0.0 (March 2023), with interactive features added in v3.1.0 (October 2023)</em></p>
+<h3>Live edit<a id="live-edit" href="#live-edit" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h4>Usage<a id="usage-2" href="#usage-2" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>The live edit feature allows you to quickly edit Markdown-based pages (posts, docs, and pages) directly in the browser.</p>
+<p>To enter the live editor, simply double-click on the article you want to edit, and it will be replaced with a text editor.
+When you're done, click the save button to save the changes to the page's source file.</p>
+<h4>Shortcuts<a id="shortcuts" href="#shortcuts" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>The live editor supports the following keyboard shortcuts:</p>
+<ul>
+<li>
+<code>Ctrl + E</code> - Enter/Exit editor</li>
+<li>
+<code>Ctrl + S</code> - Save changes</li>
+<li>
+<code>esc</code> - Exit editor if active</li>
+</ul>
+<h4>Configuration<a id="configuration-2" href="#configuration-2" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>The live editor can be disabled in the <code>config/hyde.php</code> file.
+The live editor plugin code will not be saved to your static site.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'server' =&gt; [
+    'live_edit' =&gt; env('SERVER_LIVE_EDIT', true),
+],
+</code></pre>
+<p><em>The live editor was added in Hyde Realtime Compiler Server v3.2.0 (November 2023)</em></p>
 <h3>Source code<a id="source-code" href="#source-code" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <ul>
 <li>
