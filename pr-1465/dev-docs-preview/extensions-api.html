@@ -305,6 +305,7 @@
         <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The Extensions API a powerful interface designed for package developers who want to extend the functionality of HydePHP.</p>
 <p>Using the API, you can hook directly into the HydePHP Kernel and extend sites with custom page types and new features.</p>
+<p>This documentation page functions heavily through examples, so it's recommended that the sections are read in order.</p>
 <h3>Prerequisites<a id="prerequisites" href="#prerequisites" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Before creating your extension, it will certainly be helpful if you first become familiar with
 the basic internal architecture of HydePHP, as well as how the auto-discovery system works,
@@ -320,7 +321,6 @@ so you can understand how your code works with the internals.</p>
 <a href="autodiscovery">Autodiscovery</a>
 </li>
 </ul>
-<p>This documentation page will function heavily through examples, so it's recommended that you first read the sections in order.</p>
 <h3>The why and how of the Extensions API<a id="the-why-and-how-of-the-extensions-api" href="#the-why-and-how-of-the-extensions-api" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>HydePHP being a static site generator, the Extensions API is centered around <a href="page-models">Page Models</a>,
 which you are hopefully already familiar with, otherwise you should read up on them first.</p>
@@ -328,12 +328,12 @@ which you are hopefully already familiar with, otherwise you should read up on t
 This may sound like a small thing, but it's actually incredibly powerful as the page models are the foundation
 of HydePHP's functionality. They tell the system how to discover pages, how to render them,
 and how they interact with the site.</p>
-<p>Any other functionality you want to add to HydePHP, such as new commands, new configuration options,
-that can all be added the same way as you would in Laravel, and are thus not part of the Extensions API.</p>
-<p>You may want to read up on the <a href="https://laravel.com/docs/10.x/packages">Laravel package development guide</a></p>
+<p>Any other functionality you want to add to HydePHP, such as new commands or configuration options,
+can be added the same way as you would in Laravel, and are thus not part of our API.
+See the <a href="https://laravel.com/docs/10.x/packages">Laravel package development guide</a> for more.</p>
 <h2>Creating your Extension class<a id="creating-your-extension-class" href="#creating-your-extension-class" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>The entry point for your extension is your Extensions class. Within this, you can register the custom page classes for your extension.
-If needed, you can also register discovery handlers which can run custom logic at various points in the boot process.</p>
+<p>The entry-point for your extension is your Extensions class. Within this, you can register the custom page classes.
+If needed, you can also register discovery handlers which can run custom logic at various parts of the boot process.</p>
 <p>In this article we will create an extension that registers a new type of page, a <code>JsonPageExtension</code>.</p>
 <p>The first step is to create a class that extends the <code>HydeExtension</code> class:</p>
 <pre><code class="language-php">use Hyde\Foundation\Concerns\HydeExtension;
@@ -520,7 +520,7 @@ so we can feature it?</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1465" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1465</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e9573bf50d25bab5fd705c8586c7c4b5fbf3219b"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e9573bf50d25bab5fd705c8586c7c4b5fbf3219b</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/ab6c966fa7b7548d627c0f7c1945bd57cd0a78f6"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">ab6c966fa7b7548d627c0f7c1945bd57cd0a78f6</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1465" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
