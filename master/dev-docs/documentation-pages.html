@@ -177,6 +177,9 @@
 </li>
 <li>
 <a href="#sidebar-grouping">Sidebar grouping</a>
+</li>
+<li>
+<a href="#sidebar-footer-customization">Sidebar footer customization</a>
 <ul>
 <li>
 <a href="#using-front-matter">Using Front Matter</a>
@@ -543,6 +546,13 @@ The Hyde docs for instance use this.</p>
 <p>The feature is enabled automatically when one or more of your documentation pages have the <code>navigation.group</code> property set
 in the front matter. This will then switch to a slightly more compact sidebar layout with pages sorted into categories.
 Any pages without the group front matter will get put in the &quot;Other&quot; group.</p>
+<h3>Sidebar footer customization<a id="sidebar-footer-customization" href="#sidebar-footer-customization" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The sidebar footer contains, by default, a link to your site homepage. You can change this in the <code>config/docs.php</code> file.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/docs.php</small>'sidebar' =&gt; [
+    'footer' =&gt; 'My **Markdown** Footer Text',
+],
+</code></pre>
+<p>You can also set the option to <code>false</code> to disable it entirely.</p>
 <h4>Using Front Matter<a id="using-front-matter" href="#using-front-matter" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>To enable sidebar grouping, you can add the following front matter to your documentation pages:</p>
 <pre><code class="language-yaml">navigation:
