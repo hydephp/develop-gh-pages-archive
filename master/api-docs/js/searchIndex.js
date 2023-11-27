@@ -3651,6 +3651,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-DocumentationSidebar.html#method_isGroupActive"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DocumentationSidebar\u003A\u003AmakeGroupTitle\u0028\u0029",
+            "name": "makeGroupTitle",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-DocumentationSidebar.html#method_makeGroupTitle"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DocumentationSidebar\u003A\u003AcanAddRoute\u0028\u0029",
             "name": "canAddRoute",
             "summary": "",
