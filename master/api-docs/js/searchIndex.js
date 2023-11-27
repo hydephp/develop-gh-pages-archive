@@ -3926,11 +3926,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-XmlGenerators-SitemapGenerator.html#method_getFormattedProcessingTime"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\XmlGenerators\\SitemapGenerator\u003A\u003AresolveRouteLink\u0028\u0029",
-            "name": "resolveRouteLink",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Features-XmlGenerators-SitemapGenerator.html#method_resolveRouteLink"
-        },                {
             "fqsen": "\\Hyde\\Framework\\HydeServiceProvider",
             "name": "HydeServiceProvider",
             "summary": "Register\u0020and\u0020bootstrap\u0020core\u0020Hyde\u0020application\u0020services.",
