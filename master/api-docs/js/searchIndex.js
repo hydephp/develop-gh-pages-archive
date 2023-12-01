@@ -601,6 +601,11 @@ Search.appendIndex(
             "summary": "Fallback\u0020check\u0020so\u0020that\u0020an\u0020environment\u0020option\u0020without\u0020a\u0020value\u0020is\u0020acknowledged\u0020as\u0020true.",
             "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_checkArgvForOption"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003AopenInBrowser\u0028\u0029",
+            "name": "openInBrowser",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-ServeCommand.html#method_openInBrowser"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ServeCommand\u003A\u003A\u0024signature",
             "name": "signature",
             "summary": "",
