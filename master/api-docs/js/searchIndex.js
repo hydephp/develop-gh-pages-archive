@@ -3,7 +3,7 @@ Search.appendIndex(
                 {
             "fqsen": "\\Hyde\\Console\\Commands\\BuildRssFeedCommand",
             "name": "BuildRssFeedCommand",
-            "summary": "Hyde\u0020command\u0020to\u0020run\u0020the\u0020build\u0020process\u0020for\u0020the\u0020RSS\u0020feed.",
+            "summary": "Run\u0020the\u0020build\u0020process\u0020for\u0020the\u0020RSS\u0020feed.",
             "url": "classes/Hyde-Console-Commands-BuildRssFeedCommand.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\BuildRssFeedCommand\u003A\u003Ahandle\u0028\u0029",
@@ -23,7 +23,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\BuildSearchCommand",
             "name": "BuildSearchCommand",
-            "summary": "Hyde\u0020command\u0020to\u0020run\u0020the\u0020build\u0020process\u0020for\u0020the\u0020documentation\u0020search\u0020index.",
+            "summary": "Run\u0020the\u0020build\u0020process\u0020for\u0020the\u0020documentation\u0020search\u0020index.",
             "url": "classes/Hyde-Console-Commands-BuildSearchCommand.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\BuildSearchCommand\u003A\u003Ahandle\u0028\u0029",
@@ -43,7 +43,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\BuildSiteCommand",
             "name": "BuildSiteCommand",
-            "summary": "Hyde\u0020Command\u0020to\u0020run\u0020the\u0020Build\u0020Process.",
+            "summary": "Run\u0020the\u0020static\u0020site\u0020build\u0020process.",
             "url": "classes/Hyde-Console-Commands-BuildSiteCommand.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\BuildSiteCommand\u003A\u003Ahandle\u0028\u0029",
@@ -108,7 +108,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\BuildSitemapCommand",
             "name": "BuildSitemapCommand",
-            "summary": "Hyde\u0020command\u0020to\u0020run\u0020the\u0020build\u0020process\u0020for\u0020the\u0020sitemap.",
+            "summary": "Run\u0020the\u0020build\u0020process\u0020for\u0020the\u0020sitemap.",
             "url": "classes/Hyde-Console-Commands-BuildSitemapCommand.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\BuildSitemapCommand\u003A\u003Ahandle\u0028\u0029",
@@ -128,7 +128,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand",
             "name": "ChangeSourceDirectoryCommand",
-            "summary": "A\u0020base\u0020class\u0020for\u0020HydeCLI\u0020command\u0020that\u0020adds\u0020some\u0020extra\u0020functionality\u0020and\u0020output\nhelpers\u0020to\u0020reduce\u0020repeated\u0020code\u0020and\u0020to\u0020provide\u0020a\u0020consistent\u0020user\u0020interface.",
+            "summary": "Change\u0020the\u0020source\u0020directory\u0020for\u0020your\u0020project.",
             "url": "classes/Hyde-Console-Commands-ChangeSourceDirectoryCommand.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ChangeSourceDirectoryCommand\u003A\u003Ahandle\u0028\u0029",
@@ -193,7 +193,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\DebugCommand",
             "name": "DebugCommand",
-            "summary": "Hyde\u0020Command\u0020to\u0020print\u0020debug\u0020information.",
+            "summary": "Print\u0020debug\u0020information.",
             "url": "classes/Hyde-Console-Commands-DebugCommand.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\DebugCommand\u003A\u003A__construct\u0028\u0029",
@@ -228,7 +228,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand",
             "name": "MakePageCommand",
-            "summary": "Hyde\u0020Command\u0020to\u0020scaffold\u0020a\u0020new\u0020Markdown\u0020or\u0020Blade\u0020page\u0020file.",
+            "summary": "Scaffold\u0020a\u0020new\u0020Markdown\u0020or\u0020Blade\u0020page\u0020file.",
             "url": "classes/Hyde-Console-Commands-MakePageCommand.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\MakePageCommand\u003A\u003Ahandle\u0028\u0029",
@@ -298,7 +298,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\MakePostCommand",
             "name": "MakePostCommand",
-            "summary": "Hyde\u0020Command\u0020to\u0020scaffold\u0020a\u0020new\u0020Markdown\u0020Post.",
+            "summary": "Scaffold\u0020a\u0020new\u0020Markdown\u0020blog\u0020post\u0020file.",
             "url": "classes/Hyde-Console-Commands-MakePostCommand.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\MakePostCommand\u003A\u003Ahandle\u0028\u0029",
@@ -338,7 +338,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PackageDiscoverCommand",
             "name": "PackageDiscoverCommand",
-            "summary": "",
+            "summary": "Extended\u0020package\u0020discovery\u0020command\u0020to\u0020use\u0020the\u0020custom\u0020manifest\u0020path.",
             "url": "classes/Hyde-Console-Commands-PackageDiscoverCommand.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PackageDiscoverCommand\u003A\u003Ahandle\u0028\u0029",
@@ -353,7 +353,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PublishConfigsCommand",
             "name": "PublishConfigsCommand",
-            "summary": "Publish\u0020the\u0020Hyde\u0020Config\u0020Files.",
+            "summary": "Publish\u0020the\u0020Hyde\u0020config\u0020files.",
             "url": "classes/Hyde-Console-Commands-PublishConfigsCommand.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PublishConfigsCommand\u003A\u003Ahandle\u0028\u0029",
@@ -378,7 +378,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand",
             "name": "PublishHomepageCommand",
-            "summary": "Publish\u0020one\u0020of\u0020the\u0020default\u0020homepages.",
+            "summary": "Publish\u0020one\u0020of\u0020the\u0020default\u0020homepages\u0020to\u0020index.blade.php.",
             "url": "classes/Hyde-Console-Commands-PublishHomepageCommand.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\PublishHomepageCommand\u003A\u003Ahandle\u0028\u0029",
@@ -483,7 +483,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\RebuildPageCommand",
             "name": "RebuildPageCommand",
-            "summary": "Hyde\u0020Command\u0020to\u0020build\u0020a\u0020single\u0020static\u0020site\u0020file.",
+            "summary": "Build\u0020a\u0020single\u0020static\u0020site\u0020file.",
             "url": "classes/Hyde-Console-Commands-RebuildPageCommand.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\RebuildPageCommand\u003A\u003Ahandle\u0028\u0029",
@@ -513,7 +513,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand",
             "name": "RouteListCommand",
-            "summary": "Hyde\u0020command\u0020to\u0020display\u0020the\u0020list\u0020of\u0020site\u0020routes.",
+            "summary": "Display\u0020the\u0020list\u0020of\u0020site\u0020routes.",
             "url": "classes/Hyde-Console-Commands-RouteListCommand.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003Ahandle\u0028\u0029",
@@ -623,7 +623,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ValidateCommand",
             "name": "ValidateCommand",
-            "summary": "",
+            "summary": "Run\u0020a\u0020series\u0020of\u0020tests\u0020to\u0020validate\u0020your\u0020setup\u0020and\u0020help\u0020you\u0020optimize\u0020your\u0020site.",
             "url": "classes/Hyde-Console-Commands-ValidateCommand.html"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\ValidateCommand\u003A\u003A__construct\u0028\u0029",
@@ -1403,7 +1403,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\RouteCollection",
             "name": "RouteCollection",
-            "summary": "The\u0020RouteCollection\u0020contains\u0020all\u0020the\u0020routes,\u0020making\u0020it\u0020the\u0020Pseudo\u002DRouter\u0020for\u0020Hyde.",
+            "summary": "The\u0020RouteCollection\u0020contains\u0020all\u0020the\u0020page\u0020routes,\u0020making\u0020it\u0020the\u0020pseudo\u002Drouter\u0020for\u0020Hyde,\nas\u0020it\u0020maps\u0020each\u0020page\u0020to\u0020the\u0020eventual\u0020URL\u0020that\u0020will\u0020be\u0020used\u0020to\u0020access\u0020it\u0020once\u0020built.",
             "url": "classes/Hyde-Foundation-Kernel-RouteCollection.html"
         },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\RouteCollection\u003A\u003AaddRoute\u0028\u0029",
@@ -2113,7 +2113,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\StaticPageBuilder",
             "name": "StaticPageBuilder",
-            "summary": "Converts\u0020a\u0020Page\u0020Model\u0020into\u0020a\u0020static\u0020HTML\u0020page.",
+            "summary": "Converts\u0020a\u0020Hyde\u0020page\u0020object\u0020into\u0020a\u0020static\u0020HTML\u0020page.",
             "url": "classes/Hyde-Framework-Actions-StaticPageBuilder.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\StaticPageBuilder\u003A\u003Ahandle\u0028\u0029",
@@ -2143,7 +2143,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\InteractsWithFrontMatter",
             "name": "InteractsWithFrontMatter",
-            "summary": "Adds\u0020methods\u0020to\u0020a\u0020class\u0020to\u0020allow\u0020it\u0020to\u0020fluently\u0020interact\u0020with\u0020the\u0020front\u0020matter.",
+            "summary": "Adds\u0020methods\u0020to\u0020a\u0020class\u0020to\u0020allow\u0020it\u0020to\u0020fluently\u0020interact\u0020with\u0020its\u0020front\u0020matter.",
             "url": "classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Concerns\\InteractsWithFrontMatter\u003A\u003Adata\u0028\u0029",
@@ -3118,7 +3118,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\PostAuthor",
             "name": "PostAuthor",
-            "summary": "The\u0020Post\u0020Author\u0020model\u0020object.",
+            "summary": "Object\u0020representation\u0020of\u0020a\u0020post\u0020author\u0020for\u0020the\u0020site.",
             "url": "classes/Hyde-Framework-Features-Blogging-Models-PostAuthor.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Blogging\\Models\\PostAuthor\u003A\u003A__construct\u0028\u0029",
