@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HydePHP Upcoming Documentation - Integrations with third-party tools</title>
+<title>HydePHP Upcoming Documentation - HydePHP UI Kit - Documentation</title>
 
 
 
-<link rel="canonical" href="https://hydephp.github.io/develop/master/dev-docs/dev-docs/third-party-integrations.html">
-<meta name="twitter:title" content="HydePHP Upcoming Documentation - Integrations with third-party tools">
-<meta property="og:title" content="HydePHP Upcoming Documentation - Integrations with third-party tools">
+<link rel="canonical" href="https://hydephp.github.io/develop/master/dev-docs/dev-docs/ui-kit.html">
+<meta name="twitter:title" content="HydePHP Upcoming Documentation - HydePHP UI Kit - Documentation">
+<meta property="og:title" content="HydePHP Upcoming Documentation - HydePHP UI Kit - Documentation">
 
 
 <link rel="sitemap" href="https://hydephp.github.io/develop/master/dev-docs/sitemap.xml" type="application/xml" title="Sitemap">
@@ -268,31 +268,65 @@
             <a href="../dev-docs/realtime-compiler.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Realtime Compiler
         </a>
-    </li>                                            <li class="sidebar-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
-            <a href="../dev-docs/third-party-integrations.html" aria-current="true" class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10">
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs/third-party-integrations.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Third-Party Integrations
+        </a>
+    </li>                                            <li class="sidebar-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
+            <a href="../dev-docs/ui-kit.html" aria-current="true" class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10">
+            HydePHP UI Kit - Documentation
         </a>
 
                     <span class="sr-only">Table of contents</span>
             <ul class="table-of-contents">
 <li>
-<a href="#torchlight">Torchlight</a>
+<a href="#screenshot">Screenshot</a>
+</li>
+<li>
+<a href="#components">Components</a>
 <ul>
 <li>
-<a href="#getting-started">Getting started</a>
+<a href="#buttons">Buttons</a>
+<ul>
+<li>
+<a href="#primary">Primary</a>
 </li>
 <li>
-<a href="#attribution-and-configuration">Attribution and configuration</a>
+<a href="#secondary">Secondary</a>
 </li>
 </ul>
+</li>
+<li>
+<a href="#input">Input</a>
+</li>
+<li>
+<a href="#card">Card</a>
+</li>
+<li>
+<a href="#typography-components">Typography Components</a>
+<ul>
+<li>
+<a href="#heading">Heading</a>
+</li>
+<li>
+<a href="#prose">Prose</a>
+</li>
+<li>
+<a href="#markdown">Markdown</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#whats-next">What's Next?</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#github-repository">GitHub Repository</a>
 </li>
 </ul>
 
-            </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs/ui-kit.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
-            HydePHP UI Kit - Documentation
-        </a>
-    </li>                                    </ul>
+            </li>                                    </ul>
             </li>
             </ul>
     </nav>
@@ -308,29 +342,121 @@
     </blockquote>
 
     <header id="document-header" class="flex items-center flex-wrap prose-h1:mb-3">
-        <h1>Integrations with third-party tools</h1>
+        <h1>HydePHP UI Kit - Documentation</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        <h2>Torchlight<a id="torchlight" href="#torchlight" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Torchlight is an amazing API for syntax highlighting, and is used by this site. I cannot recommend it highly enough,
-especially for documentation sites and code-heavy blogs! As such, HydePHP has built-in support for Torchlight,
-which is automatically enabled once you add an API token to your <code>.env</code> file. Nothing else needs to be done!</p>
-<h3>Getting started<a id="getting-started" href="#getting-started" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>To get started you need an API token which you can get at <a href="https://torchlight.dev/">Torchlight.dev</a>.
-It is entirely free for personal and open source projects, as seen on their <a href="https://torchlight.dev/#pricing">pricing page</a>.</p>
-<p>When you have an API token, set it in the <code>.env</code> file in the root directory of your project.
-Once a token is set, Hyde will automatically enable the CommonMark extension.</p>
-<pre><code class="language-env">TORCHLIGHT_TOKEN=torch_&lt;your-api-token&gt;
+        <p>The HydePHP UI Kit is a collection of minimalistic and un-opinionated TailwindCSS components for Laravel Blade,
+indented to be used with HydePHP. Note that these components may require CSS classes not present in the bundled app.css
+file and that you may need to recompile the CSS file using the included Laravel Mix configuration.</p>
+<h2>Screenshot<a id="screenshot" href="#screenshot" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Here are some of the components you can use to build your next project! As you can see, all components support both light and dark mode out of the box, just like the rest of HydePHP.</p>
+<p><img src="https://raw.githubusercontent.com/hydephp/ui-kit/art/header-large-min.png" alt="Components Screenshot" /></p>
+<h2>Components<a id="components" href="#components" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Please make sure you're familiar with <a href="https://laravel.com/docs/blade">Laravel Blade</a> before using the HydePHP UI Kit.</p>
+<blockquote class="info"><p>Tip: Most components allow you to pass any additional HTML attributes to the element!</p></blockquote>
+<h3>Buttons<a id="buttons" href="#buttons" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h4>Primary<a id="primary" href="#primary" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<pre><code class="language-blade">&lt;x-hyde-ui::button-primary&gt;
+    Primary Button
+&lt;/x-hyde-ui::button-primary&gt;
 </code></pre>
-<h3>Attribution and configuration<a id="attribution-and-configuration" href="#attribution-and-configuration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Note that for the free plan you need to provide an attribution link. Thankfully Hyde injects a customizable link
-automatically to all pages that use Torchlight. You can of course disable and customize this in the <code>config/torchlight.php</code> file.</p>
-<pre><code class="language-php">'attribution' =&gt; [
-    'enabled' =&gt; true,
-    'markdown' =&gt; 'Syntax highlighting by &lt;a href=&quot;https://torchlight.dev/&quot; rel=&quot;noopener nofollow&quot;&gt;Torchlight.dev&lt;/a&gt;',
-],
+<h4>Secondary<a id="secondary" href="#secondary" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<pre><code class="language-blade">&lt;x-hyde-ui::button-secondary&gt;
+    Secondary Button
+&lt;/x-hyde-ui::button-secondary&gt;
 </code></pre>
-<p>Don't have this file? Run <code>php hyde vendor:publish</code> to publish it.</p>
+<h3>Input<a id="input" href="#input" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The base component is <code>&lt;x-hyde-ui::input /&gt;</code>, any additional attributes will be passed to the input element as seen below.</p>
+<pre><code class="language-blade">&lt;x-hyde-ui::input type=&quot;text&quot; name=&quot;name&quot; placeholder=&quot;Name&quot; value=&quot;John Doe&quot; /&gt;
+</code></pre>
+<h3>Card<a id="card" href="#card" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>An incredibly versatile component that can be used for a wide variety of purposes.</p>
+<p>In the most basic form, a card is just a container with a white background and a shadow.
+However, it also supports two slots: <code>title</code> and <code>footer</code>.</p>
+<pre><code class="language-blade">&lt;x-hyde-ui::card&gt;
+    A card with some content.
+&lt;/x-hyde-ui::card&gt;
+</code></pre>
+<pre><code class="language-blade">&lt;x-hyde-ui::card&gt;
+    &lt;x-slot name=&quot;title&quot;&gt;
+        Card Title
+    &lt;/x-slot&gt;
+&lt;/x-hyde-ui::card&gt;
+</code></pre>
+<pre><code class="language-blade">&lt;x-hyde-ui::card&gt;
+    &lt;x-slot name=&quot;footer&quot;&gt;
+       Some footer content.
+    &lt;/x-slot&gt;
+&lt;/x-hyde-ui::card&gt;
+</code></pre>
+<p>Why not combine the components?</p>
+<pre><code class="language-blade">&lt;x-hyde-ui::card&gt;
+    &lt;x-slot name=&quot;title&quot;&gt;
+        My Amazing Card
+    &lt;/x-slot&gt;
+
+    A card with some content and a footer with a button.
+
+    &lt;x-slot name=&quot;footer&quot; class=&quot;text-center&quot;&gt;
+        &lt;x-hyde-ui::button-primary&gt;
+            Primary Button
+        &lt;/x-hyde-ui::button-primary&gt;
+    &lt;/x-slot&gt;
+&lt;/x-hyde-ui::card&gt;
+</code></pre>
+<h3>Typography Components<a id="typography-components" href="#typography-components" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h4>Heading<a id="heading" href="#heading" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>This component will create a styled <code>&lt;h1&gt;</code> level heading centered on the page.</p>
+<pre><code class="language-blade">&lt;x-hyde-ui::heading&gt;
+    Lorem ipsum dolor sit amet.
+&lt;/x-hyde-ui::heading&gt;
+</code></pre>
+<h4>Prose<a id="prose" href="#prose" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>This simple component will create an <code>&lt;article&gt;</code> element with <a href="https://tailwindcss.com/docs/typography-plugin">TailwindCSS Typography</a> (prose) styles applied.</p>
+<pre><code class="language-blade">&lt;x-hyde-ui::prose&gt;
+    &lt;h2&gt;Prose Heading&lt;/h2&gt;
+    &lt;p&gt;Prose paragraph&lt;/p&gt;
+&lt;/x-hyde-ui::prose&gt;
+</code></pre>
+<h4>Markdown<a id="markdown" href="#markdown" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>This component will convert any Markdown within it to HTML using the Hyde Markdown compiler.</p>
+<pre><code class="language-blade">&lt;x-hyde-ui::markdown&gt;
+    ## Markdown Heading
+
+    Hello world!
+&lt;/x-hyde-ui::markdown&gt;
+</code></pre>
+<blockquote class="info"><p>Tip: You may also want to wrap this in the prose element or the Markdown will not be styled.</p></blockquote>
+<h3>What's Next?<a id="whats-next" href="#whats-next" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The UI kit is minimal by design. It's up to you to create something amazing, we just want to give you a head start.
+You can get surprisingly far when you combine the components. Take this newsletter signup card for example!</p>
+<pre><code class="language-blade">&lt;x-hyde-ui::card&gt;
+    &lt;x-slot name=&quot;title&quot;&gt;
+        Let your creativity flow!
+    &lt;/x-slot&gt;
+
+    &lt;x-slot name=&quot;main&quot; style=&quot;padding-top: 0; padding-bottom: 0;&quot;&gt;
+        &lt;x-hyde-ui::prose&gt;
+            &lt;x-hyde-ui::markdown&gt;
+                The UI kit is minimal by design. It's up to **you** to create something _amazing_.
+
+                Maybe create a form to collect newsletter subscriptions?
+            &lt;/x-hyde-ui::markdown&gt;
+        &lt;/x-hyde-ui::prose&gt;
+    &lt;/x-slot&gt;
+
+    &lt;x-slot name=&quot;footer&quot; class=&quot;text-center flex&quot;&gt;
+        &lt;x-hyde-ui::input placeholder=&quot;Enter email&quot; /&gt;
+
+        &lt;x-hyde-ui::button-primary&gt;
+            Subscribe
+        &lt;/x-hyde-ui::button-primary&gt;
+    &lt;/x-slot&gt;
+&lt;/x-hyde-ui::card&gt;
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/hydephp/ui-kit/art/newsletter-signup-example-min.png" alt="Newsletter Screenshot" /></p>
+<h2>GitHub Repository<a id="github-repository" href="#github-repository" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>You can find the source code for the UI Kit on GitHub at <a href="https://github.com/hydephp/ui-kit">hydephp/ui-kit</a>.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
