@@ -253,6 +253,26 @@
 </ul>
 </li>
 <li>
+<a href="#additional-advanced-options">Additional Advanced Options</a>
+<ul>
+<li>
+<a href="#mediaextensions">media_extensions</a>
+</li>
+<li>
+<a href="#safeoutputdirectories">safe_output_directories</a>
+</li>
+<li>
+<a href="#generatebuildmanifest">generate_build_manifest</a>
+</li>
+<li>
+<a href="#buildmanifestpath">build_manifest_path</a>
+</li>
+<li>
+<a href="#hydefrontversion-and-hydefrontcdnurl">hydefront_version and hydefront_cdn_url</a>
+</li>
+</ul>
+</li>
+<li>
 <a href="#blade-views">Blade Views</a>
 </li>
 <li>
@@ -695,6 +715,38 @@ use Hyde\Framework\Features\Navigation\NavItem;
 <p>This feature works similarly to the automatic navigation menu dropdowns, but instead place the sidebar items in named groups.
 This feature is enabled by default, so you only need to place your pages in subdirectories to have them grouped.</p>
 <p>For example: <code>_docs/getting-started/installation.md</code> will be placed in a group called &quot;Getting Started&quot;.</p>
+<h2>Additional Advanced Options<a id="additional-advanced-options" href="#additional-advanced-options" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>The following configuration options in the <code>confg/hyde.php</code> file are intended for advanced users and
+should only be modified if you fully understand their impact. The code examples show the default values.</p>
+<h3><code>media_extensions</code><a id="mediaextensions" href="#mediaextensions" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>This option allows you to specify file extensions considered as media files, which will be copied to the output directory.
+To add more extensions, either append them to the existing array or override the entire array.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>use \Hyde\Support\Filesystem\MediaFile;
+
+'media_extensions' =&gt; array_merge([], MediaFile::EXTENSIONS),
+</code></pre>
+<h3><code>safe_output_directories</code><a id="safeoutputdirectories" href="#safeoutputdirectories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>This setting defines a list of directories deemed safe to empty during the site build process as a safeguard to prevent accidental data loss.
+If the site output directory is not in this list, the build command will prompt for confirmation before emptying it. It is preconfigured
+with common directories including the default one, but you are free to change this to include any custom directories you may need.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'safe_output_directories' =&gt; ['_site', 'docs', 'build'],
+</code></pre>
+<h3><code>generate_build_manifest</code><a id="generatebuildmanifest" href="#generatebuildmanifest" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Determines whether a JSON build manifest with metadata about the build should be generated. Set to <code>true</code> to enable.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'generate_build_manifest' =&gt; true,
+</code></pre>
+<h3><code>build_manifest_path</code><a id="buildmanifestpath" href="#buildmanifestpath" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Specifies the path where the build manifest should be saved, relative to the project root.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'build_manifest_path' =&gt; 'app/storage/framework/cache/build-manifest.json',
+</code></pre>
+<h3><code>hydefront_version</code> and <code>hydefront_cdn_url</code><a id="hydefrontversion-and-hydefrontcdnurl" href="#hydefrontversion-and-hydefrontcdnurl" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>These options allow you to specify the HydeFront version and CDN URL when loading <code>app.css</code> from the CDN.</p>
+<p>Only change these if you know what you're doing as some versions may incompatible with your Hyde version.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>use \Hyde\Framework\Services\AssetService;
+
+'hydefront_version' =&gt; AssetService::HYDEFRONT_VERSION,
+'hydefront_cdn_url' =&gt; AssetService::HYDEFRONT_CDN_URL,
+</code></pre>
 <h2>Blade Views<a id="blade-views" href="#blade-views" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Hyde uses the Laravel Blade templating engine. Most parts of the included templates have been extracted into components to be customized easily.
 Before editing the views you should familiarize yourself with the <a href="https://laravel.com/docs/10.x/blade">Laravel Blade Documentation</a>.</p>
