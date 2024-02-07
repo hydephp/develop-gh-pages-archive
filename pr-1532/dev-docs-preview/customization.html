@@ -714,7 +714,9 @@ should only be modified if you fully understand their impact. The code examples 
 <h3><code>media_extensions</code><a id="mediaextensions" href="#mediaextensions" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>This option allows you to specify file extensions considered as media files, which will be copied to the output directory.
 To add more extensions, either append them to the existing array or override the entire array.</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'media_extensions' =&gt; array_merge([], \Hyde\Support\Filesystem\MediaFile::EXTENSIONS),
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>use \Hyde\Support\Filesystem\MediaFile;
+
+'media_extensions' =&gt; array_merge([], MediaFile::EXTENSIONS),
 </code></pre>
 <h3><code>safe_output_directories</code><a id="safeoutputdirectories" href="#safeoutputdirectories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>This setting defines a list of directories deemed safe to empty during the site build process as a safeguard to prevent accidental data loss.
@@ -733,8 +735,10 @@ with common directories including the default one, but you are free to change th
 <h3><code>hydefront_version</code> and <code>hydefront_cdn_url</code><a id="hydefrontversion-and-hydefrontcdnurl" href="#hydefrontversion-and-hydefrontcdnurl" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>These options allow you to specify the HydeFront version and CDN URL when loading <code>app.css</code> from the CDN.</p>
 <p>Only change these if you know what you're doing as some versions may incompatible with your Hyde version.</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'hydefront_version' =&gt; \Hyde\Framework\Services\AssetService::HYDEFRONT_VERSION,
-'hydefront_cdn_url' =&gt; \Hyde\Framework\Services\AssetService::HYDEFRONT_CDN_URL,
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>use \Hyde\Framework\Services\AssetService;
+
+'hydefront_version' =&gt; AssetService::HYDEFRONT_VERSION,
+'hydefront_cdn_url' =&gt; AssetService::HYDEFRONT_CDN_URL,
 </code></pre>
 <h2>Blade Views<a id="blade-views" href="#blade-views" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Hyde uses the Laravel Blade templating engine. Most parts of the included templates have been extracted into components to be customized easily.
@@ -913,7 +917,7 @@ You can of course use arrays like normal even in namespaced configuration.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1532" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1532</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/abec12b0698b9046ee2a469d519d19d907bd6949"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">abec12b0698b9046ee2a469d519d19d907bd6949</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e24815ac47d4065106ee3fb230e2b07336e6843c"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e24815ac47d4065106ee3fb230e2b07336e6843c</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1532" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
