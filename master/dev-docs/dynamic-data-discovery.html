@@ -343,7 +343,7 @@ You might also want to read about the <a href="autodiscovery">autodiscovery life
 <h3>The factory pipeline, in short<a id="the-factory-pipeline-in-short" href="#the-factory-pipeline-in-short" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>After basic information about the page has been gathered, such as the source file information and the front matter,
 the page model is run through a series of factories. These are just classes that work around the limited data
-that is available at this point, and will assign the rich data needed to make your Hyde page awesome.</p>
+that is available at this point and will generate the rich data used to make your Hyde page awesome.</p>
 <p>There are a few factory classes. The one we will be looking at here is the <code>HydePageDataFactory</code> class, which is
 responsible for data applicable to all page models. Complex structures and data only relevant to some page types
 have their own factories, making the code more modular and maintainable.</p>
@@ -387,7 +387,7 @@ always match the property names on the page object, so we just need to loop over
     $this-&gt;{$key} = $value;
 }
 </code></pre>
-<p>And that's pretty much it! Hyde will do this for all the data it can discover, all so that you can focus on your content.</p>
+<p>And that's pretty much it! Hyde will do this for all the data it can discover, freeing you to focus on your content.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         

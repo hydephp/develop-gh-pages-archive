@@ -373,7 +373,7 @@
     <section id="document-main-content" itemprop="articleBody">
         <h2>Introduction to Hyde Posts<a id="introduction-to-hyde-posts" href="#introduction-to-hyde-posts" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Making blog posts with Hyde is easy. At the most basic level, all you need is to add a Markdown file to your <code>_posts</code> folder.</p>
-<p>To use the full power of the Hyde post module however, you'll want to add YAML <a href="front-matter">Front Matter</a> to your posts.</p>
+<p>To use the full power of the Hyde post module you'll want to add YAML <a href="front-matter">Front Matter</a> to your posts.</p>
 <p><strong>You can interactively scaffold posts with automatic front matter using the HydeCLI:</strong></p>
 <pre><code class="language-bash">php hyde make:post
 </code></pre>
@@ -402,7 +402,7 @@ markup for the post as well as meta tags and post feeds.</p>
 <p>You are encouraged to look at the compiled HTML to learn
 and understand how your front matter is used. You can read more about the Front Matter format in the <a href="front-matter">Front Matter</a> documentation.</p>
 <h3>Blog Post Example<a id="blog-post-example" href="#blog-post-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Before digging in deeper on all the supported options, let's take a look at what a basic post with front matter looks like.</p>
+<p>Before digging deeper into all the supported options, let's take a look at what a basic post with front matter looks like.</p>
 <pre><code class="language-markdown"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_posts/my-new-post.md</small>---
 title: My New Post
 description: A short description used in previews and SEO
@@ -462,8 +462,8 @@ Keep on reading to see further explanations, details, and examples.</p>
 </tr>
 </tbody>
 </table>
-<p>Note that YAML here is pretty forgiving. In most cases you do not need to wrap strings in quotes,
-but it can help in certain edge cases, for example if the text contains special Yaml characters, thus they are included here.</p>
+<p>Note that YAML here is pretty forgiving. In most cases you do not need to wrap strings in quotes.
+However, it can help in certain edge cases, for example if the text contains special Yaml characters, thus they are included here.</p>
 <p>In the examples below, when there are multiple examples, they signify various ways to use the same property.</p>
 <p>When specifying an array you don't need all the sub-properties. The examples generally show all the supported values.</p>
 <h3>Title<a id="title" href="#title" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
@@ -533,7 +533,7 @@ for a detailed blog post with examples and schema information!</p>
 <pre><code class="language-markdown">![Image Alt](../media/image.png &quot;Image Title&quot;)
 </code></pre>
 <p><em>Note the relative path since the blog post is compiled to <code>posts/example.html</code></em></p>
-<p>To learn more, check out the <a href="managing-assets#managing-images">chapter in managing assets</a></p>
+<p>To learn more, check out the <a href="managing-assets#managing-images">managing assets chapter</a> on the topic.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         

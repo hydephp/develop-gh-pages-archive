@@ -336,7 +336,7 @@
     </header>
     <section id="document-main-content" itemprop="articleBody">
         <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>The Extensions API a powerful interface designed for package developers who want to extend the functionality of HydePHP.</p>
+<p>The Extensions API is a powerful interface designed for package developers who want to extend the functionality of HydePHP.</p>
 <p>Using the API, you can hook directly into the HydePHP Kernel and extend sites with custom page types and new features.</p>
 <p>This documentation page functions heavily through examples, so it's recommended that the sections are read in order.</p>
 <h3>Prerequisites<a id="prerequisites" href="#prerequisites" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
@@ -355,7 +355,7 @@ so you can understand how your code works with the internals.</p>
 </li>
 </ul>
 <h3>The why and how of the Extensions API<a id="the-why-and-how-of-the-extensions-api" href="#the-why-and-how-of-the-extensions-api" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>HydePHP being a static site generator, the Extensions API is centered around <a href="page-models">Page Models</a>,
+<p>HydePHP being a static site generator, the Extensions API is centred around <a href="page-models">Page Models</a>,
 which you are hopefully already familiar with, otherwise you should read up on them first.</p>
 <p>What the Extensions API does is to allow you to create custom page types, and tell HydePHP how to discover them.
 This may sound like a small thing, but it's actually incredibly powerful as the page models are the foundation
@@ -388,10 +388,10 @@ class JsonPageExtension extends HydeExtension {
 For example, if you specify the file extension and source directory, that is all Hyde needs to know to discover the pages.</p>
 <p>If our pages need more complex discovery logic, we can create custom handlers. so let's take a quick look at that next.</p>
 <h3>Discovery handlers<a id="discovery-handlers" href="#discovery-handlers" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>The discovery handlers lets you run code at various points of the booting process. This is usually only needed if your
+<p>The discovery handlers let you run code at various points of the booting process. This is usually only needed if your
 page models cannot provide the information required for Hyde run the standard auto-discovery, and thus need custom logic.</p>
 <p>Usually in these cases, you would only need to add files to the Kernel <code>FileCollection</code>,
-though the <code>HydeExtension</code> class offers following three discovery handlers, in case you need them:</p>
+though the <code>HydeExtension</code> class offers the following three discovery handlers, in case you need them:</p>
 <pre><code class="language-php">/** Runs during file discovery */
 public function discoverFiles(FileCollection $collection): void;
 
@@ -417,7 +417,7 @@ by implementing the <code>discoverPages</code> method in our extension class, an
 }
 </code></pre>
 <p>Since the discovery steps are handled sequentially, the added pages will automatically be discovered as routes without
-us having to implement that handler method. As we inject the page objects directly, we bypass the need of the <code>FileCollection</code>.</p>
+us having to implement that handler method. As we inject the page objects directly, we bypass the need for the <code>FileCollection</code>.</p>
 <h2>Registering your extension<a id="registering-your-extension" href="#registering-your-extension" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Now that we have our extension class, we need to register it with HydePHP.</p>
 <p>It's important that your class is registered before the HydeKernel boots. Therefore, an excellent place for this is the
