@@ -243,6 +243,9 @@
 <a href="#excluding-items-blacklist">Excluding Items (Blacklist)</a>
 </li>
 <li>
+<a href="#adding-custom-navigation-menu-links">Adding Custom Navigation Menu Links</a>
+</li>
+<li>
 <a href="#automatic-navigation-menu-dropdowns">Automatic navigation menu dropdowns</a>
 </li>
 <li>
@@ -682,17 +685,12 @@ As you can see, the <code>404</code> page has already been filled in for you.</p
 navigation:
     hidden: true
 ---
-
-#### Adding Custom Navigation Menu Links
-
-You can easily add custom navigation menu links similar how we add Authors. Simply add a `NavItem` model to the `navigation.custom` array.
-
-When linking to an external site, you should use the `NavItem::forLink()` method facade. The first two arguments are the
-destination and label, both required. Third argument is the priority, which is optional, and defaults to 500.
-
-&lt;!-- HYDE[Filepath]config/hyde.php --&gt;
-```php
-use Hyde\Framework\Features\Navigation\NavItem;
+</code></pre>
+<h4>Adding Custom Navigation Menu Links<a id="adding-custom-navigation-menu-links" href="#adding-custom-navigation-menu-links" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>You can easily add custom navigation menu links similar how we add Authors. Simply add a <code>NavItem</code> model to the <code>navigation.custom</code> array.</p>
+<p>When linking to an external site, you should use the <code>NavItem::forLink()</code> method facade. The first two arguments are the
+destination and label, both required. Third argument is the priority, which is optional, and defaults to 500.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>use Hyde\Framework\Features\Navigation\NavItem;
 
 'navigation' =&gt; [
     'custom' =&gt; [
