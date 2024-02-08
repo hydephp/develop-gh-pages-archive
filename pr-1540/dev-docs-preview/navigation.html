@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HydePHP Documentation Preview - Navigation</title>
+<title>HydePHP Documentation Preview - Navigation Menus</title>
 
 
 
 <link rel="canonical" href="https://hydephp.github.io/develop/pr-1540/dev-docs-preview/dev-docs-preview/navigation.html">
-<meta name="twitter:title" content="HydePHP Documentation Preview - Navigation">
-<meta property="og:title" content="HydePHP Documentation Preview - Navigation">
+<meta name="twitter:title" content="HydePHP Documentation Preview - Navigation Menus">
+<meta property="og:title" content="HydePHP Documentation Preview - Navigation Menus">
 
 
 <link rel="sitemap" href="https://hydephp.github.io/develop/pr-1540/dev-docs-preview/sitemap.xml" type="application/xml" title="Sitemap">
@@ -156,11 +156,25 @@
         </a>
     </li>                                            <li class="sidebar-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
             <a href="../dev-docs-preview/navigation.html" aria-current="true" class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10">
-            Navigation
+            Navigation Menus
         </a>
 
                     <span class="sr-only">Table of contents</span>
-            
+            <ul class="table-of-contents">
+<li>
+<a href="#introduction">Introduction</a>
+</li>
+<li>
+<a href="#quick-primer-on-the-internals">Quick primer on the internals</a>
+</li>
+<li>
+<a href="#what-to-customize">What to customize?</a>
+</li>
+<li>
+<a href="#digging-deeper-into-the-internals">Digging deeper into the internals</a>
+</li>
+</ul>
+
             </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
             <a href="../dev-docs-preview/advanced-markdown.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Advanced Markdown
@@ -292,10 +306,53 @@
         <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)] prose dark:prose-invert">
     
     <header id="document-header" class="flex items-center flex-wrap justify-between prose-h1:mb-3">
-        <h1>Navigation</h1>
+        <h1>Navigation Menus</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        
+        <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>A great time-saving feature of HydePHP is the automatic navigation menu and documentation sidebar generation.
+Hyde is designed to automatically configure these menus for you based on the content you have in your project.</p>
+<p>There are two types of navigation menus in Hyde:</p>
+<ul>
+<li>
+<strong>Primary Navigation Menu</strong>: This is the main navigation menu that appears on most pages of your site.</li>
+<li>
+<strong>Documentation Sidebar</strong>: This is a sidebar that appears on documentation pages and contains links to other documentation pages.</li>
+</ul>
+<p>HydePHP automatically generates all of these menus for you based on the content of your project,
+and does its best to automatically configure them in the way that you most likely want them to be.</p>
+<p>Of course, this won't always be perfect, so thankfully Hyde makes it a breeze to customize these menus to your liking.
+Keep on reading to learn how! To learn even more about the sidebars, visit the <a href="documentation-pages">Documentation Pages</a> documentation.</p>
+<h2>Quick primer on the internals<a id="quick-primer-on-the-internals" href="#quick-primer-on-the-internals" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>It may be beneficial to understand the internal workings of the navigation menus to take full advantage of the options.</p>
+<p>In short, both navigation menu types extend the same class (meaning they share the same base code), this means that the way
+they are configured are very similar, making the documentation here applicable to both types of menus.</p>
+<p>See the <a href="#digging-deeper-into-the-internals">Digging Deeper</a> section of this page if you want the full scoop on the internals!</p>
+<h2>What to customize?<a id="what-to-customize" href="#what-to-customize" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Here is a quick overview of what you might want to customize in your navigation menus:</p>
+<ul>
+<li>Navigation menu item labels - the text that appears in the menu links</li>
+<li>Navigation menu item priority - control the order in which the links appear</li>
+<li>Navigation menu item visibility - control if pages may show up in the menus</li>
+<li>Navigation menu item grouping - group pages together in dropdowns</li>
+</ul>
+<h2>Digging deeper into the internals<a id="digging-deeper-into-the-internals" href="#digging-deeper-into-the-internals" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>While not required to know, you may find it interesting to learn more about how the navigation is handled internally.
+The best way to learn about this is to look at the source code, so here is a high-level overview with details on where to look in the source code.</p>
+<p>The main navigation menu is the <code>NavigationMenu</code> class, and the documentation sidebar is the <code>DocumentationSidebar</code> class.
+Both extend the same <code>BaseNavigationMenu</code> class:</p>
+<pre><code class="language-php">use Hyde\Framework\Features\Navigation\NavigationMenu;
+use Hyde\Framework\Features\Navigation\DocumentationSidebar;
+use \Hyde\Framework\Features\Navigation\BaseNavigationMenu;
+</code></pre>
+<p>Within the <code>BaseNavigationMenu</code> class, you will find the main logic for how the menus are generated,
+while the child implementations contain the extra logic tailored for their specific use cases.</p>
+<p>All the navigation menus store the menu items in their <code>$items</code> array containing instances of the <code>NavItem</code> class.</p>
+<p>The <code>NavItem</code> class is a simple class that contains the label and URL of the menu item and is used to represent each item in the menu.
+Dropdowns are represented by <code>DropdownNavItem</code> instances, which extend the <code>NavItem</code> class and contain an array of additional <code>NavItem</code> instances.</p>
+<pre><code class="language-php">use Hyde\Framework\Features\Navigation\NavItem;
+use Hyde\Framework\Features\Navigation\DropdownNavItem;
+</code></pre>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
@@ -394,7 +451,7 @@
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1540</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/08297506855aa842c8923f176863793331958060"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">08297506855aa842c8923f176863793331958060</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/c0f748f1124e69a8e2115eaf7623ade037347cf0"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">c0f748f1124e69a8e2115eaf7623ade037347cf0</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
