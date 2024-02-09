@@ -226,9 +226,6 @@
 <a href="#customizing-the-documentation-sidebar">Customizing the documentation sidebar</a>
 </li>
 <li>
-<a href="#excluding-items-blacklist">Excluding Items (Blacklist)</a>
-</li>
-<li>
 <a href="#adding-custom-navigation-menu-links">Adding Custom Navigation Menu Links</a>
 </li>
 <li>
@@ -605,22 +602,6 @@ Hyde is designed to automatically configure these menus for you based on the con
 </ul>
 <p>Learn more in the <a href="documentation-pages">Documentation Pages</a> documentation.</p>
 <blockquote class="info"><p>Tip: When using subdirectory-based dropdowns, you can set their priority using the directory name as the array key.</p></blockquote>
-<h4>Excluding Items (Blacklist)<a id="excluding-items-blacklist" href="#excluding-items-blacklist" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>Sometimes, especially if you have a lot of pages, you may want to prevent links from showing up in the main navigation menu.
-To remove items from being automatically added, simply add the page's route key to the blacklist.
-As you can see, the <code>404</code> page has already been filled in for you.</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'navigation' =&gt; [
-    'exclude' =&gt; [
-        '404'
-    ]
-]
-</code></pre>
-<p>You can also specify that a page should be excluded by setting the page front matter.</p>
-<pre><code class="language-markdown">---
-navigation:
-    hidden: true
----
-</code></pre>
 <h4>Adding Custom Navigation Menu Links<a id="adding-custom-navigation-menu-links" href="#adding-custom-navigation-menu-links" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>You can easily add custom navigation menu links similar how we add Authors. Simply add a <code>NavItem</code> model to the <code>navigation.custom</code> array.</p>
 <p>When linking to an external site, you should use the <code>NavItem::forLink()</code> method facade. The first two arguments are the
@@ -857,7 +838,7 @@ You can of course use arrays like normal even in namespaced configuration.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1540</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/4f484cde825728b0a371b6977ae3ceb8caeb2201"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">4f484cde825728b0a371b6977ae3ceb8caeb2201</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/87d452ea3b0e9919ef08097a123853d858327acc"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">87d452ea3b0e9919ef08097a123853d858327acc</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
