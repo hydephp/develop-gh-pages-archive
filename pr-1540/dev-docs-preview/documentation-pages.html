@@ -167,9 +167,6 @@
 <a href="#sidebar">Sidebar</a>
 <ul>
 <li>
-<a href="#table-of-contents">Table of contents</a>
-</li>
-<li>
 <a href="#sidebar-ordering">Sidebar ordering</a>
 </li>
 <li>
@@ -525,10 +522,8 @@ and where the data is from as well as where it can be overridden.</p>
 <h2>Sidebar<a id="sidebar" href="#sidebar" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The sidebar is automatically generated from the files in the <code>_docs</code> directory. You will probably want to change the order
 of these items. You can do this in two ways, either in the config or with front matter using the navigation array settings.</p>
-<h3>Table of contents<a id="table-of-contents" href="#table-of-contents" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Hyde automatically generates a table of contents for the page and adds it to the sidebar.</p>
-<p>The behaviour of this can be changed in the configuration file.
-See the <a href="navigation">navigation menu documentation</a> for more details.</p>
+<p>Since this feature shares a lot of similarities and implementation details with the navigation menu,
+I recommend you read the <a href="navigation-menu">navigation menu documentation</a> page as well to learn more about the fundamentals and terminology.</p>
 <h3>Sidebar ordering<a id="sidebar-ordering" href="#sidebar-ordering" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>The sidebar is sorted/ordered by the <code>priority</code> property. The higher the priority the further down in the sidebar it will be.
 The default priority is 999. You can override the priority using the following front matter:</p>
@@ -566,6 +561,7 @@ Any pages without the group front matter will get put in the &quot;Other&quot; g
 <p>You can also automatically group your documentation pages by placing source files in sub-directories.</p>
 <p>For example, putting a Markdown file in <code>_docs/getting-started/</code>, is equivalent to adding the same front matter seen above.</p>
 <blockquote class="info"><p>Note that when the <a href="#using-flattened-output-paths">flattened output paths</a> setting is enabled (which it is by default), the file will still be compiled to the <code>_site/docs/</code> directory like it would be if you didn't use the subdirectories. Note that this means that you can't have two documentation pages with the same filename as they overwrite each other.</p></blockquote>
+<blockquote class="info"><p>Tip: When using subdirectory-based dropdowns, you can set their priority using the directory name as the array key.</p></blockquote>
 <h3>Hiding items<a id="hiding-items" href="#hiding-items" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>You can hide items from the sidebar by adding the <code>hidden</code> property to the front matter:</p>
 <pre><code class="language-yaml">navigation:
@@ -613,6 +609,7 @@ The array key is the directory name, and the value is the label.</p>
 ],
 </code></pre>
 <h3>Table of contents settings<a id="table-of-contents-settings" href="#table-of-contents-settings" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Hyde automatically generates a table of contents for the page and adds it to the sidebar.</p>
 <p>In the <code>config/docs.php</code> file you can configure the behaviour, content, and the look and feel of the sidebar table of contents.
 You can also disable the feature completely.</p>
 <pre><code class="language-php">'table_of_contents' =&gt; [
@@ -782,7 +779,7 @@ Just target the <code>.edit-page-link</code> class.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1540</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e795f65a6297b357fe63380a6859df504eb503c2"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e795f65a6297b357fe63380a6859df504eb503c2</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/b6a5a260544ab30ab70c03bf440bdb18d8485ab2"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">b6a5a260544ab30ab70c03bf440bdb18d8485ab2</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
