@@ -226,12 +226,6 @@
 <a href="#customizing-the-documentation-sidebar">Customizing the documentation sidebar</a>
 </li>
 <li>
-<a href="#basic-syntax-for-changing-the-priorities">Basic syntax for changing the priorities</a>
-</li>
-<li>
-<a href="#explicit-syntax-for-changing-the-priorities">Explicit syntax for changing the priorities</a>
-</li>
-<li>
 <a href="#changing-the-menu-item-labels">Changing the menu item labels</a>
 </li>
 <li>
@@ -614,36 +608,6 @@ Hyde is designed to automatically configure these menus for you based on the con
 </ul>
 <p>Learn more in the <a href="documentation-pages">Documentation Pages</a> documentation.</p>
 <blockquote class="info"><p>Tip: When using subdirectory-based dropdowns, you can set their priority using the directory name as the array key.</p></blockquote>
-<h4>Basic syntax for changing the priorities<a id="basic-syntax-for-changing-the-priorities" href="#basic-syntax-for-changing-the-priorities" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>The cleanest way is to use the list-style syntax where each item will get the priority calculated according to its position in the list, plus an offset of <code>500</code>.
-The offset is added to make it easier to place pages earlier in the list using front matter or with explicit priority settings.</p>
-<pre><code class="language-php">[
-    'readme', // Gets priority 500
-    'installation', // Gets priority 501
-    'getting-started', // Gets priority 502
-]
-</code></pre>
-<h4>Explicit syntax for changing the priorities<a id="explicit-syntax-for-changing-the-priorities" href="#explicit-syntax-for-changing-the-priorities" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>You can also specify explicit priorities by adding a value to the array key:</p>
-<pre><code class="language-php">[
-    'readme' =&gt; 10, // Gets priority 10
-    'installation' =&gt; 15, // Gets priority 15
-    'getting-started' =&gt; 20, // Gets priority 20
-]
-</code></pre>
-<p>You can also combine these options if you want:</p>
-<pre><code class="language-php">[
-    'readme' =&gt; 10, // Gets priority 10
-    'installation', // Gets priority 500
-    'getting-started', // Gets priority 501
-]
-</code></pre>
-<p>You can also set the priority of a page directly in the front matter.</p>
-<pre><code class="language-markdown">---
-navigation:
-    priority: 25
----
-</code></pre>
 <h4>Changing the menu item labels<a id="changing-the-menu-item-labels" href="#changing-the-menu-item-labels" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>Hyde makes a few attempts to find a suitable label for the navigation menu items to automatically create helpful titles.
 You can override the label using the <code>navigation.label</code> front matter property.</p>
@@ -908,7 +872,7 @@ You can of course use arrays like normal even in namespaced configuration.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1540</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/92f40f4c01af8587853e0346d5a3efa54f5b3338"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">92f40f4c01af8587853e0346d5a3efa54f5b3338</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e0d0b6f6caedf66a0c52d547121998efe6b16c90"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e0d0b6f6caedf66a0c52d547121998efe6b16c90</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
