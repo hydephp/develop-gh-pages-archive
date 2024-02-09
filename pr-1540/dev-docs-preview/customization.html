@@ -225,12 +225,6 @@
 <li>
 <a href="#customizing-the-documentation-sidebar">Customizing the documentation sidebar</a>
 </li>
-<li>
-<a href="#automatic-navigation-menu-dropdowns">Automatic navigation menu dropdowns</a>
-</li>
-<li>
-<a href="#automatic-documentation-sidebar-grouping">Automatic documentation sidebar grouping</a>
-</li>
 </ul>
 </li>
 </ul>
@@ -599,18 +593,6 @@ Hyde is designed to automatically configure these menus for you based on the con
 </ul>
 <p>Learn more in the <a href="documentation-pages">Documentation Pages</a> documentation.</p>
 <blockquote class="info"><p>Tip: When using subdirectory-based dropdowns, you can set their priority using the directory name as the array key.</p></blockquote>
-<h4>Automatic navigation menu dropdowns<a id="automatic-navigation-menu-dropdowns" href="#automatic-navigation-menu-dropdowns" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>HydePHP has a neat feature to automatically place pages in dropdowns based on subdirectories.</p>
-<p>For pages that can be in the main site menu, ths feature needs to be enabled in the <code>hyde.php</code> config file.</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'navigation' =&gt; [
-    'subdirectories' =&gt; 'dropdown',
-],
-</code></pre>
-<p>Now if you create a page called <code>_pages/about/contact.md</code> it will automatically be placed in a dropdown called &quot;About&quot;.</p>
-<h4>Automatic documentation sidebar grouping<a id="automatic-documentation-sidebar-grouping" href="#automatic-documentation-sidebar-grouping" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>This feature works similarly to the automatic navigation menu dropdowns, but instead place the sidebar items in named groups.
-This feature is enabled by default, so you only need to place your pages in subdirectories to have them grouped.</p>
-<p>For example: <code>_docs/getting-started/installation.md</code> will be placed in a group called &quot;Getting Started&quot;.</p>
 <h2>Additional Advanced Options<a id="additional-advanced-options" href="#additional-advanced-options" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The following configuration options in the <code>confg/hyde.php</code> file are intended for advanced users and
 should only be modified if you fully understand their impact. The code examples show the default values.</p>
@@ -820,7 +802,7 @@ You can of course use arrays like normal even in namespaced configuration.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1540</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/c43b1261902a5f6ba91de8e0c891d132797ed377"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">c43b1261902a5f6ba91de8e0c891d132797ed377</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e795f65a6297b357fe63380a6859df504eb503c2"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e795f65a6297b357fe63380a6859df504eb503c2</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>

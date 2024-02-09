@@ -218,6 +218,20 @@
 <li>
 <a href="#adding-custom-navigation-menu-links">Adding Custom Navigation Menu Links</a>
 </li>
+<li>
+<a href="#configure-subdirectory-handling">Configure subdirectory handling</a>
+</li>
+<li>
+<a href="#automatic-menu-groups">Automatic menu groups</a>
+<ul>
+<li>
+<a href="#automatic-navigation-menu-dropdowns">Automatic navigation menu dropdowns</a>
+</li>
+<li>
+<a href="#automatic-documentation-sidebar-grouping">Automatic documentation sidebar grouping</a>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -525,6 +539,28 @@ destination and label, both required. Third argument is the priority, which is o
 <p>Simplified, this will then be rendered as follows:</p>
 <pre><code class="language-html">&lt;a href=&quot;https://github.com/hydephp/hyde&quot;&gt;GitHub&lt;/a&gt;
 </code></pre>
+<h3>Configure subdirectory handling<a id="configure-subdirectory-handling" href="#configure-subdirectory-handling" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Within the Hyde config you can configure how subdirectories should be displayed in the menu.</p>
+<pre><code>'navigation' =&gt; [
+    'subdirectories' =&gt; 'dropdown'
+]
+</code></pre>
+<p>Dropdown means that pages in subdirectories will be displayed in a dropdown menu,
+while <code>flat</code> means that pages in subdirectories will be displayed as individual items in the menu.
+Hidden means that pages in subdirectories will not be displayed in the menu at all.</p>
+<h3>Automatic menu groups<a id="automatic-menu-groups" href="#automatic-menu-groups" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>HydePHP has a neat feature to automatically place pages in dropdowns based on subdirectories.</p>
+<h4>Automatic navigation menu dropdowns<a id="automatic-navigation-menu-dropdowns" href="#automatic-navigation-menu-dropdowns" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>For pages that can be in the main site menu, ths feature needs to be enabled in the <code>hyde.php</code> config file.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'navigation' =&gt; [
+    'subdirectories' =&gt; 'dropdown',
+],
+</code></pre>
+<p>Now if you create a page called <code>_pages/about/contact.md</code> it will automatically be placed in a dropdown called &quot;About&quot;.</p>
+<h4>Automatic documentation sidebar grouping<a id="automatic-documentation-sidebar-grouping" href="#automatic-documentation-sidebar-grouping" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>This feature works similarly to the automatic navigation menu dropdowns, but instead place the sidebar items in named groups.
+This feature is enabled by default, so you only need to place your pages in subdirectories to have them grouped.</p>
+<p>For example: <code>_docs/getting-started/installation.md</code> will be placed in a group called &quot;Getting Started&quot;.</p>
 <h2>Digging deeper into the internals<a id="digging-deeper-into-the-internals" href="#digging-deeper-into-the-internals" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>While not required to know, you may find it interesting to learn more about how the navigation is handled internally.
 The best way to learn about this is to look at the source code, so here is a high-level overview with details on where to look in the source code.</p>
@@ -640,7 +676,7 @@ use Hyde\Framework\Features\Navigation\DropdownNavItem;
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1540</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/c43b1261902a5f6ba91de8e0c891d132797ed377"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">c43b1261902a5f6ba91de8e0c891d132797ed377</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e795f65a6297b357fe63380a6859df504eb503c2"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e795f65a6297b357fe63380a6859df504eb503c2</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
