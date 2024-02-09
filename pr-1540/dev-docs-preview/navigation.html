@@ -175,6 +175,20 @@
 </li>
 <li>
 <a href="#front-matter-configuration">Front matter configuration</a>
+<ul>
+<li>
+<a href="#label">label</a>
+</li>
+<li>
+<a href="#priority">priority</a>
+</li>
+<li>
+<a href="#hidden">hidden</a>
+</li>
+<li>
+<a href="#group">group</a>
+</li>
+</ul>
 </li>
 <li>
 <a href="#digging-deeper-into-the-internals">Digging deeper into the internals</a>
@@ -353,10 +367,33 @@ General options for the entire navigation menus are also available in the <code>
 Here is a quick reference of the available options. The full documentation of each option is below.
 You don't need to specify all the keys, only the ones you want to customize.</p>
 <pre><code class="language-yaml">navigation:
-    'label' =&gt; 'string', # The text to display
-    'priority' =&gt; 'int',  # Order is also supported
-    'hidden' =&gt; 'bool',  # Visible is also supported (but obviously invert the value)
-    'group' =&gt; 'string', # Category is also supported
+    label: string  # The text to display
+    priority: int  # Order is also supported
+    hidden: bool   # Visible is also supported (but obviously invert the value)
+    group: string  # Category is also supported
+</code></pre>
+<h3><code>label</code><a id="label" href="#label" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The <code>label</code> option allows you to customize the text that appears in the navigation menu for the page.</p>
+<pre><code class="language-yaml">navigation:
+    label: &quot;My Custom Label&quot;
+</code></pre>
+<h3><code>priority</code><a id="priority" href="#priority" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The <code>priority</code> option allows you to control the order in which the page appears in the navigation menu. You can also use <code>order</code> instead of <code>priority</code>.</p>
+<pre><code class="language-yaml">navigation:
+    priority: 10
+</code></pre>
+<h3><code>hidden</code><a id="hidden" href="#hidden" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The <code>hidden</code> option allows you to control if the page appears in the navigation menu. You can also use <code>visible</code> instead of <code>hidden</code>, but obviously invert the value.</p>
+<pre><code class="language-yaml">navigation:
+    hidden: true
+</code></pre>
+<h3><code>group</code><a id="group" href="#group" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The <code>group</code> option has a slightly different meaning depending on the type of navigation menu.
+For the primary navigation menu, it allows you to group pages together in dropdowns.
+For the sidebar, it allows you to group pages together in the sidebar under a common heading.
+You can also use <code>category</code> instead of <code>group</code>.</p>
+<pre><code class="language-yaml">navigation:
+    group: &quot;My Group&quot;
 </code></pre>
 <h2>Digging deeper into the internals<a id="digging-deeper-into-the-internals" href="#digging-deeper-into-the-internals" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>While not required to know, you may find it interesting to learn more about how the navigation is handled internally.
@@ -473,7 +510,7 @@ use Hyde\Framework\Features\Navigation\DropdownNavItem;
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1540</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/9d304d3febc28d2b3a12ec23fc88af4daf803b69"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">9d304d3febc28d2b3a12ec23fc88af4daf803b69</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/f53ada05426b40fc7212175c4818bfd77eac08d9"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">f53ada05426b40fc7212175c4818bfd77eac08d9</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
