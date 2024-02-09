@@ -548,7 +548,7 @@ You can change it with the following front matter:</p>
 <p>Sidebar grouping allows you to group items in the sidebar into categories. This is useful for creating a sidebar with a lot of items.
 The Hyde docs for instance use this.</p>
 <p>The feature is enabled automatically when one or more of your documentation pages have the <code>navigation.group</code> property set
-in the front matter. This will then switch to a slightly more compact sidebar layout with pages sorted into categories.
+in the front matter, or when subdirectories are used. This will then switch to a slightly more compact sidebar layout with pages sorted into categories.
 Any pages without the group front matter will get put in the &quot;Other&quot; group.</p>
 <h3>Sidebar footer customization<a id="sidebar-footer-customization" href="#sidebar-footer-customization" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>The sidebar footer contains, by default, a link to your site homepage. You can change this in the <code>config/docs.php</code> file.</p>
@@ -565,7 +565,7 @@ Any pages without the group front matter will get put in the &quot;Other&quot; g
 <h4>Automatic subdirectory-based grouping<a id="automatic-subdirectory-based-grouping" href="#automatic-subdirectory-based-grouping" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>You can also automatically group your documentation pages by placing source files in sub-directories.</p>
 <p>For example, putting a Markdown file in <code>_docs/getting-started/</code>, is equivalent to adding the same front matter seen above.</p>
-<blockquote class="info"><p>Note that when the <a href="#using-flattened-output-paths">flattened output paths</a> setting is enabled (which it is by default), the file will still be compiled to the <code>_site/docs/</code> directory like it would be if you didn't use the subdirectories.</p></blockquote>
+<blockquote class="info"><p>Note that when the <a href="#using-flattened-output-paths">flattened output paths</a> setting is enabled (which it is by default), the file will still be compiled to the <code>_site/docs/</code> directory like it would be if you didn't use the subdirectories. Note that this means that you can't have two documentation pages with the same filename as they overwrite each other.</p></blockquote>
 <h3>Hiding items<a id="hiding-items" href="#hiding-items" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>You can hide items from the sidebar by adding the <code>hidden</code> property to the front matter:</p>
 <pre><code class="language-yaml">navigation:
@@ -782,7 +782,7 @@ Just target the <code>.edit-page-link</code> class.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1540</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/e0d0b6f6caedf66a0c52d547121998efe6b16c90"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">e0d0b6f6caedf66a0c52d547121998efe6b16c90</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/4f484cde825728b0a371b6977ae3ceb8caeb2201"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">4f484cde825728b0a371b6977ae3ceb8caeb2201</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
