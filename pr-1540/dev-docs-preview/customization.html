@@ -226,9 +226,6 @@
 <a href="#customizing-the-documentation-sidebar">Customizing the documentation sidebar</a>
 </li>
 <li>
-<a href="#adding-custom-navigation-menu-links">Adding Custom Navigation Menu Links</a>
-</li>
-<li>
 <a href="#automatic-navigation-menu-dropdowns">Automatic navigation menu dropdowns</a>
 </li>
 <li>
@@ -602,21 +599,6 @@ Hyde is designed to automatically configure these menus for you based on the con
 </ul>
 <p>Learn more in the <a href="documentation-pages">Documentation Pages</a> documentation.</p>
 <blockquote class="info"><p>Tip: When using subdirectory-based dropdowns, you can set their priority using the directory name as the array key.</p></blockquote>
-<h4>Adding Custom Navigation Menu Links<a id="adding-custom-navigation-menu-links" href="#adding-custom-navigation-menu-links" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>You can easily add custom navigation menu links similar how we add Authors. Simply add a <code>NavItem</code> model to the <code>navigation.custom</code> array.</p>
-<p>When linking to an external site, you should use the <code>NavItem::forLink()</code> method facade. The first two arguments are the
-destination and label, both required. Third argument is the priority, which is optional, and defaults to 500.</p>
-<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>use Hyde\Framework\Features\Navigation\NavItem;
-
-'navigation' =&gt; [
-    'custom' =&gt; [
-        NavItem::forLink('https://github.com/hydephp/hyde', 'GitHub', 200),
-    ]
-]
-</code></pre>
-<p>Simplified, this will then be rendered as follows:</p>
-<pre><code class="language-html">&lt;a href=&quot;https://github.com/hydephp/hyde&quot;&gt;GitHub&lt;/a&gt;
-</code></pre>
 <h4>Automatic navigation menu dropdowns<a id="automatic-navigation-menu-dropdowns" href="#automatic-navigation-menu-dropdowns" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
 <p>HydePHP has a neat feature to automatically place pages in dropdowns based on subdirectories.</p>
 <p>For pages that can be in the main site menu, ths feature needs to be enabled in the <code>hyde.php</code> config file.</p>
@@ -838,7 +820,7 @@ You can of course use arrays like normal even in namespaced configuration.</p>
     <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
       <header class="flex flex-row nowrap items-center justify-between">
           <h3 class="text-lg font-bold mb-2 mr-3 flex">Documentation preview for&nbsp; <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">PR #1540</a> &nbsp;
-              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/87d452ea3b0e9919ef08097a123853d858327acc"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">87d452ea3b0e9919ef08097a123853d858327acc</span></a>)</small>
+              <small class="opacity-75">(#<a href="https://github.com/hydephp/develop/commit/c43b1261902a5f6ba91de8e0c891d132797ed377"><span style=" display: inline-flex; font-family: monospace; width: 7ch; white-space: nowrap; overflow: hidden; text-overflow: clip;">c43b1261902a5f6ba91de8e0c891d132797ed377</span></a>)</small>
           </h3>
           <small class="mb-2">
               <a href="https://github.com/hydephp/develop/pull/1540" class="dark:text-indigo-400 text-indigo-500 hover:text-indigo-600">Back to PR</a>
