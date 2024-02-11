@@ -32,6 +32,8 @@
     
     <meta id="meta-color-scheme" name="color-scheme" content="light">
     <script>if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.classList.add('dark'); document.getElementById('meta-color-scheme').setAttribute('content', 'dark');} else { document.documentElement.classList.remove('dark') } </script>
+
+
 </head>
 <body id="hyde-docs" class="bg-white dark:bg-gray-900 dark:text-white min-h-screen w-screen relative overflow-x-hidden overflow-y-auto"
       x-data="{ sidebarOpen: false, searchWindowOpen: false }" x-on:keydown.escape="searchWindowOpen = false; sidebarOpen = false" x-on:keydown.slash="searchWindowOpen = true">
@@ -215,6 +217,9 @@
 <a href="#disabling-the-footer-entirely">Disabling the footer entirely</a>
 </li>
 </ul>
+</li>
+<li>
+<a href="#head-and-script-html-hooks">Head and script HTML hooks</a>
 </li>
 <li>
 <a href="#navigation-menu--sidebar">Navigation Menu &amp; Sidebar</a>
@@ -583,6 +588,31 @@ and the rest of the data will be pulled from a matching entry.</p>
 <p>If you don't want to have a footer on your site, you can set the <code>'footer'</code> configuration option to <code>false</code>.</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'footer' =&gt; 'false',
 </code></pre>
+<h3>Head and script HTML hooks<a id="head-and-script-html-hooks" href="#head-and-script-html-hooks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<blockquote class="info"><p>Note: The configuration options <code>head</code> and <code>scripts</code> were added in HydePHP v1.5. If you are running an older version, you need to use the Blade options, or upgrade your project.</p></blockquote>
+<p>While the most robust way to add custom HTML to the head or body of your site is to publish the Blade layouts, or pushing to the <code>meta</code> or <code>scripts</code> stacks,
+you can also add custom HTML directly in the configuration file. This works especially well to quickly add things like analytics widgets or similar in the <code>hyde.yml</code> file, though the possibilities are endless.</p>
+<p>To add custom HTML to your layouts, you can use the <code>head</code> and <code>scripts</code> configuration options in the <code>config/hyde.php</code> file (or the <code>hyde.yml</code> file).
+The HTML will be added to the <code>&lt;head&gt;</code> section, or just before the closing <code>&lt;/body&gt;</code> tag, respectively.
+Note that the HTML is added to all pages. If you need to add HTML to a specific page, you will need to override the layout for that page.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'head' =&gt; '&lt;!-- Custom HTML in the head --&gt;',
+'scripts' =&gt; '&lt;!-- Custom HTML in the body --&gt;',
+</code></pre>
+<pre><code class="language-yaml"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>hyde.yml</small>hyde:
+  head: &quot;&lt;!-- Custom HTML in the head --&gt;&quot;
+  scripts: &quot;&lt;!-- Custom HTML in the body --&gt;&quot;
+</code></pre>
+<p>You can of course also add multiple lines of HTML:</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'head' =&gt; &lt;&lt;&lt;HTML
+    &lt;!-- Custom HTML in the head --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://example.com/styles.css&quot;&gt;
+HTML,
+</code></pre>
+<pre><code class="language-yaml"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>hyde.yml</small>hyde:
+  head: |
+    &lt;!-- Custom HTML in the head --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://example.com/styles.css&quot;&gt;
+</code></pre>
 <h3>Navigation Menu &amp; Sidebar<a id="navigation-menu--sidebar" href="#navigation-menu--sidebar" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>A great time-saving feature of HydePHP is the automatic navigation menu and documentation sidebar generation.
 Hyde is designed to automatically configure these menus for you based on the content you have in your project.</p>
@@ -800,6 +830,9 @@ You can of course use arrays like normal even in namespaced configuration.</p>
         }
     }
 </script>
+
+
+
 
 
 </body>
