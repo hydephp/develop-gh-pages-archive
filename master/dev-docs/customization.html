@@ -600,7 +600,7 @@ Hyde is designed to automatically configure these menus for you based on the con
 </ul>
 <p>Learn more in the <a href="documentation-pages">Documentation Pages</a> documentation.</p>
 <h2>Additional Advanced Options<a id="additional-advanced-options" href="#additional-advanced-options" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>The following configuration options in the <code>confg/hyde.php</code> file are intended for advanced users and
+<p>The following configuration options in the <code>config/hyde.php</code> file are intended for advanced users and
 should only be modified if you fully understand their impact. The code examples show the default values.</p>
 <h3><code>media_extensions</code><a id="mediaextensions" href="#mediaextensions" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>This option allows you to specify file extensions considered as media files, which will be copied to the output directory.
@@ -625,7 +625,7 @@ with common directories including the default one, but you are free to change th
 </code></pre>
 <h3><code>hydefront_version</code> and <code>hydefront_cdn_url</code><a id="hydefrontversion-and-hydefrontcdnurl" href="#hydefrontversion-and-hydefrontcdnurl" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>These options allow you to specify the HydeFront version and CDN URL when loading <code>app.css</code> from the CDN.</p>
-<p>Only change these if you know what you're doing as some versions may incompatible with your Hyde version.</p>
+<p>Only change these if you know what you're doing as some versions may be incompatible with your Hyde version.</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>use \Hyde\Framework\Services\AssetService;
 
 'hydefront_version' =&gt; AssetService::HYDEFRONT_VERSION,
