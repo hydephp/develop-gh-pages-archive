@@ -190,7 +190,7 @@
 <ul>
 <li>
 <a href="#using-includes">Using Includes</a>
-<ul>
+</li>
 <li>
 <a href="#markdown-includes">Markdown Includes</a>
 </li>
@@ -202,8 +202,6 @@
 </li>
 <li>
 <a href="#stock-includes">Stock Includes</a>
-</li>
-</ul>
 </li>
 </ul>
 </li>
@@ -432,7 +430,7 @@ Both Markdown and Blade includes will be rendered to HTML.</p>
 Includes::get('example.md');
 Includes::get('example.md', 'Default content');
 </code></pre>
-<h4>Markdown Includes<a id="markdown-includes" href="#markdown-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h3>Markdown Includes<a id="markdown-includes" href="#markdown-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Gets the rendered Markdown of a partial file in the includes directory. Supplying the file extension is optional.</p>
 <pre><code class="language-php">use Hyde\Support\Includes;
 
@@ -442,7 +440,7 @@ Includes::markdown('footer.md');
 // With default value if the file does not exist
 Includes::markdown('footer', 'Default content');
 </code></pre>
-<h4>Blade Includes<a id="blade-includes" href="#blade-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h3>Blade Includes<a id="blade-includes" href="#blade-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Gets the rendered Blade of a partial file in the includes directory. Supplying the file extension is optional.</p>
 <pre><code class="language-php">use Hyde\Support\Includes;
 
@@ -452,7 +450,7 @@ Includes::blade('banner.blade.php');
 // With default value if the file does not exist
 Includes::blade('banner', 'Default content');
 </code></pre>
-<h4>Directory Structure Example<a id="directory-structure-example" href="#directory-structure-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h3>Directory Structure Example<a id="directory-structure-example" href="#directory-structure-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Here is an example of the directory structure for includes:</p>
 <pre><code class="language-tree">resources/
 |-- includes/
@@ -460,7 +458,7 @@ Includes::blade('banner', 'Default content');
 |   |-- footer.md
 |   |-- banner.blade.php
 </code></pre>
-<h4>Stock Includes<a id="stock-includes" href="#stock-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h3>Stock Includes<a id="stock-includes" href="#stock-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>HydePHP also supports some drop-in includes that you can use as an alternative to some config options. These currently are as follows:</p>
 <ul>
 <li>
