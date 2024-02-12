@@ -34,6 +34,8 @@
     <script>if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.classList.add('dark'); document.getElementById('meta-color-scheme').setAttribute('content', 'dark');} else { document.documentElement.classList.remove('dark') } </script>
 
 
+
+
 </head>
 <body id="hyde-docs" class="bg-white dark:bg-gray-900 dark:text-white min-h-screen w-screen relative overflow-x-hidden overflow-y-auto"
       x-data="{ sidebarOpen: false, searchWindowOpen: false }" x-on:keydown.escape="searchWindowOpen = false; sidebarOpen = false" x-on:keydown.slash="searchWindowOpen = true">
@@ -450,6 +452,8 @@ Includes::markdown('example.md', 'Default content');
 <ul>
 <li>
 <code>footer</code> If a <code>footer.md</code> file exists in the includes directory, Hyde will use that as the footer text, instead of the one set in the <code>hyde.footer</code> config option.</li>
+<li>'head' If a <code>head.html</code> file exists in the includes directory, Hyde include that within the <code>&lt;head&gt;</code> tag of the generated HTML, in addition to the one set in the <code>hyde.head</code> config option.</li>
+<li>'scripts' If a <code>scripts.html</code> file exists in the includes directory, Hyde include that at the end of the <code>&lt;body&gt;</code> tag of the generated HTML, in addition to the one set in the <code>hyde.scripts</code> config option.</li>
 </ul>
 <h2>Reading time helper<a id="reading-time-helper" href="#reading-time-helper" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The <code>ReadingTime</code> helper provides a simple way to calculate the reading time of a given string, for example a blog post.</p>
@@ -744,6 +748,7 @@ You can then click the pagination links to navigate to the next pages.</p>
         }
     }
 </script>
+
 
 
 
