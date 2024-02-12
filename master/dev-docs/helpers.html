@@ -198,6 +198,9 @@
 <a href="#blade-includes">Blade Includes</a>
 </li>
 <li>
+<a href="#html-includes">HTML Includes</a>
+</li>
+<li>
 <a href="#directory-structure-example">Directory Structure Example</a>
 </li>
 <li>
@@ -449,6 +452,16 @@ Includes::blade('banner.blade.php');
 
 // With default value if the file does not exist
 Includes::blade('banner', 'Default content');
+</code></pre>
+<h3>HTML Includes<a id="html-includes" href="#html-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Gets the raw HTML of a partial file in the includes directory. Supplying the file extension is optional.</p>
+<pre><code class="language-php">use Hyde\Support\Includes;
+
+Includes::html('footer');
+Includes::html('footer.html');
+
+// With default value if the file does not exist
+Includes::html('footer', 'Default content');
 </code></pre>
 <h3>Directory Structure Example<a id="directory-structure-example" href="#directory-structure-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>Here is an example of the directory structure for includes:</p>

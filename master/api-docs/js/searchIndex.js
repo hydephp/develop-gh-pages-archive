@@ -5606,6 +5606,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020raw\u0020contents\u0020of\u0020a\u0020partial\u0020file\u0020in\u0020the\u0020includes\u0020directory.",
             "url": "classes/Hyde-Support-Includes.html#method_get"
         },                {
+            "fqsen": "\\Hyde\\Support\\Includes\u003A\u003Ahtml\u0028\u0029",
+            "name": "html",
+            "summary": "Get\u0020the\u0020HTML\u0020contents\u0020of\u0020a\u0020partial\u0020file\u0020in\u0020the\u0020includes\u0020directory.",
+            "url": "classes/Hyde-Support-Includes.html#method_html"
+        },                {
             "fqsen": "\\Hyde\\Support\\Includes\u003A\u003Amarkdown\u0028\u0029",
             "name": "markdown",
             "summary": "Get\u0020the\u0020rendered\u0020Markdown\u0020of\u0020a\u0020partial\u0020file\u0020in\u0020the\u0020includes\u0020directory.",
