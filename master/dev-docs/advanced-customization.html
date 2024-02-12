@@ -182,7 +182,7 @@
 </ul>
 </li>
 <li>
-<a href="#customizing-source-directories">Customizing source directories</a>
+<a href="#customizing-source-directories">Customizing Source Directories</a>
 <ul>
 <li>
 <a href="#in-the-config-file">In the config file</a>
@@ -193,7 +193,7 @@
 </ul>
 </li>
 <li>
-<a href="#customizing-output-directories">Customizing output directories</a>
+<a href="#customizing-output-directories">Customizing Output Directories</a>
 <ul>
 <li>
 <a href="#in-the-config-file-1">In the config file</a>
@@ -207,7 +207,7 @@
 </ul>
 </li>
 <li>
-<a href="#custom-source-root">Custom source root</a>
+<a href="#custom-source-root">Custom Source Root</a>
 <ul>
 <li>
 <a href="#automatic-change">Automatic change</a>
@@ -215,7 +215,7 @@
 </ul>
 </li>
 <li>
-<a href="#custom-media-directory">Custom media directory</a>
+<a href="#custom-media-directory">Custom Media Directory</a>
 <ul>
 <li>
 <a href="#next-steps">Next steps</a>
@@ -226,7 +226,7 @@
 </ul>
 </li>
 <li>
-<a href="#custom-output-directory">Custom output directory</a>
+<a href="#custom-output-directory">Custom Output Directory</a>
 </li>
 </ul>
 
@@ -389,7 +389,7 @@ trait to use the same registration logic as the <code>HydeServiceProvider</code>
 </ul>
 </li>
 </ol>
-<h2>Customizing source directories<a id="customizing-source-directories" href="#customizing-source-directories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Customizing Source Directories<a id="customizing-source-directories" href="#customizing-source-directories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The directories you place your content in are important. The directory will be used to determine the proper page type and the templates used.
 If you are not happy the with defaults, you can change them. Note that these are relative to the <code>source_root</code> setting,
 which is the root of your project, by default.</p>
@@ -418,7 +418,7 @@ public function register(): void
     ]);
 }
 </code></pre>
-<h2>Customizing output directories<a id="customizing-output-directories" href="#customizing-output-directories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Customizing Output Directories<a id="customizing-output-directories" href="#customizing-output-directories" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Like source directories, the output directories are also important as they determine the output path for the compiled pages.</p>
 <blockquote class="warning"><p>Note that changing output directories also affects the route keys, as those are based on the output directory. <p>Scroll down to see the <a href="#route-key-impact">Route key impact</a> section for more information.</p></p></blockquote>
 <p>Each option is relative to the site's <code>output_directory</code> setting. Setting a value to <code>''</code> will output the page to the site root.</p>
@@ -450,7 +450,7 @@ public function register(): void
 This means that a file stored as <code>_posts/hello-world.md</code> will have the route key <code>blog/hello-world</code> instead of <code>posts/hello-world</code>,
 this may break your site's configuration and links, so you should always verify your site works properly after such a change.
 You can learn more about this in the <a href="core-concepts#paths-identifiers-and-route-keys">route key documentation</a>.</p>
-<h2>Custom source root<a id="custom-source-root" href="#custom-source-root" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Custom Source Root<a id="custom-source-root" href="#custom-source-root" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>HydePHP will by default look for the source directories shown above in the root of your project.
 If you're not happy with this, it's easy to change! For example, you might want everything in a <code>'src'</code> subdirectory.
 That's easy enough, just set the value of the <code>source_root</code> setting in <code>config/hyde.php</code> to <code>'src'</code>, or whatever you prefer!</p>
@@ -463,7 +463,7 @@ That's easy enough, just set the value of the <code>source_root</code> setting i
 </code></pre>
 <p>When run, Hyde will update the source directory setting in the config file, then create the directory if it doesn't exist,
 and move all source directories and their content into it.</p>
-<h2>Custom media directory<a id="custom-media-directory" href="#custom-media-directory" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Custom Media Directory<a id="custom-media-directory" href="#custom-media-directory" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The media directory houses assets like images and stylesheets. The default directory is <code>_media</code>, and upon building the site,
 Hyde will copy all files in this directory to <code>_site/media</code> (or whatever your configured output and media directories are).</p>
 <p>You can change the path to this directory by setting the <code>media_directory</code> option in <code>config/hyde.php</code>.</p>
@@ -478,7 +478,7 @@ Hyde will copy all files in this directory to <code>_site/media</code> (or whate
 <p>Note that this change will affect both the source and output directories. For example, if you set the value to <code>assets</code>,
 all files from <code>assets</code> will be copied to <code>_site/assets</code>. If the setting starts with an underscore, that will be removed
 from the output directory, so files in <code>_assets</code> will be copied to <code>_site/assets</code>.</p>
-<h2>Custom output directory<a id="custom-output-directory" href="#custom-output-directory" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Custom Output Directory<a id="custom-output-directory" href="#custom-output-directory" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <blockquote class="danger"><p><strong>Warning: Hyde deletes all files in the output directory before compiling the site.</strong></p> <p>Don't set this path to a directory that contains important files!</p></blockquote>
 <p>If you want to store your compiled website in a different directory than the default <code>_site</code>, you can change the path
 using the following configuration option in <code>config/hyde.php</code>. The path is expected to be relative to your project root.</p>

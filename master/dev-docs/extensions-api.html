@@ -273,7 +273,7 @@
 </ul>
 </li>
 <li>
-<a href="#creating-your-extension-class">Creating your Extension class</a>
+<a href="#creating-your-extension-class">Creating Your Extension Class</a>
 <ul>
 <li>
 <a href="#discovery-handlers">Discovery handlers</a>
@@ -286,7 +286,7 @@
 </ul>
 </li>
 <li>
-<a href="#registering-your-extension">Registering your extension</a>
+<a href="#registering-your-extension">Registering Your Extension</a>
 <ul>
 <li>
 <a href="#packaging-your-extension">Packaging your extension</a>
@@ -376,7 +376,7 @@ and how they interact with the site.</p>
 <p>Any other functionality you want to add to HydePHP, such as new commands or configuration options,
 can be added the same way as you would in Laravel, and are thus not part of our API.
 See the <a href="https://laravel.com/docs/10.x/packages">Laravel package development guide</a> for more.</p>
-<h2>Creating your Extension class<a id="creating-your-extension-class" href="#creating-your-extension-class" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Creating Your Extension Class<a id="creating-your-extension-class" href="#creating-your-extension-class" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The entry-point for your extension is your Extensions class. Within this, you can register the custom page classes.
 If needed, you can also register discovery handlers which can run custom logic at various parts of the boot process.</p>
 <p>In this article we will create an extension that registers a new type of page, a <code>JsonPageExtension</code>.</p>
@@ -430,7 +430,7 @@ by implementing the <code>discoverPages</code> method in our extension class, an
 </code></pre>
 <p>Since the discovery steps are handled sequentially, the added pages will automatically be discovered as routes without
 us having to implement that handler method. As we inject the page objects directly, we bypass the need for the <code>FileCollection</code>.</p>
-<h2>Registering your extension<a id="registering-your-extension" href="#registering-your-extension" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Registering Your Extension<a id="registering-your-extension" href="#registering-your-extension" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Now that we have our extension class, we need to register it with HydePHP.</p>
 <p>It's important that your class is registered before the HydeKernel boots. Therefore, an excellent place for this is the
 <code>register</code> method of your extensions service provider,  where you call the <code>registerExtension</code> method of the <code>HydeKernel</code>
