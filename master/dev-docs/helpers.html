@@ -195,11 +195,22 @@
 </li>
 <li>
 <a href="#stock-includes">Stock Includes</a>
+<ul>
+<li>
+<a href="#footer">Footer</a>
+</li>
+<li>
+<a href="#head">Head</a>
+</li>
+<li>
+<a href="#scripts">Scripts</a>
+</li>
+</ul>
 </li>
 </ul>
 </li>
 <li>
-<a href="#reading-time-helper">Reading Time Helper</a>
+<a href="#reading-time-helper">Reading-Time Helper</a>
 <ul>
 <li>
 <a href="#create-a-new-readingtime-instance">Create a new ReadingTime instance</a>
@@ -449,13 +460,13 @@ Includes::markdown('example.md', 'Default content');
 </code></pre>
 <h3>Stock Includes<a id="stock-includes" href="#stock-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>HydePHP also supports some drop-in includes that you can use as an alternative to some config options. These currently are as follows:</p>
-<ul>
-<li>
-<code>footer</code> If a <code>footer.md</code> file exists in the includes directory, Hyde will use that as the footer text, instead of the one set in the <code>hyde.footer</code> config option.</li>
-<li>'head' If a <code>head.html</code> file exists in the includes directory, Hyde include that within the <code>&lt;head&gt;</code> tag of the generated HTML, in addition to the one set in the <code>hyde.head</code> config option.</li>
-<li>'scripts' If a <code>scripts.html</code> file exists in the includes directory, Hyde include that at the end of the <code>&lt;body&gt;</code> tag of the generated HTML, in addition to the one set in the <code>hyde.scripts</code> config option.</li>
-</ul>
-<h2>Reading Time Helper<a id="reading-time-helper" href="#reading-time-helper" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h4>Footer<a id="footer" href="#footer" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>If a <code>footer.md</code> file exists in the includes directory, Hyde will use that as the footer text, instead of the one set in the <code>hyde.footer</code> config option.</p>
+<h4>Head<a id="head" href="#head" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>If a <code>head.html</code> file exists in the includes directory, Hyde include that within the <code>&lt;head&gt;</code> tag of the generated HTML, in addition to the one set in the <code>hyde.head</code> config option.</p>
+<h4>Scripts<a id="scripts" href="#scripts" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>If a <code>scripts.html</code> file exists in the includes directory, Hyde include that at the end of the <code>&lt;body&gt;</code> tag of the generated HTML, in addition to the one set in the <code>hyde.scripts</code> config option.</p>
+<h2>Reading-Time Helper<a id="reading-time-helper" href="#reading-time-helper" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The <code>ReadingTime</code> helper provides a simple way to calculate the reading time of a given string, for example a blog post.</p>
 <h3>Create a new <code>ReadingTime</code> instance<a id="create-a-new-readingtime-instance" href="#create-a-new-readingtime-instance" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <p>There are a few ways to create a new <code>ReadingTime</code> instance. Either create a new instance directly, or use the static <code>fromString</code> or <code>fromFile</code>  helpers.</p>
