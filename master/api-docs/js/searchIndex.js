@@ -5616,11 +5616,6 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020rendered\u0020Blade\u0020of\u0020a\u0020partial\u0020file\u0020in\u0020the\u0020includes\u0020directory.",
             "url": "classes/Hyde-Support-Includes.html#method_blade"
         },                {
-            "fqsen": "\\Hyde\\Support\\Includes\u003A\u003AneedsDirectory\u0028\u0029",
-            "name": "needsDirectory",
-            "summary": "",
-            "url": "classes/Hyde-Support-Includes.html#method_needsDirectory"
-        },                {
             "fqsen": "\\Hyde\\Support\\Includes\u003A\u003A\u0024includesDirectory",
             "name": "includesDirectory",
             "summary": "",
