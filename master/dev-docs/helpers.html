@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HydePHP Upcoming Documentation - Managing and Compiling Assets</title>
+<title>HydePHP Upcoming Documentation - Helpers and Utilities</title>
 
 
 
-<link rel="canonical" href="https://hydephp.github.io/develop/master/dev-docs/dev-docs/managing-assets.html">
-<meta name="twitter:title" content="HydePHP Upcoming Documentation - Managing and Compiling Assets">
-<meta property="og:title" content="HydePHP Upcoming Documentation - Managing and Compiling Assets">
+<link rel="canonical" href="https://hydephp.github.io/develop/master/dev-docs/dev-docs/helpers.html">
+<meta name="twitter:title" content="HydePHP Upcoming Documentation - Helpers and Utilities">
+<meta property="og:title" content="HydePHP Upcoming Documentation - Helpers and Utilities">
 
 
 <link rel="sitemap" href="https://hydephp.github.io/develop/master/dev-docs/sitemap.xml" type="application/xml" title="Sitemap">
@@ -106,7 +106,7 @@
         </a>
     </li>                                    </ul>
             </li>
-                    <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: true }" >
+                    <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: false }" >
                 <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center  group hover:bg-black/10 "  @click="groupOpen = ! groupOpen" >
                     <h4 class="sidebar-group-heading text-base font-semibold  cursor-pointer dark:group-hover:text-white ">Creating Content</h4>
                                             <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
@@ -130,87 +130,17 @@
             <a href="../dev-docs/documentation-pages.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Documentation Pages
         </a>
-    </li>                                            <li class="sidebar-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
-            <a href="../dev-docs/managing-assets.html" aria-current="true" class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10">
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+            <a href="../dev-docs/managing-assets.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Managing and Compiling Assets
         </a>
-
-                    <span class="sr-only">Table of contents</span>
-            <ul class="table-of-contents">
-<li>
-<a href="#introduction">Introduction</a>
-</li>
-<li>
-<a href="#additional-information-and-answers-to-common-questions">Additional Information and Answers to Common Questions</a>
-<ul>
-<li>
-<a href="#is-nodejsnpm-required-for-using-hyde">Is NodeJS/NPM Required for Using Hyde?</a>
-</li>
-<li>
-<a href="#when-should-assets-be-compiled">When Should Assets be Compiled?</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#how-are-assets-stored-and-managed">How are assets stored and managed?</a>
-<ul>
-<li>
-<a href="#what-is-the-difference-between-media-and-sitemedia">What is the difference between _media and _site/media?</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#how-do-i-compile-assets">How do I compile assets?</a>
-<ul>
-<li>
-<a href="#how-does-it-work">How does it work?</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#telling-hyde-where-to-find-assets">Telling Hyde where to find assets</a>
-<ul>
-<li>
-<a href="#customizing-the-blade-templates">Customizing the Blade templates</a>
-</li>
-<li>
-<a href="#you-might-not-even-need-to-do-anything">You might not even need to do anything!</a>
-<ul>
-<li>
-<a href="#loading-from-cdn">Loading from CDN</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#using-the-tailwindcss-play-cdn">Using the TailwindCSS Play CDN</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#managing-images">Managing images</a>
-<ul>
-<li>
-<a href="#referencing-images">Referencing images</a>
-<ul>
-<li>
-<a href="#making-images-accessible">Making images accessible</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#setting-a-featured-image-for-blog-posts">Setting a featured image for blog posts</a>
-</li>
-</ul>
-</li>
-</ul>
-
-            </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
             <a href="../dev-docs/compile-and-deploy.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Compile &amp; Deploy
         </a>
     </li>                                    </ul>
             </li>
-                    <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: false }" >
+                    <li class="sidebar-group" role="listitem"  x-data="{ groupOpen: true }" >
                 <header class="sidebar-group-header p-2 px-4 -ml-2 flex justify-between items-center  group hover:bg-black/10 "  @click="groupOpen = ! groupOpen" >
                     <h4 class="sidebar-group-heading text-base font-semibold  cursor-pointer dark:group-hover:text-white ">Digging Deeper</h4>
                                             <button class="sidebar-group-toggle opacity-50 group-hover:opacity-100">
@@ -242,11 +172,105 @@
             <a href="../dev-docs/collections.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             File-based Collections
         </a>
-    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
-            <a href="../dev-docs/helpers.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
+    </li>                                            <li class="sidebar-item -ml-4 pl-4 active -ml-8 pl-8 bg-black/5 dark:bg-black/10" role="listitem">
+            <a href="../dev-docs/helpers.html" aria-current="true" class="-ml-8 pl-4 py-1 px-2 block text-indigo-600 dark:text-indigo-400 dark:font-medium border-l-[0.325rem] border-indigo-500 transition-colors duration-300 ease-in-out hover:bg-black/10">
             Helpers and Utilities
         </a>
-    </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
+
+                    <span class="sr-only">Table of contents</span>
+            <ul class="table-of-contents">
+<li>
+<a href="#introduction">Introduction</a>
+</li>
+<li>
+<a href="#file-based-collections">File-based Collections</a>
+</li>
+<li>
+<a href="#file-includes">File Includes</a>
+<ul>
+<li>
+<a href="#using-includes">Using Includes</a>
+<ul>
+<li>
+<a href="#markdown-includes">Markdown Includes</a>
+</li>
+<li>
+<a href="#blade-includes">Blade Includes</a>
+</li>
+<li>
+<a href="#directory-structure-example">Directory Structure Example</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#reading-time-helper">Reading time helper</a>
+<ul>
+<li>
+<a href="#create-a-new-readingtime-instance">Create a new ReadingTime instance</a>
+</li>
+<li>
+<a href="#get-the-reading-time-string">Get the reading time string</a>
+</li>
+<li>
+<a href="#get-the-reading-time-data">Get the reading time data</a>
+</li>
+<li>
+<a href="#custom-formatting">Custom formatting</a>
+<ul>
+<li>
+<a href="#specify-sprintf-format">Specify sprintf format</a>
+</li>
+<li>
+<a href="#format-using-a-custom-callback">Format using a custom callback</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#pagination-utility">Pagination utility</a>
+<ul>
+<li>
+<a href="#base-usage">Base usage</a>
+</li>
+<li>
+<a href="#constructor-options-breakdown">Constructor options breakdown</a>
+<ul>
+<li>
+<a href="#currentpagenumber">currentPageNumber</a>
+</li>
+<li>
+<a href="#paginationroutebasename">paginationRouteBasename</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#practical-example">Practical example</a>
+<ul>
+<li>
+<a href="#creating-our-posts-page">Creating our posts page</a>
+</li>
+<li>
+<a href="#setting-up-the-new-blade-components">Setting up the new Blade components</a>
+</li>
+<li>
+<a href="#creating-the-pagination-pages">Creating the pagination pages</a>
+</li>
+<li>
+<a href="#updating-the-listing-page-view">Updating the listing page view</a>
+</li>
+<li>
+<a href="#conclusion">Conclusion</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
             <a href="../dev-docs/troubleshooting.html" class="-ml-8 pl-4 py-1 px-2 block border-l-[0.325rem] border-transparent transition-colors duration-300 ease-in-out hover:bg-black/10">
             Troubleshooting
         </a>
@@ -372,106 +396,270 @@
     </blockquote>
 
     <header id="document-header" class="flex items-center flex-wrap prose-h1:mb-3">
-        <h1>Managing and Compiling Assets</h1>
+        <h1>Helpers and Utilities</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
         <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>Managing and compiling assets is a very common task in web development. Unfortunately, it's rarely fun.</p>
-<p>With Hyde, <strong>you don't have to do it</strong>, in fact, you can skip this entire page if you are happy with how it is.
-But as always with Hyde, you can customize everything if you want to.</p>
-<p>Hyde ships with a complete frontend using Blade views, TailwindCSS styles, and Alpine.js interactions.
-Some extra custom styles are made in the HydeFront package, which is pre-installed and bundled in the pre-configured Laravel Mix.</p>
-<p>To get you started quickly, all the styles are already compiled and minified into <code>_media/app.css</code>,
-which will be copied to the <code>_site/media/app.css</code> directory when you run <code>php hyde build</code>.</p>
-<h2>Additional Information and Answers to Common Questions<a id="additional-information-and-answers-to-common-questions" href="#additional-information-and-answers-to-common-questions" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<h3>Is NodeJS/NPM Required for Using Hyde?<a id="is-nodejsnpm-required-for-using-hyde" href="#is-nodejsnpm-required-for-using-hyde" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>No, it is optional. All the compiled styles that you need are already installed, and NPM is only necessary if you want to compile your own styles.</p>
-<h3>When Should Assets be Compiled?<a id="when-should-assets-be-compiled" href="#when-should-assets-be-compiled" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>The <code>_media/app.css</code> file that comes with Hyde contains TailwindCSS for all classes that are used in the default Blade views, as well as the HydeFront custom styles.
-If you want to customize the Tailwind settings or add custom styles, you will need to recompile the styles yourself.</p>
-<p>For example, if you customize the Blade views and add new classes or add new classes in Blade-based pages, you may need to compile the assets yourself to get the new styles.
-If you use Markdown-based pages, you do not need to compile anything as those styles are already included in the compiled CSS file.</p>
-<h2>How are assets stored and managed?<a id="how-are-assets-stored-and-managed" href="#how-are-assets-stored-and-managed" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>The frontend assets are separated into three places.</p>
-<ul>
-<li>
-<p>The <code>resources/assets</code> folder contain <strong>source</strong> files, meaning files that will be compiled into something else.
-Here you will find the <code>app.css</code> file that bootstraps the TailwindCSS styles. This file is also an excellent place
-to add your custom styles. It is also where we import HydeFront. If you compile this file in the base install,
-it will output the same file that's already included in Hyde.</p>
-</li>
-<li>
-<p>The <code>_media</code> folder contains <strong>compiled</strong> (and usually minified) files. When Hyde compiles your static site,
-all asset files here will get copied as they are into the <code>_site/media</code> folder.</p>
-</li>
-<li>
-<p>The <code>_site/media</code> folder contains the files that are served to the user.</p>
-</li>
-</ul>
-<h3>What is the difference between <code>_media</code> and <code>_site/media</code>?<a id="what-is-the-difference-between-media-and-sitemedia" href="#what-is-the-difference-between-media-and-sitemedia" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>It may seem weird to have two folders for storing the compiled assets, but it is quite useful.</p>
-<p>The <code>_site</code> directory is intended to be excluded from version control, while the <code>_media</code> folder is included in the
-version control. You are of course free to modify this behaviour by editing the <code>webpack.mix.js</code> file to change the output directory.</p>
-<h2>How do I compile assets?<a id="how-do-i-compile-assets" href="#how-do-i-compile-assets" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>First, make sure that you have installed all the NodeJS dependencies using <code>npm install</code>.
-Then run <code>npm run dev</code> to compile the assets. If you want to compile the assets for production, run <code>npm run prod</code>.
-You can also run <code>npm run watch</code> to watch for changes in the source files and recompile the assets automatically.</p>
-<h3>How does it work?<a id="how-does-it-work" href="#how-does-it-work" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Hyde uses <a href="https://laravel-mix.com/">Laravel Mix</a> (which is a wrapper for <a href="https://webpack.js.org/">Webpack</a>) to compile the assets.</p>
-<p>When running the <code>npm run dev/prod</code> command, the following happens:</p>
-<ol>
-<li>Laravel Mix will compile the <code>resources/assets/app.css</code> file into <code>_media/app.css</code> using PostCSS with TailwindCSS and AutoPrefixer.</li>
-<li>Mix then copies the <code>_media</code> folder into <code>_site/media</code>, this is so that they are automatically accessible to your site without having to rerun <code>php hyde build</code>.</li>
-</ol>
-<h2>Telling Hyde where to find assets<a id="telling-hyde-where-to-find-assets" href="#telling-hyde-where-to-find-assets" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<h3>Customizing the Blade templates<a id="customizing-the-blade-templates" href="#customizing-the-blade-templates" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>To make it really easy to customize asset loading, the styles and scripts are loaded in dedicated Blade components.</p>
-<ul>
-<li>Styles are loaded in <code>hyde::layouts.styles</code>
-</li>
-<li>Scripts are loaded in <code>hyde::layouts.scripts</code>
-</li>
-</ul>
-<p>To customize them, run the following command:</p>
-<pre><code class="language-bash">php hyde publish:views layouts
+<p>HydePHP comes with a few helper classes and utilities to make your life easier. This page will cover some of the most important ones.
+Note that these helpers targets those who write custom code and Blade templates, and that you are expected to have a basic understanding of programming and PHP.</p>
+<h2>File-based Collections<a id="file-based-collections" href="#file-based-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>Hyde provides <code>DataCollections</code>, a subset of <a href="https://laravel.com/docs/10.x/collections">Laravel Collections</a> giving you a similar developer experience to working with Eloquent Collections. However, instead of accessing a database,
+it's all entirely file-based using static data files such as Markdown, Yaml, and JSON files which get parsed into objects that you can easily work with.</p>
+<pre><code class="language-php">use Hyde\Support\DataCollections;
+
+// Gets all Markdown files in resources/collections/$name directory
+DataCollections::markdown(string $name);
+
+// Gets all YAML files in resources/collections/$name directory
+DataCollections::yaml(string $name);
+
+// Gets all JSON files in resources/collections/$name directory
+DataCollections::json(string $name, bool $asArray = false);
 </code></pre>
-<p>Then edit the files found in <code>resources/views/vendor/hyde/layouts</code> directory of your project.</p>
-<h3>You might not even need to do anything!<a id="you-might-not-even-need-to-do-anything" href="#you-might-not-even-need-to-do-anything" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>For the absolute majority of the cases, you don't need to mess with these files. Hyde will automatically load the app.css file when it exists in the <code>_media</code> directory.</p>
-<h4>Loading from CDN<a id="loading-from-cdn" href="#loading-from-cdn" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>If you want to load the same pre-compiled file included with Hyde but from a CDN, you can set <code>load_app_styles_from_cdn</code> to <code>true</code> in the <code>config/hyde.php</code> file. While you lose the ability to customize it, your styles will be automatically updated when needed, as the installed Framework version will automatically specify the correct version to load.</p>
-<h3>Using the TailwindCSS Play CDN<a id="using-the-tailwindcss-play-cdn" href="#using-the-tailwindcss-play-cdn" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<blockquote class="warning"><p>Note that the Play CDN is not meant for production use, so enabling it will add a warning to the web console.</p></blockquote>
-<p>If you want to use the <a href="https://tailwindcss.com/docs/installation/play-cdn">TailwindCSS Play CDN</a>, all you need to do is
-set <code>use_play_cdn</code> to <code>true</code> in the <code>config/hyde.php</code> file. This will in addition to loading the standard <code>app.css</code> file,
-also add a script tag which loads the TailwindCSS Play CDN.</p>
-<p>What's even better is that Hyde will also inject the contents of the included <code>tailwind.config.js</code> file into the script tag,
-so the Play CDN styles match the ones created by Laravel Mix.</p>
-<p>All in all, this allows you to tinker around with Tailwind without having to compile anything.</p>
-<h2>Managing images<a id="managing-images" href="#managing-images" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<p>As mentioned above, assets stored in the _media folder are automatically copied to the _site/media folder,
-making it the recommended place to store images. You can then easily reference them in your Markdown files.</p>
-<h3>Referencing images<a id="referencing-images" href="#referencing-images" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>The recommended way to reference images is with relative paths as this offers the most compatibility,
-allowing you to browse the site both locally on your filesystem and on the web when serving from a subdirectory.</p>
-<blockquote class="warning"><p>Note: The path is relative to the <b>compiled</b> file in the site output</p></blockquote>
-<p>The path to use depends on the location of the page. Note the subtle difference in the path prefix.</p>
-<ul>
-<li>If you are in a <strong>Blog Post or Documentation Page</strong>, use <code>../media/image.png</code>
-</li>
-<li>If in a <strong>Markdown Page or Blade Page</strong>, use <code>media/image.png</code>
-</li>
-<li>While not recommended, you can also use absolute paths: <code>/media/image.png</code>
-</li>
-<li>You can of course also use full URLs, for example when using a CDN.</li>
-</ul>
-<h4>Making images accessible<a id="making-images-accessible" href="#making-images-accessible" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
-<p>To improve accessibility, you should always add an <code>alt</code> text. Here is a full example including an image in a blog post:</p>
-<pre><code class="language-markdown">![Image Alt](../media/image.png &quot;Image Title&quot;) # Note the relative path
+<p>See the <a href="collections">File-based Collections</a> documentation for the full details.</p>
+<h2>File Includes<a id="file-includes" href="#file-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>The Includes facade provides a simple way to access partials in the includes directory.</p>
+<p>If the file does not exist, the method will return <code>null</code>.
+You can also supply a default value as the second argument.
+Both Markdown and Blade includes will be rendered to HTML.</p>
+<h3>Using Includes<a id="using-includes" href="#using-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Includes are stored in the <code>resources/includes</code> directory. You can access them using the <code>Includes</code> facade.</p>
+<pre><code class="language-php">use Hyde\Support\Includes;
+
+Includes::get('example.md');
+Includes::get('example.md', 'Default content');
 </code></pre>
-<h3>Setting a featured image for blog posts<a id="setting-a-featured-image-for-blog-posts" href="#setting-a-featured-image-for-blog-posts" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
-<p>Hyde offers great support for creating data-rich and accessible featured images for blog posts.</p>
-<p>You can read more about this on the <a href="blog-posts#image">creating blog posts page</a>.</p>
+<h4>Markdown Includes<a id="markdown-includes" href="#markdown-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Gets the rendered Markdown of a partial file in the includes directory. Supplying the file extension is optional.</p>
+<pre><code class="language-php">use Hyde\Support\Includes;
+
+Includes::markdown('footer');
+Includes::markdown('footer.md');
+
+// With default value if the file does not exist
+Includes::markdown('footer', 'Default content');
+</code></pre>
+<h4>Blade Includes<a id="blade-includes" href="#blade-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Gets the rendered Blade of a partial file in the includes directory. Supplying the file extension is optional.</p>
+<pre><code class="language-php">use Hyde\Support\Includes;
+
+Includes::blade('banner');
+Includes::blade('banner.blade.php');
+
+// With default value if the file does not exist
+Includes::blade('banner', 'Default content');
+</code></pre>
+<h4>Directory Structure Example<a id="directory-structure-example" href="#directory-structure-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Here is an example of the directory structure for includes:</p>
+<pre><code class="language-tree">resources/
+|-- includes/
+|   |-- example.md
+|   |-- footer.md
+|   |-- banner.blade.php
+</code></pre>
+<h2>Reading time helper<a id="reading-time-helper" href="#reading-time-helper" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>The <code>ReadingTime</code> helper provides a simple way to calculate the reading time of a given string, for example a blog post.</p>
+<h3>Create a new <code>ReadingTime</code> instance<a id="create-a-new-readingtime-instance" href="#create-a-new-readingtime-instance" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>There are a few ways to create a new <code>ReadingTime</code> instance. Either create a new instance directly, or use the static <code>fromString</code> or <code>fromFile</code>  helpers.</p>
+<p>In all cases, you will end up with a <code>ReadingTime</code> object that you can use to get the reading time.</p>
+<pre><code class="language-php">// Via constructor
+$time = new ReadingTime('Input text string');
+
+// Via static method
+$time = ReadingTime::fromString('Input text string');
+
+// Via static method (from file)
+$time = ReadingTime::fromFile('path/to/file.txt');
+</code></pre>
+<h3>Get the reading time string<a id="get-the-reading-time-string" href="#get-the-reading-time-string" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>To make things really easy, the <code>ReadingTime</code> instance can be automatically cast to a human-readable string with the default formatting.</p>
+<pre><code class="language-php">(string) ReadingTime::fromString('Input text string'); // 1min, 0sec
+</code></pre>
+<pre><code class="language-blade">{{ ReadingTime::fromString('Input text string') }} // 1min, 0sec
+</code></pre>
+<p>You can also call the <code>getFormatted</code> method directly.</p>
+<pre><code class="language-php">ReadingTime::fromString('Input text string')-&gt;getFormatted(); // 1min, 0sec
+</code></pre>
+<h3>Get the reading time data<a id="get-the-reading-time-data" href="#get-the-reading-time-data" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>We also provide a few methods to get the reading time data directly.</p>
+<pre><code class="language-php">// Get the reading time in seconds
+$time-&gt;getSeconds();
+
+// Get the reading time in minutes (rounded down)
+$time-&gt;getMinutes();
+
+// Get the remaining seconds after the rounded down minutes
+// (Perfect for showing after the `getMinutes()` value)
+$time-&gt;getSecondsOver();
+
+// Get the word count of the input string
+$time-&gt;getWordCount();
+</code></pre>
+<h3>Custom formatting<a id="custom-formatting" href="#custom-formatting" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>Additionally, there are several ways to customize the output format.</p>
+<h4>Specify sprintf format<a id="specify-sprintf-format" href="#specify-sprintf-format" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>The <code>getFormatted</code> method accepts a <code>sprintf</code> format string as the first argument.</p>
+<pre><code class="language-php">// The default format
+$time-&gt;getFormatted('%dmin, %dsec');
+
+// Custom format
+$time-&gt;getFormatted('%d minutes and %d seconds');
+</code></pre>
+<p>The first <code>%d</code> will be replaced with the minutes, and the second <code>%d</code> will be replaced with the seconds.</p>
+<h4>Format using a custom callback<a id="format-using-a-custom-callback" href="#format-using-a-custom-callback" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>You can also use a custom callback to format the reading time string. This is perfect if you want to create custom formatting logic.</p>
+<p>The closure will receive the minutes and seconds as integers and should return a string.</p>
+<pre><code class="language-php">$time-&gt;formatUsingClosure(function (int $minutes, int $seconds): string {
+    return &quot;$minutes minutes, $seconds seconds&quot;;
+}); // 1 minutes, 30 seconds
+</code></pre>
+<h2>Pagination utility<a id="pagination-utility" href="#pagination-utility" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>The <code>Pagination</code> class provides utilities to help you create custom pagination components.</p>
+<p>Hyde comes with a simple pagination view that you can use, but you can also use the utility to create your own custom pagination components.
+You can of course also publish and modify the default pagination view to fit your needs.</p>
+<p>The paginator is designed to paginate Hyde pages and their routes, but can also be used with other data sources.</p>
+<h3>Base usage<a id="base-usage" href="#base-usage" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>To use the pagination component which is generic by design, you need to create the <code>Pagination</code> instance yourself, with the data you want to paginate.</p>
+<p>To get started, simply create a paginator instance with a collection or array of items (like pages), and render the component.
+You also need to pass the current page being rendered (if you're on pagination page 3, pass that to the constructor).</p>
+<pre><code class="language-php">use Hyde\Support\Paginator;
+use Illuminate\Contracts\Support\Arrayable;
+
+$paginator = new Paginator(
+    Arrayable|array $items = [],
+    int $pageSize = 25,
+    int $currentPageNumber = null,
+    string $paginationRouteBasename = null
+);
+</code></pre>
+<pre><code class="language-blade">@include('hyde::components.pagination-navigation')
+</code></pre>
+<h3>Constructor options breakdown<a id="constructor-options-breakdown" href="#constructor-options-breakdown" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The first two are self-explanatory:</p>
+<ul>
+<li>
+<code>items</code> - The items to paginate. This can be a collection or an array.</li>
+<li>
+<code>pageSize</code> - How many items to show on each page.</li>
+</ul>
+<p>The next may need some explanation:</p>
+<h4><code>currentPageNumber</code><a id="currentpagenumber" href="#currentpagenumber" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>This current page index. You will typically get this from the URL.</p>
+<h4><code>paginationRouteBasename</code><a id="paginationroutebasename" href="#paginationroutebasename" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>This adds an optional prefix for the navigation links. For example, if you're paginating blog posts,
+you might want the links to be <code>/posts/page-1.html</code> instead of <code>/page-1.html</code>. You would then set this to <code>posts</code>.</p>
+<h3>Practical example<a id="practical-example" href="#practical-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>HydePHP comes with a started homepage called 'posts'. This includes a component with the following code:</p>
+<pre><code class="language-blade">&lt;div id=&quot;post-feed&quot; class=&quot;max-w-3xl mx-auto&quot;&gt;
+    @include('hyde::components.blog-post-feed')
+&lt;/div&gt;
+</code></pre>
+<h4>Creating our posts page<a id="creating-our-posts-page" href="#creating-our-posts-page" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Now, let's paginate this feed! For this example, we will assume that you ran <code>php hyde publish:homepage posts</code>
+and renamed the resulting <code>index.blade.php</code> file to <code>posts.blade.php</code>. We will also assume that you have a few blog posts set up.</p>
+<p>The blog post feed component is a simple component that looks like this:</p>
+<pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_pages/posts.blade.php</small>@foreach(MarkdownPost::getLatestPosts() as $post)
+    @include('hyde::components.article-excerpt')
+@endforeach
+</code></pre>
+<h4>Setting up the new Blade components<a id="setting-up-the-new-blade-components" href="#setting-up-the-new-blade-components" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>So we are simply going to inline component, but with the paginator we also declare. So, replace the post feed include with the following:</p>
+<pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_pages/posts.blade.php</small>@php
+    $paginator = new \Hyde\Support\Paginator(
+        // The items to paginate
+        items: MarkdownPost::getLatestPosts(),
+        // How many items to show on each page
+        pageSize: 5,
+        // The current page index
+        currentPageNumber: 1,
+        // Links will be 'posts/page-1.html' instead of 'page-1.html'
+        paginationRouteBasename: 'posts'
+    );
+@endphp
+
+@foreach($paginator-&gt;getItemsForPage() as $post)
+    @include('hyde::components.article-excerpt')
+@endforeach
+
+@include('hyde::components.pagination-navigation')
+</code></pre>
+<p>This will set up the paginator loop through only the items for the current page, and render the article excerpts. The last line will render the pagination links.</p>
+<h4>Creating the pagination pages<a id="creating-the-pagination-pages" href="#creating-the-pagination-pages" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>However, we still need to create the pagination pages, because the paginator will not automatically create them for you.</p>
+<p>In order to do this dynamically, we add the following to the <code>boot</code> of our <code>AppServiceProvider</code> (or any other provider or extension):</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>app/Providers/AppServiceProvider.php</small>&lt;?php
+
+namespace App\Providers;
+
+use Hyde\Hyde;
+use Hyde\Support\Paginator;
+use Hyde\Pages\MarkdownPost;
+use Hyde\Pages\InMemoryPage;
+use Hyde\Foundation\HydeKernel;
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
+{
+    public function boot(): void
+    {
+        // This registers a callback that runs after the kernel has booted
+        Hyde::kernel()-&gt;booted(function (HydeKernel $hyde) {
+            // First we create a paginator instance using the same settings as in our view
+            $paginator = new Paginator(MarkdownPost::getLatestPosts(), 5, 1, 'posts');
+
+            // Then we loop through the total number of pages and create a new page for each one
+            foreach (range(1, $paginator-&gt;totalPages()) as $page) {
+                // Now we set the paginator to the current page number
+                $paginator-&gt;setCurrentPage($page);
+
+                // Now we create the paginated listing page. We set the identifier to match the route basename we set earlier.
+                $listingPage = new InMemoryPage(identifier: &quot;posts/page-$page&quot;, matter: [
+                    // And the paginator instance. We clone it so that we don't modify the original instance.
+                    'paginator' =&gt; clone $paginator,
+
+                    // Optionally, specify a custom page title.
+                    'title' =&gt; &quot;Blog Posts - Page {$page}&quot;,
+                    // Here we add the paginated collection
+                    'posts' =&gt; $paginator-&gt;getItemsForPage(),
+                ],
+                    // You can also use a different view if you want to, for example a simpler page just for paginated posts.
+                    // This uses the same view system as Laravel, so you can use any vendor view, or a view from the `resources/views` directory.
+                    // Hyde also loads views from `_pages/`, so setting `posts` here will load our posts page we created earlier.
+                    view: 'posts'
+                );
+
+                // This is optional, as the page does not necessarily need to be added to the page collection
+                $hyde-&gt;pages()-&gt;addPage($listingPage);
+
+                // This however is required, so that Hyde knows about the route as we run this after the kernel has booted
+                $hyde-&gt;routes()-&gt;addRoute($listingPage-&gt;getRoute());
+            }
+        });
+    }
+}
+</code></pre>
+<h4>Updating the listing page view<a id="updating-the-listing-page-view" href="#updating-the-listing-page-view" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>Now, let's update our <code>posts</code> page to accept the paginator data. If you want to use a different view for the paginated posts,
+just apply these changes to that new view, but for this example I'm going to update the <code>posts</code> view.</p>
+<pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_pages/posts.blade.php</small>// torchlight! {&quot;lineNumbers&quot;: false}
+&lt;h1&gt;Latest Posts&lt;/h1&gt;{{-- [tl! remove] --}}
+&lt;h1&gt;{{ $page-&gt;matter('title') ?? $title }}&lt;/h1&gt; {{-- [tl! add] --}}
+</code></pre>
+<p>to that new view, but for this example I'm going to update the <code>posts</code> view.</p>
+<pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_pages/posts.blade.php</small>// torchlight! {&quot;lineNumbers&quot;: false}
+@php
+    $paginator = new \Hyde\Support\Paginator( // [tl! remove]
+    $paginator = $page-&gt;matter('paginator') ?? new \Hyde\Support\Paginator( // [tl! add]
+        items: MarkdownPost::getLatestPosts(),
+        pageSize: 5,
+        currentPageNumber: 1,
+        paginationRouteBasename: 'posts'
+    );
+@endphp
+</code></pre>
+<h4>Conclusion<a id="conclusion" href="#conclusion" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<p>And that's it! You now have a paginated blog post feed. You can now visit <code>/posts/page-1.html</code> and see the first page of your blog posts.
+You can then click the pagination links to navigate to the next pages.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
