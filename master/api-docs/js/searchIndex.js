@@ -1611,6 +1611,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_removeBlockquotes"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\ConvertsMarkdownToPlainText\u003A\u003AtrimWhitespace\u0028\u0029",
+            "name": "trimWhitespace",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#method_trimWhitespace"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\ConvertsMarkdownToPlainText\u003A\u003AATX_HEADERS",
             "name": "ATX_HEADERS",
             "summary": "",
