@@ -1361,6 +1361,11 @@ Search.appendIndex(
             "summary": "Return\u0020a\u0020qualified\u0020URL\u0020to\u0020the\u0020supplied\u0020path\u0020if\u0020a\u0020base\u0020URL\u0020is\u0020set.",
             "url": "classes/Hyde-Foundation-Kernel-Hyperlinks.html#method_url"
         },                {
+            "fqsen": "\\Hyde\\Foundation\\Kernel\\Hyperlinks\u003A\u003Aroute\u0028\u0029",
+            "name": "route",
+            "summary": "Get\u0020a\u0020route\u0020instance\u0020by\u0020its\u0020key\u0020from\u0020the\u0020kernel\u0027s\u0020route\u0020collection.",
+            "url": "classes/Hyde-Foundation-Kernel-Hyperlinks.html#method_route"
+        },                {
             "fqsen": "\\Hyde\\Foundation\\Kernel\\Hyperlinks\u003A\u003A\u0024kernel",
             "name": "kernel",
             "summary": "",
