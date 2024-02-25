@@ -23,7 +23,7 @@
 <style>[x-cloak] {display: none!important}</style>
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hydephp/develop@master/_media/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hydefront@v3.3/dist/app.css">
 
 
 
@@ -366,16 +366,9 @@
     </nav>
     </aside>
     <main id="content" class="dark:bg-gray-900 min-h-screen bg-gray-50 md:bg-white absolute top-16 md:top-0 w-screen md:left-64 md:w-[calc(100vw_-_16rem)]">
-        <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 prose dark:prose-invert max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)]">
-        <blockquote class="warning" style="max-width: 680px; padding: 10px 20px;">
-        <p>
-            <strong>WARNING</strong>
-            You're browsing the documentation for an upcoming version of HydePHP.
-            The documentation and features of this release are subject to change.
-        </p>
-    </blockquote>
-
-    <header id="document-header" class="flex items-center flex-wrap prose-h1:mb-3">
+        <article id="document" itemscope itemtype="https://schema.org/Article" class="mx-auto lg:ml-8 max-w-3xl p-12 md:px-16 max-w-[1000px] min-h-[calc(100vh_-_4rem)] prose dark:prose-invert">
+    
+    <header id="document-header" class="flex items-center flex-wrap justify-between prose-h1:mb-3">
         <h1>Managing and Compiling Assets</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
@@ -480,8 +473,7 @@ allowing you to browse the site both locally on your filesystem and on the web w
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
     </footer>
-</article>
-    </main>
+</article>    </main>
 
     <div id="support">
         <div id="sidebar-backdrop" x-cloak="" x-show="sidebarOpen" x-transition @click="sidebarOpen = false" title="Click to close sidebar" class="w-screen h-screen fixed top-0 left-0 cursor-pointer z-10 bg-black/50"></div>
