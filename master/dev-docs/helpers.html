@@ -237,6 +237,23 @@
 </ul>
 </li>
 <li>
+<a href="#helper-functions">Helper Functions</a>
+<ul>
+<li>
+<a href="#hyde">hyde</a>
+</li>
+<li>
+<a href="#asset">asset</a>
+</li>
+<li>
+<a href="#route">route</a>
+</li>
+<li>
+<a href="#url">url</a>
+</li>
+</ul>
+</li>
+<li>
 <a href="#pagination-utility">Pagination Utility</a>
 <ul>
 <li>
@@ -516,6 +533,47 @@ $time-&gt;getFormatted('%d minutes and %d seconds');
 <pre><code class="language-php">$time-&gt;formatUsingClosure(function (int $minutes, int $seconds): string {
     return &quot;$minutes minutes, $seconds seconds&quot;;
 }); // 1 minutes, 30 seconds
+</code></pre>
+<h2>Helper Functions<a id="helper-functions" href="#helper-functions" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>HydePHP comes with a few helper functions to make your life easier.</p>
+<p>The most common ones are documented here, however you can also see the full list in the source code <a href="https://github.com/hydephp/framework/blob/master/src/helpers.php"><code>helpers.php</code></a> file.</p>
+<h3><code>hyde</code><a id="hyde" href="#hyde" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>The <code>hyde</code> function is a global helper function that returns the HydeKernel instance.
+From this, you can access the same methods as you would from the <code>Hyde</code> facade.</p>
+<pre><code class="language-php">hyde(); // Returns the HydeKernel instance
+
+hyde()-&gt;routes()) === Hyde::routes(); // true
+</code></pre>
+<p>It's up to you if you want to use the facade or the global function, or a mix of both.
+A benefit of using the global function is that it may have better IDE support.</p>
+<h3><code>asset</code><a id="asset" href="#asset" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>This is an alias of the <code>Hyde::asset()</code> facade method and allows you to get a relative link or URL to an asset in the media directory.</p>
+<pre><code class="language-php">asset('image.png'); // Returns a relative web link to the given image
+</code></pre>
+<p>Gets a relative web link to the given image stored in the <code>_site/media</code> folder.
+If the image is remote (starts with http) it will be returned as is.</p>
+<p>If <code>true</code> is passed as the second argument, and a base URL is set,
+the image will be returned with a qualified absolute URL.</p>
+<p><strong>Example usage:</strong></p>
+<pre><code class="language-blade">&lt;img src=&quot;{{ asset('image.png') }}&quot; alt=&quot;My image&quot;&gt;
+</code></pre>
+<h3><code>route</code><a id="route" href="#route" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<blockquote class="info"><p>Routing primer: All pages in your Hyde project are automatically tied to an internal route. You can run <code>php hyde route:list</code> to see a list of all routes and their route keys.</p></blockquote>
+<p>This is an alias of the <code>Hyde::route()</code> facade method and allows you to get a route instance by its route key.</p>
+<pre><code class="language-php">route('index'); // Returns the route instance with the given key
+</code></pre>
+<p>If a route does not exist, <code>null</code> will be returned. Route instances can be cast to strings to resolve a link to the page.</p>
+<p><strong>Example usage:</strong></p>
+<pre><code class="language-blade">&lt;a href=&quot;{{ route('index') }}&quot;&gt;Home&lt;/a&gt;
+&lt;a href=&quot;{{ route('index')-&gt;getLink() }}&quot;&gt;Home&lt;/a&gt;
+</code></pre>
+<h3><code>url</code><a id="url" href="#url" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>This is an alias of the <code>Hyde::url()</code> facade method and formats a relative link to an absolute URL using the configured base URL.</p>
+<pre><code class="language-php">url('page.html'); // Returns an absolute URL to the given page
+</code></pre>
+<p>If a base URL is not set, an exception will be thrown.</p>
+<p><strong>Example usage:</strong></p>
+<pre><code class="language-blade">&lt;a href=&quot;{{ url('page.html') }}&quot;&gt;Link&lt;/a&gt;
 </code></pre>
 <h2>Pagination Utility<a id="pagination-utility" href="#pagination-utility" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>The <code>Pagination</code> class provides utilities to help you create custom pagination components.</p>

@@ -203,6 +203,27 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
 <dd>Remove trailing slashes from the start and end of a string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_asset">asset()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Get a relative link or URL to an asset in the media directory.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_route">route()</a>
+    <span>
+                                &nbsp;: <a href="classes/Hyde-Support-Models-Route.html"><abbr title="\Hyde\Support\Models\Route">Route</abbr></a>|null    </span>
+</dt>
+<dd>Get a page route by its key.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_url">url()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Get a qualified URL to the supplied path if a base URL is set.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/hyde.html#function_hyde">hyde()</a>
     <span>
                                 &nbsp;: <a href="classes/Hyde-Foundation-HydeKernel.html"><abbr title="\Hyde\Foundation\HydeKernel">HydeKernel</abbr></a>    </span>
@@ -363,6 +384,130 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
 
 </article>
                     <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_asset">
+        asset()
+        <a href="namespaces/default.html#function_asset" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">35</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get a relative link or URL to an asset in the media directory.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">asset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$preferQualifiedUrl</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$preferQualifiedUrl</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_route">
+        route()
+        <a href="namespaces/default.html#function_route" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get a page route by its key.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">route</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Support-Models-Route.html"><abbr title="\Hyde\Support\Models\Route">Route</abbr></a>|null</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Support-Models-Route.html"><abbr title="\Hyde\Support\Models\Route">Route</abbr></a>|null</span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_url">
+        url()
+        <a href="namespaces/default.html#function_url" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get a qualified URL to the supplied path if a base URL is set.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                    <span class="phpdocumentor-signature__name">url</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$path</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_hyde">
         hyde()
         <a href="namespaces/hyde.html#function_hyde" class="headerlink"><i class="fas fa-link"></i></a>
@@ -371,7 +516,7 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -400,7 +545,7 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -439,7 +584,7 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -480,7 +625,7 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -519,7 +664,7 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -557,7 +702,7 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -595,7 +740,7 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 
     </aside>
 
@@ -633,7 +778,7 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -671,7 +816,7 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 
@@ -709,7 +854,7 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -768,7 +913,7 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -809,7 +954,7 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">168</span>
 
     </aside>
 
@@ -854,7 +999,7 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/helpers.php"><a href="files/packages-framework-src-helpers.html"><abbr title="packages/framework/src/helpers.php">helpers.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">175</span>
 
     </aside>
 
@@ -999,6 +1144,7 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
                             <li class="phpdocumentor-on-this-page-section__title">Functions</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="namespaces/default.html#function_asset">asset()</a></li>
                                                     <li><a href="namespaces/hyde.html#function_evaluate_arrayable">evaluate_arrayable()</a></li>
                                                     <li><a href="namespaces/default.html#function_hyde">hyde()</a></li>
                                                     <li><a href="namespaces/hyde.html#function_hyde">hyde()</a></li>
@@ -1006,12 +1152,14 @@ while turning all paths arguments into absolute project paths.</dd>        <dt c
                                                     <li><a href="namespaces/hyde.html#function_normalize_newlines">normalize_newlines()</a></li>
                                                     <li><a href="namespaces/hyde.html#function_normalize_slashes">normalize_slashes()</a></li>
                                                     <li><a href="namespaces/hyde.html#function_path_join">path_join()</a></li>
+                                                    <li><a href="namespaces/default.html#function_route">route()</a></li>
                                                     <li><a href="namespaces/hyde.html#function_strip_newlines">strip_newlines()</a></li>
                                                     <li><a href="namespaces/hyde.html#function_trim_slashes">trim_slashes()</a></li>
                                                     <li><a href="namespaces/hyde.html#function_unixsum">unixsum()</a></li>
                                                     <li><a href="namespaces/hyde.html#function_unixsum_file">unixsum_file()</a></li>
                                                     <li><a href="namespaces/default.html#function_unslash">unslash()</a></li>
                                                     <li><a href="namespaces/hyde.html#function_unslash">unslash()</a></li>
+                                                    <li><a href="namespaces/default.html#function_url">url()</a></li>
                                                     <li><a href="namespaces/hyde.html#function_yaml_decode">yaml_decode()</a></li>
                                                     <li><a href="namespaces/hyde.html#function_yaml_encode">yaml_encode()</a></li>
                                             </ul>

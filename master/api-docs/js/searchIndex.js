@@ -4341,6 +4341,21 @@ Search.appendIndex(
             "summary": "Remove\u0020trailing\u0020slashes\u0020from\u0020the\u0020start\u0020and\u0020end\u0020of\u0020a\u0020string.",
             "url": "namespaces/default.html#function_unslash"
         },                {
+            "fqsen": "\\asset\u0028\u0029",
+            "name": "asset",
+            "summary": "Get\u0020a\u0020relative\u0020link\u0020or\u0020URL\u0020to\u0020an\u0020asset\u0020in\u0020the\u0020media\u0020directory.",
+            "url": "namespaces/default.html#function_asset"
+        },                {
+            "fqsen": "\\route\u0028\u0029",
+            "name": "route",
+            "summary": "Get\u0020a\u0020page\u0020route\u0020by\u0020its\u0020key.",
+            "url": "namespaces/default.html#function_route"
+        },                {
+            "fqsen": "\\url\u0028\u0029",
+            "name": "url",
+            "summary": "Get\u0020a\u0020qualified\u0020URL\u0020to\u0020the\u0020supplied\u0020path\u0020if\u0020a\u0020base\u0020URL\u0020is\u0020set.",
+            "url": "namespaces/default.html#function_url"
+        },                {
             "fqsen": "\\Hyde\\hyde\u0028\u0029",
             "name": "hyde",
             "summary": "Get\u0020the\u0020available\u0020HydeKernel\u0020instance.",
