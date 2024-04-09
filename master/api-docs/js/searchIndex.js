@@ -776,6 +776,51 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-ConsoleServiceProvider.html#method_boot"
         },                {
+            "fqsen": "\\Hyde\\Enums\\Feature",
+            "name": "Feature",
+            "summary": "A\u0020configurable\u0020feature\u0020that\u0020belongs\u0020to\u0020the\u0020Features\u0020class.",
+            "url": "classes/Hyde-Enums-Feature.html"
+        },                {
+            "fqsen": "\\Hyde\\Enums\\Feature\u003A\u003AHtmlPages",
+            "name": "HtmlPages",
+            "summary": "",
+            "url": "classes/Hyde-Enums-Feature.html#enumcase_HtmlPages"
+        },                {
+            "fqsen": "\\Hyde\\Enums\\Feature\u003A\u003AMarkdownPosts",
+            "name": "MarkdownPosts",
+            "summary": "",
+            "url": "classes/Hyde-Enums-Feature.html#enumcase_MarkdownPosts"
+        },                {
+            "fqsen": "\\Hyde\\Enums\\Feature\u003A\u003ABladePages",
+            "name": "BladePages",
+            "summary": "",
+            "url": "classes/Hyde-Enums-Feature.html#enumcase_BladePages"
+        },                {
+            "fqsen": "\\Hyde\\Enums\\Feature\u003A\u003AMarkdownPages",
+            "name": "MarkdownPages",
+            "summary": "",
+            "url": "classes/Hyde-Enums-Feature.html#enumcase_MarkdownPages"
+        },                {
+            "fqsen": "\\Hyde\\Enums\\Feature\u003A\u003ADocumentationPages",
+            "name": "DocumentationPages",
+            "summary": "",
+            "url": "classes/Hyde-Enums-Feature.html#enumcase_DocumentationPages"
+        },                {
+            "fqsen": "\\Hyde\\Enums\\Feature\u003A\u003ADarkmode",
+            "name": "Darkmode",
+            "summary": "",
+            "url": "classes/Hyde-Enums-Feature.html#enumcase_Darkmode"
+        },                {
+            "fqsen": "\\Hyde\\Enums\\Feature\u003A\u003ADocumentationSearch",
+            "name": "DocumentationSearch",
+            "summary": "",
+            "url": "classes/Hyde-Enums-Feature.html#enumcase_DocumentationSearch"
+        },                {
+            "fqsen": "\\Hyde\\Enums\\Feature\u003A\u003ATorchlight",
+            "name": "Torchlight",
+            "summary": "",
+            "url": "classes/Hyde-Enums-Feature.html#enumcase_Torchlight"
+        },                {
             "fqsen": "\\Hyde\\Facades\\Asset",
             "name": "Asset",
             "summary": "Handles\u0020the\u0020retrieval\u0020of\u0020core\u0020asset\u0020files,\u0020either\u0020from\u0020the\u0020HydeFront\u0020CDN\u0020or\u0020from\u0020the\u0020local\u0020media\u0020folder.",
@@ -6265,6 +6310,11 @@ Search.appendIndex(
             "name": "Console",
             "summary": "",
             "url": "namespaces/hyde-console.html"
+        },                {
+            "fqsen": "\\Hyde\\Enums",
+            "name": "Enums",
+            "summary": "",
+            "url": "namespaces/hyde-enums.html"
         },                {
             "fqsen": "\\Hyde\\Facades",
             "name": "Facades",
