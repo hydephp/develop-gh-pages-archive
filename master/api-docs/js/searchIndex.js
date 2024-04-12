@@ -2041,6 +2041,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html#property_message"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateRssFeed\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html#property_path"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSearch",
             "name": "GenerateSearch",
             "summary": "",
@@ -2085,6 +2090,11 @@ Search.appendIndex(
             "name": "message",
             "summary": "",
             "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSitemap.html#property_message"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Actions\\PostBuildTasks\\GenerateSitemap\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Actions-PostBuildTasks-GenerateSitemap.html#property_path"
         },                {
             "fqsen": "\\Hyde\\Framework\\Actions\\PreBuildTasks\\CleanSiteDirectory",
             "name": "CleanSiteDirectory",

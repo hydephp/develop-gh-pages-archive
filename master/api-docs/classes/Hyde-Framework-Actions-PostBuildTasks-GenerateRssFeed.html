@@ -141,6 +141,9 @@
         </div>
     
     
+            <span class="phpdocumentor-element__extends">
+            Uses
+                            <a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html"><abbr title="\Hyde\Framework\Concerns\InteractsWithDirectories">InteractsWithDirectories</abbr></a>                    </span>
     </h2>
 
 <div class="phpdocumentor-label-line">
@@ -151,7 +154,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PostBuildTasks/GenerateRssFeed.php"><a href="files/packages-framework-src-framework-actions-postbuildtasks-generaterssfeed.html"><abbr title="packages/framework/src/Framework/Actions/PostBuildTasks/GenerateRssFeed.php">GenerateRssFeed.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -197,6 +200,12 @@
     <a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#property_output">$output</a>
     <span>
                         &nbsp;: <abbr title="\Illuminate\Console\OutputStyle">OutputStyle</abbr>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html#property_path">$path</a>
+    <span>
+                        &nbsp;: string            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
@@ -284,6 +293,27 @@ as well as write output to the console, and handle any exceptions that may occur
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectories">needsDirectories()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Ensure the supplied directories exist by creating them if they don&#039;t.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectory">needsDirectory()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Ensure the supplied directory exist by creating it if it does not.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsParentDirectory">needsParentDirectory()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Ensure the supplied file&#039;s parent directory exists by creating it if it does not.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_startClock">startClock()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -326,7 +356,7 @@ as well as write output to the console, and handle any exceptions that may occur
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PostBuildTasks/GenerateRssFeed.php"><a href="files/packages-framework-src-framework-actions-postbuildtasks-generaterssfeed.html"><abbr title="packages/framework/src/Framework/Actions/PostBuildTasks/GenerateRssFeed.php">GenerateRssFeed.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -401,6 +431,39 @@ as well as write output to the console, and handle any exceptions that may occur
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type"><abbr title="\Illuminate\Console\OutputStyle">OutputStyle</abbr>|null</span>
     <span class="phpdocumentor-signature__name">$output</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_path">
+        $path
+        <a href="classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html#property_path" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PostBuildTasks/GenerateRssFeed.php"><a href="files/packages-framework-src-framework-actions-postbuildtasks-generaterssfeed.html"><abbr title="packages/framework/src/Framework/Actions/PostBuildTasks/GenerateRssFeed.php">GenerateRssFeed.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">20</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$path</span>
     </code>
 
     
@@ -544,7 +607,7 @@ as well as write output to the console, and handle any exceptions that may occur
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PostBuildTasks/GenerateRssFeed.php"><a href="files/packages-framework-src-framework-actions-postbuildtasks-generaterssfeed.html"><abbr title="packages/framework/src/Framework/Actions/PostBuildTasks/GenerateRssFeed.php">GenerateRssFeed.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
     </aside>
 
@@ -575,7 +638,7 @@ as well as write output to the console, and handle any exceptions that may occur
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Actions/PostBuildTasks/GenerateRssFeed.php"><a href="files/packages-framework-src-framework-actions-postbuildtasks-generaterssfeed.html"><abbr title="packages/framework/src/Framework/Actions/PostBuildTasks/GenerateRssFeed.php">GenerateRssFeed.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -866,6 +929,143 @@ as well as write output to the console, and handle any exceptions that may occur
         class="phpdocumentor-element
             -method
             -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_needsDirectories">
+        needsDirectories()
+        <a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectories" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/InteractsWithDirectories.php"><a href="files/packages-framework-src-framework-concerns-interactswithdirectories.html"><abbr title="packages/framework/src/Framework/Concerns/InteractsWithDirectories.php">InteractsWithDirectories.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Ensure the supplied directories exist by creating them if they don&#039;t.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">needsDirectories</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$directories</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$directories</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>array with relative file paths to the directories</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_needsDirectory">
+        needsDirectory()
+        <a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/InteractsWithDirectories.php"><a href="files/packages-framework-src-framework-concerns-interactswithdirectories.html"><abbr title="packages/framework/src/Framework/Concerns/InteractsWithDirectories.php">InteractsWithDirectories.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">18</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Ensure the supplied directory exist by creating it if it does not.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">needsDirectory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$directory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$directory</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>relative file path to the directory</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_needsParentDirectory">
+        needsParentDirectory()
+        <a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsParentDirectory" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Framework/Concerns/InteractsWithDirectories.php"><a href="files/packages-framework-src-framework-concerns-interactswithdirectories.html"><abbr title="packages/framework/src/Framework/Concerns/InteractsWithDirectories.php">InteractsWithDirectories.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Ensure the supplied file&#039;s parent directory exists by creating it if it does not.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">needsParentDirectory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$levels</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$file</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$levels</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">1</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_startClock">
@@ -1044,6 +1244,7 @@ as well as write output to the console, and handle any exceptions that may occur
                                                     <li><a href="classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html#property_message">$message<a href="classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html"></li>
                                                     <li><a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#property_exitCode">$exitCode<a href="classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html"></li>
                                                     <li><a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#property_output">$output<a href="classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html"></li>
+                                                    <li><a href="classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html#property_path">$path<a href="classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html"></li>
                                                     <li><a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#property_timeStart">$timeStart<a href="classes/Hyde-Framework-Actions-PostBuildTasks-GenerateRssFeed.html"></li>
                                             </ul>
                 </li>
@@ -1062,6 +1263,9 @@ as well as write output to the console, and handle any exceptions that may occur
                                             <li><a href="classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_writeln">writeln()</a></li>
                                             <li><a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_getExecutionTimeInMs">getExecutionTimeInMs()</a></li>
                                             <li><a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_getExecutionTimeString">getExecutionTimeString()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectories">needsDirectories()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectory">needsDirectory()</a></li>
+                                            <li><a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsParentDirectory">needsParentDirectory()</a></li>
                                             <li><a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_startClock">startClock()</a></li>
                                             <li><a href="classes/Hyde-Framework-Concerns-TracksExecutionTime.html#method_stopClock">stopClock()</a></li>
                                     </ul>
