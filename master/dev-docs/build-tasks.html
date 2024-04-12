@@ -263,6 +263,17 @@
 </li>
 </ul>
 </li>
+<li>
+<a href="#error-handling">Error handling</a>
+</li>
+<li>
+<a href="#helper-methods">Helper methods</a>
+<ul>
+<li>
+<a href="#output-helpers">Output helpers</a>
+</li>
+</ul>
+</li>
 </ul>
 
             </li>                                            <li class="sidebar-item -ml-4 pl-4" role="listitem">
@@ -454,6 +465,20 @@ just as long as it's done early enough in the application lifecycle, so it's reg
         $this-&gt;app-&gt;make(\Hyde\Framework\Services\BuildTaskService::class)
             -&gt;registerTask(\MyPackage\Tasks\MyBuildTask::class);
     }
+}
+</code></pre>
+<h2>Error handling<a id="error-handling" href="#error-handling" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<p>If an exception is thrown in a build task, the build command will catch it and display the error message to the user.</p>
+<h2>Helper methods<a id="helper-methods" href="#helper-methods" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h3>Output helpers<a id="output-helpers" href="#output-helpers" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<p>When a build task is called by the site build command, it gets access to the Laravel and Symfony console output helpers through the <code>$output</code> property.</p>
+<pre><code class="language-php">public function handle(): void
+{
+    /** @var \Illuminate\Console\OutputStyle $output */
+
+    $this-&gt;output-&gt;info('Hello World!');
+    $this-&gt;output-&gt;error('Something went wrong!');
+    $this-&gt;output-&gt;writeln('This is a line of text');
 }
 </code></pre>
     </section>
