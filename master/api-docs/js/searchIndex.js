@@ -3276,6 +3276,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_writeln"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003Askip\u0028\u0029",
+            "name": "skip",
+            "summary": "Write\u0020a\u0020fluent\u0020message\u0020to\u0020the\u0020output\u0020that\u0020the\u0020task\u0020is\u0020skipping\u0020and\u0020halt\u0020the\u0020execution.",
+            "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#method_skip"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTask\u003A\u003AcreatedSiteFile\u0028\u0029",
             "name": "createdSiteFile",
             "summary": "Write\u0020a\u0020fluent\u0020message\u0020to\u0020the\u0020output\u0020that\u0020the\u0020task\u0020created\u0020the\u0020specified\u0020file.",
@@ -3300,6 +3305,16 @@ Search.appendIndex(
             "name": "output",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTask.html#property_output"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTaskSkippedException",
+            "name": "BuildTaskSkippedException",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTaskSkippedException.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\BuildTaskSkippedException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-BuildTasks-BuildTaskSkippedException.html#method___construct"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\BuildTasks\\PostBuildTask",
             "name": "PostBuildTask",

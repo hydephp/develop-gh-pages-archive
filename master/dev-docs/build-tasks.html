@@ -272,6 +272,9 @@
 <li>
 <a href="#output-helpers">Output helpers</a>
 </li>
+<li>
+<a href="#skipping-tasks">Skipping tasks</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -481,6 +484,19 @@ just as long as it's done early enough in the application lifecycle, so it's reg
     $this-&gt;output-&gt;writeln('This is a line of text');
 }
 </code></pre>
+<h3>Skipping tasks<a id="skipping-tasks" href="#skipping-tasks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<blockquote class="info"><p>This feature was added in HydePHP v1.6.0</p></blockquote>
+<p>If you for some reason need to skip the task during its execution, you can call the <code>skip()</code> method.</p>
+<pre><code class="language-php">public function handle(): void
+{
+    if ($this-&gt;someCondition() !== true) {
+        $this-&gt;skip('Some condition was not met');
+        
+        // The task will not be executed past this point
+    }
+}
+</code></pre>
+<p>This will then halt the execution of the task, and display a notice with the message you provided to the console.</p>
     </section>
     <footer id="document-footer" class="flex items-center flex-wrap mt-8 prose-p:my-3 justify-between text-[90%]">
         
