@@ -58,16 +58,17 @@
     <div class="block md:hidden">
         <button id="navigation-toggle-button" class="flex items-center px-3 py-1 hover:text-gray-700 dark:text-gray-200"
                 aria-label="Toggle navigation menu" @click="navigationOpen = ! navigationOpen">
-            <svg x-show="! navigationOpen" title="Open Navigation Menu" class="dark:fill-gray-200"
-                 style="display: block;"
-                 id="open-main-navigation-menu-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
-                 width="24"><title>Open Menu</title>
+            <svg id="open-main-navigation-menu-icon" title="Open Navigation Menu" class="dark:fill-gray-200"
+                 xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24"
+                 x-show="! navigationOpen" style="display: block;"
+            ><title>Open Menu</title>
                 <path d="M0 0h24v24H0z" fill="none"/>
                 <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
             </svg>
-            <svg x-show="navigationOpen" title="Close Navigation Menu" class="dark:fill-gray-200" style="display: none;"
-                 id="close-main-navigation-menu-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
-                 width="24"><title>Close Menu</title>
+            <svg id="close-main-navigation-menu-icon" title="Close Navigation Menu" class="dark:fill-gray-200"
+                 xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24"
+                 x-show="navigationOpen" style="display: none;"
+            ><title>Close Menu</title>
                 <path d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
             </svg>
@@ -98,7 +99,7 @@
 
 	<figure class="w-fit mx-auto mt-12 mb-4 rounded-lg overflow-hidden"><div style="padding: 1rem; color: rgb(191, 199, 213); background-color: rgb(41, 45, 62); font-family: &quot;Fira Code Regular&quot;, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; line-height: 20px; white-space: pre; overflow-x: auto; max-width: 90vw;"><div><span style="color: #89ddff;">&lt;</span><span style="color: #ff5572;">div</span><span style="color: #89ddff;"> </span><span style="color: #ffcb6b;">class</span><span style="color: #89ddff;">=</span><span style="color: #d9f5dd;">"</span><span style="color: #c3e88d;">text-center</span><span style="color: #d9f5dd;">"</span><span style="color: #89ddff;">&gt;</span></div><div>&nbsp; &nbsp; <span style="color: #d3423e;">&commat;php</span> </div><div>&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #89ddff;">echo</span> <span style="color: #d9f5dd;">"</span><span style="color: #c3e88d;">Hello World! </span><span style="color: #d9f5dd;">"</span>;</div><br><div>&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #89ddff;">echo</span> <span style="color: #d9f5dd;">"</span><span style="color: #c3e88d;">This PHP was executed at </span><span style="color: #d9f5dd;">"</span> <span style="color: #89ddff;">.</span> <span style="color: #89ddff;">date</span>(<span style="color: #d9f5dd;">"</span><span style="color: #c3e88d;">Y-m-d H:i:s</span><span style="color: #d9f5dd;">"</span>);</div><div>&nbsp; &nbsp; <span style="color: #d3423e;">&commat;endphp</span> </div><div><span style="color: #89ddff;">&lt;/</span><span style="color: #ff5572;">div</span><span style="color: #89ddff;">&gt;</span></div></div></figure>
 	<div class="text-center">
-		Hello World! This PHP was executed at 2024-04-14 10:37:04 
+		Hello World! This PHP was executed at 2024-04-14 11:49:41 
 	</div>
 </main>
 
@@ -106,15 +107,14 @@
 
     <footer aria-label="Page footer" class="flex py-4 px-6 w-full text-center mt-auto bg-slate-100 dark:bg-gray-800">
         <div class="prose dark:prose-invert text-center mx-auto">
-            <p>HydePHP Monorepo 1.5.0-<a href="https://github.com/caendesilva/hyde-monorepo/commit/11d8848a9a106ca79e6fda071d3ce6caa18139f7
-">11d8848</a> (compiled 2024-04-14 10:37:04 UTC - <a href="build-information.html">Build Information</a>)</p>
+            <p>HydePHP Monorepo 1.5.0-<a href="https://github.com/caendesilva/hyde-monorepo/commit/bf136ff1ebf322a4bdca54649934f873481ec490
+">bf136ff</a> (compiled 2024-04-14 11:49:41 UTC - <a href="build-information.html">Build Information</a>)</p>
 
         </div>
         <a href="#app" aria-label="Go to top of page" class="float-right">
             <button title="Scroll to top">
-                <svg width="1.5rem" height="1.5rem" role="presentation" class="fill-current text-gray-500 h-6 w-6"
-                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+                <svg width="1.5rem" height="1.5rem" role="presentation" class="fill-current text-gray-500 h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
                 </svg>
             </button>
         </a>
