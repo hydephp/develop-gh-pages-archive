@@ -2476,10 +2476,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeImage"
         },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\BlogPostDataFactory\u003A\u003AmakeDescriptionFromMarkdownBody\u0028\u0029",
+            "name": "makeDescriptionFromMarkdownBody",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeDescriptionFromMarkdownBody"
+        },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\BlogPostDataFactory\u003A\u003AgetTruncatedMarkdown\u0028\u0029",
             "name": "getTruncatedMarkdown",
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_getTruncatedMarkdown"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Factories\\BlogPostDataFactory\u003A\u003AstripMarkdownFromBody\u0028\u0029",
+            "name": "stripMarkdownFromBody",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_stripMarkdownFromBody"
         },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\BlogPostDataFactory\u003A\u003AgetMatter\u0028\u0029",
             "name": "getMatter",
