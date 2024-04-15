@@ -332,7 +332,7 @@ HydeKernel::getInstance()-&gt;version();
 app(HydeKernel::class)-&gt;version();
 hyde()-&gt;version();
 </code></pre>
-<p>The Kernel instance is constructed in <code>bootstrap.php</code>, and is available globally as <code>$hyde</code>.</p>
+<p>The Kernel instance is constructed and bound in the <code>app/bootstrap.php</code> file.</p>
 <h2>The Kernel Lifecycle<a id="the-kernel-lifecycle" href="#the-kernel-lifecycle" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Whenever we talk about the kernel being &quot;booted&quot; we are talking about the kernel's role in the autodiscovery process.</p>
 <p>You can read all about it in the <a href="autodiscovery">Autodiscovery Documentation</a>.</p>

@@ -2481,16 +2481,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_makeDescriptionFromMarkdownBody"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\BlogPostDataFactory\u003A\u003AgetTruncatedMarkdown\u0028\u0029",
-            "name": "getTruncatedMarkdown",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_getTruncatedMarkdown"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\BlogPostDataFactory\u003A\u003AstripMarkdownFromBody\u0028\u0029",
-            "name": "stripMarkdownFromBody",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-BlogPostDataFactory.html#method_stripMarkdownFromBody"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\BlogPostDataFactory\u003A\u003AgetMatter\u0028\u0029",
             "name": "getMatter",
             "summary": "",
@@ -2776,25 +2766,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-HydePageDataFactory.html#property_navigation"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory\u003A\u003A\u0024routeKey",
-            "name": "routeKey",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-HydePageDataFactory.html#property_routeKey"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory\u003A\u003A\u0024outputPath",
-            "name": "outputPath",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-HydePageDataFactory.html#property_outputPath"
-        },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory\u003A\u003A\u0024identifier",
             "name": "identifier",
             "summary": "",
             "url": "classes/Hyde-Framework-Factories-HydePageDataFactory.html#property_identifier"
-        },                {
-            "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory\u003A\u003A\u0024pageClass",
-            "name": "pageClass",
-            "summary": "",
-            "url": "classes/Hyde-Framework-Factories-HydePageDataFactory.html#property_pageClass"
         },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\HydePageDataFactory\u003A\u003A\u0024markdown",
             "name": "markdown",
@@ -3338,7 +3313,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Documentation\\SemanticDocumentationArticle",
             "name": "SemanticDocumentationArticle",
-            "summary": "Class\u0020to\u0020make\u0020Hyde\u0020documentation\u0020pages\u0020smarter,\nby\u0020dynamically\u0020enriching\u0020them\u0020with\u0020semantic\u0020HTML.",
+            "summary": "Class\u0020to\u0020make\u0020Hyde\u0020documentation\u0020pages\u0020smarter\u0020by\u0020dynamically\u0020enriching\u0020them\u0020with\u0020semantic\u0020HTML.",
             "url": "classes/Hyde-Framework-Features-Documentation-SemanticDocumentationArticle.html"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Documentation\\SemanticDocumentationArticle\u003A\u003Amake\u0028\u0029",
