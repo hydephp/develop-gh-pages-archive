@@ -521,10 +521,15 @@ Search.appendIndex(
             "summary": "The\u0020base\u0020handle\u0020method\u0020that\u0020can\u0020be\u0020overridden\u0020by\u0020child\u0020classes.",
             "url": "classes/Hyde-Console-Commands-RouteListCommand.html#method_handle"
         },                {
-            "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003ArouteListClass\u0028\u0029",
-            "name": "routeListClass",
+            "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003Agenerate\u0028\u0029",
+            "name": "generate",
             "summary": "",
-            "url": "classes/Hyde-Console-Commands-RouteListCommand.html#method_routeListClass"
+            "url": "classes/Hyde-Console-Commands-RouteListCommand.html#method_generate"
+        },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003AmakeHeader\u0028\u0029",
+            "name": "makeHeader",
+            "summary": "",
+            "url": "classes/Hyde-Console-Commands-RouteListCommand.html#method_makeHeader"
         },                {
             "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003A\u0024signature",
             "name": "signature",
