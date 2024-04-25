@@ -6531,6 +6531,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/hyde-support-filesystem.html"
         },                {
+            "fqsen": "\\Hyde\\Support\\Internal",
+            "name": "Internal",
+            "summary": "",
+            "url": "namespaces/hyde-support-internal.html"
+        },                {
             "fqsen": "\\Hyde\\Support\\Models",
             "name": "Models",
             "summary": "",
