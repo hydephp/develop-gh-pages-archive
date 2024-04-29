@@ -256,6 +256,9 @@
 <li>
 <a href="#hydefrontversion-and-hydefrontcdnurl">hydefront_version and hydefront_cdn_url</a>
 </li>
+<li>
+<a href="#themetogglebuttons">theme_toggle_buttons</a>
+</li>
 </ul>
 </li>
 <li>
@@ -662,6 +665,14 @@ with common directories including the default one, but you are free to change th
 'hydefront_version' =&gt; AssetService::HYDEFRONT_VERSION,
 'hydefront_cdn_url' =&gt; AssetService::HYDEFRONT_CDN_URL,
 </code></pre>
+<h3><code>theme_toggle_buttons</code><a id="themetogglebuttons" href="#themetogglebuttons" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<blockquote class="info"><p>This feature was added in HydePHP v1.7.0</p></blockquote>
+<p>This setting allows you to enable or disable the theme toggle buttons in the navigation menu.</p>
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'theme_toggle_buttons' =&gt; true,
+</code></pre>
+<p>If the <code>Feature::Darkmode</code> setting is disabled in the <code>features</code> array in the same file, this won't do anything, but if darkmode is enabled,
+setting this setting to <code>false</code> will make so that the buttons will not show up in the app layout nor the documentation layout;
+instead the appropriate color scheme will be automatically applied based on the browser system settings.</p>
 <h2>Blade Views<a id="blade-views" href="#blade-views" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <p>Hyde uses the Laravel Blade templating engine. Most parts of the included templates have been extracted into components to be customized easily.
 Before editing the views you should familiarize yourself with the <a href="https://laravel.com/docs/10.x/blade">Laravel Blade Documentation</a>.</p>
