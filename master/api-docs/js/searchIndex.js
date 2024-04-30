@@ -3826,10 +3826,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_generate"
         },                {
-            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AhasDropdowns\u0028\u0029",
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003A\u0024hasDropdowns",
             "name": "hasDropdowns",
             "summary": "",
-            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_hasDropdowns"
+            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#property_hasDropdowns"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AgetDropdowns\u0028\u0029",
             "name": "getDropdowns",
@@ -3855,6 +3855,11 @@ Search.appendIndex(
             "name": "dropdownsEnabled",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_dropdownsEnabled"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationMenu\u003A\u003AhasGroupExplicitlySetInFrontMatter\u0028\u0029",
+            "name": "hasGroupExplicitlySetInFrontMatter",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_hasGroupExplicitlySetInFrontMatter"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\XmlGenerators\\BaseXmlGenerator",
             "name": "BaseXmlGenerator",
