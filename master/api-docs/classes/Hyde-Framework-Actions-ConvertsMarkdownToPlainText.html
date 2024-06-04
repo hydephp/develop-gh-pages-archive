@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/hyde.html" class="">Hyde</a>
@@ -95,7 +95,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -103,14 +103,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -158,6 +158,8 @@
 
 
 
+
+
 <h3 id="toc">
     Table of Contents
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -179,19 +181,19 @@
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_ATX_HEADERS">ATX_HEADERS</a>
     <span>
-        &nbsp;= [&#039;/^(\\n)?\\s{0,}#{1,6}\\s+| {0,}(\\n)?\\s{0,}#{0,} {0,}(\\n)?\\s{0,}$/m&#039; =&gt; &#039;$1$2$3&#039;]                            </span>
+        &nbsp;= [&#039;/^(\n)?\s{0,}#{1,6}\s+| {0,}(\n)?\s{0,}#{0,} {0,}(\n)?\s{0,}$/m&#039; =&gt; &#039;$1$2$3&#039;]                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_BLOCKQUOTES">BLOCKQUOTES</a>
     <span>
-        &nbsp;= [&#039;/^\\s{0,3}&gt;\\s?/&#039; =&gt; &#039;&#039;]                            </span>
+        &nbsp;= [&#039;/^\s{0,3}&gt;\s?/&#039; =&gt; &#039;&#039;]                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_CODE_BLOCKS">CODE_BLOCKS</a>
     <span>
-        &nbsp;= [&#039;/(`{3,})(.*?)\\1/m&#039; =&gt; &#039;$2&#039;]                            </span>
+        &nbsp;= [&#039;/(`{3,})(.*?)\1/m&#039; =&gt; &#039;$2&#039;]                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
@@ -204,25 +206,25 @@
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_EMPHASIS">EMPHASIS</a>
     <span>
-        &nbsp;= [&#039;/([\\*_]{1,3})(\\S.*?\\S{0,1})\\1/&#039; =&gt; &#039;$2&#039;]                            </span>
+        &nbsp;= [&#039;/([\*_]{1,3})(\S.*?\S{0,1})\1/&#039; =&gt; &#039;$2&#039;]                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_FENCED_CODEBLOCKS">FENCED_CODEBLOCKS</a>
     <span>
-        &nbsp;= [&#039;/`{3}.*\\n/&#039; =&gt; &#039;&#039;, &#039;/`{3}/&#039; =&gt; &#039;&#039;]                            </span>
+        &nbsp;= [&#039;/`{3}.*\n/&#039; =&gt; &#039;&#039;, &#039;/`{3}/&#039; =&gt; &#039;&#039;]                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_FOOTNOTES">FOOTNOTES</a>
     <span>
-        &nbsp;= [&#039;/\\[\\^.+?\\](\\: .*?$)?/&#039; =&gt; &#039;&#039;]                            </span>
+        &nbsp;= [&#039;/\[\^.+?\](\: .*?$)?/&#039; =&gt; &#039;&#039;]                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_HORIZONTAL_RULES">HORIZONTAL_RULES</a>
     <span>
-        &nbsp;= [&#039;/^(-\\s*?|\\*\\s*?|_\\s*?){3,}\\s*/m&#039; =&gt; &#039;&#039;]                            </span>
+        &nbsp;= [&#039;/^(-\s*?|\*\s*?|_\s*?){3,}\s*/m&#039; =&gt; &#039;&#039;]                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
@@ -234,7 +236,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_IMAGES">IMAGES</a>
     <span>
-        &nbsp;= [&#039;/\\!\\[(.*?)\\][\\[\\(].*?[\\]\\)]/&#039; =&gt; &#039;$1&#039;]                            </span>
+        &nbsp;= [&#039;/\!\[(.*?)\][\[\(].*?[\]\)]/&#039; =&gt; &#039;$1&#039;]                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
@@ -246,26 +248,26 @@
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_INLINE_LINKS">INLINE_LINKS</a>
     <span>
-        &nbsp;= [&#039;/\\[(.*?)\\][\\[\\(].*?[\\]\\)]/&#039; =&gt; &#039;$1&#039;]                            </span>
+        &nbsp;= [&#039;/\[(.*?)\][\[\(].*?[\]\)]/&#039; =&gt; &#039;$1&#039;]                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_REFERENCE_LINKS">REFERENCE_LINKS</a>
     <span>
-        &nbsp;= [&#039;/^\\s{1,2}\\[(.*?)\\]: (\\S+)( &quot;.*?&quot;)?\\s*$/&#039; =&gt; &#039;&#039;]                            </span>
+        &nbsp;= [&#039;/^\s{1,2}\[(.*?)\]: (\S+)( &quot;.*?&quot;)?\s*$/&#039; =&gt; &#039;&#039;]                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_REPEATED_NEWLINES">REPEATED_NEWLINES</a>
     <span>
-        &nbsp;= [&#039;/\\n{2,}/&#039; =&gt; &quot;\n\n&quot;]                            </span>
+        &nbsp;= [&#039;/\n{2,}/&#039; =&gt; &quot;\n\n&quot;]                            </span>
 </dt>
 <dd>Replace two or more newlines with exactly two</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_SETEXT_HEADERS">SETEXT_HEADERS</a>
     <span>
-        &nbsp;= [&#039;/\\n={2,}/&#039; =&gt; &quot;\n&quot;]                            </span>
+        &nbsp;= [&#039;/\n={2,}/&#039; =&gt; &quot;\n&quot;]                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
@@ -277,7 +279,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -constant -protected">
     <a href="classes/Hyde-Framework-Actions-ConvertsMarkdownToPlainText.html#constant_TILDE_FENCED_CODEBLOCKS">TILDE_FENCED_CODEBLOCKS</a>
     <span>
-        &nbsp;= [&#039;/~{3}.*\\n/&#039; =&gt; &#039;&#039;, &#039;/~{3}/&#039; =&gt; &#039;&#039;]                            </span>
+        &nbsp;= [&#039;/~{3}.*\n/&#039; =&gt; &#039;&#039;, &#039;/~{3}/&#039; =&gt; &#039;&#039;]                            </span>
 </dt>
 
     </dl>
@@ -350,7 +352,6 @@
 
 
 
-
         
     <section class="phpdocumentor-constants">
         <h3 class="phpdocumentor-elements__header" id="constants">
@@ -377,12 +378,14 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">ATX_HEADERS</span>
-    = <span class="phpdocumentor-signature__default-value">[&#039;/^(\\n)?\\s{0,}#{1,6}\\s+| {0,}(\\n)?\\s{0,}#{0,} {0,}(\\n)?\\s{0,}$/m&#039; =&gt; &#039;$1$2$3&#039;]</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;/^(\n)?\s{0,}#{1,6}\s+| {0,}(\n)?\s{0,}#{0,} {0,}(\n)?\s{0,}$/m&#039; =&gt; &#039;$1$2$3&#039;]</span>
 </code>
 
 
     
     
+    
+
     
 
 </article>
@@ -405,12 +408,14 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">BLOCKQUOTES</span>
-    = <span class="phpdocumentor-signature__default-value">[&#039;/^\\s{0,3}&gt;\\s?/&#039; =&gt; &#039;&#039;]</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;/^\s{0,3}&gt;\s?/&#039; =&gt; &#039;&#039;]</span>
 </code>
 
 
     
     
+    
+
     
 
 </article>
@@ -433,12 +438,14 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">CODE_BLOCKS</span>
-    = <span class="phpdocumentor-signature__default-value">[&#039;/(`{3,})(.*?)\\1/m&#039; =&gt; &#039;$2&#039;]</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;/(`{3,})(.*?)\1/m&#039; =&gt; &#039;$2&#039;]</span>
 </code>
 
 
     
     
+    
+
     
 
 </article>
@@ -470,6 +477,8 @@
     
     
 
+    
+
 </article>
                     <article class="phpdocumentor-element -constant -protected ">
     <h4 class="phpdocumentor-element__name" id="constant_EMPHASIS">
@@ -490,12 +499,14 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">EMPHASIS</span>
-    = <span class="phpdocumentor-signature__default-value">[&#039;/([\\*_]{1,3})(\\S.*?\\S{0,1})\\1/&#039; =&gt; &#039;$2&#039;]</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;/([\*_]{1,3})(\S.*?\S{0,1})\1/&#039; =&gt; &#039;$2&#039;]</span>
 </code>
 
 
     
     
+    
+
     
 
 </article>
@@ -518,12 +529,14 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">FENCED_CODEBLOCKS</span>
-    = <span class="phpdocumentor-signature__default-value">[&#039;/`{3}.*\\n/&#039; =&gt; &#039;&#039;, &#039;/`{3}/&#039; =&gt; &#039;&#039;]</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;/`{3}.*\n/&#039; =&gt; &#039;&#039;, &#039;/`{3}/&#039; =&gt; &#039;&#039;]</span>
 </code>
 
 
     
     
+    
+
     
 
 </article>
@@ -546,12 +559,14 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">FOOTNOTES</span>
-    = <span class="phpdocumentor-signature__default-value">[&#039;/\\[\\^.+?\\](\\: .*?$)?/&#039; =&gt; &#039;&#039;]</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;/\[\^.+?\](\: .*?$)?/&#039; =&gt; &#039;&#039;]</span>
 </code>
 
 
     
     
+    
+
     
 
 </article>
@@ -574,12 +589,14 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">HORIZONTAL_RULES</span>
-    = <span class="phpdocumentor-signature__default-value">[&#039;/^(-\\s*?|\\*\\s*?|_\\s*?){3,}\\s*/m&#039; =&gt; &#039;&#039;]</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;/^(-\s*?|\*\s*?|_\s*?){3,}\s*/m&#039; =&gt; &#039;&#039;]</span>
 </code>
 
 
     
     
+    
+
     
 
 </article>
@@ -610,6 +627,8 @@
     
     
 
+    
+
 </article>
                     <article class="phpdocumentor-element -constant -protected ">
     <h4 class="phpdocumentor-element__name" id="constant_IMAGES">
@@ -630,12 +649,14 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">IMAGES</span>
-    = <span class="phpdocumentor-signature__default-value">[&#039;/\\!\\[(.*?)\\][\\[\\(].*?[\\]\\)]/&#039; =&gt; &#039;$1&#039;]</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;/\!\[(.*?)\][\[\(].*?[\]\)]/&#039; =&gt; &#039;$1&#039;]</span>
 </code>
 
 
     
     
+    
+
     
 
 </article>
@@ -666,6 +687,8 @@
     
     
 
+    
+
 </article>
                     <article class="phpdocumentor-element -constant -protected ">
     <h4 class="phpdocumentor-element__name" id="constant_INLINE_LINKS">
@@ -686,12 +709,14 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">INLINE_LINKS</span>
-    = <span class="phpdocumentor-signature__default-value">[&#039;/\\[(.*?)\\][\\[\\(].*?[\\]\\)]/&#039; =&gt; &#039;$1&#039;]</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;/\[(.*?)\][\[\(].*?[\]\)]/&#039; =&gt; &#039;$1&#039;]</span>
 </code>
 
 
     
     
+    
+
     
 
 </article>
@@ -714,12 +739,14 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REFERENCE_LINKS</span>
-    = <span class="phpdocumentor-signature__default-value">[&#039;/^\\s{1,2}\\[(.*?)\\]: (\\S+)( &quot;.*?&quot;)?\\s*$/&#039; =&gt; &#039;&#039;]</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;/^\s{1,2}\[(.*?)\]: (\S+)( &quot;.*?&quot;)?\s*$/&#039; =&gt; &#039;&#039;]</span>
 </code>
 
 
     
     
+    
+
     
 
 </article>
@@ -743,12 +770,14 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REPEATED_NEWLINES</span>
-    = <span class="phpdocumentor-signature__default-value">[&#039;/\\n{2,}/&#039; =&gt; &quot;\n\n&quot;]</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;/\n{2,}/&#039; =&gt; &quot;\n\n&quot;]</span>
 </code>
 
 
     
     
+    
+
     
 
 </article>
@@ -771,12 +800,14 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">SETEXT_HEADERS</span>
-    = <span class="phpdocumentor-signature__default-value">[&#039;/\\n={2,}/&#039; =&gt; &quot;\n&quot;]</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;/\n={2,}/&#039; =&gt; &quot;\n&quot;]</span>
 </code>
 
 
     
     
+    
+
     
 
 </article>
@@ -807,6 +838,8 @@
     
     
 
+    
+
 </article>
                     <article class="phpdocumentor-element -constant -protected ">
     <h4 class="phpdocumentor-element__name" id="constant_TILDE_FENCED_CODEBLOCKS">
@@ -827,12 +860,14 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">TILDE_FENCED_CODEBLOCKS</span>
-    = <span class="phpdocumentor-signature__default-value">[&#039;/~{3}.*\\n/&#039; =&gt; &#039;&#039;, &#039;/~{3}/&#039; =&gt; &#039;&#039;]</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;/~{3}.*\n/&#039; =&gt; &#039;&#039;, &#039;/~{3}/&#039; =&gt; &#039;&#039;]</span>
 </code>
 
 
     
     
+    
+
     
 
 </article>
@@ -875,6 +910,8 @@
 
     
     
+    
+
     
 
 </article>
@@ -926,6 +963,8 @@
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -955,6 +994,8 @@
         </div>
     
     
+    
+
     
 
             <section>
@@ -999,6 +1040,8 @@
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1047,6 +1090,8 @@
 
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1089,6 +1134,8 @@
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1137,6 +1184,8 @@
 
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1179,6 +1228,8 @@
                 
             </dd>
             </dl>
+
+    
 
     
 

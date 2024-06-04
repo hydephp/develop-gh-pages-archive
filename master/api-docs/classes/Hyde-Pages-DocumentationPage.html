@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/hyde.html" class="">Hyde</a>
@@ -95,7 +95,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -103,14 +103,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -178,6 +178,8 @@ The Markdown will be compiled to HTML using the documentation page layout to the
 
 
 
+
+
 <h3 id="toc">
     Table of Contents
     <a href="classes/Hyde-Pages-DocumentationPage.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
@@ -199,7 +201,7 @@ The Markdown will be compiled to HTML using the documentation page layout to the
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_fileExtension">$fileExtension</a>
+    <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#property_fileExtension">$fileExtension</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
@@ -273,7 +275,7 @@ The Markdown will be compiled to HTML using the documentation page layout to the
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Pages-Concerns-HydePage.html#method___construct">__construct()</a>
+    <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -301,7 +303,7 @@ The Markdown will be compiled to HTML using the documentation page layout to the
 <dd>Get the route key base for the page model.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_compile">compile()</a>
+    <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_compile">compile()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
@@ -442,7 +444,7 @@ The Markdown will be compiled to HTML using the documentation page layout to the
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_make">make()</a>
+    <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_make">make()</a>
     <span>
                                 &nbsp;: static    </span>
 </dt>
@@ -584,10 +586,11 @@ front matter array to YAML and writing the body to the file.</dd>
 <dd>Get the page title to display in HTML tags like `&lt;title&gt;` and `&lt;meta&gt;` tags.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Support-Concerns-Serializable.html#method_toArray">toArray()</a>
+    <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_toArray">toArray()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
+<dd>Get the instance as an array.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_toCoreDataObject">toCoreDataObject()</a>
@@ -623,7 +626,6 @@ front matter array to YAML and writing the body to the file.</dd>
 
 
 
-
         
 
         
@@ -642,15 +644,15 @@ front matter array to YAML and writing the body to the file.</dd>
 >
     <h4 class="phpdocumentor-element__name" id="property_fileExtension">
         $fileExtension
-        <a href="classes/Hyde-Pages-Concerns-HydePage.html#property_fileExtension" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#property_fileExtension" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php"><a href="files/packages-framework-src-pages-concerns-basemarkdownpage.html"><abbr title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php">BaseMarkdownPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -659,10 +661,12 @@ front matter array to YAML and writing the body to the file.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$fileExtension</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">&#039;.md&#039;</span></code>
 
     
     
+    
+
     
 
 </article>
@@ -698,6 +702,8 @@ front matter array to YAML and writing the body to the file.</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -729,6 +735,8 @@ front matter array to YAML and writing the body to the file.</dd>
 
     
     
+    
+
     
 
 </article>
@@ -764,6 +772,8 @@ front matter array to YAML and writing the body to the file.</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -795,6 +805,8 @@ front matter array to YAML and writing the body to the file.</dd>
 
     
     
+    
+
     
 
 </article>
@@ -830,6 +842,8 @@ front matter array to YAML and writing the body to the file.</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -861,6 +875,8 @@ front matter array to YAML and writing the body to the file.</dd>
 
     
     
+    
+
     
 
 </article>
@@ -896,6 +912,8 @@ front matter array to YAML and writing the body to the file.</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -927,6 +945,8 @@ front matter array to YAML and writing the body to the file.</dd>
 
     
     
+    
+
     
 
 </article>
@@ -962,6 +982,8 @@ front matter array to YAML and writing the body to the file.</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -995,6 +1017,8 @@ front matter array to YAML and writing the body to the file.</dd>
     
     
 
+    
+
 </article>
             </section>
 
@@ -1012,13 +1036,13 @@ front matter array to YAML and writing the body to the file.</dd>
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Hyde-Pages-Concerns-HydePage.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php"><a href="files/packages-framework-src-pages-concerns-basemarkdownpage.html"><abbr title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php">BaseMarkdownPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -1026,7 +1050,7 @@ front matter array to YAML and writing the body to the file.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1047,7 +1071,30 @@ front matter array to YAML and writing the body to the file.</dd>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$markdown</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a>|string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method___construct#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
 
     
 
@@ -1081,6 +1128,8 @@ front matter array to YAML and writing the body to the file.</dd>
         </div>
     
     
+    
+
     
 
             <section>
@@ -1117,6 +1166,8 @@ front matter array to YAML and writing the body to the file.</dd>
         </div>
     
     
+    
+
     
 
             <section>
@@ -1157,6 +1208,8 @@ front matter array to YAML and writing the body to the file.</dd>
     
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1167,17 +1220,17 @@ front matter array to YAML and writing the body to the file.</dd>
         class="phpdocumentor-element
             -method
             -public
-                        -abstract                                "
+                                                        "
 >
     <h4 class="phpdocumentor-element__name" id="method_compile">
         compile()
-        <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_compile" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_compile" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php"><a href="files/packages-framework-src-pages-concerns-basemarkdownpage.html"><abbr title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php">BaseMarkdownPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">254</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -1185,12 +1238,28 @@ front matter array to YAML and writing the body to the file.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__abstract">abstract</span>                <span class="phpdocumentor-signature__name">compile</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">compile</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_compile#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
     
 
             <section>
@@ -1250,6 +1319,8 @@ front matter array to YAML and writing the body to the file.</dd>
 
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|mixed</span>
@@ -1284,6 +1355,8 @@ front matter array to YAML and writing the body to the file.</dd>
         </div>
     
     
+    
+
     
 
             <section>
@@ -1322,6 +1395,8 @@ front matter array to YAML and writing the body to the file.</dd>
 </section>
 
     
+    
+
     
 
             <section>
@@ -1387,6 +1462,8 @@ front matter array to YAML and writing the body to the file.</dd>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">static</span>
@@ -1423,6 +1500,8 @@ front matter array to YAML and writing the body to the file.</dd>
     
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1456,6 +1535,8 @@ front matter array to YAML and writing the body to the file.</dd>
         </div>
     
     
+    
+
     
 
             <section>
@@ -1500,6 +1581,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1536,6 +1619,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
 </section>
 
     
+    
+
     
 
             <section>
@@ -1588,6 +1673,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|false</span>
@@ -1626,9 +1713,15 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Path relative to the site output directory.</p>
+</section>
+
             </section>
 
 </article>
@@ -1660,6 +1753,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -1700,6 +1795,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1736,6 +1833,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1770,6 +1869,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -1818,6 +1919,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
 
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -1851,6 +1954,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -1888,6 +1993,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Support-Models-Route.html"><abbr title="\Hyde\Support\Models\Route">Route</abbr></a>|null</span>
@@ -1921,6 +2028,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -1957,6 +2066,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -2008,6 +2119,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
@@ -2022,13 +2135,13 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_make">
         make()
-        <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_make" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_make" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php"><a href="files/packages-framework-src-pages-concerns-basemarkdownpage.html"><abbr title="packages/framework/src/Pages/Concerns/BaseMarkdownPage.php">BaseMarkdownPage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -2036,7 +2149,7 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">make</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">make</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$matter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$markdown</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2057,7 +2170,30 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$markdown</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Hyde-Markdown-Models-Markdown.html"><abbr title="\Hyde\Markdown\Models\Markdown">Markdown</abbr></a>|string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_make#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">inheritDoc</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
 
     
 
@@ -2110,6 +2246,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
                                              
                                     </dd>
                         </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2164,6 +2302,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
 
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>|mixed</span>
@@ -2198,6 +2338,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -2236,6 +2378,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string|null</span>
@@ -2270,6 +2414,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -2308,6 +2454,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
     
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
@@ -2342,6 +2490,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -2387,6 +2537,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -2455,6 +2607,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">static</span>
@@ -2502,6 +2656,8 @@ would be 'about/contact', and 'pages/about.md' would simply be 'about'.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -2554,6 +2710,8 @@ within the source directory are retained in order to satisfy the page identifier
 
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -2593,6 +2751,8 @@ front matter array to YAML and writing the body to the file.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -2642,6 +2802,8 @@ front matter array to YAML and writing the body to the file.</p>
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2680,6 +2842,8 @@ front matter array to YAML and writing the body to the file.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -2726,6 +2890,8 @@ front matter array to YAML and writing the body to the file.</p>
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2755,6 +2921,8 @@ front matter array to YAML and writing the body to the file.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -2791,6 +2959,8 @@ front matter array to YAML and writing the body to the file.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -2839,6 +3009,8 @@ front matter array to YAML and writing the body to the file.</p>
 
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -2875,6 +3047,8 @@ front matter array to YAML and writing the body to the file.</p>
     
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -2885,44 +3059,33 @@ front matter array to YAML and writing the body to the file.</p>
         class="phpdocumentor-element
             -method
             -public
-                        -abstract                                "
+                                                        "
 >
     <h4 class="phpdocumentor-element__name" id="method_toArray">
         toArray()
-        <a href="classes/Hyde-Support-Concerns-Serializable.html#method_toArray" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Hyde-Pages-Concerns-HydePage.html#method_toArray" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Support/Concerns/Serializable.php"><a href="files/packages-framework-src-support-concerns-serializable.html"><abbr title="packages/framework/src/Support/Concerns/Serializable.php">Serializable.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/framework/src/Pages/Concerns/HydePage.php"><a href="files/packages-framework-src-pages-concerns-hydepage.html"><abbr title="packages/framework/src/Pages/Concerns/HydePage.php">HydePage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">259</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Get the instance as an array.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__abstract">abstract</span>                <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">toArray</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/Hyde-Support-Concerns-Serializable.html#method_toArray#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">inheritDoc</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2957,6 +3120,8 @@ front matter array to YAML and writing the body to the file.</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -3001,6 +3166,8 @@ front matter array to YAML and writing the body to the file.</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -3050,6 +3217,8 @@ front matter array to YAML and writing the body to the file.</p>
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -3081,6 +3250,8 @@ front matter array to YAML and writing the body to the file.</p>
     
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -3109,6 +3280,8 @@ front matter array to YAML and writing the body to the file.</p>
         </div>
     
     
+    
+
     
 
     
@@ -3226,7 +3399,7 @@ front matter array to YAML and writing the body to the file.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#property_fileExtension">$fileExtension<a href="classes/Hyde-Pages-DocumentationPage.html"></li>
+                                                    <li><a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#property_fileExtension">$fileExtension<a href="classes/Hyde-Pages-DocumentationPage.html"></li>
                                                     <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#property_identifier">$identifier<a href="classes/Hyde-Pages-DocumentationPage.html"></li>
                                                     <li><a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#property_markdown">$markdown<a href="classes/Hyde-Pages-DocumentationPage.html"></li>
                                                     <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#property_matter">$matter<a href="classes/Hyde-Pages-DocumentationPage.html"></li>
@@ -3243,11 +3416,11 @@ front matter array to YAML and writing the body to the file.</p>
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method___construct">__construct()</a></li>
                                             <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_all">all()</a></li>
                                             <li><a href="classes/Hyde-Support-Concerns-Serializable.html#method_arraySerialize">arraySerialize()</a></li>
                                             <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_baseRouteKey">baseRouteKey()</a></li>
-                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_compile">compile()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_compile">compile()</a></li>
                                             <li><a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_data">data()</a></li>
                                             <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_fileExtension">fileExtension()</a></li>
                                             <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_files">files()</a></li>
@@ -3268,7 +3441,7 @@ front matter array to YAML and writing the body to the file.</p>
                                             <li><a href="classes/Hyde-Pages-DocumentationPage.html#method_homeRouteName">homeRouteName()</a></li>
                                             <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_isDiscoverable">isDiscoverable()</a></li>
                                             <li><a href="classes/Hyde-Support-Concerns-Serializable.html#method_jsonSerialize">jsonSerialize()</a></li>
-                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_make">make()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_make">make()</a></li>
                                             <li><a href="classes/Hyde-Pages-Concerns-BaseMarkdownPage.html#method_markdown">markdown()</a></li>
                                             <li><a href="classes/Hyde-Framework-Concerns-InteractsWithFrontMatter.html#method_matter">matter()</a></li>
                                             <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_metadata">metadata()</a></li>
@@ -3288,7 +3461,7 @@ front matter array to YAML and writing the body to the file.</p>
                                             <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_sourceDirectory">sourceDirectory()</a></li>
                                             <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_sourcePath">sourcePath()</a></li>
                                             <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_title">title()</a></li>
-                                            <li><a href="classes/Hyde-Support-Concerns-Serializable.html#method_toArray">toArray()</a></li>
+                                            <li><a href="classes/Hyde-Pages-Concerns-HydePage.html#method_toArray">toArray()</a></li>
                                             <li><a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_toCoreDataObject">toCoreDataObject()</a></li>
                                             <li><a href="classes/Hyde-Support-Concerns-Serializable.html#method_toJson">toJson()</a></li>
                                             <li><a href="classes/Hyde-Framework-Factories-Concerns-HasFactory.html#method_assignFactoryData">assignFactoryData()</a></li>

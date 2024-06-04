@@ -1198,7 +1198,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Foundation\\HydeKernel\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
-            "summary": "",
+            "summary": "Get\u0020the\u0020instance\u0020as\u0020an\u0020array.",
             "url": "classes/Hyde-Foundation-HydeKernel.html#method_toArray"
         },                {
             "fqsen": "\\Hyde\\Foundation\\HydeKernel\u003A\u003AVERSION",
@@ -2548,7 +2548,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\Concerns\\CoreDataObject\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
-            "summary": "",
+            "summary": "Get\u0020the\u0020instance\u0020as\u0020an\u0020array.",
             "url": "classes/Hyde-Framework-Factories-Concerns-CoreDataObject.html#method_toArray"
         },                {
             "fqsen": "\\Hyde\\Framework\\Factories\\Concerns\\CoreDataObject\u003A\u003A\u0024matter",
@@ -3753,7 +3753,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DropdownNavItem\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Create\u0020a\u0020new\u0020navigation\u0020menu\u0020item.",
             "url": "classes/Hyde-Framework-Features-Navigation-DropdownNavItem.html#method___construct"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\DropdownNavItem\u003A\u003AfromArray\u0028\u0029",
@@ -3793,7 +3793,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationData\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
-            "summary": "",
+            "summary": "Get\u0020the\u0020instance\u0020as\u0020an\u0020array.",
             "url": "classes/Hyde-Framework-Features-Navigation-NavigationData.html#method_toArray"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavigationData\u003A\u003A\u0024label",
@@ -3860,6 +3860,91 @@ Search.appendIndex(
             "name": "hasGroupExplicitlySetInFrontMatter",
             "summary": "",
             "url": "classes/Hyde-Framework-Features-Navigation-NavigationMenu.html#method_hasGroupExplicitlySetInFrontMatter"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem",
+            "name": "NavItem",
+            "summary": "Abstraction\u0020for\u0020a\u0020navigation\u0020menu\u0020item.\u0020Used\u0020by\u0020the\u0020NavigationMenu\u0020and\u0020DocumentationSidebar\u0020classes.",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Create\u0020a\u0020new\u0020navigation\u0020menu\u0020item.",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003AfromRoute\u0028\u0029",
+            "name": "fromRoute",
+            "summary": "Create\u0020a\u0020new\u0020navigation\u0020menu\u0020item\u0020from\u0020a\u0020route.",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#method_fromRoute"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003AforLink\u0028\u0029",
+            "name": "forLink",
+            "summary": "Create\u0020a\u0020new\u0020navigation\u0020menu\u0020item\u0020leading\u0020to\u0020an\u0020external\u0020URI.",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#method_forLink"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003AforRoute\u0028\u0029",
+            "name": "forRoute",
+            "summary": "Create\u0020a\u0020new\u0020navigation\u0020menu\u0020item\u0020leading\u0020to\u0020a\u0020Route\u0020model.",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#method_forRoute"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "Resolve\u0020a\u0020link\u0020to\u0020the\u0020navigation\u0020item.",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#method___toString"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003AgetDestination\u0028\u0029",
+            "name": "getDestination",
+            "summary": "Get\u0020the\u0020destination\u0020link\u0020of\u0020the\u0020navigation\u0020item.",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#method_getDestination"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003AgetLabel\u0028\u0029",
+            "name": "getLabel",
+            "summary": "Get\u0020the\u0020label\u0020of\u0020the\u0020navigation\u0020item.",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#method_getLabel"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003AgetPriority\u0028\u0029",
+            "name": "getPriority",
+            "summary": "Get\u0020the\u0020priority\u0020to\u0020determine\u0020the\u0020order\u0020of\u0020the\u0020navigation\u0020item.",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#method_getPriority"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003AgetGroup\u0028\u0029",
+            "name": "getGroup",
+            "summary": "Get\u0020the\u0020group\u0020identifier\u0020of\u0020the\u0020navigation\u0020item,\u0020if\u0020any.",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#method_getGroup"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003AisCurrent\u0028\u0029",
+            "name": "isCurrent",
+            "summary": "Check\u0020if\u0020the\u0020NavItem\u0020instance\u0020is\u0020the\u0020current\u0020page.",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#method_isCurrent"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003AgetRouteGroup\u0028\u0029",
+            "name": "getRouteGroup",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#method_getRouteGroup"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003AnormalizeGroupKey\u0028\u0029",
+            "name": "normalizeGroupKey",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#method_normalizeGroupKey"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003A\u0024destination",
+            "name": "destination",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#property_destination"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003A\u0024label",
+            "name": "label",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#property_label"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003A\u0024priority",
+            "name": "priority",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#property_priority"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Features\\Navigation\\NavItem\u003A\u003A\u0024group",
+            "name": "group",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Features-Navigation-NavItem.html#property_group"
         },                {
             "fqsen": "\\Hyde\\Framework\\Features\\XmlGenerators\\BaseXmlGenerator",
             "name": "BaseXmlGenerator",
@@ -4135,6 +4220,116 @@ Search.appendIndex(
             "name": "router",
             "summary": "",
             "url": "classes/Hyde-Framework-Services-BuildService.html#property_router"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService",
+            "name": "BuildTaskService",
+            "summary": "This\u0020service\u0020manages\u0020the\u0020build\u0020tasks\u0020that\u0020are\u0020called\u0020before\u0020and\u0020after\u0020the\u0020site\u0020is\u0020compiled\u0020using\u0020the\u0020build\u0020command.",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method___construct"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AsetOutput\u0028\u0029",
+            "name": "setOutput",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_setOutput"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AgetRegisteredTasks\u0028\u0029",
+            "name": "getRegisteredTasks",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_getRegisteredTasks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003ArunPreBuildTasks\u0028\u0029",
+            "name": "runPreBuildTasks",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_runPreBuildTasks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003ArunPostBuildTasks\u0028\u0029",
+            "name": "runPostBuildTasks",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_runPostBuildTasks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AregisterTask\u0028\u0029",
+            "name": "registerTask",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_registerTask"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AregisterTaskInService\u0028\u0029",
+            "name": "registerTaskInService",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_registerTaskInService"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AregisterIf\u0028\u0029",
+            "name": "registerIf",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_registerIf"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AregisterTasks\u0028\u0029",
+            "name": "registerTasks",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_registerTasks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AfindTasksInConfig\u0028\u0029",
+            "name": "findTasksInConfig",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_findTasksInConfig"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AfindTasksInAppDirectory\u0028\u0029",
+            "name": "findTasksInAppDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_findTasksInAppDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003ApathToClassName\u0028\u0029",
+            "name": "pathToClassName",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_pathToClassName"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AmakeTaskIdentifier\u0028\u0029",
+            "name": "makeTaskIdentifier",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_makeTaskIdentifier"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AregisterFrameworkTasks\u0028\u0029",
+            "name": "registerFrameworkTasks",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_registerFrameworkTasks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AcanCleanSiteDirectory\u0028\u0029",
+            "name": "canCleanSiteDirectory",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_canCleanSiteDirectory"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AcanGenerateManifest\u0028\u0029",
+            "name": "canGenerateManifest",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_canGenerateManifest"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AcanGenerateSitemap\u0028\u0029",
+            "name": "canGenerateSitemap",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_canGenerateSitemap"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AcanGenerateFeed\u0028\u0029",
+            "name": "canGenerateFeed",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_canGenerateFeed"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003AcanGenerateSearch\u0028\u0029",
+            "name": "canGenerateSearch",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#method_canGenerateSearch"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003A\u0024buildTasks",
+            "name": "buildTasks",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#property_buildTasks"
+        },                {
+            "fqsen": "\\Hyde\\Framework\\Services\\BuildTaskService\u003A\u003A\u0024output",
+            "name": "output",
+            "summary": "",
+            "url": "classes/Hyde-Framework-Services-BuildTaskService.html#property_output"
         },                {
             "fqsen": "\\Hyde\\Framework\\Services\\MarkdownService",
             "name": "MarkdownService",
@@ -4658,7 +4853,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Markdown\\Models\\FrontMatter\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
-            "summary": "",
+            "summary": "Get\u0020the\u0020instance\u0020as\u0020an\u0020array.",
             "url": "classes/Hyde-Markdown-Models-FrontMatter.html#method_toArray"
         },                {
             "fqsen": "\\Hyde\\Markdown\\Models\\FrontMatter\u003A\u003AfromArray\u0028\u0029",
@@ -5383,7 +5578,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Pages\\MarkdownPost\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
-            "summary": "",
+            "summary": "Get\u0020the\u0020instance\u0020as\u0020an\u0020array.",
             "url": "classes/Hyde-Pages-MarkdownPost.html#method_toArray"
         },                {
             "fqsen": "\\Hyde\\Pages\\MarkdownPost\u003A\u003A\u0024sourceDirectory",
@@ -5506,6 +5701,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Support-Concerns-Serializable.html#method_toJson"
         },                {
+            "fqsen": "\\Hyde\\Support\\Contracts\\SerializableContract",
+            "name": "SerializableContract",
+            "summary": "Specifies\u0020that\u0020a\u0020class\u0020can\u0020be\u0020serialized\u0020to\u0020an\u0020array\u0020and\/or\u0020JSON.",
+            "url": "classes/Hyde-Support-Contracts-SerializableContract.html"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Contracts\\SerializableContract\u003A\u003AjsonSerialize\u0028\u0029",
+            "name": "jsonSerialize",
+            "summary": "Specify\u0020data\u0020which\u0020should\u0020be\u0020serialized\u0020to\u0020JSON.",
+            "url": "classes/Hyde-Support-Contracts-SerializableContract.html#method_jsonSerialize"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Contracts\\SerializableContract\u003A\u003AtoArray\u0028\u0029",
+            "name": "toArray",
+            "summary": "Get\u0020the\u0020instance\u0020as\u0020an\u0020array.",
+            "url": "classes/Hyde-Support-Contracts-SerializableContract.html#method_toArray"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Contracts\\SerializableContract\u003A\u003AtoJson\u0028\u0029",
+            "name": "toJson",
+            "summary": "Convert\u0020the\u0020instance\u0020to\u0020its\u0020JSON\u0020representation.",
+            "url": "classes/Hyde-Support-Contracts-SerializableContract.html#method_toJson"
+        },                {
             "fqsen": "\\Hyde\\Support\\DataCollections",
             "name": "DataCollections",
             "summary": "Automatically\u0020generates\u0020Laravel\u0020Collections\u0020from\u0020static\u0020data\u0020files,\nsuch\u0020as\u0020Markdown\u0020components\u0020and\u0020YAML\u0020files\u0020using\u0020Hyde\u0020Autodiscovery.",
@@ -5573,7 +5788,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Support\\Filesystem\\MediaFile\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
-            "summary": "",
+            "summary": "Get\u0020the\u0020instance\u0020as\u0020an\u0020array.",
             "url": "classes/Hyde-Support-Filesystem-MediaFile.html#method_toArray"
         },                {
             "fqsen": "\\Hyde\\Support\\Filesystem\\MediaFile\u003A\u003AgetContentLength\u0028\u0029",
@@ -5623,7 +5838,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
-            "summary": "",
+            "summary": "Get\u0020the\u0020instance\u0020as\u0020an\u0020array.",
             "url": "classes/Hyde-Support-Filesystem-ProjectFile.html#method_toArray"
         },                {
             "fqsen": "\\Hyde\\Support\\Filesystem\\ProjectFile\u003A\u003AgetName\u0028\u0029",
@@ -5673,7 +5888,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Support\\Filesystem\\SourceFile\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
-            "summary": "",
+            "summary": "Get\u0020the\u0020instance\u0020as\u0020an\u0020array.",
             "url": "classes/Hyde-Support-Filesystem-SourceFile.html#method_toArray"
         },                {
             "fqsen": "\\Hyde\\Support\\Filesystem\\SourceFile\u003A\u003A\u0024pageClass",
@@ -5933,7 +6148,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Support\\Models\\Route\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
-            "summary": "",
+            "summary": "Get\u0020the\u0020instance\u0020as\u0020an\u0020array.",
             "url": "classes/Hyde-Support-Models-Route.html#method_toArray"
         },                {
             "fqsen": "\\Hyde\\Support\\Models\\Route\u003A\u003A\u0024page",
@@ -6530,6 +6745,11 @@ Search.appendIndex(
             "name": "Concerns",
             "summary": "",
             "url": "namespaces/hyde-support-concerns.html"
+        },                {
+            "fqsen": "\\Hyde\\Support\\Contracts",
+            "name": "Contracts",
+            "summary": "",
+            "url": "namespaces/hyde-support-contracts.html"
         },                {
             "fqsen": "\\Hyde\\Support\\Facades",
             "name": "Facades",
