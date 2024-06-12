@@ -531,6 +531,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Console-Commands-RouteListCommand.html#method_makeHeader"
         },                {
+            "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003AwriteRaw\u0028\u0029",
+            "name": "writeRaw",
+            "summary": "Write\u0020a\u0020message\u0020without\u0020ANSI\u0020formatting",
+            "url": "classes/Hyde-Console-Commands-RouteListCommand.html#method_writeRaw"
+        },                {
             "fqsen": "\\Hyde\\Console\\Commands\\RouteListCommand\u003A\u003A\u0024signature",
             "name": "signature",
             "summary": "",
