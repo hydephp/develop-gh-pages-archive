@@ -475,11 +475,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit...
 }
 </code></pre>
 <p>Assuming the Yaml document looks like this:</p>
-<pre><code class="language-yaml">---
-name: &quot;John Doe&quot;
+<pre><code class="language-yaml">name: &quot;John Doe&quot;
 email: &quot;john@example.org&quot;
 </code></pre>
-<blockquote class="warning"><p>Note that the Yaml file should start with <code>---</code> to be parsed correctly.</p></blockquote>
 <h2>Json Collections<a id="json-collections" href="#json-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
 <h3>Usage<a id="usage-2" href="#usage-2" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
 <pre><code class="language-php">$collection = \Hyde\Support\DataCollections::json('name');
