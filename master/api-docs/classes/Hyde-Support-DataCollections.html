@@ -159,6 +159,7 @@
             <p class="phpdocumentor-summary">Automatically generates Laravel Collections from static data files,
 such as Markdown components and YAML files using Hyde Autodiscovery.</p>
 
+
     <section class="phpdocumentor-description"><p>This class acts both as a base collection class, a factory for
 creating collections, and static facade shorthand helper methods.</p>
 <p>The static &quot;facade&quot; methods are what makes this class special,
@@ -196,7 +197,7 @@ to the configured data collection source directory.</p>
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Hyde-Support-DataCollections.html#property_sourceDirectory">$sourceDirectory</a>
+    <a class="" href="classes/Hyde-Support-DataCollections.html#property_sourceDirectory">$sourceDirectory</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
@@ -211,54 +212,54 @@ to the configured data collection source directory.</p>
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Support-DataCollections.html#method_json">json()</a>
+    <a class="" href="classes/Hyde-Support-DataCollections.html#method_json">json()</a>
     <span>
                                 &nbsp;: <a href="classes/Hyde-Support-DataCollections.html"><abbr title="\Hyde\Support\DataCollections">DataCollections</abbr></a>&lt;string, <abbr title="\stdClass">stdClass</abbr>|array&lt;string|int, mixed&gt;&gt;    </span>
 </dt>
 <dd>Get a collection of JSON documents in the resources/collections/&lt;$key&gt; directory.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Support-DataCollections.html#method_markdown">markdown()</a>
+    <a class="" href="classes/Hyde-Support-DataCollections.html#method_markdown">markdown()</a>
     <span>
                                 &nbsp;: <a href="classes/Hyde-Support-DataCollections.html"><abbr title="\Hyde\Support\DataCollections">DataCollections</abbr></a>&lt;string, <a href="classes/Hyde-Markdown-Models-MarkdownDocument.html"><abbr title="\Hyde\Markdown\Models\MarkdownDocument">MarkdownDocument</abbr></a>&gt;    </span>
 </dt>
 <dd>Get a collection of Markdown documents in the resources/collections/&lt;$key&gt; directory.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Hyde-Support-DataCollections.html#method_yaml">yaml()</a>
+    <a class="" href="classes/Hyde-Support-DataCollections.html#method_yaml">yaml()</a>
     <span>
                                 &nbsp;: <a href="classes/Hyde-Support-DataCollections.html"><abbr title="\Hyde\Support\DataCollections">DataCollections</abbr></a>&lt;string, <a href="classes/Hyde-Markdown-Models-FrontMatter.html"><abbr title="\Hyde\Markdown\Models\FrontMatter">FrontMatter</abbr></a>&gt;    </span>
 </dt>
 <dd>Get a collection of YAML documents in the resources/collections/&lt;$key&gt; directory.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Support-DataCollections.html#method_findFiles">findFiles()</a>
+    <a class="" href="classes/Hyde-Support-DataCollections.html#method_findFiles">findFiles()</a>
     <span>
                                 &nbsp;: <abbr title="\Illuminate\Support\Collection">Collection</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Support-DataCollections.html#method_makeIdentifier">makeIdentifier()</a>
+    <a class="" href="classes/Hyde-Support-DataCollections.html#method_makeIdentifier">makeIdentifier()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectories">needsDirectories()</a>
+    <a class="" href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectories">needsDirectories()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Ensure the supplied directories exist by creating them if they don&#039;t.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectory">needsDirectory()</a>
+    <a class="" href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectory">needsDirectory()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Ensure the supplied directory exist by creating it if it does not.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsParentDirectory">needsParentDirectory()</a>
+    <a class="" href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsParentDirectory">needsParentDirectory()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -300,6 +301,7 @@ to the configured data collection source directory.</p>
 
         <p class="phpdocumentor-summary">The base directory for all data collections. Can be modified using a service provider.</p>
 
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
@@ -347,6 +349,7 @@ to the configured data collection source directory.</p>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>Each JSON file will be parsed into a stdClass object, or an associative array, depending on the second parameter.</p>
 </section>
 
@@ -404,6 +407,7 @@ to the configured data collection source directory.</p>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>Each Markdown file will be parsed into a MarkdownDocument with front matter.</p>
 </section>
 
@@ -454,6 +458,7 @@ to the configured data collection source directory.</p>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
         <section class="phpdocumentor-description"><p>Each YAML file will be parsed into a FrontMatter object.</p>
 </section>
 
@@ -503,6 +508,7 @@ to the configured data collection source directory.</p>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -558,6 +564,7 @@ to the configured data collection source directory.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -606,6 +613,7 @@ to the configured data collection source directory.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -652,6 +660,7 @@ to the configured data collection source directory.</p>
     <div class="phpdocumentor-label-line">
         </div>
     
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -697,6 +706,7 @@ to the configured data collection source directory.</p>
 
     <div class="phpdocumentor-label-line">
         </div>
+    
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -835,21 +845,21 @@ to the configured data collection source directory.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Hyde-Support-DataCollections.html#property_sourceDirectory">$sourceDirectory<a href="classes/Hyde-Support-DataCollections.html"></li>
+                                                    <li class=""><a href="classes/Hyde-Support-DataCollections.html#property_sourceDirectory">$sourceDirectory</li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Hyde-Support-DataCollections.html#method_json">json()</a></li>
-                                            <li><a href="classes/Hyde-Support-DataCollections.html#method_markdown">markdown()</a></li>
-                                            <li><a href="classes/Hyde-Support-DataCollections.html#method_yaml">yaml()</a></li>
-                                            <li><a href="classes/Hyde-Support-DataCollections.html#method_findFiles">findFiles()</a></li>
-                                            <li><a href="classes/Hyde-Support-DataCollections.html#method_makeIdentifier">makeIdentifier()</a></li>
-                                            <li><a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectories">needsDirectories()</a></li>
-                                            <li><a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectory">needsDirectory()</a></li>
-                                            <li><a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsParentDirectory">needsParentDirectory()</a></li>
+                                            <li class=""><a href="classes/Hyde-Support-DataCollections.html#method_json">json()</a></li>
+                                            <li class=""><a href="classes/Hyde-Support-DataCollections.html#method_markdown">markdown()</a></li>
+                                            <li class=""><a href="classes/Hyde-Support-DataCollections.html#method_yaml">yaml()</a></li>
+                                            <li class=""><a href="classes/Hyde-Support-DataCollections.html#method_findFiles">findFiles()</a></li>
+                                            <li class=""><a href="classes/Hyde-Support-DataCollections.html#method_makeIdentifier">makeIdentifier()</a></li>
+                                            <li class=""><a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectories">needsDirectories()</a></li>
+                                            <li class=""><a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsDirectory">needsDirectory()</a></li>
+                                            <li class=""><a href="classes/Hyde-Framework-Concerns-InteractsWithDirectories.html#method_needsParentDirectory">needsParentDirectory()</a></li>
                                     </ul>
             </li>
                     </ul>
