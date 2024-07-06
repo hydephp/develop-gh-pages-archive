@@ -5688,7 +5688,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Hyde\\Support\\Concerns\\Serializable\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
-            "summary": "",
+            "summary": "Default\u0020implementation\u0020to\u0020dynamically\u0020serialize\u0020all\u0020public\u0020properties.\u0020Can\u0020be\u0020overridden\u0020for\u0020increased\u0020control.",
             "url": "classes/Hyde-Support-Concerns-Serializable.html#method_toArray"
         },                {
             "fqsen": "\\Hyde\\Support\\Concerns\\Serializable\u003A\u003AarraySerialize\u0028\u0029",
