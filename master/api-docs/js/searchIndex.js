@@ -5706,6 +5706,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Hyde-Support-Concerns-Serializable.html#method_toJson"
         },                {
+            "fqsen": "\\Hyde\\Support\\Concerns\\Serializable\u003A\u003AautomaticallySerialize\u0028\u0029",
+            "name": "automaticallySerialize",
+            "summary": "Automatically\u0020serialize\u0020all\u0020public\u0020properties.",
+            "url": "classes/Hyde-Support-Concerns-Serializable.html#method_automaticallySerialize"
+        },                {
             "fqsen": "\\Hyde\\Support\\Contracts\\SerializableContract",
             "name": "SerializableContract",
             "summary": "Specifies\u0020that\u0020a\u0020class\u0020can\u0020be\u0020serialized\u0020to\u0020an\u0020array\u0020and\/or\u0020JSON.",
