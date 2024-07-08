@@ -23,7 +23,7 @@
 <style>[x-cloak] {display: none!important}</style>
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hydefront@v3.3/dist/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hydefront@v3.4/dist/app.css">
 
 
 
@@ -368,13 +368,13 @@
         <h1>File-based Collections</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        <h2>Introduction to Hyde Data Collections<a id="introduction-to-hyde-data-collections" href="#introduction-to-hyde-data-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+        <h2>Introduction to Hyde Data Collections<a id="introduction-to-hyde-data-collections" href="#introduction-to-hyde-data-collections" class="heading-permalink" title="Permalink"></a></h2>
 <p>Hyde provides <code>DataCollections</code>, a subset of <a href="https://laravel.com/docs/10.x/collections">Laravel Collections</a> giving you a similar developer experience to working with Eloquent Collections.
 However, instead of accessing a database, it's all entirely file-based using static data files such as Markdown, Yaml, and JSON files which get
 parsed into objects that you can easily work with.</p>
 <p>As you have access to all standard Laravel Collection methods, you are encouraged to read the <a href="https://laravel.com/docs/10.x/collections">Laravel Collections documentation</a> for more information.</p>
 <p>This article covers advanced usage intended for those who are writing their own Blade views, and is not required as Hyde comes pre-packaged with many templates for you to use.</p>
-<h2>High-Level Concept Overview<a id="high-level-concept-overview" href="#high-level-concept-overview" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>High-Level Concept Overview<a id="high-level-concept-overview" href="#high-level-concept-overview" class="heading-permalink" title="Permalink"></a></h2>
 <p>In short, HydePHP finds files in the specified directory, turns each file into an object, and returns a Laravel Collection of these objects.</p>
 <p>To make collections easy to use and understand, Hyde makes a few assumptions about the structure of your collections.
 Follow these conventions and creating dynamic static sites will be a breeze.</p>
@@ -389,14 +389,14 @@ Follow these conventions and creating dynamic static sites will be a breeze.</p>
 <li>You can customize the source directory for collections through a service provider.</li>
 <li>If the base source directory does not exist, it will be created for you.</li>
 </ol>
-<h2>Available Collection Types<a id="available-collection-types" href="#available-collection-types" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<h3>Quick Reference Overview<a id="quick-reference-overview" href="#quick-reference-overview" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h2>Available Collection Types<a id="available-collection-types" href="#available-collection-types" class="heading-permalink" title="Permalink"></a></h2>
+<h3>Quick Reference Overview<a id="quick-reference-overview" href="#quick-reference-overview" class="heading-permalink" title="Permalink"></a></h3>
 <p>The following facade methods for creating data collections are available:</p>
 <pre><code class="language-php">\Hyde\Support\DataCollections::markdown(string $name);
 \Hyde\Support\DataCollections::yaml(string $name);
 \Hyde\Support\DataCollections::json(string $name, bool $asArray = false);
 </code></pre>
-<h3>Quick Reference Table<a id="quick-reference-table" href="#quick-reference-table" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Quick Reference Table<a id="quick-reference-table" href="#quick-reference-table" class="heading-permalink" title="Permalink"></a></h3>
 <table>
 <thead>
 <tr>
@@ -427,11 +427,11 @@ Follow these conventions and creating dynamic static sites will be a breeze.</p>
 </tr>
 </tbody>
 </table>
-<h2>Markdown Collections<a id="markdown-collections" href="#markdown-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<h3>Usage<a id="usage" href="#usage" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h2>Markdown Collections<a id="markdown-collections" href="#markdown-collections" class="heading-permalink" title="Permalink"></a></h2>
+<h3>Usage<a id="usage" href="#usage" class="heading-permalink" title="Permalink"></a></h3>
 <pre><code class="language-php">$collection = \Hyde\Support\DataCollections::markdown('name');
 </code></pre>
-<h3>Example returns<a id="example-returns" href="#example-returns" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Example returns<a id="example-returns" href="#example-returns" class="heading-permalink" title="Permalink"></a></h3>
 <p>Here is an approximation of the data types contained by the variable created above:</p>
 <pre><code class="language-php">\Hyde\Support\DataCollections {
     &quot;testimonials/1.md&quot; =&gt; Hyde\Markdown\Models\MarkdownDocument
@@ -459,11 +459,11 @@ author: &quot;John Doe&quot;
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit...
 </code></pre>
-<h2>YAML Collections<a id="yaml-collections" href="#yaml-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<h3>Usage<a id="usage-1" href="#usage-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h2>YAML Collections<a id="yaml-collections" href="#yaml-collections" class="heading-permalink" title="Permalink"></a></h2>
+<h3>Usage<a id="usage-1" href="#usage-1" class="heading-permalink" title="Permalink"></a></h3>
 <pre><code class="language-php">$collection = \Hyde\Support\DataCollections::yaml('name');
 </code></pre>
-<h3>Example returns<a id="example-returns-1" href="#example-returns-1" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Example returns<a id="example-returns-1" href="#example-returns-1" class="heading-permalink" title="Permalink"></a></h3>
 <p>Here is an approximation of the data types contained by the variable created above:</p>
 <pre><code class="language-php">\Hyde\Support\DataCollections {
   &quot;authors/1.yaml&quot; =&gt; Hyde\Markdown\Models\FrontMatter {
@@ -478,18 +478,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit...
 <pre><code class="language-yaml">name: &quot;John Doe&quot;
 email: &quot;john@example.org&quot;
 </code></pre>
-<h2>Json Collections<a id="json-collections" href="#json-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<h3>Usage<a id="usage-2" href="#usage-2" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h2>Json Collections<a id="json-collections" href="#json-collections" class="heading-permalink" title="Permalink"></a></h2>
+<h3>Usage<a id="usage-2" href="#usage-2" class="heading-permalink" title="Permalink"></a></h3>
 <pre><code class="language-php">$collection = \Hyde\Support\DataCollections::json('name');
 </code></pre>
 <p>By default, the entries will be returned as <code>stdClass</code> objects. If you want to return an associative array instead, pass <code>true</code> as the second parameter:</p>
 <pre><code class="language-php">$collection = \Hyde\Support\DataCollections::json('name', true);
 </code></pre>
 <p>Since both return values use native PHP types, there are no example returns added here, as I'm sure you can imagine what they look like.</p>
-<h2>Markdown Collections - Hands-on Guide<a id="markdown-collections---hands-on-guide" href="#markdown-collections---hands-on-guide" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Markdown Collections - Hands-on Guide<a id="markdown-collections---hands-on-guide" href="#markdown-collections---hands-on-guide" class="heading-permalink" title="Permalink"></a></h2>
 <p>I think the best way to explain DataCollections is through examples, so let's create a Blade page with customer testimonials!</p>
 <p>This example will use Markdown Collections, but the same concepts apply to all other collection types.</p>
-<h4>Setting up the file structure<a id="setting-up-the-file-structure" href="#setting-up-the-file-structure" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4>Setting up the file structure<a id="setting-up-the-file-structure" href="#setting-up-the-file-structure" class="heading-permalink" title="Permalink"></a></h4>
 <p>We start by setting up our directory structure. We will create a <code>testimonials</code> subdirectory, which will be the collection name.</p>
 <p>In it, we will place Markdown files. Each file will be a testimonial.
 The Markdown will be parsed into a <code>MarkdownDocument</code> object which parses any optional YAML front matter.</p>
@@ -508,7 +508,7 @@ You can name the files anything you want, I kept it simple and just numbered the
     ├── 2.md
     └── 3.md
 </code></pre>
-<h4>Using the Facade to Access the Collections<a id="using-the-facade-to-access-the-collections" href="#using-the-facade-to-access-the-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4>Using the Facade to Access the Collections<a id="using-the-facade-to-access-the-collections" href="#using-the-facade-to-access-the-collections" class="heading-permalink" title="Permalink"></a></h4>
 <p>Now for the fun part! We will use the <code>DataCollections::markdown()</code> to access all our files into a convenient object.
 The class is registered with an alias, so you don't need to include any namespaces when in a Blade file.</p>
 <p>The general syntax to use the facade is as follows:</p>
@@ -526,7 +526,7 @@ The class is registered with an alias, so you don't need to include any namespac
   </samp>]
 </samp>}
 </pre>
-<h4>Implementing it in a Blade view<a id="implementing-it-in-a-blade-view" href="#implementing-it-in-a-blade-view" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4>Implementing it in a Blade view<a id="implementing-it-in-a-blade-view" href="#implementing-it-in-a-blade-view" class="heading-permalink" title="Permalink"></a></h4>
 <p>Let's create a Blade page to display all our testimonials.</p>
 <pre><code class="language-bash">php hyde make:page &quot;Testimonials&quot; --type=&quot;blade&quot;
 </code></pre>

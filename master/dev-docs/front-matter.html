@@ -23,7 +23,7 @@
 <style>[x-cloak] {display: none!important}</style>
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hydefront@v3.3/dist/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hydefront@v3.4/dist/app.css">
 
 
 
@@ -323,7 +323,7 @@
 For example, in a blog post you may define a category, author website, or featured image. In a documentation page you may define the sidebar priority or label.</p>
 <p>Using front matter is optional, as Hyde will dynamically generate data based on the content itself. (Though any matter you provide will take precedence over the automatically generated data.)
 While Hyde offers some support for front matter within Blade files, most of the time you use front matter, it will be in Markdown.</p>
-<h2>Front Matter Syntax<a id="front-matter-syntax" href="#front-matter-syntax" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Front Matter Syntax<a id="front-matter-syntax" href="#front-matter-syntax" class="heading-permalink" title="Permalink"></a></h2>
 <p>Here's a refresher on Yaml, and a quick reference of the syntax Hyde uses and expects:</p>
 <pre><code class="language-markdown">---
 key: value
@@ -336,7 +336,7 @@ array:
 ---
 </code></pre>
 <p>Strings don't need to be quoted, but it can help in certain edge cases, thus they are included here.</p>
-<h3>Front Matter in Markdown<a id="front-matter-in-markdown" href="#front-matter-in-markdown" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Front Matter in Markdown<a id="front-matter-in-markdown" href="#front-matter-in-markdown" class="heading-permalink" title="Permalink"></a></h3>
 <p>All Markdown content files support Front Matter. Blog posts for example make heavy use of it.</p>
 <p>The specific usage and schemas used for pages are documented in their respective documentation, however, here is a primer on the fundamentals.</p>
 <ul>
@@ -356,7 +356,7 @@ author:
 
 Lorem ipsum dolor sit amet, etc.
 </code></pre>
-<h3>Front Matter in Blade<a id="front-matter-in-blade" href="#front-matter-in-blade" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Front Matter in Blade<a id="front-matter-in-blade" href="#front-matter-in-blade" class="heading-permalink" title="Permalink"></a></h3>
 <p>HydePHP has experimental support for creating front-matter in Blade templates, called BladeMatter.</p>
 <p>The actual syntax does not use YAML; but instead PHP. However, the parsed end result is the same. Please note that
 BladeMatter currently does not support multidimensional arrays or multi-line directives as the data is statically parsed.</p>

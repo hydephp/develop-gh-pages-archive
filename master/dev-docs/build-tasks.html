@@ -23,7 +23,7 @@
 <style>[x-cloak] {display: none!important}</style>
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hydefront@v3.3/dist/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hydefront@v3.4/dist/app.css">
 
 
 
@@ -368,25 +368,25 @@
         <h1>Custom Build Tasks</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+        <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" title="Permalink"></a></h2>
 <p>The Build Task API offers a simple way to hook into the build process.
 The build tasks are very powerful and allow for limitless customizability.</p>
 <p>The built-in Hyde features like sitemap generation and RSS feeds are created using tasks like these.
 Maybe you want to create your own, to for example upload the site to FTP or copy the files to a public directory?
 You can also overload the built-in tasks to customize them to your needs.</p>
-<h2>Good to know before you start<a id="good-to-know-before-you-start" href="#good-to-know-before-you-start" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<h3>Types of tasks<a id="types-of-tasks" href="#types-of-tasks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h2>Good to know before you start<a id="good-to-know-before-you-start" href="#good-to-know-before-you-start" class="heading-permalink" title="Permalink"></a></h2>
+<h3>Types of tasks<a id="types-of-tasks" href="#types-of-tasks" class="heading-permalink" title="Permalink"></a></h3>
 <p>There are two types, PreBuildTasks and PostBuildTasks. As the names suggest, PreBuildTasks are executed before the site is built, and PostBuildTasks are executed after the site is built.</p>
 <p>To choose which type of task you want to create, you extend either the <code>PreBuildTask</code> or <code>PostBuildTask</code> class.
 Both of these have the exact same helpers and API available, so the only difference between them is when they are executed. The classes are otherwise identical.</p>
-<h3>About these examples<a id="about-these-examples" href="#about-these-examples" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>About these examples<a id="about-these-examples" href="#about-these-examples" class="heading-permalink" title="Permalink"></a></h3>
 <p>For most of these examples we will focus on the PostBuildTasks as they are the most common.</p>
 <p>For all these examples we assume you put the file in the <code>App/Actions</code> directory, but you can put them anywhere.</p>
-<h3>Interacting with output<a id="interacting-with-output" href="#interacting-with-output" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Interacting with output<a id="interacting-with-output" href="#interacting-with-output" class="heading-permalink" title="Permalink"></a></h3>
 <p>In a way, build tasks are like micro-commands, as they can interact directly with the build commands I/O. Please take a look at the <a href="https://laravel.com/docs/10.x/artisan#command-io">Laravel Console Documentation</a> for the full list of available methods.</p>
 <p>In addition, there are some extra helpers available in the base BuildTask class that allow you to fluently format output to the console, which you will see in the examples below.</p>
-<h2>Creating Build Tasks<a id="creating-build-tasks" href="#creating-build-tasks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<h3>Minimal example<a id="minimal-example" href="#minimal-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h2>Creating Build Tasks<a id="creating-build-tasks" href="#creating-build-tasks" class="heading-permalink" title="Permalink"></a></h2>
+<h3>Minimal example<a id="minimal-example" href="#minimal-example" class="heading-permalink" title="Permalink"></a></h3>
 <p>Here is a minimal example to give you an idea of what we are working with.</p>
 <pre><code class="language-php">class SimpleBuildTask extends PostBuildTask
 {
@@ -399,13 +399,13 @@ Both of these have the exact same helpers and API available, so the only differe
 <p>As you can see, at their core, build tasks are simple classes containing a <code>handle()</code> method,
 which as I'm sure you have guessed, is the method that is executed when the task is run by the build command.</p>
 <p>If you want the task to run before the build, you would extend the <code>PreBuildTask</code> class instead.</p>
-<h4>Automatic output<a id="automatic-output" href="#automatic-output" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4>Automatic output<a id="automatic-output" href="#automatic-output" class="heading-permalink" title="Permalink"></a></h4>
 <p>When running the build command, you will see the following output added after the build is complete.</p>
 <pre>
  <span style="color: gold">Generic build task...</span> <span style="color: gray">Done in 0.26ms</span>
 </pre>
 <p>As you can see, some extra output including execution time tracking is added for us. We can of course customize all of this if we want, as you will learn a bit further down.</p>
-<h3>Full example<a id="full-example" href="#full-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Full example<a id="full-example" href="#full-example" class="heading-permalink" title="Permalink"></a></h3>
 <p>Here is a full example, with all the namespaces included, as well as the most common fluent output helpers.</p>
 <pre><code class="language-php">&lt;?php
 
@@ -436,21 +436,21 @@ class ExampleTask extends PostBuildTask
   Goodbye World!
 </pre>
 <p>As you can see, there is no execution time tracking here, since we overrode the <code>printFinishMessage()</code> method that normally prints this. You can of course call the <code>withExecutionTime()</code> method to add this back in. See more in the API reference below.</p>
-<h2>Registering the Tasks<a id="registering-the-tasks" href="#registering-the-tasks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Registering the Tasks<a id="registering-the-tasks" href="#registering-the-tasks" class="heading-permalink" title="Permalink"></a></h2>
 <p>There are a few ways to register these tasks so Hyde can find them.</p>
 <p>They are shown here in order of presumed convenience, but you are free to choose whichever you prefer. The latter options are more suited for extension developers.</p>
-<h3>Autodiscovery registration<a id="autodiscovery-registration" href="#autodiscovery-registration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Autodiscovery registration<a id="autodiscovery-registration" href="#autodiscovery-registration" class="heading-permalink" title="Permalink"></a></h3>
 <p>The easiest way to register build tasks is to not do it -- just let Hyde do it for you!</p>
 <p>Any classes that end in <code>BuildTask.php</code> that are stored in <code>app/Actions</code>  will be autoloaded and registered to run automatically.</p>
 <p>For example: <code>app/Actions/ExampleBuildTask.php</code>.</p>
-<h3>Config file registration<a id="config-file-registration" href="#config-file-registration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Config file registration<a id="config-file-registration" href="#config-file-registration" class="heading-permalink" title="Permalink"></a></h3>
 <p>If you want, you can also register build tasks of any namespace in the convenient <code>build_tasks</code> array which is in the main configuration file, <code>config/hyde.php</code>.</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'build_tasks' =&gt; [
     \App\Actions\SimpleTask::class,
     \MyPackage\Tasks\MyBuildTask::class,
 ],
 </code></pre>
-<h3>Programmatic registration<a id="programmatic-registration" href="#programmatic-registration" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Programmatic registration<a id="programmatic-registration" href="#programmatic-registration" class="heading-permalink" title="Permalink"></a></h3>
 <blockquote class="info"><p>This option assumes you are familiar with Laravel's service container and service providers.</p></blockquote>
 <p>If you are developing an extension, you can either instruct users register your tasks with the config option above,
 or you can register the extensions programmatically, I recommend you do this in the <code>boot</code> method of a service provider.</p>
@@ -467,10 +467,10 @@ just as long as it's done early enough in the application lifecycle, so it's reg
     }
 }
 </code></pre>
-<h2>Error handling<a id="error-handling" href="#error-handling" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Error handling<a id="error-handling" href="#error-handling" class="heading-permalink" title="Permalink"></a></h2>
 <p>If an exception is thrown in a build task, the build command will catch it and display the error message to the user.</p>
-<h2>Helper methods<a id="helper-methods" href="#helper-methods" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
-<h3>Output helpers<a id="output-helpers" href="#output-helpers" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h2>Helper methods<a id="helper-methods" href="#helper-methods" class="heading-permalink" title="Permalink"></a></h2>
+<h3>Output helpers<a id="output-helpers" href="#output-helpers" class="heading-permalink" title="Permalink"></a></h3>
 <p>When a build task is called by the site build command, it gets access to the Laravel and Symfony console output helpers through the <code>$output</code> property.</p>
 <pre><code class="language-php">public function handle(): void
 {
@@ -481,7 +481,7 @@ just as long as it's done early enough in the application lifecycle, so it's reg
     $this-&gt;output-&gt;writeln('This is a line of text');
 }
 </code></pre>
-<h3>Skipping tasks<a id="skipping-tasks" href="#skipping-tasks" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Skipping tasks<a id="skipping-tasks" href="#skipping-tasks" class="heading-permalink" title="Permalink"></a></h3>
 <blockquote class="info"><p>This feature was added in HydePHP v1.6.0</p></blockquote>
 <p>If you for some reason need to skip the task during its execution, you can call the <code>skip()</code> method.</p>
 <pre><code class="language-php">public function handle(): void

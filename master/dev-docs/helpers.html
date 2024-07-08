@@ -23,7 +23,7 @@
 <style>[x-cloak] {display: none!important}</style>
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hydefront@v3.3/dist/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hydefront@v3.4/dist/app.css">
 
 
 
@@ -416,10 +416,10 @@
         <h1>Helpers and Utilities</h1>
     </header>
     <section id="document-main-content" itemprop="articleBody">
-        <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+        <h2>Introduction<a id="introduction" href="#introduction" class="heading-permalink" title="Permalink"></a></h2>
 <p>HydePHP comes with a few helper classes and utilities to make your life easier. This page will cover some of the most important ones.
 Note that these helpers targets those who write custom code and Blade templates, and that you are expected to have a basic understanding of programming and PHP.</p>
-<h2>File-based Collections<a id="file-based-collections" href="#file-based-collections" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>File-based Collections<a id="file-based-collections" href="#file-based-collections" class="heading-permalink" title="Permalink"></a></h2>
 <p>Hyde provides <code>DataCollections</code>, a subset of <a href="https://laravel.com/docs/10.x/collections">Laravel Collections</a> giving you a similar developer experience to working with Eloquent Collections. However, instead of accessing a database,
 it's all entirely file-based using static data files such as Markdown, Yaml, and JSON files which get parsed into objects that you can easily work with.</p>
 <pre><code class="language-php">use Hyde\Support\DataCollections;
@@ -434,12 +434,12 @@ DataCollections::yaml(string $name);
 DataCollections::json(string $name, bool $asArray = false);
 </code></pre>
 <p>See the <a href="collections">File-based Collections</a> documentation for the full details.</p>
-<h2>File Includes<a id="file-includes" href="#file-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>File Includes<a id="file-includes" href="#file-includes" class="heading-permalink" title="Permalink"></a></h2>
 <p>The Includes facade provides a simple way to access partials in the includes directory.</p>
 <p>If the file does not exist, the method will return <code>null</code>.
 You can also supply a default value as the second argument.
 Both Markdown and Blade includes will be rendered to HTML.</p>
-<h3>Using Includes<a id="using-includes" href="#using-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Using Includes<a id="using-includes" href="#using-includes" class="heading-permalink" title="Permalink"></a></h3>
 <p>Includes are stored in the <code>resources/includes</code> directory. You can access them using the <code>Includes</code> facade.</p>
 <pre><code class="language-php">use Hyde\Support\Includes;
 
@@ -470,17 +470,17 @@ Remember that Markdown and Blade defaults will still be rendered to HTML.</p>
 // If the file does not exist, the default value will be returned
 Includes::markdown('example.md', 'Default content');
 </code></pre>
-<h3>Stock Includes<a id="stock-includes" href="#stock-includes" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Stock Includes<a id="stock-includes" href="#stock-includes" class="heading-permalink" title="Permalink"></a></h3>
 <p>HydePHP also supports some drop-in includes that you can use as an alternative to some config options. These currently are as follows:</p>
-<h4>Footer<a id="footer" href="#footer" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4>Footer<a id="footer" href="#footer" class="heading-permalink" title="Permalink"></a></h4>
 <p>If a <code>footer.md</code> file exists in the includes directory, Hyde will use that as the footer text, instead of the one set in the <code>hyde.footer</code> config option.</p>
-<h4>Head<a id="head" href="#head" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4>Head<a id="head" href="#head" class="heading-permalink" title="Permalink"></a></h4>
 <p>If a <code>head.html</code> file exists in the includes directory, Hyde include that within the <code>&lt;head&gt;</code> tag of the generated HTML, in addition to the one set in the <code>hyde.head</code> config option.</p>
-<h4>Scripts<a id="scripts" href="#scripts" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4>Scripts<a id="scripts" href="#scripts" class="heading-permalink" title="Permalink"></a></h4>
 <p>If a <code>scripts.html</code> file exists in the includes directory, Hyde include that at the end of the <code>&lt;body&gt;</code> tag of the generated HTML, in addition to the one set in the <code>hyde.scripts</code> config option.</p>
-<h2>Reading-Time Helper<a id="reading-time-helper" href="#reading-time-helper" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Reading-Time Helper<a id="reading-time-helper" href="#reading-time-helper" class="heading-permalink" title="Permalink"></a></h2>
 <p>The <code>ReadingTime</code> helper provides a simple way to calculate the reading time of a given string, for example a blog post.</p>
-<h3>Create a new <code>ReadingTime</code> instance<a id="create-a-new-readingtime-instance" href="#create-a-new-readingtime-instance" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Create a new <code>ReadingTime</code> instance<a id="create-a-new-readingtime-instance" href="#create-a-new-readingtime-instance" class="heading-permalink" title="Permalink"></a></h3>
 <p>There are a few ways to create a new <code>ReadingTime</code> instance. Either create a new instance directly, or use the static <code>fromString</code> or <code>fromFile</code>  helpers.</p>
 <p>In all cases, you will end up with a <code>ReadingTime</code> object that you can use to get the reading time.</p>
 <pre><code class="language-php">// Via constructor
@@ -492,7 +492,7 @@ $time = ReadingTime::fromString('Input text string');
 // Via static method (from file)
 $time = ReadingTime::fromFile('path/to/file.txt');
 </code></pre>
-<h3>Get the reading time string<a id="get-the-reading-time-string" href="#get-the-reading-time-string" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Get the reading time string<a id="get-the-reading-time-string" href="#get-the-reading-time-string" class="heading-permalink" title="Permalink"></a></h3>
 <p>To make things really easy, the <code>ReadingTime</code> instance can be automatically cast to a human-readable string with the default formatting.</p>
 <pre><code class="language-php">(string) ReadingTime::fromString('Input text string'); // 1min, 0sec
 </code></pre>
@@ -501,7 +501,7 @@ $time = ReadingTime::fromFile('path/to/file.txt');
 <p>You can also call the <code>getFormatted</code> method directly.</p>
 <pre><code class="language-php">ReadingTime::fromString('Input text string')-&gt;getFormatted(); // 1min, 0sec
 </code></pre>
-<h3>Get the reading time data<a id="get-the-reading-time-data" href="#get-the-reading-time-data" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Get the reading time data<a id="get-the-reading-time-data" href="#get-the-reading-time-data" class="heading-permalink" title="Permalink"></a></h3>
 <p>We also provide a few methods to get the reading time data directly.</p>
 <pre><code class="language-php">// Get the reading time in seconds
 $time-&gt;getSeconds();
@@ -516,9 +516,9 @@ $time-&gt;getSecondsOver();
 // Get the word count of the input string
 $time-&gt;getWordCount();
 </code></pre>
-<h3>Custom formatting<a id="custom-formatting" href="#custom-formatting" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Custom formatting<a id="custom-formatting" href="#custom-formatting" class="heading-permalink" title="Permalink"></a></h3>
 <p>Additionally, there are several ways to customize the output format.</p>
-<h4>Specify sprintf format<a id="specify-sprintf-format" href="#specify-sprintf-format" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4>Specify sprintf format<a id="specify-sprintf-format" href="#specify-sprintf-format" class="heading-permalink" title="Permalink"></a></h4>
 <p>The <code>getFormatted</code> method accepts a <code>sprintf</code> format string as the first argument.</p>
 <pre><code class="language-php">// The default format
 $time-&gt;getFormatted('%dmin, %dsec');
@@ -527,17 +527,17 @@ $time-&gt;getFormatted('%dmin, %dsec');
 $time-&gt;getFormatted('%d minutes and %d seconds');
 </code></pre>
 <p>The first <code>%d</code> will be replaced with the minutes, and the second <code>%d</code> will be replaced with the seconds.</p>
-<h4>Format using a custom callback<a id="format-using-a-custom-callback" href="#format-using-a-custom-callback" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4>Format using a custom callback<a id="format-using-a-custom-callback" href="#format-using-a-custom-callback" class="heading-permalink" title="Permalink"></a></h4>
 <p>You can also use a custom callback to format the reading time string. This is perfect if you want to create custom formatting logic.</p>
 <p>The closure will receive the minutes and seconds as integers and should return a string.</p>
 <pre><code class="language-php">$time-&gt;formatUsingClosure(function (int $minutes, int $seconds): string {
     return &quot;$minutes minutes, $seconds seconds&quot;;
 }); // 1 minutes, 30 seconds
 </code></pre>
-<h2>Helper Functions<a id="helper-functions" href="#helper-functions" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Helper Functions<a id="helper-functions" href="#helper-functions" class="heading-permalink" title="Permalink"></a></h2>
 <p>HydePHP comes with a few helper functions to make your life easier.</p>
 <p>The most common ones are documented here, however you can also see the full list in the source code <a href="https://github.com/hydephp/framework/blob/master/src/helpers.php"><code>helpers.php</code></a> file.</p>
-<h3><code>hyde</code><a id="hyde" href="#hyde" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3><code>hyde</code><a id="hyde" href="#hyde" class="heading-permalink" title="Permalink"></a></h3>
 <p>The <code>hyde</code> function is a global helper function that returns the HydeKernel instance.
 From this, you can access the same methods as you would from the <code>Hyde</code> facade.</p>
 <pre><code class="language-php">hyde(); // Returns the HydeKernel instance
@@ -546,7 +546,7 @@ hyde()-&gt;routes()) === Hyde::routes(); // true
 </code></pre>
 <p>It's up to you if you want to use the facade or the global function, or a mix of both.
 A benefit of using the global function is that it may have better IDE support.</p>
-<h3><code>asset</code><a id="asset" href="#asset" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3><code>asset</code><a id="asset" href="#asset" class="heading-permalink" title="Permalink"></a></h3>
 <p>This is an alias of the <code>Hyde::asset()</code> facade method and allows you to get a relative link or URL to an asset in the media directory.</p>
 <pre><code class="language-php">asset('image.png'); // Returns a relative web link to the given image
 </code></pre>
@@ -557,7 +557,7 @@ the image will be returned with a qualified absolute URL.</p>
 <p><strong>Example usage:</strong></p>
 <pre><code class="language-blade">&lt;img src=&quot;{{ asset('image.png') }}&quot; alt=&quot;My image&quot;&gt;
 </code></pre>
-<h3><code>route</code><a id="route" href="#route" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3><code>route</code><a id="route" href="#route" class="heading-permalink" title="Permalink"></a></h3>
 <blockquote class="info"><p>Routing primer: All pages in your Hyde project are automatically tied to an internal route. You can run <code>php hyde route:list</code> to see a list of all routes and their route keys.</p></blockquote>
 <p>This is an alias of the <code>Hyde::route()</code> facade method and allows you to get a route instance by its route key.</p>
 <pre><code class="language-php">route('index'); // Returns the route instance with the given key
@@ -567,7 +567,7 @@ the image will be returned with a qualified absolute URL.</p>
 <pre><code class="language-blade">&lt;a href=&quot;{{ route('index') }}&quot;&gt;Home&lt;/a&gt;
 &lt;a href=&quot;{{ route('index')-&gt;getLink() }}&quot;&gt;Home&lt;/a&gt;
 </code></pre>
-<h3><code>url</code><a id="url" href="#url" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3><code>url</code><a id="url" href="#url" class="heading-permalink" title="Permalink"></a></h3>
 <p>This is an alias of the <code>Hyde::url()</code> facade method and formats a relative link to an absolute URL using the configured base URL.</p>
 <pre><code class="language-php">url('page.html'); // Returns an absolute URL to the given page
 </code></pre>
@@ -575,12 +575,12 @@ the image will be returned with a qualified absolute URL.</p>
 <p><strong>Example usage:</strong></p>
 <pre><code class="language-blade">&lt;a href=&quot;{{ url('page.html') }}&quot;&gt;Link&lt;/a&gt;
 </code></pre>
-<h2>Pagination Utility<a id="pagination-utility" href="#pagination-utility" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h2>
+<h2>Pagination Utility<a id="pagination-utility" href="#pagination-utility" class="heading-permalink" title="Permalink"></a></h2>
 <p>The <code>Pagination</code> class provides utilities to help you create custom pagination components.</p>
 <p>Hyde comes with a simple pagination view that you can use, but you can also use the utility to create your own custom pagination components.
 You can of course also publish and modify the default pagination view to fit your needs.</p>
 <p>The paginator is designed to paginate Hyde pages and their routes, but can also be used with other data sources.</p>
-<h3>Base usage<a id="base-usage" href="#base-usage" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Base usage<a id="base-usage" href="#base-usage" class="heading-permalink" title="Permalink"></a></h3>
 <p>To use the pagination component which is generic by design, you need to create the <code>Pagination</code> instance yourself, with the data you want to paginate.</p>
 <p>To get started, simply create a paginator instance with a collection or array of items (like pages), and render the component.
 You also need to pass the current page being rendered (if you're on pagination page 3, pass that to the constructor).</p>
@@ -596,7 +596,7 @@ $paginator = new Paginator(
 </code></pre>
 <pre><code class="language-blade">@include('hyde::components.pagination-navigation')
 </code></pre>
-<h3>Constructor options breakdown<a id="constructor-options-breakdown" href="#constructor-options-breakdown" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Constructor options breakdown<a id="constructor-options-breakdown" href="#constructor-options-breakdown" class="heading-permalink" title="Permalink"></a></h3>
 <p>The first two are self-explanatory:</p>
 <ul>
 <li>
@@ -605,18 +605,18 @@ $paginator = new Paginator(
 <code>pageSize</code> - How many items to show on each page.</li>
 </ul>
 <p>The next may need some explanation:</p>
-<h4><code>currentPageNumber</code><a id="currentpagenumber" href="#currentpagenumber" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4><code>currentPageNumber</code><a id="currentpagenumber" href="#currentpagenumber" class="heading-permalink" title="Permalink"></a></h4>
 <p>This current page index. You will typically get this from the URL.</p>
-<h4><code>paginationRouteBasename</code><a id="paginationroutebasename" href="#paginationroutebasename" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4><code>paginationRouteBasename</code><a id="paginationroutebasename" href="#paginationroutebasename" class="heading-permalink" title="Permalink"></a></h4>
 <p>This adds an optional prefix for the navigation links. For example, if you're paginating blog posts,
 you might want the links to be <code>/posts/page-1.html</code> instead of <code>/page-1.html</code>. You would then set this to <code>posts</code>.</p>
-<h3>Practical example<a id="practical-example" href="#practical-example" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h3>
+<h3>Practical example<a id="practical-example" href="#practical-example" class="heading-permalink" title="Permalink"></a></h3>
 <p>HydePHP comes with a started homepage called 'posts'. This includes a component with the following code:</p>
 <pre><code class="language-blade">&lt;div id=&quot;post-feed&quot; class=&quot;max-w-3xl mx-auto&quot;&gt;
     @include('hyde::components.blog-post-feed')
 &lt;/div&gt;
 </code></pre>
-<h4>Creating our posts page<a id="creating-our-posts-page" href="#creating-our-posts-page" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4>Creating our posts page<a id="creating-our-posts-page" href="#creating-our-posts-page" class="heading-permalink" title="Permalink"></a></h4>
 <p>Now, let's paginate this feed! For this example, we will assume that you ran <code>php hyde publish:homepage posts</code>
 and renamed the resulting <code>index.blade.php</code> file to <code>posts.blade.php</code>. We will also assume that you have a few blog posts set up.</p>
 <p>The blog post feed component is a simple component that looks like this:</p>
@@ -624,7 +624,7 @@ and renamed the resulting <code>index.blade.php</code> file to <code>posts.blade
     @include('hyde::components.article-excerpt')
 @endforeach
 </code></pre>
-<h4>Setting up the new Blade components<a id="setting-up-the-new-blade-components" href="#setting-up-the-new-blade-components" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4>Setting up the new Blade components<a id="setting-up-the-new-blade-components" href="#setting-up-the-new-blade-components" class="heading-permalink" title="Permalink"></a></h4>
 <p>So we are simply going to inline component, but with the paginator we also declare. So, replace the post feed include with the following:</p>
 <pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_pages/posts.blade.php</small>@php
     $paginator = new \Hyde\Support\Paginator(
@@ -646,7 +646,7 @@ and renamed the resulting <code>index.blade.php</code> file to <code>posts.blade
 @include('hyde::components.pagination-navigation')
 </code></pre>
 <p>This will set up the paginator loop through only the items for the current page, and render the article excerpts. The last line will render the pagination links.</p>
-<h4>Creating the pagination pages<a id="creating-the-pagination-pages" href="#creating-the-pagination-pages" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4>Creating the pagination pages<a id="creating-the-pagination-pages" href="#creating-the-pagination-pages" class="heading-permalink" title="Permalink"></a></h4>
 <p>However, we still need to create the pagination pages, because the paginator will not automatically create them for you.</p>
 <p>In order to do this dynamically, we add the following to the <code>boot</code> of our <code>AppServiceProvider</code> (or any other provider or extension):</p>
 <pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>app/Providers/AppServiceProvider.php</small>&lt;?php
@@ -700,7 +700,7 @@ class AppServiceProvider extends ServiceProvider
     }
 }
 </code></pre>
-<h4>Updating the listing page view<a id="updating-the-listing-page-view" href="#updating-the-listing-page-view" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4>Updating the listing page view<a id="updating-the-listing-page-view" href="#updating-the-listing-page-view" class="heading-permalink" title="Permalink"></a></h4>
 <p>Now, let's update our <code>posts</code> page to accept the paginator data. If you want to use a different view for the paginated posts,
 just apply these changes to that new view, but for this example I'm going to update the <code>posts</code> view.</p>
 <pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_pages/posts.blade.php</small>// torchlight! {&quot;lineNumbers&quot;: false}
@@ -719,7 +719,7 @@ just apply these changes to that new view, but for this example I'm going to upd
     );
 @endphp
 </code></pre>
-<h4>Conclusion<a id="conclusion" href="#conclusion" class="heading-permalink" aria-hidden="true" title="Permalink">#</a></h4>
+<h4>Conclusion<a id="conclusion" href="#conclusion" class="heading-permalink" title="Permalink"></a></h4>
 <p>And that's it! You now have a paginated blog post feed. You can now visit <code>/posts/page-1.html</code> and see the first page of your blog posts.
 You can then click the pagination links to navigate to the next pages.</p>
     </section>
