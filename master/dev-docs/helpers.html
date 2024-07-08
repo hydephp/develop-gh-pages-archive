@@ -703,13 +703,11 @@ class AppServiceProvider extends ServiceProvider
 <h4>Updating the listing page view<a id="updating-the-listing-page-view" href="#updating-the-listing-page-view" class="heading-permalink" title="Permalink"></a></h4>
 <p>Now, let's update our <code>posts</code> page to accept the paginator data. If you want to use a different view for the paginated posts,
 just apply these changes to that new view, but for this example I'm going to update the <code>posts</code> view.</p>
-<pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_pages/posts.blade.php</small>// torchlight! {&quot;lineNumbers&quot;: false}
-&lt;h1&gt;Latest Posts&lt;/h1&gt;{{-- [tl! remove] --}}
+<pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_pages/posts.blade.php</small>&lt;h1&gt;Latest Posts&lt;/h1&gt;{{-- [tl! remove] --}}
 &lt;h1&gt;{{ $page-&gt;matter('title') ?? $title }}&lt;/h1&gt; {{-- [tl! add] --}}
 </code></pre>
 <p>to that new view, but for this example I'm going to update the <code>posts</code> view.</p>
-<pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_pages/posts.blade.php</small>// torchlight! {&quot;lineNumbers&quot;: false}
-@php
+<pre><code class="language-blade"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>_pages/posts.blade.php</small>@php
     $paginator = new \Hyde\Support\Paginator( // [tl! remove]
     $paginator = $page-&gt;matter('paginator') ?? new \Hyde\Support\Paginator( // [tl! add]
         items: MarkdownPost::getLatestPosts(),

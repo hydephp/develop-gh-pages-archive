@@ -546,18 +546,14 @@ Here are the default settings:</p>
     'description' =&gt; env('SITE_NAME', 'HydePHP').' RSS Feed',
 ],
 </code></pre>
-<blockquote class="warning"><p>Note that this feature requires that a site <code>url</code> is set!</p></blockquote>
+<blockquote class="warning"><p>Note that this feature requires that a <code>site_url</code> is set!</p></blockquote>
 <h3>Authors<a id="authors" href="#authors" class="heading-permalink" title="Permalink"></a></h3>
-<p>Hyde has support for adding authors in front matter, for example to
-automatically add a link to your website or social media profiles.
-However, it's tedious to have to add those to each and every
-post you make, and keeping them updated is even harder.</p>
-<p>You can predefine authors in the Hyde config.
-When writing posts, just specify the username in the front matter,
-and the rest of the data will be pulled from a matching entry.</p>
+<p>Hyde has support for adding authors in front matter, for example to automatically add a link to your website or social media profiles.
+However, it's tedious to have to add those to each and every post you make, and keeping them updated is even harder.</p>
+<p>Instead, you can predefine authors in the Hyde config. When writing posts, just specify the username in the front matter,
+and the rest of the data will be pulled from a matching entry found in the configuration file.</p>
 <h4>Example<a id="example" href="#example" class="heading-permalink" title="Permalink"></a></h4>
-<pre><code class="language-php">// torchlight! {&quot;lineNumbers&quot;: false}
-'authors' =&gt; [
+<pre><code class="language-php"><small class="filepath not-prose"><span class="sr-only">Filepath: </span>config/hyde.php</small>'authors' =&gt; [
     Author::create(
         username: 'mr_hyde', // Required username
         name: 'Mr. Hyde', // Optional display name
