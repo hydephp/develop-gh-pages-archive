@@ -1,6 +1,5 @@
-# This branch gives live code and coverage reports
+# Archive from https://github.com/hydephp/develop/tree/gh-pages
 
-Updates here are made by CI actions, and not manually.
-URLs here are not permanent nor reliable as they are periodically rewritten.
+In order to massively reduce the size of the HydePHP development monorepo, we squashed the over 3000 commits with a history totalling over 500 MB into a single commit.
 
-See the files at https://hydephp.github.io/develop/
+The original history is preserved in this archive, which is a snapshot of the gh-pages branch of the HydePHP/develop repository.
